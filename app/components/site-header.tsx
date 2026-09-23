@@ -14,6 +14,11 @@ export function SiteHeader(): React.JSX.Element {
             </span>
             <span>Aion 2 Wiki</span>
           </Link>
+          <div className="site-header__links">
+            <Link to="/categories/getting-started">Getting started</Link>
+            <Link to="/categories/classes">Classes</Link>
+            <Link to="/categories/exploration">Exploration</Link>
+          </div>
         </nav>
         <span className="site-header__eyebrow">A field guide in progress</span>
       </div>

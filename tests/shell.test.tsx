@@ -41,12 +41,16 @@ it('offers a way home from an unknown page', () => {
 });
 
 it('introduces the wiki on the homepage', () => {
-  render(<Home />);
+  render(
+    <MemoryRouter>
+      <Home />
+    </MemoryRouter>,
+  );
 
   expect(
     screen.getByRole('heading', { level: 1, name: 'Aion 2 Wiki' }),
   ).toBeInTheDocument();
   expect(
-    screen.getByText(/sample content is coming soon/i),
+    screen.getByRole('heading', { name: 'Browse by category' }),
   ).toBeInTheDocument();
 });

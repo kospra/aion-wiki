@@ -1,10 +1,14 @@
+import { Link } from 'react-router';
+import { WikiDirectory } from '../components/wiki-directory';
+import { categories } from '../content/wiki';
+
 export function meta() {
   return [
     { title: 'Aion 2 Wiki | A field guide in progress' },
     {
       name: 'description',
       content:
-        'A community-minded reference space for Aion 2, currently taking shape.',
+        'Browse sample categories and articles in an Aion 2 reference taking shape.',
     },
   ];
 }
@@ -31,15 +35,34 @@ export default function Home(): React.JSX.Element {
           <p className="eyebrow">The archive</p>
           <h2 id="intro-title">A guide with room to grow</h2>
           <p>
-            This foundation will hold browsable topics, articles, and search.
-            Sample content is coming soon and will be clearly labeled when it
-            arrives.
+            Explore a small set of sample pages while the wiki takes shape.
+            Every entry is labeled so it is clear where verified, sourced
+            information will be added later.
           </p>
         </div>
         <div className="intro-panel__seal" aria-hidden="true">
           ✧
         </div>
       </section>
+
+      <section className="category-overview" aria-labelledby="category-title">
+        <p className="eyebrow">Find your path</p>
+        <h2 id="category-title">Browse by category</h2>
+        <div className="category-overview__grid">
+          {categories.map((category) => (
+            <Link
+              className="category-overview__link"
+              to={`/categories/${category.slug}`}
+              key={category.slug}
+            >
+              <h3>{category.title}</h3>
+              <p>{category.description}</p>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      <WikiDirectory />
     </div>
   );
 }
