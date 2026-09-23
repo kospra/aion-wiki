@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react';
+import { render, screen, within } from '@testing-library/react';
 import { MemoryRouter } from 'react-router';
 import { expect, it } from 'vitest';
 import { NotFound } from '../app/components/not-found';
@@ -53,4 +53,21 @@ it('introduces the wiki on the homepage', () => {
   expect(
     screen.getByRole('heading', { name: 'Browse by category' }),
   ).toBeInTheDocument();
+});
+
+it('labels every homepage category card as sample content', () => {
+  render(
+    <MemoryRouter>
+      <Home />
+    </MemoryRouter>,
+  );
+
+  const categorySection = screen.getByRole('region', {
+    name: 'Browse by category',
+  });
+  const categoryLinks = within(categorySection).getAllByRole('link');
+  expect(categoryLinks).toHaveLength(3);
+  for (const link of categoryLinks) {
+    expect(within(link).getByText('Sample content')).toBeVisible();
+  }
 });

@@ -57,6 +57,7 @@ export default function Home(): React.JSX.Element {
             >
               <h3>{category.title}</h3>
               <p>{category.description}</p>
+              <span className="sample-badge">Sample content</span>
             </Link>
           ))}
         </div>
