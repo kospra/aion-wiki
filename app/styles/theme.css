@@ -1,0 +1,15 @@
+:root {
+  color-scheme: dark;
+  --ink: #f5f0e6;
+  --ink-muted: #c9c4b9;
+  --gold: #e4be73;
+  --gold-bright: #f4d99b;
+  --night: #10151d;
+  --night-deep: #090d14;
+  --surface: #19202b;
+  --line: rgba(228, 190, 115, 0.25);
+  --focus: #ffe5a9;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
