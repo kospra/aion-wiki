@@ -1,0 +1,702 @@
+[
+  {
+    "sourceId": "block-0407",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "growth-and-amplification",
+      "blockIds": ["block-0407"]
+    }
+  },
+  {
+    "sourceId": "block-0408",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "growth-and-amplification",
+      "blockIds": ["block-0408"]
+    }
+  },
+  {
+    "sourceId": "block-0409",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "growth-and-amplification",
+      "blockIds": ["block-0409"]
+    }
+  },
+  {
+    "sourceId": "block-0410",
+    "disposition": "layout-only",
+    "reason": "Empty document spacing is normalized by article layout."
+  },
+  {
+    "sourceId": "block-0411",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "growth-and-amplification",
+      "blockIds": ["block-0411"]
+    }
+  },
+  {
+    "sourceId": "block-0412",
+    "disposition": "layout-only",
+    "reason": "Empty document spacing is normalized by article layout."
+  },
+  {
+    "sourceId": "block-0413",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "growth-and-amplification",
+      "blockIds": ["block-0413"]
+    }
+  },
+  {
+    "sourceId": "block-0414",
+    "disposition": "layout-only",
+    "reason": "Empty document spacing is normalized by article layout."
+  },
+  {
+    "sourceId": "block-0415",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "growth-and-amplification",
+      "blockIds": ["block-0415"]
+    }
+  },
+  {
+    "sourceId": "block-0416",
+    "disposition": "layout-only",
+    "reason": "Empty document spacing is normalized by article layout."
+  },
+  {
+    "sourceId": "block-0417",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "growth-and-amplification",
+      "blockIds": ["block-0417"]
+    }
+  },
+  {
+    "sourceId": "block-0418",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "growth-and-amplification",
+      "blockIds": ["block-0418"]
+    }
+  },
+  {
+    "sourceId": "block-0419",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "growth-and-amplification",
+      "blockIds": ["block-0419"]
+    }
+  },
+  {
+    "sourceId": "block-0420",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "growth-and-amplification",
+      "blockIds": ["block-0420"]
+    }
+  },
+  {
+    "sourceId": "block-0421",
+    "disposition": "layout-only",
+    "reason": "Empty document spacing is normalized by article layout."
+  },
+  {
+    "sourceId": "block-0422",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "potential-enhancement",
+      "blockIds": ["block-0422"]
+    }
+  },
+  {
+    "sourceId": "block-0423",
+    "disposition": "layout-only",
+    "reason": "Empty document spacing is normalized by article layout."
+  },
+  {
+    "sourceId": "block-0424",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "potential-enhancement",
+      "blockIds": ["block-0424"]
+    }
+  },
+  {
+    "sourceId": "block-0425",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "potential-enhancement",
+      "blockIds": ["block-0425"]
+    }
+  },
+  {
+    "sourceId": "block-0426",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "potential-enhancement",
+      "blockIds": ["block-0426"]
+    }
+  },
+  {
+    "sourceId": "block-0427",
+    "disposition": "layout-only",
+    "reason": "Empty document spacing is normalized by article layout."
+  },
+  {
+    "sourceId": "block-0428",
+    "disposition": "layout-only",
+    "reason": "Empty document spacing is normalized by article layout."
+  },
+  {
+    "sourceId": "block-0429",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "potential-enhancement",
+      "blockIds": ["block-0429"]
+    }
+  },
+  {
+    "sourceId": "block-0430",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "potential-enhancement",
+      "blockIds": ["block-0430"]
+    }
+  },
+  {
+    "sourceId": "block-0431",
+    "disposition": "layout-only",
+    "reason": "Empty document spacing is normalized by article layout."
+  },
+  {
+    "sourceId": "block-0432",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "manastones-and-soulstones",
+      "blockIds": ["block-0432"]
+    }
+  },
+  {
+    "sourceId": "block-0433",
+    "disposition": "layout-only",
+    "reason": "Empty document spacing is normalized by article layout."
+  },
+  {
+    "sourceId": "block-0434",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "manastones-and-soulstones",
+      "blockIds": ["block-0434"]
+    }
+  },
+  {
+    "sourceId": "block-0435",
+    "disposition": "layout-only",
+    "reason": "Empty document spacing is normalized by article layout."
+  },
+  {
+    "sourceId": "block-0436",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "manastones-and-soulstones",
+      "blockIds": ["block-0436"]
+    }
+  },
+  {
+    "sourceId": "block-0437",
+    "disposition": "layout-only",
+    "reason": "Empty document spacing is normalized by article layout."
+  },
+  {
+    "sourceId": "block-0438",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "manastones-and-soulstones",
+      "blockIds": ["block-0438"]
+    }
+  },
+  {
+    "sourceId": "block-0439",
+    "disposition": "layout-only",
+    "reason": "Empty document spacing is normalized by article layout."
+  },
+  {
+    "sourceId": "block-0440",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "manastones-and-soulstones",
+      "blockIds": ["block-0440"]
+    }
+  },
+  {
+    "sourceId": "block-0441",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "manastones-and-soulstones",
+      "blockIds": ["block-0441"]
+    }
+  },
+  {
+    "sourceId": "block-0442",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "manastones-and-soulstones",
+      "blockIds": ["block-0442"]
+    }
+  },
+  {
+    "sourceId": "block-0443",
+    "disposition": "layout-only",
+    "reason": "Empty document spacing is normalized by article layout."
+  },
+  {
+    "sourceId": "block-0444",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "manastones-and-soulstones",
+      "blockIds": ["block-0444"]
+    }
+  },
+  {
+    "sourceId": "block-0445",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "manastones-and-soulstones",
+      "blockIds": ["block-0445"]
+    }
+  },
+  {
+    "sourceId": "block-0446",
+    "disposition": "layout-only",
+    "reason": "Empty document spacing is normalized by article layout."
+  },
+  {
+    "sourceId": "block-0447",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "manastones-and-soulstones",
+      "blockIds": ["block-0447"]
+    }
+  },
+  {
+    "sourceId": "block-0448",
+    "disposition": "layout-only",
+    "reason": "Empty document spacing is normalized by article layout."
+  },
+  {
+    "sourceId": "block-0449",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "manastones-and-soulstones",
+      "blockIds": ["block-0449"]
+    }
+  },
+  {
+    "sourceId": "block-0450",
+    "disposition": "layout-only",
+    "reason": "Empty document spacing is normalized by article layout."
+  },
+  {
+    "sourceId": "block-0451",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "theostones",
+      "blockIds": ["block-0451"]
+    }
+  },
+  {
+    "sourceId": "block-0452",
+    "disposition": "layout-only",
+    "reason": "Empty document spacing is normalized by article layout."
+  },
+  {
+    "sourceId": "block-0453",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "theostones",
+      "blockIds": ["block-0453"]
+    }
+  },
+  {
+    "sourceId": "block-0454",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "theostones",
+      "blockIds": ["block-0454"]
+    }
+  },
+  {
+    "sourceId": "block-0455",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "theostones",
+      "blockIds": ["block-0455"]
+    }
+  },
+  {
+    "sourceId": "block-0456",
+    "disposition": "layout-only",
+    "reason": "Empty document spacing is normalized by article layout."
+  },
+  {
+    "sourceId": "block-0457",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "theostones",
+      "blockIds": ["block-0457"]
+    }
+  },
+  {
+    "sourceId": "block-0458",
+    "disposition": "layout-only",
+    "reason": "Empty document spacing is normalized by article layout."
+  },
+  {
+    "sourceId": "block-0459",
+    "disposition": "layout-only",
+    "reason": "Empty document spacing is normalized by article layout."
+  },
+  {
+    "sourceId": "block-0460",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "theostones",
+      "blockIds": ["block-0460"]
+    }
+  },
+  {
+    "sourceId": "block-0461",
+    "disposition": "layout-only",
+    "reason": "Empty document spacing is normalized by article layout."
+  },
+  {
+    "sourceId": "block-0462",
+    "disposition": "layout-only",
+    "reason": "Empty document spacing is normalized by article layout."
+  },
+  {
+    "sourceId": "block-0463",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "soul-binding-bind-sync-and-reset",
+      "blockIds": ["block-0463"]
+    }
+  },
+  {
+    "sourceId": "block-0464",
+    "disposition": "layout-only",
+    "reason": "Empty document spacing is normalized by article layout."
+  },
+  {
+    "sourceId": "block-0465",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "soul-binding-bind-sync-and-reset",
+      "blockIds": ["block-0465"]
+    }
+  },
+  {
+    "sourceId": "block-0466",
+    "disposition": "layout-only",
+    "reason": "Empty document spacing is normalized by article layout."
+  },
+  {
+    "sourceId": "block-0467",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "soul-binding-bind-sync-and-reset",
+      "blockIds": ["block-0467"]
+    }
+  },
+  {
+    "sourceId": "block-0468",
+    "disposition": "layout-only",
+    "reason": "Empty document spacing is normalized by article layout."
+  },
+  {
+    "sourceId": "block-0469",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "soul-binding-bind-sync-and-reset",
+      "blockIds": ["block-0469"]
+    }
+  },
+  {
+    "sourceId": "block-0470",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "soul-binding-bind-sync-and-reset",
+      "blockIds": ["block-0470"]
+    }
+  },
+  {
+    "sourceId": "block-0471",
+    "disposition": "layout-only",
+    "reason": "Empty document spacing is normalized by article layout."
+  },
+  {
+    "sourceId": "block-0472",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "soul-binding-bind-sync-and-reset",
+      "blockIds": ["block-0472"]
+    }
+  },
+  {
+    "sourceId": "block-0473",
+    "disposition": "layout-only",
+    "reason": "Empty document spacing is normalized by article layout."
+  },
+  {
+    "sourceId": "block-0474",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "soul-binding-bind-sync-and-reset",
+      "blockIds": ["block-0474"]
+    }
+  },
+  {
+    "sourceId": "block-0475",
+    "disposition": "layout-only",
+    "reason": "Empty document spacing is normalized by article layout."
+  },
+  {
+    "sourceId": "block-0476",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "soul-binding-bind-sync-and-reset",
+      "blockIds": ["block-0476"]
+    }
+  },
+  {
+    "sourceId": "block-0477",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "soul-binding-bind-sync-and-reset",
+      "blockIds": ["block-0477"]
+    }
+  },
+  {
+    "sourceId": "block-0478",
+    "disposition": "layout-only",
+    "reason": "Empty document spacing is normalized by article layout."
+  },
+  {
+    "sourceId": "block-0479",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "soul-binding-bind-sync-and-reset",
+      "blockIds": ["block-0479"]
+    }
+  },
+  {
+    "sourceId": "block-0480",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "soul-binding-bind-sync-and-reset",
+      "blockIds": ["block-0480"]
+    }
+  },
+  {
+    "sourceId": "block-0481",
+    "disposition": "layout-only",
+    "reason": "Empty document spacing is normalized by article layout."
+  },
+  {
+    "sourceId": "block-0482",
+    "disposition": "layout-only",
+    "reason": "Empty document spacing is normalized by article layout."
+  },
+  {
+    "sourceId": "block-0483",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "gear-transfer-and-material-costs",
+      "blockIds": ["block-0483"]
+    }
+  },
+  {
+    "sourceId": "block-0484",
+    "disposition": "layout-only",
+    "reason": "Empty document spacing is normalized by article layout."
+  },
+  {
+    "sourceId": "block-0485",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "gear-transfer-and-material-costs",
+      "blockIds": ["block-0485"]
+    }
+  },
+  {
+    "sourceId": "block-0486",
+    "disposition": "layout-only",
+    "reason": "Empty document spacing is normalized by article layout."
+  },
+  {
+    "sourceId": "block-0487",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "gear-transfer-and-material-costs",
+      "blockIds": ["block-0487"]
+    }
+  },
+  {
+    "sourceId": "block-0488",
+    "disposition": "layout-only",
+    "reason": "Empty document spacing is normalized by article layout."
+  },
+  {
+    "sourceId": "block-0489",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "gear-transfer-and-material-costs",
+      "blockIds": ["block-0489"]
+    }
+  },
+  {
+    "sourceId": "block-0490",
+    "disposition": "layout-only",
+    "reason": "Empty document spacing is normalized by article layout."
+  },
+  {
+    "sourceId": "block-0491",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "gear-transfer-and-material-costs",
+      "blockIds": ["block-0491"]
+    }
+  },
+  {
+    "sourceId": "block-0492",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "gear-transfer-and-material-costs",
+      "blockIds": ["block-0492"]
+    }
+  },
+  {
+    "sourceId": "block-0493",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "gear-transfer-and-material-costs",
+      "blockIds": ["block-0493"]
+    }
+  },
+  {
+    "sourceId": "block-0494",
+    "disposition": "layout-only",
+    "reason": "Empty document spacing is normalized by article layout."
+  },
+  {
+    "sourceId": "block-0495",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "gear-transfer-and-material-costs",
+      "blockIds": ["block-0495"]
+    }
+  },
+  {
+    "sourceId": "block-0496",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "gear-transfer-and-material-costs",
+      "blockIds": ["block-0496"]
+    }
+  },
+  {
+    "sourceId": "block-0497",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "gear-transfer-and-material-costs",
+      "blockIds": ["block-0497"]
+    }
+  },
+  {
+    "sourceId": "block-0498",
+    "disposition": "layout-only",
+    "reason": "Empty document spacing is normalized by article layout."
+  },
+  {
+    "sourceId": "block-0499",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "gear-transfer-and-material-costs",
+      "blockIds": ["block-0499"]
+    }
+  },
+  {
+    "sourceId": "block-0500",
+    "disposition": "layout-only",
+    "reason": "Empty document spacing is normalized by article layout."
+  },
+  {
+    "sourceId": "block-0501",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "gear-transfer-and-material-costs",
+      "blockIds": ["block-0501"]
+    }
+  },
+  {
+    "sourceId": "block-0502",
+    "disposition": "layout-only",
+    "reason": "Empty document spacing is normalized by article layout."
+  },
+  {
+    "sourceId": "block-0503",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "gear-transfer-and-material-costs",
+      "blockIds": ["block-0503"]
+    }
+  },
+  {
+    "sourceId": "block-0504",
+    "disposition": "layout-only",
+    "reason": "Empty document spacing is normalized by article layout."
+  },
+  {
+    "sourceId": "block-0505",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "gear-transfer-and-material-costs",
+      "blockIds": ["block-0505"]
+    }
+  },
+  {
+    "sourceId": "block-0506",
+    "disposition": "layout-only",
+    "reason": "Empty document spacing is normalized by article layout."
+  },
+  {
+    "sourceId": "block-0507",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "gear-transfer-and-material-costs",
+      "blockIds": ["block-0507"]
+    }
+  },
+  {
+    "sourceId": "block-0508",
+    "disposition": "layout-only",
+    "reason": "Empty document spacing is normalized by article layout."
+  },
+  {
+    "sourceId": "block-0509",
+    "disposition": "layout-only",
+    "reason": "Empty document spacing is normalized by article layout."
+  },
+  {
+    "sourceId": "block-0510",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "gear-transfer-and-material-costs",
+      "blockIds": ["block-0510"]
+    }
+  }
+]

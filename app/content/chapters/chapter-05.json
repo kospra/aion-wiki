@@ -1,0 +1,4098 @@
+[
+  {
+    "slug": "growth-and-amplification",
+    "title": "Growth and amplification",
+    "category": "enhancement",
+    "summary": "Enhance and Amplify materials, level caps, rates and screenshot examples.",
+    "status": "source-uncertain",
+    "sourceUrl": "https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/edit",
+    "qualifiers": [
+      "The source recommendations and first-person statements are Kanon’s; screenshots are examples from the captured guide.",
+      "Captured update: 9/20/2026. Regional and screenshot-specific values are qualified in the text and image legends."
+    ],
+    "blocks": [
+      {
+        "id": "block-0407",
+        "sourceIds": ["block-0407"],
+        "kind": "heading",
+        "content": [
+          {
+            "text": "CH 5: ENHANCEMENT (UPGRADING YOUR GEAR)"
+          }
+        ],
+        "level": 2
+      },
+      {
+        "id": "block-0408",
+        "sourceIds": ["block-0408"],
+        "kind": "heading",
+        "content": [
+          {
+            "text": "A - GROWTH"
+          }
+        ],
+        "level": 2
+      },
+      {
+        "id": "block-0409",
+        "sourceIds": ["block-0409"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "This is your general Gear enhancing system consistent with just about every Korean MMO where you simply spend Kinah and Enhance Stones or Amplify Stones to + up your gear. "
+          }
+        ]
+      },
+      {
+        "id": "block-0411",
+        "sourceIds": ["block-0411"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Enhance Stones are obtained through a lot of different sources and content. These are used until +15 or +20"
+          }
+        ]
+      },
+      {
+        "id": "block-0413",
+        "sourceIds": ["block-0413"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": " Amplify Stones are obtained by Substance Morphing Amplify Fragments with Enhance Stones. "
+          }
+        ]
+      },
+      {
+        "id": "block-0415",
+        "sourceIds": ["block-0415"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Yellow/Unique Gear can go to +15 then has 5 Amp levels. "
+          },
+          {
+            "text": "Orange/Heroic Gear can go to +20 then has 5 amp levels. The % for success “soft resets” back to 60% from +15 to +16."
+          }
+        ]
+      },
+      {
+        "id": "growth-stage-context",
+        "sourceIds": [],
+        "kind": "note",
+        "label": "Enhance stage and illustration",
+        "tone": "context",
+        "content": [
+          {
+            "text": "The +15 to +16 soft reset to 60% belongs to the Enhance transition described above. The next image is a separate +20 amplification example; its 25.5% sample chance is 16.5% + 9%, and a failure adds 3.0% in that example. No complete rate schedule is supplied."
+          }
+        ]
+      },
+      {
+        "id": "block-0417",
+        "sourceIds": ["block-0417"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Additional Notes",
+            "emphasis": true,
+            "underline": true,
+            "highlight": "#f8f9fa"
+          },
+          {
+            "text": ": Enhance Stones bottleneck for players who swipe",
+            "emphasis": true,
+            "highlight": "#f8f9fa"
+          }
+        ]
+      },
+      {
+        "id": "block-0418",
+        "sourceIds": ["block-0418"],
+        "kind": "figure",
+        "figureId": "figure-026"
+      },
+      {
+        "id": "block-0419",
+        "sourceIds": ["block-0419"],
+        "kind": "group",
+        "label": "Related source illustrations",
+        "blocks": [
+          {
+            "id": "block-0419-figure-027",
+            "sourceIds": ["block-0419"],
+            "kind": "figure",
+            "figureId": "figure-027"
+          },
+          {
+            "id": "block-0419-figure-028",
+            "sourceIds": ["block-0419"],
+            "kind": "figure",
+            "figureId": "figure-028"
+          }
+        ]
+      },
+      {
+        "id": "enhance-cost-example",
+        "sourceIds": [],
+        "kind": "note",
+        "label": "Shown Enhance costs",
+        "tone": "context",
+        "content": [
+          {
+            "text": "The paired Enhance crops show 250 stones required with 8.3K held as an approximate reading of an unlabeled material display, and 6,250 Kinah on the action button. These are sample values."
+          }
+        ]
+      },
+      {
+        "id": "block-0420",
+        "sourceIds": ["block-0420"],
+        "kind": "group",
+        "label": "Related source illustrations",
+        "blocks": [
+          {
+            "id": "block-0420-figure-029",
+            "sourceIds": ["block-0420"],
+            "kind": "figure",
+            "figureId": "figure-029"
+          },
+          {
+            "id": "block-0420-figure-030",
+            "sourceIds": ["block-0420"],
+            "kind": "figure",
+            "figureId": "figure-030"
+          }
+        ]
+      },
+      {
+        "id": "amplify-cost-example",
+        "sourceIds": [],
+        "kind": "note",
+        "label": "Shown amplification costs",
+        "tone": "context",
+        "content": [
+          {
+            "text": "The paired Amplified Enhance crops show 15 stones required with 41 owned as an approximate reading of an unlabeled material display, and 2,000,000 Kinah on the action button. The sample level is not identified."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "potential-enhancement",
+    "title": "Potential enhancement",
+    "category": "enhancement",
+    "summary": "Potential lines, regional crafted gear limits, tier progression and examples.",
+    "status": "source-uncertain",
+    "sourceUrl": "https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/edit",
+    "qualifiers": [
+      "The source recommendations and first-person statements are Kanon’s; screenshots are examples from the captured guide.",
+      "Captured update: 9/20/2026. Regional and screenshot-specific values are qualified in the text and image legends."
+    ],
+    "blocks": [
+      {
+        "id": "block-0422",
+        "sourceIds": ["block-0422"],
+        "kind": "heading",
+        "content": [
+          {
+            "text": "Potential "
+          },
+          {
+            "text": "Enhance"
+          }
+        ],
+        "level": 3
+      },
+      {
+        "id": "block-0424",
+        "sourceIds": ["block-0424"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Potential Enhance is a system that adds PVE Damage Boost/Tolerance on gear. Crafted gear automatically gets max Potential Stats and nearly double the value compared to Dungeon gear only on the Asian servers, this is not the case on the Global servers. It is not confirmed whether or not Crafted Potential Stats are higher than Dungeon Gear on Global yet. This is explained in "
+          },
+          {
+            "text": " ",
+            "underline": true,
+            "href": "/articles/gear-anatomy-and-stat-layers#block-0027"
+          },
+          {
+            "text": "Further Detail",
+            "strong": true,
+            "underline": true,
+            "href": "/articles/gear-anatomy-and-stat-layers#block-0027"
+          },
+          {
+            "text": " ",
+            "underline": true,
+            "href": "/articles/gear-anatomy-and-stat-layers#block-0027"
+          },
+          {
+            "text": "here",
+            "strong": true,
+            "underline": true,
+            "href": "/articles/gear-anatomy-and-stat-layers#block-0027"
+          }
+        ]
+      },
+      {
+        "id": "potential-region-context",
+        "sourceIds": [],
+        "kind": "note",
+        "label": "Regional qualification",
+        "tone": "uncertain",
+        "content": [
+          {
+            "text": "The automatically maximized, nearly doubled crafted Potential comparison is limited to Asian servers. Crafted versus dungeon Potential values on Global are not confirmed in the source."
+          }
+        ]
+      },
+      {
+        "id": "block-0425",
+        "sourceIds": ["block-0425"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "In order to Potential Enhance your gear, you’ll need Potential Enhancement Material. This is obtained by Substance Morphing gear into Potential Stones. Potential Stones have Tiers and the Item Level of the gear you Substance Morph will determine the Tier. Currently Potential Stones go from 1* to 5* then to 1* “prestiged” "
+          }
+        ]
+      },
+      {
+        "id": "block-0426",
+        "sourceIds": ["block-0426"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": " Aside from making this overly complicated, the system is pretty simple - you can convert extra gear into Potential Stones of the equal tier and use it to increase your Damage Boost/Tolerance on an exclusive “Potential” line"
+          }
+        ]
+      },
+      {
+        "id": "block-0429",
+        "sourceIds": ["block-0429"],
+        "kind": "group",
+        "label": "Related source illustrations",
+        "blocks": [
+          {
+            "id": "block-0429-figure-031",
+            "sourceIds": ["block-0429"],
+            "kind": "figure",
+            "figureId": "figure-031"
+          },
+          {
+            "id": "block-0429-figure-032",
+            "sourceIds": ["block-0429"],
+            "kind": "figure",
+            "figureId": "figure-032"
+          }
+        ]
+      },
+      {
+        "id": "potential-tier-image-limit",
+        "sourceIds": [],
+        "kind": "note",
+        "label": "Tier example",
+        "tone": "context",
+        "content": [
+          {
+            "text": "The accessory Potential Stone tooltip visibly has five stars. It does not show the later one-star “prestiged” tier described in the source."
+          }
+        ]
+      },
+      {
+        "id": "block-0430",
+        "sourceIds": ["block-0430"],
+        "kind": "figure",
+        "figureId": "figure-033"
+      }
+    ]
+  },
+  {
+    "slug": "manastones-and-soulstones",
+    "title": "Manastones and Soulstones",
+    "category": "enhancement",
+    "summary": "Manastone and Soulstone line rolls, grade probabilities and replacement advice.",
+    "status": "source-uncertain",
+    "sourceUrl": "https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/edit",
+    "qualifiers": [
+      "The source recommendations and first-person statements are Kanon’s; screenshots are examples from the captured guide.",
+      "Captured update: 9/20/2026. Regional and screenshot-specific values are qualified in the text and image legends."
+    ],
+    "blocks": [
+      {
+        "id": "block-0432",
+        "sourceIds": ["block-0432"],
+        "kind": "heading",
+        "content": [
+          {
+            "text": "B - MANASTONE/SOULSTONE LINES"
+          }
+        ],
+        "level": 2
+      },
+      {
+        "id": "block-0434",
+        "sourceIds": ["block-0434"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Manastones/Soulstones are items that you’ll use on your gear for RNG stats. Manastones are for Weapons and Armor, Soulstones are for Accessories. Every time you consume a single stone, you’ll roll random lines on all your Manastone/Soulstone sockets, in the case of the image below, 5 lines."
+          },
+          {
+            "text": "You’ll be wanting to roll Superiors on end-game gear. Do not waste too many of these, if at all, on gear you’ll replace soon."
+          }
+        ]
+      },
+      {
+        "id": "block-0436",
+        "sourceIds": ["block-0436"],
+        "kind": "figure",
+        "figureId": "figure-034"
+      },
+      {
+        "id": "block-0438",
+        "sourceIds": ["block-0438"],
+        "kind": "group",
+        "label": "Related source illustrations",
+        "blocks": [
+          {
+            "id": "block-0438-figure-035",
+            "sourceIds": ["block-0438"],
+            "kind": "figure",
+            "figureId": "figure-035"
+          },
+          {
+            "id": "block-0438-figure-036",
+            "sourceIds": ["block-0438"],
+            "kind": "figure",
+            "figureId": "figure-036"
+          }
+        ]
+      },
+      {
+        "id": "manastone-grade-context",
+        "sourceIds": [],
+        "kind": "note",
+        "label": "Different grade labels",
+        "tone": "context",
+        "content": [
+          {
+            "text": "Superior Manastone names the consumable, while its tooltip category reads Common Manastone. The roll-quality tabs are Basic green 50%, Superior blue 35%, and Ultimate yellow 15%. Yellow/unique stat-line wording describes the resulting lines, not the consumable category."
+          }
+        ]
+      },
+      {
+        "id": "list-block-0440",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-0440",
+              "sourceIds": ["block-0440"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Try to roll at least 1 yellow Damage Boost stat from below. There is a big jump from blue (30) to yellow Boost (100). 100 Boost = 1% of that stat on your stat sheet, IE: Gold Weapon Damage Boost +100 = 1% Weapon Damage Boost. "
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0441",
+              "sourceIds": ["block-0441"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Having 2 yellow/unique Attack lines is similar to 1 yellow/unique Damage Boost line"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0442",
+              "sourceIds": ["block-0442"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "A single yellow/unique Attack (10) line is a decent placeholder roll if you are low on Stones."
+                }
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "id": "block-0444",
+        "sourceIds": ["block-0444"],
+        "kind": "heading",
+        "content": [
+          {
+            "text": "Order from best to worst: ",
+            "emphasis": true
+          }
+        ],
+        "level": 3
+      },
+      {
+        "id": "block-0445",
+        "sourceIds": ["block-0445"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Front/Back Damage Boost > Weapon Damage Boost ≈ Critical Damage Boost > Damage Boost > Attack",
+            "emphasis": true
+          }
+        ]
+      },
+      {
+        "id": "block-0447",
+        "sourceIds": ["block-0447"],
+        "kind": "figure",
+        "figureId": "figure-037"
+      },
+      {
+        "id": "manastone-roll-context",
+        "sourceIds": [],
+        "kind": "note",
+        "label": "Roll values and advice",
+        "tone": "context",
+        "content": [
+          {
+            "text": "Yellow Boost +100 and Attack +10 are visible examples. Blue Boost +30 and 100 Boost = 1% come from the source prose. Two yellow Attack lines ≈ one yellow Damage Boost line is Kanon’s comparison, not a conversion rule."
+          }
+        ]
+      },
+      {
+        "id": "block-0449",
+        "sourceIds": ["block-0449"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Manastones/Soulstones do not carry over when you transfer/upgrade gear so don’t go all-in on gear that’s replaced. Superior Mana/Soulstones get very expensive."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "theostones",
+    "title": "Theostones",
+    "category": "enhancement",
+    "summary": "Theostone effects, combat sample and cosmetic Earth Theostone glow.",
+    "status": "source-uncertain",
+    "sourceUrl": "https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/edit",
+    "qualifiers": [
+      "The source recommendations and first-person statements are Kanon’s; screenshots are examples from the captured guide.",
+      "Captured update: 9/20/2026. Regional and screenshot-specific values are qualified in the text and image legends."
+    ],
+    "blocks": [
+      {
+        "id": "block-0451",
+        "sourceIds": ["block-0451"],
+        "kind": "heading",
+        "content": [
+          {
+            "text": "C - THEOSTONES"
+          }
+        ],
+        "level": 2
+      },
+      {
+        "id": "block-0453",
+        "sourceIds": ["block-0453"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Theostones are items you socket into your weapons. You can socket 1 per item and the same Theostones do not stack. Theostones have a % chance to proc on hit with effects ranging from CC to Damage. General rule of thumb, the higher the Combat Speed netting you more hits, the more value lower % Theostones become. Keep in mind ping impacts this."
+          }
+        ]
+      },
+      {
+        "id": "block-0454",
+        "sourceIds": ["block-0454"],
+        "kind": "figure",
+        "figureId": "figure-038"
+      },
+      {
+        "id": "block-0455",
+        "sourceIds": ["block-0455"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Theostones make up for very little overall DPS, even with yellow (highest grade) Theostones. Until this get’s buffed, it’s insignificant in PVE…some people actually just take the coolest looking Theostone considering Theostones give a glow effect on your weapon. The glow below is from the Earth Theostone."
+          }
+        ]
+      },
+      {
+        "id": "block-0457",
+        "sourceIds": ["block-0457"],
+        "kind": "figure",
+        "figureId": "figure-039"
+      },
+      {
+        "id": "combat-sample-table",
+        "sourceIds": [],
+        "kind": "table",
+        "caption": "Single combat sample transcribed from figure 039. ACC through RSTO and Share are displayed percentages; HIT and Total Damage are counts. Column acronyms are not expanded by the source.",
+        "columns": [
+          [
+            {
+              "text": "Skill"
+            }
+          ],
+          [
+            {
+              "text": "HIT"
+            }
+          ],
+          [
+            {
+              "text": "ACC"
+            }
+          ],
+          [
+            {
+              "text": "CRI"
+            }
+          ],
+          [
+            {
+              "text": "PERF"
+            }
+          ],
+          [
+            {
+              "text": "DOUB"
+            }
+          ],
+          [
+            {
+              "text": "FRNT"
+            }
+          ],
+          [
+            {
+              "text": "BACK"
+            }
+          ],
+          [
+            {
+              "text": "MULT"
+            }
+          ],
+          [
+            {
+              "text": "BLOC"
+            }
+          ],
+          [
+            {
+              "text": "INVC"
+            }
+          ],
+          [
+            {
+              "text": "ENDR"
+            }
+          ],
+          [
+            {
+              "text": "RSTO"
+            }
+          ],
+          [
+            {
+              "text": "Total Damage"
+            }
+          ],
+          [
+            {
+              "text": "Share"
+            }
+          ]
+        ],
+        "rows": [
+          [
+            [
+              {
+                "id": "combat-row-01-cell-01",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "Ascending Blow [Rampage]"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-01-cell-02",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "11"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-01-cell-03",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "100"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-01-cell-04",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "100"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-01-cell-05",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "36"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-01-cell-06",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "82"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-01-cell-07",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "100"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-01-cell-08",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "0"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-01-cell-09",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "73"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-01-cell-10",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "0"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-01-cell-11",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "0"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-01-cell-12",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "0"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-01-cell-13",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "0"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-01-cell-14",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "40285484"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-01-cell-15",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "19"
+                  }
+                ]
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "id": "combat-row-02-cell-01",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "Chain Fist"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-02-cell-02",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "59"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-02-cell-03",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "100"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-02-cell-04",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "73"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-02-cell-05",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "53"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-02-cell-06",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "78"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-02-cell-07",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "100"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-02-cell-08",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "0"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-02-cell-09",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "59"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-02-cell-10",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "0"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-02-cell-11",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "0"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-02-cell-12",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "0"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-02-cell-13",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "0"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-02-cell-14",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "33418679"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-02-cell-15",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "16"
+                  }
+                ]
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "id": "combat-row-03-cell-01",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "Exploding Fist [Rampage]"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-03-cell-02",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "44"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-03-cell-03",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "100"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-03-cell-04",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "82"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-03-cell-05",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "43"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-03-cell-06",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "84"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-03-cell-07",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "68"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-03-cell-08",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "0"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-03-cell-09",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "39"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-03-cell-10",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "0"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-03-cell-11",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "0"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-03-cell-12",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "0"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-03-cell-13",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "0"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-03-cell-14",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "25951496"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-03-cell-15",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "12"
+                  }
+                ]
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "id": "combat-row-04-cell-01",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "Phantom"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-04-cell-02",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "70"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-04-cell-03",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "100"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-04-cell-04",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "100"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-04-cell-05",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "64"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-04-cell-06",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "84"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-04-cell-07",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "100"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-04-cell-08",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "0"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-04-cell-09",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "59"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-04-cell-10",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "0"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-04-cell-11",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "0"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-04-cell-12",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "0"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-04-cell-13",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "0"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-04-cell-14",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "23775009"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-04-cell-15",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "11"
+                  }
+                ]
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "id": "combat-row-05-cell-01",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "Haymaker"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-05-cell-02",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "116"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-05-cell-03",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "100"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-05-cell-04",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "81"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-05-cell-05",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "51"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-05-cell-06",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "79"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-05-cell-07",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "100"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-05-cell-08",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "0"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-05-cell-09",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "58"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-05-cell-10",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "0"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-05-cell-11",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "0"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-05-cell-12",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "0"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-05-cell-13",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "0"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-05-cell-14",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "20656994"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-05-cell-15",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "10"
+                  }
+                ]
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "id": "combat-row-06-cell-01",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "Cross Hook"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-06-cell-02",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "118"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-06-cell-03",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "100"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-06-cell-04",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "81"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-06-cell-05",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "51"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-06-cell-06",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "82"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-06-cell-07",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "100"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-06-cell-08",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "0"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-06-cell-09",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "64"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-06-cell-10",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "0"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-06-cell-11",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "0"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-06-cell-12",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "0"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-06-cell-13",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "0"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-06-cell-14",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "19730102"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-06-cell-15",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "9"
+                  }
+                ]
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "id": "combat-row-07-cell-01",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "Roundhouse"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-07-cell-02",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "177"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-07-cell-03",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "100"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-07-cell-04",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "85"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-07-cell-05",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "54"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-07-cell-06",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "83"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-07-cell-07",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "100"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-07-cell-08",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "0"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-07-cell-09",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "65"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-07-cell-10",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "0"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-07-cell-11",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "0"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-07-cell-12",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "0"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-07-cell-13",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "0"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-07-cell-14",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "17373776"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-07-cell-15",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "8"
+                  }
+                ]
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "id": "combat-row-08-cell-01",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "Shatter Frontline"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-08-cell-02",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "53"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-08-cell-03",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "100"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-08-cell-04",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "89"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-08-cell-05",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "66"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-08-cell-06",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "81"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-08-cell-07",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "100"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-08-cell-08",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "0"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-08-cell-09",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "0"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-08-cell-10",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "0"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-08-cell-11",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "0"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-08-cell-12",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "0"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-08-cell-13",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "0"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-08-cell-14",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "6916724"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-08-cell-15",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "3"
+                  }
+                ]
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "id": "combat-row-09-cell-01",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "Pulverize"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-09-cell-02",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "16"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-09-cell-03",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "100"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-09-cell-04",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "88"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-09-cell-05",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "69"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-09-cell-06",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "75"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-09-cell-07",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "100"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-09-cell-08",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "0"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-09-cell-09",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "69"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-09-cell-10",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "0"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-09-cell-11",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "0"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-09-cell-12",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "0"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-09-cell-13",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "0"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-09-cell-14",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "5980879"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-09-cell-15",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "3"
+                  }
+                ]
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "id": "combat-row-10-cell-01",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "Torrent"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-10-cell-02",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "64"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-10-cell-03",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "100"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-10-cell-04",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "81"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-10-cell-05",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "50"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-10-cell-06",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "81"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-10-cell-07",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "100"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-10-cell-08",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "0"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-10-cell-09",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "63"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-10-cell-10",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "0"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-10-cell-11",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "0"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-10-cell-12",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "0"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-10-cell-13",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "0"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-10-cell-14",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "4509385"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-10-cell-15",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "2"
+                  }
+                ]
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "id": "combat-row-11-cell-01",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "Beatdown"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-11-cell-02",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "64"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-11-cell-03",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "100"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-11-cell-04",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "69"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-11-cell-05",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "50"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-11-cell-06",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "69"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-11-cell-07",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "100"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-11-cell-08",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "0"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-11-cell-09",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "45"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-11-cell-10",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "0"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-11-cell-11",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "0"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-11-cell-12",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "0"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-11-cell-13",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "0"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-11-cell-14",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "4400098"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-11-cell-15",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "2"
+                  }
+                ]
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "id": "combat-row-12-cell-01",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "Flurry"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-12-cell-02",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "99"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-12-cell-03",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "100"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-12-cell-04",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "80"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-12-cell-05",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "53"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-12-cell-06",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "80"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-12-cell-07",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "100"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-12-cell-08",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "0"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-12-cell-09",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "68"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-12-cell-10",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "0"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-12-cell-11",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "0"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-12-cell-12",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "0"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-12-cell-13",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "0"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-12-cell-14",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "4157466"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-12-cell-15",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "2"
+                  }
+                ]
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "id": "combat-row-13-cell-01",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "Theostone: Traufnir's Courage"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-13-cell-02",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "10"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-13-cell-03",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "100"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-13-cell-04",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "100"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-13-cell-05",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "50"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-13-cell-06",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "90"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-13-cell-07",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "100"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-13-cell-08",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "0"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-13-cell-09",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "0"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-13-cell-10",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "0"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-13-cell-11",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "0"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-13-cell-12",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "0"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-13-cell-13",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "0"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-13-cell-14",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "1540938"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-13-cell-15",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "1"
+                  }
+                ]
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "id": "combat-row-14-cell-01",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "Surging Cleave"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-14-cell-02",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "2"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-14-cell-03",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "100"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-14-cell-04",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "100"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-14-cell-05",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "50"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-14-cell-06",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "50"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-14-cell-07",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "100"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-14-cell-08",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "0"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-14-cell-09",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "100"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-14-cell-10",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "0"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-14-cell-11",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "0"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-14-cell-12",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "0"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-14-cell-13",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "0"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-14-cell-14",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "1395936"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-14-cell-15",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "1"
+                  }
+                ]
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "id": "combat-row-15-cell-01",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "Theostone: Freyr's Wisdom"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-15-cell-02",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "24"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-15-cell-03",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "100"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-15-cell-04",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "71"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-15-cell-05",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "54"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-15-cell-06",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "92"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-15-cell-07",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "100"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-15-cell-08",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "0"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-15-cell-09",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "0"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-15-cell-10",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "0"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-15-cell-11",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "0"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-15-cell-12",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "0"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-15-cell-13",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "0"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-15-cell-14",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "626330"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-15-cell-15",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "0"
+                  }
+                ]
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "id": "combat-row-16-cell-01",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "Lightweight"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-16-cell-02",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "5"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-16-cell-03",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "100"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-16-cell-04",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "80"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-16-cell-05",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "60"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-16-cell-06",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "60"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-16-cell-07",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "100"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-16-cell-08",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "0"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-16-cell-09",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "0"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-16-cell-10",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "0"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-16-cell-11",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "0"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-16-cell-12",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "0"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-16-cell-13",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "0"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-16-cell-14",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "378739"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "id": "combat-row-16-cell-15",
+                "sourceIds": [],
+                "kind": "paragraph",
+                "content": [
+                  {
+                    "text": "0"
+                  }
+                ]
+              }
+            ]
+          ]
+        ]
+      },
+      {
+        "id": "theostone-combat-context",
+        "sourceIds": [],
+        "kind": "note",
+        "label": "One combat example",
+        "tone": "uncertain",
+        "content": [
+          {
+            "text": "The yellow outlines mark the two Theostone rows, not rarity. Freyr’s Wisdom dealt 626,330 damage even though its displayed share rounds to 0%. The source does not supply encounter, build, or duration, so these shares are not universal DPS values."
+          }
+        ]
+      },
+      {
+        "id": "block-0460",
+        "sourceIds": ["block-0460"],
+        "kind": "figure",
+        "figureId": "figure-040"
+      }
+    ]
+  },
+  {
+    "slug": "soul-binding-bind-sync-and-reset",
+    "title": "Soul Binding Bind Sync and Reset",
+    "category": "enhancement",
+    "summary": "Soul Binding controls, rates, added lines, Sync and Reset.",
+    "status": "source-uncertain",
+    "sourceUrl": "https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/edit",
+    "qualifiers": [
+      "The source recommendations and first-person statements are Kanon’s; screenshots are examples from the captured guide.",
+      "Captured update: 9/20/2026. Regional and screenshot-specific values are qualified in the text and image legends."
+    ],
+    "blocks": [
+      {
+        "id": "block-0463",
+        "sourceIds": ["block-0463"],
+        "kind": "heading",
+        "content": [
+          {
+            "text": "D - SOUL BINDING"
+          }
+        ],
+        "level": 2
+      },
+      {
+        "id": "block-0465",
+        "sourceIds": ["block-0465"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Soul Binding is a very simple enhancing system that is unnecessarily confusing at first because of the names. There are 3 different types of Soul Binding - Bind, Sync, and Reset. Soul Binding is relative to your "
+          },
+          {
+            "text": "Stat Lines.",
+            "strong": true
+          }
+        ]
+      },
+      {
+        "id": "block-0467",
+        "sourceIds": ["block-0467"],
+        "kind": "group",
+        "label": "Related source illustrations",
+        "blocks": [
+          {
+            "id": "block-0467-figure-041",
+            "sourceIds": ["block-0467"],
+            "kind": "figure",
+            "figureId": "figure-041"
+          },
+          {
+            "id": "block-0467-figure-042",
+            "sourceIds": ["block-0467"],
+            "kind": "figure",
+            "figureId": "figure-042"
+          }
+        ]
+      },
+      {
+        "id": "binding-controls-context",
+        "sourceIds": [],
+        "kind": "note",
+        "label": "Colored controls",
+        "tone": "context",
+        "content": [
+          {
+            "text": "The source screenshot marks Bind with a yellow box, Sync with a purple box, and Reset with a green box. These are annotations around controls, not numeric stat grades."
+          }
+        ]
+      },
+      {
+        "id": "block-0469",
+        "sourceIds": ["block-0469"],
+        "kind": "heading",
+        "content": [
+          {
+            "text": "Bind"
+          }
+        ],
+        "level": 3
+      },
+      {
+        "id": "block-0470",
+        "sourceIds": ["block-0470"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "“Bind” increases the blue Soul Binding Rate bar that increases the effectiveness of each "
+          },
+          {
+            "text": "Stat Line",
+            "strong": true
+          },
+          {
+            "text": " indicated by the yellow bar. The Blue Soul Binding Rate bar will be 100% when all the yellow lines are 100%. You’ll use Soul Codex books to enhance these. The cost for the books raise each time you enhance. An upgrade is guaranteed but the amount is RNG."
+          }
+        ]
+      },
+      {
+        "id": "block-0472",
+        "sourceIds": ["block-0472"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "After reaching 100% Soul Binding Rate, you’ll be able to add an additional "
+          },
+          {
+            "text": "Stat Line",
+            "strong": true
+          },
+          {
+            "text": " by using 2 Philosopher’s Stones (obtained mainly from Conquest Dungeons). "
+          }
+        ]
+      },
+      {
+        "id": "block-0474",
+        "sourceIds": ["block-0474"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Important: This extra ",
+            "emphasis": true,
+            "highlight": "#f8f9fa"
+          },
+          {
+            "text": "Stat Line",
+            "strong": true,
+            "emphasis": true,
+            "highlight": "#f8f9fa"
+          },
+          {
+            "text": " will not transfer over when transferring gear",
+            "emphasis": true,
+            "highlight": "#f8f9fa"
+          }
+        ]
+      },
+      {
+        "id": "block-0476",
+        "sourceIds": ["block-0476"],
+        "kind": "group",
+        "label": "Related source illustrations",
+        "blocks": [
+          {
+            "id": "block-0476-figure-043",
+            "sourceIds": ["block-0476"],
+            "kind": "figure",
+            "figureId": "figure-043"
+          },
+          {
+            "id": "block-0476-figure-044",
+            "sourceIds": ["block-0476"],
+            "kind": "figure",
+            "figureId": "figure-044"
+          }
+        ]
+      },
+      {
+        "id": "binding-stage-context",
+        "sourceIds": [],
+        "kind": "note",
+        "label": "Binding screenshot stage",
+        "tone": "uncertain",
+        "content": [
+          {
+            "text": "Figures 042 and 043 are separate source placements of the same artwork. Six yellow original lines show 100%; a seventh purple Multi-hit Chance line is at 32% with 11.37%/12.54% shown. The aggregate displays 90.2% at this later stage. No averaging formula is given. Soul Codex 540 is inventory, not the per-action book cost."
+          }
+        ]
+      },
+      {
+        "id": "block-0477",
+        "sourceIds": ["block-0477"],
+        "kind": "figure",
+        "figureId": "figure-045"
+      },
+      {
+        "id": "binding-stone-count",
+        "sourceIds": [],
+        "kind": "note",
+        "label": "Philosopher’s Stone count",
+        "tone": "context",
+        "content": [
+          {
+            "text": "The tooltip shows 12 stones in inventory. The requirement to add a stat line is 2 Philosopher’s Stones from the source prose."
+          }
+        ]
+      },
+      {
+        "id": "block-0479",
+        "sourceIds": ["block-0479"],
+        "kind": "heading",
+        "content": [
+          {
+            "text": "Sync & Reset"
+          }
+        ],
+        "level": 3
+      },
+      {
+        "id": "block-0480",
+        "sourceIds": ["block-0480"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Sync is how you reroll your "
+          },
+          {
+            "text": "Stat Lines.",
+            "strong": true
+          },
+          {
+            "text": " Reset is shuffling all of your "
+          },
+          {
+            "text": "Stat Lines",
+            "strong": true
+          },
+          {
+            "text": " at once. Full breakdown provided in "
+          },
+          {
+            "text": "Chapter 3 - Guide: Ideal Stat Lines",
+            "underline": true,
+            "href": "/articles/stat-line-rerolling-strategy#block-0230"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "gear-transfer-and-material-costs",
+    "title": "Gear transfer and material costs",
+    "category": "enhancement",
+    "summary": "Gear transfer direction, donor consumption, stone recipes and material costs.",
+    "status": "source-uncertain",
+    "sourceUrl": "https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/edit",
+    "qualifiers": [
+      "The source recommendations and first-person statements are Kanon’s; screenshots are examples from the captured guide.",
+      "Captured update: 9/20/2026. Regional and screenshot-specific values are qualified in the text and image legends."
+    ],
+    "blocks": [
+      {
+        "id": "block-0483",
+        "sourceIds": ["block-0483"],
+        "kind": "heading",
+        "content": [
+          {
+            "text": "E - Transfer"
+          }
+        ],
+        "level": 2
+      },
+      {
+        "id": "block-0485",
+        "sourceIds": ["block-0485"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Transfer allows you to transfer your gear to another, hopefully upgraded, piece of gear (notice the extra line from the Philosopher’s says it cannot transfer)"
+          }
+        ]
+      },
+      {
+        "id": "block-0487",
+        "sourceIds": ["block-0487"],
+        "kind": "figure",
+        "figureId": "figure-046"
+      },
+      {
+        "id": "transfer-direction",
+        "sourceIds": [],
+        "kind": "note",
+        "label": "Donor and recipient",
+        "tone": "context",
+        "content": [
+          {
+            "text": "Transfer moves from the right donor to the left recipient. The donor is consumed on success; equipped and Preset gear cannot be used. The left-side values in figures 046 and 052 are the recipient’s existing stats, not a post-transfer result. The dim added donor line says Cannot Transfer."
+          }
+        ]
+      },
+      {
+        "id": "block-0489",
+        "sourceIds": ["block-0489"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Transferring cost “Transfer Stones.” These are obtained by Substance Morphing Transfer Stone Fragments. Other than select shops (such as Season Shop), Transfer Stone Fragments can only be obtained by Substance Morphing Orange/Heroic grade gear. 1 Heroic Gear = 5 Fragments"
+          }
+        ]
+      },
+      {
+        "id": "list-block-0491",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-0491",
+              "sourceIds": ["block-0491"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "10 fragments (2 Heroics) = 1 Transfer Stone Accessory"
+                }
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "id": "list-block-0492",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-0492",
+              "sourceIds": ["block-0492"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "15 fragments (3 Heroics) = 1 Transfer Stone Armor"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0493",
+              "sourceIds": ["block-0493"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "20 fragments (4 Heroics) = 1 Transfer Stone Weapon"
+                }
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "id": "block-0495",
+        "sourceIds": ["block-0495"],
+        "kind": "figure",
+        "figureId": "figure-047"
+      },
+      {
+        "id": "block-0496",
+        "sourceIds": ["block-0496"],
+        "kind": "group",
+        "label": "Source text and illustration",
+        "blocks": [
+          {
+            "id": "block-0496-text",
+            "sourceIds": ["block-0496"],
+            "kind": "paragraph",
+            "content": [
+              {
+                "text": "⬅️",
+                "strong": true
+              }
+            ]
+          },
+          {
+            "id": "block-0496-figure-048",
+            "sourceIds": ["block-0496"],
+            "kind": "figure",
+            "figureId": "figure-048"
+          },
+          {
+            "id": "block-0496-figure-049",
+            "sourceIds": ["block-0496"],
+            "kind": "figure",
+            "figureId": "figure-049"
+          }
+        ]
+      },
+      {
+        "id": "block-0497",
+        "sourceIds": ["block-0497"],
+        "kind": "group",
+        "label": "Source text and illustration",
+        "blocks": [
+          {
+            "id": "block-0497-text",
+            "sourceIds": ["block-0497"],
+            "kind": "paragraph",
+            "content": [
+              {
+                "text": "⬅️",
+                "strong": true
+              }
+            ]
+          },
+          {
+            "id": "block-0497-figure-050",
+            "sourceIds": ["block-0497"],
+            "kind": "figure",
+            "figureId": "figure-050"
+          },
+          {
+            "id": "block-0497-figure-051",
+            "sourceIds": ["block-0497"],
+            "kind": "figure",
+            "figureId": "figure-051"
+          }
+        ]
+      },
+      {
+        "id": "transfer-recipe-pairs",
+        "sourceIds": [],
+        "kind": "note",
+        "label": "Read the two left-arrow recipes",
+        "tone": "context",
+        "content": [
+          {
+            "text": "In the first pair, figure 049 is the fragment input → figure 048 is the completed Armor Transfer Stone output: 15 Heroic fragments are required, and 20/15 shows held/required. In the second pair, figure 051 is Heroic gear input → figure 050 is fragment output: each pictured gear tile yields five fragments."
+          }
+        ]
+      },
+      {
+        "id": "block-0499",
+        "sourceIds": ["block-0499"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "When Transfering Yellow/Unique gear to Orange/Heroic, 5 additional yellow Transfer Stones are required. When transferring an item of the same grade (Yellow to yellow, orange to orange), 1 Transfer Stone of the same grade is required."
+          }
+        ]
+      },
+      {
+        "id": "block-0501",
+        "sourceIds": ["block-0501"],
+        "kind": "figure",
+        "figureId": "figure-052"
+      },
+      {
+        "id": "transfer-material-context",
+        "sourceIds": [],
+        "kind": "note",
+        "label": "Success label versus materials",
+        "tone": "context",
+        "content": [
+          {
+            "text": "The “Heroic << Unique Gear Transfer Successes: 5” status is separate from the material row. The image supports one Heroic stone required, 0 held; and five Unique stones required, 3 held. A same-grade transfer uses one matching-grade stone."
+          }
+        ]
+      },
+      {
+        "id": "block-0503",
+        "sourceIds": ["block-0503"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Yellow/Unique Transfer Stones are obtained the same way as Orange/Heroics but be mindful of the Yellow/Unique gear you turn into Transfer Fragments. The x1 - x5 blue number represents how many Fragments you get from that piece. The higher the Item Level, the more Fragments you get."
+          }
+        ]
+      },
+      {
+        "id": "block-0505",
+        "sourceIds": ["block-0505"],
+        "kind": "figure",
+        "figureId": "figure-053"
+      },
+      {
+        "id": "transfer-fragment-context",
+        "sourceIds": [],
+        "kind": "note",
+        "label": "Fragment yields",
+        "tone": "uncertain",
+        "content": [
+          {
+            "text": "Cyan x1–x5 on the Unique gear tiles are fragment yields. The prose says higher Item Level yields more fragments, but the image gives no numeric Item Level thresholds. The preceding Heroic-only wording is preserved alongside this later Unique-gear explanation."
+          }
+        ]
+      },
+      {
+        "id": "block-0507",
+        "sourceIds": ["block-0507"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Important",
+            "emphasis": true,
+            "underline": true,
+            "highlight": "#f8f9fa"
+          },
+          {
+            "text": ": Be frugal with Orange/Heroic Transfer Stones/Fragments. These are not ",
+            "emphasis": true,
+            "highlight": "#f8f9fa"
+          },
+          {
+            "text": "THAT easy",
+            "emphasis": true,
+            "highlight": "#f8f9fa"
+          },
+          {
+            "text": " come across, if you save thes",
+            "emphasis": true,
+            "highlight": "#f8f9fa"
+          },
+          {
+            "text": "e early on you’ll have a nice supply for later gear",
+            "emphasis": true,
+            "highlight": "#f8f9fa"
+          },
+          {
+            "text": ". Orange/Heroic gear is MUCH more difficult and expensive to upgrade altogether so be sure to only transfer when you’re ready. I personally recommend not transferring or using the first Heroic Set (Ancient Spirit) and wait for the second set before going Orange/Heroic (Faded Shadow) unless additional changes are made to the game. Currently you can NOT upgrade a Yellow/Unique Transfer stone to an Orange/Heroic one. Transferring and Rolling lines on Yellow/Unique is free compared to Orange/Heroic). You need a LOT of Orange/Heroic Transfer Fragments for the future so just horde them early on. ",
+            "emphasis": true,
+            "highlight": "#f8f9fa"
+          }
+        ]
+      },
+      {
+        "id": "next-chapter-transition",
+        "sourceIds": [],
+        "kind": "note",
+        "label": "Source transition",
+        "tone": "context",
+        "content": [
+          {
+            "text": "The following “CHAPTER 6:” is the captured document’s transition marker into Arcana, not an Enhancement mechanic."
+          }
+        ]
+      },
+      {
+        "id": "block-0510",
+        "sourceIds": ["block-0510"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "CHAPTER 6:",
+            "strong": true
+          }
+        ]
+      }
+    ]
+  }
+]

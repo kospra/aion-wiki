@@ -1,0 +1,1333 @@
+[
+  {
+    "id": "figure-026",
+    "sourceId": "block-0418",
+    "sha256": "e85fefc707bfc969f1d30d55e37bf64cec03f9340403d8da2fbe0def00b75599",
+    "src": "/images/guide/e85fefc707bfc969f1d30d55e37bf64cec03f9340403d8da2fbe0def00b75599.png",
+    "width": 475,
+    "height": 740,
+    "alt": "Amplified Enhance screen and sample stat progression. See the labeled text legend for screenshot values and uncertainties.",
+    "caption": "Amplified Enhance screen and sample stat progression",
+    "mappings": [
+      {
+        "label": "Item title",
+        "color": "orange",
+        "visualValue": "+20 Faded Shadow Greaves",
+        "meaning": "Orange/Heroic item at +20; five diamond positions, first two cyan and remaining three dark indicate amplification progress.",
+        "textSourceIds": ["block-0415"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Success Chance",
+        "color": "white; cyan 16.5%, yellow 9%",
+        "visualValue": "25.5% (16.5% + 9%)",
+        "meaning": "Sample chance components; screenshot says success chance increases by 3.0% on failure.",
+        "textSourceIds": ["block-0409", "block-0415"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Base stats",
+        "color": "white",
+        "visualValue": "Defense 1101; HP 629",
+        "meaning": "Item base stats for this illustration.",
+        "textSourceIds": ["block-0409"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Amplify preview",
+        "color": "orange values, green increases",
+        "visualValue": "Defense 160 → 240 (+80); HP 160 → 240 (+80); Defense increase 2% → 3% (+1%); HP increase 2% → 3% (+1%)",
+        "meaning": "Benefits of next displayed amplification.",
+        "textSourceIds": ["block-0409", "block-0415"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Potential line",
+        "color": "yellow",
+        "visualValue": "PvE Damage Tolerance 0.3%",
+        "meaning": "Separate potential stat line also visible under growth stats.",
+        "textSourceIds": ["block-0424", "block-0426"],
+        "confidence": "confirmed"
+      }
+    ],
+    "screenshotOnly": [
+      "Faint warning: Insufficient Amplified Enhance materials; current screenshot alone does not explain the 16.5% baseline or 9% bonus origin."
+    ],
+    "uncertainties": [
+      "Do not universalize 25.5% or +3.0% failure bonus to every level. Source's 60% reset at +15→+16 is text-only, not shown here."
+    ]
+  },
+  {
+    "id": "figure-027",
+    "sourceId": "block-0419",
+    "sha256": "583d52f2408f74765465f5456913befd7202ea7095c775ff853b47830bcd8ecc",
+    "src": "/images/guide/583d52f2408f74765465f5456913befd7202ea7095c775ff853b47830bcd8ecc.png",
+    "width": 182,
+    "height": 138,
+    "alt": "Enhance material cost crop. See the labeled text legend for screenshot values and uncertainties.",
+    "caption": "Enhance material cost crop",
+    "mappings": [
+      {
+        "label": "Enhance Materials",
+        "color": "gray heading; yellow stone",
+        "visualValue": "250 on stone; 8.3K below",
+        "meaning": "UI appears to show 250 required and 8.3K held; required/held reading follows paired material UI convention.",
+        "textSourceIds": ["block-0409", "block-0411"],
+        "confidence": "approximate"
+      }
+    ],
+    "screenshotOnly": [
+      "Numeric values 250 and 8.3K are screenshot-only sample costs/inventory."
+    ],
+    "uncertainties": [
+      "No explicit required/owned labels in crop; do not convert sample cost to universal formula."
+    ]
+  },
+  {
+    "id": "figure-028",
+    "sourceId": "block-0419",
+    "sha256": "95a728ba590daa134b5128f328f9fb4f9f84c7d7129de3c566936268413e9a14",
+    "src": "/images/guide/95a728ba590daa134b5128f328f9fb4f9f84c7d7129de3c566936268413e9a14.png",
+    "width": 405,
+    "height": 67,
+    "alt": "Enhance action and currency price. See the labeled text legend for screenshot values and uncertainties.",
+    "caption": "Enhance action and currency price",
+    "mappings": [
+      {
+        "label": "F Enhance",
+        "color": "gold button",
+        "visualValue": "6,250",
+        "meaning": "Sample Kinah cost of Enhance, paired with figure-027.",
+        "textSourceIds": ["block-0409", "block-0411"],
+        "confidence": "confirmed"
+      }
+    ],
+    "screenshotOnly": ["Keyboard shortcut F."],
+    "uncertainties": []
+  },
+  {
+    "id": "figure-029",
+    "sourceId": "block-0420",
+    "sha256": "ad36eee07c04f94963a66ffd98552d76e5764265906ecfaf4007ef6eb3849ef4",
+    "src": "/images/guide/ad36eee07c04f94963a66ffd98552d76e5764265906ecfaf4007ef6eb3849ef4.png",
+    "width": 273,
+    "height": 142,
+    "alt": "Amplified Enhance material cost crop. See the labeled text legend for screenshot values and uncertainties.",
+    "caption": "Amplified Enhance material cost crop",
+    "mappings": [
+      {
+        "label": "Amplified Enhance Materials",
+        "color": "gray heading; orange stone",
+        "visualValue": "15 on stone; 41 below",
+        "meaning": "Appears to show 15 required and 41 owned Amplify Stones.",
+        "textSourceIds": ["block-0409", "block-0413", "block-0415"],
+        "confidence": "approximate"
+      }
+    ],
+    "screenshotOnly": ["Displayed item and numeric resource counts."],
+    "uncertainties": [
+      "No explicit required/owned labels; exact level of this sample not identified."
+    ]
+  },
+  {
+    "id": "figure-030",
+    "sourceId": "block-0420",
+    "sha256": "822d642d2964f6fe6084efb3c9d626ace213f0d00acf6bf41803dc9f943e3c15",
+    "src": "/images/guide/822d642d2964f6fe6084efb3c9d626ace213f0d00acf6bf41803dc9f943e3c15.png",
+    "width": 407,
+    "height": 60,
+    "alt": "Amplified Enhance action and currency price. See the labeled text legend for screenshot values and uncertainties.",
+    "caption": "Amplified Enhance action and currency price",
+    "mappings": [
+      {
+        "label": "F Amplified Enhance",
+        "color": "gold button",
+        "visualValue": "2,000,000",
+        "meaning": "Sample Kinah price paired with figure-029.",
+        "textSourceIds": ["block-0409", "block-0413", "block-0415"],
+        "confidence": "confirmed"
+      }
+    ],
+    "screenshotOnly": ["F shortcut and 2,000,000 price."],
+    "uncertainties": []
+  },
+  {
+    "id": "figure-031",
+    "sourceId": "block-0429",
+    "sha256": "2da8b1d286e0422ed2b0be0819eb0e902d5007a33bffb65a68cebfcd00f4b8c3",
+    "src": "/images/guide/2da8b1d286e0422ed2b0be0819eb0e902d5007a33bffb65a68cebfcd00f4b8c3.png",
+    "width": 446,
+    "height": 911,
+    "alt": "Potential Enhance preview and material count. See the labeled text legend for screenshot values and uncertainties.",
+    "caption": "Potential Enhance preview and material count",
+    "mappings": [
+      {
+        "label": "Item title",
+        "color": "orange",
+        "visualValue": "+20 Lava Heart Cloak",
+        "meaning": "Potential applied to a cloak; orange title follows Heroic convention.",
+        "textSourceIds": ["block-0424", "block-0425", "block-0426"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Success Chance",
+        "color": "white; cyan full bar",
+        "visualValue": "100%",
+        "meaning": "Displayed potential enhancement is guaranteed.",
+        "textSourceIds": ["block-0425", "block-0426"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Base / growth stats",
+        "color": "white base; orange growth",
+        "visualValue": "Defense 1016; HP 581; Defense 160; HP 160; Defense increase 2%; HP increase 2%",
+        "meaning": "Separates previous gear growth from yellow potential line.",
+        "textSourceIds": ["block-0409", "block-0426"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "PvE Damage Tol...",
+        "color": "yellow; green increase",
+        "visualValue": "0.9% → 1.2%, +0.3%",
+        "meaning": "Potential preview increases PvE Damage Tolerance.",
+        "textSourceIds": ["block-0424", "block-0426"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Potential Enhance Material",
+        "color": "gray label, teal stone",
+        "visualValue": "8 on icon; 12 below",
+        "meaning": "Appears to show 8 required, 12 owned.",
+        "textSourceIds": ["block-0425"],
+        "confidence": "approximate"
+      }
+    ],
+    "screenshotOnly": [
+      "Potential growth sample and 100% chance; 5 diamond positions with first two cyan."
+    ],
+    "uncertainties": [
+      "Label is truncated in image; PvE Damage Tolerance expanded by source block-0424. Material count roles inferred from UI placement."
+    ]
+  },
+  {
+    "id": "figure-032",
+    "sourceId": "block-0429",
+    "sha256": "982d34c95e236403292c6defb001c751cb683d3c8790932aa2f903b30edc3c7e",
+    "src": "/images/guide/982d34c95e236403292c6defb001c751cb683d3c8790932aa2f903b30edc3c7e.png",
+    "width": 450,
+    "height": 88,
+    "alt": "Five-star accessory potential stone tooltip crop. See the labeled text legend for screenshot values and uncertainties.",
+    "caption": "Five-star accessory potential stone tooltip crop",
+    "mappings": [
+      {
+        "label": "ntial Stone: Accessory [★★★★★] (",
+        "color": "teal/cyan",
+        "visualValue": "5 stars",
+        "meaning": "Visible five-star Potential Stone accessory tier supports tier explanation; enlarged crop verified exactly five stars.",
+        "textSourceIds": ["block-0425"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Special Potential Enha...",
+        "color": "teal Special, white remainder",
+        "visualValue": "truncated type",
+        "meaning": "Partial tooltip classification.",
+        "textSourceIds": ["block-0425"],
+        "confidence": "confirmed"
+      }
+    ],
+    "screenshotOnly": [
+      "Title left edge and suffix cropped; gold stone illustration partly visible."
+    ],
+    "uncertainties": [
+      "Do not fabricate complete bound suffix or hidden tooltip."
+    ]
+  },
+  {
+    "id": "figure-033",
+    "sourceId": "block-0430",
+    "sha256": "c565b7d5a5b01fe5ab4d71225cbc0e56c8c3e1f6c8e714039b59dcac4a532287",
+    "src": "/images/guide/c565b7d5a5b01fe5ab4d71225cbc0e56c8c3e1f6c8e714039b59dcac4a532287.png",
+    "width": 2048,
+    "height": 764,
+    "alt": "Substance Morph potential recipes and material selection. See the labeled text legend for screenshot values and uncertainties.",
+    "caption": "Substance Morph potential recipes and material selection",
+    "mappings": [
+      {
+        "label": "Potential Stone: Weapon [★]",
+        "color": "cyan",
+        "visualValue": "Quantity to Receive: 2; 100%",
+        "meaning": "Visible one-star weapon recipe.",
+        "textSourceIds": ["block-0425", "block-0426"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Potential Stone: Armor [★]",
+        "color": "cyan",
+        "visualValue": "Quantity to Receive: 4; 100%",
+        "meaning": "Visible one-star armor recipe.",
+        "textSourceIds": ["block-0425", "block-0426"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Potential Stone: Accessory [★]",
+        "color": "cyan",
+        "visualValue": "Quantity to Receive: 4; 100%",
+        "meaning": "Visible one-star accessory recipe.",
+        "textSourceIds": ["block-0425", "block-0426"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Potential Stone: Weapon [★★]",
+        "color": "cyan",
+        "visualValue": "Quantity to Receive: 1; 100%",
+        "meaning": "Visible two-star weapon recipe.",
+        "textSourceIds": ["block-0425", "block-0426"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Selected Accessory [★★] (Bound)",
+        "color": "cyan highlighted row",
+        "visualValue": "Quantity to Receive: 4; 100%",
+        "meaning": "Selected two-star accessory recipe, scrolling title partly cut but tier and Bound visible.",
+        "textSourceIds": ["block-0425", "block-0426"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Next accessory / weapon recipe rows",
+        "color": "cyan",
+        "visualValue": "Accessory [★★... Quantity 1; Weapon [★★★... Quantity 4; each 100%",
+        "meaning": "Further tiers visible but names/tier endings ellipsized.",
+        "textSourceIds": ["block-0425", "block-0426"],
+        "confidence": "approximate"
+      },
+      {
+        "label": "Multiple Selected Materials",
+        "color": "white; cyan overlays on gold item tiles",
+        "visualValue": "4 item tiles, each x1",
+        "meaning": "Four inputs support selected recipe's quantity 4.",
+        "textSourceIds": ["block-0425", "block-0426"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Success Chance",
+        "color": "cyan",
+        "visualValue": "100%",
+        "meaning": "Selected morph recipe success probability.",
+        "textSourceIds": ["block-0425", "block-0426"],
+        "confidence": "confirmed"
+      }
+    ],
+    "screenshotOnly": [
+      "Navigation All (selected), Special, Wings, Gear, Gatherable Material, Decor. Secondary All; Select All unchecked, adjacent gear-inclusion checkbox checked (label partly obscured). Currency top: 38 and two 48,025,586 counts."
+    ],
+    "uncertainties": [
+      "Higher tier row endings truncated; do not claim full star counts past what is visible. Currency identities not legible from icons alone."
+    ]
+  },
+  {
+    "id": "figure-034",
+    "sourceId": "block-0436",
+    "sha256": "abba02100ca090ae1069b20f33a6923bd205fcba9c7382d65ef4234e51055068",
+    "src": "/images/guide/abba02100ca090ae1069b20f33a6923bd205fcba9c7382d65ef4234e51055068.png",
+    "width": 832,
+    "height": 382,
+    "alt": "Superior Manastone tooltip and inventory. See the labeled text legend for screenshot values and uncertainties.",
+    "caption": "Superior Manastone tooltip and inventory",
+    "mappings": [
+      {
+        "label": "Superior Manastone / Common Manastone",
+        "color": "white",
+        "visualValue": "18",
+        "meaning": "Superior item name; tooltip class is Common Manastone, distinct from roll-quality names.",
+        "textSourceIds": ["block-0434"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Tooltip function",
+        "color": "white",
+        "visualValue": "Can be engraved on Manastone slots in all weapons and armor to imbue them with stats. The type and value of the stats are determined by chance.",
+        "meaning": "Direct image support for weapon/armor random stat socketing.",
+        "textSourceIds": ["block-0434"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Manastone / Soulstone grid",
+        "color": "gray/dark and green tiles, selected gold border",
+        "visualValue": "Rows: 96,87,53,1,34 / 12,5,17,3,7 / 4,1,18,6,4 / 6",
+        "meaning": "Inventory examples; selected 18 matches tooltip quantity.",
+        "textSourceIds": ["block-0434"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Lower-right currency",
+        "color": "white",
+        "visualValue": "34(612)",
+        "meaning": "Visible tooltip value; meaning not explained.",
+        "textSourceIds": ["block-0434"],
+        "confidence": "unresolved"
+      }
+    ],
+    "screenshotOnly": [
+      "Grid screenshot includes multiple stone appearances and tiers, with selected Superior Manastone."
+    ],
+    "uncertainties": [
+      "Do not infer market prices or item names for unlabeled icons."
+    ]
+  },
+  {
+    "id": "figure-035",
+    "sourceId": "block-0438",
+    "sha256": "85e62d622d816f50e48e6d49eae3cbd889546f86573da7221078963acbcb0325",
+    "src": "/images/guide/85e62d622d816f50e48e6d49eae3cbd889546f86573da7221078963acbcb0325.png",
+    "width": 502,
+    "height": 698,
+    "alt": "Five randomized engraving lines on Heroic pauldrons. See the labeled text legend for screenshot values and uncertainties.",
+    "caption": "Five randomized engraving lines on Heroic pauldrons",
+    "mappings": [
+      {
+        "label": "Item title",
+        "color": "orange",
+        "visualValue": "+20 Faded Shadow Pauldrons",
+        "meaning": "Sample five-line item.",
+        "textSourceIds": ["block-0434"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Accuracy Bonus",
+        "color": "green",
+        "visualValue": "+7",
+        "meaning": "Basic green engraving line.",
+        "textSourceIds": ["block-0434"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "HP / Critical Hit Resist / Front Attack Damage Boost",
+        "color": "yellow",
+        "visualValue": "+160 / +15 / +100",
+        "meaning": "Three yellow lines including desired boost +100.",
+        "textSourceIds": [
+          "block-0434",
+          "block-0440",
+          "block-0441",
+          "block-0442",
+          "block-0445"
+        ],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Critical Hit",
+        "color": "green",
+        "visualValue": "+7",
+        "meaning": "Fifth engraving line.",
+        "textSourceIds": ["block-0434"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Engraving warning / stone count",
+        "color": "white",
+        "visualValue": "Engraving will change the current engraving effects.; 1",
+        "meaning": "One stone rerolls the current effects; image has five lines.",
+        "textSourceIds": ["block-0434", "block-0449"],
+        "confidence": "confirmed"
+      }
+    ],
+    "screenshotOnly": ["Exact five-line example."],
+    "uncertainties": []
+  },
+  {
+    "id": "figure-036",
+    "sourceId": "block-0438",
+    "sha256": "fb1e081b8dc7c27d8c5ac0a14c8fcf24fc774d824a21be375fd0bcef9b76a3b0",
+    "src": "/images/guide/fb1e081b8dc7c27d8c5ac0a14c8fcf24fc774d824a21be375fd0bcef9b76a3b0.png",
+    "width": 903,
+    "height": 774,
+    "alt": "Superior Manastone roll-quality odds and yellow stat table. See the labeled text legend for screenshot values and uncertainties.",
+    "caption": "Superior Manastone roll-quality odds and yellow stat table",
+    "mappings": [
+      {
+        "label": "Basic / Superior / Ultimate",
+        "color": "green / blue / yellow",
+        "visualValue": "50.000000% / 35.000000% / 15.000000%",
+        "meaning": "These are roll-quality probabilities for a Superior Manastone; Ultimate tab selected.",
+        "textSourceIds": ["block-0434", "block-0440"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Attack",
+        "color": "yellow",
+        "visualValue": "+10; Probability to Acquire 1.500000%",
+        "meaning": "Screenshot supports +10 attack placeholder recommendation.",
+        "textSourceIds": ["block-0441", "block-0442"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Defense",
+        "color": "yellow",
+        "visualValue": "+100; 1.500000%",
+        "meaning": "Displayed yellow stat outcome.",
+        "textSourceIds": ["block-0434"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Accuracy Bonus / Evasion Bonus / Critical Hit / Critical Hit Resist",
+        "color": "yellow",
+        "visualValue": "+15 each; 1.500000% each",
+        "meaning": "Displayed yellow stat outcomes.",
+        "textSourceIds": ["block-0434"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Block",
+        "color": "yellow",
+        "visualValue": "+20; 1.500000%",
+        "meaning": "Displayed yellow stat outcome.",
+        "textSourceIds": ["block-0434"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "HP / MP",
+        "color": "yellow",
+        "visualValue": "+160 / +80; 2.062500% each",
+        "meaning": "Displayed yellow stat outcomes.",
+        "textSourceIds": ["block-0434"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Damage Boost",
+        "color": "yellow",
+        "visualValue": "+100; 0.075000%",
+        "meaning": "Displayed boost outcome probability.",
+        "textSourceIds": ["block-0440", "block-0445"],
+        "confidence": "confirmed"
+      }
+    ],
+    "screenshotOnly": [
+      "Table columns Stats, Values, Probability to Acquire and scrollbar."
+    ],
+    "uncertainties": [
+      "Prose calls yellow lines yellow/unique; screenshot quality tab calls them Ultimate. Preserve terminology context rather than silently equating gear and roll tiers. Blue +30 is prose-only here."
+    ]
+  },
+  {
+    "id": "figure-037",
+    "sourceId": "block-0447",
+    "sha256": "39f781245b4b8427d7a3e5544efaefa2e2b4ecb369ee8a964d9532969aa28755",
+    "src": "/images/guide/39f781245b4b8427d7a3e5544efaefa2e2b4ecb369ee8a964d9532969aa28755.png",
+    "width": 772,
+    "height": 272,
+    "alt": "Yellow boost outcome table continuation. See the labeled text legend for screenshot values and uncertainties.",
+    "caption": "Yellow boost outcome table continuation",
+    "mappings": [
+      {
+        "label": "Damage Boost / Weapon Damage Boost / Critical Damage Boost",
+        "color": "yellow",
+        "visualValue": "+100 each; 0.075000% each",
+        "meaning": "Supports +100=1% text; table probabilities same despite different recommendation priority.",
+        "textSourceIds": ["block-0440", "block-0445"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Back Attack Damage Bo... / Front Attack Damage Bo...",
+        "color": "yellow",
+        "visualValue": "+100 each; 0.075000% each",
+        "meaning": "Truncated UI names linked to full Front/Back Damage Boost prose labels.",
+        "textSourceIds": ["block-0440", "block-0445"],
+        "confidence": "confirmed"
+      }
+    ],
+    "screenshotOnly": [
+      "All five visible rows share probability and value; preserve probability table independently from recommended ranking."
+    ],
+    "uncertainties": []
+  },
+  {
+    "id": "figure-038",
+    "sourceId": "block-0454",
+    "sha256": "94b2639fb3c3840468de8ebd6a487e44cd1c3158842a65a8abebb15f90ca0394",
+    "src": "/images/guide/94b2639fb3c3840468de8ebd6a487e44cd1c3158842a65a8abebb15f90ca0394.png",
+    "width": 839,
+    "height": 433,
+    "alt": "Earth Theostone tooltip and selectable inventory. See the labeled text legend for screenshot values and uncertainties.",
+    "caption": "Earth Theostone tooltip and selectable inventory",
+    "mappings": [
+      {
+        "label": "Theostone: Freyr’s...",
+        "color": "blue title; equipped E",
+        "visualValue": "1",
+        "meaning": "Name truncated in tooltip; figure-039 separately displays Freyr's Wisdom.",
+        "textSourceIds": ["block-0453", "block-0455"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Detailed Effects",
+        "color": "white",
+        "visualValue": "5% chance to deal 2000 Earth damage to a single target on attack; Effect Activation Cooldown: 1s",
+        "meaning": "Specific proc effect example.",
+        "textSourceIds": ["block-0453", "block-0455"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Identical Theostones rule",
+        "color": "white",
+        "visualValue": "Only one Theostone's effect applies when identical Theostones are engraved.",
+        "meaning": "Supports nonstacking rule.",
+        "textSourceIds": ["block-0453"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Engravable Item",
+        "color": "white",
+        "visualValue": "Weapons",
+        "meaning": "Valid socketing target.",
+        "textSourceIds": ["block-0453"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Weapon Theostone grid",
+        "color": "blue / green / yellow tile backgrounds",
+        "visualValue": "First three rows: 1,1,1,1,2 / 2,1,1,3,3 / 2,3,3,2,2",
+        "meaning": "Inventory quantities; equipped tile marked E, yellow border, cyan selection arrow.",
+        "textSourceIds": ["block-0453", "block-0455"],
+        "confidence": "confirmed"
+      }
+    ],
+    "screenshotOnly": [
+      "Lower yellow-tier tile rows are dark and do not expose legible quantities; illustrated icons differ by effect."
+    ],
+    "uncertainties": [
+      "Tooltip name incomplete; do not reconstruct as certain from proximity alone."
+    ]
+  },
+  {
+    "id": "figure-039",
+    "sourceId": "block-0457",
+    "sha256": "a58d539f681115f0823a62aee72c84a0aec829afd195688f76156cfeecddd770",
+    "src": "/images/guide/a58d539f681115f0823a62aee72c84a0aec829afd195688f76156cfeecddd770.png",
+    "width": 1040,
+    "height": 643,
+    "alt": "Combat damage breakdown highlighting small Theostone share. See the labeled text legend for screenshot values and uncertainties.",
+    "caption": "Combat damage breakdown highlighting small Theostone share",
+    "mappings": [
+      {
+        "label": "Theostone: Traufnir's Courage",
+        "color": "yellow outline; cyan total",
+        "visualValue": "HIT 10; ACC100%; CRI100%; PERF50%; DOUB90%; FRNT100%; BACK0%; MULT0%; BLOC0%; INVC0%; ENDR0%; RSTO0%; Total Damage 1,540,938 (1%)",
+        "meaning": "First highlighted Theostone sample contributes 1% of shown damage.",
+        "textSourceIds": ["block-0455"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Theostone: Freyr's Wisdom",
+        "color": "yellow outline; cyan total",
+        "visualValue": "HIT24; ACC100%; CRI71%; PERF54%; DOUB92%; FRNT100%; BACK0%; MULT0%; BLOC0%; INVC0%; ENDR0%; RSTO0%; Total Damage 626,330 (0%)",
+        "meaning": "Second highlighted Theostone has displayed rounded 0%; damage is nonzero.",
+        "textSourceIds": ["block-0455"],
+        "confidence": "confirmed"
+      }
+    ],
+    "screenshotOnly": [
+      "Full accompanying combat table transcribed separately in combatTable; yellow outlines are author emphasis, not gear rarity.",
+      "Freyr’s Wisdom records 626,330 damage even though the displayed share rounds to 0%."
+    ],
+    "uncertainties": [
+      "This is one combat sample; duration, encounter and build absent. Do not generalize displayed percentages into universal DPS values or call 626,330 literally zero damage. Column acronym expansions not provided."
+    ]
+  },
+  {
+    "id": "figure-040",
+    "sourceId": "block-0460",
+    "sha256": "db82aa0a44cd8fc719cbbfd17b68b65ef4014c5783b2705e6f8660f6f659d544",
+    "src": "/images/guide/db82aa0a44cd8fc719cbbfd17b68b65ef4014c5783b2705e6f8660f6f659d544.png",
+    "width": 692,
+    "height": 364,
+    "alt": "Earth Theostone cosmetic weapon glow. See the labeled text legend for screenshot values and uncertainties.",
+    "caption": "Earth Theostone cosmetic weapon glow",
+    "mappings": [
+      {
+        "label": "Two gauntlet weapons",
+        "color": "gold/yellow glow, pale gold floating fragments",
+        "visualValue": "No numeric labels",
+        "meaning": "Source identifies this as Earth Theostone glow on a character's weapons.",
+        "textSourceIds": ["block-0455"],
+        "confidence": "confirmed"
+      }
+    ],
+    "screenshotOnly": [
+      "Character in dark clothing with pale hair; glowing weapon edges and yellow floating particles."
+    ],
+    "uncertainties": []
+  },
+  {
+    "id": "figure-041",
+    "sourceId": "block-0467",
+    "sha256": "b773d88919bb8918da5634bf6aa5118c033380186fcb2b25223aac9ac74a9169",
+    "src": "/images/guide/b773d88919bb8918da5634bf6aa5118c033380186fcb2b25223aac9ac74a9169.png",
+    "width": 488,
+    "height": 348,
+    "alt": "Color-annotated Soul Binding controls. See the labeled text legend for screenshot values and uncertainties.",
+    "caption": "Color-annotated Soul Binding controls",
+    "mappings": [
+      {
+        "label": "Bind",
+        "color": "yellow rectangular outline",
+        "visualValue": "top control",
+        "meaning": "Matches Bind subsection; use color+label, not numbered steps.",
+        "textSourceIds": ["block-0465", "block-0470"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Sync",
+        "color": "purple rectangular outline",
+        "visualValue": "middle control",
+        "meaning": "Matches reroll Stat Lines action.",
+        "textSourceIds": ["block-0465", "block-0480"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Reset",
+        "color": "green rectangular outline",
+        "visualValue": "bottom control",
+        "meaning": "Matches reshuffle all Stat Lines action.",
+        "textSourceIds": ["block-0465", "block-0480"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Soul Codex icon / item title",
+        "color": "white quantity; orange title",
+        "visualValue": "540; +20 Splendent Nemesis Drago...",
+        "meaning": "Book icon matches figure-044 tooltip; full item suffix truncated.",
+        "textSourceIds": ["block-0470"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Action description",
+        "color": "white",
+        "visualValue": "Soul Binding will enhance the effects.",
+        "meaning": "Visible selected Bind action.",
+        "textSourceIds": ["block-0470"],
+        "confidence": "confirmed"
+      }
+    ],
+    "screenshotOnly": ["Colored rectangular boxes are annotation overlays."],
+    "uncertainties": [
+      "No image numbers 1/2/3; do not invent numbered callouts. Full item title truncated."
+    ]
+  },
+  {
+    "id": "figure-042",
+    "sourceId": "block-0467",
+    "sha256": "807de73b861256353f4598512eb9e8e4b4b0b91c6f2fb7cc6e1c1f280a81ccca",
+    "src": "/images/guide/807de73b861256353f4598512eb9e8e4b4b0b91c6f2fb7cc6e1c1f280a81ccca.png",
+    "width": 485,
+    "height": 589,
+    "alt": "Original gold stat lines and purple added line. See the labeled text legend for screenshot values and uncertainties.",
+    "caption": "Original gold stat lines and purple added line",
+    "mappings": [
+      {
+        "label": "Soul Binding Rate",
+        "color": "cyan/blue bar",
+        "visualValue": "90.2%",
+        "meaning": "Aggregate shown below full after extra line exists.",
+        "textSourceIds": ["block-0470", "block-0472"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Might",
+        "color": "yellow bar",
+        "visualValue": "111/111 (100%)",
+        "meaning": "Completed original stat line.",
+        "textSourceIds": ["block-0470"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Combat Speed",
+        "color": "yellow bar",
+        "visualValue": "17.67%/17.67% (100%)",
+        "meaning": "Completed original stat line.",
+        "textSourceIds": ["block-0470"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Precision",
+        "color": "yellow bar",
+        "visualValue": "111/111 (100%)",
+        "meaning": "Completed original stat line.",
+        "textSourceIds": ["block-0470"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Damage Boost",
+        "color": "yellow bar",
+        "visualValue": "7.98%/7.98% (100%)",
+        "meaning": "Completed original stat line.",
+        "textSourceIds": ["block-0470"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Attack",
+        "color": "yellow bar",
+        "visualValue": "48/48 (100%)",
+        "meaning": "Completed original stat line.",
+        "textSourceIds": ["block-0470"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Weapon Damage Boost",
+        "color": "yellow bar",
+        "visualValue": "19.14%/19.14% (100%)",
+        "meaning": "Completed original stat line.",
+        "textSourceIds": ["block-0470"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Multi-hit Chance",
+        "color": "purple bar, purple star",
+        "visualValue": "11.37%/12.54% (32%)",
+        "meaning": "Extra stat line at 32%; source describes added line unlocked after original binding reaches 100%.",
+        "textSourceIds": ["block-0472", "block-0474"],
+        "confidence": "confirmed"
+      }
+    ],
+    "screenshotOnly": [
+      "Six original yellow lines 100%; purple seventh line 32%."
+    ],
+    "uncertainties": [
+      "Text says blue rate 100% when yellow lines 100%; this screenshot already has additional purple line, so aggregate is 90.2% despite six gold lines being 100%. Explain stage difference; do not silently alter numbers or assert undocumented averaging formula."
+    ]
+  },
+  {
+    "id": "figure-043",
+    "sourceId": "block-0476",
+    "sha256": "807de73b861256353f4598512eb9e8e4b4b0b91c6f2fb7cc6e1c1f280a81ccca",
+    "src": "/images/guide/807de73b861256353f4598512eb9e8e4b4b0b91c6f2fb7cc6e1c1f280a81ccca.png",
+    "width": 485,
+    "height": 589,
+    "alt": "Repeated Soul Binding stat screenshot beside book tooltip. See the labeled text legend for screenshot values and uncertainties.",
+    "caption": "Repeated Soul Binding stat screenshot beside book tooltip",
+    "mappings": [
+      {
+        "label": "Soul Binding Rate",
+        "color": "cyan/blue bar",
+        "visualValue": "90.2%",
+        "meaning": "Aggregate shown below full after extra line exists.",
+        "textSourceIds": ["block-0470", "block-0472"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Might",
+        "color": "yellow bar",
+        "visualValue": "111/111 (100%)",
+        "meaning": "Completed original stat line.",
+        "textSourceIds": ["block-0470"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Combat Speed",
+        "color": "yellow bar",
+        "visualValue": "17.67%/17.67% (100%)",
+        "meaning": "Completed original stat line.",
+        "textSourceIds": ["block-0470"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Precision",
+        "color": "yellow bar",
+        "visualValue": "111/111 (100%)",
+        "meaning": "Completed original stat line.",
+        "textSourceIds": ["block-0470"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Damage Boost",
+        "color": "yellow bar",
+        "visualValue": "7.98%/7.98% (100%)",
+        "meaning": "Completed original stat line.",
+        "textSourceIds": ["block-0470"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Attack",
+        "color": "yellow bar",
+        "visualValue": "48/48 (100%)",
+        "meaning": "Completed original stat line.",
+        "textSourceIds": ["block-0470"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Weapon Damage Boost",
+        "color": "yellow bar",
+        "visualValue": "19.14%/19.14% (100%)",
+        "meaning": "Completed original stat line.",
+        "textSourceIds": ["block-0470"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Multi-hit Chance",
+        "color": "purple bar, purple star",
+        "visualValue": "11.37%/12.54% (32%)",
+        "meaning": "Extra stat line at 32%; source describes added line unlocked after original binding reaches 100%.",
+        "textSourceIds": ["block-0472", "block-0474"],
+        "confidence": "confirmed"
+      }
+    ],
+    "screenshotOnly": [
+      "Exact SHA256 duplicate of figure-042; original PNG inspected independently, confirms all content."
+    ],
+    "uncertainties": [
+      "Same stage/aggregate caveat as figure-042; preserve both figure occurrences in provenance even if asset storage is deduplicated."
+    ]
+  },
+  {
+    "id": "figure-044",
+    "sourceId": "block-0476",
+    "sha256": "4bf384af3e86a318726dff6322dcd7f012ec3fd79aadece67f1b84b18bd64891",
+    "src": "/images/guide/4bf384af3e86a318726dff6322dcd7f012ec3fd79aadece67f1b84b18bd64891.png",
+    "width": 497,
+    "height": 353,
+    "alt": "Soul Codex tooltip. See the labeled text legend for screenshot values and uncertainties.",
+    "caption": "Soul Codex tooltip",
+    "mappings": [
+      {
+        "label": "Soul Codex (Bound)",
+        "color": "teal heading/background",
+        "visualValue": "540",
+        "meaning": "Book resource used for Bind; inventory quantity, not per-action cost.",
+        "textSourceIds": ["block-0470"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Special Scroll",
+        "color": "teal Special; white Scroll",
+        "visualValue": "A tome with the power to draw out the latent potential within the soul. Increases the binding rate of already bound gear through Soul Binding.",
+        "meaning": "Defines book effect.",
+        "textSourceIds": ["block-0470"],
+        "confidence": "confirmed"
+      }
+    ],
+    "screenshotOnly": [
+      "A cropped 17.67% line and cyan/yellow bars behind tooltip link it to Soul Binding screen."
+    ],
+    "uncertainties": []
+  },
+  {
+    "id": "figure-045",
+    "sourceId": "block-0477",
+    "sha256": "740289f80a401e6f8a3d97286ec49a8446ace35096209ccaba316b0ca025db17",
+    "src": "/images/guide/740289f80a401e6f8a3d97286ec49a8446ace35096209ccaba316b0ca025db17.png",
+    "width": 414,
+    "height": 346,
+    "alt": "Philosopher's Stone tooltip for extra power. See the labeled text legend for screenshot values and uncertainties.",
+    "caption": "Philosopher's Stone tooltip for extra power",
+    "mappings": [
+      {
+        "label": "Philosopher’s Stone: Power (Bou...",
+        "color": "teal heading, magenta stone illustration",
+        "visualValue": "12",
+        "meaning": "Inventory count 12; not the source's cost of 2 stones.",
+        "textSourceIds": ["block-0472", "block-0474"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Special Philosopher’s S...",
+        "color": "teal/white",
+        "visualValue": "A mystical gemstone capable of imbuing equipment with new abilities. Use it on Soul Bound gear to awaken new power.",
+        "meaning": "Describes adding new gear ability.",
+        "textSourceIds": ["block-0472"],
+        "confidence": "confirmed"
+      }
+    ],
+    "screenshotOnly": [
+      "Tooltip title/type truncated; account-bound/share/lock icons visible but unlabeled."
+    ],
+    "uncertainties": [
+      "2-stone requirement and Conquest source come from prose, not this tooltip; do not mistake inventory 12 for required amount."
+    ]
+  },
+  {
+    "id": "figure-046",
+    "sourceId": "block-0487",
+    "sha256": "4835ba1d3ef7033a03e88ea47b6cce6d11a9e6417168a6e614098d4a70ba218d",
+    "src": "/images/guide/4835ba1d3ef7033a03e88ea47b6cce6d11a9e6417168a6e614098d4a70ba218d.png",
+    "width": 977,
+    "height": 876,
+    "alt": "Heroic-to-Heroic transfer UI showing consumed donor and excluded added line. See the labeled text legend for screenshot values and uncertainties.",
+    "caption": "Heroic-to-Heroic transfer UI showing consumed donor and excluded added line",
+    "mappings": [
+      {
+        "label": "Transfer direction",
+        "color": "orange item titles; left-pointing central arrow",
+        "visualValue": "Right +20 Faded Shadow Greaves → left Lava Heart Greaves",
+        "meaning": "Right item donates enhancement/binding and is consumed.",
+        "textSourceIds": ["block-0485", "block-0499"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Success display",
+        "color": "gold count label; white probability",
+        "visualValue": "Seasonal Transfer Success: 2; 100% Success Chance",
+        "meaning": "Displayed transfer status/count, not number of stones.",
+        "textSourceIds": ["block-0485"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Recipient original Soul Binding Rate",
+        "color": "cyan bar",
+        "visualValue": "42.9%",
+        "meaning": "Lava Heart Greaves' pre-transfer state.",
+        "textSourceIds": ["block-0485"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Recipient Accuracy / Constitution / Block / Critical Hit",
+        "color": "cyan bars",
+        "visualValue": "39/51 (14%); 36/44 (38%); 32/44 (8%); 26/31 (55%)",
+        "meaning": "Recipient existing lines, not proof of resulting transferred values.",
+        "textSourceIds": ["block-0485"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Recipient Rampage Boost",
+        "color": "cyan skill name; yellow full bar",
+        "visualValue": "Lv. +1 (100%)",
+        "meaning": "Recipient existing skill line.",
+        "textSourceIds": ["block-0485"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Donor Soul Binding Rate",
+        "color": "yellow full bar",
+        "visualValue": "100.0%",
+        "meaning": "Donor pre-transfer state.",
+        "textSourceIds": ["block-0485"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Donor lines",
+        "color": "yellow full bars",
+        "visualValue": "Attack increase 2.14%/2.14%; Damage Tolerance 11.95%/11.95%; Attack 25/25; Perfect Chance 5.25%/5.25%; Front Defense 221/221; all (100%)",
+        "meaning": "Original donor lines eligible by surrounding source transfer explanation.",
+        "textSourceIds": ["block-0485"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Extra donor line",
+        "color": "dim gray; red Cannot Transfer",
+        "visualValue": "Natural H... 52/52 (100%)",
+        "meaning": "Added Philosopher's line excluded from transfer; label partially occluded.",
+        "textSourceIds": ["block-0474", "block-0485"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Donor warning",
+        "color": "red and white",
+        "visualValue": "This item will be consumed if the transfer is successful. Equipped items and Preset gear cannot be used for Gear Transfer.",
+        "meaning": "Destructive donor behavior and eligibility restrictions from screenshot.",
+        "textSourceIds": ["block-0485"],
+        "confidence": "confirmed"
+      }
+    ],
+    "screenshotOnly": [
+      "UI shows recipient original stats and donor original stats; result preview not shown."
+    ],
+    "uncertainties": [
+      "Full Natural H... label obscured. Do not read pre-transfer recipient stats as transferred result."
+    ]
+  },
+  {
+    "id": "figure-047",
+    "sourceId": "block-0495",
+    "sha256": "07ab90f949f42cb479c2202e371df05c0c092e2098b8a26977cd5b23fd47837e",
+    "src": "/images/guide/07ab90f949f42cb479c2202e371df05c0c092e2098b8a26977cd5b23fd47837e.png",
+    "width": 590,
+    "height": 379,
+    "alt": "Heroic Armor Transfer Stone tooltip. See the labeled text legend for screenshot values and uncertainties.",
+    "caption": "Heroic Armor Transfer Stone tooltip",
+    "mappings": [
+      {
+        "label": "Transfer Stone: Armor (Heroic) (...",
+        "color": "orange heading/background",
+        "visualValue": "Heroic Transfer Stone",
+        "meaning": "Stone specifically for Heroic armor.",
+        "textSourceIds": ["block-0489", "block-0492", "block-0499"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Tooltip effect",
+        "color": "white",
+        "visualValue": "A formidable gemstone that transfers the boundless power of the gear to another. Can be used on the Heroic Armor.",
+        "meaning": "Gear-type restriction.",
+        "textSourceIds": ["block-0489", "block-0492"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Gear Transfer Material",
+        "color": "red quantities",
+        "visualValue": "1 on icon; 0 below",
+        "meaning": "Sample requires 1 and owns 0, consistent same-grade requirement.",
+        "textSourceIds": ["block-0499"],
+        "confidence": "approximate"
+      }
+    ],
+    "screenshotOnly": [
+      "Orange is rarity/type convention; material unavailable in shown inventory."
+    ],
+    "uncertainties": [
+      "Full bound suffix truncated; count roles inferred by placement and shortage color."
+    ]
+  },
+  {
+    "id": "figure-048",
+    "sourceId": "block-0496",
+    "sha256": "64ef009aea4eb2508a6433a6b2dd7c349553aab8d608fd0d12a599595c576476",
+    "src": "/images/guide/64ef009aea4eb2508a6433a6b2dd7c349553aab8d608fd0d12a599595c576476.png",
+    "width": 705,
+    "height": 579,
+    "alt": "Morph output: Heroic Armor Transfer Stone. See the labeled text legend for screenshot values and uncertainties.",
+    "caption": "Morph output: Heroic Armor Transfer Stone",
+    "mappings": [
+      {
+        "label": "Transfer Stone: Armor (Heroic) (...",
+        "color": "orange title",
+        "visualValue": "Success Chance: 100%",
+        "meaning": "Output of morph recipe; HTML arrow points from figure-049 material toward this output.",
+        "textSourceIds": ["block-0489", "block-0492"],
+        "confidence": "confirmed"
+      }
+    ],
+    "screenshotOnly": [
+      "Black/orange complete stone icon contrasts fragment in figure-049."
+    ],
+    "uncertainties": []
+  },
+  {
+    "id": "figure-049",
+    "sourceId": "block-0496",
+    "sha256": "c6bbe3006f7d7b348e6c684de90edd7787f2ed786d05d018022938f63f1eedb2",
+    "src": "/images/guide/c6bbe3006f7d7b348e6c684de90edd7787f2ed786d05d018022938f63f1eedb2.png",
+    "width": 521,
+    "height": 176,
+    "alt": "Morph input for Heroic Armor Transfer Stone. See the labeled text legend for screenshot values and uncertainties.",
+    "caption": "Morph input for Heroic Armor Transfer Stone",
+    "mappings": [
+      {
+        "label": "Transfer Stone Fragment (H...",
+        "color": "orange title/icon",
+        "visualValue": "20/15",
+        "meaning": "20 held / 15 required; 15 required supports armor conversion recipe.",
+        "textSourceIds": ["block-0489", "block-0492"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "HTML left arrow between figures",
+        "color": "black 24pt text",
+        "visualValue": "049 → 048",
+        "meaning": "Input fragment crop on right points to resulting full Armor Transfer Stone on left.",
+        "textSourceIds": ["block-0492"],
+        "confidence": "confirmed"
+      }
+    ],
+    "screenshotOnly": ["Plus button to add material; Material header."],
+    "uncertainties": [
+      "Label suffix truncated; owned/required interpretation supported by source's explicit 15-fragment cost."
+    ]
+  },
+  {
+    "id": "figure-050",
+    "sourceId": "block-0497",
+    "sha256": "6d332b8ea171f65776ac2b250875dcdb2cfaf80c49a8bfadf143001746b34610",
+    "src": "/images/guide/6d332b8ea171f65776ac2b250875dcdb2cfaf80c49a8bfadf143001746b34610.png",
+    "width": 738,
+    "height": 542,
+    "alt": "Morph output: Heroic Transfer Stone Fragment. See the labeled text legend for screenshot values and uncertainties.",
+    "caption": "Morph output: Heroic Transfer Stone Fragment",
+    "mappings": [
+      {
+        "label": "Transfer Stone Fragment (Heroi...",
+        "color": "orange title/icon",
+        "visualValue": "Success Chance: 100%",
+        "meaning": "Result when morphing Heroic equipment; paired inputs figure-051.",
+        "textSourceIds": ["block-0489"],
+        "confidence": "confirmed"
+      }
+    ],
+    "screenshotOnly": [
+      "Broken stone/fragment shape, distinct from completed stone."
+    ],
+    "uncertainties": []
+  },
+  {
+    "id": "figure-051",
+    "sourceId": "block-0497",
+    "sha256": "9e5c1f901b6705e16782c4fa9b41bc6d918b8a4c94cdde85544a584d2b54bedc",
+    "src": "/images/guide/9e5c1f901b6705e16782c4fa9b41bc6d918b8a4c94cdde85544a584d2b54bedc.png",
+    "width": 482,
+    "height": 164,
+    "alt": "Heroic equipment input yields five fragments each. See the labeled text legend for screenshot values and uncertainties.",
+    "caption": "Heroic equipment input yields five fragments each",
+    "mappings": [
+      {
+        "label": "Six Heroic equipment tiles",
+        "color": "orange backgrounds; cyan x5 overlays",
+        "visualValue": "x5 on all six tiles",
+        "meaning": "Each pictured Heroic gear input yields 5 Transfer Stone Fragments.",
+        "textSourceIds": ["block-0489", "block-0503"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "HTML left arrow between figures",
+        "color": "black 24pt text",
+        "visualValue": "051 → 050",
+        "meaning": "Gear inputs on right morph into fragment output on left.",
+        "textSourceIds": ["block-0489"],
+        "confidence": "confirmed"
+      }
+    ],
+    "screenshotOnly": [
+      "Four left equipment tiles include green upward arrows; icons include armor pieces, wing-like item, ring."
+    ],
+    "uncertainties": [
+      "No visible item names or levels; do not assign exact levels from icons."
+    ]
+  },
+  {
+    "id": "figure-052",
+    "sourceId": "block-0501",
+    "sha256": "e046bd06be72558732943c67fa7eaf89c08d2c85c66a57be5fdf2ca7fce7ca73",
+    "src": "/images/guide/e046bd06be72558732943c67fa7eaf89c08d2c85c66a57be5fdf2ca7fce7ca73.png",
+    "width": 1060,
+    "height": 1308,
+    "alt": "Unique-to-Heroic transfer and extra material requirements. See the labeled text legend for screenshot values and uncertainties.",
+    "caption": "Unique-to-Heroic transfer and extra material requirements",
+    "mappings": [
+      {
+        "label": "Transfer direction",
+        "color": "right yellow title; left orange title; leftward arrow",
+        "visualValue": "Duryati Greaves → Lava Heart Greaves",
+        "meaning": "Unique donor into Heroic recipient.",
+        "textSourceIds": ["block-0499"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Transfer success display",
+        "color": "gold label and white chance",
+        "visualValue": "Heroic << Unique Gear Transfer Successes: 5; 100% Success Chance",
+        "meaning": "This 5 is a UI transfer-success count label, distinct from 5 yellow materials.",
+        "textSourceIds": ["block-0499"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Transfer effect and donor warning",
+        "color": "white; red consumption warning",
+        "visualValue": "Transfers Enhance Level and Soul Binding effects. This item will be consumed if the transfer is successful. Equipped items and Preset gear cannot be used for Gear Transfer.",
+        "meaning": "Mechanism and donor eligibility.",
+        "textSourceIds": ["block-0485", "block-0499"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Recipient original Soul Binding Rate",
+        "color": "cyan bar",
+        "visualValue": "42.9%",
+        "meaning": "Lava Heart Greaves' pre-transfer state.",
+        "textSourceIds": ["block-0485"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Recipient Accuracy / Constitution / Block / Critical Hit",
+        "color": "cyan bars",
+        "visualValue": "39/51 (14%); 36/44 (38%); 32/44 (8%); 26/31 (55%)",
+        "meaning": "Recipient existing lines, not proof of resulting transferred values.",
+        "textSourceIds": ["block-0485"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Recipient Rampage Boost",
+        "color": "cyan skill name; yellow full bar",
+        "visualValue": "Lv. +1 (100%)",
+        "meaning": "Recipient existing skill line.",
+        "textSourceIds": ["block-0485"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Unique donor Soul Binding Rate",
+        "color": "cyan bar",
+        "visualValue": "53.9%",
+        "meaning": "Right-hand donor's pre-transfer rate.",
+        "textSourceIds": ["block-0499"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Unique donor MP / Attack",
+        "color": "cyan bars",
+        "visualValue": "60/76 (6%); 13/22 (10%)",
+        "meaning": "Donor current stat values.",
+        "textSourceIds": ["block-0499"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Unique donor Revitalization Contract / Impact Blow",
+        "color": "cyan skill names; yellow bars",
+        "visualValue": "Lv. +1 (100%) each",
+        "meaning": "Donor two skill lines.",
+        "textSourceIds": ["block-0499"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Gear Transfer Material",
+        "color": "orange and yellow tiles, red quantities",
+        "visualValue": "orange: 1 required / 0 held; yellow: 5 required / 3 held",
+        "meaning": "Screenshot corroborates one Heroic stone plus 5 additional Unique stones.",
+        "textSourceIds": ["block-0499"],
+        "confidence": "confirmed"
+      }
+    ],
+    "screenshotOnly": [
+      "Image contains both an unrelated successes:5 label and a required yellow-stone 5, requiring explicit distinction."
+    ],
+    "uncertainties": [
+      "Required/held roles inferred from layout and corroborated by text. These are pre-transfer stats, not result."
+    ]
+  },
+  {
+    "id": "figure-053",
+    "sourceId": "block-0505",
+    "sha256": "bf5617ec1d2bbd7e5623beda4792ad2753f46068ca740afde0cc6c9dac483a81",
+    "src": "/images/guide/bf5617ec1d2bbd7e5623beda4792ad2753f46068ca740afde0cc6c9dac483a81.png",
+    "width": 472,
+    "height": 162,
+    "alt": "Unique gear input fragment yield overlays. See the labeled text legend for screenshot values and uncertainties.",
+    "caption": "Unique gear input fragment yield overlays",
+    "mappings": [
+      {
+        "label": "Top row six equipment tiles",
+        "color": "yellow backgrounds; cyan quantity overlays",
+        "visualValue": "x1, x1, x2, x2, x2, x2 (left to right)",
+        "meaning": "Unique input fragment yields by item.",
+        "textSourceIds": ["block-0503"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Bottom row six equipment tiles",
+        "color": "yellow backgrounds; cyan quantity overlays",
+        "visualValue": "x3, x3, x3, x3, x4, x5 (left to right)",
+        "meaning": "Unique input fragment yields; text links greater Item Level to more fragments.",
+        "textSourceIds": ["block-0503"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Additional icon overlays",
+        "color": "green up arrow; red diamond badges",
+        "visualValue": "green arrow on bottom-left; red badges on top-third and bottom-sixth",
+        "meaning": "Visible item markers not explained in source.",
+        "textSourceIds": ["block-0503"],
+        "confidence": "unresolved"
+      }
+    ],
+    "screenshotOnly": [
+      "Image demonstrates all yields 1–5 without showing numeric Item Levels."
+    ],
+    "uncertainties": [
+      "Do not convert x1–x5 into Item Level or item counts. Badge meanings unprovided."
+    ]
+  }
+]
