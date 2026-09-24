@@ -44,24 +44,19 @@ For production builds on Windows, prefer a checkout and dependencies on WSL's na
 
 ## Validation
 
-Run from the repository root; all checks use committed content, with no network source fetch or ignored research dependency.
+Run from the repository root. All checks use committed content, with no network source fetch or ignored research dependency.
 
 ```bash
-npm run content:generate
-npm run content:check
-npm run verify:content
-npm run lint
-npm run format:check
-npm run typecheck
-npm test -- --pool=vmThreads --maxWorkers=1
-npm run build
-npm run verify:static
-npm run verify:browser -- http://localhost:3000
+npm ci
+npm run check
+npm run build:static
+npx playwright install --with-deps chromium
+npm run verify:browser:all
 ```
 
-`verify:content` runs directly under Node 24 and fails on errors. The tests compare actual source-bearing fields with the independent capture and mutate lost repeated numbers, qualifiers, links, coverage, and figures. The static verifier parses every route as DOM, reconstructs visible source text/style/link fields and revalidates them against the baseline, checks figure legends and uncertainties, and verifies local asset hashes and internal targets. `content:check` detects stale generated search catalogue or source-reference projection data.
+`npm run check` covers catalogue drift, source/content integrity, lint, formatting, types, and unit tests. `build:static` builds the 57 prerendered routes, prepares the standalone 404 page, and verifies source text, figures, internal targets, and publish boundaries. `build:netlify` combines `check` and `build:static` for the native Netlify build. Run `npm run content:generate` only after intentional content edits, then rerun validation; CI checks drift without repairing it.
 
-Browser QA uses a separate WSL Playwright installation, not a product dependency. Set `GUIDE_BROWSER_ROOT` to a directory containing `node_modules/playwright/index.mjs` and its browser environment; by default it uses `.local-tools/wsl-browser`. Provision that environment with Playwright and compatible Chromium if absent. `PLAYWRIGHT_BROWSERS_PATH` and `LD_LIBRARY_PATH` may be supplied explicitly; this workspace has browsers in `browsers` and locally extracted libraries in `libs/usr/lib/x86_64-linux-gnu` under that test directory. The script accepts the preview base URL and writes screenshots and `results.json` into ignored `.local-tools/qa/guide/`. It checks all 57 routes at 375px/1440px plus reading interactions, keyboard access, image loading, and errors. It validates all 78 source highlights (71 in chapters and seven in the source overview) against actual computed background colors and text contrast, and checks representative initial HTML with JavaScript disabled at both widths.
+Browser QA uses the installed Playwright package and Chromium by default. `verify:browser:all` starts and stops a local preview, runs the guide, editorial, and reduced-motion suites, and writes ignored QA output under `.local-tools/qa/`. For an existing WSL browser runtime, set `GUIDE_BROWSER_ROOT=/path/to/browser-runtime` explicitly; only this optional override uses its custom browser or library paths. The hosted Linux workflow installs Chromium with `npx playwright install --with-deps chromium`.
 
 ## Content authoring
 
@@ -75,10 +70,6 @@ Figures live in `app/content/figures/group-{a,b,c}.json`; local originals are un
 
 ## Static hosting
 
-Publish the contents of **`build/client`** to a static host at the site root. Runtime server rendering is disabled. The build produces a directory `index.html` for every known route, for example `articles/gear-anatomy-and-stat-layers/index.html`. The host must resolve both the route and its trailing-slash form to that index, so direct links and refreshes work.
+Publish **`build/client`** at the site root. Known routes have prerendered directory indexes, and the build also writes a standalone `404.html` with a real home link. Netlify configuration preserves HTTP 404 for unknown pages and assets; there is no catch-all HTTP 200 rewrite. No application server or runtime source fetch is required.
 
-React Router also emits `__spa-fallback.html`. Unknown routes reached through the React application show its not-found screen. For direct requests to unknown URLs, an ordinary static host returns its own 404. To show the React not-found screen on those requests, configure that host to serve `__spa-fallback.html` after checking real files and directory indexes, preserving HTTP 404 where supported. The fallback requires JavaScript; known pages already contain their content in HTML.
-
-The default local preview intentionally returns its server 404 for unknown direct URLs. No provider configuration or public deployment is included. No application server, database, authentication, CMS, remote font service, or runtime source fetch is required.
-
-Additional design checks: `GUIDE_BROWSER_ROOT=/path/to/browser-runtime node scripts/verify-editorial.mjs http://localhost:3000` verifies reading typography, search placement, mobile reflow, text-spacing overrides, and styled no-JavaScript rendering. Run `node scripts/verify-reduced-motion.mjs http://localhost:3000` with the same environment to check animation preferences and viewer focus return.
+Use [the deployment runbook](docs/deployment.md) to connect GitHub and Netlify, configure provider checks, validate the first preview, and release or roll back. After a live URL exists, run `npm run verify:deployment -- https://YOUR-DEPLOY-URL.netlify.app` with that operator-supplied URL. The smoke command makes read-only requests and is never scheduled automatically. Local fixture and preview tests do not establish live Netlify behavior until the connected site is checked.

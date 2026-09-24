@@ -20,7 +20,8 @@
     "content:generate": "node scripts/generate-catalogue.ts",
     "content:check": "node scripts/generate-catalogue.ts --check",
     "verify:browser:all": "node scripts/run-browser-checks.mjs",
-    "check": "npm run content:check && npm run verify:content && npm run lint && npm run format:check && npm run typecheck && vitest run --pool=vmThreads --maxWorkers=1"
+    "check": "npm run content:check && npm run verify:content && npm run lint && npm run format:check && npm run typecheck && vitest run --pool=vmThreads --maxWorkers=1",
+    "verify:deployment": "node scripts/verify-deployment.mjs"
   },
   "dependencies": {
     "@chakra-ui/react": "3.37.0",
