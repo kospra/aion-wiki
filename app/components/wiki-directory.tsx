@@ -9,24 +9,22 @@ export function WikiDirectory({
 }): React.JSX.Element {
   const [query, setQuery] = useState('');
   const [category, setCategory] = useState(initialCategory);
-  const normalizedQuery = query.trim().toLowerCase();
+  const normalizedQuery = query.trim().toLocaleLowerCase();
   const visibleArticles = articles.filter(
     (article) =>
       (category === 'all' || article.category === category) &&
-      `${article.title} ${article.summary}`
-        .toLowerCase()
-        .includes(normalizedQuery),
+      article.searchText.toLocaleLowerCase().includes(normalizedQuery),
   );
 
   return (
     <section className="wiki-directory" aria-labelledby="directory-title">
       <div className="wiki-directory__heading">
         <div>
-          <p className="eyebrow">Browse the archive</p>
+          <p className="eyebrow">Browse the guide</p>
           <h2 id="directory-title">Article directory</h2>
         </div>
         <p className="wiki-directory__note">
-          All entries shown here are sample content.
+          Search titles, source text, and details visible in figures.
         </p>
       </div>
       <div className="wiki-directory__controls">
@@ -36,7 +34,7 @@ export function WikiDirectory({
           type="search"
           value={query}
           onChange={(event) => setQuery(event.target.value)}
-          placeholder="Search titles and summaries"
+          placeholder="Search the full guide"
         />
         <div
           className="wiki-directory__filters"

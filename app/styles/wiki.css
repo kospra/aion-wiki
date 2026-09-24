@@ -224,24 +224,6 @@
   color: var(--muted);
   font-size: 0.86rem;
 }
-.sample-badge {
-  display: inline-block;
-  color: var(--muted);
-  font-size: 0.64rem;
-  font-weight: 550;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-}
-.sample-badge::before {
-  content: '';
-  display: inline-block;
-  width: 5px;
-  height: 5px;
-  margin-right: 0.5rem;
-  vertical-align: 0.15em;
-  background: var(--accent);
-  transform: rotate(45deg);
-}
 .category-overview__arrow {
   position: absolute;
   bottom: 1.5rem;
@@ -365,9 +347,6 @@
   font-size: 0.82rem;
   margin-bottom: 1.75rem;
 }
-.article-card .sample-badge {
-  margin-top: auto;
-}
 .article-card__arrow {
   position: absolute;
   right: 1.5rem;
@@ -422,29 +401,6 @@
 .article-page .content-page__header {
   padding-bottom: 2.5rem;
   border-bottom: 1px solid var(--line-gold);
-}
-.sample-notice {
-  margin-top: 2rem;
-  padding: 1.25rem 1.5rem;
-  border-left: 2px solid var(--accent);
-  background: var(--surface);
-  font-size: 0.82rem;
-}
-.sample-notice .sample-badge {
-  display: block;
-  margin-bottom: 0.6rem;
-  color: var(--accent);
-}
-.article-page__sections section {
-  margin-bottom: 3rem;
-}
-.article-page__sections h2 {
-  font-size: 1.85rem;
-  margin-bottom: 1.25rem;
-}
-.article-page__sections p {
-  line-height: 1.9;
-  color: var(--muted);
 }
 @media (max-width: 1050px) {
   .hero__content {
@@ -522,5 +478,134 @@
   }
   .wiki-directory__controls {
     padding: 1rem;
+  }
+}
+
+/* Complete-guide navigation and source context */
+.site-header__inner {
+  padding-block: 0.8rem;
+}
+.site-header nav {
+  align-items: flex-start;
+}
+.site-header__links {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 0.05rem 0.8rem;
+}
+.site-header__links a {
+  min-width: 0;
+  padding: 0.2rem 0;
+  line-height: 1.3;
+}
+.site-header__number {
+  flex: none;
+  margin-right: 0.35rem;
+  color: var(--accent);
+  font-variant-numeric: tabular-nums;
+}
+.site-header__links .site-header__source {
+  grid-column: 6;
+  color: var(--accent);
+}
+.site-header__toggle {
+  display: none;
+}
+.category-overview__status,
+.article-card__status {
+  display: inline-block;
+  margin-top: auto;
+  color: var(--accent);
+  font-size: 0.67rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.source-status,
+.source-link-notes {
+  margin-top: 1.75rem;
+  padding: 1.1rem 1.3rem;
+  border-left: 2px solid var(--accent);
+  background: var(--surface);
+  color: var(--muted);
+}
+.source-status strong {
+  display: block;
+  margin-bottom: 0.4rem;
+  color: var(--accent);
+}
+.source-status p,
+.source-credit {
+  margin-bottom: 0.35rem;
+  font-size: 0.84rem;
+}
+.source-credit {
+  margin-top: 1.25rem;
+}
+.article-page .article-contents {
+  margin-bottom: 2rem;
+}
+.article-pager {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 4rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--line-gold);
+}
+.article-pager a {
+  max-width: 45%;
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+}
+.source-link-notes h2 {
+  font-size: 1.3rem;
+}
+@media (max-width: 1150px) {
+  .site-header__links {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  .site-header__links .site-header__source {
+    grid-column: 4;
+  }
+}
+@media (max-width: 760px) {
+  .site-header nav {
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+  .site-header__toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 0.45rem 0.8rem;
+    border: 1px solid var(--line-gold);
+    background: var(--surface);
+    color: var(--accent);
+  }
+  .site-header__links {
+    display: none;
+    flex-basis: 100%;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding: 0.8rem 0 0.25rem;
+  }
+  .site-header__links--open {
+    display: grid;
+  }
+  .site-header__links .site-header__source {
+    grid-column: 1 / -1;
+  }
+}
+@media (max-width: 390px) {
+  .site-header__links {
+    grid-template-columns: 1fr;
+  }
+  .article-pager {
+    flex-direction: column;
+  }
+  .article-pager a {
+    max-width: 100%;
   }
 }

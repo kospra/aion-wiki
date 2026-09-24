@@ -1,0 +1,74 @@
+[
+  {
+    "chapter": 1,
+    "slug": "gear-and-basics-explained",
+    "title": "Gear and basics explained",
+    "description": "Equipment stat layers and Pantheon priorities."
+  },
+  {
+    "chapter": 2,
+    "slug": "a-closer-look",
+    "title": "A closer look",
+    "description": "Weapons, armor, accessories, runes, and pendants."
+  },
+  {
+    "chapter": 3,
+    "slug": "ideal-stat-lines",
+    "title": "Ideal stat lines",
+    "description": "Reroll strategy, regional priorities, and raid requirements."
+  },
+  {
+    "chapter": 4,
+    "slug": "skills",
+    "title": "Skills",
+    "description": "Active skills, Specialty perks, passive skills, and Stigma."
+  },
+  {
+    "chapter": 5,
+    "slug": "enhancement",
+    "title": "Enhancement",
+    "description": "Growth, Potential, stones, Soul Binding, and gear transfer."
+  },
+  {
+    "chapter": 6,
+    "slug": "arcana",
+    "title": "Arcana",
+    "description": "Card stat pools, upgrades, crafting, and set arrangements."
+  },
+  {
+    "chapter": 7,
+    "slug": "daevanion-boards",
+    "title": "Daevanion boards",
+    "description": "Shared boards, colored boards, and tile priorities."
+  },
+  {
+    "chapter": 8,
+    "slug": "pet-genus",
+    "title": "Pet Genus",
+    "description": "Insight, analysis, regional stat priorities, and owned effects."
+  },
+  {
+    "chapter": 9,
+    "slug": "wings",
+    "title": "Wings",
+    "description": "Wing effects, the stat catalog, and dated KR class rankings."
+  },
+  {
+    "chapter": 10,
+    "slug": "closet",
+    "title": "Closet",
+    "description": "Outfit collections, class restrictions, and stat calculations."
+  },
+  {
+    "chapter": 11,
+    "slug": "how-stats-work",
+    "title": "How stats work",
+    "description": "Stat efficiency, combat values, and source damage formulas."
+  },
+  {
+    "chapter": 12,
+    "slug": "class-passives",
+    "title": "Class Passives",
+    "description": "A source-pending chapter marked Coming soon."
+  }
+]

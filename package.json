@@ -12,7 +12,9 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "test": "vitest run",
-    "verify:static": "node scripts/verify-static.mjs"
+    "verify:static": "node scripts/verify-static.mjs",
+    "content:generate": "node scripts/generate-catalogue.ts",
+    "content:check": "node scripts/generate-catalogue.ts --check"
   },
   "dependencies": {
     "isbot": "5.2.2",
