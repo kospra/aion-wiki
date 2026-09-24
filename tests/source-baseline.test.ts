@@ -42,11 +42,18 @@ type TaxonomyEntry = {
   figures: string[];
 };
 
-const sourceRoot = '.local-tools/source-doc';
 const load = <T>(path: string): T =>
   JSON.parse(readFileSync(path, 'utf8')) as T;
 const baseline = (): BaselineSnapshot =>
   load<BaselineSnapshot>('content/source/baseline.json');
+// Frozen from JSON.stringify(JSON.parse(saved audit)) before the original, ignored
+// research inputs were imported. These digests cover every nested record.
+const sourceDigest = (value: unknown): string =>
+  createHash('sha256').update(JSON.stringify(value)).digest('hex');
+const taxonomySourceDigest =
+  '6bcdca4876e79fe8f98f908f995dd7d9eda5c7b4d1f8a396a9c537c0d164da82';
+const figureAuditSourceDigest =
+  'b6875fb48a72944260c42deb28d2633e88f4889211a77c8e00735abb4bf83f44';
 
 it('freezes the complete source block, number, link, and figure baseline', () => {
   const snapshot = baseline();
@@ -109,21 +116,20 @@ it('stores the exact original bytes at every figure path', () => {
 });
 
 it('freezes all approved page ranges with distinct ASCII slugs', () => {
-  const approved = load<Omit<TaxonomyEntry, 'slug'>[]>(
-    join(sourceRoot, 'proposed-taxonomy.json'),
-  );
   const pages = load<TaxonomyEntry[]>('content/source/taxonomy.json');
   expect(pages).toHaveLength(44);
   expect(
-    pages.map((page) => ({
-      chapter: page.chapter,
-      title: page.sourceTitle ?? page.title,
-      firstBlock: page.firstBlock,
-      lastBlock: page.lastBlock,
-      nonemptyBlocks: page.nonemptyBlocks,
-      figures: page.figures,
-    })),
-  ).toEqual(approved);
+    sourceDigest(
+      pages.map((page) => ({
+        chapter: page.chapter,
+        title: page.sourceTitle ?? page.title,
+        firstBlock: page.firstBlock,
+        lastBlock: page.lastBlock,
+        nonemptyBlocks: page.nonemptyBlocks,
+        figures: page.figures,
+      })),
+    ),
+  ).toBe(taxonomySourceDigest);
   expect(pages.at(-1)).toEqual(
     expect.objectContaining({
       title: 'Class Passives',
@@ -138,8 +144,7 @@ it('freezes all approved page ranges with distinct ASCII slugs', () => {
 });
 
 it('retains complete normalized figure audit evidence', () => {
-  const original = load<unknown[]>(join(sourceRoot, 'figure-audit.json'));
   const preserved = load<unknown[]>('content/source/figure-audit.json');
   expect(preserved).toHaveLength(90);
-  expect(preserved).toEqual(original);
+  expect(sourceDigest(preserved)).toBe(figureAuditSourceDigest);
 });
