@@ -12,6 +12,7 @@ import { SiteHeader } from './components/site-header';
 import './styles/theme.css';
 import './styles/global.css';
 import './styles/wiki.css';
+import './styles/article.css';
 
 export function Layout({
   children,
