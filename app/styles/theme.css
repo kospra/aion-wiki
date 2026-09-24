@@ -1,15 +1,21 @@
 :root {
   color-scheme: dark;
-  --ink: #f5f0e6;
-  --ink-muted: #c9c4b9;
-  --gold: #e4be73;
-  --gold-bright: #f4d99b;
-  --night: #10151d;
-  --night-deep: #090d14;
-  --surface: #19202b;
-  --line: rgba(228, 190, 115, 0.25);
-  --focus: #ffe5a9;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --bg: #0c111b;
+  --surface: #151e2c;
+  --text: #f1efe9;
+  --muted: #b1bdcd;
+  --accent: #e5bd78;
+  --ink: var(--text);
+  --ink-muted: var(--muted);
+  --gold: var(--accent);
+  --gold-bright: #f6dca8;
+  --night-deep: var(--bg);
+  --line: #34404b;
+  --line-gold: #62543c;
+  --focus: var(--accent);
+  --radius: 4px;
+  --space: clamp(1.25rem, 4vw, 3.5rem);
+  font-family: system-ui, sans-serif;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
 }

@@ -18,15 +18,24 @@ export default function Home(): React.JSX.Element {
     <div className="home-page">
       <section className="hero" aria-labelledby="home-title">
         <div className="hero__ornament" aria-hidden="true">
-          <span>✦</span>
+          <div className="hero__orbit">
+            <span>✦</span>
+          </div>
+          <span className="hero__coordinate">A WORLD OF DISCOVERY</span>
         </div>
         <div className="hero__content">
-          <p className="eyebrow">An open reference for curious travelers</p>
-          <h1 id="home-title">Aion 2 Wiki</h1>
+          <p className="eyebrow">An open reference · A new beginning</p>
+          <h1 id="home-title">
+            Aion 2 <span>Wiki</span>
+          </h1>
           <p className="hero__lead">
             A place to explore, organize, and revisit what we learn about Aion
             2.
           </p>
+          <a className="button-link" href="#directory-title">
+            Explore the archive <span aria-hidden="true">↗</span>
+          </a>
+          <p className="hero__caption">For curious travelers. Built to grow.</p>
         </div>
       </section>
 
@@ -49,15 +58,26 @@ export default function Home(): React.JSX.Element {
         <p className="eyebrow">Find your path</p>
         <h2 id="category-title">Browse by category</h2>
         <div className="category-overview__grid">
-          {categories.map((category) => (
+          {categories.map((category, index) => (
             <Link
               className="category-overview__link"
               to={`/categories/${category.slug}`}
               key={category.slug}
             >
+              <div className="category-overview__top" aria-hidden="true">
+                <span
+                  className={`category-symbol category-symbol--${category.slug}`}
+                >
+                  ✧
+                </span>
+                <span>0{index + 1}</span>
+              </div>
               <h3>{category.title}</h3>
               <p>{category.description}</p>
               <span className="sample-badge">Sample content</span>
+              <span className="category-overview__arrow" aria-hidden="true">
+                ↗
+              </span>
             </Link>
           ))}
         </div>

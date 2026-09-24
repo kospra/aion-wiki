@@ -11,6 +11,7 @@ import { NotFound } from './components/not-found';
 import { SiteHeader } from './components/site-header';
 import './styles/theme.css';
 import './styles/global.css';
+import './styles/wiki.css';
 
 export function Layout({
   children,
@@ -22,6 +23,8 @@ export function Layout({
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#0c111b" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <Meta />
         <Links />
       </head>

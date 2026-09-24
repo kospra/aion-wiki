@@ -15,6 +15,9 @@ export function ArticleCard({
         <h3>{article.title}</h3>
         <p>{article.summary}</p>
         <span className="sample-badge">Sample content</span>
+        <span className="article-card__arrow" aria-hidden="true">
+          ↗
+        </span>
       </Link>
     </article>
   );

@@ -11,6 +11,7 @@ export default tseslint.config(
       'coverage/**',
       'node_modules/**',
       '.local-tools/**',
+      '.superpowers/**',
     ],
   },
   eslint.configs.recommended,
