@@ -56,9 +56,19 @@ export function GuidePageView({
   );
 
   return (
-    <Box as="article" maxW="7xl" mx="auto" minW="0">
+    <Box
+      as="article"
+      maxW="7xl"
+      mx="auto"
+      minW="0"
+      display={{ xl: 'grid' }}
+      gridTemplateColumns={{ xl: 'minmax(0, 1fr) 15rem' }}
+      columnGap={{ xl: '12' }}
+      alignItems="start"
+    >
       <Breadcrumb.Root
         aria-label="Breadcrumb"
+        gridColumn={{ xl: '1' }}
         mb={{ base: '6', md: '8' }}
         textStyle="wiki.label"
         color="wiki.muted"
@@ -87,7 +97,12 @@ export function GuidePageView({
           </Breadcrumb.Item>
         </Breadcrumb.List>
       </Breadcrumb.Root>
-      <Box as="header" maxW="65ch" mb={{ base: '8', md: '10' }}>
+      <Box
+        as="header"
+        gridColumn={{ xl: '1' }}
+        maxW="65ch"
+        mb={{ base: '8', md: '10' }}
+      >
         <Stack gap={{ base: '3', md: '4' }}>
           <Text
             color="wiki.accent"
@@ -167,107 +182,99 @@ export function GuidePageView({
         </Stack>
       </Box>
       <Box
-        display={{ xl: 'grid' }}
-        gridTemplateColumns={{ xl: 'minmax(0, 1fr) 15rem' }}
-        columnGap={{ xl: '12' }}
-        alignItems="start"
+        as="aside"
+        gridColumn={{ xl: '2' }}
+        gridRow={{ xl: '1 / 4' }}
+        position={{ xl: 'sticky' }}
+        top={{ xl: '6' }}
+        maxH={{ xl: 'calc(100vh - 3rem)' }}
+        overflowY={{ xl: 'auto' }}
         minW="0"
       >
-        <Box
-          as="aside"
-          gridColumn={{ xl: '2' }}
-          gridRow={{ xl: '1' }}
-          position={{ xl: 'sticky' }}
-          top={{ xl: '6' }}
-          maxH={{ xl: 'calc(100vh - 3rem)' }}
-          overflowY={{ xl: 'auto' }}
-          minW="0"
-        >
-          <ArticleContents blocks={page.blocks} />
-        </Box>
-        <Box gridColumn={{ xl: '1' }} gridRow={{ xl: '1' }} minW="0">
-          <RichContent
-            blocks={page.blocks}
-            figures={figureById}
-            sourceLinks={sourceLinks}
-          />
-          {ambiguousLinks.size > 0 && (
-            <Box
-              as="aside"
-              aria-label="Source link notes"
-              mt="10"
-              pt="5"
-              borderTopWidth="1px"
-              borderColor="wiki.border"
-              color="wiki.muted"
-            >
-              <Stack gap="3">
-                <Heading as="h2" textStyle="wiki.section" color="wiki.ink">
-                  Source link notes
-                </Heading>
-                <Text>
-                  Some original anchors could not be matched unambiguously to a
-                  captured block. Those links open the original document.
-                </Text>
-                <Box as="ul" pl="5" listStyleType="disc">
-                  {[...ambiguousLinks].map((href) => (
-                    <Box as="li" key={href}>
-                      <Link
-                        href={sourceLinks[href]}
-                        color="wiki.accent"
-                        textDecoration="underline"
-                      >
-                        {href}
-                      </Link>
-                      : {sourceLinkNotes[href]}
-                    </Box>
-                  ))}
-                </Box>
-              </Stack>
-            </Box>
-          )}
-          {(previous || next) && (
-            <Flex
-              as="nav"
-              aria-label="Guide article navigation"
-              direction={{ base: 'column', sm: 'row' }}
-              justify="space-between"
-              gap="4"
-              mt="10"
-              pt="6"
-              borderTopWidth="1px"
-              borderColor="wiki.border"
-            >
-              {previous ? (
-                <Link
-                  asChild
-                  color="wiki.accent"
-                  _hover={{ color: 'wiki.accentHover' }}
-                  fontWeight="medium"
-                >
-                  <RouterLink to={pagePath(previous.slug)} rel="prev">
-                    ← Previous: {previous.title}
-                  </RouterLink>
-                </Link>
-              ) : (
-                <Box />
-              )}
-              {next && (
-                <Link
-                  asChild
-                  color="wiki.accent"
-                  _hover={{ color: 'wiki.accentHover' }}
-                  fontWeight="medium"
-                  textAlign={{ sm: 'right' }}
-                >
-                  <RouterLink to={pagePath(next.slug)} rel="next">
-                    Next: {next.title} →
-                  </RouterLink>
-                </Link>
-              )}
-            </Flex>
-          )}
-        </Box>
+        <ArticleContents blocks={page.blocks} />
+      </Box>
+      <Box gridColumn={{ xl: '1' }} gridRow={{ xl: '3' }} minW="0">
+        <RichContent
+          blocks={page.blocks}
+          figures={figureById}
+          sourceLinks={sourceLinks}
+        />
+        {ambiguousLinks.size > 0 && (
+          <Box
+            as="aside"
+            aria-label="Source link notes"
+            mt="10"
+            pt="5"
+            borderTopWidth="1px"
+            borderColor="wiki.border"
+            color="wiki.muted"
+          >
+            <Stack gap="3">
+              <Heading as="h2" textStyle="wiki.section" color="wiki.ink">
+                Source link notes
+              </Heading>
+              <Text>
+                Some original anchors could not be matched unambiguously to a
+                captured block. Those links open the original document.
+              </Text>
+              <Box as="ul" pl="5" listStyleType="disc">
+                {[...ambiguousLinks].map((href) => (
+                  <Box as="li" key={href}>
+                    <Link
+                      href={sourceLinks[href]}
+                      color="wiki.accent"
+                      textDecoration="underline"
+                    >
+                      {href}
+                    </Link>
+                    : {sourceLinkNotes[href]}
+                  </Box>
+                ))}
+              </Box>
+            </Stack>
+          </Box>
+        )}
+        {(previous || next) && (
+          <Flex
+            as="nav"
+            aria-label="Guide article navigation"
+            direction={{ base: 'column', sm: 'row' }}
+            justify="space-between"
+            gap="4"
+            mt="10"
+            pt="6"
+            borderTopWidth="1px"
+            borderColor="wiki.border"
+          >
+            {previous ? (
+              <Link
+                asChild
+                color="wiki.accent"
+                _hover={{ color: 'wiki.accentHover' }}
+                fontWeight="medium"
+              >
+                <RouterLink to={pagePath(previous.slug)} rel="prev">
+                  ← Previous: {previous.title}
+                </RouterLink>
+              </Link>
+            ) : (
+              <Box />
+            )}
+            {next && (
+              <Link
+                asChild
+                color="wiki.accent"
+                _hover={{ color: 'wiki.accentHover' }}
+                fontWeight="medium"
+                textAlign={{ sm: 'right' }}
+              >
+                <RouterLink to={pagePath(next.slug)} rel="next">
+                  Next: {next.title} →
+                </RouterLink>
+              </Link>
+            )}
+          </Flex>
+        )}
       </Box>
     </Box>
   );
