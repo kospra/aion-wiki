@@ -1,5 +1,11 @@
 {
-  "include": ["app/**/*", "tests/**/*", "*.ts", ".react-router/types/**/*"],
+  "include": [
+    "app/**/*",
+    "tests/**/*",
+    "scripts/static-not-found.tsx",
+    "*.ts",
+    ".react-router/types/**/*"
+  ],
   "compilerOptions": {
     "target": "ES2022",
     "lib": ["DOM", "DOM.Iterable", "ES2022"],

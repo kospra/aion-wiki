@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "react-router dev",
     "build": "react-router build",
+    "build:static": "npm run build && node scripts/prepare-static.mjs && npm run verify:static",
     "preview": "serve build/client",
     "typecheck": "react-router typegen && tsc --noEmit",
     "lint": "eslint . --max-warnings 0",

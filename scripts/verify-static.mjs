@@ -2,7 +2,7 @@
 import console from 'node:console';
 import process from 'node:process';
 import assert from 'node:assert/strict';
-import { readFile, stat } from 'node:fs/promises';
+import { readFile, readdir, stat } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 import { join, resolve, sep } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -72,6 +72,51 @@ function renderedInline(element) {
   return runs;
 }
 export async function verifyStatic(root = 'build/client', suppliedInput) {
+  const forbiddenTopLevel = new Set(['content', 'server', 'functions']);
+  const forbiddenAnywhere = new Set(['.local-tools', '.git']);
+  async function checkPublishedFiles(directory, topLevel = false) {
+    for (const entry of await readdir(directory, { withFileTypes: true })) {
+      assert.ok(
+        !/^\.env(?:\.|$)/i.test(entry.name) &&
+          !forbiddenAnywhere.has(entry.name) &&
+          !(topLevel && forbiddenTopLevel.has(entry.name)),
+        `Forbidden publish artifact: ${join(directory, entry.name)}`,
+      );
+      if (entry.isDirectory())
+        await checkPublishedFiles(join(directory, entry.name));
+    }
+  }
+  await checkPublishedFiles(root, true);
+  assert.deepEqual(
+    (await readdir(join(root, 'source'))).sort(),
+    ['index.html'],
+    'Published /source must contain only its prerendered route',
+  );
+  const notFoundHtml = await readFile(join(root, '404.html'), 'utf8');
+  const notFoundDocument = new JSDOM(notFoundHtml).window.document;
+  assert.equal(notFoundDocument.documentElement.lang, 'en');
+  assert.equal(notFoundDocument.documentElement.className, 'light');
+  assert.equal(notFoundDocument.querySelectorAll('main').length, 1);
+  assert.equal(
+    notFoundDocument.querySelector('h1')?.textContent,
+    'Page not found',
+  );
+  assert.equal(
+    notFoundDocument.querySelector('a[href="/"]')?.textContent,
+    'Return to the homepage',
+  );
+  assert.equal(
+    notFoundDocument
+      .querySelector('meta[name="robots"]')
+      ?.getAttribute('content'),
+    'noindex',
+  );
+  assert.ok(
+    notFoundDocument.querySelector('style'),
+    '404 needs embedded Chakra styles',
+  );
+  assert.equal(notFoundDocument.querySelectorAll('script').length, 0);
+  notFoundDocument.defaultView.close();
   const input = suppliedInput ?? (await loadCompleteGuide());
   assert.deepEqual(
     validateGuide(input),
