@@ -1,0 +1,433 @@
+[
+  {
+    "slug": "about-the-source-and-author",
+    "chapter": 0,
+    "title": "About the source and author",
+    "firstBlock": "block-0001",
+    "lastBlock": "block-0026",
+    "nonemptyBlocks": 19,
+    "figures": ["figure-001", "figure-002"]
+  },
+  {
+    "slug": "gear-anatomy-and-stat-layers",
+    "chapter": 1,
+    "title": "Gear anatomy and stat layers",
+    "firstBlock": "block-0027",
+    "lastBlock": "block-0095",
+    "nonemptyBlocks": 59,
+    "figures": ["figure-003", "figure-004", "figure-005", "figure-006"]
+  },
+  {
+    "slug": "pantheon-stats-and-statues",
+    "chapter": 1,
+    "title": "Pantheon stats and statues",
+    "firstBlock": "block-0096",
+    "lastBlock": "block-0138",
+    "nonemptyBlocks": 33,
+    "figures": ["figure-007", "figure-008", "figure-009", "figure-010"]
+  },
+  {
+    "slug": "weapon-and-guard",
+    "chapter": 2,
+    "title": "Weapon and Guard",
+    "firstBlock": "block-0139",
+    "lastBlock": "block-0154",
+    "nonemptyBlocks": 13,
+    "figures": ["figure-011", "figure-012"]
+  },
+  {
+    "slug": "armor",
+    "chapter": 2,
+    "title": "Armor",
+    "firstBlock": "block-0155",
+    "lastBlock": "block-0168",
+    "nonemptyBlocks": 12,
+    "figures": ["figure-013"]
+  },
+  {
+    "slug": "accessories",
+    "chapter": 2,
+    "title": "Accessories",
+    "firstBlock": "block-0169",
+    "lastBlock": "block-0190",
+    "nonemptyBlocks": 19,
+    "figures": ["figure-014"]
+  },
+  {
+    "slug": "belt-and-amulet",
+    "chapter": 2,
+    "title": "Belt and Amulet",
+    "firstBlock": "block-0191",
+    "lastBlock": "block-0199",
+    "nonemptyBlocks": 7,
+    "figures": ["figure-015", "figure-016"]
+  },
+  {
+    "slug": "runes",
+    "chapter": 2,
+    "title": "Runes",
+    "firstBlock": "block-0200",
+    "lastBlock": "block-0212",
+    "nonemptyBlocks": 11,
+    "figures": ["figure-017"]
+  },
+  {
+    "slug": "pendant",
+    "chapter": 2,
+    "title": "Pendant",
+    "firstBlock": "block-0213",
+    "lastBlock": "block-0229",
+    "nonemptyBlocks": 14,
+    "figures": ["figure-018"]
+  },
+  {
+    "slug": "stat-line-rerolling-strategy",
+    "chapter": 3,
+    "title": "Stat-line rerolling strategy",
+    "firstBlock": "block-0230",
+    "lastBlock": "block-0250",
+    "nonemptyBlocks": 11,
+    "figures": ["figure-019", "figure-020", "figure-021"]
+  },
+  {
+    "slug": "global-stat-priorities-by-equipment",
+    "chapter": 3,
+    "title": "Global stat priorities by equipment",
+    "firstBlock": "block-0251",
+    "lastBlock": "block-0338",
+    "nonemptyBlocks": 77,
+    "figures": []
+  },
+  {
+    "slug": "raid-accuracy-and-critical-hit-requirements",
+    "chapter": 3,
+    "title": "Raid Accuracy and Critical Hit requirements",
+    "firstBlock": "block-0339",
+    "lastBlock": "block-0364",
+    "nonemptyBlocks": 17,
+    "figures": []
+  },
+  {
+    "slug": "active-skills-and-specialty-perks",
+    "chapter": 4,
+    "title": "Active skills and Specialty perks",
+    "firstBlock": "block-0365",
+    "lastBlock": "block-0384",
+    "nonemptyBlocks": 10,
+    "figures": ["figure-022", "figure-023"]
+  },
+  {
+    "slug": "passive-skills",
+    "chapter": 4,
+    "title": "Passive skills",
+    "firstBlock": "block-0385",
+    "lastBlock": "block-0391",
+    "nonemptyBlocks": 4,
+    "figures": ["figure-024"]
+  },
+  {
+    "slug": "stigma-skills",
+    "chapter": 4,
+    "title": "Stigma skills",
+    "firstBlock": "block-0392",
+    "lastBlock": "block-0406",
+    "nonemptyBlocks": 7,
+    "figures": ["figure-025"]
+  },
+  {
+    "slug": "growth-and-amplification",
+    "chapter": 5,
+    "title": "Growth and amplification",
+    "firstBlock": "block-0407",
+    "lastBlock": "block-0421",
+    "nonemptyBlocks": 10,
+    "figures": [
+      "figure-026",
+      "figure-027",
+      "figure-028",
+      "figure-029",
+      "figure-030"
+    ]
+  },
+  {
+    "slug": "potential-enhancement",
+    "chapter": 5,
+    "title": "Potential enhancement",
+    "firstBlock": "block-0422",
+    "lastBlock": "block-0431",
+    "nonemptyBlocks": 6,
+    "figures": ["figure-031", "figure-032", "figure-033"]
+  },
+  {
+    "slug": "manastones-and-soulstones",
+    "chapter": 5,
+    "title": "Manastones and Soulstones",
+    "firstBlock": "block-0432",
+    "lastBlock": "block-0450",
+    "nonemptyBlocks": 11,
+    "figures": ["figure-034", "figure-035", "figure-036", "figure-037"]
+  },
+  {
+    "slug": "theostones",
+    "chapter": 5,
+    "title": "Theostones",
+    "firstBlock": "block-0451",
+    "lastBlock": "block-0462",
+    "nonemptyBlocks": 6,
+    "figures": ["figure-038", "figure-039", "figure-040"]
+  },
+  {
+    "slug": "soul-binding-bind-sync-and-reset",
+    "chapter": 5,
+    "title": "Soul Binding Bind Sync and Reset",
+    "firstBlock": "block-0463",
+    "lastBlock": "block-0482",
+    "nonemptyBlocks": 11,
+    "figures": [
+      "figure-041",
+      "figure-042",
+      "figure-043",
+      "figure-044",
+      "figure-045"
+    ]
+  },
+  {
+    "slug": "gear-transfer-and-material-costs",
+    "chapter": 5,
+    "title": "Gear transfer and material costs",
+    "firstBlock": "block-0483",
+    "lastBlock": "block-0510",
+    "nonemptyBlocks": 16,
+    "figures": [
+      "figure-046",
+      "figure-047",
+      "figure-048",
+      "figure-049",
+      "figure-050",
+      "figure-051",
+      "figure-052",
+      "figure-053"
+    ]
+  },
+  {
+    "slug": "arcana-card-types-and-stat-pools",
+    "chapter": 6,
+    "title": "Arcana card types and stat pools",
+    "firstBlock": "block-0511",
+    "lastBlock": "block-0551",
+    "nonemptyBlocks": 34,
+    "figures": ["figure-054", "figure-055", "figure-056"]
+  },
+  {
+    "slug": "upgrading-arcana",
+    "chapter": 6,
+    "title": "Upgrading Arcana",
+    "firstBlock": "block-0552",
+    "lastBlock": "block-0564",
+    "nonemptyBlocks": 8,
+    "figures": [
+      "figure-057",
+      "figure-058",
+      "figure-059",
+      "figure-060",
+      "figure-061"
+    ]
+  },
+  {
+    "slug": "crafting-arcana",
+    "chapter": 6,
+    "title": "Crafting Arcana",
+    "firstBlock": "block-0565",
+    "lastBlock": "block-0583",
+    "nonemptyBlocks": 10,
+    "figures": ["figure-062", "figure-063", "figure-064"]
+  },
+  {
+    "slug": "five-card-and-eight-card-set-setups",
+    "chapter": 6,
+    "title": "Five-card and eight-card set setups",
+    "firstBlock": "block-0584",
+    "lastBlock": "block-0631",
+    "nonemptyBlocks": 39,
+    "figures": ["figure-065", "figure-066"]
+  },
+  {
+    "slug": "shared-boards-and-tile-priorities",
+    "chapter": 7,
+    "title": "Shared boards and tile priorities",
+    "firstBlock": "block-0632",
+    "lastBlock": "block-0663",
+    "nonemptyBlocks": 22,
+    "figures": ["figure-067", "figure-068", "figure-069", "figure-070"]
+  },
+  {
+    "slug": "colored-daevanion-boards",
+    "chapter": 7,
+    "title": "Colored Daevanion boards",
+    "firstBlock": "block-0664",
+    "lastBlock": "block-0684",
+    "nonemptyBlocks": 14,
+    "figures": ["figure-071"]
+  },
+  {
+    "slug": "insight-levels-and-efficient-analysis",
+    "chapter": 8,
+    "title": "Insight levels and efficient analysis",
+    "firstBlock": "block-0685",
+    "lastBlock": "block-0722",
+    "nonemptyBlocks": 23,
+    "figures": [
+      "figure-072",
+      "figure-073",
+      "figure-074",
+      "figure-075",
+      "figure-076",
+      "figure-077"
+    ]
+  },
+  {
+    "slug": "asia-genus-stat-priorities",
+    "chapter": 8,
+    "title": "Asia Genus stat priorities",
+    "firstBlock": "block-0723",
+    "lastBlock": "block-0737",
+    "nonemptyBlocks": 11,
+    "figures": ["figure-078", "figure-079"]
+  },
+  {
+    "slug": "global-genus-stat-priorities",
+    "chapter": 8,
+    "title": "Global Genus stat priorities",
+    "firstBlock": "block-0738",
+    "lastBlock": "block-0776",
+    "nonemptyBlocks": 37,
+    "figures": []
+  },
+  {
+    "slug": "pet-owned-effects",
+    "chapter": 8,
+    "title": "Pet owned effects",
+    "firstBlock": "block-0777",
+    "lastBlock": "block-0780",
+    "nonemptyBlocks": 3,
+    "figures": ["figure-080"]
+  },
+  {
+    "slug": "wing-effects-and-enhancement",
+    "chapter": 9,
+    "title": "Wing effects and enhancement",
+    "firstBlock": "block-0781",
+    "lastBlock": "block-0805",
+    "nonemptyBlocks": 14,
+    "figures": ["figure-081", "figure-082", "figure-083", "figure-084"]
+  },
+  {
+    "slug": "wing-stat-catalog",
+    "chapter": 9,
+    "title": "Wing stat catalog",
+    "firstBlock": "block-0806",
+    "lastBlock": "block-0950",
+    "nonemptyBlocks": 132,
+    "figures": []
+  },
+  {
+    "slug": "kr-class-wing-rankings-and-positional-faq",
+    "chapter": 9,
+    "title": "KR class wing rankings and positional FAQ",
+    "firstBlock": "block-0951",
+    "lastBlock": "block-1009",
+    "nonemptyBlocks": 44,
+    "figures": []
+  },
+  {
+    "slug": "closet-stats-and-outfit-calculation",
+    "chapter": 10,
+    "title": "Closet stats and outfit calculation",
+    "firstBlock": "block-1010",
+    "lastBlock": "block-1025",
+    "nonemptyBlocks": 7,
+    "figures": ["figure-085", "figure-086"]
+  },
+  {
+    "slug": "stat-efficiency-and-diminishing-returns",
+    "chapter": 11,
+    "title": "Stat efficiency and diminishing returns",
+    "firstBlock": "block-1026",
+    "lastBlock": "block-1083",
+    "nonemptyBlocks": 50,
+    "figures": []
+  },
+  {
+    "slug": "offensive-stat-values-and-attack-comparisons",
+    "chapter": 11,
+    "title": "Offensive stat values and Attack comparisons",
+    "firstBlock": "block-1084",
+    "lastBlock": "block-1162",
+    "nonemptyBlocks": 63,
+    "figures": ["figure-087"]
+  },
+  {
+    "slug": "multi-hit",
+    "chapter": 11,
+    "title": "Multi-hit",
+    "firstBlock": "block-1163",
+    "lastBlock": "block-1170",
+    "nonemptyBlocks": 5,
+    "figures": []
+  },
+  {
+    "slug": "power-shards",
+    "chapter": 11,
+    "title": "Power Shards",
+    "firstBlock": "block-1171",
+    "lastBlock": "block-1177",
+    "nonemptyBlocks": 5,
+    "figures": ["figure-088", "figure-089"]
+  },
+  {
+    "slug": "accuracy-block-and-critical-hit",
+    "chapter": 11,
+    "title": "Accuracy Block and Critical Hit",
+    "firstBlock": "block-1178",
+    "lastBlock": "block-1195",
+    "nonemptyBlocks": 13,
+    "figures": ["figure-090"]
+  },
+  {
+    "slug": "defense-and-penetration",
+    "chapter": 11,
+    "title": "Defense and Penetration",
+    "firstBlock": "block-1196",
+    "lastBlock": "block-1208",
+    "nonemptyBlocks": 9,
+    "figures": []
+  },
+  {
+    "slug": "damage-tolerance-endurance-and-combat-speed",
+    "chapter": 11,
+    "title": "Damage Tolerance Endurance and Combat Speed",
+    "firstBlock": "block-1209",
+    "lastBlock": "block-1223",
+    "nonemptyBlocks": 9,
+    "figures": []
+  },
+  {
+    "slug": "damage-formula-and-pure-attack",
+    "chapter": 11,
+    "title": "Damage formula and Pure Attack",
+    "firstBlock": "block-1224",
+    "lastBlock": "block-1265",
+    "nonemptyBlocks": 32,
+    "figures": []
+  },
+  {
+    "slug": "class-passives",
+    "chapter": 12,
+    "title": "Class Passives",
+    "firstBlock": "block-1266",
+    "lastBlock": "block-1268",
+    "nonemptyBlocks": 2,
+    "figures": [],
+    "sourceTitle": "Class Passives source placeholder"
+  }
+]
