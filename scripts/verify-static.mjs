@@ -71,15 +71,34 @@ function renderedInline(element) {
   visit(element);
   return runs;
 }
-export async function verifyStatic(root = 'build/client', suppliedInput) {
-  const forbiddenTopLevel = new Set(['content', 'server', 'functions']);
-  const forbiddenAnywhere = new Set(['.local-tools', '.git']);
+export async function verifyPublishRoot(root) {
+  const allowedTopLevel = new Set([
+    '404.html',
+    '__spa-fallback.html',
+    'favicon.svg',
+    'index.html',
+    'articles',
+    'assets',
+    'categories',
+    'images',
+    'source',
+  ]);
+  const forbiddenAnywhere = new Set([
+    '.git',
+    '.local-tools',
+    '.npmrc',
+    'content',
+    'functions',
+    'scripts',
+    'server',
+  ]);
   async function checkPublishedFiles(directory, topLevel = false) {
     for (const entry of await readdir(directory, { withFileTypes: true })) {
       assert.ok(
-        !/^\.env(?:\.|$)/i.test(entry.name) &&
+        !entry.isSymbolicLink() &&
+          !/^\.env(?:\.|$)/i.test(entry.name) &&
           !forbiddenAnywhere.has(entry.name) &&
-          !(topLevel && forbiddenTopLevel.has(entry.name)),
+          (!topLevel || allowedTopLevel.has(entry.name)),
         `Forbidden publish artifact: ${join(directory, entry.name)}`,
       );
       if (entry.isDirectory())
@@ -87,11 +106,15 @@ export async function verifyStatic(root = 'build/client', suppliedInput) {
     }
   }
   await checkPublishedFiles(root, true);
-  assert.deepEqual(
-    (await readdir(join(root, 'source'))).sort(),
-    ['index.html'],
+  assert.equal(
+    (await readdir(join(root, 'source'))).sort().join(','),
+    'index.html',
     'Published /source must contain only its prerendered route',
   );
+}
+
+export async function verifyStatic(root = 'build/client', suppliedInput) {
+  await verifyPublishRoot(root);
   const notFoundHtml = await readFile(join(root, '404.html'), 'utf8');
   const notFoundDocument = new JSDOM(notFoundHtml).window.document;
   assert.equal(notFoundDocument.documentElement.lang, 'en');
