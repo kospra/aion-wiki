@@ -176,7 +176,12 @@ it('opens a Chakra dialog and returns focus after Close and Escape', async () =>
   await waitFor(() => expect(open).toHaveFocus());
 
   await user.click(open);
-  await screen.findByRole('dialog');
+  const reopenedDialog = await screen.findByRole('dialog');
+  await waitFor(() =>
+    expect(reopenedDialog).toContainElement(
+      document.activeElement as HTMLElement,
+    ),
+  );
   await user.keyboard('{Escape}');
   await waitFor(() =>
     expect(screen.queryByRole('dialog')).not.toBeInTheDocument(),

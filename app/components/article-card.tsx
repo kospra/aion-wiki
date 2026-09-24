@@ -1,4 +1,4 @@
-import { Badge, Card, Link, Stack, Text } from '@chakra-ui/react';
+import { Box, Flex, Heading, Link, Stack, Text } from '@chakra-ui/react';
 import { Link as RouterLink } from 'react-router';
 import { categories } from '../content/wiki';
 import type { CatalogueEntry } from '../content/types';
@@ -9,36 +9,48 @@ export function ArticleCard({
   article: CatalogueEntry;
 }): React.JSX.Element {
   const category = categories.find(({ slug }) => slug === article.category);
+
   return (
-    <Card.Root as="article" variant="outline" h="full" bg="white">
+    <Box as="article" borderTopWidth="1px" borderColor="wiki.border">
       <Link
         asChild
         display="block"
         h="full"
-        color="inherit"
-        _hover={{ textDecoration: 'none', bg: 'gray.50' }}
+        py="5"
+        color="wiki.ink"
+        borderRadius="sm"
+        _hover={{ color: 'wiki.accent', textDecoration: 'none' }}
+        _focusVisible={{ outlineColor: 'wiki.accent', outlineOffset: '3px' }}
       >
         <RouterLink to={`/articles/${article.slug}`}>
-          <Card.Body>
-            <Stack gap="3" align="start">
-              <Text fontSize="sm" color="gray.600">
+          <Stack gap="2">
+            <Flex align="start" justify="space-between" gap="4">
+              <Text textStyle="wiki.label" color="wiki.muted">
                 {category?.title}
               </Text>
-              <Card.Title as="h3" fontSize="lg" color="gray.900">
-                {article.title}
-              </Card.Title>
-              <Card.Description color="gray.600">
-                {article.summary}
-              </Card.Description>
-              <Badge variant="subtle" colorPalette="gray">
-                {article.status === 'source-pending'
-                  ? 'Source pending'
-                  : 'From Kanon’s guide'}
-              </Badge>
-            </Stack>
-          </Card.Body>
+              <Text as="span" aria-hidden="true" color="wiki.accent">
+                ↗
+              </Text>
+            </Flex>
+            <Heading
+              as="h3"
+              fontSize="lg"
+              lineHeight="1.35"
+              fontWeight="semibold"
+            >
+              {article.title}
+            </Heading>
+            <Text textStyle="wiki.caption" color="wiki.muted">
+              {article.summary}
+            </Text>
+            <Text textStyle="wiki.caption" color="wiki.muted" mt="1">
+              {article.status === 'source-pending'
+                ? 'Source pending'
+                : 'From Kanon’s guide'}
+            </Text>
+          </Stack>
         </RouterLink>
       </Link>
-    </Card.Root>
+    </Box>
   );
 }

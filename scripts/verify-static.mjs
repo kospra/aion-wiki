@@ -228,7 +228,7 @@ export async function verifyStatic(root = 'build/client', suppliedInput) {
           const figure = input.figures.find((f) => f.id === block.figureId);
           const rendered = element.querySelector('figure');
           assert.equal(rendered.id, figure.id);
-          const img = rendered.querySelector(':scope > img');
+          const img = rendered.querySelector('[data-guide-primary-image]');
           for (const [name, value] of Object.entries({
             src: figure.src,
             alt: figure.alt,

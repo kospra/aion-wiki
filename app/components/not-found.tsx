@@ -11,19 +11,19 @@ export function NotFound(): React.JSX.Element {
       my="12"
       p={{ base: '8', md: '12' }}
       borderWidth="1px"
-      borderColor="gray.200"
+      borderColor="wiki.border"
       borderRadius="lg"
-      bg="white"
+      bg="wiki.surface"
       textAlign="center"
     >
       <Stack gap="4" align="center">
-        <Text color="gray.600" fontSize="sm">
+        <Text color="wiki.muted" fontSize="sm">
           The trail ends here
         </Text>
-        <Heading as="h1" id="not-found-title" size="3xl" color="gray.900">
+        <Heading as="h1" id="not-found-title" size="3xl" color="wiki.ink">
           Page not found
         </Heading>
-        <Text color="gray.600">
+        <Text color="wiki.muted">
           We could not find that page in the archive. Check the address or
           return to the homepage.
         </Text>
@@ -34,11 +34,11 @@ export function NotFound(): React.JSX.Element {
           minH="11"
           px="5"
           py="2"
-          bg="gray.900"
+          bg="wiki.accent"
           color="white"
           borderRadius="md"
           fontWeight="semibold"
-          _hover={{ bg: 'gray.700' }}
+          _hover={{ bg: 'wiki.accentHover' }}
         >
           <RouterLink to="/">Return to the homepage</RouterLink>
         </Link>

@@ -9,26 +9,38 @@ import {
   Text,
 } from '@chakra-ui/react';
 import { useState } from 'react';
-import { Link as RouterLink } from 'react-router';
-import { categories } from '../content/wiki';
+import { Link as RouterLink, useLocation } from 'react-router';
+import { articles, categories } from '../content/wiki';
 
 export function SiteHeader(): React.JSX.Element {
   const [expanded, setExpanded] = useState(false);
+  const { pathname } = useLocation();
+  const articleSlug = pathname.startsWith('/articles/')
+    ? pathname.split('/')[2]
+    : undefined;
+  const activeCategory = pathname.startsWith('/categories/')
+    ? pathname.split('/')[2]
+    : articles.find((article) => article.slug === articleSlug)?.category;
 
   return (
-    <Box as="header" bg="white" borderBottomWidth="1px" borderColor="gray.200">
+    <Box
+      as="header"
+      bg="wiki.canvas"
+      borderBottomWidth="1px"
+      borderColor="wiki.border"
+    >
       <Link
         href="#main-content"
         position="absolute"
         top="2"
         left="-9999px"
         zIndex="10"
-        bg="gray.900"
+        bg="wiki.accent"
         color="white"
         px="4"
         py="2"
         borderRadius="md"
-        _focusVisible={{ left: '4' }}
+        _focusVisible={{ left: '4', outlineColor: 'wiki.accent' }}
       >
         Skip to content
       </Link>
@@ -38,18 +50,43 @@ export function SiteHeader(): React.JSX.Element {
             open={expanded}
             onOpenChange={(details) => setExpanded(details.open)}
           >
-            <Flex minH="18" align="center" justify="space-between" gap="4">
+            <Flex minH="16" align="center" justify="space-between" gap="4">
               <Link
                 asChild
-                color="gray.900"
+                color="wiki.ink"
                 fontWeight="bold"
                 fontSize="lg"
-                _hover={{ textDecoration: 'none' }}
+                letterSpacing="-0.02em"
+                _hover={{ color: 'wiki.accent', textDecoration: 'none' }}
               >
                 <RouterLink to="/">Aion 2 Wiki</RouterLink>
               </Link>
+              <Text
+                display={{ base: 'none', lg: 'block' }}
+                textStyle="wiki.caption"
+                color="wiki.muted"
+                ml="auto"
+              >
+                Kanon’s guide reference
+              </Text>
+              <Link
+                asChild
+                display={{ base: 'none', md: 'inline-flex' }}
+                textStyle="wiki.label"
+                color={pathname === '/source' ? 'wiki.accent' : 'wiki.muted'}
+                _hover={{ color: 'wiki.accent' }}
+              >
+                <RouterLink to="/source">About the source</RouterLink>
+              </Link>
               <Collapsible.Trigger asChild>
-                <Button variant="outline" size="sm" display={{ md: 'none' }}>
+                <Button
+                  variant="outline"
+                  size="sm"
+                  minH="10"
+                  display={{ md: 'none' }}
+                  borderColor="wiki.controlBorder"
+                  color="wiki.ink"
+                >
                   Browse chapters
                 </Button>
               </Collapsible.Trigger>
@@ -63,7 +100,7 @@ export function SiteHeader(): React.JSX.Element {
                 role="group"
                 aria-label="Browse chapters"
                 borderTopWidth="1px"
-                borderColor="gray.200"
+                borderColor="wiki.border"
                 py="4"
               >
                 <SimpleGrid columns={{ base: 1, sm: 2 }} gap="1">
@@ -76,11 +113,26 @@ export function SiteHeader(): React.JSX.Element {
                       px="3"
                       py="2"
                       borderRadius="md"
-                      color="gray.700"
-                      _hover={{ bg: 'gray.100', color: 'gray.900' }}
+                      color={
+                        activeCategory === slug ? 'wiki.accent' : 'wiki.ink'
+                      }
+                      bg={
+                        activeCategory === slug
+                          ? 'wiki.accentSoft'
+                          : 'transparent'
+                      }
+                      fontWeight={
+                        activeCategory === slug ? 'semibold' : 'normal'
+                      }
+                      _hover={{ bg: 'wiki.accentSoft', color: 'wiki.accent' }}
                     >
                       <RouterLink to={`/categories/${slug}`}>
-                        <Text as="span" color="gray.500" fontSize="sm" mr="2">
+                        <Text
+                          as="span"
+                          color="wiki.muted"
+                          textStyle="wiki.caption"
+                          mr="2"
+                        >
                           {String(index + 1).padStart(2, '0')}
                         </Text>{' '}
                         {title}
@@ -94,7 +146,11 @@ export function SiteHeader(): React.JSX.Element {
                     px="3"
                     py="2"
                     borderRadius="md"
-                    color="gray.700"
+                    color={pathname === '/source' ? 'wiki.accent' : 'wiki.ink'}
+                    bg={
+                      pathname === '/source' ? 'wiki.accentSoft' : 'transparent'
+                    }
+                    _hover={{ bg: 'wiki.accentSoft', color: 'wiki.accent' }}
                   >
                     <RouterLink to="/source">About the source</RouterLink>
                   </Link>
@@ -105,36 +161,42 @@ export function SiteHeader(): React.JSX.Element {
           <Box
             display={{ base: 'none', md: 'block' }}
             borderTopWidth="1px"
-            borderColor="gray.100"
-            py="3"
+            borderColor="wiki.border"
+            overflowX="auto"
+            scrollbarWidth="thin"
           >
             <Flex
               role="group"
               aria-label="Desktop chapters"
-              wrap="wrap"
-              gapX="5"
-              gapY="2"
+              gap="4"
               align="center"
+              width="max-content"
+              minW="full"
             >
               {categories.map(({ slug, title }) => (
                 <Link
                   key={slug}
                   asChild
+                  display="inline-flex"
+                  alignItems="center"
+                  minH="11"
                   fontSize="sm"
-                  color="gray.700"
-                  _hover={{ color: 'gray.900' }}
+                  fontWeight={activeCategory === slug ? 'semibold' : 'medium'}
+                  color={activeCategory === slug ? 'wiki.accent' : 'wiki.muted'}
+                  borderBottomWidth="2px"
+                  borderColor={
+                    activeCategory === slug ? 'wiki.accent' : 'transparent'
+                  }
+                  whiteSpace="nowrap"
+                  _hover={{ color: 'wiki.accent', textDecoration: 'none' }}
+                  _focusVisible={{
+                    outlineColor: 'wiki.accent',
+                    outlineOffset: '-2px',
+                  }}
                 >
                   <RouterLink to={`/categories/${slug}`}>{title}</RouterLink>
                 </Link>
               ))}
-              <Link
-                asChild
-                fontSize="sm"
-                color="gray.700"
-                _hover={{ color: 'gray.900' }}
-              >
-                <RouterLink to="/source">About the source</RouterLink>
-              </Link>
             </Flex>
           </Box>
         </Box>

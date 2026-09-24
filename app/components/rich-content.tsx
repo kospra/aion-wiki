@@ -84,7 +84,8 @@ export function RichContent({
             key={start}
             href={href}
             display="inline"
-            colorPalette="blue"
+            color="wiki.accent"
+            _hover={{ color: 'wiki.accentHover' }}
             textDecoration="underline"
           >
             {content}
@@ -97,11 +98,18 @@ export function RichContent({
     return runs;
   }
 
-  function renderBlock(block: Block): ReactNode {
+  function renderBlock(block: Block, inTable = false): ReactNode {
     switch (block.kind) {
       case 'paragraph':
         return (
-          <Text id={block.id} key={block.id} lineHeight="1.75">
+          <Text
+            id={block.id}
+            key={block.id}
+            textStyle={inTable ? undefined : 'wiki.body'}
+            fontSize={inTable ? 'md' : undefined}
+            lineHeight={inTable ? '1.6' : undefined}
+            maxW={inTable ? undefined : '65ch'}
+          >
             {renderInline(block.content)}
           </Text>
         );
@@ -111,9 +119,20 @@ export function RichContent({
             as={`h${block.level}` as 'h2' | 'h3' | 'h4'}
             id={block.id}
             key={block.id}
-            size={block.level === 2 ? 'xl' : block.level === 3 ? 'lg' : 'md'}
-            mt={block.level === 2 ? '8' : '6'}
-            mb="2"
+            textStyle={block.level === 2 ? 'wiki.section' : undefined}
+            fontSize={
+              block.level === 3
+                ? '22px'
+                : block.level === 4
+                  ? '19px'
+                  : undefined
+            }
+            lineHeight="1.3"
+            color="wiki.ink"
+            maxW={inTable ? undefined : '65ch'}
+            mt={block.level === 2 ? '12' : '8'}
+            mb="3"
+            scrollMarginTop="6"
           >
             {renderInline(block.content)}
           </Heading>
@@ -121,7 +140,7 @@ export function RichContent({
       case 'list': {
         const items = block.items.map((item, index) => (
           <List.Item key={`${block.id}-item-${index}`}>
-            {item.map(renderBlock)}
+            {item.map((child) => renderBlock(child, inTable))}
           </List.Item>
         ));
         return block.ordered ? (
@@ -131,6 +150,9 @@ export function RichContent({
             listStyleType="decimal"
             ps="6"
             spaceY="2"
+            maxW={inTable ? undefined : '65ch'}
+            textStyle={inTable ? undefined : 'wiki.body'}
+            color="wiki.ink"
           >
             <chakra.ol
               id={block.id}
@@ -148,6 +170,9 @@ export function RichContent({
             listStyleType="disc"
             ps="6"
             spaceY="2"
+            maxW={inTable ? undefined : '65ch'}
+            textStyle={inTable ? undefined : 'wiki.body'}
+            color="wiki.ink"
           >
             {items}
           </List.Root>
@@ -164,15 +189,45 @@ export function RichContent({
             data-guide-table-scroll=""
             maxW="100%"
             borderWidth="1px"
-            borderColor="gray.200"
+            borderColor="wiki.border"
             borderRadius="md"
+            overflowX="auto"
+            _focusVisible={{
+              outline: '2px solid',
+              outlineColor: 'wiki.accent',
+              outlineOffset: '2px',
+            }}
           >
-            <Table.Root size="sm" variant="outline" minW="max-content">
-              <Table.Caption captionSide="top">{block.caption}</Table.Caption>
+            <Table.Root
+              size="md"
+              variant="line"
+              minW="max-content"
+              fontVariantNumeric="tabular-nums"
+            >
+              <Table.Caption
+                captionSide="top"
+                color="wiki.muted"
+                textStyle="wiki.caption"
+                textAlign="start"
+                px="3"
+                py="2"
+              >
+                {block.caption}
+              </Table.Caption>
               <Table.Header>
                 <Table.Row>
                   {block.columns.map((column, index) => (
-                    <Table.ColumnHeader key={index} scope="col">
+                    <Table.ColumnHeader
+                      key={index}
+                      scope="col"
+                      bg="wiki.accentSoft"
+                      color="wiki.ink"
+                      px="3"
+                      py="3"
+                      borderBottomWidth="1px"
+                      borderColor="wiki.border"
+                      whiteSpace="normal"
+                    >
                       {renderInline(column)}
                     </Table.ColumnHeader>
                   ))}
@@ -180,10 +235,23 @@ export function RichContent({
               </Table.Header>
               <Table.Body>
                 {block.rows.map((row, rowIndex) => (
-                  <Table.Row key={rowIndex}>
+                  <Table.Row
+                    key={rowIndex}
+                    borderBottomWidth="1px"
+                    borderColor="wiki.border"
+                  >
                     {row.map((cell, cellIndex) => (
-                      <Table.Cell key={cellIndex} verticalAlign="top">
-                        {cell.map(renderBlock)}
+                      <Table.Cell
+                        key={cellIndex}
+                        verticalAlign="top"
+                        px="3"
+                        py="3"
+                        color="wiki.ink"
+                        maxW="36rem"
+                        whiteSpace="normal"
+                        overflowWrap="anywhere"
+                      >
+                        {cell.map((child) => renderBlock(child, true))}
                       </Table.Cell>
                     ))}
                   </Table.Row>
@@ -198,22 +266,27 @@ export function RichContent({
             as="section"
             id={block.id}
             key={block.id}
-            p="4"
-            bg="gray.50"
+            p={{ base: '4', md: '5' }}
+            bg="wiki.surface"
             borderWidth="1px"
-            borderColor="gray.200"
+            borderColor="wiki.border"
             borderRadius="md"
           >
             <chakra.pre
               overflowX="auto"
               maxW="100%"
               fontFamily="mono"
-              fontSize="sm"
+              fontSize="md"
               whiteSpace="pre"
+              color="wiki.ink"
             >
               {block.expression}
             </chakra.pre>
-            <Text mt="3" lineHeight="1.7">
+            <Text
+              mt="3"
+              textStyle="wiki.body"
+              maxW={inTable ? undefined : '65ch'}
+            >
               {renderInline(block.explanation)}
             </Text>
           </Box>
@@ -224,14 +297,16 @@ export function RichContent({
             as="aside"
             id={block.id}
             key={block.id}
-            p="4"
-            bg="gray.50"
+            p={{ base: '4', md: '5' }}
+            bg="wiki.accentSoft"
             borderStartWidth="3px"
-            borderColor="gray.300"
+            borderColor="wiki.accent"
             borderRadius="sm"
+            maxW={inTable ? undefined : '65ch'}
+            color="wiki.ink"
           >
             <Strong>{block.label}</Strong>
-            <Text mt="1" lineHeight="1.7">
+            <Text mt="1" textStyle="wiki.body">
               {renderInline(block.content)}
             </Text>
           </Box>
@@ -258,7 +333,7 @@ export function RichContent({
             role="group"
             aria-label={block.label}
             borderStartWidth="2px"
-            borderColor="gray.200"
+            borderColor="wiki.border"
             ps="4"
             py="2"
             spaceY="4"
@@ -266,19 +341,26 @@ export function RichContent({
             <Text
               data-guide-group-label=""
               fontWeight="semibold"
-              color="gray.700"
+              color="wiki.muted"
+              textStyle="wiki.label"
             >
               {block.label}
             </Text>
-            {block.blocks.map(renderBlock)}
+            {block.blocks.map((child) => renderBlock(child, inTable))}
           </Box>
         );
     }
   }
 
   return (
-    <Box data-guide-content="" spaceY="5" minW="0" overflowWrap="anywhere">
-      {blocks.map(renderBlock)}
+    <Box
+      data-guide-content=""
+      spaceY={{ base: '5', md: '6' }}
+      minW="0"
+      overflowWrap="anywhere"
+      color="wiki.ink"
+    >
+      {blocks.map((block) => renderBlock(block))}
     </Box>
   );
 }

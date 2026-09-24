@@ -41,13 +41,21 @@ export function ArticleContents({
 
   function renderItems(items: HeadingItem[]): React.JSX.Element {
     return (
-      <Box as="ul" listStyleType="none" pl="4">
+      <Box as="ul" listStyleType="none" ps="4">
         {items.map((item) => (
-          <Box as="li" key={item.id} py="1">
+          <Box as="li" key={item.id}>
             <Link
               href={`#${item.id}`}
-              color="gray.700"
-              _hover={{ color: 'gray.900' }}
+              display="block"
+              py="2"
+              color="wiki.muted"
+              overflowWrap="anywhere"
+              _hover={{ color: 'wiki.accent' }}
+              _focusVisible={{
+                outline: '2px solid',
+                outlineColor: 'wiki.accent',
+                outlineOffset: '2px',
+              }}
             >
               {item.title}
             </Link>
@@ -62,14 +70,23 @@ export function ArticleContents({
     <Box
       as="nav"
       aria-label="On this page"
-      my="8"
-      p="5"
-      borderWidth="1px"
-      borderColor="gray.200"
-      borderRadius="lg"
-      bg="gray.50"
+      my={{ base: '7', xl: '0' }}
+      py={{ base: '4', xl: '1' }}
+      ps={{ base: '0', xl: '5' }}
+      borderTopWidth={{ base: '1px', xl: '0' }}
+      borderBottomWidth={{ base: '1px', xl: '0' }}
+      borderStartWidth={{ base: '0', xl: '1px' }}
+      borderColor="wiki.border"
+      minW="0"
     >
-      <Text fontWeight="semibold" color="gray.900" mb="2">
+      <Text
+        textStyle="wiki.label"
+        fontWeight="semibold"
+        color="wiki.ink"
+        mb="2"
+        textTransform="uppercase"
+        letterSpacing="wide"
+      >
         On this page
       </Text>
       {renderItems(roots)}

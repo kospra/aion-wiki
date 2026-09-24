@@ -21,29 +21,35 @@ export default function CategoryRoute(): React.JSX.Element {
   if (!category) return <NotFound />;
 
   return (
-    <Stack gap="8">
-      <Breadcrumb.Root aria-label="Breadcrumb">
+    <Stack gap={{ base: '8', md: '10' }}>
+      <Breadcrumb.Root
+        aria-label="Breadcrumb"
+        color="wiki.muted"
+        textStyle="wiki.caption"
+      >
         <Breadcrumb.List>
           <Breadcrumb.Item>
-            <Breadcrumb.Link asChild>
+            <Breadcrumb.Link asChild color="wiki.accent">
               <RouterLink to="/">Home</RouterLink>
             </Breadcrumb.Link>
           </Breadcrumb.Item>
           <Breadcrumb.Separator />
           <Breadcrumb.Item>
-            <Breadcrumb.CurrentLink>{category.title}</Breadcrumb.CurrentLink>
+            <Breadcrumb.CurrentLink color="wiki.ink">
+              {category.title}
+            </Breadcrumb.CurrentLink>
           </Breadcrumb.Item>
         </Breadcrumb.List>
       </Breadcrumb.Root>
       <Box as="header" maxW="3xl">
         <Stack gap="3">
-          <Text color="gray.600" fontSize="sm" fontWeight="semibold">
-            Category
+          <Text textStyle="wiki.label" color="wiki.accent">
+            Chapter {String(categories.indexOf(category) + 1).padStart(2, '0')}
           </Text>
-          <Heading as="h1" size="3xl">
+          <Heading as="h1" textStyle="wiki.title" color="wiki.ink">
             {category.title}
           </Heading>
-          <Text color="gray.600" fontSize="lg">
+          <Text textStyle="wiki.body" color="wiki.muted">
             {category.description}
           </Text>
         </Stack>

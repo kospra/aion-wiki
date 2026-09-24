@@ -26,7 +26,9 @@ The production preview is normally at `http://localhost:3000`. Stop it with Ctrl
 
 ## UI conventions and Chakra MCP
 
-The document `Layout` in `app/root.tsx` wraps route content and error boundaries with `WikiProvider` from `app/components/ui/provider.tsx`. It uses Chakra UI 3.37.0's `defaultSystem` and Emotion 11.14.0. The fixed light document class, neutral Chakra surfaces, and system sans-serif typography render in the prerendered HTML before JavaScript runs. No client-only wrapper or separate application stylesheet is needed.
+The document `Layout` in `app/root.tsx` wraps route content and error boundaries with `WikiProvider` from `app/components/ui/provider.tsx`. It uses Chakra UI 3.37.0 with the shared `wikiSystem` in `app/components/ui/theme.ts` and Emotion 11.14.0. The fixed light document class, warm editorial palette, and system sans-serif typography render in the prerendered HTML before JavaScript runs. No client-only wrapper or separate application stylesheet is needed.
+
+The editorial theme centralizes colors as `wiki.*` semantic tokens, reading styles as `wiki.body` / `wiki.title` / `wiki.section`, and control styles as Chakra recipes. Prose uses a comfortable measure while tables and figures keep a wider frame. Source highlight colors are never replaced by theme accents.
 
 Build visible UI with Chakra components and styling props. Compose React Router links through Chakra `Link` with `asChild` to retain real anchors. Keep document markup, source `strong`/`em`/`u`/`mark` semantics, and line breaks intact. Source highlights retain their exact captured colors and readable text; they are content rather than theme tokens. Use `htmlWidth`/`htmlHeight` for original image dimensions, local scroll regions for wide content, and Chakra Dialog for the accessible image viewer. Stable `data-guide-*` hooks identify content for audits; computed styles and source baselines independently prove visibility and fidelity.
 
@@ -78,3 +80,5 @@ Publish the contents of **`build/client`** to a static host at the site root. Ru
 React Router also emits `__spa-fallback.html`. Unknown routes reached through the React application show its not-found screen. For direct requests to unknown URLs, an ordinary static host returns its own 404. To show the React not-found screen on those requests, configure that host to serve `__spa-fallback.html` after checking real files and directory indexes, preserving HTTP 404 where supported. The fallback requires JavaScript; known pages already contain their content in HTML.
 
 The default local preview intentionally returns its server 404 for unknown direct URLs. No provider configuration or public deployment is included. No application server, database, authentication, CMS, remote font service, or runtime source fetch is required.
+
+Additional design checks: `GUIDE_BROWSER_ROOT=/path/to/browser-runtime node scripts/verify-editorial.mjs http://localhost:3000` verifies reading typography, search placement, mobile reflow, text-spacing overrides, and styled no-JavaScript rendering. Run `node scripts/verify-reduced-motion.mjs http://localhost:3000` with the same environment to check animation preferences and viewer focus return.

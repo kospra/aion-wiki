@@ -30,7 +30,7 @@ export function Layout({
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="theme-color" content="#ffffff" />
+        <meta name="theme-color" content="#faf9f6" />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <Meta />
         <Links />
@@ -49,9 +49,9 @@ function SiteFooter(): React.JSX.Element {
     <Box
       as="footer"
       borderTopWidth="1px"
-      borderColor="gray.200"
-      bg="white"
-      color="gray.600"
+      borderColor="wiki.border"
+      bg="wiki.surface"
+      color="wiki.muted"
     >
       <Container maxW="7xl">
         <Flex
@@ -62,7 +62,7 @@ function SiteFooter(): React.JSX.Element {
           gap="3"
           direction={{ base: 'column', sm: 'row' }}
         >
-          <Text fontSize="lg" fontWeight="semibold" color="gray.900">
+          <Text fontSize="lg" fontWeight="semibold" color="wiki.ink">
             Aion 2 Wiki
           </Text>
           <Text fontSize="sm">An independent reference in progress</Text>
@@ -81,7 +81,7 @@ function Main({ children }: { children: React.ReactNode }): React.JSX.Element {
       maxW="7xl"
       flex="1"
       px={{ base: '4', md: '6' }}
-      py={{ base: '8', md: '12' }}
+      py={{ base: '6', md: '10' }}
     >
       {children}
     </Container>
@@ -118,19 +118,19 @@ export function ErrorBoundary(): React.JSX.Element {
             my="12"
             p={{ base: '8', md: '12' }}
             borderWidth="1px"
-            borderColor="gray.200"
+            borderColor="wiki.border"
             borderRadius="lg"
-            bg="white"
+            bg="wiki.surface"
             textAlign="center"
           >
             <Stack gap="4" align="center">
-              <Text color="gray.600" fontSize="sm">
+              <Text color="wiki.muted" fontSize="sm">
                 The archive is temporarily unavailable
               </Text>
-              <Heading as="h1" id="error-title" size="3xl" color="gray.900">
+              <Heading as="h1" id="error-title" size="3xl" color="wiki.ink">
                 Something went wrong
               </Heading>
-              <Text color="gray.600">
+              <Text color="wiki.muted">
                 We could not display this page. Please try returning to the
                 homepage.
               </Text>
@@ -141,11 +141,11 @@ export function ErrorBoundary(): React.JSX.Element {
                 minH="11"
                 px="5"
                 py="2"
-                bg="gray.900"
+                bg="wiki.accent"
                 color="white"
                 borderRadius="md"
                 fontWeight="semibold"
-                _hover={{ bg: 'gray.700' }}
+                _hover={{ bg: 'wiki.accentHover' }}
               >
                 Return to the homepage
               </Link>

@@ -108,11 +108,17 @@ const visit = async (route) => {
   });
   assert.equal(response.status(), 200, route);
   await page.locator('main h1').waitFor();
-  result.figureLoads += await page.locator('[data-guide-figure] > img').count();
+  result.figureLoads += await page
+    .locator('[data-guide-figure] [data-guide-primary-image]')
+    .count();
   // Load every original on each direct visit, including interaction screenshots.
   await page.evaluate(async () => {
     await Promise.all(
-      [...document.querySelectorAll('[data-guide-figure] > img')].map((img) => {
+      [
+        ...document.querySelectorAll(
+          '[data-guide-figure] [data-guide-primary-image]',
+        ),
+      ].map((img) => {
         img.loading = 'eager';
         return img.decode();
       }),
@@ -384,7 +390,7 @@ async function noJavaScript() {
       }));
       assert.ok(style.fontSize >= 30, `${route}: no-JS heading typography`);
       assert.match(style.fontFamily, /sans-serif/);
-      assert.equal(style.background, 'rgb(255, 255, 255)');
+      assert.equal(style.background, 'rgb(250, 249, 246)');
       assert.ok(style.width <= style.viewport + 1, `${route}: no-JS overflow`);
       assert.ok(await staticPage.locator('main h1').isVisible());
       const path = `${output}/no-js-${route.split('/').at(-1) || 'home'}-${width}.png`;
@@ -415,7 +421,9 @@ try {
           (b) => b.kind === 'figure',
         ).length;
         assert.equal(
-          await page.locator('[data-guide-figure] > img').count(),
+          await page
+            .locator('[data-guide-figure] [data-guide-primary-image]')
+            .count(),
           expectedFigures,
           `${route}: figure selector coverage`,
         );

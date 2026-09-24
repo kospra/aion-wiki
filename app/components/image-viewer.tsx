@@ -32,6 +32,9 @@ export function ImageViewer({ figure }: { figure: Figure }): React.JSX.Element {
           <Dialog.Content
             maxW="min(94vw, 72rem)"
             maxH="94dvh"
+            bg="wiki.surface"
+            color="wiki.ink"
+            borderRadius="lg"
             overflow="hidden"
             _motionReduce={{ animation: 'none' }}
           >
@@ -45,7 +48,7 @@ export function ImageViewer({ figure }: { figure: Figure }): React.JSX.Element {
                     <Link
                       href={src}
                       aria-label={`Open original image: ${figure.alt}`}
-                      colorPalette="blue"
+                      color="wiki.accent"
                     >
                       Open original image
                     </Link>
@@ -76,7 +79,7 @@ export function ImageViewer({ figure }: { figure: Figure }): React.JSX.Element {
                 flex="1"
                 maxW="100%"
                 borderWidth="1px"
-                borderColor="gray.200"
+                borderColor="wiki.border"
                 borderRadius="sm"
               >
                 {src ? (
