@@ -1,0 +1,1649 @@
+[
+  {
+    "slug": "gear-anatomy-and-stat-layers",
+    "title": "Gear anatomy and stat layers",
+    "category": "gear-and-basics-explained",
+    "summary": "Seven equipment stat layers, their numbered visual legend, and transfer restrictions.",
+    "status": "source-uncertain",
+    "sourceUrl": "https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/edit",
+    "qualifiers": [
+      "Source recommendations and first-person statements are Kanon’s. Captured update: 9/20/2026; Global changes were not all confirmed."
+    ],
+    "blocks": [
+      {
+        "id": "gear-source-uncertainty",
+        "sourceIds": [],
+        "kind": "note",
+        "label": "Source uncertainty",
+        "tone": "uncertain",
+        "content": [
+          {
+            "text": "The Armor amplification values are marked “DOUBLE CHECK” in the source. Crafted Potential differences are described for Asia and remain unconfirmed for Global."
+          }
+        ]
+      },
+      {
+        "id": "block-0027",
+        "sourceIds": ["block-0027"],
+        "kind": "heading",
+        "content": [
+          {
+            "text": "CH 1: GEAR & BASICS EXPLAINED "
+          }
+        ],
+        "level": 2
+      },
+      {
+        "id": "block-0028",
+        "sourceIds": ["block-0028"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "BEGINNER NOTE:",
+            "emphasis": true,
+            "underline": true,
+            "highlight": "#f8f9fa"
+          },
+          {
+            "text": " You can select any item in-game and select “Source” to find out where each item can be obtained from. ",
+            "emphasis": true,
+            "highlight": "#f8f9fa"
+          }
+        ]
+      },
+      {
+        "id": "block-0029",
+        "sourceIds": ["block-0029"],
+        "kind": "figure",
+        "figureId": "figure-003"
+      },
+      {
+        "id": "block-0031",
+        "sourceIds": ["block-0031"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "—"
+          }
+        ]
+      },
+      {
+        "id": "block-0032",
+        "sourceIds": ["block-0032"],
+        "kind": "group",
+        "label": "Related source illustrations",
+        "blocks": [
+          {
+            "id": "block-0032-figure-004",
+            "sourceIds": ["block-0032"],
+            "kind": "figure",
+            "figureId": "figure-004"
+          },
+          {
+            "id": "block-0032-figure-005",
+            "sourceIds": ["block-0032"],
+            "kind": "figure",
+            "figureId": "figure-005"
+          },
+          {
+            "id": "block-0032-figure-006",
+            "sourceIds": ["block-0032"],
+            "kind": "figure",
+            "figureId": "figure-006"
+          }
+        ]
+      },
+      {
+        "id": "list-block-0034",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": true,
+        "items": [
+          [
+            {
+              "id": "block-0034",
+              "sourceIds": ["block-0034"],
+              "kind": "heading",
+              "content": [
+                {
+                  "text": "Enhancement/Amp Level"
+                }
+              ],
+              "level": 2
+            },
+            {
+              "id": "list-block-0035",
+              "sourceIds": [],
+              "kind": "list",
+              "ordered": false,
+              "items": [
+                [
+                  {
+                    "id": "block-0035",
+                    "sourceIds": ["block-0035"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "Use Kinah & Enhance Stones (or Amplify Stones) to + your gear"
+                      }
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "id": "block-0036",
+                    "sourceIds": ["block-0036"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "Yellow/Unique Gear go to +15 then an additional +5 levels called “Amp” levels represented by the blue diamonds in the image above"
+                      }
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "id": "block-0037",
+                    "sourceIds": ["block-0037"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "Orange/Heroic Gear go to +20 then an additional +5 “Amp” levels"
+                      }
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "id": "block-0038",
+                    "sourceIds": ["block-0038"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "“Amp” levels unlock new orange stats"
+                      }
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "id": "block-0039",
+                    "sourceIds": ["block-0039"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "Orange “Amp” stats depend on the type of gear"
+                      }
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "id": "block-0040",
+                    "sourceIds": ["block-0040"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "Further Detail",
+                        "strong": true,
+                        "underline": true,
+                        "href": "/articles/growth-and-amplification#block-0408"
+                      }
+                    ]
+                  }
+                ]
+              ]
+            }
+          ]
+        ],
+        "start": 1
+      },
+      {
+        "id": "list-block-0042",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": true,
+        "items": [
+          [
+            {
+              "id": "block-0042",
+              "sourceIds": ["block-0042"],
+              "kind": "heading",
+              "content": [
+                {
+                  "text": "Base Stats"
+                }
+              ],
+              "level": 2
+            },
+            {
+              "id": "list-block-0043",
+              "sourceIds": [],
+              "kind": "list",
+              "ordered": false,
+              "items": [
+                [
+                  {
+                    "id": "block-0043",
+                    "sourceIds": ["block-0043"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "Static stats that do not change"
+                      }
+                    ]
+                  }
+                ]
+              ]
+            }
+          ]
+        ],
+        "start": 2
+      },
+      {
+        "id": "list-block-0045",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": true,
+        "items": [
+          [
+            {
+              "id": "block-0045",
+              "sourceIds": ["block-0045"],
+              "kind": "heading",
+              "content": [
+                {
+                  "text": "Amp Stats "
+                }
+              ],
+              "level": 2
+            },
+            {
+              "id": "list-block-0046",
+              "sourceIds": [],
+              "kind": "list",
+              "ordered": false,
+              "items": [
+                [
+                  {
+                    "id": "block-0046",
+                    "sourceIds": ["block-0046"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "Obtained when going beyond the +15, +20 Enhancement Levels mentioned above"
+                      }
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "id": "block-0047",
+                    "sourceIds": ["block-0047"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "Stats @ max Amp (Level 5)"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "list-block-0048",
+                    "sourceIds": [],
+                    "kind": "list",
+                    "ordered": false,
+                    "items": [
+                      [
+                        {
+                          "id": "block-0048",
+                          "sourceIds": ["block-0048"],
+                          "kind": "paragraph",
+                          "content": [
+                            {
+                              "text": "Weapons"
+                            }
+                          ]
+                        },
+                        {
+                          "id": "list-block-0049",
+                          "sourceIds": [],
+                          "kind": "list",
+                          "ordered": false,
+                          "items": [
+                            [
+                              {
+                                "id": "block-0049",
+                                "sourceIds": ["block-0049"],
+                                "kind": "paragraph",
+                                "content": [
+                                  {
+                                    "text": "Attack 150 "
+                                  }
+                                ]
+                              }
+                            ],
+                            [
+                              {
+                                "id": "block-0050",
+                                "sourceIds": ["block-0050"],
+                                "kind": "paragraph",
+                                "content": [
+                                  {
+                                    "text": "Attack Increase 5%"
+                                  }
+                                ]
+                              }
+                            ]
+                          ]
+                        }
+                      ]
+                    ]
+                  },
+                  {
+                    "id": "list-block-0051",
+                    "sourceIds": [],
+                    "kind": "list",
+                    "ordered": false,
+                    "items": [
+                      [
+                        {
+                          "id": "block-0051",
+                          "sourceIds": ["block-0051"],
+                          "kind": "paragraph",
+                          "content": [
+                            {
+                              "text": "Armor DOUBLE CHECK"
+                            }
+                          ]
+                        },
+                        {
+                          "id": "list-block-0052",
+                          "sourceIds": [],
+                          "kind": "list",
+                          "ordered": false,
+                          "items": [
+                            [
+                              {
+                                "id": "block-0052",
+                                "sourceIds": ["block-0052"],
+                                "kind": "paragraph",
+                                "content": [
+                                  {
+                                    "text": "Defense & HP 400"
+                                  }
+                                ]
+                              }
+                            ],
+                            [
+                              {
+                                "id": "block-0053",
+                                "sourceIds": ["block-0053"],
+                                "kind": "paragraph",
+                                "content": [
+                                  {
+                                    "text": "Defense & HP Increase 5%"
+                                  }
+                                ]
+                              }
+                            ]
+                          ]
+                        }
+                      ]
+                    ]
+                  },
+                  {
+                    "id": "list-block-0054",
+                    "sourceIds": [],
+                    "kind": "list",
+                    "ordered": false,
+                    "items": [
+                      [
+                        {
+                          "id": "block-0054",
+                          "sourceIds": ["block-0054"],
+                          "kind": "paragraph",
+                          "content": [
+                            {
+                              "text": "Accessories"
+                            }
+                          ]
+                        },
+                        {
+                          "id": "list-block-0055",
+                          "sourceIds": [],
+                          "kind": "list",
+                          "ordered": false,
+                          "items": [
+                            [
+                              {
+                                "id": "block-0055",
+                                "sourceIds": ["block-0055"],
+                                "kind": "paragraph",
+                                "content": [
+                                  {
+                                    "text": "Attack 100"
+                                  }
+                                ]
+                              }
+                            ],
+                            [
+                              {
+                                "id": "block-0056",
+                                "sourceIds": ["block-0056"],
+                                "kind": "paragraph",
+                                "content": [
+                                  {
+                                    "text": "Defense 200"
+                                  }
+                                ]
+                              }
+                            ],
+                            [
+                              {
+                                "id": "block-0057",
+                                "sourceIds": ["block-0057"],
+                                "kind": "paragraph",
+                                "content": [
+                                  {
+                                    "text": "Attack Increase 5%"
+                                  }
+                                ]
+                              }
+                            ]
+                          ]
+                        }
+                      ]
+                    ]
+                  }
+                ]
+              ]
+            },
+            {
+              "id": "list-block-0058",
+              "sourceIds": [],
+              "kind": "list",
+              "ordered": false,
+              "items": [
+                [
+                  {
+                    "id": "block-0058",
+                    "sourceIds": ["block-0058"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "A Yellow/Unique gear piece at Level 15, Amp 5 transferring into an Orange/Heroic piece will be Level 20, Amp 0."
+                      }
+                    ]
+                  }
+                ]
+              ]
+            }
+          ]
+        ],
+        "start": 3
+      },
+      {
+        "id": "list-block-0060",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": true,
+        "items": [
+          [
+            {
+              "id": "block-0060",
+              "sourceIds": ["block-0060"],
+              "kind": "heading",
+              "content": [
+                {
+                  "text": "Stat Lines (Soul"
+                },
+                {
+                  "text": " Binding)"
+                }
+              ],
+              "level": 2
+            },
+            {
+              "id": "list-block-0061",
+              "sourceIds": [],
+              "kind": "list",
+              "ordered": false,
+              "items": [
+                [
+                  {
+                    "id": "block-0061",
+                    "sourceIds": ["block-0061"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "RNG stat lines rolled from a pool specific to gear piece (ex: all Helmets have the same stat pool, all Weapons have the same stat pools)"
+                      }
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "id": "block-0062",
+                    "sourceIds": ["block-0062"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "These lines can be rerolled individually using “Synch Stones”"
+                      }
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "id": "block-0063",
+                    "sourceIds": ["block-0063"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "These lines can be completely shuffled altogether using Orange “Soul Codex: Reset” otherwise known as “Reset Books”"
+                      }
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "id": "block-0064",
+                    "sourceIds": ["block-0064"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "The value of each stat can be enhanced and reached higher values by using “Soul Codex” books. "
+                      }
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "id": "block-0065",
+                    "sourceIds": ["block-0065"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "An additional Stat Line can be unlocked by using “Philosopher’s Stone” after “Soul Binding Rate” reaches 100%...in other words, once you enhance every stat to 100% using Soul Codex books in the Enhancement > Soul Binding > Bind menu"
+                      }
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "id": "block-0066",
+                    "sourceIds": ["block-0066"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "Further Detail",
+                        "strong": true,
+                        "underline": true,
+                        "href": "/articles/soul-binding-bind-sync-and-reset#block-0463"
+                      }
+                    ]
+                  }
+                ]
+              ]
+            }
+          ]
+        ],
+        "start": 4
+      },
+      {
+        "id": "list-block-0067",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-0067",
+              "sourceIds": ["block-0067"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "IMPORTANT:",
+                  "strong": true,
+                  "underline": true,
+                  "highlight": "#f8f9fa"
+                },
+                {
+                  "text": " The extra “Philosopher’s Stone” line is lost when transferring gear, the rest will transfer over.",
+                  "strong": true,
+                  "highlight": "#f8f9fa"
+                }
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "id": "list-block-0069",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": true,
+        "items": [
+          [
+            {
+              "id": "block-0069",
+              "sourceIds": ["block-0069"],
+              "kind": "heading",
+              "content": [
+                {
+                  "text": "Manastone/Soulstone Stats"
+                }
+              ],
+              "level": 2
+            },
+            {
+              "id": "list-block-0070",
+              "sourceIds": [],
+              "kind": "list",
+              "ordered": false,
+              "items": [
+                [
+                  {
+                    "id": "block-0070",
+                    "sourceIds": ["block-0070"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "RNG stat lines given to a piece of gear by consuming or “rolling” Manastones/Soulstones"
+                      }
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "id": "block-0071",
+                    "sourceIds": ["block-0071"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "Manastones are for Weapons & Armor"
+                      }
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "id": "block-0072",
+                    "sourceIds": ["block-0072"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "Soulstones are for Accessories"
+                      }
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "id": "block-0073",
+                    "sourceIds": ["block-0073"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "Stats increase in value depending on grade going from Gray > Green > Blue > Yellow"
+                      }
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "id": "block-0074",
+                    "sourceIds": ["block-0074"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "Higher grade Manastones/Soulstones, the higher the chance at higher grade stats"
+                      }
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "id": "block-0075",
+                    "sourceIds": ["block-0075"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "Further Detail",
+                        "strong": true,
+                        "underline": true,
+                        "href": "/articles/manastones-and-soulstones#block-0432"
+                      }
+                    ]
+                  }
+                ]
+              ]
+            }
+          ]
+        ],
+        "start": 5
+      },
+      {
+        "id": "list-block-0076",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-0076",
+              "sourceIds": ["block-0076"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "IMPORTANT:",
+                  "strong": true,
+                  "underline": true,
+                  "highlight": "#f8f9fa"
+                },
+                {
+                  "text": " Manastone/Soulstone lines are lost when transferring gear",
+                  "strong": true,
+                  "highlight": "#f8f9fa"
+                }
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "id": "list-block-0078",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": true,
+        "items": [
+          [
+            {
+              "id": "block-0078",
+              "sourceIds": ["block-0078"],
+              "kind": "heading",
+              "content": [
+                {
+                  "text": "Theostone"
+                },
+                {
+                  "text": "   "
+                }
+              ],
+              "level": 2
+            },
+            {
+              "id": "list-block-0079",
+              "sourceIds": [],
+              "kind": "list",
+              "ordered": false,
+              "items": [
+                [
+                  {
+                    "id": "block-0079",
+                    "sourceIds": ["block-0079"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "Stones that can be embedded into your Weapons that offer a % chance proc effect when landing attacks (IE: 2% chance to deal 5k Water damage to a single target on attack)"
+                      }
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "id": "block-0080",
+                    "sourceIds": ["block-0080"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "Lower grade Theostones can be combined for a chance to create a higher grade Theostone (similar to the Closet - Combine (Skins) system"
+                      }
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "id": "block-0081",
+                    "sourceIds": ["block-0081"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "Theostones make up for a very very small % of your overall damage ( < 1%)."
+                      }
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "id": "block-0082",
+                    "sourceIds": ["block-0082"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "Further Detail",
+                        "strong": true,
+                        "underline": true,
+                        "href": "/articles/theostones#block-0451"
+                      }
+                    ]
+                  }
+                ]
+              ]
+            }
+          ]
+        ],
+        "start": 6
+      },
+      {
+        "id": "list-block-0083",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-0083",
+              "sourceIds": ["block-0083"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "IMPORTANT:",
+                  "strong": true,
+                  "underline": true,
+                  "highlight": "#f8f9fa"
+                },
+                {
+                  "text": " Theostones are lost when transferring gear",
+                  "strong": true,
+                  "highlight": "#f8f9fa"
+                }
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "id": "list-block-0085",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": true,
+        "items": [
+          [
+            {
+              "id": "block-0085",
+              "sourceIds": ["block-0085"],
+              "kind": "heading",
+              "content": [
+                {
+                  "text": "“Potential” Stats"
+                }
+              ],
+              "level": 2
+            },
+            {
+              "id": "list-block-0086",
+              "sourceIds": [],
+              "kind": "list",
+              "ordered": false,
+              "items": [
+                [
+                  {
+                    "id": "block-0086",
+                    "sourceIds": ["block-0086"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "Unlocked automatically at maximum value on Crafted gear"
+                      },
+                      {
+                        "text": " on Asia Server. Crafted Gear on Global will not have this"
+                      }
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "id": "block-0087",
+                    "sourceIds": ["block-0087"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "Unlocked via “Potential Stones” "
+                      }
+                    ]
+                  },
+                  {
+                    "id": "list-block-0088",
+                    "sourceIds": [],
+                    "kind": "list",
+                    "ordered": false,
+                    "items": [
+                      [
+                        {
+                          "id": "block-0088",
+                          "sourceIds": ["block-0088"],
+                          "kind": "paragraph",
+                          "content": [
+                            {
+                              "text": "“Potential Stones” mainly obtained from Expedition - Conquest Dungeons"
+                            }
+                          ]
+                        }
+                      ]
+                    ]
+                  }
+                ]
+              ]
+            },
+            {
+              "id": "list-block-0089",
+              "sourceIds": [],
+              "kind": "list",
+              "ordered": false,
+              "items": [
+                [
+                  {
+                    "id": "block-0089",
+                    "sourceIds": ["block-0089"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "Weapons and Accessories give PVE Damage Boost %"
+                      }
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "id": "block-0090",
+                    "sourceIds": ["block-0090"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "Armor gives PVE Damage Tolerance %"
+                      }
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "id": "block-0091",
+                    "sourceIds": ["block-0091"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "Crafted gear gives more PVE Damage Boost/Tolerance % than Dungeon gear on Asia Server, not confirmed yet on Global"
+                      }
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "id": "block-0092",
+                    "sourceIds": ["block-0092"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "Further Detail",
+                        "strong": true,
+                        "underline": true,
+                        "href": "/articles/growth-and-amplification#block-0408"
+                      }
+                    ]
+                  }
+                ]
+              ]
+            }
+          ]
+        ],
+        "start": 7
+      },
+      {
+        "id": "list-block-0093",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-0093",
+              "sourceIds": ["block-0093"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "IMPORTANT:",
+                  "strong": true,
+                  "underline": true,
+                  "highlight": "#f8f9fa"
+                },
+                {
+                  "text": " Potential Stat lines are lost when transferring gear",
+                  "strong": true,
+                  "highlight": "#f8f9fa"
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "pantheon-stats-and-statues",
+    "title": "Pantheon stats and statues",
+    "category": "gear-and-basics-explained",
+    "summary": "Pantheon stat pairs, highlighted priorities, and the source’s statue and portrait examples.",
+    "status": "source-uncertain",
+    "sourceUrl": "https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/edit",
+    "qualifiers": [
+      "Source recommendations and first-person statements are Kanon’s. Captured update: 9/20/2026; Global changes were not all confirmed."
+    ],
+    "blocks": [
+      {
+        "id": "block-0096",
+        "sourceIds": ["block-0096"],
+        "kind": "heading",
+        "content": [
+          {
+            "text": "PANTHEON (STATS) / STATUES"
+          }
+        ],
+        "level": 2
+      },
+      {
+        "id": "block-0098",
+        "sourceIds": ["block-0098"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "The Pantheon Stats are….just more stats…but bundled stats. Each Pantheon Stat gives you 2 effect stats. "
+          }
+        ]
+      },
+      {
+        "id": "block-0099",
+        "sourceIds": ["block-0099"],
+        "kind": "figure",
+        "figureId": "figure-007"
+      },
+      {
+        "id": "block-0102",
+        "sourceIds": ["block-0102"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Pantheon Stats can be obtained via:"
+          }
+        ]
+      },
+      {
+        "id": "block-0103",
+        "sourceIds": ["block-0103"],
+        "kind": "heading",
+        "content": [
+          {
+            "text": "- Bracelet (Gear)"
+          }
+        ],
+        "level": 3
+      },
+      {
+        "id": "block-0104",
+        "sourceIds": ["block-0104"],
+        "kind": "figure",
+        "figureId": "figure-008"
+      },
+      {
+        "id": "block-0106",
+        "sourceIds": ["block-0106"],
+        "kind": "heading",
+        "content": [
+          {
+            "text": "- Arcana ("
+          },
+          {
+            "text": "See",
+            "emphasis": true
+          },
+          {
+            "text": " ",
+            "emphasis": true
+          },
+          {
+            "text": "CH: 6 Arcana",
+            "emphasis": true,
+            "underline": true,
+            "href": "/articles/arcana-card-types-and-stat-pools#block-0511"
+          },
+          {
+            "text": ")"
+          }
+        ],
+        "level": 3
+      },
+      {
+        "id": "block-0107",
+        "sourceIds": ["block-0107"],
+        "kind": "figure",
+        "figureId": "figure-009"
+      },
+      {
+        "id": "block-0109",
+        "sourceIds": ["block-0109"],
+        "kind": "heading",
+        "content": [
+          {
+            "text": "- Pantheon (Obtaining and equipping “Statues” and “Portraits” in the Pantheon)"
+          }
+        ],
+        "level": 3
+      },
+      {
+        "id": "block-0110",
+        "sourceIds": ["block-0110"],
+        "kind": "group",
+        "label": "Source text and illustration",
+        "blocks": [
+          {
+            "id": "block-0110-text",
+            "sourceIds": ["block-0110"],
+            "kind": "paragraph",
+            "content": [
+              {
+                "text": "is",
+                "emphasis": true
+              }
+            ]
+          },
+          {
+            "id": "block-0110-figure-010",
+            "sourceIds": ["block-0110"],
+            "kind": "figure",
+            "figureId": "figure-010"
+          }
+        ]
+      },
+      {
+        "id": "block-0112",
+        "sourceIds": ["block-0112"],
+        "kind": "heading",
+        "content": [
+          {
+            "text": "Pantheon Stats:"
+          }
+        ],
+        "level": 3
+      },
+      {
+        "id": "list-block-0113",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-0113",
+              "sourceIds": ["block-0113"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Destruction [Zikel]",
+                  "highlight": "#ffff00"
+                }
+              ]
+            },
+            {
+              "id": "list-block-0114",
+              "sourceIds": [],
+              "kind": "list",
+              "ordered": false,
+              "items": [
+                [
+                  {
+                    "id": "block-0114",
+                    "sourceIds": ["block-0114"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "Attack Increase",
+                        "underline": true
+                      },
+                      {
+                        "text": " and Perfect Resist"
+                      }
+                    ]
+                  }
+                ]
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "id": "list-block-0115",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-0115",
+              "sourceIds": ["block-0115"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Death [Triniel]"
+                }
+              ]
+            },
+            {
+              "id": "list-block-0116",
+              "sourceIds": [],
+              "kind": "list",
+              "ordered": false,
+              "items": [
+                [
+                  {
+                    "id": "block-0116",
+                    "sourceIds": ["block-0116"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "Increases Critical Hit and Regeneration Penetration"
+                      }
+                    ]
+                  }
+                ]
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "id": "list-block-0117",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-0117",
+              "sourceIds": ["block-0117"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Wisdom [Lumiel]",
+                  "highlight": "#ffff00"
+                }
+              ]
+            },
+            {
+              "id": "list-block-0118",
+              "sourceIds": [],
+              "kind": "list",
+              "ordered": false,
+              "items": [
+                [
+                  {
+                    "id": "block-0118",
+                    "sourceIds": ["block-0118"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "Reduces MP Consumption and increases "
+                      },
+                      {
+                        "text": "Double Chance",
+                        "underline": true
+                      }
+                    ]
+                  }
+                ]
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "id": "list-block-0119",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-0119",
+              "sourceIds": ["block-0119"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Destiny [Marchutan]"
+                }
+              ]
+            },
+            {
+              "id": "list-block-0120",
+              "sourceIds": [],
+              "kind": "list",
+              "ordered": false,
+              "items": [
+                [
+                  {
+                    "id": "block-0120",
+                    "sourceIds": ["block-0120"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "Increases MP and Endurance Chance"
+                      }
+                    ]
+                  }
+                ]
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "id": "list-block-0121",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-0121",
+              "sourceIds": ["block-0121"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Space [Israphel]"
+                }
+              ]
+            },
+            {
+              "id": "list-block-0122",
+              "sourceIds": [],
+              "kind": "list",
+              "ordered": false,
+              "items": [
+                [
+                  {
+                    "id": "block-0122",
+                    "sourceIds": ["block-0122"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "Increases Move Speed and Block Chance"
+                      }
+                    ]
+                  }
+                ]
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "id": "list-block-0123",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-0123",
+              "sourceIds": ["block-0123"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Justice [Nezekan]"
+                }
+              ]
+            },
+            {
+              "id": "list-block-0124",
+              "sourceIds": [],
+              "kind": "list",
+              "ordered": false,
+              "items": [
+                [
+                  {
+                    "id": "block-0124",
+                    "sourceIds": ["block-0124"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "Increases Defense and Perfect activation chance"
+                      }
+                    ]
+                  }
+                ]
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "id": "list-block-0125",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-0125",
+              "sourceIds": ["block-0125"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Freedom [Vaizel]"
+                }
+              ]
+            },
+            {
+              "id": "list-block-0126",
+              "sourceIds": [],
+              "kind": "list",
+              "ordered": false,
+              "items": [
+                [
+                  {
+                    "id": "block-0126",
+                    "sourceIds": ["block-0126"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "Increases Accuracy and Evasion"
+                      }
+                    ]
+                  }
+                ]
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "id": "list-block-0127",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-0127",
+              "sourceIds": ["block-0127"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Illusion [Kaisinel]",
+                  "highlight": "#ffff00"
+                }
+              ]
+            },
+            {
+              "id": "list-block-0128",
+              "sourceIds": [],
+              "kind": "list",
+              "ordered": false,
+              "items": [
+                [
+                  {
+                    "id": "block-0128",
+                    "sourceIds": ["block-0128"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "Reduces Cooldown",
+                        "underline": true
+                      },
+                      {
+                        "text": " and increases Endurance Penetration"
+                      }
+                    ]
+                  }
+                ]
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "id": "list-block-0129",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-0129",
+              "sourceIds": ["block-0129"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Life [Yustiel]"
+                }
+              ]
+            },
+            {
+              "id": "list-block-0130",
+              "sourceIds": [],
+              "kind": "list",
+              "ordered": false,
+              "items": [
+                [
+                  {
+                    "id": "block-0130",
+                    "sourceIds": ["block-0130"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "Increases HP and Regeneration Activation Chance"
+                      }
+                    ]
+                  }
+                ]
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "id": "list-block-0131",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-0131",
+              "sourceIds": ["block-0131"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Time [Siel]",
+                  "highlight": "#ffff00"
+                }
+              ]
+            },
+            {
+              "id": "list-block-0132",
+              "sourceIds": [],
+              "kind": "list",
+              "ordered": false,
+              "items": [
+                [
+                  {
+                    "id": "block-0132",
+                    "sourceIds": ["block-0132"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "Increases Combat Speed",
+                        "underline": true
+                      },
+                      {
+                        "text": " and "
+                      },
+                      {
+                        "text": "Double Chance"
+                      },
+                      {
+                        "text": " Resist"
+                      }
+                    ]
+                  }
+                ]
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "id": "block-0134",
+        "sourceIds": ["block-0134"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Highlighted",
+            "highlight": "#ffff00"
+          },
+          {
+            "text": " Pantheon stats above are the highest value due to the "
+          },
+          {
+            "text": "underlined",
+            "underline": true
+          },
+          {
+            "text": " stat."
+          }
+        ]
+      },
+      {
+        "id": "block-0136",
+        "sourceIds": ["block-0136"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "***ADD MORE DETAILS ON PORTRAITS***"
+          }
+        ]
+      },
+      {
+        "id": "pantheon-editorial-fragments",
+        "sourceIds": [],
+        "kind": "note",
+        "label": "Unfinished source text",
+        "tone": "uncertain",
+        "content": [
+          {
+            "text": "The standalone “is” fragment and portrait TODO above are retained from the source. Yellow highlighted names identify the priorities explained by the underlined component stats; purple screenshot rows are item UI styling."
+          }
+        ]
+      }
+    ]
+  }
+]

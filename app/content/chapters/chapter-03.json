@@ -1,0 +1,1843 @@
+[
+  {
+    "slug": "stat-line-rerolling-strategy",
+    "title": "Stat-line rerolling strategy",
+    "category": "ideal-stat-lines",
+    "summary": "Reroll materials, rare-line strategy, transfer cautions, and probability context.",
+    "status": "source-uncertain",
+    "sourceUrl": "https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/edit",
+    "qualifiers": [
+      "Source recommendations and first-person statements are Kanon’s. Captured update: 9/20/2026; Global changes were not all confirmed."
+    ],
+    "blocks": [
+      {
+        "id": "block-0230",
+        "sourceIds": ["block-0230"],
+        "kind": "heading",
+        "content": [
+          {
+            "text": "CH 3: IDEAL STAT LINES"
+          }
+        ],
+        "level": 2
+      },
+      {
+        "id": "block-0232",
+        "sourceIds": ["block-0232"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Every piece of gear has “"
+          },
+          {
+            "text": "Stat Lines",
+            "strong": true
+          },
+          {
+            "text": "” that comes on it. These "
+          },
+          {
+            "text": "Stat Lines",
+            "strong": true
+          },
+          {
+            "text": " can be changed by using “Synch Stones” or other pieces of Gear of the equivalent grade (Yellow/Unique Synch Stones for Yellow/Unique gear). If you use lower grade Synch Stones (Yellow/Unique Synch Stone for an Orange/Heroic piece of gear, you will have a 10% chance for the stat to get rerolled"
+          },
+          {
+            "text": " - never do this)."
+          }
+        ]
+      },
+      {
+        "id": "block-0234",
+        "sourceIds": ["block-0234"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Synch Stones are obtained via Substance Morphing either Synch Stone Fragments (mainly obtained by running dungeons) or any Yellow/Unique Gear piece."
+          }
+        ]
+      },
+      {
+        "id": "block-0236",
+        "sourceIds": ["block-0236"],
+        "kind": "figure",
+        "figureId": "figure-019"
+      },
+      {
+        "id": "block-0237",
+        "sourceIds": ["block-0237"],
+        "kind": "figure",
+        "figureId": "figure-020"
+      },
+      {
+        "id": "block-0240",
+        "sourceIds": ["block-0240"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Another method of rerolling “"
+          },
+          {
+            "text": "Stat Lines",
+            "strong": true
+          },
+          {
+            "text": "” is by using orange “Soul Codex: Reset” books (referred to as “Reset Books”). These reroll every single "
+          },
+          {
+            "text": "Stat Line",
+            "strong": true
+          },
+          {
+            "text": " at once."
+          }
+        ]
+      },
+      {
+        "id": "block-0242",
+        "sourceIds": ["block-0242"],
+        "kind": "figure",
+        "figureId": "figure-021"
+      },
+      {
+        "id": "block-0244",
+        "sourceIds": ["block-0244"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "When rolling for lines on gear, always prioritize the lowest % roll lines (≈ x%"
+          },
+          {
+            "text": " listed below)"
+          },
+          {
+            "text": ".  It can be a nightmare fishing for the lower % lines especially on Heroic gear. If you get the BIS combination, you can  transfer your piece of gear into another using “Transfer Stones” to preserve your "
+          },
+          {
+            "text": "Stat Lines",
+            "strong": true
+          },
+          {
+            "text": ". Try "
+          },
+          {
+            "text": "to avoid getting a low % line on the extra Philosopher Stone line because that line will not carry over and you’ll have to fish for the line again."
+          }
+        ]
+      },
+      {
+        "id": "block-0246",
+        "sourceIds": ["block-0246"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Be careful not to waste Orange/Heroic transfer Stones as these are much harder to come by. Transferring Yellow/Unique Gear to another Yellow/Unique Gear piece is pretty easy but put thought into transferring anything to Orange/Heroic gear. "
+          },
+          {
+            "text": "(Check Chapter 5 - Transfer)",
+            "emphasis": true
+          }
+        ]
+      },
+      {
+        "id": "block-0248",
+        "sourceIds": ["block-0248"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "The following are the go-to "
+          },
+          {
+            "text": "Stat Lines",
+            "strong": true
+          },
+          {
+            "text": " for every piece of gear in order of priority (priority from % chance to roll, not damage value. Ex: Weapon Damage Boost > Damage Boost in terms of actual damage value but Damage Boost will be listed higher on the list below because it has a lower % chance to roll). Percentages on each state vary from piece to piece but the relative difference is the same, you can use this as the benchmark to identify rarity amongst the "
+          },
+          {
+            "text": "Stat Lines.",
+            "strong": true
+          }
+        ]
+      },
+      {
+        "id": "block-0250",
+        "sourceIds": ["block-0250"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "(The following ",
+            "emphasis": true
+          },
+          {
+            "text": "Stat Lines",
+            "strong": true,
+            "emphasis": true
+          },
+          {
+            "text": " are for Global)",
+            "emphasis": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "global-stat-priorities-by-equipment",
+    "title": "Global stat priorities by equipment",
+    "category": "ideal-stat-lines",
+    "summary": "Global equipment stat-line priorities ordered by roll rarity, with conditional alternatives.",
+    "status": "source-uncertain",
+    "sourceUrl": "https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/edit",
+    "qualifiers": [
+      "Source recommendations and first-person statements are Kanon’s. Captured update: 9/20/2026; Global changes were not all confirmed.",
+      "These stat lines are for Global; the order prioritizes approximate roll rarity, not damage value. Percentages vary by equipment piece."
+    ],
+    "blocks": [
+      {
+        "id": "context-block-0248",
+        "sourceIds": ["block-0248"],
+        "kind": "note",
+        "label": "How to read these priorities",
+        "tone": "context",
+        "content": [
+          {
+            "text": "The following are the go-to "
+          },
+          {
+            "text": "Stat Lines",
+            "strong": true
+          },
+          {
+            "text": " for every piece of gear in order of priority (priority from % chance to roll, not damage value. Ex: Weapon Damage Boost > Damage Boost in terms of actual damage value but Damage Boost will be listed higher on the list below because it has a lower % chance to roll). Percentages on each state vary from piece to piece but the relative difference is the same, you can use this as the benchmark to identify rarity amongst the "
+          },
+          {
+            "text": "Stat Lines.",
+            "strong": true
+          }
+        ]
+      },
+      {
+        "id": "reference-block-0248",
+        "sourceIds": [],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Original context in Stat-line rerolling strategy",
+            "href": "/articles/stat-line-rerolling-strategy#block-0248"
+          }
+        ]
+      },
+      {
+        "id": "context-block-0250",
+        "sourceIds": ["block-0250"],
+        "kind": "note",
+        "label": "Regional scope",
+        "tone": "context",
+        "content": [
+          {
+            "text": "(The following ",
+            "emphasis": true
+          },
+          {
+            "text": "Stat Lines",
+            "strong": true,
+            "emphasis": true
+          },
+          {
+            "text": " are for Global)",
+            "emphasis": true
+          }
+        ]
+      },
+      {
+        "id": "reference-block-0250",
+        "sourceIds": [],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Original context in Stat-line rerolling strategy",
+            "href": "/articles/stat-line-rerolling-strategy#block-0250"
+          }
+        ]
+      },
+      {
+        "id": "block-0251",
+        "sourceIds": ["block-0251"],
+        "kind": "heading",
+        "content": [
+          {
+            "text": "Weapon & Guard"
+          }
+        ],
+        "level": 3
+      },
+      {
+        "id": "list-block-0252",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-0252",
+              "sourceIds": ["block-0252"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Damage Boost ("
+                },
+                {
+                  "text": "≈ 2%)",
+                  "emphasis": true
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0253",
+              "sourceIds": ["block-0253"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Combat Speed ("
+                },
+                {
+                  "text": "≈ 4%)",
+                  "emphasis": true
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0254",
+              "sourceIds": ["block-0254"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Weapon Damage Boost ("
+                },
+                {
+                  "text": "≈ 4%)",
+                  "emphasis": true
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0255",
+              "sourceIds": ["block-0255"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Might ("
+                },
+                {
+                  "text": "≈ ",
+                  "emphasis": true
+                },
+                {
+                  "text": "5",
+                  "emphasis": true
+                },
+                {
+                  "text": "%)",
+                  "emphasis": true
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0256",
+              "sourceIds": ["block-0256"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Multi-hit chance ("
+                },
+                {
+                  "text": "≈ ",
+                  "emphasis": true
+                },
+                {
+                  "text": "5",
+                  "emphasis": true
+                },
+                {
+                  "text": "%)",
+                  "emphasis": true
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0257",
+              "sourceIds": ["block-0257"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Precision ("
+                },
+                {
+                  "text": "≈ ",
+                  "emphasis": true
+                },
+                {
+                  "text": "6",
+                  "emphasis": true
+                },
+                {
+                  "text": "%)",
+                  "emphasis": true
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0258",
+              "sourceIds": ["block-0258"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Attack ("
+                },
+                {
+                  "text": "≈ ",
+                  "emphasis": true
+                },
+                {
+                  "text": "6",
+                  "emphasis": true
+                },
+                {
+                  "text": "%)",
+                  "emphasis": true
+                }
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "id": "block-0260",
+        "sourceIds": ["block-0260"],
+        "kind": "heading",
+        "content": [
+          {
+            "text": "Helmet"
+          }
+        ],
+        "level": 3
+      },
+      {
+        "id": "list-block-0261",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-0261",
+              "sourceIds": ["block-0261"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Double Chance"
+                },
+                {
+                  "text": " ("
+                },
+                {
+                  "text": "≈ ",
+                  "emphasis": true
+                },
+                {
+                  "text": "1%)"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0262",
+              "sourceIds": ["block-0262"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Attack Increase ("
+                },
+                {
+                  "text": "≈ ",
+                  "emphasis": true
+                },
+                {
+                  "text": "1%)"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0263",
+              "sourceIds": ["block-0263"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Attack ("
+                },
+                {
+                  "text": "≈ ",
+                  "emphasis": true
+                },
+                {
+                  "text": "4%)"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0264",
+              "sourceIds": ["block-0264"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Passive skills for the rest"
+                }
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "id": "block-0266",
+        "sourceIds": ["block-0266"],
+        "kind": "heading",
+        "content": [
+          {
+            "text": "Cloak"
+          }
+        ],
+        "level": 3
+      },
+      {
+        "id": "list-block-0267",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-0267",
+              "sourceIds": ["block-0267"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Double Chance"
+                },
+                {
+                  "text": " ("
+                },
+                {
+                  "text": "≈ ",
+                  "emphasis": true
+                },
+                {
+                  "text": "1%)"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0268",
+              "sourceIds": ["block-0268"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Attack Increase ("
+                },
+                {
+                  "text": "≈ ",
+                  "emphasis": true
+                },
+                {
+                  "text": "1%)"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0269",
+              "sourceIds": ["block-0269"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Perfect Chance ("
+                },
+                {
+                  "text": "≈ ",
+                  "emphasis": true
+                },
+                {
+                  "text": "1%)"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0270",
+              "sourceIds": ["block-0270"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Attack ("
+                },
+                {
+                  "text": "≈ ",
+                  "emphasis": true
+                },
+                {
+                  "text": "4%)"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0271",
+              "sourceIds": ["block-0271"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Passive skills for the rest"
+                }
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "id": "block-0273",
+        "sourceIds": ["block-0273"],
+        "kind": "heading",
+        "content": [
+          {
+            "text": "Shoulder"
+          }
+        ],
+        "level": 3
+      },
+      {
+        "id": "list-block-0274",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-0274",
+              "sourceIds": ["block-0274"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Double Chance ("
+                },
+                {
+                  "text": "≈ 1%)",
+                  "emphasis": true
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0275",
+              "sourceIds": ["block-0275"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Critical Damage Boost ("
+                },
+                {
+                  "text": "≈ 3%)",
+                  "emphasis": true
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0276",
+              "sourceIds": ["block-0276"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Attack ("
+                },
+                {
+                  "text": "≈ 4%)",
+                  "emphasis": true
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0277",
+              "sourceIds": ["block-0277"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Passive skills for the rest"
+                }
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "id": "block-0279",
+        "sourceIds": ["block-0279"],
+        "kind": "heading",
+        "content": [
+          {
+            "text": "Chest"
+          }
+        ],
+        "level": 3
+      },
+      {
+        "id": "list-block-0280",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-0280",
+              "sourceIds": ["block-0280"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Perfect Chance ("
+                },
+                {
+                  "text": "≈ ",
+                  "emphasis": true
+                },
+                {
+                  "text": "1%)"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0281",
+              "sourceIds": ["block-0281"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Damage Boost ("
+                },
+                {
+                  "text": "≈ ",
+                  "emphasis": true
+                },
+                {
+                  "text": "3%)"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0282",
+              "sourceIds": ["block-0282"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Attack  ("
+                },
+                {
+                  "text": "≈ ",
+                  "emphasis": true
+                },
+                {
+                  "text": "4%)"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0283",
+              "sourceIds": ["block-0283"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Passive skills for the rest"
+                }
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "id": "block-0285",
+        "sourceIds": ["block-0285"],
+        "kind": "heading",
+        "content": [
+          {
+            "text": "Pants"
+          }
+        ],
+        "level": 3
+      },
+      {
+        "id": "list-block-0286",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-0286",
+              "sourceIds": ["block-0286"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Attack Increase ("
+                },
+                {
+                  "text": "≈ ",
+                  "emphasis": true
+                },
+                {
+                  "text": "1%)"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0287",
+              "sourceIds": ["block-0287"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Perfect Chance ("
+                },
+                {
+                  "text": "≈ ",
+                  "emphasis": true
+                },
+                {
+                  "text": "1%)"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0288",
+              "sourceIds": ["block-0288"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Damage Tolerance ("
+                },
+                {
+                  "text": "≈ ",
+                  "emphasis": true
+                },
+                {
+                  "text": "3%)"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0289",
+              "sourceIds": ["block-0289"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Attack ("
+                },
+                {
+                  "text": "≈ 4%)",
+                  "emphasis": true
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0290",
+              "sourceIds": ["block-0290"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Passive skills for the rest"
+                }
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "id": "block-0292",
+        "sourceIds": ["block-0292"],
+        "kind": "heading",
+        "content": [
+          {
+            "text": "Gloves"
+          }
+        ],
+        "level": 3
+      },
+      {
+        "id": "list-block-0293",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-0293",
+              "sourceIds": ["block-0293"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Perfect Chance ("
+                },
+                {
+                  "text": "≈ ",
+                  "emphasis": true
+                },
+                {
+                  "text": "1%)"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0294",
+              "sourceIds": ["block-0294"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Combat Speed ("
+                },
+                {
+                  "text": "≈ ",
+                  "emphasis": true
+                },
+                {
+                  "text": "3%)"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0295",
+              "sourceIds": ["block-0295"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Attack ("
+                },
+                {
+                  "text": "≈ 4%)",
+                  "emphasis": true
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0296",
+              "sourceIds": ["block-0296"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Passive skills for the rest"
+                }
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "id": "block-0298",
+        "sourceIds": ["block-0298"],
+        "kind": "heading",
+        "content": [
+          {
+            "text": "Shoes"
+          }
+        ],
+        "level": 3
+      },
+      {
+        "id": "list-block-0299",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-0299",
+              "sourceIds": ["block-0299"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Perfect Chance ("
+                },
+                {
+                  "text": "≈ ",
+                  "emphasis": true
+                },
+                {
+                  "text": "1%)"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0300",
+              "sourceIds": ["block-0300"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Movement Speed ("
+                },
+                {
+                  "text": "≈ ",
+                  "emphasis": true
+                },
+                {
+                  "text": "3%)"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0301",
+              "sourceIds": ["block-0301"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Attack ("
+                },
+                {
+                  "text": "≈ ",
+                  "emphasis": true
+                },
+                {
+                  "text": "4%)"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0302",
+              "sourceIds": ["block-0302"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Passive skills for the rest"
+                }
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "id": "block-0304",
+        "sourceIds": ["block-0304"],
+        "kind": "heading",
+        "content": [
+          {
+            "text": "Necklace"
+          }
+        ],
+        "level": 3
+      },
+      {
+        "id": "list-block-0305",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-0305",
+              "sourceIds": ["block-0305"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Combat Speed ("
+                },
+                {
+                  "text": "≈ ",
+                  "emphasis": true
+                },
+                {
+                  "text": "2%)"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0306",
+              "sourceIds": ["block-0306"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Might ("
+                },
+                {
+                  "text": "≈ ",
+                  "emphasis": true
+                },
+                {
+                  "text": "2%)"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0307",
+              "sourceIds": ["block-0307"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Attack ("
+                },
+                {
+                  "text": "≈ ",
+                  "emphasis": true
+                },
+                {
+                  "text": "8%)"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0308",
+              "sourceIds": ["block-0308"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Passive Skills for the rest"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0309",
+              "sourceIds": ["block-0309"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Accuracy ("
+                },
+                {
+                  "text": "≈ ",
+                  "emphasis": true
+                },
+                {
+                  "text": "6%) (if needed)"
+                }
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "id": "block-0310",
+        "sourceIds": ["block-0310"],
+        "kind": "heading",
+        "content": [
+          {
+            "text": "Earring"
+          }
+        ],
+        "level": 3
+      },
+      {
+        "id": "list-block-0311",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-0311",
+              "sourceIds": ["block-0311"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Move Speed ("
+                },
+                {
+                  "text": "≈ ",
+                  "emphasis": true
+                },
+                {
+                  "text": "2%)"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0312",
+              "sourceIds": ["block-0312"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Might ("
+                },
+                {
+                  "text": "≈ ",
+                  "emphasis": true
+                },
+                {
+                  "text": "2%)"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0313",
+              "sourceIds": ["block-0313"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Precision ("
+                },
+                {
+                  "text": "≈ ",
+                  "emphasis": true
+                },
+                {
+                  "text": "2%)"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0314",
+              "sourceIds": ["block-0314"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Attack ("
+                },
+                {
+                  "text": "≈ ",
+                  "emphasis": true
+                },
+                {
+                  "text": "8%)"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0315",
+              "sourceIds": ["block-0315"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Passive Skills for the rest"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0316",
+              "sourceIds": ["block-0316"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Accuracy ("
+                },
+                {
+                  "text": "≈ ",
+                  "emphasis": true
+                },
+                {
+                  "text": "6%) (if needed)"
+                }
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "id": "block-0318",
+        "sourceIds": ["block-0318"],
+        "kind": "heading",
+        "content": [
+          {
+            "text": "Rings"
+          }
+        ],
+        "level": 3
+      },
+      {
+        "id": "list-block-0319",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-0319",
+              "sourceIds": ["block-0319"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Might ("
+                },
+                {
+                  "text": "≈ ",
+                  "emphasis": true
+                },
+                {
+                  "text": "2%)"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0320",
+              "sourceIds": ["block-0320"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Precision ("
+                },
+                {
+                  "text": "≈ ",
+                  "emphasis": true
+                },
+                {
+                  "text": "2%)"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0321",
+              "sourceIds": ["block-0321"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Attack ("
+                },
+                {
+                  "text": "≈ ",
+                  "emphasis": true
+                },
+                {
+                  "text": "8%)"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0322",
+              "sourceIds": ["block-0322"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Active Skills for the rest"
+                }
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "id": "block-0324",
+        "sourceIds": ["block-0324"],
+        "kind": "heading",
+        "content": [
+          {
+            "text": "Bracelet"
+          }
+        ],
+        "level": 3
+      },
+      {
+        "id": "list-block-0325",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-0325",
+              "sourceIds": ["block-0325"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Illusion (Reduces Cooldown and increases Endurance Penetration)"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0326",
+              "sourceIds": ["block-0326"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Wisdom (Reduces MP Consumption and increases "
+                },
+                {
+                  "text": "Double Chance"
+                },
+                {
+                  "text": ")"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0327",
+              "sourceIds": ["block-0327"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Destruction Increases (Attack and Perfect Resist)"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0328",
+              "sourceIds": ["block-0328"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Time (Increases Combat Speed and"
+                },
+                {
+                  "text": "Double Chance"
+                },
+                {
+                  "text": " Resist)"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0329",
+              "sourceIds": ["block-0329"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Justice (Increases Defense and Perfect activation chance)"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0330",
+              "sourceIds": ["block-0330"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Space (Increases Move Speed and Block Chance)"
+                }
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "id": "block-0331",
+        "sourceIds": ["block-0331"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Important Note: Some classes may want to swap a line for a different stat, i.e. assassin would take Death instead of Space",
+            "strong": true,
+            "highlight": "#f8f9fa"
+          }
+        ]
+      },
+      {
+        "id": "block-0332",
+        "sourceIds": ["block-0332"],
+        "kind": "heading",
+        "content": [
+          {
+            "text": "Brooch"
+          }
+        ],
+        "level": 3
+      },
+      {
+        "id": "list-block-0333",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-0333",
+              "sourceIds": ["block-0333"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Might"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0334",
+              "sourceIds": ["block-0334"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Precision"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0335",
+              "sourceIds": ["block-0335"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Accuracy"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0336",
+              "sourceIds": ["block-0336"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Constitution"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0337",
+              "sourceIds": ["block-0337"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Critical or Block"
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "raid-accuracy-and-critical-hit-requirements",
+    "title": "Raid Accuracy and Critical Hit requirements",
+    "category": "ideal-stat-lines",
+    "summary": "Approximate raid Accuracy and Critical Hit requirements, supplemental stats, and unknown Muspel values.",
+    "status": "source-uncertain",
+    "sourceUrl": "https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/edit",
+    "qualifiers": [
+      "Source recommendations and first-person statements are Kanon’s. Captured update: 9/20/2026; Global changes were not all confirmed.",
+      "Raid values are approximate and not confirmed for Global. Muspel Normal Accuracy and Crit remain unknown."
+    ],
+    "blocks": [
+      {
+        "id": "block-0339",
+        "sourceIds": ["block-0339"],
+        "kind": "heading",
+        "content": [
+          {
+            "text": "Accuracy & Crit Requirements"
+          }
+        ],
+        "level": 2
+      },
+      {
+        "id": "block-0341",
+        "sourceIds": ["block-0341"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Bosses have defensive stats that counter Accuracy and Critical Hit. Below are the Accuracy & Critical Hit values you should reach for the end-game Raid bosses"
+          },
+          {
+            "text": " to not miss and maintain the maximum Crit. To see how these stats work in more detail click here → "
+          },
+          {
+            "text": "Further Detail",
+            "strong": true,
+            "underline": true,
+            "href": "/articles/accuracy-block-and-critical-hit#block-1190"
+          }
+        ]
+      },
+      {
+        "id": "block-0343",
+        "sourceIds": ["block-0343"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Keep in mind there are additional stats that add to Accuracy and Crit. For example PVE Accuracy and Block Penetration. All of these should be added when reaching the following Accuracy and Crit caps listed below (meaning the Accuracy and Crit listed on your “Stat Info > Main Stats” page will be lower than the following numbers below."
+          }
+        ]
+      },
+      {
+        "id": "block-0345",
+        "sourceIds": ["block-0345"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "*These requirements are not yet confirmed for global",
+            "emphasis": true
+          }
+        ]
+      },
+      {
+        "id": "block-0347",
+        "sourceIds": ["block-0347"],
+        "kind": "heading",
+        "content": [
+          {
+            "text": "Ludra Raid"
+          }
+        ],
+        "level": 3
+      },
+      {
+        "id": "block-0348",
+        "sourceIds": ["block-0348"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "1500 "
+          },
+          {
+            "text": "A"
+          },
+          {
+            "text": "ccuracy"
+          }
+        ]
+      },
+      {
+        "id": "block-0349",
+        "sourceIds": ["block-0349"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "1600 "
+          },
+          {
+            "text": "C"
+          },
+          {
+            "text": "rit"
+          }
+        ]
+      },
+      {
+        "id": "block-0351",
+        "sourceIds": ["block-0351"],
+        "kind": "heading",
+        "content": [
+          {
+            "text": "Corroded Raid"
+          }
+        ],
+        "level": 3
+      },
+      {
+        "id": "block-0352",
+        "sourceIds": ["block-0352"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "2350 "
+          },
+          {
+            "text": "A"
+          },
+          {
+            "text": "ccuracy"
+          }
+        ]
+      },
+      {
+        "id": "block-0353",
+        "sourceIds": ["block-0353"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "2500 "
+          },
+          {
+            "text": "C"
+          },
+          {
+            "text": "rit"
+          }
+        ]
+      },
+      {
+        "id": "block-0355",
+        "sourceIds": ["block-0355"],
+        "kind": "heading",
+        "content": [
+          {
+            "text": "Muspel (Normal) Raid ("
+          },
+          {
+            "text": "need values for this)"
+          }
+        ],
+        "level": 3
+      },
+      {
+        "id": "block-0356",
+        "sourceIds": ["block-0356"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "?"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "A"
+          },
+          {
+            "text": "ccuracy"
+          }
+        ]
+      },
+      {
+        "id": "block-0357",
+        "sourceIds": ["block-0357"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "?"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "C"
+          },
+          {
+            "text": "rit",
+            "breakAfter": true
+          }
+        ]
+      },
+      {
+        "id": "block-0358",
+        "sourceIds": ["block-0358"],
+        "kind": "heading",
+        "content": [
+          {
+            "text": "Muspel (Hard) Raid"
+          }
+        ],
+        "level": 3
+      },
+      {
+        "id": "block-0359",
+        "sourceIds": ["block-0359"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "2800 Accuracy"
+          }
+        ]
+      },
+      {
+        "id": "block-0360",
+        "sourceIds": ["block-0360"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "3150 Crit"
+          }
+        ]
+      },
+      {
+        "id": "block-0362",
+        "sourceIds": ["block-0362"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Additional Notes",
+            "emphasis": true,
+            "underline": true,
+            "highlight": "#f8f9fa"
+          },
+          {
+            "text": ": The above numbers may not be exact, but it should be around those numbers. Hard to get a number since the content is a bit outdated. If you have an exact number that’s proven please let me know.",
+            "emphasis": true,
+            "highlight": "#f8f9fa"
+          }
+        ]
+      }
+    ]
+  }
+]

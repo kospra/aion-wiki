@@ -1,0 +1,1432 @@
+[
+  {
+    "slug": "weapon-and-guard",
+    "title": "Weapon and Guard",
+    "category": "a-closer-look",
+    "summary": "Weapon and Guard base stats, skill lines, amplification, and region-qualified Potential values.",
+    "status": "source-uncertain",
+    "sourceUrl": "https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/edit",
+    "qualifiers": [
+      "Source recommendations and first-person statements are Kanon’s. Captured update: 9/20/2026; Global changes were not all confirmed."
+    ],
+    "blocks": [
+      {
+        "id": "block-0139",
+        "sourceIds": ["block-0139"],
+        "kind": "heading",
+        "content": [
+          {
+            "text": "CH 2: A CLOSER LOOK "
+          }
+        ],
+        "level": 2
+      },
+      {
+        "id": "block-0141",
+        "sourceIds": ["block-0141"],
+        "kind": "group",
+        "label": "Source text and illustration",
+        "blocks": [
+          {
+            "id": "block-0141-text",
+            "sourceIds": ["block-0141"],
+            "kind": "heading",
+            "content": [
+              {
+                "text": " Weapon & Guard "
+              }
+            ],
+            "level": 2
+          },
+          {
+            "id": "block-0141-figure-011",
+            "sourceIds": ["block-0141"],
+            "kind": "figure",
+            "figureId": "figure-011"
+          },
+          {
+            "id": "block-0141-figure-012",
+            "sourceIds": ["block-0141"],
+            "kind": "figure",
+            "figureId": "figure-012"
+          }
+        ]
+      },
+      {
+        "id": "list-block-0142",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-0142",
+              "sourceIds": ["block-0142"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Gives the highest offensive "
+                },
+                {
+                  "text": "Base Stats",
+                  "strong": true
+                },
+                {
+                  "text": " and "
+                },
+                {
+                  "text": "Stat Lines",
+                  "strong": true
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0143",
+              "sourceIds": ["block-0143"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Stat Lines",
+                  "strong": true
+                },
+                {
+                  "text": " are the same between Weapon and Guard"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0144",
+              "sourceIds": ["block-0144"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Gives +Active Skills as "
+                },
+                {
+                  "text": "Stat Lines",
+                  "strong": true
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0145",
+              "sourceIds": ["block-0145"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Amp Stats (at max) "
+                }
+              ]
+            },
+            {
+              "id": "list-block-0146",
+              "sourceIds": [],
+              "kind": "list",
+              "ordered": false,
+              "items": [
+                [
+                  {
+                    "id": "block-0146",
+                    "sourceIds": ["block-0146"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "Attack 150"
+                      }
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "id": "block-0147",
+                    "sourceIds": ["block-0147"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "Attack Increase 5%"
+                      }
+                    ]
+                  }
+                ]
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "id": "list-block-0148",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-0148",
+              "sourceIds": ["block-0148"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Potential Stats (at max)"
+                }
+              ]
+            },
+            {
+              "id": "list-block-0149",
+              "sourceIds": [],
+              "kind": "list",
+              "ordered": false,
+              "items": [
+                [
+                  {
+                    "id": "block-0149",
+                    "sourceIds": ["block-0149"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "Crafted Gear"
+                      },
+                      {
+                        "text": ": PVE "
+                      },
+                      {
+                        "text": "Damage Boost 5% (not confirmed for "
+                      },
+                      {
+                        "text": "Global)"
+                      }
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "id": "block-0150",
+                    "sourceIds": ["block-0150"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "Dungeon Gear"
+                      },
+                      {
+                        "text": ": PVE "
+                      },
+                      {
+                        "text": "Damage Boost 2.4% (not confirmed for Global)"
+                      }
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "id": "block-0151",
+                    "sourceIds": ["block-0151"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "PVP Gear"
+                      },
+                      {
+                        "text": ": PVP "
+                      },
+                      {
+                        "text": "Damage Boost 10%"
+                      }
+                    ]
+                  }
+                ]
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "id": "block-0153",
+        "sourceIds": ["block-0153"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "TLDR: Gives most damage",
+            "strong": true,
+            "highlight": "#f8f9fa"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "armor",
+    "title": "Armor",
+    "category": "a-closer-look",
+    "summary": "Armor slots, defensive stats, passive skill lines, and region-qualified Potential values.",
+    "status": "source-uncertain",
+    "sourceUrl": "https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/edit",
+    "qualifiers": [
+      "Source recommendations and first-person statements are Kanon’s. Captured update: 9/20/2026; Global changes were not all confirmed."
+    ],
+    "blocks": [
+      {
+        "id": "armor-source-check",
+        "sourceIds": [],
+        "kind": "note",
+        "label": "Source uncertainty",
+        "tone": "uncertain",
+        "content": [
+          {
+            "text": "The earlier gear anatomy explanation marks these Armor amplification values “DOUBLE CHECK”. The source’s PVP Potential line below literally says “Damage Boost”."
+          }
+        ]
+      },
+      {
+        "id": "armor-check-reference",
+        "sourceIds": [],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Original Armor DOUBLE CHECK note",
+            "href": "/articles/gear-anatomy-and-stat-layers#block-0051"
+          }
+        ]
+      },
+      {
+        "id": "block-0155",
+        "sourceIds": ["block-0155"],
+        "kind": "group",
+        "label": "Source text and illustration",
+        "blocks": [
+          {
+            "id": "block-0155-text",
+            "sourceIds": ["block-0155"],
+            "kind": "heading",
+            "content": [
+              {
+                "text": " Armor"
+              }
+            ],
+            "level": 2
+          },
+          {
+            "id": "block-0155-figure-013",
+            "sourceIds": ["block-0155"],
+            "kind": "figure",
+            "figureId": "figure-013"
+          }
+        ]
+      },
+      {
+        "id": "list-block-0156",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-0156",
+              "sourceIds": ["block-0156"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Helmet, Shoulders, Chest, Pants, Gloves, Cloak, Boots"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0157",
+              "sourceIds": ["block-0157"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Gives defensive "
+                },
+                {
+                  "text": "Base Stats",
+                  "strong": true
+                },
+                {
+                  "text": " & "
+                },
+                {
+                  "text": "Stat Lines",
+                  "strong": true
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0158",
+              "sourceIds": ["block-0158"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Gives +Passive Skills as "
+                },
+                {
+                  "text": "Stat Lines",
+                  "strong": true
+                },
+                {
+                  "text": "(no +Active Skills)"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0159",
+              "sourceIds": ["block-0159"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Amp Stats (at max) "
+                }
+              ]
+            },
+            {
+              "id": "list-block-0160",
+              "sourceIds": [],
+              "kind": "list",
+              "ordered": false,
+              "items": [
+                [
+                  {
+                    "id": "block-0160",
+                    "sourceIds": ["block-0160"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "Defense & HP 400"
+                      }
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "id": "block-0161",
+                    "sourceIds": ["block-0161"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "Defense & HP Increase 5%"
+                      }
+                    ]
+                  }
+                ]
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "id": "list-block-0162",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-0162",
+              "sourceIds": ["block-0162"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": " Potential Stats (at max)"
+                }
+              ]
+            },
+            {
+              "id": "list-block-0163",
+              "sourceIds": [],
+              "kind": "list",
+              "ordered": false,
+              "items": [
+                [
+                  {
+                    "id": "block-0163",
+                    "sourceIds": ["block-0163"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "Crafted Gear: PVE Damage Tolerance 5% "
+                      },
+                      {
+                        "text": "(not confirmed for Global)"
+                      }
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "id": "block-0164",
+                    "sourceIds": ["block-0164"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "Dungeon Gear"
+                      },
+                      {
+                        "text": ": PVE "
+                      },
+                      {
+                        "text": "Damage Tolerance 1.2% "
+                      },
+                      {
+                        "text": " (not confirmed for Global)"
+                      }
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "id": "block-0165",
+                    "sourceIds": ["block-0165"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "PVP Gear"
+                      },
+                      {
+                        "text": ": PVP "
+                      },
+                      {
+                        "text": "Damage Boost 5%"
+                      }
+                    ]
+                  }
+                ]
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "id": "block-0167",
+        "sourceIds": ["block-0167"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "TLDR: Gives defensives, damage, and Passive Skill Lines to up your Passive Skill Levels",
+            "strong": true,
+            "highlight": "#f8f9fa"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "accessories",
+    "title": "Accessories",
+    "category": "a-closer-look",
+    "summary": "Accessory stats, skill-line differences, bracelets, brooches, and Potential values.",
+    "status": "source-uncertain",
+    "sourceUrl": "https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/edit",
+    "qualifiers": [
+      "Source recommendations and first-person statements are Kanon’s. Captured update: 9/20/2026; Global changes were not all confirmed."
+    ],
+    "blocks": [
+      {
+        "id": "block-0169",
+        "sourceIds": ["block-0169"],
+        "kind": "group",
+        "label": "Source text and illustration",
+        "blocks": [
+          {
+            "id": "block-0169-text",
+            "sourceIds": ["block-0169"],
+            "kind": "heading",
+            "content": [
+              {
+                "text": " Accessories"
+              }
+            ],
+            "level": 2
+          },
+          {
+            "id": "block-0169-figure-014",
+            "sourceIds": ["block-0169"],
+            "kind": "figure",
+            "figureId": "figure-014"
+          }
+        ]
+      },
+      {
+        "id": "list-block-0170",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-0170",
+              "sourceIds": ["block-0170"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Necklace, Earrings, Rings, Brooch, Bracelet"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0171",
+              "sourceIds": ["block-0171"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Gives offensive and defensive "
+                },
+                {
+                  "text": "Base Stats",
+                  "strong": true
+                },
+                {
+                  "text": " & "
+                },
+                {
+                  "text": "Stat Lines",
+                  "strong": true
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0172",
+              "sourceIds": ["block-0172"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Amp Stats (at max) "
+                }
+              ]
+            },
+            {
+              "id": "list-block-0173",
+              "sourceIds": [],
+              "kind": "list",
+              "ordered": false,
+              "items": [
+                [
+                  {
+                    "id": "block-0173",
+                    "sourceIds": ["block-0173"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "Attack 100"
+                      }
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "id": "block-0174",
+                    "sourceIds": ["block-0174"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "Defense 200"
+                      }
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "id": "block-0175",
+                    "sourceIds": ["block-0175"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "Attack Increase 5%"
+                      }
+                    ]
+                  }
+                ]
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "id": "list-block-0176",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-0176",
+              "sourceIds": ["block-0176"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": " Potential Stats (at max)"
+                }
+              ]
+            },
+            {
+              "id": "list-block-0177",
+              "sourceIds": [],
+              "kind": "list",
+              "ordered": false,
+              "items": [
+                [
+                  {
+                    "id": "block-0177",
+                    "sourceIds": ["block-0177"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "Crafted Gear"
+                      },
+                      {
+                        "text": ": PVE "
+                      },
+                      {
+                        "text": "Damage Boost 2.5% "
+                      },
+                      {
+                        "text": " (not confirmed for Global)"
+                      }
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "id": "block-0178",
+                    "sourceIds": ["block-0178"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "Dungeon Gear"
+                      },
+                      {
+                        "text": ": PVE "
+                      },
+                      {
+                        "text": "Damage Boost 1.2% "
+                      },
+                      {
+                        "text": " (not confirmed for Global)"
+                      }
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "id": "block-0179",
+                    "sourceIds": ["block-0179"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "PVP Gear: PVP Damage Boost 5%"
+                      }
+                    ]
+                  }
+                ]
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "id": "list-block-0181",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-0181",
+              "sourceIds": ["block-0181"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Necklace:",
+                  "strong": true
+                },
+                {
+                  "text": " "
+                },
+                {
+                  "text": "Stat Lines",
+                  "strong": true
+                },
+                {
+                  "text": " give basic stats + Passive Skills"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0182",
+              "sourceIds": ["block-0182"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Earring: Stat Lines",
+                  "strong": true
+                },
+                {
+                  "text": " give basic stats + Passive Skills"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0183",
+              "sourceIds": ["block-0183"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Ring: Stat Lines",
+                  "strong": true
+                },
+                {
+                  "text": " give basic stats + Active Skills"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0184",
+              "sourceIds": ["block-0184"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Bracelet: ",
+                  "strong": true
+                },
+                {
+                  "text": "Gives Pantheon Stats"
+                }
+              ]
+            },
+            {
+              "id": "list-block-0185",
+              "sourceIds": [],
+              "kind": "list",
+              "ordered": false,
+              "items": [
+                [
+                  {
+                    "id": "block-0185",
+                    "sourceIds": ["block-0185"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "First obtained via 1st Raid - Ludra"
+                      }
+                    ]
+                  }
+                ]
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "id": "list-block-0186",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-0186",
+              "sourceIds": ["block-0186"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Brooch: Stat Lines",
+                  "strong": true
+                },
+                {
+                  "text": " give basic stats"
+                }
+              ]
+            },
+            {
+              "id": "list-block-0187",
+              "sourceIds": [],
+              "kind": "list",
+              "ordered": false,
+              "items": [
+                [
+                  {
+                    "id": "block-0187",
+                    "sourceIds": ["block-0187"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "First obtained via 3rd Raid - Muspel"
+                      }
+                    ]
+                  }
+                ]
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "id": "block-0189",
+        "sourceIds": ["block-0189"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "TLDR: Gives damage and defensives but more damage focused. Gives Skill Lines to up your Skill Levels. Only Rings give Active Skill Lines.",
+            "strong": true,
+            "highlight": "#f8f9fa"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "belt-and-amulet",
+    "title": "Belt and Amulet",
+    "category": "a-closer-look",
+    "summary": "Belt and Amulet acquisition, scrolls, enhancement, and morphing.",
+    "status": "source-backed",
+    "sourceUrl": "https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/edit",
+    "qualifiers": [
+      "Source recommendations and first-person statements are Kanon’s. Captured update: 9/20/2026; Global changes were not all confirmed.",
+      "Orange/Heroid is the original source spelling."
+    ],
+    "blocks": [
+      {
+        "id": "block-0191",
+        "sourceIds": ["block-0191"],
+        "kind": "group",
+        "label": "Source text and illustration",
+        "blocks": [
+          {
+            "id": "block-0191-text",
+            "sourceIds": ["block-0191"],
+            "kind": "heading",
+            "content": [
+              {
+                "text": " Belt & Amulet "
+              }
+            ],
+            "level": 2
+          },
+          {
+            "id": "block-0191-figure-015",
+            "sourceIds": ["block-0191"],
+            "kind": "figure",
+            "figureId": "figure-015"
+          },
+          {
+            "id": "block-0191-figure-016",
+            "sourceIds": ["block-0191"],
+            "kind": "figure",
+            "figureId": "figure-016"
+          }
+        ]
+      },
+      {
+        "id": "list-block-0192",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-0192",
+              "sourceIds": ["block-0192"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Both obtained via lvl 45 MSQ-line."
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0193",
+              "sourceIds": ["block-0193"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Belt & Amulet are enhanced differently to regular gear. These 2 pieces of gear require “Noble Belt Enhance Scrolls” or \"Fierce Battle Amulet Enhance Scrolls”"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0194",
+              "sourceIds": ["block-0194"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Belt scrolls come from clearing Strongholds"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0195",
+              "sourceIds": ["block-0195"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Amulet scrolls come from turning in feathers"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0196",
+              "sourceIds": ["block-0196"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "First obtained via MSQ and you’ll Substance Morph it into a higher grade (Orange/Heroid being max) after +10ing it."
+                }
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "id": "block-0198",
+        "sourceIds": ["block-0198"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "TLDR: Belts give defensive stats, Amulet gives offensive stats ",
+            "strong": true,
+            "highlight": "#f8f9fa"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "runes",
+    "title": "Runes",
+    "category": "a-closer-look",
+    "summary": "Rune enhancement risks, base stats, and the source’s unconfirmed Multi-hit threshold.",
+    "status": "source-uncertain",
+    "sourceUrl": "https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/edit",
+    "qualifiers": [
+      "Source recommendations and first-person statements are Kanon’s. Captured update: 9/20/2026; Global changes were not all confirmed.",
+      "The Multi-hit increase after +9 is explicitly unconfirmed in the source."
+    ],
+    "blocks": [
+      {
+        "id": "block-0200",
+        "sourceIds": ["block-0200"],
+        "kind": "group",
+        "label": "Source text and illustration",
+        "blocks": [
+          {
+            "id": "block-0200-text",
+            "sourceIds": ["block-0200"],
+            "kind": "heading",
+            "content": [
+              {
+                "text": " Runes"
+              }
+            ],
+            "level": 2
+          },
+          {
+            "id": "block-0200-figure-017",
+            "sourceIds": ["block-0200"],
+            "kind": "figure",
+            "figureId": "figure-017"
+          }
+        ]
+      },
+      {
+        "id": "list-block-0201",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-0201",
+              "sourceIds": ["block-0201"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Runes are enhanced by smashing 2 together and blow up when failing (identical to BDO’s accessory enhancing). Also requires “Clash Rune Enhance Scrolls”"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0202",
+              "sourceIds": ["block-0202"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Runes are the only pieces of gear that blow up when failing"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0203",
+              "sourceIds": ["block-0203"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Most High rank end-game players are around +7 on both runes"
+                }
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "id": "list-block-0204",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-0204",
+              "sourceIds": ["block-0204"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Base Stats"
+                }
+              ]
+            },
+            {
+              "id": "list-block-0205",
+              "sourceIds": [],
+              "kind": "list",
+              "ordered": false,
+              "items": [
+                [
+                  {
+                    "id": "block-0205",
+                    "sourceIds": ["block-0205"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "0.5% Damage Tolerance (+0.5%/level)"
+                      }
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "id": "block-0206",
+                    "sourceIds": ["block-0206"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "0.5% Damage Boost (+0.5%/level)"
+                      }
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "id": "block-0207",
+                    "sourceIds": ["block-0207"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "100 Penetration (upgrades +50/level)"
+                      }
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "id": "block-0208",
+                    "sourceIds": ["block-0208"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "1% Combat Speed (upgrades 1%/level after +6)"
+                      }
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "id": "block-0209",
+                    "sourceIds": ["block-0209"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "1% Multi-hit Chance (upgrades 1%/level after +9?"
+                      },
+                      {
+                        "text": " Never seen one, need confirmation)"
+                      }
+                    ]
+                  }
+                ]
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "id": "block-0211",
+        "sourceIds": ["block-0211"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "TLDR: BDO accessory-like gear pieces that you smash together and blow up when failing",
+            "strong": true,
+            "highlight": "#f8f9fa"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "pendant",
+    "title": "Pendant",
+    "category": "a-closer-look",
+    "summary": "Pendant acquisition, enhancement materials, and stat growth thresholds.",
+    "status": "source-backed",
+    "sourceUrl": "https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/edit",
+    "qualifiers": [
+      "Source recommendations and first-person statements are Kanon’s. Captured update: 9/20/2026; Global changes were not all confirmed."
+    ],
+    "blocks": [
+      {
+        "id": "block-0213",
+        "sourceIds": ["block-0213"],
+        "kind": "group",
+        "label": "Source text and illustration",
+        "blocks": [
+          {
+            "id": "block-0213-text",
+            "sourceIds": ["block-0213"],
+            "kind": "heading",
+            "content": [
+              {
+                "text": " Pendant"
+              }
+            ],
+            "level": 2
+          },
+          {
+            "id": "block-0213-figure-018",
+            "sourceIds": ["block-0213"],
+            "kind": "figure",
+            "figureId": "figure-018"
+          }
+        ]
+      },
+      {
+        "id": "list-block-0214",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-0214",
+              "sourceIds": ["block-0214"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Obtained via lvl 50 MSQ-line  in the new region in the Chapter 1 expansion"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0215",
+              "sourceIds": ["block-0215"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Can be enhanced using Yellow/Unique Amp Stones and “Radiant Balaur’s Essence”"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0216",
+              "sourceIds": ["block-0216"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Can be upgraded to +20, can not be currently Amp’d. "
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0217",
+              "sourceIds": ["block-0217"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Pendant "
+                },
+                {
+                  "text": "becomes "
+                },
+                {
+                  "text": "insanely expensive to level the close"
+                },
+                {
+                  "text": "r you get to max"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0218",
+              "sourceIds": ["block-0218"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Base Stats"
+                }
+              ]
+            },
+            {
+              "id": "list-block-0219",
+              "sourceIds": [],
+              "kind": "list",
+              "ordered": false,
+              "items": [
+                [
+                  {
+                    "id": "block-0219",
+                    "sourceIds": ["block-0219"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "300 HP (+10/level)"
+                      }
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "id": "block-0220",
+                    "sourceIds": ["block-0220"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "10 Attack Bonus (+5/level)"
+                      }
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "id": "block-0221",
+                    "sourceIds": ["block-0221"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "1000 Defense Bonus (+50/level)"
+                      }
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "id": "block-0222",
+                    "sourceIds": ["block-0222"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "10 Critical Hit (+10/level)"
+                      }
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "id": "block-0223",
+                    "sourceIds": ["block-0223"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "10 Critical Hit Resist (+10/level)"
+                      }
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "id": "block-0224",
+                    "sourceIds": ["block-0224"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "0% Perfect Chance (+0.5%/level after +8)"
+                      }
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "id": "block-0225",
+                    "sourceIds": ["block-0225"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "0% "
+                      },
+                      {
+                        "text": "Double Chance"
+                      },
+                      {
+                        "text": " (+0.5%/level after +13)"
+                      }
+                    ]
+                  }
+                ]
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "id": "block-0227",
+        "sourceIds": ["block-0227"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "TLDR: Another stat stick that gives offensive and defensive stats",
+            "strong": true,
+            "highlight": "#f8f9fa"
+          }
+        ]
+      }
+    ]
+  }
+]

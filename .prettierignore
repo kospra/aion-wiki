@@ -1,7 +1,7 @@
 node_modules
 build
 .react-router
-coverage
+/coverage
 .local-tools
 .superpowers
 docs/superpowers

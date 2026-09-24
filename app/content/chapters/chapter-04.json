@@ -1,0 +1,370 @@
+[
+  {
+    "slug": "active-skills-and-specialty-perks",
+    "title": "Active skills and Specialty perks",
+    "category": "skills",
+    "summary": "Active skill levels, Specialty perk options and slots, and regional build priorities.",
+    "status": "source-uncertain",
+    "sourceUrl": "https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/edit",
+    "qualifiers": [
+      "Source recommendations and first-person statements are Kanon’s. Captured update: 9/20/2026; Global changes were not all confirmed.",
+      "KR targets are dated to the Chapter 1 level 50 expansion. The source predicts fewer Arcana cards at Global launch."
+    ],
+    "blocks": [
+      {
+        "id": "block-0365",
+        "sourceIds": ["block-0365"],
+        "kind": "heading",
+        "content": [
+          {
+            "text": "CH 4: SKILLS "
+          }
+        ],
+        "level": 2
+      },
+      {
+        "id": "block-0367",
+        "sourceIds": ["block-0367"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "There are 3 different types of Skills: Active, Passive, and Stigma"
+          }
+        ]
+      },
+      {
+        "id": "block-0369",
+        "sourceIds": ["block-0369"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "All skills have skill levels with Active Skills and Stigma Skills unlocking extra Specialty"
+          },
+          {
+            "text": " P"
+          },
+          {
+            "text": "erks when reaching a certain level ("
+          },
+          {
+            "text": "listed under the “Specialty” section in the image below)"
+          },
+          {
+            "text": ". We’ll refer to these as \"Specialty "
+          },
+          {
+            "text": "Perks",
+            "emphasis": true
+          },
+          {
+            "text": "” from now on. "
+          }
+        ]
+      },
+      {
+        "id": "block-0371",
+        "sourceIds": ["block-0371"],
+        "kind": "heading",
+        "content": [
+          {
+            "text": "Active Skills"
+          }
+        ],
+        "level": 3
+      },
+      {
+        "id": "block-0372",
+        "sourceIds": ["block-0372"],
+        "kind": "group",
+        "label": "Related source illustrations",
+        "blocks": [
+          {
+            "id": "block-0372-figure-022",
+            "sourceIds": ["block-0372"],
+            "kind": "figure",
+            "figureId": "figure-022"
+          },
+          {
+            "id": "block-0372-figure-023",
+            "sourceIds": ["block-0372"],
+            "kind": "figure",
+            "figureId": "figure-023"
+          }
+        ]
+      },
+      {
+        "id": "block-0374",
+        "sourceIds": ["block-0374"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Active Skills can be leveled to 10 using regular skill points called Wisdom Stones that you obtain by leveling, turning in Feathers (world completion stuff), and Nightmare + Shugo Festival Shops. "
+          }
+        ]
+      },
+      {
+        "id": "block-0376",
+        "sourceIds": ["block-0376"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "You can get additional levels on skills via gear "
+          },
+          {
+            "text": "Stat Lines",
+            "strong": true
+          },
+          {
+            "text": ", Daevanion Board, and Arcana. You can select up to 3 Spe"
+          },
+          {
+            "text": "cialty "
+          },
+          {
+            "text": "Perks that are selectable only when reaching a certain level indicated by the number on the icon. You will have to "
+          },
+          {
+            "text": "equip"
+          },
+          {
+            "text": " the "
+          },
+          {
+            "text": "Specialty "
+          },
+          {
+            "text": "Perk into an open slot. Level 8 unlocks the first 3 options and 1 "
+          },
+          {
+            "text": "slot"
+          },
+          {
+            "text": ". Level 12 unlocks the 4th Specialty Perk and an additional s"
+          },
+          {
+            "text": "lot"
+          },
+          {
+            "text": " allowing you to equip 2 Specialty Perks. Level 16 unlocks the final Specialty Perk. Level 20 unlocks the 3rd "
+          },
+          {
+            "text": "slot"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      {
+        "id": "block-0378",
+        "sourceIds": ["block-0378"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Every class has key Level 20 Active Skills that are a must for the build to truly come online (will try and add a written Class Guide section to the doc). Make it an early priority to unlock these, some classes such as Gladiator (Overhead Slam) and Templar (Judgment) have over 60% of their damage coming from just a single skill. "
+          }
+        ]
+      },
+      {
+        "id": "block-0380",
+        "sourceIds": ["block-0380"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Depending on the class, you"
+          },
+          {
+            "text": "’ll "
+          },
+          {
+            "text": "want 2-5 skills at level 20 at the endgame in current KR (start of Chapter 1, lvl 50 expansion). Global launch will likely have less Arcana cards available making it more difficult to level skills. Lock in on 2 of your most important skills early on."
+          }
+        ]
+      },
+      {
+        "id": "block-0382",
+        "sourceIds": ["block-0382"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "In order to hit level 20 on your Active Skills you’ll need to prioritize getting them on your Ring "
+          },
+          {
+            "text": "Stat Lines",
+            "strong": true
+          },
+          {
+            "text": " and your Arcana ("
+          },
+          {
+            "text": "see ",
+            "emphasis": true
+          },
+          {
+            "text": "Chapter 6 - Arcana",
+            "emphasis": true,
+            "underline": true,
+            "href": "/articles/arcana-card-types-and-stat-pools#block-0511"
+          },
+          {
+            "text": " section below",
+            "emphasis": true
+          },
+          {
+            "text": "). "
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "passive-skills",
+    "title": "Passive skills",
+    "category": "skills",
+    "summary": "Passive skill upgrades and the source’s current KR endgame priorities.",
+    "status": "source-backed",
+    "sourceUrl": "https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/edit",
+    "qualifiers": [
+      "Source recommendations and first-person statements are Kanon’s. Captured update: 9/20/2026; Global changes were not all confirmed.",
+      "The level 25–30 passive examples describe the source’s current KR endgame."
+    ],
+    "blocks": [
+      {
+        "id": "block-0385",
+        "sourceIds": ["block-0385"],
+        "kind": "heading",
+        "content": [
+          {
+            "text": "Passive Skills"
+          }
+        ],
+        "level": 3
+      },
+      {
+        "id": "block-0386",
+        "sourceIds": ["block-0386"],
+        "kind": "figure",
+        "figureId": "figure-024"
+      },
+      {
+        "id": "block-0388",
+        "sourceIds": ["block-0388"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Passive Skills are exactly what you’d assume them to be. These can be upgraded the same way Active Skills are upgraded. Passives do not have Speci"
+          },
+          {
+            "text": "alty "
+          },
+          {
+            "text": "Perks. "
+          }
+        ]
+      },
+      {
+        "id": "block-0390",
+        "sourceIds": ["block-0390"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Once you level 20 your main Active Skills, focus on your key Passive Skills (every class has them, will try and add this in a future Class Guide section). There is a lot of damage coming from these passives, current end-game KR players push some to the level 25-30 range"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "stigma-skills",
+    "title": "Stigma skills",
+    "category": "skills",
+    "summary": "Stigma skills, all unlocked perks, shard sources, and level allocation examples.",
+    "status": "source-uncertain",
+    "sourceUrl": "https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/edit",
+    "qualifiers": [
+      "Source recommendations and first-person statements are Kanon’s. Captured update: 9/20/2026; Global changes were not all confirmed.",
+      "The source says Global may allow fewer equipped Stigma skills; level 25 upgrades follow the Chapter 1 level 50 update."
+    ],
+    "blocks": [
+      {
+        "id": "block-0392",
+        "sourceIds": ["block-0392"],
+        "kind": "heading",
+        "content": [
+          {
+            "text": "Stigma Skills"
+          }
+        ],
+        "level": 3
+      },
+      {
+        "id": "block-0393",
+        "sourceIds": ["block-0393"],
+        "kind": "figure",
+        "figureId": "figure-025"
+      },
+      {
+        "id": "block-0395",
+        "sourceIds": ["block-0395"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Stigma Skills are “special skills” that generally have bigger cooldowns. These skills have 5 available Perks unlocked by skill levels"
+          },
+          {
+            "text": " and you can equip up to 6 (there’s a chance this could be lower for global though)."
+          }
+        ]
+      },
+      {
+        "id": "block-0397",
+        "sourceIds": ["block-0397"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "With Stigma Skills, you get the benefit of all Perks as long as you unlock them with levels. Stigma Skills use Stigma Shards to level and can be leveled up to 20 for the final "
+          },
+          {
+            "text": "Perk"
+          },
+          {
+            "text": ". After the Chapter 1, level 50 update, you can level Stigma Skills to 25 with the last 5 levels coming from golden Superior Stigma Shards. "
+          }
+        ]
+      },
+      {
+        "id": "block-0399",
+        "sourceIds": ["block-0399"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Stigma Shards are obtained by combining “Unstable Stigma Shards” that you’ll get from a variety of PVE content or directly from Abyss Points, a currency in Aion 2. Abyss Points are mainly obtained from Supply Request, Daily Duties, Weekly Commands (Contract-like quests), and farming players or mobs in the Abyss."
+          }
+        ]
+      },
+      {
+        "id": "block-0401",
+        "sourceIds": ["block-0401"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Superior Stigma Shards are obtained when leveling from 45 to "
+          },
+          {
+            "text": "50, and additional Superior Stigma Shards can be obtained from getting other Stigma skills to lvl 20. You get 1 Superior Stigma Shard for every lvl 20 Stigma skill. When everything is maxed, you can have 3 skills at lvl 25, 1 skill at lvl 23, and the rest at lvl 20. "
+          }
+        ]
+      },
+      {
+        "id": "block-0403",
+        "sourceIds": ["block-0403"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Key Stigma Skills offer a lot of power when leveled. Generally these Stigma Skills offer major buffs and increase key Passive Skills amplifying both Damage and Support. Supports especially can be gatekept by lacking specific Stigma Skill levels (IE: Undefeated Mantra, Light of Protection) as they significantly boost group performance."
+          }
+        ]
+      }
+    ]
+  }
+]

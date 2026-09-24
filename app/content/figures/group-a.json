@@ -1,0 +1,1202 @@
+[
+  {
+    "id": "figure-001",
+    "sourceId": "block-0001",
+    "sha256": "75c12a28cb5482b515bd5690a050cbaf35ef78f6cc70fd38830633edbae241e0",
+    "src": "/images/guide/75c12a28cb5482b515bd5690a050cbaf35ef78f6cc70fd38830633edbae241e0.png",
+    "width": 2048,
+    "height": 683,
+    "alt": "Cover art identifying the guide and author. See the numbered or labeled text legend for the screenshot details.",
+    "caption": "Cover art identifying the guide and author",
+    "mappings": [
+      {
+        "label": "Title",
+        "color": "white and cyan",
+        "visualValue": "AION 2 / BIBLE / By: Kanon",
+        "meaning": "Guide identity and credit. Preserve as source attribution, not an independent game mechanic.",
+        "textSourceIds": [
+          "block-0002",
+          "block-0003",
+          "block-0007",
+          "block-0009"
+        ],
+        "confidence": "confirmed"
+      }
+    ],
+    "screenshotOnly": [
+      "Blue/cyan Aion 2 logo on dark ornamental background; author credit embedded in artwork."
+    ],
+    "uncertainties": []
+  },
+  {
+    "id": "figure-002",
+    "sourceId": "block-0023",
+    "sha256": "72bb3f26dabbe1e5adf0e5b621bf1df6eb7e205c550144e9723639c84d88589d",
+    "src": "/images/guide/72bb3f26dabbe1e5adf0e5b621bf1df6eb7e205c550144e9723639c84d88589d.png",
+    "width": 1493,
+    "height": 1069,
+    "alt": "Author credential evidence: performance dashboard screenshot. See the numbered or labeled text legend for the screenshot details.",
+    "caption": "Author credential evidence: performance dashboard screenshot",
+    "mappings": [
+      {
+        "label": "Character",
+        "color": "white/red/cyan",
+        "visualValue": "KanonXO; Indnah · Power · Demon; 576.7K",
+        "meaning": "Example KR character and combat power at screenshot time.",
+        "textSourceIds": ["block-0017", "block-0018", "block-0020"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Skill Index",
+        "color": "white/cyan",
+        "visualValue": "Standard 100; 238; Equivalent +138%; My records 30 cents; Comparison Sa... 1,028",
+        "meaning": "Visual supports claimed peak skill index 238 in 560k–580k bracket. Screenshot labels partly translated/truncated.",
+        "textSourceIds": [
+          "block-0018",
+          "block-0019",
+          "block-0020",
+          "block-0022"
+        ],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "DPS and date",
+        "color": "cyan/purple/white",
+        "visualValue": "Recent average DPS 524,325; Highest DPS 680,772; Total Log 566; Recent battle 2026-07-29 11:52; 21 minutes ago",
+        "meaning": "Historical credential snapshot, not universal benchmark.",
+        "textSourceIds": ["block-0017", "block-0018", "block-0019"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Contribution",
+        "color": "cyan",
+        "visualValue": "Average Deal Contribution 2.20 servings; +120% compared to a single serving of the deal; Average de... 33.9%; Expected d... 15.4%; specimen 30 cents",
+        "meaning": "Screenshot-only contribution evidence.",
+        "textSourceIds": ["block-0019"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Daily snapshot",
+        "color": "white/red",
+        "visualValue": "As of today 543.8K; +3.4%; best 666.4K; Average Deal Contribution 35.0%; specimen 18; graph 07.23–07.29",
+        "meaning": "Snapshot period and sample shown in screenshot.",
+        "textSourceIds": ["block-0018"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Logs",
+        "color": "white/cyan",
+        "visualValue": "Dungeon AVG: AVG -, specimen 0/30, best -, recent -; Combat Log Total 566 cases; Nathara 528,384; Contribution 32.5%; 2026-07-29 11:52 · 01:25 · Corridor of Welcome",
+        "meaning": "Historical encounter example.",
+        "textSourceIds": ["block-0017", "block-0019"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Boss record",
+        "color": "white/cyan",
+        "visualValue": "Highest records per boss: A total of 30 types; Nasarak; Welcome Corridor · 2026-07-28 13:54 · 00:45; Highest DPS 680,772; Contribution 1.75 servings; Contribution rate 34.9%; fatal 81.7%",
+        "meaning": "Lower edge of original screenshot contains partially cut encounter summary.",
+        "textSourceIds": ["block-0017", "block-0018"],
+        "confidence": "confirmed"
+      }
+    ],
+    "screenshotOnly": [
+      "Combat Information selected beside Character Information; daily selected beside weekly; red charts. HTML clips image: displayed viewport 624×295.47 but full image ratio 624×447.01 with margin-top -13.62. Preserve full original and intended crop metadata."
+    ],
+    "uncertainties": [
+      "Source block-0022 says users within “20 Combat Power”; block-0018 says 560k–580k. Do not silently add “k” to source definition.",
+      "Screenshot English such as “30 cents”, “servings”, “fatal” appears translated; retain literal transcription without redefining."
+    ]
+  },
+  {
+    "id": "figure-003",
+    "sourceId": "block-0029",
+    "sha256": "3be28d830bce605572edb16056af378188996d3b4576d21a4c7faec6456cdfa2",
+    "src": "/images/guide/3be28d830bce605572edb16056af378188996d3b4576d21a4c7faec6456cdfa2.png",
+    "width": 517,
+    "height": 467,
+    "alt": "Shows the in-game Source action and example item sources. See the numbered or labeled text legend for the screenshot details.",
+    "caption": "Shows the in-game Source action and example item sources",
+    "mappings": [
+      {
+        "label": "Source action",
+        "color": "white",
+        "visualValue": "Source",
+        "meaning": "Select an item and Source to find obtaining locations.",
+        "textSourceIds": ["block-0028"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Item",
+        "color": "yellow",
+        "visualValue": "Amplify Stone Fragment (Unique)...; Unique Special Material",
+        "meaning": "Example item name is truncated.",
+        "textSourceIds": ["block-0028"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Item Source list",
+        "color": "white/cyan",
+        "visualValue": "[Boss] Rewards per Level; [Enhancement] Rewards per Level; Trade Shop; Nightmare [Consumables]; Expedition [Growth]; Transcendence; [Stage1] Deus Research Base; [Stage2] Deus Research Base",
+        "meaning": "Locations visible only in full source image.",
+        "textSourceIds": ["block-0028"],
+        "confidence": "confirmed"
+      }
+    ],
+    "screenshotOnly": [
+      "Source button sits on right-side icon rail. HTML viewport 253.50×120.94 clips source image shown at 253.50×230.04; lower source locations are outside original document crop."
+    ],
+    "uncertainties": [
+      "Do not reconstruct clipped item-name suffix or imply this specific source list applies to all items."
+    ]
+  },
+  {
+    "id": "figure-004",
+    "sourceId": "block-0032",
+    "sha256": "636afc14da8fc78ab57a34df46e151c2d1d282592040b59c28fbcfa185b2147c",
+    "src": "/images/guide/636afc14da8fc78ab57a34df46e151c2d1d282592040b59c28fbcfa185b2147c.png",
+    "width": 122,
+    "height": 713,
+    "alt": "Equipment paper-doll column placed beside the two annotated tooltip examples. See the numbered or labeled text legend for the screenshot details.",
+    "caption": "Equipment paper-doll column placed beside the two annotated tooltip examples",
+    "mappings": [
+      {
+        "label": "Equipment arrangement",
+        "color": "gold/orange/green icon backgrounds, cyan diamonds, white levels",
+        "visualValue": "Two columns: weapon/guard; helmet/shoulder; chest/belt; pants/gloves; cloak/boots; paired earrings; necklace/amulet; two twig-like icons; paired rings; paired wrist-like icons; paired runes; centered pendant",
+        "meaning": "Visual orientation to gear slots. Items have no readable names.",
+        "textSourceIds": [
+          "block-0034",
+          "block-0036",
+          "block-0037",
+          "block-0141",
+          "block-0155",
+          "block-0169",
+          "block-0191",
+          "block-0200",
+          "block-0213"
+        ],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Visible levels",
+        "color": "cyan diamonds and white text",
+        "visualValue": "Top weapon and guard diamonds 5/5; most armor/accessory diamonds 3; left ring diamond 1, right ring diamond 3; amulet +6; runes +5 and +5; pendant +1",
+        "meaning": "Example enhancement/Amp indicators; not recommended target levels.",
+        "textSourceIds": [
+          "block-0034",
+          "block-0036",
+          "block-0037",
+          "block-0193",
+          "block-0200",
+          "block-0213"
+        ],
+        "confidence": "confirmed"
+      }
+    ],
+    "screenshotOnly": [
+      "Two small twig-like icons appear between necklace/amulet and rings. Preserve visually without naming an unsupported gear type."
+    ],
+    "uncertainties": [
+      "Small unnamed slot icons cannot establish exact item identity. Some tiny indicators must be viewed as illustrative rather than complete stat data."
+    ]
+  },
+  {
+    "id": "figure-005",
+    "sourceId": "block-0032",
+    "sha256": "26efdeacd5d6fef0b37ccf77ee9488656c2b21f644550a2d0daae85585d2f01f",
+    "src": "/images/guide/26efdeacd5d6fef0b37ccf77ee9488656c2b21f644550a2d0daae85585d2f01f.png",
+    "width": 424,
+    "height": 1042,
+    "alt": "Primary numbered tooltip teaching gear anatomy, labels 1–6. See the numbered or labeled text legend for the screenshot details.",
+    "caption": "Primary numbered tooltip teaching gear anatomy, labels 1–6",
+    "mappings": [
+      {
+        "label": "1",
+        "color": "green rectangle and numeral; cyan diamonds",
+        "visualValue": "+15 Soaring Daeva Claymore; Unique Greatsword; Item Level 100(+57); five blue/cyan diamonds",
+        "meaning": "Enhancement/Amp Level. Green rectangles isolate +15 and diamonds.",
+        "textSourceIds": [
+          "block-0034",
+          "block-0035",
+          "block-0036",
+          "block-0037",
+          "block-0038",
+          "block-0039",
+          "block-0040"
+        ],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "2",
+        "color": "white rectangle and numeral",
+        "visualValue": "Attack 429–581(+225); Accuracy 100; Critical Hit 150; Block 150",
+        "meaning": "Base Stats.",
+        "textSourceIds": ["block-0042", "block-0043"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "3",
+        "color": "orange rectangle and numeral",
+        "visualValue": "Attack 150; Attack increase 5%",
+        "meaning": "Amp Stats at five Amp levels.",
+        "textSourceIds": [
+          "block-0045",
+          "block-0046",
+          "block-0047",
+          "block-0048",
+          "block-0049",
+          "block-0050"
+        ],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "4",
+        "color": "purple rectangle and numeral",
+        "visualValue": "Soul Binding Rate 100.0%; Might 83; Combat Speed 13.1%; Precision 83; Damage Boost 5.9%; Soul Fuse Philosopher’s Stone: R...",
+        "meaning": "Soul Binding stat lines and Philosopher’s Stone prompt.",
+        "textSourceIds": [
+          "block-0060",
+          "block-0061",
+          "block-0062",
+          "block-0063",
+          "block-0064",
+          "block-0065",
+          "block-0066",
+          "block-0067"
+        ],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "5",
+        "color": "red rectangle and numeral; green/blue/yellow stat text",
+        "visualValue": "Evasion Bon... (green); Block+15 (blue); Attack+5 (blue); Weapon Da... (yellow)",
+        "meaning": "Manastone/Soulstone section; text colors represent grades, distinct from the red annotation border.",
+        "textSourceIds": [
+          "block-0069",
+          "block-0070",
+          "block-0071",
+          "block-0072",
+          "block-0073",
+          "block-0074",
+          "block-0075",
+          "block-0076"
+        ],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "6",
+        "color": "cyan rectangle and numeral; blue item title",
+        "visualValue": "Theostone: Sif’s Knowledge; Has a 2% chance to deal 5000 Water damage to a single target on attack; Effect Activation Cooldown: 1s; Only one Theostone’s effect applies when identical Theostones...",
+        "meaning": "Weapon Theostone effect; text ends at screenshot boundary.",
+        "textSourceIds": [
+          "block-0078",
+          "block-0079",
+          "block-0080",
+          "block-0081",
+          "block-0082",
+          "block-0083"
+        ],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Requirement",
+        "color": "white",
+        "visualValue": "Required Level 45",
+        "meaning": "Screenshot-only item requirement.",
+        "textSourceIds": ["block-0034"],
+        "confidence": "confirmed"
+      }
+    ],
+    "screenshotOnly": [
+      "The explanatory text’s 1–6 labels live in enclosing ordered-list wrappers, absent from extracted li.text. Source uses lst-kix_list_36-0 and ol start=1 through 6. Preserve actual numbers and colors as a legend.",
+      "Sif’s Knowledge cooldown 1s and identical-stone restriction are screenshot-only details; restriction sentence is clipped."
+    ],
+    "uncertainties": [
+      "Clipped manastone labels and Philosopher’s Stone prompt cannot be completed from this image.",
+      "Item values are examples, not BIS stat targets.",
+      "Block-0051 explicitly says Armor DOUBLE CHECK for following armor Amp figures."
+    ]
+  },
+  {
+    "id": "figure-006",
+    "sourceId": "block-0032",
+    "sha256": "7bab837c3146f7c9c8982887771bd7930c9881011ba46bb9bab1d9effa573133",
+    "src": "/images/guide/7bab837c3146f7c9c8982887771bd7930c9881011ba46bb9bab1d9effa573133.png",
+    "width": 361,
+    "height": 816,
+    "alt": "Companion bracelet tooltip carries numbered label 7 for Potential. See the numbered or labeled text legend for the screenshot details.",
+    "caption": "Companion bracelet tooltip carries numbered label 7 for Potential",
+    "mappings": [
+      {
+        "label": "7",
+        "color": "yellow rectangle and numeral",
+        "visualValue": "PvE Damage Boost 1.2%",
+        "meaning": "Potential stat. Number 7 comes from enclosing ol start=7 in source.",
+        "textSourceIds": [
+          "block-0085",
+          "block-0086",
+          "block-0087",
+          "block-0088",
+          "block-0089",
+          "block-0090",
+          "block-0091",
+          "block-0092",
+          "block-0093"
+        ],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Equipment and stats",
+        "color": "orange/gold/cyan",
+        "visualValue": "+20 Faded Shadow Bracelet; Heroic Bracelet; Item Level 108(+62); five cyan diamonds; Attack 82(+100); Defense 286(+200); Damage Boost 2.5%; Attack 100; Defense 200; Attack increase 5%",
+        "meaning": "Example bracelet base and Amp stats.",
+        "textSourceIds": [
+          "block-0037",
+          "block-0054",
+          "block-0055",
+          "block-0056",
+          "block-0057",
+          "block-0169",
+          "block-0173",
+          "block-0174",
+          "block-0175",
+          "block-0178"
+        ],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Soul Binding",
+        "color": "cyan heading, white rows, purple final row",
+        "visualValue": "100.0%; Illusion [Kaisinel] 20; Justice [Nezekan] 20; Destruction [Zikel] 20; Wisdom [Lumiel] 20; Time [Siel] 20; Freedom [Vaizel] 20",
+        "meaning": "Pantheon stat lines, final Freedom row visually purple.",
+        "textSourceIds": [
+          "block-0060",
+          "block-0065",
+          "block-0067",
+          "block-0098",
+          "block-0103",
+          "block-0113",
+          "block-0117",
+          "block-0123",
+          "block-0125",
+          "block-0127",
+          "block-0131"
+        ],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Soulstones",
+        "color": "yellow/blue/green",
+        "visualValue": "HP+160 (yellow); Critical Dam... (yellow); HP+100 (blue); Block+20 (yellow); MP+30 (green)",
+        "meaning": "Accessory Soulstones of different grades; preserve clipped Critical Dam... literally.",
+        "textSourceIds": [
+          "block-0069",
+          "block-0070",
+          "block-0072",
+          "block-0073",
+          "block-0074",
+          "block-0076"
+        ],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Requirement",
+        "color": "white",
+        "visualValue": "Required Level 45",
+        "meaning": "Screenshot-only requirement.",
+        "textSourceIds": ["block-0169"],
+        "confidence": "confirmed"
+      }
+    ],
+    "screenshotOnly": [
+      "This repeats as figure-008 with a shorter crop. Keep image provenance separate even if presenting one canonical bracelet example."
+    ],
+    "uncertainties": [
+      "Potential behavior on crafted gear is Asia-specific in block-0086; Global will not auto-unlock and relative value remains unconfirmed in block-0091.",
+      "Freedom example differs from ideal Bracelet list (block-0325 onward includes Space); it is an example, not a contradiction requiring replacement."
+    ]
+  },
+  {
+    "id": "figure-007",
+    "sourceId": "block-0099",
+    "sha256": "c7f3390f740c2843e0040d502cb5bef39957fcfe6f668efeb9e00d07a46b2326",
+    "src": "/images/guide/c7f3390f740c2843e0040d502cb5bef39957fcfe6f668efeb9e00d07a46b2326.png",
+    "width": 589,
+    "height": 748,
+    "alt": "Pantheon circle and selected stat tooltip demonstrate bundled stats. See the numbered or labeled text legend for the screenshot details.",
+    "caption": "Pantheon circle and selected stat tooltip demonstrate bundled stats",
+    "mappings": [
+      {
+        "label": "Selected Pantheon stat",
+        "color": "white/cyan",
+        "visualValue": "Destruction [Zikel] 164; Attack increase 32.8%; Perfect Resist 32.8%",
+        "meaning": "One Pantheon stat grants two effect stats.",
+        "textSourceIds": ["block-0098", "block-0113", "block-0114"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Inner character stats",
+        "color": "cyan headings/white values",
+        "visualValue": "Might 241; Constitution 48; Dexterity 78; Intelligence 108; Precision 247; Willpower 95",
+        "meaning": "Central ordinary stat ring shown alongside outer Pantheon stats.",
+        "textSourceIds": ["block-0098"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Outer ring",
+        "color": "white, selected top-right glowing blue",
+        "visualValue": "Clockwise from top-left: 61,164,101,191,69,81,163,71,113,111",
+        "meaning": "Ten icon-associated values; only Destruction=164 is explicitly named by tooltip.",
+        "textSourceIds": ["block-0098", "block-0112"],
+        "confidence": "confirmed"
+      }
+    ],
+    "screenshotOnly": [
+      "The prose highlights high-value Pantheon names in yellow (#ffff00, CSS c47): Destruction, Wisdom, Illusion, Time. Underline (c21) identifies Attack Increase, Double Chance, Reduces Cooldown, Increases Combat Speed. This meaning must be explicit for accessibility."
+    ],
+    "uncertainties": [
+      "Do not assign other unnamed outer icons to gods purely by position or visual guess."
+    ]
+  },
+  {
+    "id": "figure-008",
+    "sourceId": "block-0104",
+    "sha256": "fb9f0a1ee5f045d6b50f0dd07aa230e1f78d9e9f3c358b8120e6af6851056570",
+    "src": "/images/guide/fb9f0a1ee5f045d6b50f0dd07aa230e1f78d9e9f3c358b8120e6af6851056570.png",
+    "width": 369,
+    "height": 593,
+    "alt": "Bracelet as a source of Pantheon stats. See the numbered or labeled text legend for the screenshot details.",
+    "caption": "Bracelet as a source of Pantheon stats",
+    "mappings": [
+      {
+        "label": "Bracelet lines",
+        "color": "white, final purple highlight",
+        "visualValue": "Soul Binding Rate 100.0%; Illusion [Kaisinel] 20; Justice [Nezekan] 20; Destruction [Zikel] 20; Wisdom [Lumiel] 20; Time [Siel] 20; Freedom [Vaizel] 20",
+        "meaning": "Demonstrates Pantheon stat acquisition on bracelet.",
+        "textSourceIds": [
+          "block-0102",
+          "block-0103",
+          "block-0098",
+          "block-0113",
+          "block-0117",
+          "block-0123",
+          "block-0125",
+          "block-0127",
+          "block-0131"
+        ],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Bracelet example",
+        "color": "orange/gold/cyan",
+        "visualValue": "+20 Faded Shadow Bracelet; Heroic Bracelet; Item Level 108(+62); five cyan diamonds; Attack 82(+100); Defense 286(+200); Damage Boost 2.5%; Amp Attack 100, Defense 200, Attack increase 5%; PvE Damage Boost 1.2%",
+        "meaning": "Same item as figure-006, cropped before soulstones.",
+        "textSourceIds": [
+          "block-0103",
+          "block-0034",
+          "block-0045",
+          "block-0085"
+        ],
+        "confidence": "confirmed"
+      }
+    ],
+    "screenshotOnly": [
+      "Final purple Freedom row should not be misread as prose’s highest-value highlight, which is yellow and refers to four different names."
+    ],
+    "uncertainties": []
+  },
+  {
+    "id": "figure-009",
+    "sourceId": "block-0107",
+    "sha256": "153710ed329d54e39c18801e4e5b7f052d6a3ef7f2c48953fab15ba1ffc172e6",
+    "src": "/images/guide/153710ed329d54e39c18801e4e5b7f052d6a3ef7f2c48953fab15ba1ffc172e6.png",
+    "width": 733,
+    "height": 756,
+    "alt": "Arcana as a source of Pantheon stats. See the numbered or labeled text legend for the screenshot details.",
+    "caption": "Arcana as a source of Pantheon stats",
+    "mappings": [
+      {
+        "label": "Card level",
+        "color": "white on black medallion",
+        "visualValue": "+0",
+        "meaning": "Example Arcana at zero enhancement.",
+        "textSourceIds": ["block-0106"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Card metadata",
+        "color": "gold/yellow/white",
+        "visualValue": "Grade Unique; Main Effect Time [Siel]; Additional Effect + / +",
+        "meaning": "Two empty additional-effect positions; Time main effect ties to Combat Speed and Double Chance Resist.",
+        "textSourceIds": ["block-0106", "block-0131", "block-0132"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Visual",
+        "color": "gold card and circular icons",
+        "visualValue": "Central chalice card; upper-left chalice icon glowing; nine other surrounding symbols dim",
+        "meaning": "Arcana menu illustration, linked to chapter 6.",
+        "textSourceIds": ["block-0106"],
+        "confidence": "confirmed"
+      }
+    ],
+    "screenshotOnly": ["No value for Time stat is shown in this figure."],
+    "uncertainties": [
+      "Do not invent numeric Time bonus or card name from icon alone."
+    ]
+  },
+  {
+    "id": "figure-010",
+    "sourceId": "block-0110",
+    "sha256": "23c17f05ae2758f8359ba6c53b4fd420c77ce57ec7fabda6d7142bffe10b1ba5",
+    "src": "/images/guide/23c17f05ae2758f8359ba6c53b4fd420c77ce57ec7fabda6d7142bffe10b1ba5.png",
+    "width": 442,
+    "height": 541,
+    "alt": "Artwork/portrait item grants three Pantheon stats. See the numbered or labeled text legend for the screenshot details.",
+    "caption": "Artwork/portrait item grants three Pantheon stats",
+    "mappings": [
+      {
+        "label": "Artwork name",
+        "color": "yellow",
+        "visualValue": "Artwork: Dying Dramata’s...",
+        "meaning": "Truncated item title, source acknowledges missing portrait detail.",
+        "textSourceIds": ["block-0109", "block-0136"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Pantheon stats",
+        "color": "cyan underlined names and white numbers",
+        "visualValue": "Illusion [Kaisinel] 4; Life [Yustiel] 4; Wisdom [Lumiel] 4",
+        "meaning": "Portrait/statue source illustrates three stat grants.",
+        "textSourceIds": [
+          "block-0109",
+          "block-0117",
+          "block-0118",
+          "block-0127",
+          "block-0128",
+          "block-0129",
+          "block-0130"
+        ],
+        "confidence": "confirmed"
+      }
+    ],
+    "screenshotOnly": [
+      "Gold-framed painting thumbnail and right-side icon actions. Stray text “is” follows image in block-0110; likely artifact but preserve in source ledger."
+    ],
+    "uncertainties": [
+      "Item title cannot be completed; source TODO ***ADD MORE DETAILS ON PORTRAITS*** must remain tracked."
+    ]
+  },
+  {
+    "id": "figure-011",
+    "sourceId": "block-0141",
+    "sha256": "1c72ca6ef66312c0509d437313da6d2cbcaee4fe732559a25d3c053c57a99a1f",
+    "src": "/images/guide/1c72ca6ef66312c0509d437313da6d2cbcaee4fe732559a25d3c053c57a99a1f.png",
+    "width": 52,
+    "height": 53,
+    "alt": "Weapon icon. See the numbered or labeled text legend for the screenshot details.",
+    "caption": "Weapon icon",
+    "mappings": [
+      {
+        "label": "Icon and level",
+        "color": "See visualValue",
+        "visualValue": "White/silver weapon on orange background; cyan diamond 5",
+        "meaning": "Equipment category marker and example enhancement indicator.",
+        "textSourceIds": [
+          "block-0141",
+          "block-0142",
+          "block-0143",
+          "block-0144",
+          "block-0145",
+          "block-0146",
+          "block-0147"
+        ],
+        "confidence": "confirmed"
+      }
+    ],
+    "screenshotOnly": ["Item name absent."],
+    "uncertainties": []
+  },
+  {
+    "id": "figure-012",
+    "sourceId": "block-0141",
+    "sha256": "607b666372fd223cbee36e4ac9d2161ccfe913310fab89d1ee059cf291948689",
+    "src": "/images/guide/607b666372fd223cbee36e4ac9d2161ccfe913310fab89d1ee059cf291948689.png",
+    "width": 52,
+    "height": 52,
+    "alt": "Guard icon. See the numbered or labeled text legend for the screenshot details.",
+    "caption": "Guard icon",
+    "mappings": [
+      {
+        "label": "Icon and level",
+        "color": "See visualValue",
+        "visualValue": "Red/silver guard on orange background; cyan diamond 5",
+        "meaning": "Equipment category marker and example enhancement indicator.",
+        "textSourceIds": [
+          "block-0141",
+          "block-0142",
+          "block-0143",
+          "block-0144",
+          "block-0145",
+          "block-0146",
+          "block-0147"
+        ],
+        "confidence": "confirmed"
+      }
+    ],
+    "screenshotOnly": ["Item name absent."],
+    "uncertainties": []
+  },
+  {
+    "id": "figure-013",
+    "sourceId": "block-0155",
+    "sha256": "8af65cb8c98e6ccbc41816d63042ff3226774eef1079d497186aae6cd47c7f12",
+    "src": "/images/guide/8af65cb8c98e6ccbc41816d63042ff3226774eef1079d497186aae6cd47c7f12.png",
+    "width": 51,
+    "height": 52,
+    "alt": "Armor icon. See the numbered or labeled text legend for the screenshot details.",
+    "caption": "Armor icon",
+    "mappings": [
+      {
+        "label": "Icon and level",
+        "color": "See visualValue",
+        "visualValue": "White/silver chest armor on dark background; cyan diamond 5",
+        "meaning": "Equipment category marker and example enhancement indicator.",
+        "textSourceIds": [
+          "block-0155",
+          "block-0156",
+          "block-0157",
+          "block-0158",
+          "block-0159",
+          "block-0160",
+          "block-0161"
+        ],
+        "confidence": "confirmed"
+      }
+    ],
+    "screenshotOnly": [
+      "A representative chest icon stands for seven armor slots."
+    ],
+    "uncertainties": []
+  },
+  {
+    "id": "figure-014",
+    "sourceId": "block-0169",
+    "sha256": "98ac213646df2d2f3355cdfee0d48630ae0f1a51144ed6b657cb94bd4dd00326",
+    "src": "/images/guide/98ac213646df2d2f3355cdfee0d48630ae0f1a51144ed6b657cb94bd4dd00326.png",
+    "width": 52,
+    "height": 53,
+    "alt": "Accessory icon. See the numbered or labeled text legend for the screenshot details.",
+    "caption": "Accessory icon",
+    "mappings": [
+      {
+        "label": "Icon and level",
+        "color": "See visualValue",
+        "visualValue": "Pale blue/silver ring on orange background; cyan diamond 5",
+        "meaning": "Equipment category marker and example enhancement indicator.",
+        "textSourceIds": [
+          "block-0169",
+          "block-0170",
+          "block-0171",
+          "block-0172",
+          "block-0173",
+          "block-0174",
+          "block-0175"
+        ],
+        "confidence": "confirmed"
+      }
+    ],
+    "screenshotOnly": [
+      "Representative ring stands for accessory group; active/passive allocation differs by slot."
+    ],
+    "uncertainties": []
+  },
+  {
+    "id": "figure-015",
+    "sourceId": "block-0191",
+    "sha256": "30f720e6822d1091fdd0488bb9f503138e6652b44d0068559cb44c637dac1d0a",
+    "src": "/images/guide/30f720e6822d1091fdd0488bb9f503138e6652b44d0068559cb44c637dac1d0a.png",
+    "width": 53,
+    "height": 53,
+    "alt": "Belt icon. See the numbered or labeled text legend for the screenshot details.",
+    "caption": "Belt icon",
+    "mappings": [
+      {
+        "label": "Icon and level",
+        "color": "See visualValue",
+        "visualValue": "Brown/gold belt on orange background; +10 in white",
+        "meaning": "Equipment category marker and example enhancement indicator.",
+        "textSourceIds": [
+          "block-0191",
+          "block-0192",
+          "block-0193",
+          "block-0194",
+          "block-0196",
+          "block-0198"
+        ],
+        "confidence": "confirmed"
+      }
+    ],
+    "screenshotOnly": [
+      "Source says Orange/Heroid; do not silently convert typo in source record."
+    ],
+    "uncertainties": []
+  },
+  {
+    "id": "figure-016",
+    "sourceId": "block-0191",
+    "sha256": "b9a741e50a5e8b6c63a686187b3ad582d12c91a2e4618d9e231d8aa80add9332",
+    "src": "/images/guide/b9a741e50a5e8b6c63a686187b3ad582d12c91a2e4618d9e231d8aa80add9332.png",
+    "width": 53,
+    "height": 53,
+    "alt": "Amulet icon. See the numbered or labeled text legend for the screenshot details.",
+    "caption": "Amulet icon",
+    "mappings": [
+      {
+        "label": "Icon and level",
+        "color": "See visualValue",
+        "visualValue": "Gold circular amulet on orange background; +10 in white",
+        "meaning": "Equipment category marker and example enhancement indicator.",
+        "textSourceIds": [
+          "block-0191",
+          "block-0192",
+          "block-0193",
+          "block-0195",
+          "block-0196",
+          "block-0198"
+        ],
+        "confidence": "confirmed"
+      }
+    ],
+    "screenshotOnly": [
+      "Keep paired with belt but distinguish scroll source and offensive role."
+    ],
+    "uncertainties": []
+  },
+  {
+    "id": "figure-017",
+    "sourceId": "block-0200",
+    "sha256": "a5ef6002bbef0e2115cd97b6c40b06c6ba17987fe8a6decad18e0a8c6e3257ad",
+    "src": "/images/guide/a5ef6002bbef0e2115cd97b6c40b06c6ba17987fe8a6decad18e0a8c6e3257ad.png",
+    "width": 52,
+    "height": 53,
+    "alt": "Rune icon. See the numbered or labeled text legend for the screenshot details.",
+    "caption": "Rune icon",
+    "mappings": [
+      {
+        "label": "Icon and level",
+        "color": "See visualValue",
+        "visualValue": "Gold rune plate on green background; +5 in white",
+        "meaning": "Equipment category marker and example enhancement indicator.",
+        "textSourceIds": [
+          "block-0200",
+          "block-0201",
+          "block-0202",
+          "block-0203",
+          "block-0204",
+          "block-0205",
+          "block-0206",
+          "block-0207",
+          "block-0208",
+          "block-0209"
+        ],
+        "confidence": "confirmed"
+      }
+    ],
+    "screenshotOnly": [
+      "Screenshot +5 is an example; prose says high-rank players around +7 and explicitly questions multi-hit growth after +9."
+    ],
+    "uncertainties": []
+  },
+  {
+    "id": "figure-018",
+    "sourceId": "block-0213",
+    "sha256": "51ac62dd0d0ee460fc6816a72faff393ef31d659dfa08cc50a8a7c5670883a73",
+    "src": "/images/guide/51ac62dd0d0ee460fc6816a72faff393ef31d659dfa08cc50a8a7c5670883a73.png",
+    "width": 1080,
+    "height": 1002,
+    "alt": "Pendant icon. See the numbered or labeled text legend for the screenshot details.",
+    "caption": "Pendant icon",
+    "mappings": [
+      {
+        "label": "Icon and level",
+        "color": "See visualValue",
+        "visualValue": "Blue/silver pendant on yellow/gold background with cyan border; +20 in white",
+        "meaning": "Equipment category marker and example enhancement indicator.",
+        "textSourceIds": [
+          "block-0213",
+          "block-0214",
+          "block-0215",
+          "block-0216",
+          "block-0217",
+          "block-0218",
+          "block-0219",
+          "block-0220",
+          "block-0221",
+          "block-0222",
+          "block-0223",
+          "block-0224",
+          "block-0225"
+        ],
+        "confidence": "confirmed"
+      }
+    ],
+    "screenshotOnly": [
+      "Original is 1080×1002 but displayed around 57.50×53.24; it is a magnified low-detail icon. +20 matches prose cap, not a guarantee for launch."
+    ],
+    "uncertainties": []
+  },
+  {
+    "id": "figure-019",
+    "sourceId": "block-0236",
+    "sha256": "83c9b5372acc29484efb7d4538686448f37089974b1e27157f18f88055f13d65",
+    "src": "/images/guide/83c9b5372acc29484efb7d4538686448f37089974b1e27157f18f88055f13d65.png",
+    "width": 833,
+    "height": 1007,
+    "alt": "Shows low-grade Synch Stone on Heroic gear and 10% reroll chance. See the numbered or labeled text legend for the screenshot details.",
+    "caption": "Shows low-grade Synch Stone on Heroic gear and 10% reroll chance",
+    "mappings": [
+      {
+        "label": "Selected gear",
+        "color": "orange",
+        "visualValue": "+20 Splendent Nemesis Drago...",
+        "meaning": "Heroic-name heading is clipped.",
+        "textSourceIds": ["block-0232"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Success chance",
+        "color": "white",
+        "visualValue": "10% Success Chance",
+        "meaning": "Directly supports warning about Unique stone used on Heroic gear.",
+        "textSourceIds": ["block-0232"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Material tooltip",
+        "color": "yellow/gold",
+        "visualValue": "Sync Stone (Unique) (Bound); Unique Miscellaneous; Item Level 84; quantity 1",
+        "meaning": "UI spells Sync whereas prose spells Synch.",
+        "textSourceIds": ["block-0232", "block-0234"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Use location",
+        "color": "white",
+        "visualValue": "When used in [Enhancement – Soul Binding – Sync], it allows you to adjust the properties of gear.",
+        "meaning": "Screenshot navigation path.",
+        "textSourceIds": ["block-0232"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Soul Binding rows",
+        "color": "white/yellow bars",
+        "visualValue": "Might [value obscured]; Combat Speed 17.67% [right obscured]; Precision 111/111 (100%); Damage Boost 7.98%/7.98% (100%); Attack 48/48 (100%); Weapon Damage Boost 19.14%/19.14% (100%)",
+        "meaning": "Example bound stats.",
+        "textSourceIds": ["block-0232", "block-0244", "block-0248"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Extra row",
+        "color": "purple highlight/bar",
+        "visualValue": "Multi-hit Chance 11.37%/12.54% (32%)",
+        "meaning": "Extra Philosopher row visually distinct and not fully enhanced.",
+        "textSourceIds": ["block-0244", "block-0065", "block-0067"],
+        "confidence": "confirmed"
+      }
+    ],
+    "screenshotOnly": [
+      "Tooltip description also says “A stone that harmonizes the energies within gear to awaken new possibilities.” Source warning concerns 10% reroll success, distinct from rarity % in lists and 32% binding progress."
+    ],
+    "uncertainties": [
+      "Do not fill obscured Might or Combat Speed maximum. UI Sync versus prose Synch should be indexed as aliases, not silently reconciled in source."
+    ]
+  },
+  {
+    "id": "figure-020",
+    "sourceId": "block-0237",
+    "sha256": "691ea2313b403c83ff1e257b1ffc2ab5695065150b49e4bb0ea96353f8276711",
+    "src": "/images/guide/691ea2313b403c83ff1e257b1ffc2ab5695065150b49e4bb0ea96353f8276711.png",
+    "width": 2048,
+    "height": 711,
+    "alt": "Substance Morph recipe for Sync Stone from fragments. See the numbered or labeled text legend for the screenshot details.",
+    "caption": "Substance Morph recipe for Sync Stone from fragments",
+    "mappings": [
+      {
+        "label": "Selected recipe",
+        "color": "yellow title/cyan probability",
+        "visualValue": "Sync Stone (Unique) (Bound); Morph Available 6; 100%; center Success Chance: 100%",
+        "meaning": "Fragment-based crafting example.",
+        "textSourceIds": ["block-0234"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Recipe material",
+        "color": "yellow/white",
+        "visualValue": "Sync Stone Fragment (Unique) (...; 75/12",
+        "meaning": "Shows 75 owned, 12 required in current UI example; suffix clipped.",
+        "textSourceIds": ["block-0234"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Currency material",
+        "color": "white",
+        "visualValue": "Kina (All); 146,332,826/100,000",
+        "meaning": "Shows 100,000 required and current balance; source prose elsewhere uses Kinah.",
+        "textSourceIds": ["block-0234"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Other recipes",
+        "color": "orange/yellow/cyan",
+        "visualValue": "Amplify Stone (Heroic): Morph Available 50, 100%; Amplify Stone (Heroic): Morph Available 10, 25%; Sync Stone (Unique) (Bound): Morph Available 2, 100%; another Unique recipe Quantity to Receive: 36, 100%; Sync Stone (Heroic) (Bound): Morph Available 4, 100%; another Heroic recipe Morph Available 29 (bottom clipped)",
+        "meaning": "Other recipes visible in list; do not imply their unseen ingredient requirements.",
+        "textSourceIds": ["block-0234"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Navigation and balances",
+        "color": "white",
+        "visualValue": "Substance Morph; All / Special / Wings / Gear / Gatherable Material / Decor; top balances 3,038, 146,332,826, 146,332,826",
+        "meaning": "Menu and account-state example.",
+        "textSourceIds": ["block-0234"],
+        "confidence": "confirmed"
+      }
+    ],
+    "screenshotOnly": [
+      "Crafting recipe cost and quantity are screenshot-only and need an example label, with source-region/date qualification."
+    ],
+    "uncertainties": [
+      "UI says Sync Stone and Kina; prose uses Synch and Kinah. Some item suffixes and bottom recipe details are clipped."
+    ]
+  },
+  {
+    "id": "figure-021",
+    "sourceId": "block-0242",
+    "sha256": "8d49af27cfa03010314752b47236bbdafe704de497153e402ba86e47dd27ca98",
+    "src": "/images/guide/8d49af27cfa03010314752b47236bbdafe704de497153e402ba86e47dd27ca98.png",
+    "width": 793,
+    "height": 978,
+    "alt": "Soul Codex Reset tooltip beside full-reroll menu. See the numbered or labeled text legend for the screenshot details.",
+    "caption": "Soul Codex Reset tooltip beside full-reroll menu",
+    "mappings": [
+      {
+        "label": "Reset item",
+        "color": "cyan/teal tooltip, orange book",
+        "visualValue": "Soul Codex: Reset (Bound); Special Scroll; quantity 5",
+        "meaning": "Book used to reset all binding effects. Orange describes pictured book; tooltip itself is teal.",
+        "textSourceIds": ["block-0240", "block-0063"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Tooltip description",
+        "color": "white",
+        "visualValue": "A special power that resets bound souls. Use to reset the binding on already bound gear and perform a new binding.",
+        "meaning": "Screenshot-only item wording.",
+        "textSourceIds": ["block-0240"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Gear and binding",
+        "color": "orange title, cyan heading, yellow bars",
+        "visualValue": "+20 Splendent Nemesis Drago...; Soul Binding Rate; Might [value obscured]; Combat Speed 17.67% (100%); Precision 111/111 (100%); Damage Boost 7.98%/7.98% (100%); Attack 48/48 (100%); Weapon Damage Boost 19.14%/19.14% (100%)",
+        "meaning": "Same sample gear as figure-019.",
+        "textSourceIds": ["block-0240", "block-0244"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Extra line",
+        "color": "purple",
+        "visualValue": "Multi-hit Chance 11.37%/12.54% (32%)",
+        "meaning": "Visually distinct extra row.",
+        "textSourceIds": ["block-0244", "block-0065", "block-0067"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Warning",
+        "color": "red",
+        "visualValue": "The current binding effects will ch...",
+        "meaning": "Clipped in-image caution indicates replacement of binding effects.",
+        "textSourceIds": ["block-0240"],
+        "confidence": "confirmed"
+      }
+    ],
+    "screenshotOnly": [],
+    "uncertainties": [
+      "Do not complete red warning, item name, or obscured Might value."
+    ]
+  },
+  {
+    "id": "figure-022",
+    "sourceId": "block-0372",
+    "sha256": "b27befa93facb314f694c7efb25abcd6149103ee240db24e1db2c30f428feaa7",
+    "src": "/images/guide/b27befa93facb314f694c7efb25abcd6149103ee240db24e1db2c30f428feaa7.png",
+    "width": 441,
+    "height": 334,
+    "alt": "Specialty Perks and selectable slots on an Active skill. See the numbered or labeled text legend for the screenshot details.",
+    "caption": "Specialty Perks and selectable slots on an Active skill",
+    "mappings": [
+      {
+        "label": "Equipped slots",
+        "color": "blue shield, yellow shield, chained lock",
+        "visualValue": "Specialty; two filled perk slots and third locked",
+        "meaning": "Two equipped perks at this screenshot state; level 20 unlocks third slot in prose.",
+        "textSourceIds": ["block-0369", "block-0376"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "First perk",
+        "color": "green shield, dark cyan text",
+        "visualValue": "Adds [Relentless Kick] Chain Skill",
+        "meaning": "One selectable option, not currently equipped among top two pictured slots.",
+        "textSourceIds": ["block-0376"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Second perk",
+        "color": "blue shield, bright cyan text",
+        "visualValue": "Restores 1000 Stamina on using [Defia...",
+        "meaning": "Blue selected perk; name clipped.",
+        "textSourceIds": ["block-0376"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Third perk",
+        "color": "yellow shield, bright cyan text",
+        "visualValue": "Restores 20% HP on using [Defiance]",
+        "meaning": "Yellow selected perk.",
+        "textSourceIds": ["block-0376"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Fourth perk",
+        "color": "orange shield, dark cyan text",
+        "visualValue": "+2s Tenacity duration",
+        "meaning": "Fourth option; source prose says level 12 unlock.",
+        "textSourceIds": ["block-0376"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Final perk",
+        "color": "gray/dim with lock",
+        "visualValue": "16; +50% PvE Damage Tolerance and +2...",
+        "meaning": "Visible 16 threshold supports final-perk unlock at level 16; effect text clipped.",
+        "textSourceIds": ["block-0376"],
+        "confidence": "confirmed"
+      }
+    ],
+    "screenshotOnly": [
+      "Prose unlock sequence: level 8 first 3 options+1 slot; 12 fourth option+second slot; 16 fifth option; 20 third slot. Color is selection/option identity in this UI, not gear-grade mapping."
+    ],
+    "uncertainties": [
+      "Do not complete clipped Defia... or final perk effect; do not infer skill’s name merely from references to Defiance."
+    ]
+  },
+  {
+    "id": "figure-023",
+    "sourceId": "block-0372",
+    "sha256": "0b0f13e3a0c81989fb78b5974aff0682bd53f9afc99cd962cde9bae3a25d9833",
+    "src": "/images/guide/0b0f13e3a0c81989fb78b5974aff0682bd53f9afc99cd962cde9bae3a25d9833.png",
+    "width": 436,
+    "height": 316,
+    "alt": "Active skill grid with varied effective levels. See the numbered or labeled text legend for the screenshot details.",
+    "caption": "Active skill grid with varied effective levels",
+    "mappings": [
+      {
+        "label": "Level grid",
+        "color": "white levels, predominantly orange borders with some green",
+        "visualValue": "Active: row1 Lv.16, Lv.20, Lv.22, Lv.15, Lv.20; row2 Lv.17, Lv.14, Lv.14, Lv.16, Lv.20; row3 Lv.20, Lv.12",
+        "meaning": "Levels above Wisdom Stone cap 10 demonstrate additional levels from gear/boards/Arcana.",
+        "textSourceIds": [
+          "block-0374",
+          "block-0376",
+          "block-0378",
+          "block-0380",
+          "block-0382"
+        ],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Small corner indicators",
+        "color": "white/black badges",
+        "visualValue": "Visible numeral badges include row1 2,0,1,2 after first tile; row2 4,2,8,1 after which last tile has a symbol; other corners show symbols",
+        "meaning": "Interface bindings/status indicators separate from Lv. values; source does not explain.",
+        "textSourceIds": ["block-0376"],
+        "confidence": "confirmed"
+      }
+    ],
+    "screenshotOnly": [
+      "Twelve active skill tiles; grid contains effective level 22, so level 20 is a specialty-slot target rather than absolute effective-level cap."
+    ],
+    "uncertainties": [
+      "Skill names not shown; do not assign art to named class skills. Small corner indicators should remain visual without invented meaning."
+    ]
+  },
+  {
+    "id": "figure-024",
+    "sourceId": "block-0386",
+    "sha256": "a6590aa56d2bf841d7a48d3c029bba6f762c1301cbcb418f09cd86694cda7e43",
+    "src": "/images/guide/a6590aa56d2bf841d7a48d3c029bba6f762c1301cbcb418f09cd86694cda7e43.png",
+    "width": 418,
+    "height": 218,
+    "alt": "Passive skill grid demonstrating effective levels beyond 20. See the numbered or labeled text legend for the screenshot details.",
+    "caption": "Passive skill grid demonstrating effective levels beyond 20",
+    "mappings": [
+      {
+        "label": "Level grid",
+        "color": "white text, green borders",
+        "visualValue": "Passive: row1 Lv.17, Lv.10, Lv.17, Lv.29, Lv.21; row2 Lv.20, Lv.19, Lv.24, Lv.10, Lv.17",
+        "meaning": "Ten passive skills; example Lv.29 supports KR endgame 25–30 statement. No Specialty Perks section shown.",
+        "textSourceIds": ["block-0388", "block-0390"],
+        "confidence": "confirmed"
+      }
+    ],
+    "screenshotOnly": ["Grid only provides artwork/levels, no names."],
+    "uncertainties": [
+      "Do not infer individual passive identity or universal target levels."
+    ]
+  },
+  {
+    "id": "figure-025",
+    "sourceId": "block-0393",
+    "sha256": "584794627924f75c5fdb9e559956e77016ebafe8c43fc07884ad975819b0be47",
+    "src": "/images/guide/584794627924f75c5fdb9e559956e77016ebafe8c43fc07884ad975819b0be47.png",
+    "width": 418,
+    "height": 307,
+    "alt": "Stigma skill grid with six visible leveled tiles and locked tiles. See the numbered or labeled text legend for the screenshot details.",
+    "caption": "Stigma skill grid with six visible leveled tiles and locked tiles",
+    "mappings": [
+      {
+        "label": "Unlocked levels",
+        "color": "white text, orange/green outlines",
+        "visualValue": "Stigma: row1 col1 Lv.20, col2 Lv.20, col5 Lv.21; row2 col1 Lv.25, col2 Lv.25, col4 Lv.20",
+        "meaning": "Six unlocked/leveled tiles shown; supports above-20 progression after Chapter 1 but not universal launch availability.",
+        "textSourceIds": ["block-0395", "block-0397", "block-0401"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Locks",
+        "color": "dark tiles with padlocks",
+        "visualValue": "Locked positions row1 cols3–4; row2 cols3,5; row3 cols1–3",
+        "meaning": "Seven locked tiles visible.",
+        "textSourceIds": ["block-0395"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Corner indicators",
+        "color": "white",
+        "visualValue": "Visible 6 on row1 col1, 3 on row1 col2, 0 on row1 col5, 0 on row2 col2, 7 on row2 col4; other small symbols present",
+        "meaning": "Do not conflate corner indicators with skill levels.",
+        "textSourceIds": ["block-0395"],
+        "confidence": "confirmed"
+      }
+    ],
+    "screenshotOnly": [
+      "Prose says up to 6 equipped with possibility of lower Global limit, all unlocked perks benefit Stigma, final perk at 20, cap 25 after Chapter 1. Screenshot current allocation differs from described fully maxed 3×25+1×23+rest20; retain as example."
+    ],
+    "uncertainties": [
+      "Skill names absent; cannot label individual icons as Undefeated Mantra or Light of Protection."
+    ]
+  }
+]

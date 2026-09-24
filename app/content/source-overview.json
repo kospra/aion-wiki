@@ -1,0 +1,305 @@
+{
+  "slug": "about-the-source-and-author",
+  "title": "About the source and author",
+  "category": null,
+  "summary": "Kanon’s guide, author-reported experience, source credits, and captured update limitations.",
+  "status": "source-uncertain",
+  "sourceUrl": "https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/edit",
+  "qualifiers": [
+    "Source recommendations and first-person statements are Kanon’s. Captured update: 9/20/2026; Global changes were not all confirmed."
+  ],
+  "blocks": [
+    {
+      "id": "author-attribution",
+      "sourceIds": [],
+      "kind": "note",
+      "label": "About this source",
+      "tone": "context",
+      "content": [
+        {
+          "text": "The following introduction, requests to readers, and credential claims are Kanon’s original words. Screenshots show historical examples rather than wiki-author credentials or universal targets."
+        }
+      ]
+    },
+    {
+      "id": "captured-update",
+      "sourceIds": [],
+      "kind": "note",
+      "label": "Source date and scope",
+      "tone": "context",
+      "content": [
+        {
+          "text": "The source header literally reads “Last Updated: /20/2026”; the missing month is not repaired. Its separate update note is dated 9/20/2026. Kanon had not yet updated Wings, and described Global changes as unconfirmed until launch."
+        }
+      ]
+    },
+    {
+      "id": "block-0001",
+      "sourceIds": ["block-0001"],
+      "kind": "figure",
+      "figureId": "figure-001"
+    },
+    {
+      "id": "block-0002",
+      "sourceIds": ["block-0002"],
+      "kind": "paragraph",
+      "content": [
+        {
+          "text": "twitch.tv/kanonxo",
+          "strong": true,
+          "underline": true,
+          "href": "http://twitch.tv/kanonxo"
+        },
+        {
+          "text": " ← follow me, i’m probably live right now"
+        }
+      ]
+    },
+    {
+      "id": "block-0003",
+      "sourceIds": ["block-0003"],
+      "kind": "paragraph",
+      "content": [
+        {
+          "text": "youtube.com/kanonxo",
+          "strong": true,
+          "underline": true,
+          "href": "http://youtube.com/kanonxo"
+        },
+        {
+          "text": " ",
+          "underline": true
+        }
+      ]
+    },
+    {
+      "id": "block-0005",
+      "sourceIds": ["block-0005"],
+      "kind": "paragraph",
+      "content": [
+        {
+          "text": "Last Updated: /",
+          "strong": true,
+          "emphasis": true,
+          "underline": true,
+          "highlight": "#ffff00"
+        },
+        {
+          "text": "20",
+          "strong": true,
+          "emphasis": true,
+          "underline": true,
+          "highlight": "#ffff00"
+        },
+        {
+          "text": "/2026",
+          "strong": true,
+          "emphasis": true,
+          "underline": true,
+          "highlight": "#ffff00"
+        }
+      ]
+    },
+    {
+      "id": "block-0006",
+      "sourceIds": ["block-0006"],
+      "kind": "paragraph",
+      "content": [
+        {
+          "text": "***Update Note 9/20/2026",
+          "strong": true,
+          "emphasis": true,
+          "underline": true,
+          "highlight": "#ffff00"
+        },
+        {
+          "text": ": Updated Stat Lines, Gear, and Genus the best I could given the info we know so far. There are for sure some big changes for global and it’s impossible for us to be 100% sure of ALL the changes until launch. Will update this doc with confirmed info as soon as I can. If there is any confirmed info that needs to be updated on this doc that you notice, please shoot me an X msg or DM on Discord. I have not yet updated the Wings section.",
+          "strong": true,
+          "emphasis": true,
+          "highlight": "#ffff00"
+        }
+      ]
+    },
+    {
+      "id": "block-0007",
+      "sourceIds": ["block-0007"],
+      "kind": "paragraph",
+      "content": [
+        {
+          "text": "The following is an in-depth, everything-you-need-to-know guide that includes all the foundational information in Aion 2 PVE and covers everything related to Character progression. Detailed damage formulas can be found towards the end of the doc. "
+        }
+      ]
+    },
+    {
+      "id": "block-0009",
+      "sourceIds": ["block-0009"],
+      "kind": "paragraph",
+      "content": [
+        {
+          "text": "This is a work-in-progress guide that I’ve been working on solo so please let me know if you catch any errors, typos, or anything that needs to be updated. This is obviously a very big doc that covers a lot of ground so there could be some stuff I missed, there are a lot of systems in Aion 2. ",
+          "emphasis": true,
+          "highlight": "#f8f9fa"
+        }
+      ]
+    },
+    {
+      "id": "block-0010",
+      "sourceIds": ["block-0010"],
+      "kind": "paragraph",
+      "content": [
+        {
+          "text": "Planning on editing this doc to make it more visually appealing in due time as well!",
+          "emphasis": true,
+          "highlight": "#f8f9fa"
+        }
+      ]
+    },
+    {
+      "id": "block-0012",
+      "sourceIds": ["block-0012"],
+      "kind": "paragraph",
+      "content": [
+        {
+          "text": "If you need any additional help or have any questions (or want to just drop by and say hi), come visit me on Twitch, I’m live daily."
+        }
+      ]
+    },
+    {
+      "id": "block-0014",
+      "sourceIds": ["block-0014"],
+      "kind": "paragraph",
+      "content": [
+        {
+          "text": "← "
+        },
+        {
+          "text": "Use the Document Tabs on the left for Chapters",
+          "emphasis": true
+        },
+        {
+          "text": ". "
+        }
+      ]
+    },
+    {
+      "id": "block-0016",
+      "sourceIds": ["block-0016"],
+      "kind": "heading",
+      "content": [
+        {
+          "text": "My Aion 2 Credentials",
+          "strong": true
+        }
+      ],
+      "level": 2
+    },
+    {
+      "id": "block-0017",
+      "sourceIds": ["block-0017"],
+      "kind": "paragraph",
+      "content": [
+        {
+          "text": "I probably have around or close to 1k hours played. I play/played this game offstream a LOT, way more than I stream it. I have completed all the content in the game, including the pinnacle raids and got to just under 900k combat power. "
+        }
+      ]
+    },
+    {
+      "id": "block-0018",
+      "sourceIds": ["block-0018"],
+      "kind": "paragraph",
+      "content": [
+        {
+          "text": "Performance-wise, for Brawler I have averaged anywhere from +20% to +90% Skill Index (Skill Index explanation above the picture below) through pretty much all the Combat Power brackets through the 800ks peaking at 238 out of 100 (+138%) Skill Index in the 560k-580k bracket (one of the top Brawlers in that bracket at the time). "
+        }
+      ]
+    },
+    {
+      "id": "block-0019",
+      "sourceIds": ["block-0019"],
+      "kind": "paragraph",
+      "content": [
+        {
+          "text": "To be clear, this is something that can be inflated to a certain degree but my numbers were all from the highest level content I could do in each respective bracket, with complete pugs that were not handpicked for DPS boosts. "
+        }
+      ]
+    },
+    {
+      "id": "block-0020",
+      "sourceIds": ["block-0020"],
+      "kind": "paragraph",
+      "content": [
+        {
+          "text": "Also keep in mind this is based out of KR where everyone pretty much has less than 30 ping so there is way less variance with ping). "
+        }
+      ]
+    },
+    {
+      "id": "block-0021",
+      "sourceIds": ["block-0021"],
+      "kind": "paragraph",
+      "content": [
+        {
+          "text": "Posting this now because I’m moving back to the US and my ping will tank my DPS on KR now."
+        }
+      ]
+    },
+    {
+      "id": "block-0022",
+      "sourceIds": ["block-0022"],
+      "kind": "paragraph",
+      "content": [
+        {
+          "text": "(Skill Index measures the average DPS across all users within 20 Combat Power of each other for each respective Boss. A score of 100 out of 100 (+0%) means median average DPS.)",
+          "emphasis": true
+        }
+      ]
+    },
+    {
+      "id": "block-0023",
+      "sourceIds": ["block-0023"],
+      "kind": "figure",
+      "figureId": "figure-002"
+    },
+    {
+      "id": "block-0025",
+      "sourceIds": ["block-0025"],
+      "kind": "paragraph",
+      "content": [
+        {
+          "text": "—",
+          "strong": true
+        }
+      ]
+    },
+    {
+      "id": "research-attribution",
+      "sourceIds": [],
+      "kind": "note",
+      "label": "Additional source credit",
+      "tone": "context",
+      "content": [
+        {
+          "text": "In the How stats work chapter, Kanon credits Aion Research Lab and his friends for discovering many of the formulas and equations, and describes the work as ongoing."
+        }
+      ]
+    },
+    {
+      "id": "research-source-links",
+      "sourceIds": [],
+      "kind": "paragraph",
+      "content": [
+        {
+          "text": "Read Kanon’s full attribution",
+          "href": "/articles/stat-efficiency-and-diminishing-returns#block-1029"
+        },
+        {
+          "text": " · "
+        },
+        {
+          "text": "Aion Research Lab’s YouTube channel",
+          "href": "https://www.youtube.com/@%EC%95%84%EC%9D%B4%EC%98%A8%EC%97%B0%EA%B5%AC%EC%86%8C"
+        }
+      ]
+    }
+  ]
+}
