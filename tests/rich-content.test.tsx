@@ -95,6 +95,39 @@ it('keeps unsafe links visible as text without creating a clickable element', ()
   );
 });
 
+it.each(['constructor', '__proto__'])(
+  'keeps inherited-key href %s visible and inert while resolving an owned source link',
+  (unsafeHref) => {
+    const blocks: Block[] = [
+      {
+        id: 'block0003a',
+        sourceIds: ['block0003a'],
+        kind: 'paragraph',
+        content: [
+          { text: 'Unsafe reference', href: unsafeHref },
+          { text: ' and ' },
+          { text: 'valid reference', href: '#source-heading' },
+        ],
+      },
+    ];
+    render(
+      <RichContent
+        blocks={blocks}
+        figures={{}}
+        sourceLinks={{ '#source-heading': '/articles/gear#block0002' }}
+      />,
+    );
+
+    expect(document.getElementById('block0003a')).toHaveTextContent(
+      'Unsafe reference and valid reference',
+    );
+    expect(screen.getAllByRole('link')).toHaveLength(1);
+    expect(
+      screen.getByRole('link', { name: 'valid reference' }),
+    ).toHaveAttribute('href', '/articles/gear#block0002');
+  },
+);
+
 it('keeps ordered list numbering and nested source blocks', () => {
   const blocks: Block[] = [
     {

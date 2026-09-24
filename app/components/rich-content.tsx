@@ -53,7 +53,12 @@ export function RichContent({
       const content = linkedParts.map((linked, offset) =>
         formattedPart(linked, start + offset),
       );
-      const href = normalizeSourceUrl(sourceLinks[part.href] ?? part.href);
+      const mappedHref = Object.hasOwn(sourceLinks, part.href)
+        ? sourceLinks[part.href]
+        : undefined;
+      const href = normalizeSourceUrl(
+        typeof mappedHref === 'string' ? mappedHref : part.href,
+      );
       // Blank source spans often flank a labeled link to the same target.
       runs.push(
         href && linkedParts.some((linked) => linked.text.trim()) ? (
