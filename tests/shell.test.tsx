@@ -1,4 +1,4 @@
-import { render, screen, within } from '@testing-library/react';
+import { render, screen, within } from './render';
 import { MemoryRouter } from 'react-router';
 import { expect, it } from 'vitest';
 import { NotFound } from '../app/components/not-found';

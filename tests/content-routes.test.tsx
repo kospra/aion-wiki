@@ -1,4 +1,4 @@
-import { render, screen, within } from '@testing-library/react';
+import { render, screen, within } from './render';
 import { createMemoryRouter, RouterProvider } from 'react-router';
 import { expect, it } from 'vitest';
 import ArticleRoute from '../app/routes/article';

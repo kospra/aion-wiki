@@ -19,6 +19,8 @@
     "content:check": "node scripts/generate-catalogue.ts --check"
   },
   "dependencies": {
+    "@chakra-ui/react": "3.37.0",
+    "@emotion/react": "11.14.0",
     "isbot": "5.2.2",
     "react": "19.3.0",
     "react-dom": "19.3.0",

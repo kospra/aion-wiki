@@ -1,4 +1,13 @@
 import {
+  Box,
+  Container,
+  Flex,
+  Heading,
+  Link,
+  Stack,
+  Text,
+} from '@chakra-ui/react';
+import {
   Links,
   Meta,
   Outlet,
@@ -9,6 +18,7 @@ import {
 } from 'react-router';
 import { NotFound } from './components/not-found';
 import { SiteHeader } from './components/site-header';
+import { WikiProvider } from './components/ui/provider';
 import './styles/theme.css';
 import './styles/global.css';
 import './styles/wiki.css';
@@ -20,17 +30,17 @@ export function Layout({
   children: React.ReactNode;
 }): React.JSX.Element {
   return (
-    <html lang="en">
+    <html lang="en" className="light">
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="theme-color" content="#0c111b" />
+        <meta name="theme-color" content="#ffffff" />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <Meta />
         <Links />
       </head>
       <body>
-        {children}
+        <WikiProvider>{children}</WikiProvider>
         <ScrollRestoration />
         <Scripts />
       </body>
@@ -40,12 +50,45 @@ export function Layout({
 
 function SiteFooter(): React.JSX.Element {
   return (
-    <footer className="site-footer">
-      <div className="site-footer__inner">
-        <span>Aion 2 Wiki</span>
-        <span>An independent reference in progress</span>
-      </div>
-    </footer>
+    <Box
+      as="footer"
+      borderTopWidth="1px"
+      borderColor="gray.200"
+      bg="white"
+      color="gray.600"
+    >
+      <Container maxW="7xl">
+        <Flex
+          minH="24"
+          py="6"
+          align="center"
+          justify="space-between"
+          gap="3"
+          direction={{ base: 'column', sm: 'row' }}
+        >
+          <Text fontSize="lg" fontWeight="semibold" color="gray.900">
+            Aion 2 Wiki
+          </Text>
+          <Text fontSize="sm">An independent reference in progress</Text>
+        </Flex>
+      </Container>
+    </Box>
+  );
+}
+
+function Main({ children }: { children: React.ReactNode }): React.JSX.Element {
+  return (
+    <Container
+      as="main"
+      id="main-content"
+      tabIndex={-1}
+      maxW="7xl"
+      flex="1"
+      px={{ base: '4', md: '6' }}
+      py={{ base: '8', md: '12' }}
+    >
+      {children}
+    </Container>
   );
 }
 
@@ -53,9 +96,9 @@ export default function App(): React.JSX.Element {
   return (
     <>
       <SiteHeader />
-      <main id="main-content" tabIndex={-1}>
+      <Main>
         <Outlet />
-      </main>
+      </Main>
       <SiteFooter />
     </>
   );
@@ -67,23 +110,53 @@ export function ErrorBoundary(): React.JSX.Element {
   return (
     <>
       <SiteHeader />
-      <main id="main-content" tabIndex={-1}>
+      <Main>
         {isRouteErrorResponse(error) && error.status === 404 ? (
           <NotFound />
         ) : (
-          <section className="not-found" aria-labelledby="error-title">
-            <p className="eyebrow">The archive is temporarily unavailable</p>
-            <h1 id="error-title">Something went wrong</h1>
-            <p>
-              We could not display this page. Please try returning to the
-              homepage.
-            </p>
-            <a className="button-link" href="/">
-              Return to the homepage
-            </a>
-          </section>
+          <Box
+            as="section"
+            aria-labelledby="error-title"
+            maxW="2xl"
+            mx="auto"
+            my="12"
+            p={{ base: '8', md: '12' }}
+            borderWidth="1px"
+            borderColor="gray.200"
+            borderRadius="lg"
+            bg="white"
+            textAlign="center"
+          >
+            <Stack gap="4" align="center">
+              <Text color="gray.600" fontSize="sm">
+                The archive is temporarily unavailable
+              </Text>
+              <Heading as="h1" id="error-title" size="3xl" color="gray.900">
+                Something went wrong
+              </Heading>
+              <Text color="gray.600">
+                We could not display this page. Please try returning to the
+                homepage.
+              </Text>
+              <Link
+                href="/"
+                display="inline-flex"
+                alignItems="center"
+                minH="11"
+                px="5"
+                py="2"
+                bg="gray.900"
+                color="white"
+                borderRadius="md"
+                fontWeight="semibold"
+                _hover={{ bg: 'gray.700' }}
+              >
+                Return to the homepage
+              </Link>
+            </Stack>
+          </Box>
         )}
-      </main>
+      </Main>
       <SiteFooter />
     </>
   );

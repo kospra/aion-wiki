@@ -1,4 +1,4 @@
-import { render, screen, within } from '@testing-library/react';
+import { render, screen, within } from './render';
 import { expect, it } from 'vitest';
 import { ArticleContents } from '../app/components/article-contents';
 import { RichContent } from '../app/components/rich-content';
