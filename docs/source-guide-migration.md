@@ -35,7 +35,7 @@ All 71 figure uncertainty records are rendered verbatim beside their figure, wit
 - The Arcana eight-card arrangement with nine listed memberships and the source's alternative five-card setups.
 - Genus screenshot examples that are not presented as ideal stat priorities.
 - Conflicting or approximate screenshot labels, growth costs, transfer materials and the combat sample's limited scope.
-- The source's 79%/80% and 490/499 disagreements, literal formula notation, and unconfirmed Multi-Hit behavior.
+- The source's approximate 79%/80% values, Defense percentage-versus-subtraction wording ambiguity, literal formula notation, and unconfirmed Multi-Hit behavior. The 490 and 499 worked results belong to separate PVE and PVP examples.
 - Class Passives contains only the captured Coming soon placeholder.
 
 No uncertain values are silently promoted to confirmed mechanics. A later source revision requires a new capture and deliberate reconciliation, not changes to this baseline to satisfy a test.
@@ -44,4 +44,4 @@ No uncertain values are silently promoted to confirmed mechanics. A later source
 
 The persistent commands are documented in the README. Browser results and representative screenshots are saved in `.local-tools/qa/guide/`; that directory is intentionally ignored. Browser tests run against production preview at `http://localhost:3000` and accept another base URL. Known direct routes work without fallback. Direct unknown URLs return the static server's 404; the React missing-page view and recovery are checked through client navigation. Host fallback configuration is a separate deployment decision.
 
-A browser-detected 375px overflow in the Closet figure legend was fixed by allowing long preserved comma-separated values to wrap. The tall-image viewer also gains explicit Tab/Shift+Tab boundary wrapping and a labeled focusable scroll region after Chromium QA showed focus could leave the native dialog for browser chrome. No source wording or numbers changed. The build still reports the known large article bundle (about 793 kB minified); bundle splitting is a separate optimization. This task does not publish or merge the site.
+A browser-detected 375px overflow in the Closet figure legend was fixed by allowing long preserved comma-separated values to wrap. The tall-image viewer also gains explicit Tab/Shift+Tab boundary wrapping and a labeled focusable scroll region after Chromium QA showed focus could leave the native dialog for browser chrome. No source wording or numbers changed. The build still reports the known large article bundle (about 613 kB minified); bundle splitting is a separate optimization. This task does not publish or merge the site.

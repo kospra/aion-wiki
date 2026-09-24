@@ -1,6 +1,7 @@
 import { readFile, writeFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import { resolve } from 'node:path';
+import { format } from 'prettier';
 import { inlineText, pageText, walkBlocks } from '../app/content/reader.ts';
 import type { Figure, GuidePage } from '../app/content/types.ts';
 
@@ -25,6 +26,9 @@ const chapters = await Promise.all(
     ),
   ),
 );
+const baseline = await readJson<{
+  blocks: { id: string; anchor?: string; links: { href: string }[] }[];
+}>('content/source/baseline.json');
 const articles = chapters.flat().map((page) => ({
   slug: page.slug,
   title: page.title,
@@ -38,7 +42,7 @@ const articles = chapters.flat().map((page) => ({
     .filter((block) => block.kind === 'heading')
     .map((block) => ({ id: block.id, title: inlineText(block.content) })),
 }));
-const output =
+const catalogue =
   JSON.stringify(
     {
       categories: categories.map(({ slug, title, description }) => ({
@@ -51,20 +55,38 @@ const output =
     null,
     2,
   ) + '\n';
-const path = resolve(root, 'app/content/catalogue.json');
+const sourceReferences = await format(
+  JSON.stringify(
+    {
+      blocks: baseline.blocks.map((block) => ({
+        id: block.id,
+        ...(block.anchor ? { anchor: block.anchor } : {}),
+        links: block.links.map(({ href }) => href),
+      })),
+    },
+    null,
+    2,
+  ),
+  { parser: 'json' },
+);
+const outputs = [
+  ['app/content/catalogue.json', catalogue],
+  ['app/content/source-references.json', sourceReferences],
+] as const;
 if (process.argv.includes('--check')) {
-  const current = await readFile(path, 'utf8').catch(() => '');
-  if (current !== output) {
-    console.error(
-      'app/content/catalogue.json is stale; run npm run content:generate',
-    );
-    process.exitCode = 1;
-  } else {
-    console.log('Catalogue is current.');
+  for (const [path, output] of outputs) {
+    const current = await readFile(resolve(root, path), 'utf8').catch(() => '');
+    if (current !== output) {
+      console.error(`${path} is stale; run npm run content:generate`);
+      process.exitCode = 1;
+    }
   }
+  if (!process.exitCode) console.log('Generated content is current.');
 } else {
-  await writeFile(path, output);
+  for (const [path, output] of outputs) {
+    await writeFile(resolve(root, path), output);
+  }
   console.log(
-    `Generated ${articles.length} article entries across ${categories.length} chapters.`,
+    `Generated ${articles.length} article entries across ${categories.length} chapters and ${baseline.blocks.length} source references.`,
   );
 }

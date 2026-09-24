@@ -41,7 +41,7 @@ npm run verify:static
 npm run verify:browser -- http://localhost:3000
 ```
 
-`verify:content` runs directly under Node 24 and fails on errors. The tests compare actual source-bearing fields with the independent capture and mutate lost repeated numbers, qualifiers, links, coverage, and figures. The static verifier parses every route as DOM, reconstructs visible source text/style/link fields and revalidates them against the baseline, checks figure legends and uncertainties, and verifies local asset hashes and internal targets. `content:check` detects a stale generated search catalogue.
+`verify:content` runs directly under Node 24 and fails on errors. The tests compare actual source-bearing fields with the independent capture and mutate lost repeated numbers, qualifiers, links, coverage, and figures. The static verifier parses every route as DOM, reconstructs visible source text/style/link fields and revalidates them against the baseline, checks figure legends and uncertainties, and verifies local asset hashes and internal targets. `content:check` detects stale generated search catalogue or source-reference projection data.
 
 Browser QA uses a separate WSL Playwright installation, not a product dependency. Set `GUIDE_BROWSER_ROOT` to a directory containing `node_modules/playwright/index.mjs` and its browser environment; by default it uses `.local-tools/wsl-browser`. Provision that environment with Playwright and compatible Chromium if absent. `PLAYWRIGHT_BROWSERS_PATH` and `LD_LIBRARY_PATH` may be supplied explicitly; this workspace has browsers in `browsers` and locally extracted libraries in `libs/usr/lib/x86_64-linux-gnu` under that test directory. The script accepts the preview base URL and writes screenshots and `results.json` into ignored `.local-tools/qa/guide/`. It checks all 57 routes at 375px/1440px plus reading interactions, keyboard access, image loading, and errors.
 
@@ -53,7 +53,7 @@ Figures live in `app/content/figures/group-{a,b,c}.json`; local originals are un
 
 `content/source/baseline.json`, `figure-audit.json`, `taxonomy.json`, and `category-contract.json` are the independent captured source and approved structure. Primary destinations and justified layout-only exclusions live in `content/coverage/group-{a,b,c}.json`. Stable source block anchors connect those records to visible content. Do not change the baseline to make a content regression pass.
 
-`app/content/repository.ts` loads full bodies for article/source routes and resolves source links. `app/content/wiki.ts` exposes the lightweight generated `catalogue.json` to navigation and search; the header does not load article bodies. After content edits run `npm run content:generate`, then all validation gates. See [migration provenance and limitations](docs/source-guide-migration.md).
+`app/content/repository.ts` loads full bodies for article/source routes and resolves source links using generated `app/content/source-references.json`. The projection contains only source block IDs, optional anchors, and link hrefs derived from the committed baseline; the full baseline remains an offline validation input. `app/content/wiki.ts` exposes the lightweight generated `catalogue.json` to navigation and search; the header does not load article bodies. After content edits run `npm run content:generate`, then all validation gates. See [migration provenance and limitations](docs/source-guide-migration.md).
 
 ## Static hosting
 

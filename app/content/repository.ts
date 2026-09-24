@@ -15,7 +15,7 @@ import groupA from './figures/group-a.json' with { type: 'json' };
 import groupB from './figures/group-b.json' with { type: 'json' };
 import groupC from './figures/group-c.json' with { type: 'json' };
 import taxonomy from '../../content/source/taxonomy.json' with { type: 'json' };
-import baseline from '../../content/source/baseline.json' with { type: 'json' };
+import sourceReferences from './source-references.json' with { type: 'json' };
 import coverageA from '../../content/coverage/group-a.json' with { type: 'json' };
 import coverageB from '../../content/coverage/group-b.json' with { type: 'json' };
 import coverageC from '../../content/coverage/group-c.json' with { type: 'json' };
@@ -111,7 +111,7 @@ function destination(sourceId: string): string {
   return blockId ? `${pagePath(slug)}#${blockId}` : pagePath(slug);
 }
 
-for (const block of baseline.blocks) {
+for (const block of sourceReferences.blocks) {
   const href = destination(block.id);
   sourceLinks[block.id] = href;
   if (block.anchor) {
@@ -119,13 +119,13 @@ for (const block of baseline.blocks) {
     sourceLinks[`${sourceDocument}#${block.anchor}`] = href;
   }
 }
-for (const block of baseline.blocks) {
-  for (const link of block.links) {
-    const normalized = normalizeSourceUrl(link.href);
-    if (link.href.startsWith('#')) {
-      if (!sourceLinks[link.href]) {
-        sourceLinks[link.href] = `${sourceDocument}${link.href}`;
-        sourceLinkNotes[link.href] =
+for (const block of sourceReferences.blocks) {
+  for (const href of block.links) {
+    const normalized = normalizeSourceUrl(href);
+    if (href.startsWith('#')) {
+      if (!sourceLinks[href]) {
+        sourceLinks[href] = `${sourceDocument}${href}`;
+        sourceLinkNotes[href] =
           'This source anchor has no unambiguous destination in the captured guide. Open it in the original document.';
       }
     } else if (normalized) {
@@ -135,9 +135,9 @@ for (const block of baseline.blocks) {
         new URL(sourceDocument).origin + new URL(sourceDocument).pathname;
       const target =
         sameDocument && parsed.hash ? sourceLinks[parsed.hash] : undefined;
-      sourceLinks[link.href] = target ?? normalized;
+      sourceLinks[href] = target ?? normalized;
       if (sameDocument && parsed.hash && !target) {
-        sourceLinkNotes[link.href] =
+        sourceLinkNotes[href] =
           'This source anchor has no unambiguous destination in the captured guide. Open it in the original document.';
       }
     }
