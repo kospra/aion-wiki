@@ -54,7 +54,10 @@ export function SiteHeader(): React.JSX.Element {
                 </Button>
               </Collapsible.Trigger>
             </Flex>
-            <Collapsible.Content display={{ md: 'none' }}>
+            <Collapsible.Content
+              display={{ md: 'none' }}
+              _motionReduce={{ animation: 'none' }}
+            >
               <Box
                 id="chapter-navigation"
                 role="group"

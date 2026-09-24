@@ -27,12 +27,13 @@ export function ImageViewer({ figure }: { figure: Figure }): React.JSX.Element {
         </Button>
       </Dialog.Trigger>
       <Portal>
-        <Dialog.Backdrop />
+        <Dialog.Backdrop _motionReduce={{ animation: 'none' }} />
         <Dialog.Positioner>
           <Dialog.Content
             maxW="min(94vw, 72rem)"
             maxH="94dvh"
             overflow="hidden"
+            _motionReduce={{ animation: 'none' }}
           >
             <Dialog.Header flexShrink="0">
               <Flex align="center" gap="4" justify="space-between" wrap="wrap">
