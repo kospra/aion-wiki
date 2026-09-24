@@ -17,8 +17,7 @@ npm run dev
 If needed, provision Node 24 with `nvm install 24` and npm 12 with `npm install --global npm@12`; changing the default nvm version is unnecessary. From PowerShell, enter WSL with `wsl.exe --exec bash -ic 'cd /mnt/c/code/aion-wiki && nvm use 24 && npm run dev'`. Open the URL printed by React Router, normally `http://localhost:5173`.
 
 ```bash
-npm run build
-npm run verify:static
+npm run build:static
 npm run preview -- --listen 3000
 ```
 
