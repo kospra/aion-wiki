@@ -129,10 +129,23 @@ export function validateFragments(
   }
 
   if (offset >= 0) {
-    const cursors = new Map<string, number>();
     for (const formatting of source.formatting) {
       const text = normalizeWhitespace(formatting.text);
-      if (!text) continue;
+      const { start, end } = formatting;
+      if (
+        !text ||
+        !Number.isInteger(start) ||
+        !Number.isInteger(end) ||
+        start < 0 ||
+        end <= start ||
+        end > expected.length ||
+        expected.slice(start, end) !== text
+      ) {
+        errors.push(
+          `${source.id}: invalid formatting source position for ${text}`,
+        );
+        continue;
+      }
       for (const property of [
         'strong',
         'emphasis',
@@ -141,14 +154,9 @@ export function validateFragments(
       ] as const) {
         const value = formatting[property];
         if (!value) continue;
-        const key = `${property}:${value}`;
-        const start = expected.indexOf(text, cursors.get(key) ?? 0);
-        cursors.set(key, Math.max(0, start) + text.length);
-        const preserved =
-          start >= 0 &&
-          visible.runs
-            .slice(offset + start, offset + start + text.length)
-            .every((run) => /\s/u.test(run.text) || run[property] === value);
+        const preserved = visible.runs
+          .slice(offset + start, offset + end)
+          .every((run) => /\s/u.test(run.text) || run[property] === value);
         if (!preserved)
           errors.push(
             `${source.id}: formatting ${property} missing from ${text}`,

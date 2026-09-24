@@ -74,10 +74,15 @@ export type SourceBaseline = {
     anchor?: string;
     listStart?: number;
     links: { label: string; href: string }[];
-    formatting: Pick<
+    formatting: (Pick<
       Inline,
       'text' | 'strong' | 'emphasis' | 'underline' | 'highlight'
-    >[];
+    > & {
+      // Half-open UTF-16 offsets in source.text.replace(/\s+/gu, ' ').trim().
+      // text normalizes to this exact slice; array ordering is immaterial.
+      start: number;
+      end: number;
+    })[];
   }[];
   figures: {
     id: string;

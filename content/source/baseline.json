@@ -28,7 +28,10 @@
       "formatting": [
         {
           "text": "twitch.tv/kanonxo",
-          "strong": true
+          "start": 0,
+          "end": 17,
+          "strong": true,
+          "underline": true
         }
       ]
     },
@@ -47,7 +50,10 @@
       "formatting": [
         {
           "text": "youtube.com/kanonxo",
-          "strong": true
+          "start": 0,
+          "end": 19,
+          "strong": true,
+          "underline": true
         }
       ]
     },
@@ -70,24 +76,30 @@
       "formatting": [
         {
           "text": "Last Updated: /",
+          "start": 0,
+          "end": 15,
           "strong": true,
+          "emphasis": true,
           "underline": true,
-          "highlight": "#ffff00",
-          "emphasis": true
+          "highlight": "#ffff00"
         },
         {
           "text": "20",
+          "start": 15,
+          "end": 17,
           "strong": true,
+          "emphasis": true,
           "underline": true,
-          "highlight": "#ffff00",
-          "emphasis": true
+          "highlight": "#ffff00"
         },
         {
           "text": "/2026",
+          "start": 17,
+          "end": 22,
           "strong": true,
+          "emphasis": true,
           "underline": true,
-          "highlight": "#ffff00",
-          "emphasis": true
+          "highlight": "#ffff00"
         }
       ]
     },
@@ -101,16 +113,20 @@
       "formatting": [
         {
           "text": "***Update Note 9/20/2026",
+          "start": 0,
+          "end": 24,
           "strong": true,
+          "emphasis": true,
           "underline": true,
-          "highlight": "#ffff00",
-          "emphasis": true
+          "highlight": "#ffff00"
         },
         {
           "text": ": Updated Stat Lines, Gear, and Genus the best I could given the info we know so far. There are for sure some big changes for global and it’s impossible for us to be 100% sure of ALL the changes until launch. Will update this doc with confirmed info as soon as I can. If there is any confirmed info that needs to be updated on this doc that you notice, please shoot me an X msg or DM on Discord. I have not yet updated the Wings section.",
+          "start": 24,
+          "end": 461,
           "strong": true,
-          "highlight": "#ffff00",
-          "emphasis": true
+          "emphasis": true,
+          "highlight": "#ffff00"
         }
       ]
     },
@@ -141,9 +157,11 @@
       "links": [],
       "formatting": [
         {
-          "text": "This is a work-in-progress guide that I’ve been working on solo so please let me know if you catch any errors, typos, or anything that needs to be updated. This is obviously a very big doc that covers a lot of ground so there could be some stuff I missed, there are a lot of systems in Aion 2. ",
-          "highlight": "#f8f9fa",
-          "emphasis": true
+          "text": "This is a work-in-progress guide that I’ve been working on solo so please let me know if you catch any errors, typos, or anything that needs to be updated. This is obviously a very big doc that covers a lot of ground so there could be some stuff I missed, there are a lot of systems in Aion 2.",
+          "start": 0,
+          "end": 293,
+          "emphasis": true,
+          "highlight": "#f8f9fa"
         }
       ]
     },
@@ -157,8 +175,10 @@
       "formatting": [
         {
           "text": "Planning on editing this doc to make it more visually appealing in due time as well!",
-          "highlight": "#f8f9fa",
-          "emphasis": true
+          "start": 0,
+          "end": 84,
+          "emphasis": true,
+          "highlight": "#f8f9fa"
         }
       ]
     },
@@ -199,6 +219,8 @@
       "formatting": [
         {
           "text": "Use the Document Tabs on the left for Chapters",
+          "start": 2,
+          "end": 48,
           "emphasis": true
         }
       ]
@@ -222,6 +244,8 @@
       "formatting": [
         {
           "text": "My Aion 2 Credentials",
+          "start": 0,
+          "end": 21,
           "strong": true
         }
       ]
@@ -281,6 +305,8 @@
       "formatting": [
         {
           "text": "(Skill Index measures the average DPS across all users within 20 Combat Power of each other for each respective Boss. A score of 100 out of 100 (+0%) means median average DPS.)",
+          "start": 0,
+          "end": 176,
           "emphasis": true
         }
       ]
@@ -313,6 +339,8 @@
       "formatting": [
         {
           "text": "—",
+          "start": 0,
+          "end": 1,
           "strong": true
         }
       ]
@@ -346,14 +374,18 @@
       "formatting": [
         {
           "text": "BEGINNER NOTE:",
+          "start": 0,
+          "end": 14,
+          "emphasis": true,
           "underline": true,
-          "highlight": "#f8f9fa",
-          "emphasis": true
+          "highlight": "#f8f9fa"
         },
         {
-          "text": " You can select any item in-game and select “Source” to find out where each item can be obtained from. ",
-          "highlight": "#f8f9fa",
-          "emphasis": true
+          "text": "You can select any item in-game and select “Source” to find out where each item can be obtained from.",
+          "start": 15,
+          "end": 116,
+          "emphasis": true,
+          "highlight": "#f8f9fa"
         }
       ]
     },
@@ -478,7 +510,10 @@
       "formatting": [
         {
           "text": "Further Detail",
-          "strong": true
+          "start": 0,
+          "end": 14,
+          "strong": true,
+          "underline": true
         }
       ],
       "ordered": false
@@ -748,7 +783,10 @@
       "formatting": [
         {
           "text": "Further Detail",
-          "strong": true
+          "start": 0,
+          "end": 14,
+          "strong": true,
+          "underline": true
         }
       ],
       "ordered": false
@@ -763,12 +801,16 @@
       "formatting": [
         {
           "text": "IMPORTANT:",
+          "start": 0,
+          "end": 10,
           "strong": true,
           "underline": true,
           "highlight": "#f8f9fa"
         },
         {
-          "text": " The extra “Philosopher’s Stone” line is lost when transferring gear, the rest will transfer over.",
+          "text": "The extra “Philosopher’s Stone” line is lost when transferring gear, the rest will transfer over.",
+          "start": 11,
+          "end": 108,
           "strong": true,
           "highlight": "#f8f9fa"
         }
@@ -860,7 +902,10 @@
       "formatting": [
         {
           "text": "Further Detail",
-          "strong": true
+          "start": 0,
+          "end": 14,
+          "strong": true,
+          "underline": true
         }
       ],
       "ordered": false
@@ -875,12 +920,16 @@
       "formatting": [
         {
           "text": "IMPORTANT:",
+          "start": 0,
+          "end": 10,
           "strong": true,
           "underline": true,
           "highlight": "#f8f9fa"
         },
         {
-          "text": " Manastone/Soulstone lines are lost when transferring gear",
+          "text": "Manastone/Soulstone lines are lost when transferring gear",
+          "start": 11,
+          "end": 68,
           "strong": true,
           "highlight": "#f8f9fa"
         }
@@ -953,7 +1002,10 @@
       "formatting": [
         {
           "text": "Further Detail",
-          "strong": true
+          "start": 0,
+          "end": 14,
+          "strong": true,
+          "underline": true
         }
       ],
       "ordered": false
@@ -968,12 +1020,16 @@
       "formatting": [
         {
           "text": "IMPORTANT:",
+          "start": 0,
+          "end": 10,
           "strong": true,
           "underline": true,
           "highlight": "#f8f9fa"
         },
         {
-          "text": " Theostones are lost when transferring gear",
+          "text": "Theostones are lost when transferring gear",
+          "start": 11,
+          "end": 53,
           "strong": true,
           "highlight": "#f8f9fa"
         }
@@ -1075,7 +1131,10 @@
       "formatting": [
         {
           "text": "Further Detail",
-          "strong": true
+          "start": 0,
+          "end": 14,
+          "strong": true,
+          "underline": true
         }
       ],
       "ordered": false
@@ -1090,12 +1149,16 @@
       "formatting": [
         {
           "text": "IMPORTANT:",
+          "start": 0,
+          "end": 10,
           "strong": true,
           "underline": true,
           "highlight": "#f8f9fa"
         },
         {
-          "text": " Potential Stat lines are lost when transferring gear",
+          "text": "Potential Stat lines are lost when transferring gear",
+          "start": 11,
+          "end": 63,
           "strong": true,
           "highlight": "#f8f9fa"
         }
@@ -1226,11 +1289,16 @@
       "formatting": [
         {
           "text": "See",
+          "start": 10,
+          "end": 13,
           "emphasis": true
         },
         {
           "text": "CH: 6 Arcana",
-          "emphasis": true
+          "start": 14,
+          "end": 26,
+          "emphasis": true,
+          "underline": true
         }
       ]
     },
@@ -1271,6 +1339,8 @@
       "formatting": [
         {
           "text": "is",
+          "start": 0,
+          "end": 2,
           "emphasis": true
         }
       ]
@@ -1303,6 +1373,8 @@
       "formatting": [
         {
           "text": "Destruction [Zikel]",
+          "start": 0,
+          "end": 19,
           "highlight": "#ffff00"
         }
       ],
@@ -1318,6 +1390,8 @@
       "formatting": [
         {
           "text": "Attack Increase",
+          "start": 0,
+          "end": 15,
           "underline": true
         }
       ],
@@ -1353,6 +1427,8 @@
       "formatting": [
         {
           "text": "Wisdom [Lumiel]",
+          "start": 0,
+          "end": 15,
           "highlight": "#ffff00"
         }
       ],
@@ -1368,6 +1444,8 @@
       "formatting": [
         {
           "text": "Double Chance",
+          "start": 37,
+          "end": 50,
           "underline": true
         }
       ],
@@ -1463,6 +1541,8 @@
       "formatting": [
         {
           "text": "Illusion [Kaisinel]",
+          "start": 0,
+          "end": 19,
           "highlight": "#ffff00"
         }
       ],
@@ -1478,6 +1558,8 @@
       "formatting": [
         {
           "text": "Reduces Cooldown",
+          "start": 0,
+          "end": 16,
           "underline": true
         }
       ],
@@ -1513,6 +1595,8 @@
       "formatting": [
         {
           "text": "Time [Siel]",
+          "start": 0,
+          "end": 11,
           "highlight": "#ffff00"
         }
       ],
@@ -1528,6 +1612,8 @@
       "formatting": [
         {
           "text": "Increases Combat Speed",
+          "start": 0,
+          "end": 22,
           "underline": true
         }
       ],
@@ -1552,10 +1638,14 @@
       "formatting": [
         {
           "text": "Highlighted",
+          "start": 0,
+          "end": 11,
           "highlight": "#ffff00"
         },
         {
           "text": "underlined",
+          "start": 66,
+          "end": 76,
           "underline": true
         }
       ]
@@ -1634,10 +1724,14 @@
       "formatting": [
         {
           "text": "Base Stats",
+          "start": 28,
+          "end": 38,
           "strong": true
         },
         {
           "text": "Stat Lines",
+          "start": 43,
+          "end": 53,
           "strong": true
         }
       ],
@@ -1653,6 +1747,8 @@
       "formatting": [
         {
           "text": "Stat Lines",
+          "start": 0,
+          "end": 10,
           "strong": true
         }
       ],
@@ -1668,6 +1764,8 @@
       "formatting": [
         {
           "text": "Stat Lines",
+          "start": 24,
+          "end": 34,
           "strong": true
         }
       ],
@@ -1762,6 +1860,8 @@
       "formatting": [
         {
           "text": "TLDR: Gives most damage",
+          "start": 0,
+          "end": 23,
           "strong": true,
           "highlight": "#f8f9fa"
         }
@@ -1805,10 +1905,14 @@
       "formatting": [
         {
           "text": "Base Stats",
+          "start": 16,
+          "end": 26,
           "strong": true
         },
         {
           "text": "Stat Lines",
+          "start": 29,
+          "end": 39,
           "strong": true
         }
       ],
@@ -1824,6 +1928,8 @@
       "formatting": [
         {
           "text": "Stat Lines",
+          "start": 25,
+          "end": 35,
           "strong": true
         }
       ],
@@ -1918,6 +2024,8 @@
       "formatting": [
         {
           "text": "TLDR: Gives defensives, damage, and Passive Skill Lines to up your Passive Skill Levels",
+          "start": 0,
+          "end": 87,
           "strong": true,
           "highlight": "#f8f9fa"
         }
@@ -1961,10 +2069,14 @@
       "formatting": [
         {
           "text": "Base Stats",
+          "start": 30,
+          "end": 40,
           "strong": true
         },
         {
           "text": "Stat Lines",
+          "start": 43,
+          "end": 53,
           "strong": true
         }
       ],
@@ -2069,10 +2181,14 @@
       "formatting": [
         {
           "text": "Necklace:",
+          "start": 0,
+          "end": 9,
           "strong": true
         },
         {
           "text": "Stat Lines",
+          "start": 10,
+          "end": 20,
           "strong": true
         }
       ],
@@ -2088,6 +2204,8 @@
       "formatting": [
         {
           "text": "Earring: Stat Lines",
+          "start": 0,
+          "end": 19,
           "strong": true
         }
       ],
@@ -2103,6 +2221,8 @@
       "formatting": [
         {
           "text": "Ring: Stat Lines",
+          "start": 0,
+          "end": 16,
           "strong": true
         }
       ],
@@ -2117,7 +2237,9 @@
       "links": [],
       "formatting": [
         {
-          "text": "Bracelet: ",
+          "text": "Bracelet:",
+          "start": 0,
+          "end": 9,
           "strong": true
         }
       ],
@@ -2143,6 +2265,8 @@
       "formatting": [
         {
           "text": "Brooch: Stat Lines",
+          "start": 0,
+          "end": 18,
           "strong": true
         }
       ],
@@ -2177,6 +2301,8 @@
       "formatting": [
         {
           "text": "TLDR: Gives damage and defensives but more damage focused. Gives Skill Lines to up your Skill Levels. Only Rings give Active Skill Lines.",
+          "start": 0,
+          "end": 137,
           "strong": true,
           "highlight": "#f8f9fa"
         }
@@ -2268,7 +2394,9 @@
       "links": [],
       "formatting": [
         {
-          "text": "TLDR: Belts give defensive stats, Amulet gives offensive stats ",
+          "text": "TLDR: Belts give defensive stats, Amulet gives offensive stats",
+          "start": 0,
+          "end": 62,
           "strong": true,
           "highlight": "#f8f9fa"
         }
@@ -2401,6 +2529,8 @@
       "formatting": [
         {
           "text": "TLDR: BDO accessory-like gear pieces that you smash together and blow up when failing",
+          "start": 0,
+          "end": 85,
           "strong": true,
           "highlight": "#f8f9fa"
         }
@@ -2563,6 +2693,8 @@
       "formatting": [
         {
           "text": "TLDR: Another stat stick that gives offensive and defensive stats",
+          "start": 0,
+          "end": 65,
           "strong": true,
           "highlight": "#f8f9fa"
         }
@@ -2615,10 +2747,14 @@
       "formatting": [
         {
           "text": "Stat Lines",
+          "start": 25,
+          "end": 35,
           "strong": true
         },
         {
           "text": "Stat Lines",
+          "start": 61,
+          "end": 71,
           "strong": true
         }
       ]
@@ -2696,10 +2832,14 @@
       "formatting": [
         {
           "text": "Stat Lines",
+          "start": 29,
+          "end": 39,
           "strong": true
         },
         {
           "text": "Stat Line",
+          "start": 144,
+          "end": 153,
           "strong": true
         }
       ]
@@ -2741,6 +2881,8 @@
       "formatting": [
         {
           "text": "Stat Lines",
+          "start": 296,
+          "end": 306,
           "strong": true
         }
       ]
@@ -2764,6 +2906,8 @@
       "formatting": [
         {
           "text": "(Check Chapter 5 - Transfer)",
+          "start": 240,
+          "end": 268,
           "emphasis": true
         }
       ]
@@ -2787,10 +2931,14 @@
       "formatting": [
         {
           "text": "Stat Lines",
+          "start": 28,
+          "end": 38,
           "strong": true
         },
         {
           "text": "Stat Lines.",
+          "start": 462,
+          "end": 473,
           "strong": true
         }
       ]
@@ -2813,16 +2961,22 @@
       "links": [],
       "formatting": [
         {
+          "text": "(The following",
+          "start": 0,
+          "end": 14,
+          "emphasis": true
+        },
+        {
           "text": "Stat Lines",
+          "start": 15,
+          "end": 25,
           "strong": true,
           "emphasis": true
         },
         {
-          "text": "(The following ",
-          "emphasis": true
-        },
-        {
-          "text": " are for Global)",
+          "text": "are for Global)",
+          "start": 26,
+          "end": 41,
           "emphasis": true
         }
       ]
@@ -2846,6 +3000,8 @@
       "formatting": [
         {
           "text": "≈ 2%)",
+          "start": 14,
+          "end": 19,
           "emphasis": true
         }
       ],
@@ -2861,6 +3017,8 @@
       "formatting": [
         {
           "text": "≈ 4%)",
+          "start": 14,
+          "end": 19,
           "emphasis": true
         }
       ],
@@ -2876,6 +3034,8 @@
       "formatting": [
         {
           "text": "≈ 4%)",
+          "start": 21,
+          "end": 26,
           "emphasis": true
         }
       ],
@@ -2890,15 +3050,21 @@
       "links": [],
       "formatting": [
         {
-          "text": "≈ ",
+          "text": "≈",
+          "start": 7,
+          "end": 8,
           "emphasis": true
         },
         {
           "text": "5",
+          "start": 9,
+          "end": 10,
           "emphasis": true
         },
         {
           "text": "%)",
+          "start": 10,
+          "end": 12,
           "emphasis": true
         }
       ],
@@ -2913,15 +3079,21 @@
       "links": [],
       "formatting": [
         {
-          "text": "≈ ",
+          "text": "≈",
+          "start": 18,
+          "end": 19,
           "emphasis": true
         },
         {
           "text": "5",
+          "start": 20,
+          "end": 21,
           "emphasis": true
         },
         {
           "text": "%)",
+          "start": 21,
+          "end": 23,
           "emphasis": true
         }
       ],
@@ -2936,15 +3108,21 @@
       "links": [],
       "formatting": [
         {
-          "text": "≈ ",
+          "text": "≈",
+          "start": 11,
+          "end": 12,
           "emphasis": true
         },
         {
           "text": "6",
+          "start": 13,
+          "end": 14,
           "emphasis": true
         },
         {
           "text": "%)",
+          "start": 14,
+          "end": 16,
           "emphasis": true
         }
       ],
@@ -2959,15 +3137,21 @@
       "links": [],
       "formatting": [
         {
-          "text": "≈ ",
+          "text": "≈",
+          "start": 8,
+          "end": 9,
           "emphasis": true
         },
         {
           "text": "6",
+          "start": 10,
+          "end": 11,
           "emphasis": true
         },
         {
           "text": "%)",
+          "start": 11,
+          "end": 13,
           "emphasis": true
         }
       ],
@@ -3000,7 +3184,9 @@
       "links": [],
       "formatting": [
         {
-          "text": "≈ ",
+          "text": "≈",
+          "start": 15,
+          "end": 16,
           "emphasis": true
         }
       ],
@@ -3015,7 +3201,9 @@
       "links": [],
       "formatting": [
         {
-          "text": "≈ ",
+          "text": "≈",
+          "start": 17,
+          "end": 18,
           "emphasis": true
         }
       ],
@@ -3030,7 +3218,9 @@
       "links": [],
       "formatting": [
         {
-          "text": "≈ ",
+          "text": "≈",
+          "start": 8,
+          "end": 9,
           "emphasis": true
         }
       ],
@@ -3073,7 +3263,9 @@
       "links": [],
       "formatting": [
         {
-          "text": "≈ ",
+          "text": "≈",
+          "start": 15,
+          "end": 16,
           "emphasis": true
         }
       ],
@@ -3088,7 +3280,9 @@
       "links": [],
       "formatting": [
         {
-          "text": "≈ ",
+          "text": "≈",
+          "start": 17,
+          "end": 18,
           "emphasis": true
         }
       ],
@@ -3103,7 +3297,9 @@
       "links": [],
       "formatting": [
         {
-          "text": "≈ ",
+          "text": "≈",
+          "start": 16,
+          "end": 17,
           "emphasis": true
         }
       ],
@@ -3118,7 +3314,9 @@
       "links": [],
       "formatting": [
         {
-          "text": "≈ ",
+          "text": "≈",
+          "start": 8,
+          "end": 9,
           "emphasis": true
         }
       ],
@@ -3162,6 +3360,8 @@
       "formatting": [
         {
           "text": "≈ 1%)",
+          "start": 15,
+          "end": 20,
           "emphasis": true
         }
       ],
@@ -3177,6 +3377,8 @@
       "formatting": [
         {
           "text": "≈ 3%)",
+          "start": 23,
+          "end": 28,
           "emphasis": true
         }
       ],
@@ -3192,6 +3394,8 @@
       "formatting": [
         {
           "text": "≈ 4%)",
+          "start": 8,
+          "end": 13,
           "emphasis": true
         }
       ],
@@ -3234,7 +3438,9 @@
       "links": [],
       "formatting": [
         {
-          "text": "≈ ",
+          "text": "≈",
+          "start": 16,
+          "end": 17,
           "emphasis": true
         }
       ],
@@ -3249,7 +3455,9 @@
       "links": [],
       "formatting": [
         {
-          "text": "≈ ",
+          "text": "≈",
+          "start": 14,
+          "end": 15,
           "emphasis": true
         }
       ],
@@ -3264,7 +3472,9 @@
       "links": [],
       "formatting": [
         {
-          "text": "≈ ",
+          "text": "≈",
+          "start": 8,
+          "end": 9,
           "emphasis": true
         }
       ],
@@ -3307,7 +3517,9 @@
       "links": [],
       "formatting": [
         {
-          "text": "≈ ",
+          "text": "≈",
+          "start": 17,
+          "end": 18,
           "emphasis": true
         }
       ],
@@ -3322,7 +3534,9 @@
       "links": [],
       "formatting": [
         {
-          "text": "≈ ",
+          "text": "≈",
+          "start": 16,
+          "end": 17,
           "emphasis": true
         }
       ],
@@ -3337,7 +3551,9 @@
       "links": [],
       "formatting": [
         {
-          "text": "≈ ",
+          "text": "≈",
+          "start": 18,
+          "end": 19,
           "emphasis": true
         }
       ],
@@ -3353,6 +3569,8 @@
       "formatting": [
         {
           "text": "≈ 4%)",
+          "start": 8,
+          "end": 13,
           "emphasis": true
         }
       ],
@@ -3395,7 +3613,9 @@
       "links": [],
       "formatting": [
         {
-          "text": "≈ ",
+          "text": "≈",
+          "start": 16,
+          "end": 17,
           "emphasis": true
         }
       ],
@@ -3410,7 +3630,9 @@
       "links": [],
       "formatting": [
         {
-          "text": "≈ ",
+          "text": "≈",
+          "start": 14,
+          "end": 15,
           "emphasis": true
         }
       ],
@@ -3426,6 +3648,8 @@
       "formatting": [
         {
           "text": "≈ 4%)",
+          "start": 8,
+          "end": 13,
           "emphasis": true
         }
       ],
@@ -3468,7 +3692,9 @@
       "links": [],
       "formatting": [
         {
-          "text": "≈ ",
+          "text": "≈",
+          "start": 16,
+          "end": 17,
           "emphasis": true
         }
       ],
@@ -3483,7 +3709,9 @@
       "links": [],
       "formatting": [
         {
-          "text": "≈ ",
+          "text": "≈",
+          "start": 16,
+          "end": 17,
           "emphasis": true
         }
       ],
@@ -3498,7 +3726,9 @@
       "links": [],
       "formatting": [
         {
-          "text": "≈ ",
+          "text": "≈",
+          "start": 8,
+          "end": 9,
           "emphasis": true
         }
       ],
@@ -3541,7 +3771,9 @@
       "links": [],
       "formatting": [
         {
-          "text": "≈ ",
+          "text": "≈",
+          "start": 14,
+          "end": 15,
           "emphasis": true
         }
       ],
@@ -3556,7 +3788,9 @@
       "links": [],
       "formatting": [
         {
-          "text": "≈ ",
+          "text": "≈",
+          "start": 7,
+          "end": 8,
           "emphasis": true
         }
       ],
@@ -3571,7 +3805,9 @@
       "links": [],
       "formatting": [
         {
-          "text": "≈ ",
+          "text": "≈",
+          "start": 8,
+          "end": 9,
           "emphasis": true
         }
       ],
@@ -3596,7 +3832,9 @@
       "links": [],
       "formatting": [
         {
-          "text": "≈ ",
+          "text": "≈",
+          "start": 10,
+          "end": 11,
           "emphasis": true
         }
       ],
@@ -3621,7 +3859,9 @@
       "links": [],
       "formatting": [
         {
-          "text": "≈ ",
+          "text": "≈",
+          "start": 12,
+          "end": 13,
           "emphasis": true
         }
       ],
@@ -3636,7 +3876,9 @@
       "links": [],
       "formatting": [
         {
-          "text": "≈ ",
+          "text": "≈",
+          "start": 7,
+          "end": 8,
           "emphasis": true
         }
       ],
@@ -3651,7 +3893,9 @@
       "links": [],
       "formatting": [
         {
-          "text": "≈ ",
+          "text": "≈",
+          "start": 11,
+          "end": 12,
           "emphasis": true
         }
       ],
@@ -3666,7 +3910,9 @@
       "links": [],
       "formatting": [
         {
-          "text": "≈ ",
+          "text": "≈",
+          "start": 8,
+          "end": 9,
           "emphasis": true
         }
       ],
@@ -3691,7 +3937,9 @@
       "links": [],
       "formatting": [
         {
-          "text": "≈ ",
+          "text": "≈",
+          "start": 10,
+          "end": 11,
           "emphasis": true
         }
       ],
@@ -3724,7 +3972,9 @@
       "links": [],
       "formatting": [
         {
-          "text": "≈ ",
+          "text": "≈",
+          "start": 7,
+          "end": 8,
           "emphasis": true
         }
       ],
@@ -3739,7 +3989,9 @@
       "links": [],
       "formatting": [
         {
-          "text": "≈ ",
+          "text": "≈",
+          "start": 11,
+          "end": 12,
           "emphasis": true
         }
       ],
@@ -3754,7 +4006,9 @@
       "links": [],
       "formatting": [
         {
-          "text": "≈ ",
+          "text": "≈",
+          "start": 8,
+          "end": 9,
           "emphasis": true
         }
       ],
@@ -3858,6 +4112,8 @@
       "formatting": [
         {
           "text": "Important Note: Some classes may want to swap a line for a different stat, i.e. assassin would take Death instead of Space",
+          "start": 0,
+          "end": 122,
           "strong": true,
           "highlight": "#f8f9fa"
         }
@@ -3964,7 +4220,10 @@
       "formatting": [
         {
           "text": "Further Detail",
-          "strong": true
+          "start": 258,
+          "end": 272,
+          "strong": true,
+          "underline": true
         }
       ]
     },
@@ -4005,6 +4264,8 @@
       "formatting": [
         {
           "text": "*These requirements are not yet confirmed for global",
+          "start": 0,
+          "end": 52,
           "emphasis": true
         }
       ]
@@ -4164,14 +4425,18 @@
       "formatting": [
         {
           "text": "Additional Notes",
+          "start": 0,
+          "end": 16,
+          "emphasis": true,
           "underline": true,
-          "highlight": "#f8f9fa",
-          "emphasis": true
+          "highlight": "#f8f9fa"
         },
         {
           "text": ": The above numbers may not be exact, but it should be around those numbers. Hard to get a number since the content is a bit outdated. If you have an exact number that’s proven please let me know.",
-          "highlight": "#f8f9fa",
-          "emphasis": true
+          "start": 16,
+          "end": 212,
+          "emphasis": true,
+          "highlight": "#f8f9fa"
         }
       ]
     },
@@ -4240,6 +4505,8 @@
       "formatting": [
         {
           "text": "Perks",
+          "start": 222,
+          "end": 227,
           "emphasis": true
         }
       ]
@@ -4308,6 +4575,8 @@
       "formatting": [
         {
           "text": "Stat Lines",
+          "start": 49,
+          "end": 59,
           "strong": true
         }
       ]
@@ -4372,18 +4641,27 @@
       "formatting": [
         {
           "text": "Stat Lines",
+          "start": 99,
+          "end": 109,
           "strong": true
         },
         {
-          "text": "see ",
+          "text": "see",
+          "start": 127,
+          "end": 130,
           "emphasis": true
         },
         {
           "text": "Chapter 6 - Arcana",
-          "emphasis": true
+          "start": 131,
+          "end": 149,
+          "emphasis": true,
+          "underline": true
         },
         {
-          "text": " section below",
+          "text": "section below",
+          "start": 150,
+          "end": 163,
           "emphasis": true
         }
       ]
@@ -4706,14 +4984,18 @@
       "formatting": [
         {
           "text": "Additional Notes",
+          "start": 0,
+          "end": 16,
+          "emphasis": true,
           "underline": true,
-          "highlight": "#f8f9fa",
-          "emphasis": true
+          "highlight": "#f8f9fa"
         },
         {
           "text": ": Enhance Stones bottleneck for players who swipe",
-          "highlight": "#f8f9fa",
-          "emphasis": true
+          "start": 16,
+          "end": 65,
+          "emphasis": true,
+          "highlight": "#f8f9fa"
         }
       ]
     },
@@ -4799,11 +5081,17 @@
       "formatting": [
         {
           "text": "Further Detail",
-          "strong": true
+          "start": 376,
+          "end": 390,
+          "strong": true,
+          "underline": true
         },
         {
           "text": "here",
-          "strong": true
+          "start": 391,
+          "end": 395,
+          "strong": true,
+          "underline": true
         }
       ]
     },
@@ -4991,7 +5279,9 @@
       "links": [],
       "formatting": [
         {
-          "text": "Order from best to worst: ",
+          "text": "Order from best to worst:",
+          "start": 0,
+          "end": 25,
           "emphasis": true
         }
       ]
@@ -5006,6 +5296,8 @@
       "formatting": [
         {
           "text": "Front/Back Damage Boost > Weapon Damage Boost ≈ Critical Damage Boost > Damage Boost > Attack",
+          "start": 0,
+          "end": 93,
           "emphasis": true
         }
       ]
@@ -5193,6 +5485,8 @@
       "formatting": [
         {
           "text": "Stat Lines.",
+          "start": 212,
+          "end": 223,
           "strong": true
         }
       ]
@@ -5243,6 +5537,8 @@
       "formatting": [
         {
           "text": "Stat Line",
+          "start": 89,
+          "end": 98,
           "strong": true
         }
       ]
@@ -5266,6 +5562,8 @@
       "formatting": [
         {
           "text": "Stat Line",
+          "start": 75,
+          "end": 84,
           "strong": true
         }
       ]
@@ -5288,20 +5586,26 @@
       "links": [],
       "formatting": [
         {
-          "text": "Important: This extra ",
-          "highlight": "#f8f9fa",
-          "emphasis": true
+          "text": "Important: This extra",
+          "start": 0,
+          "end": 21,
+          "emphasis": true,
+          "highlight": "#f8f9fa"
         },
         {
           "text": "Stat Line",
+          "start": 22,
+          "end": 31,
           "strong": true,
-          "highlight": "#f8f9fa",
-          "emphasis": true
+          "emphasis": true,
+          "highlight": "#f8f9fa"
         },
         {
-          "text": " will not transfer over when transferring gear",
-          "highlight": "#f8f9fa",
-          "emphasis": true
+          "text": "will not transfer over when transferring gear",
+          "start": 32,
+          "end": 77,
+          "emphasis": true,
+          "highlight": "#f8f9fa"
         }
       ]
     },
@@ -5365,11 +5669,21 @@
       "formatting": [
         {
           "text": "Stat Lines.",
+          "start": 28,
+          "end": 39,
           "strong": true
         },
         {
           "text": "Stat Lines",
+          "start": 71,
+          "end": 81,
           "strong": true
+        },
+        {
+          "text": "Chapter 3 - Guide: Ideal Stat Lines",
+          "start": 118,
+          "end": 153,
+          "underline": true
         }
       ]
     },
@@ -5522,6 +5836,8 @@
       "formatting": [
         {
           "text": "⬅️",
+          "start": 0,
+          "end": 2,
           "strong": true
         }
       ]
@@ -5536,6 +5852,8 @@
       "formatting": [
         {
           "text": "⬅️",
+          "start": 0,
+          "end": 2,
           "strong": true
         }
       ]
@@ -5631,34 +5949,46 @@
       "formatting": [
         {
           "text": "Important",
+          "start": 0,
+          "end": 9,
+          "emphasis": true,
           "underline": true,
-          "highlight": "#f8f9fa",
-          "emphasis": true
+          "highlight": "#f8f9fa"
         },
         {
-          "text": ": Be frugal with Orange/Heroic Transfer Stones/Fragments. These are not ",
-          "highlight": "#f8f9fa",
-          "emphasis": true
+          "text": ": Be frugal with Orange/Heroic Transfer Stones/Fragments. These are not",
+          "start": 9,
+          "end": 80,
+          "emphasis": true,
+          "highlight": "#f8f9fa"
         },
         {
           "text": "THAT easy",
-          "highlight": "#f8f9fa",
-          "emphasis": true
+          "start": 81,
+          "end": 90,
+          "emphasis": true,
+          "highlight": "#f8f9fa"
         },
         {
-          "text": " come across, if you save thes",
-          "highlight": "#f8f9fa",
-          "emphasis": true
+          "text": "come across, if you save thes",
+          "start": 91,
+          "end": 120,
+          "emphasis": true,
+          "highlight": "#f8f9fa"
         },
         {
           "text": "e early on you’ll have a nice supply for later gear",
-          "highlight": "#f8f9fa",
-          "emphasis": true
+          "start": 120,
+          "end": 171,
+          "emphasis": true,
+          "highlight": "#f8f9fa"
         },
         {
-          "text": ". Orange/Heroic gear is MUCH more difficult and expensive to upgrade altogether so be sure to only transfer when you’re ready. I personally recommend not transferring or using the first Heroic Set (Ancient Spirit) and wait for the second set before going Orange/Heroic (Faded Shadow) unless additional changes are made to the game. Currently you can NOT upgrade a Yellow/Unique Transfer stone to an Orange/Heroic one. Transferring and Rolling lines on Yellow/Unique is free compared to Orange/Heroic). You need a LOT of Orange/Heroic Transfer Fragments for the future so just horde them early on. ",
-          "highlight": "#f8f9fa",
-          "emphasis": true
+          "text": ". Orange/Heroic gear is MUCH more difficult and expensive to upgrade altogether so be sure to only transfer when you’re ready. I personally recommend not transferring or using the first Heroic Set (Ancient Spirit) and wait for the second set before going Orange/Heroic (Faded Shadow) unless additional changes are made to the game. Currently you can NOT upgrade a Yellow/Unique Transfer stone to an Orange/Heroic one. Transferring and Rolling lines on Yellow/Unique is free compared to Orange/Heroic). You need a LOT of Orange/Heroic Transfer Fragments for the future so just horde them early on.",
+          "start": 171,
+          "end": 767,
+          "emphasis": true,
+          "highlight": "#f8f9fa"
         }
       ]
     },
@@ -5690,6 +6020,8 @@
       "formatting": [
         {
           "text": "CHAPTER 6:",
+          "start": 0,
+          "end": 10,
           "strong": true
         }
       ]
@@ -6082,6 +6414,8 @@
       "formatting": [
         {
           "text": "Global Launch will not have all of the Arcana Cards and Sets. Asia Launched with 5 Arcanas (Compass ~ Mirror) with 2 sets (Primal Vigore, Magic Armor)",
+          "start": 0,
+          "end": 150,
           "emphasis": true
         }
       ]
@@ -7484,14 +7818,18 @@
       "formatting": [
         {
           "text": "Additional Notes",
+          "start": 0,
+          "end": 16,
+          "emphasis": true,
           "underline": true,
-          "highlight": "#f8f9fa",
-          "emphasis": true
+          "highlight": "#f8f9fa"
         },
         {
           "text": ": You can have up to 3 presets for Genus",
-          "highlight": "#f8f9fa",
-          "emphasis": true
+          "start": 16,
+          "end": 56,
+          "emphasis": true,
+          "highlight": "#f8f9fa"
         }
       ]
     },
@@ -7660,32 +7998,44 @@
       "formatting": [
         {
           "text": "Additional Notes",
+          "start": 0,
+          "end": 16,
+          "emphasis": true,
           "underline": true,
-          "highlight": "#f8f9fa",
-          "emphasis": true
-        },
-        {
-          "text": ": You can do this by using the Auto Analysis and selecting Unique (or Heroic) ",
-          "highlight": "#f8f9fa",
-          "emphasis": true
-        },
-        {
-          "text": "Double Chance ",
           "highlight": "#f8f9fa"
         },
         {
-          "text": "on Lines 3 and 9. It is not possible to roll lower than a Unique on ",
-          "highlight": "#f8f9fa",
-          "emphasis": true
+          "text": ": You can do this by using the Auto Analysis and selecting Unique (or Heroic)",
+          "start": 16,
+          "end": 93,
+          "emphasis": true,
+          "highlight": "#f8f9fa"
         },
         {
           "text": "Double Chance",
+          "start": 94,
+          "end": 107,
+          "highlight": "#f8f9fa"
+        },
+        {
+          "text": "on Lines 3 and 9. It is not possible to roll lower than a Unique on",
+          "start": 108,
+          "end": 175,
+          "emphasis": true,
+          "highlight": "#f8f9fa"
+        },
+        {
+          "text": "Double Chance",
+          "start": 176,
+          "end": 189,
           "highlight": "#f8f9fa"
         },
         {
           "text": ".",
-          "highlight": "#f8f9fa",
-          "emphasis": true
+          "start": 189,
+          "end": 190,
+          "emphasis": true,
+          "highlight": "#f8f9fa"
         }
       ]
     },
@@ -8432,17 +8782,23 @@
       "formatting": [
         {
           "text": "Additional Notes",
+          "start": 0,
+          "end": 16,
+          "emphasis": true,
           "underline": true,
-          "highlight": "#f8f9fa",
-          "emphasis": true
+          "highlight": "#f8f9fa"
         },
         {
-          "text": ": ",
-          "highlight": "#f8f9fa",
-          "emphasis": true
+          "text": ":",
+          "start": 16,
+          "end": 17,
+          "emphasis": true,
+          "highlight": "#f8f9fa"
         },
         {
           "text": "When upgrading, only the top stat line and the last “hidden” stat line get upgraded.",
+          "start": 18,
+          "end": 102,
           "highlight": "#f8f9fa"
         }
       ]
@@ -8538,7 +8894,9 @@
       "links": [],
       "formatting": [
         {
-          "text": "not ",
+          "text": "not",
+          "start": 49,
+          "end": 52,
           "emphasis": true
         }
       ],
@@ -8554,6 +8912,8 @@
       "formatting": [
         {
           "text": "this",
+          "start": 117,
+          "end": 121,
           "highlight": "#ffff00"
         }
       ],
@@ -8597,6 +8957,8 @@
       "formatting": [
         {
           "text": "Equip Effect",
+          "start": 0,
+          "end": 12,
           "underline": true
         }
       ],
@@ -8652,6 +9014,8 @@
       "formatting": [
         {
           "text": "Owned Effect",
+          "start": 0,
+          "end": 12,
           "underline": true
         }
       ],
@@ -8725,6 +9089,8 @@
       "formatting": [
         {
           "text": "Equip Effect",
+          "start": 0,
+          "end": 12,
           "underline": true
         }
       ],
@@ -8780,6 +9146,8 @@
       "formatting": [
         {
           "text": "Owned Effect",
+          "start": 0,
+          "end": 12,
           "underline": true
         }
       ],
@@ -8853,6 +9221,8 @@
       "formatting": [
         {
           "text": "Equip Effect",
+          "start": 0,
+          "end": 12,
           "underline": true
         }
       ],
@@ -8908,6 +9278,8 @@
       "formatting": [
         {
           "text": "Owned Effect",
+          "start": 0,
+          "end": 12,
           "underline": true
         }
       ],
@@ -8981,6 +9353,8 @@
       "formatting": [
         {
           "text": "Equip Effect",
+          "start": 0,
+          "end": 12,
           "underline": true
         }
       ],
@@ -9036,6 +9410,8 @@
       "formatting": [
         {
           "text": "Owned Effect",
+          "start": 0,
+          "end": 12,
           "underline": true
         }
       ],
@@ -9109,6 +9485,8 @@
       "formatting": [
         {
           "text": "Equip Effect",
+          "start": 0,
+          "end": 12,
           "underline": true
         }
       ],
@@ -9164,6 +9542,8 @@
       "formatting": [
         {
           "text": "Owned Effect",
+          "start": 0,
+          "end": 12,
           "underline": true
         }
       ],
@@ -9237,6 +9617,8 @@
       "formatting": [
         {
           "text": "Equip Effect",
+          "start": 0,
+          "end": 12,
           "underline": true
         }
       ],
@@ -9292,6 +9674,8 @@
       "formatting": [
         {
           "text": "Owned Effect",
+          "start": 0,
+          "end": 12,
           "underline": true
         }
       ],
@@ -9365,6 +9749,8 @@
       "formatting": [
         {
           "text": "Equip Effect",
+          "start": 0,
+          "end": 12,
           "underline": true
         }
       ],
@@ -9420,6 +9806,8 @@
       "formatting": [
         {
           "text": "Owned Effect",
+          "start": 0,
+          "end": 12,
           "underline": true
         }
       ],
@@ -9493,6 +9881,8 @@
       "formatting": [
         {
           "text": "Equip Effect",
+          "start": 0,
+          "end": 12,
           "underline": true
         }
       ],
@@ -9548,6 +9938,8 @@
       "formatting": [
         {
           "text": "Owned Effect",
+          "start": 0,
+          "end": 12,
           "underline": true
         }
       ],
@@ -9621,6 +10013,8 @@
       "formatting": [
         {
           "text": "Equip Effect",
+          "start": 0,
+          "end": 12,
           "underline": true
         }
       ],
@@ -9676,6 +10070,8 @@
       "formatting": [
         {
           "text": "Owned Effect",
+          "start": 0,
+          "end": 12,
           "underline": true
         }
       ],
@@ -9721,6 +10117,8 @@
       "formatting": [
         {
           "text": "Double Chance",
+          "start": 0,
+          "end": 13,
           "highlight": "#ffff00"
         }
       ],
@@ -9754,6 +10152,8 @@
       "formatting": [
         {
           "text": "Equip Effect",
+          "start": 0,
+          "end": 12,
           "underline": true
         }
       ],
@@ -9809,6 +10209,8 @@
       "formatting": [
         {
           "text": "Owned Effect",
+          "start": 0,
+          "end": 12,
           "underline": true
         }
       ],
@@ -9882,6 +10284,8 @@
       "formatting": [
         {
           "text": "Equip Effect",
+          "start": 0,
+          "end": 12,
           "underline": true
         }
       ],
@@ -9937,6 +10341,8 @@
       "formatting": [
         {
           "text": "Owned Effect",
+          "start": 0,
+          "end": 12,
           "underline": true
         }
       ],
@@ -10010,6 +10416,8 @@
       "formatting": [
         {
           "text": "Equip Effect",
+          "start": 0,
+          "end": 12,
           "underline": true
         }
       ],
@@ -10065,6 +10473,8 @@
       "formatting": [
         {
           "text": "Owned Effect",
+          "start": 0,
+          "end": 12,
           "underline": true
         }
       ],
@@ -10158,7 +10568,14 @@
           "href": "https://www.google.com/url?q=https://aion2tool.com/statistics/jobstats&sa=D&source=editors&ust=1790212444460106&usg=AOvVaw0GwB7ih6DzcPbpe2L_ZRaT"
         }
       ],
-      "formatting": []
+      "formatting": [
+        {
+          "text": "https://aion2tool.com/statistics/jobstats",
+          "start": 9,
+          "end": 50,
+          "underline": true
+        }
+      ]
     },
     {
       "id": "block-0954",
@@ -10230,17 +10647,23 @@
       "formatting": [
         {
           "text": "Additional Notes",
+          "start": 0,
+          "end": 16,
+          "emphasis": true,
           "underline": true,
-          "highlight": "#f8f9fa",
-          "emphasis": true
+          "highlight": "#f8f9fa"
         },
         {
-          "text": ": ",
-          "highlight": "#f8f9fa",
-          "emphasis": true
+          "text": ":",
+          "start": 16,
+          "end": 17,
+          "emphasis": true,
+          "highlight": "#f8f9fa"
         },
         {
           "text": "Awaken Pride Wings just released and will overtake the Talisra",
+          "start": 18,
+          "end": 80,
           "highlight": "#f8f9fa"
         }
       ]
@@ -10671,7 +11094,9 @@
       "links": [],
       "formatting": [
         {
-          "text": "QUICK FAQ: ",
+          "text": "QUICK FAQ:",
+          "start": 0,
+          "end": 10,
           "strong": true,
           "highlight": "#f8f9fa"
         }
@@ -10687,6 +11112,8 @@
       "formatting": [
         {
           "text": "Q:",
+          "start": 0,
+          "end": 2,
           "strong": true
         }
       ]
@@ -10700,7 +11127,9 @@
       "links": [],
       "formatting": [
         {
-          "text": "A: ",
+          "text": "A:",
+          "start": 0,
+          "end": 2,
           "strong": true
         }
       ]
@@ -10724,6 +11153,8 @@
       "formatting": [
         {
           "text": "Q:",
+          "start": 0,
+          "end": 2,
           "strong": true
         }
       ]
@@ -10738,6 +11169,8 @@
       "formatting": [
         {
           "text": "A",
+          "start": 0,
+          "end": 1,
           "strong": true
         }
       ]
@@ -10851,7 +11284,9 @@
       "links": [],
       "formatting": [
         {
-          "text": "The calculation: ",
+          "text": "The calculation:",
+          "start": 0,
+          "end": 16,
           "strong": true
         }
       ]
@@ -10875,6 +11310,8 @@
       "formatting": [
         {
           "text": "Formula",
+          "start": 0,
+          "end": 7,
           "strong": true
         }
       ]
@@ -10903,7 +11340,10 @@
       "formatting": [
         {
           "text": "Further Detail",
-          "strong": true
+          "start": 0,
+          "end": 14,
+          "strong": true,
+          "underline": true
         }
       ]
     },
@@ -10953,7 +11393,9 @@
       "links": [],
       "formatting": [
         {
-          "text": "This chapter will include a full breakdown of how all the stats work including detailed formulas. Some of these equations are not known to anyone yet and are becoming public for the first time with this doc. ",
+          "text": "This chapter will include a full breakdown of how all the stats work including detailed formulas. Some of these equations are not known to anyone yet and are becoming public for the first time with this doc.",
+          "start": 0,
+          "end": 207,
           "emphasis": true
         }
       ]
@@ -10967,7 +11409,9 @@
       "links": [],
       "formatting": [
         {
-          "text": "I want to give a special shoutout to a well-recognized Korean Youtuber “Aion Research Lab” and his friends for discovering a lot of the formulas and equations listed out in this section. I spent a lot of time discussing numbers with him and it is STILL a work in progress…understandably so, considering the amount of sheer stats and convolution Aion 2 is with Damage. ",
+          "text": "I want to give a special shoutout to a well-recognized Korean Youtuber “Aion Research Lab” and his friends for discovering a lot of the formulas and equations listed out in this section. I spent a lot of time discussing numbers with him and it is STILL a work in progress…understandably so, considering the amount of sheer stats and convolution Aion 2 is with Damage.",
+          "start": 0,
+          "end": 367,
           "emphasis": true
         }
       ]
@@ -10982,6 +11426,8 @@
       "formatting": [
         {
           "text": "Updates will be made on any new discoveries including fixes, but until then this is the most accurate up-to-date info we have on how all the stats work. I’ve tried my best to lay this out in the easiest to understand way while preserving the details.",
+          "start": 0,
+          "end": 250,
           "emphasis": true
         }
       ]
@@ -11000,8 +11446,17 @@
       ],
       "formatting": [
         {
-          "text": "YouTube Channel Link",
+          "text": "“Aion Research Lab”",
+          "start": 0,
+          "end": 19,
           "emphasis": true
+        },
+        {
+          "text": "YouTube Channel Link",
+          "start": 20,
+          "end": 40,
+          "emphasis": true,
+          "underline": true
         }
       ]
     },
@@ -11015,6 +11470,8 @@
       "formatting": [
         {
           "text": "—",
+          "start": 0,
+          "end": 1,
           "emphasis": true
         }
       ]
@@ -11048,6 +11505,8 @@
       "formatting": [
         {
           "text": "The following shows the damage efficiency for offensive stats based on current end-game Korea (on an ideal build) which is currently at the start of Season 1 (Start of level 50 and Lava Heart armor introduction). These stats also incorporate support buffs.",
+          "start": 0,
+          "end": 256,
           "emphasis": true
         }
       ]
@@ -11071,6 +11530,8 @@
       "formatting": [
         {
           "text": "Generally speaking, diminishing returns are a thing. This means the values below will be different for Global launch (as well as future KR since more stats are added) considering we will have less stats, therefore less diminishing return impact. There will be a greater discrepancy with some stats for global launch. For example, Front/Back Damage Boost starts at a base value of 0% vs Critical Damage starting at 50%. The first 10% added to both stats favor Front/Back Damage Boost due to diminishing returns.",
+          "start": 0,
+          "end": 510,
           "emphasis": true
         }
       ]
@@ -11094,6 +11555,8 @@
       "formatting": [
         {
           "text": "Also keep in mind certain classes have access to some buffs which diminish the value of certain stats the more you stack them (for example, the Critical Damage Boost stat with Gladiator).",
+          "start": 0,
+          "end": 187,
           "emphasis": true
         }
       ]
@@ -11127,6 +11590,8 @@
       "formatting": [
         {
           "text": "What is Double Chance?",
+          "start": 0,
+          "end": 22,
           "strong": true
         }
       ]
@@ -11141,10 +11606,14 @@
       "formatting": [
         {
           "text": "A:",
+          "start": 0,
+          "end": 2,
           "strong": true
         },
         {
           "text": "2× damage",
+          "start": 41,
+          "end": 50,
           "strong": true
         }
       ]
@@ -11159,10 +11628,14 @@
       "formatting": [
         {
           "text": "1",
+          "start": 23,
+          "end": 24,
           "strong": true
         },
         {
           "text": "2",
+          "start": 75,
+          "end": 76,
           "strong": true
         }
       ]
@@ -11177,6 +11650,8 @@
       "formatting": [
         {
           "text": "How much stronger does 1% Double Chance make you?",
+          "start": 0,
+          "end": 49,
           "strong": true
         }
       ]
@@ -11191,6 +11666,8 @@
       "formatting": [
         {
           "text": "1% chance for your salary to be doubled",
+          "start": 24,
+          "end": 63,
           "strong": true
         }
       ]
@@ -11205,6 +11682,8 @@
       "formatting": [
         {
           "text": "1,000,000 won",
+          "start": 18,
+          "end": 31,
           "strong": true
         }
       ]
@@ -11219,6 +11698,8 @@
       "formatting": [
         {
           "text": "1,000,000 won × 100 = 100,000,000 won + 1,000,000 won",
+          "start": 0,
+          "end": 53,
           "strong": true
         }
       ]
@@ -11233,6 +11714,8 @@
       "formatting": [
         {
           "text": "on average per paycheck",
+          "start": 112,
+          "end": 135,
           "strong": true
         }
       ]
@@ -11256,10 +11739,14 @@
       "formatting": [
         {
           "text": "1",
+          "start": 20,
+          "end": 21,
           "strong": true
         },
         {
           "text": "2",
+          "start": 64,
+          "end": 65,
           "strong": true
         }
       ]
@@ -11273,11 +11760,15 @@
       "links": [],
       "formatting": [
         {
-          "text": "Double Chance ",
+          "text": "Double Chance",
+          "start": 0,
+          "end": 13,
           "strong": true
         },
         {
           "text": "0% → 1%",
+          "start": 14,
+          "end": 21,
           "strong": true
         }
       ]
@@ -11301,6 +11792,8 @@
       "formatting": [
         {
           "text": "A: 1.01 → 1% DPS increase",
+          "start": 0,
+          "end": 25,
           "strong": true
         }
       ]
@@ -11314,11 +11807,15 @@
       "links": [],
       "formatting": [
         {
-          "text": "Double Chance ",
+          "text": "Double Chance",
+          "start": 0,
+          "end": 13,
           "strong": true
         },
         {
           "text": "0% → 2%",
+          "start": 14,
+          "end": 21,
           "strong": true
         }
       ]
@@ -11342,6 +11839,8 @@
       "formatting": [
         {
           "text": "A: 1.02 → 2% DPS increase",
+          "start": 0,
+          "end": 25,
           "strong": true
         }
       ]
@@ -11355,11 +11854,15 @@
       "links": [],
       "formatting": [
         {
-          "text": "Double Chance ",
+          "text": "Double Chance",
+          "start": 0,
+          "end": 13,
           "strong": true
         },
         {
           "text": "0% → 50%",
+          "start": 14,
+          "end": 22,
           "strong": true
         }
       ]
@@ -11383,6 +11886,8 @@
       "formatting": [
         {
           "text": "A: 1.5 → 50% DPS increase",
+          "start": 0,
+          "end": 25,
           "strong": true
         }
       ]
@@ -11405,11 +11910,15 @@
       "links": [],
       "formatting": [
         {
-          "text": "Double Chance ",
+          "text": "Double Chance",
+          "start": 0,
+          "end": 13,
           "strong": true
         },
         {
           "text": "1% → 2%",
+          "start": 14,
+          "end": 21,
           "strong": true
         }
       ]
@@ -11433,6 +11942,8 @@
       "formatting": [
         {
           "text": "A: 0.99%",
+          "start": 0,
+          "end": 8,
           "strong": true
         }
       ]
@@ -11447,10 +11958,14 @@
       "formatting": [
         {
           "text": "1% Double Chance:",
+          "start": 3,
+          "end": 20,
           "strong": true
         },
         {
           "text": "2% Double Chance:",
+          "start": 40,
+          "end": 57,
           "strong": true
         }
       ]
@@ -11465,6 +11980,8 @@
       "formatting": [
         {
           "text": "0.99% actual DPS increase",
+          "start": 43,
+          "end": 68,
           "strong": true
         }
       ]
@@ -11488,6 +12005,8 @@
       "formatting": [
         {
           "text": "Practical Calculation",
+          "start": 0,
+          "end": 21,
           "strong": true
         }
       ]
@@ -11502,6 +12021,8 @@
       "formatting": [
         {
           "text": "At 80% Double Chance, how efficient is another +1% Double Chance?",
+          "start": 0,
+          "end": 65,
           "strong": true
         }
       ]
@@ -11525,10 +12046,14 @@
       "formatting": [
         {
           "text": "Double Chance Resistance: 30%",
+          "start": 0,
+          "end": 29,
           "strong": true
         },
         {
           "text": "보빛 + 대징 support buffs: +12% Double Chance",
+          "start": 30,
+          "end": 71,
           "strong": true
         }
       ]
@@ -11543,6 +12068,8 @@
       "formatting": [
         {
           "text": "80% Double Chance → 62% Final Double Chance",
+          "start": 0,
+          "end": 43,
           "strong": true
         }
       ]
@@ -11566,6 +12093,8 @@
       "formatting": [
         {
           "text": "62% → 63% Double Chance?",
+          "start": 0,
+          "end": 24,
           "strong": true
         }
       ]
@@ -11580,6 +12109,8 @@
       "formatting": [
         {
           "text": "1",
+          "start": 23,
+          "end": 24,
           "strong": true
         }
       ]
@@ -11594,6 +12125,8 @@
       "formatting": [
         {
           "text": "2 damage",
+          "start": 16,
+          "end": 24,
           "strong": true
         }
       ],
@@ -11609,6 +12142,8 @@
       "formatting": [
         {
           "text": "1 damage",
+          "start": 16,
+          "end": 24,
           "strong": true
         }
       ],
@@ -11633,6 +12168,14 @@
       "formatting": [
         {
           "text": "62% Double Chance = 162 total damage",
+          "start": 0,
+          "end": 36,
+          "strong": true
+        },
+        {
+          "text": "63% Double Chance = 163 total damage",
+          "start": 36,
+          "end": 72,
           "strong": true
         }
       ]
@@ -11647,6 +12190,8 @@
       "formatting": [
         {
           "text": "Answer: 0.617% DPS increase",
+          "start": 0,
+          "end": 27,
           "strong": true
         }
       ]
@@ -11670,6 +12215,8 @@
       "formatting": [
         {
           "text": "+1% Double Chance = approximately +0.617% actual DPS at this point.",
+          "start": 0,
+          "end": 67,
           "strong": true
         }
       ]
@@ -11693,6 +12240,8 @@
       "formatting": [
         {
           "text": "End-Game (KR) Damage Efficiency Numbers",
+          "start": 0,
+          "end": 39,
           "strong": true
         }
       ],
@@ -11853,6 +12402,8 @@
       "formatting": [
         {
           "text": "Formula",
+          "start": 77,
+          "end": 84,
           "emphasis": true
         }
       ],
@@ -12161,7 +12712,14 @@
           "href": "#h.cvgdj7zbi1xh"
         }
       ],
-      "formatting": [],
+      "formatting": [
+        {
+          "text": "here",
+          "start": 100,
+          "end": 104,
+          "underline": true
+        }
+      ],
       "ordered": false
     },
     {
@@ -12334,6 +12892,8 @@
       "formatting": [
         {
           "text": "added",
+          "start": 18,
+          "end": 23,
           "emphasis": true
         }
       ],
@@ -12369,6 +12929,8 @@
       "formatting": [
         {
           "text": "Attack Bonus",
+          "start": 67,
+          "end": 79,
           "highlight": "#ffff00"
         }
       ],
@@ -12392,12 +12954,16 @@
       "links": [],
       "formatting": [
         {
-          "text": "STAT VALUE ",
+          "text": "STAT VALUE",
+          "start": 0,
+          "end": 10,
           "strong": true,
           "highlight": "#f8f9fa"
         },
         {
           "text": "TLDR",
+          "start": 11,
+          "end": 15,
           "strong": true,
           "highlight": "#f8f9fa"
         }
@@ -12414,10 +12980,14 @@
       "formatting": [
         {
           "text": "Double Chance",
+          "start": 0,
+          "end": 13,
           "highlight": "#f8f9fa"
         },
         {
-          "text": " > Front/Back Attack Boost > Weapon Damage Boost > ≈ Critical Damage Boost > Damage Boost",
+          "text": "> Front/Back Attack Boost > Weapon Damage Boost > ≈ Critical Damage Boost > Damage Boost",
+          "start": 14,
+          "end": 102,
           "highlight": "#f8f9fa"
         }
       ]
@@ -12441,6 +13011,8 @@
       "formatting": [
         {
           "text": "ATTACK > MAX ATTACK > ATTACK BONUS > ALL OTHER ATTACK",
+          "start": 0,
+          "end": 53,
           "highlight": "#f8f9fa"
         }
       ]
@@ -12469,19 +13041,26 @@
       "formatting": [
         {
           "text": "Additional Notes on Max Attack vs Attack Bonus",
+          "start": 0,
+          "end": 46,
+          "emphasis": true,
           "underline": true,
-          "highlight": "#f8f9fa",
-          "emphasis": true
+          "highlight": "#f8f9fa"
         },
         {
-          "text": ": If you want to see a detailed breakdown of the efficiency value, refer to this video: ",
-          "highlight": "#f8f9fa",
-          "emphasis": true
+          "text": ": If you want to see a detailed breakdown of the efficiency value, refer to this video:",
+          "start": 46,
+          "end": 133,
+          "emphasis": true,
+          "highlight": "#f8f9fa"
         },
         {
           "text": "https://youtu.be/XFdyimL2_Mk?si=nLHur9uEroXt3v6l&t=377",
-          "highlight": "#f8f9fa",
-          "emphasis": true
+          "start": 134,
+          "end": 188,
+          "emphasis": true,
+          "underline": true,
+          "highlight": "#f8f9fa"
         }
       ]
     },
@@ -12495,8 +13074,10 @@
       "formatting": [
         {
           "text": "- 1:16 to show his formula is accurate, watch whole vid though for full breakdown",
-          "highlight": "#f8f9fa",
-          "emphasis": true
+          "start": 0,
+          "end": 81,
+          "emphasis": true,
+          "highlight": "#f8f9fa"
         }
       ]
     },
@@ -12509,9 +13090,11 @@
       "links": [],
       "formatting": [
         {
-          "text": "- Max Attack (최대공격력), Attack Bonus (추가공격력) ",
-          "highlight": "#f8f9fa",
-          "emphasis": true
+          "text": "- Max Attack (최대공격력), Attack Bonus (추가공격력)",
+          "start": 0,
+          "end": 42,
+          "emphasis": true,
+          "highlight": "#f8f9fa"
         }
       ]
     },
@@ -12525,8 +13108,10 @@
       "formatting": [
         {
           "text": "Keep in mind when looking at your in-game \"Attack\" stat, this stat does not factor in Weapon Damage Boost. This can be easily tested by simply removing Weapon Damage Boost from your Marchutan Daevanion Board and you'll see the \"Attack\" value does not change.",
-          "highlight": "#f8f9fa",
-          "emphasis": true
+          "start": 0,
+          "end": 258,
+          "emphasis": true,
+          "highlight": "#f8f9fa"
         }
       ]
     },
@@ -12588,14 +13173,18 @@
       "formatting": [
         {
           "text": "Additional Notes",
+          "start": 0,
+          "end": 16,
+          "emphasis": true,
           "underline": true,
-          "highlight": "#f8f9fa",
-          "emphasis": true
+          "highlight": "#f8f9fa"
         },
         {
           "text": ": Multi-hit is a pretty straight forward stat on the surface but formulaically it becomes a lot more complex. The description here is a watered down version to keep things simple. This stat is still being studied and its exact value and placement in the equation is still not 100%. More testing needs to be done to establish whether it is with or outside Attack Bonus.",
-          "highlight": "#f8f9fa",
-          "emphasis": true
+          "start": 16,
+          "end": 384,
+          "emphasis": true,
+          "highlight": "#f8f9fa"
         }
       ]
     },
@@ -12846,6 +13435,8 @@
       "formatting": [
         {
           "text": "not",
+          "start": 208,
+          "end": 211,
           "emphasis": true
         }
       ],
@@ -13096,14 +13687,18 @@
       "formatting": [
         {
           "text": "Additional Notes",
+          "start": 0,
+          "end": 16,
+          "emphasis": true,
           "underline": true,
-          "highlight": "#f8f9fa",
-          "emphasis": true
+          "highlight": "#f8f9fa"
         },
         {
-          "text": ":  Combat Speed is a given S-tier individual stat that you stack as much as you can. This, however, is directly impacted by ping and FPS. When tested, a difference of 150-200 ping equated to roughly ≈  50% ~ 70% damage. Contrary to popular belief, there were no major differences between classes. Templar, Brawler, and Assassin were the three classes tested and were roughly similar. Spiritmaster may be an outlier due to the passive pet damage",
-          "highlight": "#f8f9fa",
-          "emphasis": true
+          "text": ": Combat Speed is a given S-tier individual stat that you stack as much as you can. This, however, is directly impacted by ping and FPS. When tested, a difference of 150-200 ping equated to roughly ≈ 50% ~ 70% damage. Contrary to popular belief, there were no major differences between classes. Templar, Brawler, and Assassin were the three classes tested and were roughly similar. Spiritmaster may be an outlier due to the passive pet damage",
+          "start": 16,
+          "end": 458,
+          "emphasis": true,
+          "highlight": "#f8f9fa"
         }
       ]
     },
@@ -13182,6 +13777,8 @@
       "formatting": [
         {
           "text": "0.1 multiplier after Defense-Pen is 0.01 in PVP)",
+          "start": 2,
+          "end": 50,
           "emphasis": true
         }
       ]
@@ -13204,7 +13801,9 @@
       "links": [],
       "formatting": [
         {
-          "text": "This formula has been tested extensively and IS the closest damage formula we currently have - everything except for the *Multi-hit placement is confirmed.  ",
+          "text": "This formula has been tested extensively and IS the closest damage formula we currently have - everything except for the *Multi-hit placement is confirmed.",
+          "start": 0,
+          "end": 155,
           "emphasis": true
         }
       ]
@@ -13219,6 +13818,8 @@
       "formatting": [
         {
           "text": "*Multi-hit - The exact placement of Multi-hit needs to be tested more to 100% confirm its placement on the equation, there’s a chance it could be outside Attack Increase. Will update and remove this bullet once confirmed",
+          "start": 0,
+          "end": 220,
           "emphasis": true
         }
       ]
@@ -13233,6 +13834,8 @@
       "formatting": [
         {
           "text": "This formula is public for the very first time with this doc…not because it’s some hidden secret, but because it was very difficult to figure out and simply put, no one has yet. There have been some general damage buckets posted and understood but this is the first detailed, specific formula that fully answers the why and how much. Math heads and theory crafters, here’s your baseline…",
+          "start": 0,
+          "end": 387,
           "emphasis": true
         }
       ]
@@ -13256,6 +13859,8 @@
       "formatting": [
         {
           "text": "Important - What is “Pure Attack”?",
+          "start": 0,
+          "end": 34,
           "strong": true,
           "highlight": "#f8f9fa"
         }
@@ -13328,6 +13933,8 @@
       "formatting": [
         {
           "text": "Stat Lines",
+          "start": 7,
+          "end": 17,
           "strong": true
         }
       ],
@@ -13368,7 +13975,10 @@
       "formatting": [
         {
           "text": "Further Detail",
-          "strong": true
+          "start": 0,
+          "end": 14,
+          "strong": true,
+          "underline": true
         }
       ],
       "ordered": false
@@ -13580,6 +14190,8 @@
       "formatting": [
         {
           "text": "CLASS PASSIVES",
+          "start": 7,
+          "end": 21,
           "underline": true
         }
       ],

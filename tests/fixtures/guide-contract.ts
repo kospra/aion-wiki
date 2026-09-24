@@ -22,7 +22,7 @@ export const validGuide: {
         numbers: ['150', '5'],
         figureIds: [],
         links: [],
-        formatting: [{ text: '5%', underline: true }],
+        formatting: [{ text: '5%', start: 15, end: 17, underline: true }],
       },
       {
         id: 's2',
@@ -31,7 +31,15 @@ export const validGuide: {
         figureIds: [],
         listStart: 7,
         links: [],
-        formatting: [{ text: 'Global', strong: true, highlight: '#ffff00' }],
+        formatting: [
+          {
+            text: 'Global',
+            start: 0,
+            end: 6,
+            strong: true,
+            highlight: '#ffff00',
+          },
+        ],
       },
       {
         id: 's3',

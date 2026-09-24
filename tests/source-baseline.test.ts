@@ -15,6 +15,8 @@ type BaselineSnapshot = {
     links: { label: string; href: string }[];
     formatting: {
       text: string;
+      start: number;
+      end: number;
       strong?: boolean;
       emphasis?: boolean;
       underline?: boolean;
@@ -147,4 +149,34 @@ it('retains complete normalized figure audit evidence', () => {
   const preserved = load<unknown[]>('content/source/figure-audit.json');
   expect(preserved).toHaveLength(90);
   expect(sourceDigest(preserved)).toBe(figureAuditSourceDigest);
+});
+
+it('positions every formatting run in whitespace-normalized UTF-16 source text', () => {
+  for (const block of baseline().blocks) {
+    const normalized = block.text.replace(/\s+/gu, ' ').trim();
+    for (const run of block.formatting) {
+      expect(Number.isInteger(run.start), block.id).toBe(true);
+      expect(run.start, block.id).toBeGreaterThanOrEqual(0);
+      expect(run.end, block.id).toBeGreaterThan(run.start);
+      expect(normalized.slice(run.start, run.end), block.id).toBe(
+        run.text.replace(/\s+/gu, ' ').trim(),
+      );
+    }
+  }
+});
+
+it('preserves every nonformatting source field while enriching formatting provenance', () => {
+  const snapshot = baseline();
+  const sourceContent = {
+    ...snapshot,
+    blocks: snapshot.blocks.map((block) =>
+      Object.fromEntries(
+        Object.entries(block).filter(([key]) => key !== 'formatting'),
+      ),
+    ),
+  };
+  // Frozen from c9beaad before the formatting provenance repair.
+  expect(sourceDigest(sourceContent)).toBe(
+    '79a6a9e1b886abc40afb40311745cc4c0e36990ed41de1bcc8caa6cf03b99cc2',
+  );
 });

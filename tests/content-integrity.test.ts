@@ -5,6 +5,8 @@ import {
   pageText,
   walkBlocks,
 } from '../app/content/reader';
+import sourceBaseline from '../content/source/baseline.json';
+import { indexBlocks, validateFragments } from '../scripts/content-fragments';
 import type { Block } from '../app/content/types';
 import { validateGuide } from '../scripts/content-integrity';
 import { validGuide } from './fixtures/guide-contract';
@@ -377,8 +379,8 @@ describe('captured-source edge cases', () => {
   it('validates the exact repeated styled occurrence', () => {
     const guide = copy();
     guide.baseline.blocks[1].formatting.push(
-      { text: '150', underline: true },
-      { text: '150', underline: true },
+      { text: '150', start: 7, end: 10, underline: true },
+      { text: '150', start: 16, end: 19, underline: true },
     );
     paragraph(guide, 'global').content = [
       paragraph(guide, 'global').content[0],
@@ -516,5 +518,87 @@ describe('reviewed provenance boundaries', () => {
     expect(validateGuide(guide).join(' ')).toMatch(
       /figure-1.*(?:exactly one|duplicate|2.*placement)/,
     );
+  });
+});
+
+const checkFormatting = (
+  source: (typeof validGuide.baseline.blocks)[number],
+  content: Extract<Block, { kind: 'paragraph' }>['content'],
+) =>
+  validateFragments(
+    source,
+    indexBlocks([
+      { id: 'source', sourceIds: [source.id], kind: 'paragraph', content },
+    ]),
+    () => null,
+  );
+
+describe('positioned source formatting', () => {
+  it('accepts the original fully italic paragraph with out-of-order baseline records', () => {
+    const source = structuredClone(
+      sourceBaseline.blocks.find((block) => block.id === 'block-0250')!,
+    );
+    source.formatting.reverse();
+    expect(
+      checkFormatting(source, [
+        { text: '(The following ', emphasis: true },
+        { text: 'Stat Lines', emphasis: true, strong: true },
+        { text: '\u00a0are for Global)', emphasis: true },
+      ]),
+    ).toEqual([]);
+  });
+
+  it('accepts only the second Perks occurrence italicized in the captured paragraph', () => {
+    const source = sourceBaseline.blocks.find(
+      (block) => block.id === 'block-0369',
+    )!;
+    const second = source.text.lastIndexOf('Perks');
+    expect(
+      checkFormatting(source, [
+        { text: source.text.slice(0, second) },
+        { text: 'Per', emphasis: true },
+        { text: 'ks', emphasis: true },
+        { text: source.text.slice(second + 5) },
+      ]),
+    ).toEqual([]);
+  });
+
+  it('rejects styling the first Perks instead of the second captured occurrence', () => {
+    const source = sourceBaseline.blocks.find(
+      (block) => block.id === 'block-0369',
+    )!;
+    const first = source.text.indexOf('Perks');
+    expect(
+      checkFormatting(source, [
+        { text: source.text.slice(0, first) },
+        { text: 'Perks', emphasis: true },
+        { text: source.text.slice(first + 5) },
+      ]).join(' '),
+    ).toMatch(/formatting.*Perks/);
+  });
+
+  it('uses UTF-16 offsets after whitespace normalization across split runs', () => {
+    const source = {
+      id: 'unicode',
+      text: '  🎮\u00a0Perks\n\tPerks  ',
+      numbers: [],
+      figureIds: [],
+      links: [],
+      formatting: [{ text: 'Perks', start: 9, end: 14, emphasis: true }],
+    };
+    expect(
+      checkFormatting(source, [
+        { text: '\t🎮\nPerks ' },
+        { text: '\u00a0Per', emphasis: true },
+        { text: 'ks\n', emphasis: true },
+      ]),
+    ).toEqual([]);
+    expect(
+      checkFormatting(source, [
+        { text: '🎮 ' },
+        { text: 'Perks', emphasis: true },
+        { text: ' Perks' },
+      ]).join(' '),
+    ).toMatch(/formatting/);
   });
 });

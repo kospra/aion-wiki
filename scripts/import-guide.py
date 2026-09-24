@@ -64,60 +64,119 @@ def source_elements(tree):
     ]
 
 
-def formatting_runs(audit):
+# Exactly ECMAScript \s (Python's \s also includes U+0085 and U+001C-001F).
+JS_WHITESPACE = re.compile(
+    r"[\t\n\v\f\r \u00a0\u1680\u2000-\u200a\u2028\u2029\u202f\u205f\u3000\ufeff]"
+)
+
+
+def normalize_whitespace(text):
+    return re.sub(JS_WHITESPACE.pattern + "+", " ", text).strip(" ")
+
+
+def css_declarations(body):
+    return {
+        key.strip(): value.strip()
+        for declaration in body.split(";")
+        if ":" in declaration
+        for key, value in [declaration.split(":", 1)]
+    }
+
+
+def formatting_runs(tree, elements, source_blocks):
+    """Freeze inline annotations from the captured Google export, in text order.
+
+    Class rules follow stylesheet order (not the HTML class attribute order).
+    Font/style annotations inherit through nested spans and links; tails belong
+    to their parent. Layout/tag defaults are not inline source annotations.
+    Each run stores a half-open UTF-16 range in JS-whitespace-normalized block
+    text. Run text is that exact slice, excluding its boundary whitespace.
+    """
+    css = "\n".join(tree.xpath("//style/text()"))
+    rules = [
+        (selector.strip()[1:], css_declarations(body))
+        for selector, body in re.findall(r"([^{}]+)\{([^{}]+)\}", css)
+        if re.fullmatch(r"\.[A-Za-z0-9_-]+", selector.strip())
+    ]
+
+    def style(node, inherited):
+        current = dict(inherited)
+        names = set(node.get("class", "").split())
+        declarations = {}
+        for name, values in rules:
+            if name in names:
+                declarations.update(values)
+        declarations.update(css_declarations(node.get("style", "")))
+        for key, value in declarations.items():
+            if value != "inherit":
+                current[key] = value
+        return current
+
     by_block = defaultdict(list)
-    for run in audit["styled_runs"]:
-        style = {key.strip(): value.strip() for key, value in run["style"].items()}
-        weight = style.get("font-weight", "")
-        result = {"text": run["text"]}
-        if weight == "bold" or (weight.isdigit() and int(weight) >= 600):
-            result["strong"] = True
-        if style.get("font-style") in {"italic", "oblique"}:
-            result["emphasis"] = True
-        if "underline" in style.get("text-decoration", ""):
-            result["underline"] = True
-        highlight = style.get("background-color", "").lower()
-        if highlight and highlight not in {"transparent", "#ffffff", "white"}:
-            result["highlight"] = highlight
-        if len(result) > 1:
-            by_block[run["block"]].append(result)
+    for record, element in zip(source_blocks, elements, strict=True):
+        chunks = []
+
+        def visit(node, inherited):
+            current = style(node, inherited)
+            if node.text:
+                chunks.append((node.text, current))
+            for child in node:
+                if isinstance(child.tag, str):
+                    visit(child, current)
+                if child.tail:
+                    chunks.append((child.tail, current))
+
+        inherited = {}
+        for ancestor in reversed(list(element.iterancestors())):
+            inherited = style(ancestor, inherited)
+        visit(element, inherited)
+        # Preserve origin while collapsing whitespace across text-node boundaries.
+        characters = []
+        for index, (text, _) in enumerate(chunks):
+            for character in text:
+                if JS_WHITESPACE.fullmatch(character):
+                    if characters and characters[-1][0] != " ":
+                        characters.append((" ", index))
+                else:
+                    characters.append((character, index))
+        if characters and characters[-1][0] == " ":
+            characters.pop()
+        normalized = "".join(character for character, _ in characters)
+        if normalized != normalize_whitespace(record["text"]):
+            raise ValueError(f"Saved HTML text mismatch for {record['id']}")
+
+        positions = defaultdict(list)
+        offset = 0
+        for character, origin in characters:
+            width = len(character.encode("utf-16-le")) // 2
+            if character != " ":
+                positions[origin].append((offset, offset + width))
+            offset += width
+        encoded = normalized.encode("utf-16-le")
+        for origin, (_, current) in enumerate(chunks):
+            if not positions[origin]:
+                continue
+            start = positions[origin][0][0]
+            end = positions[origin][-1][1]
+            result = {
+                "text": encoded[start * 2:end * 2].decode("utf-16-le"),
+                "start": start,
+                "end": end,
+            }
+            weight = current.get("font-weight", "")
+            if weight == "bold" or (weight.isdigit() and int(weight) >= 600):
+                result["strong"] = True
+            if current.get("font-style") in {"italic", "oblique"}:
+                result["emphasis"] = True
+            if "underline" in current.get("text-decoration", ""):
+                result["underline"] = True
+            highlight = current.get("background-color", "").lower()
+            if highlight and highlight not in {"transparent", "#ffffff", "white"}:
+                result["highlight"] = highlight
+            if len(result) > 3:
+                by_block[record["id"]].append(result)
     return by_block
 
-
-def add_italic_runs(tree, elements, source_blocks, styles) -> None:
-    css = "\n".join(tree.xpath("//style/text()"))
-    italic_classes = set()
-    normal_classes = set()
-    for name, body in re.findall(r"\.([A-Za-z0-9_-]+)\s*\{([^{}]+)\}", css):
-        match = re.search(r"font-style\s*:\s*([a-z]+)", body)
-        if match:
-            target = italic_classes if match.group(1) in {"italic", "oblique"} else normal_classes
-            target.add(name)
-
-    for record, element in zip(source_blocks, elements, strict=True):
-        for node in element.iter():
-            if not node.text or not node.text.strip():
-                continue
-            italic = False
-            for ancestor in [*reversed(list(node.iterancestors())), node]:
-                for class_name in ancestor.get("class", "").split():
-                    if class_name in normal_classes:
-                        italic = False
-                    if class_name in italic_classes:
-                        italic = True
-                inline_style = ancestor.get("style", "")
-                match = re.search(r"font-style\s*:\s*([a-z]+)", inline_style)
-                if match:
-                    italic = match.group(1) in {"italic", "oblique"}
-            if not italic:
-                continue
-            matching = next(
-                (run for run in styles[record["id"]] if run["text"] == node.text), None
-            )
-            if matching is None:
-                styles[record["id"]].append({"text": node.text, "emphasis": True})
-            else:
-                matching["emphasis"] = True
 
 def import_baseline(inventory, audit, tree):
     elements = source_elements(tree)
@@ -128,8 +187,7 @@ def import_baseline(inventory, audit, tree):
     links = defaultdict(list)
     for record in audit["links"]:
         links[record["block"]].append({"label": record["text"], "href": record["href"]})
-    styles = formatting_runs(audit)
-    add_italic_runs(tree, elements, source_blocks, styles)
+    styles = formatting_runs(tree, elements, source_blocks)
 
     blocks = []
     for record, element in zip(source_blocks, elements, strict=True):
