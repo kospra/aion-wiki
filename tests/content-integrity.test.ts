@@ -442,3 +442,79 @@ describe('captured-source edge cases', () => {
     expect(validateGuide(guide).join(' ')).toMatch(/figure-2/);
   });
 });
+
+describe('reviewed provenance boundaries', () => {
+  it.each(['Additional context', 'Details'])(
+    'rejects sharing a primary text leaf with another source: %s',
+    (secondText) => {
+      const guide = copy();
+      guide.baseline.blocks.push({
+        id: 's8',
+        text: secondText,
+        numbers: [],
+        figureIds: [],
+        links: [],
+        formatting: [],
+      });
+      guide.pages[0].blocks.push({
+        id: 'additional',
+        kind: 'paragraph',
+        sourceIds: ['s8'],
+        content: [{ text: secondText }],
+      });
+      guide.coverage.push({
+        sourceId: 's8',
+        disposition: 'rendered',
+        primary: { pageSlug: 'gear', blockIds: ['additional'] },
+      });
+      expect(validateGuide(guide)).toEqual([]);
+
+      guide.pages[0].blocks.pop();
+      const details = guide.pages[0].blocks[5];
+      if (details.kind !== 'heading') throw new Error('Fixture shape changed');
+      details.sourceIds = ['s7', 's8'];
+      details.content = [
+        {
+          text: secondText === 'Details' ? 'Details' : `Details ${secondText}`,
+        },
+      ];
+      guide.coverage.at(-1)!.primary!.blockIds = ['details'];
+      expect(validateGuide(guide).join(' ')).toMatch(
+        /distinct.*source.*leaves|multiple.*source/,
+      );
+    },
+  );
+
+  it('allows a shared parent with separately attributed text children', () => {
+    const guide = copy();
+    const reference = guide.pages[0].blocks.splice(4, 1)[0];
+    const details = guide.pages[0].blocks.pop()!;
+    guide.pages[0].blocks.push({
+      id: 'shared-context',
+      kind: 'group',
+      label: 'Context',
+      sourceIds: ['s6', 's7'],
+      blocks: [reference, details],
+    });
+    expect(validateGuide(guide)).toEqual([]);
+  });
+
+  it('rejects reuse of a figure placement ID outside its primary coverage across pages', () => {
+    const guide = copy();
+    guide.pages.push({
+      ...guide.pages[0],
+      slug: 'extra-page',
+      blocks: [
+        {
+          id: 'extra-placement',
+          sourceIds: [],
+          kind: 'figure',
+          figureId: 'figure-1',
+        },
+      ],
+    });
+    expect(validateGuide(guide).join(' ')).toMatch(
+      /figure-1.*(?:exactly one|duplicate|2.*placement)/,
+    );
+  });
+});

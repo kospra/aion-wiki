@@ -72,12 +72,13 @@ function validateFigures(
         if (figure[property] !== expected[property])
           errors.push(`${figure.id}: figure ${property} differs from source`);
       }
-    if (
-      !placements.some(
-        ({ block }) => block.kind === 'figure' && block.figureId === figure.id,
-      )
-    )
-      errors.push(`${figure.id}: figure has no visible placement`);
+    const placementCount = placements.filter(
+      ({ block }) => block.kind === 'figure' && block.figureId === figure.id,
+    ).length;
+    if (placementCount !== 1)
+      errors.push(
+        `${figure.id}: figure requires exactly one visible placement, got ${placementCount}`,
+      );
     if (!figure.alt.trim() || !figure.caption.trim())
       errors.push(`${figure.id}: figure needs accessible alt and caption`);
     if (
@@ -202,7 +203,19 @@ export function validateGuide(input: GuideValidationInput): string[] {
     const sourceUrl = normalizeSourceUrl(page.sourceUrl);
     if (!sourceUrl || !/^https?:\/\//u.test(sourceUrl))
       errors.push(`${page.slug}: unsafe source URL`);
-    for (const { block } of index) {
+    for (const { block, sourceIds } of index) {
+      const textSources = new Set(
+        sourceIds.filter((id) => sources.get(id)?.text.trim()),
+      );
+      if (
+        textSources.size > 1 &&
+        blockInlineSegments(block)
+          .flat()
+          .some((run) => run.text.trim())
+      )
+        errors.push(
+          `${page.slug}/${block.id}: multiple substantive sources require distinct source text leaves`,
+        );
       if (!block.id || /[\s#]/u.test(block.id))
         errors.push(`${page.slug}: invalid anchor ${block.id}`);
       for (const sourceId of block.sourceIds) {
