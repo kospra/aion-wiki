@@ -1,0 +1,139 @@
+[
+  {
+    "slug": "closet-stats-and-outfit-calculation",
+    "title": "Closet stats and outfit calculation",
+    "category": "closet",
+    "summary": "Collection stats, class restrictions, visible points, and the literal outfit formula.",
+    "status": "source-uncertain",
+    "sourceUrl": "https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/edit",
+    "qualifiers": [
+      "Source recommendations, first-person statements, and testing claims are Kanon’s. Figures are captured examples rather than universal costs or ideal builds.",
+      "Captured source update: 9/20/2026. Regional and unconfirmed details remain qualified as written."
+    ],
+    "blocks": [
+      {
+        "id": "block-1010",
+        "sourceIds": ["block-1010"],
+        "kind": "heading",
+        "content": [
+          {
+            "text": "CH 10: CLOSET (TRANSMOG)"
+          }
+        ],
+        "level": 2
+      },
+      {
+        "id": "block-1012",
+        "sourceIds": ["block-1012"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "The Closet (Transmog) system is another horizontal power system. As you unlock more skins you gain stats.This is a very longterm progression system. "
+          }
+        ]
+      },
+      {
+        "id": "block-1014",
+        "sourceIds": ["block-1014"],
+        "kind": "group",
+        "label": "Related source illustrations",
+        "blocks": [
+          {
+            "id": "block-1014-figure-085",
+            "sourceIds": ["block-1014"],
+            "kind": "figure",
+            "figureId": "figure-085"
+          },
+          {
+            "id": "block-1014-figure-086",
+            "sourceIds": ["block-1014"],
+            "kind": "figure",
+            "figureId": "figure-086"
+          }
+        ]
+      },
+      {
+        "id": "block-1017",
+        "sourceIds": ["block-1017"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Unlocking more skins will give you an increase in a % stat relative to the skin type. For example, unlocking more weapon skins will grant you an Attack Increase % specifically for your Weapon."
+          }
+        ]
+      },
+      {
+        "id": "block-1019",
+        "sourceIds": ["block-1019"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "The calculation: ",
+            "strong": true
+          },
+          {
+            "text": "Let’s say the Attack from my Weapon, in this case my Fists (Gauntlet), is 500. Then 6.7% would be applied to the 500 if we were to go by the image above seeing as my Fist Attack Increase from my closet is +6.7%."
+          }
+        ]
+      },
+      {
+        "id": "context-block-1019",
+        "sourceIds": [],
+        "kind": "note",
+        "label": "Collection scope",
+        "tone": "context",
+        "content": [
+          {
+            "text": "The image’s 48% and 454/937 belong to Armor, not total account completion. Weapon skins for other classes do not contribute to collection points. The visible point totals and other-class counts are retained in the image legend."
+          }
+        ]
+      },
+      {
+        "id": "block-1021",
+        "sourceIds": ["block-1021"],
+        "kind": "formula",
+        "expression": "Source formula (verbatim)",
+        "explanation": [
+          {
+            "text": "Formula",
+            "strong": true
+          },
+          {
+            "text": "[Outfit Damage = [(Min Attack "
+          },
+          {
+            "text": "+"
+          },
+          {
+            "text": " Max Attack) ÷ 2] × Weapon Outfit Increase %] + Pure Attack "
+          }
+        ]
+      },
+      {
+        "id": "context-block-1021",
+        "sourceIds": [],
+        "kind": "note",
+        "label": "Unspecified outfit grouping",
+        "tone": "uncertain",
+        "content": [
+          {
+            "text": "The source brackets leave the Outfit Damage assignment unclear and add Pure Attack outside it. The literal formula is retained; it is not a fully specified calculator."
+          }
+        ]
+      },
+      {
+        "id": "block-1023",
+        "sourceIds": ["block-1023"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Further Detail",
+            "strong": true,
+            "underline": true,
+            "href": "/articles/damage-formula-and-pure-attack#block-1224"
+          }
+        ]
+      }
+    ]
+  }
+]

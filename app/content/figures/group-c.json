@@ -1,0 +1,1802 @@
+[
+  {
+    "id": "figure-054",
+    "sourceId": "block-0545",
+    "sha256": "c62fc1b287ae55b62e76778c6d8bef2ddcd6293c7f77b74d73397e7285f2c428",
+    "src": "/images/guide/c62fc1b287ae55b62e76778c6d8bef2ddcd6293c7f77b74d73397e7285f2c428.png",
+    "width": 454,
+    "height": 195,
+    "alt": "Protected Soul set threshold tooltip. The text legend preserves labeled values, colors and source qualifications.",
+    "caption": "Protected Soul set threshold tooltip",
+    "mappings": [
+      {
+        "label": "Protected Soul",
+        "color": "green",
+        "visualValue": "4 equipped",
+        "meaning": "Diamond4 beside name is equipped set count.",
+        "textSourceIds": ["block-0548", "block-0620"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "2-piece",
+        "color": "white",
+        "visualValue": "Restoration +5%",
+        "meaning": "Set threshold; diamond2 does not label an annotation.",
+        "textSourceIds": ["block-0622"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "4-piece",
+        "color": "white",
+        "visualValue": "+5% Weapon Damage Boost, grants a Protec...",
+        "meaning": "Truncated shield effect; full shield text is in source prose.",
+        "textSourceIds": ["block-0623"],
+        "confidence": "confirmed"
+      }
+    ],
+    "screenshotOnly": [],
+    "uncertainties": [
+      "Image truncates 4-piece shield description; use block0623 for full conditional effect, not imagined image text."
+    ]
+  },
+  {
+    "id": "figure-055",
+    "sourceId": "block-0546",
+    "sha256": "40f9a61edf8d640a0e490917e7325beb789e9557f044372df15e24a1bd666ac3",
+    "src": "/images/guide/40f9a61edf8d640a0e490917e7325beb789e9557f044372df15e24a1bd666ac3.png",
+    "width": 465,
+    "height": 657,
+    "alt": "Seven Arcana sets. The text legend preserves labeled values, colors and source qualifications.",
+    "caption": "Seven Arcana sets",
+    "mappings": [
+      {
+        "label": "Set selector",
+        "color": "artwork gold / gray-blue / purple / dark castle / dark-red tower / green light / red slash",
+        "visualValue": "Primal Vigor; Magic Armor; Frenzy; Pure Blood; Punishing Overture; Protected Soul; Indomitable Dedication",
+        "meaning": "Names in top-to-bottom order. Pale border selects Protected Soul; artwork colors are illustrative, not sufficient to determine every card's set.",
+        "textSourceIds": ["block-0513", "block-0548", "block-0550"],
+        "confidence": "confirmed"
+      }
+    ],
+    "screenshotOnly": [
+      "Global availability differs from source Asia snapshot."
+    ],
+    "uncertainties": [
+      "Five sets beyond the two launch sets have no complete set-bonus catalog in chapter; preserve names without inventing bonuses."
+    ]
+  },
+  {
+    "id": "figure-056",
+    "sourceId": "block-0546",
+    "sha256": "c282d890d3eb724522641112aec20188215db890f44eb48fc6a5bdccf7b11a4d",
+    "src": "/images/guide/c282d890d3eb724522641112aec20188215db890f44eb48fc6a5bdccf7b11a4d.png",
+    "width": 633,
+    "height": 576,
+    "alt": "Arcana card types around Chalice. The text legend preserves labeled values, colors and source qualifications.",
+    "caption": "Arcana card types around Chalice",
+    "mappings": [
+      {
+        "label": "Central card",
+        "color": "gold",
+        "visualValue": "+0 Chalice",
+        "meaning": "Chalice selected.",
+        "textSourceIds": ["block-0513", "block-0518", "block-0515"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Perimeter icons",
+        "color": "gold outlines",
+        "visualValue": "Clockwise from upper left: Chalice, Lantern, Dice, Hourglass, Key, Scale, Mirror, Bell, Compass, Parchment",
+        "meaning": "Ten card types. Gold outline is UI/card border; does not prove set membership.",
+        "textSourceIds": [
+          "block-0518",
+          "block-0521",
+          "block-0524",
+          "block-0527",
+          "block-0530",
+          "block-0533",
+          "block-0536",
+          "block-0538",
+          "block-0540",
+          "block-0542"
+        ],
+        "confidence": "confirmed"
+      }
+    ],
+    "screenshotOnly": [],
+    "uncertainties": []
+  },
+  {
+    "id": "figure-057",
+    "sourceId": "block-0555",
+    "sha256": "ea8502a7f6075003472e7a074615e5770087903acea7e7c1526c4f86c8d49cac",
+    "src": "/images/guide/ea8502a7f6075003472e7a074615e5770087903acea7e7c1526c4f86c8d49cac.png",
+    "width": 583,
+    "height": 509,
+    "alt": "Arcana inventory example. The text legend preserves labeled values, colors and source qualifications.",
+    "caption": "Arcana inventory example",
+    "mappings": [
+      {
+        "label": "Inventory cards",
+        "color": "gold borders, dark-red and bright-gold Dice artwork",
+        "visualValue": "8 visible cards, each +0; five dark-red Dice and three bright-gold Dice",
+        "meaning": "Cards can be fed as enhancement material; screenshot quantities are example inventory.",
+        "textSourceIds": ["block-0553"],
+        "confidence": "confirmed"
+      }
+    ],
+    "screenshotOnly": [],
+    "uncertainties": []
+  },
+  {
+    "id": "figure-058",
+    "sourceId": "block-0556",
+    "sha256": "eb423694817cbd1a7b300595cafe020a1593186515f476a011ceab12ca0aac56",
+    "src": "/images/guide/eb423694817cbd1a7b300595cafe020a1593186515f476a011ceab12ca0aac56.png",
+    "width": 350,
+    "height": 175,
+    "alt": "Training Arcana inventory. The text legend preserves labeled values, colors and source qualifications.",
+    "caption": "Training Arcana inventory",
+    "mappings": [
+      {
+        "label": "Left crystal",
+        "color": "green",
+        "visualValue": "1.1K",
+        "meaning": "Displayed inventory quantity.",
+        "textSourceIds": ["block-0553"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Middle crystal",
+        "color": "blue",
+        "visualValue": "208",
+        "meaning": "Displayed inventory quantity.",
+        "textSourceIds": ["block-0553"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Right crystal",
+        "color": "yellow/gold",
+        "visualValue": "2",
+        "meaning": "Same icon as Superior Training Arcana tooltip figure059.",
+        "textSourceIds": ["block-0553"],
+        "confidence": "confirmed"
+      }
+    ],
+    "screenshotOnly": [],
+    "uncertainties": [
+      "Names and EXP yields of green/blue training materials are not visible. Do not infer rarity names solely from color."
+    ]
+  },
+  {
+    "id": "figure-059",
+    "sourceId": "block-0556",
+    "sha256": "3dc4994a667faa05678e55d0ba552ee1d50225a3941f934720c8601c3f4f782b",
+    "src": "/images/guide/3dc4994a667faa05678e55d0ba552ee1d50225a3941f934720c8601c3f4f782b.png",
+    "width": 375,
+    "height": 419,
+    "alt": "Superior Training Arcana tooltip. The text legend preserves labeled values, colors and source qualifications.",
+    "caption": "Superior Training Arcana tooltip",
+    "mappings": [
+      {
+        "label": "Superior Training Arcana",
+        "color": "gold crystal; Common text",
+        "visualValue": "Enhance EXP +1500; item quantity2",
+        "meaning": "Tooltip: register as material when enhancing Arcana. Common is explicit despite gold image.",
+        "textSourceIds": ["block-0553"],
+        "confidence": "confirmed"
+      }
+    ],
+    "screenshotOnly": [],
+    "uncertainties": []
+  },
+  {
+    "id": "figure-060",
+    "sourceId": "block-0560",
+    "sha256": "e49e2fb450ba9add101b0149d9d16a81833c1c427e4ed81f35eec946f05e2378",
+    "src": "/images/guide/e49e2fb450ba9add101b0149d9d16a81833c1c427e4ed81f35eec946f05e2378.png",
+    "width": 597,
+    "height": 913,
+    "alt": "Scale enhancement preview. The text legend preserves labeled values, colors and source qualifications.",
+    "caption": "Scale enhancement preview",
+    "mappings": [
+      {
+        "label": "Card",
+        "color": "gold title",
+        "visualValue": "+4 Scales of Punishment; Scales Item Level94; +4 → +5(MAX)",
+        "meaning": "Maximum enhancement shown5.",
+        "textSourceIds": ["block-0558"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Pantheon stats",
+        "color": "white with green +2",
+        "visualValue": "Destruction[Zikel]18 → +2; Destiny[Marchutan]18 → +2",
+        "meaning": "Both Pantheon stats increase, in addition to random skill line.",
+        "textSourceIds": ["block-0558", "block-0629"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Skill lines",
+        "color": "cyan",
+        "visualValue": "Massive Rage +1; Chain Fist +2; Roundhouse +1; Dominance +4",
+        "meaning": "Before-enhancement skill lines.",
+        "textSourceIds": ["block-0515", "block-0558"],
+        "confidence": "confirmed"
+      }
+    ],
+    "screenshotOnly": [],
+    "uncertainties": [
+      "Prose0558 describes random line growth but omits explicit Pantheon growth shown here; preserve both."
+    ]
+  },
+  {
+    "id": "figure-061",
+    "sourceId": "block-0561",
+    "sha256": "b8ab6725874c096ad7c5e727f32ffa0b82d6072792035ffb08fad6e4d807a9c7",
+    "src": "/images/guide/b8ab6725874c096ad7c5e727f32ffa0b82d6072792035ffb08fad6e4d807a9c7.png",
+    "width": 1064,
+    "height": 494,
+    "alt": "Scale enhancement result. The text legend preserves labeled values, colors and source qualifications.",
+    "caption": "Scale enhancement result",
+    "mappings": [
+      {
+        "label": "Card enhancement",
+        "color": "gold",
+        "visualValue": "+5",
+        "meaning": "Success.",
+        "textSourceIds": ["block-0558"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Pantheon result",
+        "color": "white / green delta",
+        "visualValue": "Destruction[Zikel]20 (+2); Destiny[Marchutan]20 (+2)",
+        "meaning": "Outcome of figure060.",
+        "textSourceIds": ["block-0558", "block-0629"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Selected random skill",
+        "color": "cyan / green delta",
+        "visualValue": "Roundhouse Lv.+2 (+1)",
+        "meaning": "Roundhouse rises from +1 to +2.",
+        "textSourceIds": ["block-0558"],
+        "confidence": "confirmed"
+      }
+    ],
+    "screenshotOnly": [],
+    "uncertainties": []
+  },
+  {
+    "id": "figure-062",
+    "sourceId": "block-0568",
+    "sha256": "df6133d0efc3669e2134022c705afd8d7fe69a62ab47f076bd7f0b9d48c2544f",
+    "src": "/images/guide/df6133d0efc3669e2134022c705afd8d7fe69a62ab47f076bd7f0b9d48c2544f.png",
+    "width": 2048,
+    "height": 769,
+    "alt": "Transmute and selected skill lines. The text legend preserves labeled values, colors and source qualifications.",
+    "caption": "Transmute and selected skill lines",
+    "mappings": [
+      {
+        "label": "Selected set",
+        "color": "pale blue border",
+        "visualValue": "Primal Vigor",
+        "meaning": "Left selector highlighted; central card is obscured by selection popup.",
+        "textSourceIds": ["block-0566", "block-0548"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Selection order1",
+        "color": "yellow badge",
+        "visualValue": "Flurry",
+        "meaning": "Checked first chosen additional effect.",
+        "textSourceIds": ["block-0566"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Selection order2",
+        "color": "yellow badge",
+        "visualValue": "Chain Fist",
+        "meaning": "Checked second chosen additional effect.",
+        "textSourceIds": ["block-0566"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Output tooltip",
+        "color": "gold title / cyan skills",
+        "visualValue": "Chalice of Vigor; Item Level80; +0(0/3,000); Time[Siel]20; Flurry+1; Chain Fist+1; Randomly grant2 additional effects",
+        "meaning": "Example selects two lines; remaining two random.",
+        "textSourceIds": ["block-0566", "block-0578"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Primal Vigor thresholds",
+        "color": "gray text",
+        "visualValue": "2: +60 PvE Attack when HP70% or more; 4: +150 PvE Attack when HP70% or more",
+        "meaning": "4-piece value is screenshot-only.",
+        "textSourceIds": ["block-0593"],
+        "confidence": "confirmed"
+      }
+    ],
+    "screenshotOnly": [],
+    "uncertainties": [
+      "Popup clips several ability names and central artwork; do not reconstruct clipped list. Does not demonstrate four selected lines despite prose recommending a four-line craft."
+    ]
+  },
+  {
+    "id": "figure-063",
+    "sourceId": "block-0572",
+    "sha256": "be9768d998905ad366540cc75650a082ade4913a57f46d0b9c926c6cdf774267",
+    "src": "/images/guide/be9768d998905ad366540cc75650a082ade4913a57f46d0b9c926c6cdf774267.png",
+    "width": 730,
+    "height": 501,
+    "alt": "Mysterious Crystal crafting material. The text legend preserves labeled values, colors and source qualifications.",
+    "caption": "Mysterious Crystal crafting material",
+    "mappings": [
+      {
+        "label": "Crystal tooltip",
+        "color": "cyan name, gold crystal",
+        "visualValue": "Mysterious Crystal(Bound), quantity15",
+        "meaning": "Sources: Substance Morph and Extract Arcana.",
+        "textSourceIds": ["block-0570"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Transmute button",
+        "color": "gold",
+        "visualValue": "5,000,000",
+        "meaning": "Screenshot-only displayed transmute currency cost.",
+        "textSourceIds": ["block-0566", "block-0570"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Material display",
+        "color": "red",
+        "visualValue": "15 beside crystal and3 below",
+        "meaning": "Red counts indicate an unmet material condition; labels are not sufficiently clear to assign possessed/required quantities confidently.",
+        "textSourceIds": ["block-0570"],
+        "confidence": "approximate"
+      },
+      {
+        "label": "Tooltip bottom value",
+        "color": "white",
+        "visualValue": "10,000(150,000)",
+        "meaning": "Visible tooltip monetary numbers; not proven crafting price.",
+        "textSourceIds": ["block-0570"],
+        "confidence": "confirmed"
+      }
+    ],
+    "screenshotOnly": [],
+    "uncertainties": [
+      "Cannot establish a universal recipe/cost from partially occluded UI. Do not label red15/3 as a definitive ratio."
+    ]
+  },
+  {
+    "id": "figure-064",
+    "sourceId": "block-0573",
+    "sha256": "734321e066e4bfb8ce02b2bfabe04cefecf7baa96bd67e425b38a0dc07ea9d20",
+    "src": "/images/guide/734321e066e4bfb8ce02b2bfabe04cefecf7baa96bd67e425b38a0dc07ea9d20.png",
+    "width": 1563,
+    "height": 703,
+    "alt": "Mysterious Crystal shard morph. The text legend preserves labeled values, colors and source qualifications.",
+    "caption": "Mysterious Crystal shard morph",
+    "mappings": [
+      {
+        "label": "Output",
+        "color": "cyan",
+        "visualValue": "Mysterious Crystal(Bound); success100%",
+        "meaning": "Explicit morph success.",
+        "textSourceIds": ["block-0570"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Material",
+        "color": "red",
+        "visualValue": "Shard:Mysterious Crystal(Bound) 0/10",
+        "meaning": "Ten shards required; player has0 in example.",
+        "textSourceIds": ["block-0570"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Source list",
+        "color": "white",
+        "visualValue": "Transcendence: [Stage1],[Stage2],[Stage3],[Stage4] Submerged Life Temple",
+        "meaning": "Four visible source stages; list may extend below crop.",
+        "textSourceIds": ["block-0570"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Shard value",
+        "color": "white",
+        "visualValue": "1",
+        "meaning": "Bottom coin value; not recipe count.",
+        "textSourceIds": ["block-0570"],
+        "confidence": "confirmed"
+      }
+    ],
+    "screenshotOnly": [],
+    "uncertainties": []
+  },
+  {
+    "id": "figure-065",
+    "sourceId": "block-0587",
+    "sha256": "01566e93ec8f653df9ae4e73282f586b49b21ecaa522782af41ffff8e176e1f3",
+    "src": "/images/guide/01566e93ec8f653df9ae4e73282f586b49b21ecaa522782af41ffff8e176e1f3.png",
+    "width": 676,
+    "height": 1195,
+    "alt": "Five-card Pantheon setup composite. The text legend preserves labeled values, colors and source qualifications.",
+    "caption": "Five-card Pantheon setup composite",
+    "mappings": [
+      {
+        "label": "Chalice",
+        "color": "gold Primal Vigor artwork",
+        "visualValue": "Time[Siel], +0",
+        "meaning": "Time prioritized for Combat Speed per prose.",
+        "textSourceIds": ["block-0589", "block-0595", "block-0605"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Parchment",
+        "color": "split gold and blue-gray",
+        "visualValue": "Life / Destiny, +0",
+        "meaning": "Composite shows either set alternative; desired prose Life.",
+        "textSourceIds": ["block-0589", "block-0596"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Compass",
+        "color": "split blue-gray and gold",
+        "visualValue": "Death / Freedom, +0",
+        "meaning": "Composite shows either set alternative; desired prose Death.",
+        "textSourceIds": ["block-0589", "block-0601"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Bell",
+        "color": "blue-gray Magic Armor artwork",
+        "visualValue": "Destruction[Zikel], +0",
+        "meaning": "Attack Increase% association is prose.",
+        "textSourceIds": ["block-0602", "block-0605"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Mirror",
+        "color": "blue-gray Magic Armor artwork",
+        "visualValue": "Wisdom[Lumiel], +0",
+        "meaning": "Double Chance association is prose.",
+        "textSourceIds": ["block-0603", "block-0605"],
+        "confidence": "confirmed"
+      }
+    ],
+    "screenshotOnly": ["Early five-card setup; maintain launch qualification."],
+    "uncertainties": [
+      "Life/Destiny and Death/Freedom are side-by-side alternative labels; do not flatten into simultaneous dual stats.",
+      "Block0550 says five cards '(Compass ~ Mirror)', inconsistent with actual five-card list including Chalice and Parchment."
+    ]
+  },
+  {
+    "id": "figure-066",
+    "sourceId": "block-0608",
+    "sha256": "5f8ded66424212f049c2996b782c43f3e9f93df99a4ee95c48172c565f2a594e",
+    "src": "/images/guide/5f8ded66424212f049c2996b782c43f3e9f93df99a4ee95c48172c565f2a594e.png",
+    "width": 1451,
+    "height": 751,
+    "alt": "Eight equipped Arcana, two unfilled slots. The text legend preserves labeled values, colors and source qualifications.",
+    "caption": "Eight equipped Arcana, two unfilled slots",
+    "mappings": [
+      {
+        "label": "Top row",
+        "color": "gold borders",
+        "visualValue": "Chalice+5; Parchment+5; Compass+5; Key+5; Hourglass+3",
+        "meaning": "Five equipped cards.",
+        "textSourceIds": [
+          "block-0616",
+          "block-0617",
+          "block-0618",
+          "block-0619",
+          "block-0625"
+        ],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Bottom row left",
+        "color": "gold borders",
+        "visualValue": "Bell+5; Mirror+5; Scale+5",
+        "meaning": "Three equipped cards.",
+        "textSourceIds": ["block-0627", "block-0628", "block-0629"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Bottom row right",
+        "color": "unlit card backs",
+        "visualValue": "Dice; Lantern",
+        "meaning": "Two unfilled/unused slots.",
+        "textSourceIds": ["block-0540", "block-0542"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Artwork grouping",
+        "color": "Chalice green-gold garden; Parchment pale blue; Compass/Bell/Mirror/Scale dark-red; Key/Hourglass gold",
+        "visualValue": "8 distinct equipped types, only one Parchment",
+        "meaning": "Art suggests different sets, but image contains no textual set names; preserve image rather than assigning uncertain set names.",
+        "textSourceIds": ["block-0611", "block-0620"],
+        "confidence": "approximate"
+      }
+    ],
+    "screenshotOnly": [],
+    "uncertainties": [
+      "Eight-card prose lists nine memberships: four Punishing Overture plus five Protected Soul; Parchment repeated in blocks0617/0626. Figure has one Parchment and eight equipped cards.",
+      "Set membership cannot be definitively mapped from unnamed artwork. Do not silently repair list or claim artwork proves exact set allocation."
+    ]
+  },
+  {
+    "id": "figure-067",
+    "sourceId": "block-0644",
+    "sha256": "e5ae2ad7e0a88df2ffc0d9de65c0023b74991b1c2cd3da3695c40ba84f2b86b4",
+    "src": "/images/guide/e5ae2ad7e0a88df2ffc0d9de65c0023b74991b1c2cd3da3695c40ba84f2b86b4.png",
+    "width": 2048,
+    "height": 1152,
+    "alt": "Daevanion Nezekan board overview. The text legend preserves labeled values, colors and source qualifications.",
+    "caption": "Daevanion Nezekan board overview",
+    "mappings": [
+      {
+        "label": "Central start",
+        "color": "blue-white emblem with gold outline",
+        "visualValue": "Nezekan–Start; Board Starting Level12; Required Character Level12",
+        "meaning": "Start node is center.",
+        "textSourceIds": ["block-0633", "block-0635"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Gray tiles",
+        "color": "gray/gold icons",
+        "visualValue": "Basic stats",
+        "meaning": "Matches source color legend.",
+        "textSourceIds": ["block-0637"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Green tiles",
+        "color": "green",
+        "visualValue": "Passive skills or double stats",
+        "meaning": "Matches source color legend.",
+        "textSourceIds": ["block-0638"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Blue tiles",
+        "color": "blue",
+        "visualValue": "Active skills or % stats",
+        "meaning": "Matches source color legend.",
+        "textSourceIds": ["block-0639"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Orange tiles",
+        "color": "orange",
+        "visualValue": "Significant stats; corners and side middle nodes",
+        "meaning": "Matches source color legend.",
+        "textSourceIds": ["block-0640", "block-0642"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Start tooltip core nodes",
+        "color": "yellow text",
+        "visualValue": "Combat Speed Increase, Cooldown Reduction, Attack Bonus, Defense Bonus",
+        "meaning": "Screenshot-only Nezekan core descriptions.",
+        "textSourceIds": ["block-0653"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Completion cost",
+        "color": "red",
+        "visualValue": "Daevanion Points Required for Complet...38",
+        "meaning": "Truncated UI label; preserve displayed38 without extrapolating full-board price.",
+        "textSourceIds": ["block-0633"],
+        "confidence": "confirmed"
+      }
+    ],
+    "screenshotOnly": [],
+    "uncertainties": [
+      "Individual glyphs do not reveal every node's stat value. Preserve full-resolution board image; do not fabricate textual route nodes.",
+      "Gray/gold lit versus near-black tiles communicates example allocation state; exact costs and reset fee not shown."
+    ]
+  },
+  {
+    "id": "figure-068",
+    "sourceId": "block-0649",
+    "sha256": "daf89bbffaefddc8f573fbfd48c6a1eeea70adfb63d7863081341296778b4372",
+    "src": "/images/guide/daf89bbffaefddc8f573fbfd48c6a1eeea70adfb63d7863081341296778b4372.png",
+    "width": 874,
+    "height": 56,
+    "alt": "Shared white-board tabs. The text legend preserves labeled values, colors and source qualifications.",
+    "caption": "Shared white-board tabs",
+    "mappings": [
+      {
+        "label": "Tabs",
+        "color": "white/gray",
+        "visualValue": "Nezekan; Zikel; Vaizel; Triniel",
+        "meaning": "Four boards share point pool.",
+        "textSourceIds": ["block-0646"],
+        "confidence": "confirmed"
+      }
+    ],
+    "screenshotOnly": [],
+    "uncertainties": ["Prose spells Vailzel once; screenshot spells Vaizel."]
+  },
+  {
+    "id": "figure-069",
+    "sourceId": "block-0659",
+    "sha256": "6110da26fb41e5f89bc775e7f331573c2b8c401ad66a22f2998863037ace3487",
+    "src": "/images/guide/6110da26fb41e5f89bc775e7f331573c2b8c401ad66a22f2998863037ace3487.png",
+    "width": 204,
+    "height": 141,
+    "alt": "Gray Attack Bonus node. The text legend preserves labeled values, colors and source qualifications.",
+    "caption": "Gray Attack Bonus node",
+    "mappings": [
+      {
+        "label": "Tooltip",
+        "color": "gray tile / white text",
+        "visualValue": "Attack; Attack Bonus+5",
+        "meaning": "Example value of recommended gray Attack Bonus tiles.",
+        "textSourceIds": ["block-0658"],
+        "confidence": "confirmed"
+      }
+    ],
+    "screenshotOnly": [],
+    "uncertainties": []
+  },
+  {
+    "id": "figure-070",
+    "sourceId": "block-0662",
+    "sha256": "899ec74c0e969b2f97753ea0010030d93f34c6961d6a36663dd958427edabc59",
+    "src": "/images/guide/899ec74c0e969b2f97753ea0010030d93f34c6961d6a36663dd958427edabc59.png",
+    "width": 1363,
+    "height": 1376,
+    "alt": "Completed Nezekan Brawler allocation example. The text legend preserves labeled values, colors and source qualifications.",
+    "caption": "Completed Nezekan Brawler allocation example",
+    "mappings": [
+      {
+        "label": "Selected board",
+        "color": "white tab / blue underline",
+        "visualValue": "Nezekan",
+        "meaning": "Caption specifically Brawler; not generic all-class route.",
+        "textSourceIds": ["block-0661"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Orange nodes",
+        "color": "orange",
+        "visualValue": "Eight visible orange corner/edge nodes",
+        "meaning": "All8 orange nodes are visibly lit in example.",
+        "textSourceIds": ["block-0653", "block-0640"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Allocation pattern",
+        "color": "lit gold-outlined gray/green/blue versus near-black tiles",
+        "visualValue": "Full board pattern preserved in source original",
+        "meaning": "Screenshot is route information; no numbered path order is provided.",
+        "textSourceIds": [
+          "block-0651",
+          "block-0652",
+          "block-0653",
+          "block-0654",
+          "block-0658",
+          "block-0661"
+        ],
+        "confidence": "confirmed"
+      }
+    ],
+    "screenshotOnly": [],
+    "uncertainties": [
+      "Cannot infer every node's name/value or acquisition sequence from glyphs; retain zoomable original. 'Finished' does not mean every tile unlocked."
+    ]
+  },
+  {
+    "id": "figure-071",
+    "sourceId": "block-0682",
+    "sha256": "37cc6f043baaf6e600307daca5eac2ff7f64f8c814dbee256b6f8b7c8614022e",
+    "src": "/images/guide/37cc6f043baaf6e600307daca5eac2ff7f64f8c814dbee256b6f8b7c8614022e.png",
+    "width": 783,
+    "height": 45,
+    "alt": "Independent colored-board tabs. The text legend preserves labeled values, colors and source qualifications.",
+    "caption": "Independent colored-board tabs",
+    "mappings": [
+      {
+        "label": "Ariel",
+        "color": "gold/orange",
+        "visualValue": "PVE",
+        "meaning": "Independent board points; Conquest/Transcendence.",
+        "textSourceIds": [
+          "block-0664",
+          "block-0666",
+          "block-0667",
+          "block-0668"
+        ],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Azphel",
+        "color": "purple",
+        "visualValue": "PVP",
+        "meaning": "Not needed for PVE in source.",
+        "textSourceIds": ["block-0664", "block-0670", "block-0671"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Marchutan",
+        "color": "green",
+        "visualValue": "General stats, mid-game",
+        "meaning": "Weapon damage stats; Yustiel crystal conversion1:1.",
+        "textSourceIds": [
+          "block-0664",
+          "block-0673",
+          "block-0674",
+          "block-0675",
+          "block-0676"
+        ],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Yustiel",
+        "color": "red/pink",
+        "visualValue": "General stats, end-game",
+        "meaning": "Attack/Defense Increase; farmable.",
+        "textSourceIds": [
+          "block-0664",
+          "block-0678",
+          "block-0679",
+          "block-0680"
+        ],
+        "confidence": "confirmed"
+      }
+    ],
+    "screenshotOnly": [],
+    "uncertainties": []
+  },
+  {
+    "id": "figure-072",
+    "sourceId": "block-0689",
+    "sha256": "aee74c0fa2d17a06fee9530589324ad23c64a2bb005503c94bf77c5fb4e70e07",
+    "src": "/images/guide/aee74c0fa2d17a06fee9530589324ad23c64a2bb005503c94bf77c5fb4e70e07.png",
+    "width": 251,
+    "height": 539,
+    "alt": "Five Pet Genus emblems. The text legend preserves labeled values, colors and source qualifications.",
+    "caption": "Five Pet Genus emblems",
+    "mappings": [
+      {
+        "label": "Vertical order",
+        "color": "blue disks with multicolor perimeter dots",
+        "visualValue": "Cogni, Fera, Natura, Varian, Special",
+        "meaning": "Top-to-bottom order; Varian fourth disk selected with cyan-white halo.",
+        "textSourceIds": ["block-0687"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Perimeter dots",
+        "color": "green/yellow/orange",
+        "visualValue": "Nine dots on each disk",
+        "meaning": "Visual slot/grade indicators; do not confuse with board points.",
+        "textSourceIds": ["block-0692"],
+        "confidence": "confirmed"
+      }
+    ],
+    "screenshotOnly": [],
+    "uncertainties": []
+  },
+  {
+    "id": "figure-073",
+    "sourceId": "block-0689",
+    "sha256": "d816f1901433c348e85e4cb7b6b9f56806f2c38e0791e0f6e75878428748357d",
+    "src": "/images/guide/d816f1901433c348e85e4cb7b6b9f56806f2c38e0791e0f6e75878428748357d.png",
+    "width": 343,
+    "height": 591,
+    "alt": "Varian Insight level10 example. The text legend preserves labeled values, colors and source qualifications.",
+    "caption": "Varian Insight level10 example",
+    "mappings": [
+      {
+        "label": "Insight bar",
+        "color": "cyan (called blue in prose)",
+        "visualValue": "Varian Insight Lv.10(MAX); preset1 selected;2 and3 available",
+        "meaning": "Progression and presets.",
+        "textSourceIds": ["block-0692", "block-0698", "block-0699"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Rows1–9",
+        "color": "yellow/orange text; padlocks",
+        "visualValue": "Boss Attack15; Max Attack20; Smite1.9%; Boss Attack12; Attack Bonus9; Damage Tolerance1.9%; Boss Attack12; Max Attack14; Smite2%",
+        "meaning": "Example Asia-style distribution; all9 padlocks visibly closed.",
+        "textSourceIds": [
+          "block-0692",
+          "block-0694",
+          "block-0725",
+          "block-0726",
+          "block-0727",
+          "block-0728"
+        ],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Analyze",
+        "color": "yellow/gold",
+        "visualValue": "F Analyze",
+        "meaning": "Reroll control.",
+        "textSourceIds": ["block-0694"],
+        "confidence": "confirmed"
+      }
+    ],
+    "screenshotOnly": ["Asia-style screenshot, not Global slot plan."],
+    "uncertainties": [
+      "Smite is source screenshot label associated contextually with prose Double Chance. Preserve both terms; formal localization equivalence not independently verified."
+    ]
+  },
+  {
+    "id": "figure-074",
+    "sourceId": "block-0690",
+    "sha256": "33e693a8bd6a4945d6c5996b0e90db29fd54c2f2ebaed4a3a7fe7c02f9ca75f5",
+    "src": "/images/guide/33e693a8bd6a4945d6c5996b0e90db29fd54c2f2ebaed4a3a7fe7c02f9ca75f5.png",
+    "width": 1100,
+    "height": 261,
+    "alt": "Slot pool and grade probabilities. The text legend preserves labeled values, colors and source qualifications.",
+    "caption": "Slot pool and grade probabilities",
+    "mappings": [
+      {
+        "label": "Slot / Insight level",
+        "color": "white selection",
+        "visualValue": "Slot1, Lv.1",
+        "meaning": "Pool is conditional on slot and Insight level.",
+        "textSourceIds": ["block-0692"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Grade probability",
+        "color": "green / gray",
+        "visualValue": "Rare10.0000%; Common90.0000%",
+        "meaning": "At displayed Lv.1.",
+        "textSourceIds": ["block-0692"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Property row",
+        "color": "green",
+        "visualValue": "Cogni Attack; value5–10; Obtain Probability1.000000%",
+        "meaning": "Screenshot-only example pool entry.",
+        "textSourceIds": ["block-0692"],
+        "confidence": "confirmed"
+      }
+    ],
+    "screenshotOnly": [],
+    "uncertainties": [
+      "Only one property and two visible grades; not complete probability table."
+    ]
+  },
+  {
+    "id": "figure-075",
+    "sourceId": "block-0696",
+    "sha256": "84c1a7d1abaadd9023f8fd3fc1683bc9d98c5bd9803bfdc448a5dcc36d61f7c0",
+    "src": "/images/guide/84c1a7d1abaadd9023f8fd3fc1683bc9d98c5bd9803bfdc448a5dcc36d61f7c0.png",
+    "width": 511,
+    "height": 1148,
+    "alt": "Genus reroll without locks. The text legend preserves labeled values, colors and source qualifications.",
+    "caption": "Genus reroll without locks",
+    "mappings": [
+      {
+        "label": "Insight",
+        "color": "cyan",
+        "visualValue": "Cogni Lv.10(MAX)",
+        "meaning": "Maxed board.",
+        "textSourceIds": ["block-0692", "block-0698"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Slot1",
+        "color": "green",
+        "visualValue": "Cogni Block 17",
+        "meaning": "Same example roll in both screenshots; dark open lock (unlocked).",
+        "textSourceIds": ["block-0694"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Slot2",
+        "color": "blue",
+        "visualValue": "PvE Defense 119",
+        "meaning": "Same example roll in both screenshots; dark open lock (unlocked).",
+        "textSourceIds": ["block-0694"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Slot3",
+        "color": "green",
+        "visualValue": "Cogni Evasion 13",
+        "meaning": "Same example roll in both screenshots; dark open lock (unlocked).",
+        "textSourceIds": ["block-0694"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Slot4",
+        "color": "yellow",
+        "visualValue": "Boss Attack 13",
+        "meaning": "Same example roll in both screenshots; dark open lock (unlocked).",
+        "textSourceIds": ["block-0694"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Slot5",
+        "color": "yellow",
+        "visualValue": "HP 87",
+        "meaning": "Same example roll in both screenshots; dark open lock (unlocked).",
+        "textSourceIds": ["block-0694"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Slot6",
+        "color": "gray",
+        "visualValue": "Cogni Evasion 5",
+        "meaning": "Same example roll in both screenshots; dark open lock (unlocked).",
+        "textSourceIds": ["block-0694"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Slot7",
+        "color": "green",
+        "visualValue": "Cogni Evasion 13",
+        "meaning": "Same example roll in both screenshots; dark open lock (unlocked).",
+        "textSourceIds": ["block-0694"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Slot8",
+        "color": "green",
+        "visualValue": "Cogni Defense 97",
+        "meaning": "Same example roll in both screenshots; dark open lock (unlocked).",
+        "textSourceIds": ["block-0694"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Slot9",
+        "color": "green",
+        "visualValue": "Cogni Defense 83",
+        "meaning": "Same example roll in both screenshots; dark open lock (unlocked).",
+        "textSourceIds": ["block-0694"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Analyze cost",
+        "color": "gold button",
+        "visualValue": "45 blue crystal +9,000 currency",
+        "meaning": "Zero locks versus first5 locked; example cost, no universal scaling formula.",
+        "textSourceIds": ["block-0694"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Auto Analysis",
+        "color": "blue button",
+        "visualValue": "Auto Analysis",
+        "meaning": "Automated reroll option.",
+        "textSourceIds": ["block-0716"],
+        "confidence": "confirmed"
+      }
+    ],
+    "screenshotOnly": [
+      "Asia-style example pools; do not use as Global stat recommendations."
+    ],
+    "uncertainties": []
+  },
+  {
+    "id": "figure-076",
+    "sourceId": "block-0696",
+    "sha256": "8533249ec0f0944fcc318faa2375fdc29c10f5a6f9b4c8af48542504bdc615c2",
+    "src": "/images/guide/8533249ec0f0944fcc318faa2375fdc29c10f5a6f9b4c8af48542504bdc615c2.png",
+    "width": 508,
+    "height": 1143,
+    "alt": "Genus reroll with five locks. The text legend preserves labeled values, colors and source qualifications.",
+    "caption": "Genus reroll with five locks",
+    "mappings": [
+      {
+        "label": "Insight",
+        "color": "cyan",
+        "visualValue": "Cogni Lv.10(MAX)",
+        "meaning": "Maxed board.",
+        "textSourceIds": ["block-0692", "block-0698"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Slot1",
+        "color": "green",
+        "visualValue": "Cogni Block 17",
+        "meaning": "Same example roll in both screenshots; bright closed lock (locked).",
+        "textSourceIds": ["block-0694"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Slot2",
+        "color": "blue",
+        "visualValue": "PvE Defense 119",
+        "meaning": "Same example roll in both screenshots; bright closed lock (locked).",
+        "textSourceIds": ["block-0694"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Slot3",
+        "color": "green",
+        "visualValue": "Cogni Evasion 13",
+        "meaning": "Same example roll in both screenshots; bright closed lock (locked).",
+        "textSourceIds": ["block-0694"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Slot4",
+        "color": "yellow",
+        "visualValue": "Boss Attack 13",
+        "meaning": "Same example roll in both screenshots; bright closed lock (locked).",
+        "textSourceIds": ["block-0694"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Slot5",
+        "color": "yellow",
+        "visualValue": "HP 87",
+        "meaning": "Same example roll in both screenshots; bright closed lock (locked).",
+        "textSourceIds": ["block-0694"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Slot6",
+        "color": "gray",
+        "visualValue": "Cogni Evasion 5",
+        "meaning": "Same example roll in both screenshots; dark open lock (unlocked).",
+        "textSourceIds": ["block-0694"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Slot7",
+        "color": "green",
+        "visualValue": "Cogni Evasion 13",
+        "meaning": "Same example roll in both screenshots; dark open lock (unlocked).",
+        "textSourceIds": ["block-0694"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Slot8",
+        "color": "green",
+        "visualValue": "Cogni Defense 97",
+        "meaning": "Same example roll in both screenshots; dark open lock (unlocked).",
+        "textSourceIds": ["block-0694"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Slot9",
+        "color": "green",
+        "visualValue": "Cogni Defense 83",
+        "meaning": "Same example roll in both screenshots; dark open lock (unlocked).",
+        "textSourceIds": ["block-0694"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Analyze cost",
+        "color": "gold button",
+        "visualValue": "215 blue crystal +43,000 currency",
+        "meaning": "Zero locks versus first5 locked; example cost, no universal scaling formula.",
+        "textSourceIds": ["block-0694"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Auto Analysis",
+        "color": "blue button",
+        "visualValue": "Auto Analysis",
+        "meaning": "Automated reroll option.",
+        "textSourceIds": ["block-0716"],
+        "confidence": "confirmed"
+      }
+    ],
+    "screenshotOnly": [
+      "Asia-style example pools; do not use as Global stat recommendations."
+    ],
+    "uncertainties": []
+  },
+  {
+    "id": "figure-077",
+    "sourceId": "block-0720",
+    "sha256": "f0481a51f722d22d5843bfe825550b37f90cbdeb487e56945df289efabef3014",
+    "src": "/images/guide/f0481a51f722d22d5843bfe825550b37f90cbdeb487e56945df289efabef3014.png",
+    "width": 1372,
+    "height": 913,
+    "alt": "Auto Analysis target and rarity colors. The text legend preserves labeled values, colors and source qualifications.",
+    "caption": "Auto Analysis target and rarity colors",
+    "mappings": [
+      {
+        "label": "Rarity legend",
+        "color": "gray / green / blue / yellow / orange",
+        "visualValue": "Common / Rare / Epic / Unique / Heroic",
+        "meaning": "Exact color-grade mapping.",
+        "textSourceIds": ["block-0707", "block-0714", "block-0716"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Slot3 target",
+        "color": "cyan active label, yellow Smite and Unique",
+        "visualValue": "Smite Unique or higher; min0.9%, max2.4%",
+        "meaning": "Illustrates prose Double Chance target on slots3/9.",
+        "textSourceIds": ["block-0716", "block-0726"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Other displayed rows",
+        "color": "gray",
+        "visualValue": "Damage Boost0.9–2.4%; Perfect Chance0.9–2.4%; Cogni Damage Boost2–4.8%; Weapon Damage Boost0.9–2.4%; Critical Damage Boost1.2–3%; Back Attack Damage Boost1.2–3%; Front Attack Damage Boost1.2–3%; PvE Damage Boost1.2–3%",
+        "meaning": "Displayed value ranges; rows except Smite targetNone.",
+        "textSourceIds": ["block-0692", "block-0716"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Auto Analysis cost",
+        "color": "gold",
+        "visualValue": "45 blue crystal;9,000 currency",
+        "meaning": "Same no-lock cost as figure075.",
+        "textSourceIds": ["block-0694", "block-0716"],
+        "confidence": "confirmed"
+      }
+    ],
+    "screenshotOnly": ["Asia-style Slot3 example."],
+    "uncertainties": [
+      "Ranges are displayed overall min/max; not separate exact bounds for every rarity.",
+      "Source step2 focuses Line4 for Global, but Auto Analysis note uses Asia-style lines3/9. Keep region distinction.",
+      "Smite=Double Chance contextual mapping, not externally verified localization."
+    ]
+  },
+  {
+    "id": "figure-078",
+    "sourceId": "block-0735",
+    "sha256": "f7c32226cd685c91f02e400a57472c25768dfe104416e9aef93f8cb831ec4cdd",
+    "src": "/images/guide/f7c32226cd685c91f02e400a57472c25768dfe104416e9aef93f8cb831ec4cdd.png",
+    "width": 194,
+    "height": 511,
+    "alt": "Cogni selected board example. The text legend preserves labeled values, colors and source qualifications.",
+    "caption": "Cogni selected board example",
+    "mappings": [
+      {
+        "label": "Selected disk",
+        "color": "cyan-white halo",
+        "visualValue": "Cogni(top); then Fera,Natura,Varian,Special",
+        "meaning": "Selection for adjacent numbered Cogni screenshot.",
+        "textSourceIds": ["block-0687", "block-0724"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Slot markers",
+        "color": "green/yellow/orange",
+        "visualValue": "Nine perimeter dots per board",
+        "meaning": "Grade indicators.",
+        "textSourceIds": ["block-0692"],
+        "confidence": "confirmed"
+      }
+    ],
+    "screenshotOnly": [],
+    "uncertainties": []
+  },
+  {
+    "id": "figure-079",
+    "sourceId": "block-0735",
+    "sha256": "507727c865a64fd3ad94a4e3f1dd7037cf9b4dccdbd223762895f335dda8d4d9",
+    "src": "/images/guide/507727c865a64fd3ad94a4e3f1dd7037cf9b4dccdbd223762895f335dda8d4d9.png",
+    "width": 309,
+    "height": 421,
+    "alt": "Explicit numbered Genus line reference. The text legend preserves labeled values, colors and source qualifications.",
+    "caption": "Explicit numbered Genus line reference",
+    "mappings": [
+      {
+        "label": "Line(slot)1",
+        "color": "orange",
+        "visualValue": "Boss Attack20",
+        "meaning": "Number annotation maps to first row.",
+        "textSourceIds": ["block-0725"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Line(slot)2",
+        "color": "green",
+        "visualValue": "Boss Attack10",
+        "meaning": "Example does not match recommended Max Attack/Attack Bonus.",
+        "textSourceIds": ["block-0727"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Line(slot)3",
+        "color": "yellow",
+        "visualValue": "Smite1.8%",
+        "meaning": "Contextual Double Chance; goal prose ideally2%.",
+        "textSourceIds": ["block-0726"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Line(slot)4",
+        "color": "yellow",
+        "visualValue": "Boss Attack15",
+        "meaning": "Asia slot4 target.",
+        "textSourceIds": ["block-0725"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Line(slot)5",
+        "color": "orange",
+        "visualValue": "Attack Bonus16",
+        "meaning": "Fallback to Max Attack.",
+        "textSourceIds": ["block-0727"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Line(slot)6",
+        "color": "orange",
+        "visualValue": "Damage Tolerance2.3%",
+        "meaning": "Defensive target.",
+        "textSourceIds": ["block-0728"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Line(slot)7",
+        "color": "green",
+        "visualValue": "Boss Attack10",
+        "meaning": "Asia slot7 target.",
+        "textSourceIds": ["block-0725"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Line(slot)8",
+        "color": "yellow",
+        "visualValue": "Attack Bonus15",
+        "meaning": "Fallback to Max Attack.",
+        "textSourceIds": ["block-0727"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Line(slot)9",
+        "color": "orange",
+        "visualValue": "Smite2.1%",
+        "meaning": "Contextual Double Chance.",
+        "textSourceIds": ["block-0726"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Insight",
+        "color": "cyan",
+        "visualValue": "Cogni Lv.10(MAX)",
+        "meaning": "All9 slots open.",
+        "textSourceIds": ["block-0698"],
+        "confidence": "confirmed"
+      }
+    ],
+    "screenshotOnly": ["Asia section."],
+    "uncertainties": [
+      "This is a numbered example, not a perfect BIS board: slot2 contradicts recommended distribution and some rolls below stated ideal.",
+      "Do not carry Asia numbering into Global guidance."
+    ]
+  },
+  {
+    "id": "figure-080",
+    "sourceId": "block-0779",
+    "sha256": "211170fe132b92b3c05d36627801ffc9da04c666a4155184b9b07da90337ca09",
+    "src": "/images/guide/211170fe132b92b3c05d36627801ffc9da04c666a4155184b9b07da90337ca09.png",
+    "width": 548,
+    "height": 515,
+    "alt": "Pet owned effects upgrade. The text legend preserves labeled values, colors and source qualifications.",
+    "caption": "Pet owned effects upgrade",
+    "mappings": [
+      {
+        "label": "Pet / level",
+        "color": "white / cyan",
+        "visualValue": "Snowfield Kalgolem; Pet Insight Lv.3 → Lv.4",
+        "meaning": "Pet upgrade rather than Genus board.",
+        "textSourceIds": ["block-0778"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Mount Sprint Stamina Cost...",
+        "color": "cyan delta",
+        "visualValue": "0.3%→0.5% (+0.2%)",
+        "meaning": "Label truncated.",
+        "textSourceIds": ["block-0778"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Evasion Bonus",
+        "color": "cyan delta",
+        "visualValue": "2→4 (+2)",
+        "meaning": "Owned passive.",
+        "textSourceIds": ["block-0778"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Constitution",
+        "color": "white",
+        "visualValue": "1",
+        "meaning": "Unchanged displayed line.",
+        "textSourceIds": ["block-0778"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Willpower",
+        "color": "cyan delta",
+        "visualValue": "0→1 (+1)",
+        "meaning": "Owned passive unlocked/increased.",
+        "textSourceIds": ["block-0778"],
+        "confidence": "confirmed"
+      }
+    ],
+    "screenshotOnly": [],
+    "uncertainties": [
+      "Mount stamina effect label truncated; do not add an unsupported suffix."
+    ]
+  },
+  {
+    "id": "figure-081",
+    "sourceId": "block-0787",
+    "sha256": "134f2e6df4e8779f2b87dca03760df31adf7b26b16b1f4ef0753892c40e38d48",
+    "src": "/images/guide/134f2e6df4e8779f2b87dca03760df31adf7b26b16b1f4ef0753892c40e38d48.png",
+    "width": 614,
+    "height": 776,
+    "alt": "Eroded Golden Wings equipped and owned stats. The text legend preserves labeled values, colors and source qualifications.",
+    "caption": "Eroded Golden Wings equipped and owned stats",
+    "mappings": [
+      {
+        "label": "Wing / preset",
+        "color": "gold name",
+        "visualValue": " +10 Eroded Golden Wings; preset1 selected,2/3 shown",
+        "meaning": "Source prose shortens name to Eroded Wings.",
+        "textSourceIds": ["block-0783", "block-0790"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Equip Effect",
+        "color": "white",
+        "visualValue": "Max Attack95; Multi-hit Chance5%; HP500; Front Attack Damage Boost3%",
+        "meaning": "Applies when equipped.",
+        "textSourceIds": [
+          "block-0784",
+          "block-0868",
+          "block-0869",
+          "block-0870",
+          "block-0871"
+        ],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Owned Effect",
+        "color": "white",
+        "visualValue": "Flight Power300; Front Attack15; Natural HP Regen50; Front Attack Damage Boost2%",
+        "meaning": "Applies when owned.",
+        "textSourceIds": [
+          "block-0785",
+          "block-0873",
+          "block-0874",
+          "block-0875",
+          "block-0876"
+        ],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Equip Skin",
+        "color": "unchecked box",
+        "visualValue": "Equip Skin",
+        "meaning": "Appearance control separate from selected statistical wing.",
+        "textSourceIds": ["block-0783"],
+        "confidence": "confirmed"
+      }
+    ],
+    "screenshotOnly": [
+      "KR-era wing example; not assumed available Global launch."
+    ],
+    "uncertainties": []
+  },
+  {
+    "id": "figure-082",
+    "sourceId": "block-0788",
+    "sha256": "701763e0bd3a30e780ff9d5dedff47a849efbddcbf5f81d75189c43ca2f55251",
+    "src": "/images/guide/701763e0bd3a30e780ff9d5dedff47a849efbddcbf5f81d75189c43ca2f55251.png",
+    "width": 605,
+    "height": 98,
+    "alt": "Wing action buttons. The text legend preserves labeled values, colors and source qualifications.",
+    "caption": "Wing action buttons",
+    "mappings": [
+      {
+        "label": "Enhance",
+        "color": "blue-gray",
+        "visualValue": "Enhance",
+        "meaning": "Upgrade owned stats.",
+        "textSourceIds": ["block-0790"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Equip",
+        "color": "gold",
+        "visualValue": "F Equip",
+        "meaning": "Equip wing stats.",
+        "textSourceIds": ["block-0784"],
+        "confidence": "confirmed"
+      }
+    ],
+    "screenshotOnly": [],
+    "uncertainties": []
+  },
+  {
+    "id": "figure-083",
+    "sourceId": "block-0797",
+    "sha256": "eb83851aaf3e9d651949aee48c0b6446d061d97f911fdad0659fff756bd4f439",
+    "src": "/images/guide/eb83851aaf3e9d651949aee48c0b6446d061d97f911fdad0659fff756bd4f439.png",
+    "width": 362,
+    "height": 504,
+    "alt": "Base Brawler Wings unlock tooltip. The text legend preserves labeled values, colors and source qualifications.",
+    "caption": "Base Brawler Wings unlock tooltip",
+    "mappings": [
+      {
+        "label": "Item",
+        "color": "gold",
+        "visualValue": "Brawler Wings(Bound); Unique Wings Unlockin...; Grants[Brawler Wings]",
+        "meaning": "Tooltip for unlock item.",
+        "textSourceIds": ["block-0790", "block-0842"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Equip Effect",
+        "color": "white",
+        "visualValue": "Status Effect Resist3%; Status Effect Chance3%; HP500; Defense Bonus400",
+        "meaning": "Contradicts prose wording that base tooltip only shows Owned Effects.",
+        "textSourceIds": [
+          "block-0843",
+          "block-0844",
+          "block-0845",
+          "block-0846",
+          "block-0847"
+        ],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Owned Effect",
+        "color": "white",
+        "visualValue": "Flight Power200; Impact-type Chance2.5%; Damage Tolerance1%",
+        "meaning": "No Weapon Damage Boost shown at base.",
+        "textSourceIds": [
+          "block-0848",
+          "block-0849",
+          "block-0850",
+          "block-0851"
+        ],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Cooldown",
+        "color": "white",
+        "visualValue": "1s",
+        "meaning": "Unlock item tooltip cooldown, not upgrade cooldown.",
+        "textSourceIds": ["block-0790"],
+        "confidence": "confirmed"
+      }
+    ],
+    "screenshotOnly": [],
+    "uncertainties": [
+      "Block0790 says tooltip will only show Owned Effects at base0; actual image includes Equip Effect too. Intended point is hidden fourth owned stat; preserve source wording with note."
+    ]
+  },
+  {
+    "id": "figure-084",
+    "sourceId": "block-0797",
+    "sha256": "c944a0fd6f38b7a3e197545d0da93755d33a401930503aa7c0bf771f4994279f",
+    "src": "/images/guide/c944a0fd6f38b7a3e197545d0da93755d33a401930503aa7c0bf771f4994279f.png",
+    "width": 584,
+    "height": 924,
+    "alt": "Brawler Wings +4 to +5 enhancement. The text legend preserves labeled values, colors and source qualifications.",
+    "caption": "Brawler Wings +4 to +5 enhancement",
+    "mappings": [
+      {
+        "label": "Level",
+        "color": "gold/cyan",
+        "visualValue": "+4 → +5",
+        "meaning": "Not max level; max10 is source prose.",
+        "textSourceIds": ["block-0790"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Flight Power",
+        "color": "green delta",
+        "visualValue": "240→250 (+10)",
+        "meaning": "First owned line improves.",
+        "textSourceIds": ["block-0792", "block-0849"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Impact-type Chance",
+        "color": "white",
+        "visualValue": "2.5%→2.5%",
+        "meaning": "Second owned line unchanged.",
+        "textSourceIds": ["block-0792", "block-0850"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Damage Tolerance",
+        "color": "white",
+        "visualValue": "1%→1%",
+        "meaning": "Third owned line unchanged.",
+        "textSourceIds": ["block-0792", "block-0851"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Weapon Damage Boost",
+        "color": "green delta",
+        "visualValue": "0.8%→1% (+0.2%)",
+        "meaning": "Hidden fourth owned line improves.",
+        "textSourceIds": ["block-0790", "block-0792", "block-0852"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Success Chance",
+        "color": "white",
+        "visualValue": "80%; MIN / minus / plus / MAX controls",
+        "meaning": "Adjustable enhancement example.",
+        "textSourceIds": ["block-0790"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Materials",
+        "color": "icons",
+        "visualValue": "960,000 / owned102.3M;8 feather-like / owned33;4,000 gold icon / owned9.9K",
+        "meaning": "Visible example required/owned counts; material names not shown.",
+        "textSourceIds": ["block-0790"],
+        "confidence": "confirmed"
+      }
+    ],
+    "screenshotOnly": [],
+    "uncertainties": [
+      "Material names absent; do not infer currency or named feathers from icons."
+    ]
+  },
+  {
+    "id": "figure-085",
+    "sourceId": "block-1014",
+    "sha256": "6d455a66c5371ced238a03ded521feb717923730f0fd124d021e1bf0199e95f2",
+    "src": "/images/guide/6d455a66c5371ced238a03ded521feb717923730f0fd124d021e1bf0199e95f2.png",
+    "width": 438,
+    "height": 372,
+    "alt": "Closet progress counter. The text legend preserves labeled values, colors and source qualifications.",
+    "caption": "Closet progress counter",
+    "mappings": [
+      {
+        "label": "Collection progress",
+        "color": "cyan arc",
+        "visualValue": "48%;454/937",
+        "meaning": "Matches Armor collection in adjacent figure086; not whole Closet total.",
+        "textSourceIds": ["block-1012"],
+        "confidence": "confirmed"
+      }
+    ],
+    "screenshotOnly": [],
+    "uncertainties": []
+  },
+  {
+    "id": "figure-086",
+    "sourceId": "block-1014",
+    "sha256": "6a9ef09211d81c6d0495aa3e390135fc0aaab38a2ca40536fdfc3170f7314f96",
+    "src": "/images/guide/6a9ef09211d81c6d0495aa3e390135fc0aaab38a2ca40536fdfc3170f7314f96.png",
+    "width": 1614,
+    "height": 944,
+    "alt": "Closet collection effects. The text legend preserves labeled values, colors and source qualifications.",
+    "caption": "Closet collection effects",
+    "mappings": [
+      {
+        "label": "Weapons / Fist",
+        "color": "cyan",
+        "visualValue": "Weapons41%,29/71; Fist67pts; Fist Attack increase+6.7%;29/71",
+        "meaning": "Specific weapon stat bonus; example500×6.7%=33.5 added to source attack contribution.",
+        "textSourceIds": ["block-1017", "block-1019"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Other class weapon rule",
+        "color": "white",
+        "visualValue": "The weapon skins of another class are not added to total collection points.",
+        "meaning": "Screenshot-only scope rule.",
+        "textSourceIds": ["block-1017"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Other class weapon counts",
+        "color": "cyan",
+        "visualValue": "13/71,36/71,14/71,15/71,15/71,15/71,9/71,14/71",
+        "meaning": "Two-column icon grid, top-to-bottom by rows; weapon names not written.",
+        "textSourceIds": ["block-1017"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Armor total",
+        "color": "white",
+        "visualValue": "48%;454/937",
+        "meaning": "Collection counter.",
+        "textSourceIds": ["block-1012"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Armor details",
+        "color": "cyan / white",
+        "visualValue": "Helm174pts,67/148,+17.4%; Pauldrons166pts,65/130,+16.6%; Top160pts,63/132,+16%; Legs149pts,59/132,+14.9%; Gloves175pts,67/132,+17.5%; Shoes180pts,68/132,+18%; Cloak166pts,65/131,+16.6%",
+        "meaning": "Per-slot Defense increase labels truncated in screenshot.",
+        "textSourceIds": ["block-1017"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Accessories total",
+        "color": "white",
+        "visualValue": "39%;78/201",
+        "meaning": "Collection counter.",
+        "textSourceIds": ["block-1012"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Accessories details",
+        "color": "cyan / white",
+        "visualValue": "Earrings113pts,40/101,Attack+11.3% and Defense+11.3%; Necklace109pts,38/100,Attack+10.9% and Defense+10.9%",
+        "meaning": "Labels visually truncated but Attack/Defense increase context is visible.",
+        "textSourceIds": ["block-1017"],
+        "confidence": "confirmed"
+      }
+    ],
+    "screenshotOnly": [],
+    "uncertainties": [
+      "Do not read48% from figure085 as account-wide completion.",
+      "Stat labels shortened with ellipses; retain originals for exact display.",
+      "Closet formula1021 has unclear brackets and defines Outfit Damage while adding Pure Attack; retain verbatim and flag before calculator use."
+    ]
+  },
+  {
+    "id": "figure-087",
+    "sourceId": "block-1146",
+    "sha256": "108599cc1bbf2e1f4dce45a86c6c03712518e5bbb18eb142574dceb1671a39fe",
+    "src": "/images/guide/108599cc1bbf2e1f4dce45a86c6c03712518e5bbb18eb142574dceb1671a39fe.png",
+    "width": 461,
+    "height": 247,
+    "alt": "Weapon attack range. The text legend preserves labeled values, colors and source qualifications.",
+    "caption": "Weapon attack range",
+    "mappings": [
+      {
+        "label": "Attack range",
+        "color": "white",
+        "visualValue": "641–709(+350)",
+        "meaning": "709 is max range endpoint,641 minimum. Prose+20 example produces641–729 and mean675→685.",
+        "textSourceIds": ["block-1141", "block-1142", "block-1143"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Weapon tooltip",
+        "color": "orange Heroic",
+        "visualValue": " +20 Splendent Nemesis Dragon L...; Heroic Fist; Item Level134(+63)",
+        "meaning": "Example item, name truncated.",
+        "textSourceIds": ["block-1141"],
+        "confidence": "confirmed"
+      }
+    ],
+    "screenshotOnly": [],
+    "uncertainties": [
+      "Meaning of(+350) is not explained here; do not fold into the example endpoints or invent complete weapon name."
+    ]
+  },
+  {
+    "id": "figure-088",
+    "sourceId": "block-1176",
+    "sha256": "cc4dc920c3588ebbbc2fdb6c9910504cd9b43bc597b8c4121994c82ce4cf1f00",
+    "src": "/images/guide/cc4dc920c3588ebbbc2fdb6c9910504cd9b43bc597b8c4121994c82ce4cf1f00.png",
+    "width": 510,
+    "height": 142,
+    "alt": "Regular Power Shard tooltip. The text legend preserves labeled values, colors and source qualifications.",
+    "caption": "Regular Power Shard tooltip",
+    "mappings": [
+      {
+        "label": "Tooltip percentage",
+        "color": "green",
+        "visualValue": "Power Shard(Bound): attacks deal5% additional damage",
+        "meaning": "Tooltip raw bonus versus source estimated realized gain4.65%.",
+        "textSourceIds": ["block-1173", "block-1174"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Flavor text",
+        "color": "white",
+        "visualValue": "Sharp fragment sealed with power of Odyle",
+        "meaning": "Retain item text as caption/alt if transcribing.",
+        "textSourceIds": ["block-1173"],
+        "confidence": "confirmed"
+      }
+    ],
+    "screenshotOnly": [],
+    "uncertainties": []
+  },
+  {
+    "id": "figure-089",
+    "sourceId": "block-1176",
+    "sha256": "b4b7d6e2cdc703536b5f730507cd64915a090884b6c50f90cb2aa7322021f8c8",
+    "src": "/images/guide/b4b7d6e2cdc703536b5f730507cd64915a090884b6c50f90cb2aa7322021f8c8.png",
+    "width": 388,
+    "height": 147,
+    "alt": "Superior Power Shard tooltip. The text legend preserves labeled values, colors and source qualifications.",
+    "caption": "Superior Power Shard tooltip",
+    "mappings": [
+      {
+        "label": "Tooltip percentage",
+        "color": "green",
+        "visualValue": "Superior Power Shard: attacks deal10% additional damage",
+        "meaning": "Tooltip raw bonus versus source estimated realized gain8.9%.",
+        "textSourceIds": ["block-1173", "block-1175"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Flavor text",
+        "color": "white",
+        "visualValue": "Sharp fragment sealed with power of Splendent Odyle",
+        "meaning": "Source item text.",
+        "textSourceIds": ["block-1173"],
+        "confidence": "confirmed"
+      }
+    ],
+    "screenshotOnly": [],
+    "uncertainties": [
+      "Prose8.9%-4.65%=4.25 percentage points, whereas parenthetical says4.05% more: relative gain gives~4.06%; preserve explicit relative-vs-percentage-point distinction."
+    ]
+  },
+  {
+    "id": "figure-090",
+    "sourceId": "block-1188",
+    "sha256": "d64b0a10c39805bde30652232a80db12929581aaa9a54aeceeff9ea09184fd43",
+    "src": "/images/guide/d64b0a10c39805bde30652232a80db12929581aaa9a54aeceeff9ea09184fd43.png",
+    "width": 1774,
+    "height": 887,
+    "alt": "Critical hit diminishing returns curve. The text legend preserves labeled values, colors and source qualifications.",
+    "caption": "Critical hit diminishing returns curve",
+    "mappings": [
+      {
+        "label": "Horizontal axis",
+        "color": "white",
+        "visualValue": "Critical Hit Stat – Target's Critical Hit Resistance(Difference); ticks0,200,400,600,800,1000,1200,1400",
+        "meaning": "Prose also applies curve to Accuracy/Block.",
+        "textSourceIds": ["block-1186", "block-1192"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Vertical axis",
+        "color": "white",
+        "visualValue": "Actual Critical Hit Chance(%); ticks0,20,40,60,80",
+        "meaning": "Percentage probability.",
+        "textSourceIds": ["block-1186", "block-1192"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Curve",
+        "color": "blue",
+        "visualValue": "Rising concave curve approaching80% from below",
+        "meaning": "Diminishing returns, not constant6–7% per100.",
+        "textSourceIds": ["block-1181", "block-1186", "block-1192"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Upper bound",
+        "color": "white dashed horizontal",
+        "visualValue": "Maximum Upper Limit(80%)",
+        "meaning": "Asymptotic-looking cap.",
+        "textSourceIds": ["block-1184", "block-1192"],
+        "confidence": "confirmed"
+      },
+      {
+        "label": "Reference point",
+        "color": "green dashed vertical and green dot",
+        "visualValue": "X=1,200 (~79%)",
+        "meaning": "Explicit graph number conflicts with prose saying1200 reaches80%.",
+        "textSourceIds": ["block-1184", "block-1185"],
+        "confidence": "confirmed"
+      }
+    ],
+    "screenshotOnly": [],
+    "uncertainties": [
+      "No exact equation is supplied in graph; do not reverse-engineer a calculator as source fact.",
+      "1200~79% image versus1200=80% prose. Block1185 dimensional arithmetic6.66…%*1200=80% omits per100 scale.",
+      "Graph appears near77–79% at1200; exact stated label~79% takes precedence over pixel-estimated coordinate."
+    ]
+  }
+]

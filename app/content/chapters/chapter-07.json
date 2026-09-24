@@ -1,0 +1,515 @@
+[
+  {
+    "slug": "shared-boards-and-tile-priorities",
+    "title": "Shared boards and tile priorities",
+    "category": "daevanion-boards",
+    "summary": "Shared white boards, tile colors, skill milestones, and a Brawler allocation example.",
+    "status": "source-uncertain",
+    "sourceUrl": "https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/edit",
+    "qualifiers": [
+      "Source recommendations, first-person statements, and testing claims are Kanon’s. Figures are captured examples rather than universal costs or ideal builds.",
+      "Captured source update: 9/20/2026. Regional and unconfirmed details remain qualified as written."
+    ],
+    "blocks": [
+      {
+        "id": "block-0632",
+        "sourceIds": ["block-0632"],
+        "kind": "heading",
+        "content": [
+          {
+            "text": "CH 7: DAEVANION BOARDS"
+          }
+        ],
+        "level": 2
+      },
+      {
+        "id": "block-0633",
+        "sourceIds": ["block-0633"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Daevanion Boards resembles the Paragon Board from Diablo 4. You have 8 total boards and each tile you unlock gives you stats and or skill levels. Respecing points is nearly free so don’t sweat being locked into your tiles when you spend them."
+          }
+        ]
+      },
+      {
+        "id": "block-0635",
+        "sourceIds": ["block-0635"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": " Each board’s starting point is in the middle and you have 4 different types of tiles:"
+          }
+        ]
+      },
+      {
+        "id": "list-block-0637",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-0637",
+              "sourceIds": ["block-0637"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Gray (basic stats)"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0638",
+              "sourceIds": ["block-0638"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Green (passive skills or double stats)"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0639",
+              "sourceIds": ["block-0639"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Blue (active skills or % stats)"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0640",
+              "sourceIds": ["block-0640"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Orange (significant stats)"
+                }
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "id": "block-0642",
+        "sourceIds": ["block-0642"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Orange Tiles are on the corners and sides requiring the most distance to get to."
+          }
+        ]
+      },
+      {
+        "id": "block-0644",
+        "sourceIds": ["block-0644"],
+        "kind": "figure",
+        "figureId": "figure-067"
+      },
+      {
+        "id": "block-0646",
+        "sourceIds": ["block-0646"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "You have 4 main white boards. Nezekan, Zikel, Vailzel, and Triniel. These boards share the same points, so if you have 100 points, you’ll use those points for all 4 white boards."
+          }
+        ]
+      },
+      {
+        "id": "block-0649",
+        "sourceIds": ["block-0649"],
+        "kind": "figure",
+        "figureId": "figure-068"
+      },
+      {
+        "id": "list-block-0651",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-0651",
+              "sourceIds": ["block-0651"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "These Board can not be maxed out"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0652",
+              "sourceIds": ["block-0652"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Prioritize getting your key Active Skills first to help hit level 12, 16, and especially 20"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0653",
+              "sourceIds": ["block-0653"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "After picking up key Active Skills, go for the important Orange tiles"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0654",
+              "sourceIds": ["block-0654"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "You’ll have enough points for all Active and Passive Skills"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0655",
+              "sourceIds": ["block-0655"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Most Orange lines are very high value but some you don’t need at all (PVE)"
+                }
+              ]
+            },
+            {
+              "id": "list-block-0656",
+              "sourceIds": [],
+              "kind": "list",
+              "ordered": false,
+              "items": [
+                [
+                  {
+                    "id": "block-0656",
+                    "sourceIds": ["block-0656"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "Multi-hit Resist on the Triniel board and Critical Damage Tolerance on Vaizel have no value in PVE"
+                      }
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "id": "block-0657",
+                    "sourceIds": ["block-0657"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "Weapon Damage Tolerance on the Marchutan board also gives no value in PVE but you can unlock it anyway considering you can infinitely farm the unlock Crystals for this board."
+                      }
+                    ]
+                  }
+                ]
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "id": "list-block-0658",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-0658",
+              "sourceIds": ["block-0658"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Attack Bonus gray tiles are value, pick up all of them eventually (can sacrifice going for Orange Multi-hit Resist and Crit Damage Tolerance tiles in the Vaizel and Triniel boards to reach Attack Bonus tiles)"
+                }
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "id": "block-0659",
+        "sourceIds": ["block-0659"],
+        "kind": "figure",
+        "figureId": "figure-069"
+      },
+      {
+        "id": "block-0661",
+        "sourceIds": ["block-0661"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "What a finished Nezekan Brawler board looks like"
+          }
+        ]
+      },
+      {
+        "id": "context-block-0661",
+        "sourceIds": [],
+        "kind": "note",
+        "label": "Allocation example",
+        "tone": "context",
+        "content": [
+          {
+            "text": "The finished Nezekan Brawler image is an allocation map with lit and dark nodes, not a numbered path or a template for every class. The source’s Vailzel spelling and screenshot Vaizel name refer to the discussed white board."
+          }
+        ]
+      },
+      {
+        "id": "block-0662",
+        "sourceIds": ["block-0662"],
+        "kind": "figure",
+        "figureId": "figure-070"
+      }
+    ]
+  },
+  {
+    "slug": "colored-daevanion-boards",
+    "title": "Colored Daevanion boards",
+    "category": "daevanion-boards",
+    "summary": "Independent PVE, PVP, mid-game and end-game boards and crystal sources.",
+    "status": "source-uncertain",
+    "sourceUrl": "https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/edit",
+    "qualifiers": [
+      "Source recommendations, first-person statements, and testing claims are Kanon’s. Figures are captured examples rather than universal costs or ideal builds.",
+      "Captured source update: 9/20/2026. Regional and unconfirmed details remain qualified as written."
+    ],
+    "blocks": [
+      {
+        "id": "block-0664",
+        "sourceIds": ["block-0664"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Then you have 4 more colored boards. These boards do not give Skill levels. These boards also do not share the same points like the first 4 boards do, they are individual."
+          }
+        ]
+      },
+      {
+        "id": "block-0666",
+        "sourceIds": ["block-0666"],
+        "kind": "heading",
+        "content": [
+          {
+            "text": "Ariel: PVE Board"
+          }
+        ],
+        "level": 3
+      },
+      {
+        "id": "list-block-0667",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-0667",
+              "sourceIds": ["block-0667"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Orange Tiles: PVE Damage Boost/Tolerance"
+                }
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "id": "list-block-0668",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-0668",
+              "sourceIds": ["block-0668"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "This board is completable by farming Dungeons (Conquest, Transcendence)"
+                }
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "id": "block-0670",
+        "sourceIds": ["block-0670"],
+        "kind": "heading",
+        "content": [
+          {
+            "text": "Azphel: PVP Board"
+          }
+        ],
+        "level": 3
+      },
+      {
+        "id": "list-block-0671",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-0671",
+              "sourceIds": ["block-0671"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Not needed for PVE"
+                }
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "id": "block-0673",
+        "sourceIds": ["block-0673"],
+        "kind": "heading",
+        "content": [
+          {
+            "text": "Marchutan: General Stats (mid-game)"
+          }
+        ],
+        "level": 3
+      },
+      {
+        "id": "list-block-0674",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-0674",
+              "sourceIds": ["block-0674"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Orange Tiles: Weapon Damage Boost/Tolerance "
+                }
+              ]
+            },
+            {
+              "id": "list-block-0675",
+              "sourceIds": [],
+              "kind": "list",
+              "ordered": false,
+              "items": [
+                [
+                  {
+                    "id": "block-0675",
+                    "sourceIds": ["block-0675"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "Weapon DMG Tolerance is worthless in PVE"
+                      }
+                    ]
+                  }
+                ]
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "id": "list-block-0676",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-0676",
+              "sourceIds": ["block-0676"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "This board is completable by farming Dungeons (Conquest, Transcendence) or converting Yustiel Crystals (1:1 ratio)"
+                }
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "id": "block-0678",
+        "sourceIds": ["block-0678"],
+        "kind": "heading",
+        "content": [
+          {
+            "text": "Yustiel: General Stats (end-game)"
+          }
+        ],
+        "level": 3
+      },
+      {
+        "id": "list-block-0679",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-0679",
+              "sourceIds": ["block-0679"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Orange Tiles: Attack/Defense Increase"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0680",
+              "sourceIds": ["block-0680"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "This board is completable by farming Dungeons (Conquest, Transcendence) "
+                }
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "id": "block-0682",
+        "sourceIds": ["block-0682"],
+        "kind": "figure",
+        "figureId": "figure-071"
+      }
+    ]
+  }
+]

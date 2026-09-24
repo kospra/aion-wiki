@@ -1,0 +1,3164 @@
+[
+  {
+    "slug": "wing-effects-and-enhancement",
+    "title": "Wing effects and enhancement",
+    "category": "wings",
+    "summary": "Equipped and owned effects, enhancement scaling, hidden lines, and launch limits.",
+    "status": "source-uncertain",
+    "sourceUrl": "https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/edit",
+    "qualifiers": [
+      "Source recommendations, first-person statements, and testing claims are Kanon’s. Figures are captured examples rather than universal costs or ideal builds.",
+      "Wings was excluded from the source’s 9/20/2026 update. KR class usage is dated 8/21/2026; launch availability varies."
+    ],
+    "blocks": [
+      {
+        "id": "block-0781",
+        "sourceIds": ["block-0781"],
+        "kind": "heading",
+        "content": [
+          {
+            "text": "CH 9: WINGS"
+          }
+        ],
+        "level": 2
+      },
+      {
+        "id": "block-0783",
+        "sourceIds": ["block-0783"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Wings provide stats in 2 ways:"
+          }
+        ]
+      },
+      {
+        "id": "block-0784",
+        "sourceIds": ["block-0784"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "1. When you equip a pair of wings (Equip Effect)"
+          }
+        ]
+      },
+      {
+        "id": "block-0785",
+        "sourceIds": ["block-0785"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "2. When you own the wings (Owned Effect)"
+          }
+        ]
+      },
+      {
+        "id": "block-0787",
+        "sourceIds": ["block-0787"],
+        "kind": "figure",
+        "figureId": "figure-081"
+      },
+      {
+        "id": "block-0788",
+        "sourceIds": ["block-0788"],
+        "kind": "figure",
+        "figureId": "figure-082"
+      },
+      {
+        "id": "block-0790",
+        "sourceIds": ["block-0790"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Wings can be upgraded or “Enhanced” up to a maximum of level 10 where the “Owned Effect” will increase. At level 0, wings will not show all their stats. When enhancing a pair of wings to +1, an additional stat will become available…in the case of the Brawler Wings (Abyss Shop Wings), the tooltip will only show the “Owned Effects” at base level 0. Upon upgrading these wings, you get Weapon Damage Boost making these wings high value. "
+          }
+        ]
+      },
+      {
+        "id": "context-block-0790",
+        "sourceIds": [],
+        "kind": "note",
+        "label": "Base tooltip conflict",
+        "tone": "uncertain",
+        "content": [
+          {
+            "text": "The source says the base tooltip only shows Owned Effects, but figure 083 visibly includes Equip and Owned sections. Its fourth owned Weapon Damage Boost line is absent at base and present after enhancement; the hidden-line explanation remains supported."
+          }
+        ]
+      },
+      {
+        "id": "block-0792",
+        "sourceIds": ["block-0792"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Additional Notes",
+            "emphasis": true,
+            "underline": true,
+            "highlight": "#f8f9fa"
+          },
+          {
+            "text": ": ",
+            "emphasis": true,
+            "highlight": "#f8f9fa"
+          },
+          {
+            "text": "When upgrading, only the top stat line and the last “hidden” stat line get upgraded.",
+            "highlight": "#f8f9fa"
+          }
+        ]
+      },
+      {
+        "id": "block-0797",
+        "sourceIds": ["block-0797"],
+        "kind": "group",
+        "label": "Related source illustrations",
+        "blocks": [
+          {
+            "id": "block-0797-figure-083",
+            "sourceIds": ["block-0797"],
+            "kind": "figure",
+            "figureId": "figure-083"
+          },
+          {
+            "id": "block-0797-figure-084",
+            "sourceIds": ["block-0797"],
+            "kind": "figure",
+            "figureId": "figure-084"
+          }
+        ]
+      },
+      {
+        "id": "block-0800",
+        "sourceIds": ["block-0800"],
+        "kind": "heading",
+        "content": [
+          {
+            "text": "Highest Value Wings to Upgrade"
+          }
+        ],
+        "level": 3
+      },
+      {
+        "id": "list-block-0801",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-0801",
+              "sourceIds": ["block-0801"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "List is in alphabetical order"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0802",
+              "sourceIds": ["block-0802"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "The 2nd and 3rd stat under the “Owned Effect” do "
+                },
+                {
+                  "text": "not ",
+                  "emphasis": true
+                },
+                {
+                  "text": "get upgraded when leveling up. I’ve indented those lines."
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0803",
+              "sourceIds": ["block-0803"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "All the wings below should be upgraded to max eventually, but I will highlight a few that have the highest prio like "
+                },
+                {
+                  "text": "this",
+                  "highlight": "#ffff00"
+                },
+                {
+                  "text": " "
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0804",
+              "sourceIds": ["block-0804"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Some of these will not be in the game at launch"
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "wing-stat-catalog",
+    "title": "Wing stat catalog",
+    "category": "wings",
+    "summary": "All twelve wing entries with distinct Equip and Owned effects and source indentation.",
+    "status": "source-uncertain",
+    "sourceUrl": "https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/edit",
+    "qualifiers": [
+      "Source recommendations, first-person statements, and testing claims are Kanon’s. Figures are captured examples rather than universal costs or ideal builds.",
+      "Wings was excluded from the source’s 9/20/2026 update. KR class usage is dated 8/21/2026; launch availability varies."
+    ],
+    "blocks": [
+      {
+        "id": "wing-catalog-reading",
+        "sourceIds": [],
+        "kind": "note",
+        "label": "Reading owned effects",
+        "tone": "context",
+        "content": [
+          {
+            "text": "Equip Effect and Owned Effect are separate lists. Within each Owned Effect, source-indented lines two and three do not scale with enhancement; the first and final lines do. Only Nightmare Wings’ owned Double Chance is yellow-highlighted in the captured catalog. Wing headings are not highlighted."
+          }
+        ]
+      },
+      {
+        "id": "wing-block-0806",
+        "sourceIds": [],
+        "kind": "group",
+        "label": "Wing catalog entry",
+        "blocks": [
+          {
+            "id": "block-0806",
+            "sourceIds": ["block-0806"],
+            "kind": "heading",
+            "content": [
+              {
+                "text": "Azure Flash Wings"
+              }
+            ],
+            "level": 3
+          },
+          {
+            "id": "list-block-0807",
+            "sourceIds": [],
+            "kind": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "id": "block-0807",
+                  "sourceIds": ["block-0807"],
+                  "kind": "paragraph",
+                  "content": [
+                    {
+                      "text": "Equip Effect",
+                      "underline": true
+                    }
+                  ]
+                },
+                {
+                  "id": "list-block-0808",
+                  "sourceIds": [],
+                  "kind": "list",
+                  "ordered": false,
+                  "items": [
+                    [
+                      {
+                        "id": "block-0808",
+                        "sourceIds": ["block-0808"],
+                        "kind": "paragraph",
+                        "content": [
+                          {
+                            "text": "Damage Boost"
+                          }
+                        ]
+                      }
+                    ],
+                    [
+                      {
+                        "id": "block-0809",
+                        "sourceIds": ["block-0809"],
+                        "kind": "paragraph",
+                        "content": [
+                          {
+                            "text": "Accuracy Bonus"
+                          }
+                        ]
+                      }
+                    ],
+                    [
+                      {
+                        "id": "block-0810",
+                        "sourceIds": ["block-0810"],
+                        "kind": "paragraph",
+                        "content": [
+                          {
+                            "text": "Block"
+                          }
+                        ]
+                      }
+                    ],
+                    [
+                      {
+                        "id": "block-0811",
+                        "sourceIds": ["block-0811"],
+                        "kind": "paragraph",
+                        "content": [
+                          {
+                            "text": "Endurance"
+                          }
+                        ]
+                      }
+                    ]
+                  ]
+                }
+              ]
+            ]
+          },
+          {
+            "id": "list-block-0812",
+            "sourceIds": [],
+            "kind": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "id": "block-0812",
+                  "sourceIds": ["block-0812"],
+                  "kind": "paragraph",
+                  "content": [
+                    {
+                      "text": "Owned Effect",
+                      "underline": true
+                    }
+                  ]
+                },
+                {
+                  "id": "list-block-0813",
+                  "sourceIds": [],
+                  "kind": "list",
+                  "ordered": false,
+                  "items": [
+                    [
+                      {
+                        "id": "block-0813",
+                        "sourceIds": ["block-0813"],
+                        "kind": "paragraph",
+                        "content": [
+                          {
+                            "text": "Flight Power"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "list-block-0814",
+                        "sourceIds": [],
+                        "kind": "list",
+                        "ordered": false,
+                        "items": [
+                          [
+                            {
+                              "id": "block-0814",
+                              "sourceIds": ["block-0814"],
+                              "kind": "paragraph",
+                              "content": [
+                                {
+                                  "text": "Damage Boost"
+                                }
+                              ]
+                            }
+                          ],
+                          [
+                            {
+                              "id": "block-0815",
+                              "sourceIds": ["block-0815"],
+                              "kind": "paragraph",
+                              "content": [
+                                {
+                                  "text": "Block"
+                                }
+                              ]
+                            }
+                          ]
+                        ]
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "id": "list-block-0816",
+                  "sourceIds": [],
+                  "kind": "list",
+                  "ordered": false,
+                  "items": [
+                    [
+                      {
+                        "id": "block-0816",
+                        "sourceIds": ["block-0816"],
+                        "kind": "paragraph",
+                        "content": [
+                          {
+                            "text": "Weapon Damage Boost"
+                          }
+                        ]
+                      }
+                    ]
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "wing-block-0818",
+        "sourceIds": [],
+        "kind": "group",
+        "label": "Wing catalog entry",
+        "blocks": [
+          {
+            "id": "block-0818",
+            "sourceIds": ["block-0818"],
+            "kind": "heading",
+            "content": [
+              {
+                "text": "Awaken Pride Wings"
+              }
+            ],
+            "level": 3
+          },
+          {
+            "id": "list-block-0819",
+            "sourceIds": [],
+            "kind": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "id": "block-0819",
+                  "sourceIds": ["block-0819"],
+                  "kind": "paragraph",
+                  "content": [
+                    {
+                      "text": "Equip Effect",
+                      "underline": true
+                    }
+                  ]
+                },
+                {
+                  "id": "list-block-0820",
+                  "sourceIds": [],
+                  "kind": "list",
+                  "ordered": false,
+                  "items": [
+                    [
+                      {
+                        "id": "block-0820",
+                        "sourceIds": ["block-0820"],
+                        "kind": "paragraph",
+                        "content": [
+                          {
+                            "text": "Max Attack"
+                          }
+                        ]
+                      }
+                    ],
+                    [
+                      {
+                        "id": "block-0821",
+                        "sourceIds": ["block-0821"],
+                        "kind": "paragraph",
+                        "content": [
+                          {
+                            "text": "Back Attack Critical Hit"
+                          }
+                        ]
+                      }
+                    ],
+                    [
+                      {
+                        "id": "block-0822",
+                        "sourceIds": ["block-0822"],
+                        "kind": "paragraph",
+                        "content": [
+                          {
+                            "text": "Back Attack Damage Boost"
+                          }
+                        ]
+                      }
+                    ],
+                    [
+                      {
+                        "id": "block-0823",
+                        "sourceIds": ["block-0823"],
+                        "kind": "paragraph",
+                        "content": [
+                          {
+                            "text": "Penetration"
+                          }
+                        ]
+                      }
+                    ]
+                  ]
+                }
+              ]
+            ]
+          },
+          {
+            "id": "list-block-0824",
+            "sourceIds": [],
+            "kind": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "id": "block-0824",
+                  "sourceIds": ["block-0824"],
+                  "kind": "paragraph",
+                  "content": [
+                    {
+                      "text": "Owned Effect",
+                      "underline": true
+                    }
+                  ]
+                },
+                {
+                  "id": "list-block-0825",
+                  "sourceIds": [],
+                  "kind": "list",
+                  "ordered": false,
+                  "items": [
+                    [
+                      {
+                        "id": "block-0825",
+                        "sourceIds": ["block-0825"],
+                        "kind": "paragraph",
+                        "content": [
+                          {
+                            "text": "Flight Power"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "list-block-0826",
+                        "sourceIds": [],
+                        "kind": "list",
+                        "ordered": false,
+                        "items": [
+                          [
+                            {
+                              "id": "block-0826",
+                              "sourceIds": ["block-0826"],
+                              "kind": "paragraph",
+                              "content": [
+                                {
+                                  "text": "Attack Bonus"
+                                }
+                              ]
+                            }
+                          ],
+                          [
+                            {
+                              "id": "block-0827",
+                              "sourceIds": ["block-0827"],
+                              "kind": "paragraph",
+                              "content": [
+                                {
+                                  "text": "HP"
+                                }
+                              ]
+                            }
+                          ]
+                        ]
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "id": "list-block-0828",
+                  "sourceIds": [],
+                  "kind": "list",
+                  "ordered": false,
+                  "items": [
+                    [
+                      {
+                        "id": "block-0828",
+                        "sourceIds": ["block-0828"],
+                        "kind": "paragraph",
+                        "content": [
+                          {
+                            "text": "Back Attack Damage Boost"
+                          }
+                        ]
+                      }
+                    ]
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "wing-block-0830",
+        "sourceIds": [],
+        "kind": "group",
+        "label": "Wing catalog entry",
+        "blocks": [
+          {
+            "id": "block-0830",
+            "sourceIds": ["block-0830"],
+            "kind": "heading",
+            "content": [
+              {
+                "text": "Blue Wave Wings"
+              }
+            ],
+            "level": 3
+          },
+          {
+            "id": "list-block-0831",
+            "sourceIds": [],
+            "kind": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "id": "block-0831",
+                  "sourceIds": ["block-0831"],
+                  "kind": "paragraph",
+                  "content": [
+                    {
+                      "text": "Equip Effect",
+                      "underline": true
+                    }
+                  ]
+                },
+                {
+                  "id": "list-block-0832",
+                  "sourceIds": [],
+                  "kind": "list",
+                  "ordered": false,
+                  "items": [
+                    [
+                      {
+                        "id": "block-0832",
+                        "sourceIds": ["block-0832"],
+                        "kind": "paragraph",
+                        "content": [
+                          {
+                            "text": "Evasion Bonus"
+                          }
+                        ]
+                      }
+                    ],
+                    [
+                      {
+                        "id": "block-0833",
+                        "sourceIds": ["block-0833"],
+                        "kind": "paragraph",
+                        "content": [
+                          {
+                            "text": "Critical Hit Resist"
+                          }
+                        ]
+                      }
+                    ],
+                    [
+                      {
+                        "id": "block-0834",
+                        "sourceIds": ["block-0834"],
+                        "kind": "paragraph",
+                        "content": [
+                          {
+                            "text": "MP"
+                          }
+                        ]
+                      }
+                    ],
+                    [
+                      {
+                        "id": "block-0835",
+                        "sourceIds": ["block-0835"],
+                        "kind": "paragraph",
+                        "content": [
+                          {
+                            "text": "Natural MP Regen"
+                          }
+                        ]
+                      }
+                    ]
+                  ]
+                }
+              ]
+            ]
+          },
+          {
+            "id": "list-block-0836",
+            "sourceIds": [],
+            "kind": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "id": "block-0836",
+                  "sourceIds": ["block-0836"],
+                  "kind": "paragraph",
+                  "content": [
+                    {
+                      "text": "Owned Effect",
+                      "underline": true
+                    }
+                  ]
+                },
+                {
+                  "id": "list-block-0837",
+                  "sourceIds": [],
+                  "kind": "list",
+                  "ordered": false,
+                  "items": [
+                    [
+                      {
+                        "id": "block-0837",
+                        "sourceIds": ["block-0837"],
+                        "kind": "paragraph",
+                        "content": [
+                          {
+                            "text": "Flight Power Critical Hit Resist"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "list-block-0838",
+                        "sourceIds": [],
+                        "kind": "list",
+                        "ordered": false,
+                        "items": [
+                          [
+                            {
+                              "id": "block-0838",
+                              "sourceIds": ["block-0838"],
+                              "kind": "paragraph",
+                              "content": [
+                                {
+                                  "text": "Critical Hit Resist"
+                                }
+                              ]
+                            }
+                          ],
+                          [
+                            {
+                              "id": "block-0839",
+                              "sourceIds": ["block-0839"],
+                              "kind": "paragraph",
+                              "content": [
+                                {
+                                  "text": "Back Attack Critical Hit Resist"
+                                }
+                              ]
+                            }
+                          ]
+                        ]
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "id": "list-block-0840",
+                  "sourceIds": [],
+                  "kind": "list",
+                  "ordered": false,
+                  "items": [
+                    [
+                      {
+                        "id": "block-0840",
+                        "sourceIds": ["block-0840"],
+                        "kind": "paragraph",
+                        "content": [
+                          {
+                            "text": "PVE Damage Boost"
+                          }
+                        ]
+                      }
+                    ]
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "wing-block-0842",
+        "sourceIds": [],
+        "kind": "group",
+        "label": "Wing catalog entry",
+        "blocks": [
+          {
+            "id": "block-0842",
+            "sourceIds": ["block-0842"],
+            "kind": "heading",
+            "content": [
+              {
+                "text": "Brawler Wings"
+              }
+            ],
+            "level": 3
+          },
+          {
+            "id": "list-block-0843",
+            "sourceIds": [],
+            "kind": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "id": "block-0843",
+                  "sourceIds": ["block-0843"],
+                  "kind": "paragraph",
+                  "content": [
+                    {
+                      "text": "Equip Effect",
+                      "underline": true
+                    }
+                  ]
+                },
+                {
+                  "id": "list-block-0844",
+                  "sourceIds": [],
+                  "kind": "list",
+                  "ordered": false,
+                  "items": [
+                    [
+                      {
+                        "id": "block-0844",
+                        "sourceIds": ["block-0844"],
+                        "kind": "paragraph",
+                        "content": [
+                          {
+                            "text": "Defense Bonus"
+                          }
+                        ]
+                      }
+                    ],
+                    [
+                      {
+                        "id": "block-0845",
+                        "sourceIds": ["block-0845"],
+                        "kind": "paragraph",
+                        "content": [
+                          {
+                            "text": "Status Effect Chance"
+                          }
+                        ]
+                      }
+                    ],
+                    [
+                      {
+                        "id": "block-0846",
+                        "sourceIds": ["block-0846"],
+                        "kind": "paragraph",
+                        "content": [
+                          {
+                            "text": "Status Effect Resist"
+                          }
+                        ]
+                      }
+                    ],
+                    [
+                      {
+                        "id": "block-0847",
+                        "sourceIds": ["block-0847"],
+                        "kind": "paragraph",
+                        "content": [
+                          {
+                            "text": "HP"
+                          }
+                        ]
+                      }
+                    ]
+                  ]
+                }
+              ]
+            ]
+          },
+          {
+            "id": "list-block-0848",
+            "sourceIds": [],
+            "kind": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "id": "block-0848",
+                  "sourceIds": ["block-0848"],
+                  "kind": "paragraph",
+                  "content": [
+                    {
+                      "text": "Owned Effect",
+                      "underline": true
+                    }
+                  ]
+                },
+                {
+                  "id": "list-block-0849",
+                  "sourceIds": [],
+                  "kind": "list",
+                  "ordered": false,
+                  "items": [
+                    [
+                      {
+                        "id": "block-0849",
+                        "sourceIds": ["block-0849"],
+                        "kind": "paragraph",
+                        "content": [
+                          {
+                            "text": "Flight Power"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "list-block-0850",
+                        "sourceIds": [],
+                        "kind": "list",
+                        "ordered": false,
+                        "items": [
+                          [
+                            {
+                              "id": "block-0850",
+                              "sourceIds": ["block-0850"],
+                              "kind": "paragraph",
+                              "content": [
+                                {
+                                  "text": "Impact-type Chance"
+                                }
+                              ]
+                            }
+                          ],
+                          [
+                            {
+                              "id": "block-0851",
+                              "sourceIds": ["block-0851"],
+                              "kind": "paragraph",
+                              "content": [
+                                {
+                                  "text": "Damage Tolerance"
+                                }
+                              ]
+                            }
+                          ]
+                        ]
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "id": "list-block-0852",
+                  "sourceIds": [],
+                  "kind": "list",
+                  "ordered": false,
+                  "items": [
+                    [
+                      {
+                        "id": "block-0852",
+                        "sourceIds": ["block-0852"],
+                        "kind": "paragraph",
+                        "content": [
+                          {
+                            "text": "Weapon Damage Boost"
+                          }
+                        ]
+                      }
+                    ]
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "wing-block-0854",
+        "sourceIds": [],
+        "kind": "group",
+        "label": "Wing catalog entry",
+        "blocks": [
+          {
+            "id": "block-0854",
+            "sourceIds": ["block-0854"],
+            "kind": "heading",
+            "content": [
+              {
+                "text": "Dramata Nest Wings"
+              }
+            ],
+            "level": 3
+          },
+          {
+            "id": "list-block-0855",
+            "sourceIds": [],
+            "kind": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "id": "block-0855",
+                  "sourceIds": ["block-0855"],
+                  "kind": "paragraph",
+                  "content": [
+                    {
+                      "text": "Equip Effect",
+                      "underline": true
+                    }
+                  ]
+                },
+                {
+                  "id": "list-block-0856",
+                  "sourceIds": [],
+                  "kind": "list",
+                  "ordered": false,
+                  "items": [
+                    [
+                      {
+                        "id": "block-0856",
+                        "sourceIds": ["block-0856"],
+                        "kind": "paragraph",
+                        "content": [
+                          {
+                            "text": "PVE Attack"
+                          }
+                        ]
+                      }
+                    ],
+                    [
+                      {
+                        "id": "block-0857",
+                        "sourceIds": ["block-0857"],
+                        "kind": "paragraph",
+                        "content": [
+                          {
+                            "text": "PVE Defense"
+                          }
+                        ]
+                      }
+                    ],
+                    [
+                      {
+                        "id": "block-0858",
+                        "sourceIds": ["block-0858"],
+                        "kind": "paragraph",
+                        "content": [
+                          {
+                            "text": "PVE Accuracy"
+                          }
+                        ]
+                      }
+                    ],
+                    [
+                      {
+                        "id": "block-0859",
+                        "sourceIds": ["block-0859"],
+                        "kind": "paragraph",
+                        "content": [
+                          {
+                            "text": "PVE Damage Boost"
+                          }
+                        ]
+                      }
+                    ]
+                  ]
+                }
+              ]
+            ]
+          },
+          {
+            "id": "list-block-0860",
+            "sourceIds": [],
+            "kind": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "id": "block-0860",
+                  "sourceIds": ["block-0860"],
+                  "kind": "paragraph",
+                  "content": [
+                    {
+                      "text": "Owned Effect",
+                      "underline": true
+                    }
+                  ]
+                },
+                {
+                  "id": "list-block-0861",
+                  "sourceIds": [],
+                  "kind": "list",
+                  "ordered": false,
+                  "items": [
+                    [
+                      {
+                        "id": "block-0861",
+                        "sourceIds": ["block-0861"],
+                        "kind": "paragraph",
+                        "content": [
+                          {
+                            "text": "Flight Power"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "list-block-0862",
+                        "sourceIds": [],
+                        "kind": "list",
+                        "ordered": false,
+                        "items": [
+                          [
+                            {
+                              "id": "block-0862",
+                              "sourceIds": ["block-0862"],
+                              "kind": "paragraph",
+                              "content": [
+                                {
+                                  "text": "Attack Bonus"
+                                }
+                              ]
+                            }
+                          ],
+                          [
+                            {
+                              "id": "block-0863",
+                              "sourceIds": ["block-0863"],
+                              "kind": "paragraph",
+                              "content": [
+                                {
+                                  "text": "Accuracy Bonus"
+                                }
+                              ]
+                            }
+                          ]
+                        ]
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "id": "list-block-0864",
+                  "sourceIds": [],
+                  "kind": "list",
+                  "ordered": false,
+                  "items": [
+                    [
+                      {
+                        "id": "block-0864",
+                        "sourceIds": ["block-0864"],
+                        "kind": "paragraph",
+                        "content": [
+                          {
+                            "text": "Damage Boost"
+                          }
+                        ]
+                      }
+                    ]
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "wing-block-0866",
+        "sourceIds": [],
+        "kind": "group",
+        "label": "Wing catalog entry",
+        "blocks": [
+          {
+            "id": "block-0866",
+            "sourceIds": ["block-0866"],
+            "kind": "heading",
+            "content": [
+              {
+                "text": "Eroded Wings (BIS Equip for Front Attackers)"
+              }
+            ],
+            "level": 3
+          },
+          {
+            "id": "list-block-0867",
+            "sourceIds": [],
+            "kind": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "id": "block-0867",
+                  "sourceIds": ["block-0867"],
+                  "kind": "paragraph",
+                  "content": [
+                    {
+                      "text": "Equip Effect",
+                      "underline": true
+                    }
+                  ]
+                },
+                {
+                  "id": "list-block-0868",
+                  "sourceIds": [],
+                  "kind": "list",
+                  "ordered": false,
+                  "items": [
+                    [
+                      {
+                        "id": "block-0868",
+                        "sourceIds": ["block-0868"],
+                        "kind": "paragraph",
+                        "content": [
+                          {
+                            "text": "Max Attack"
+                          }
+                        ]
+                      }
+                    ],
+                    [
+                      {
+                        "id": "block-0869",
+                        "sourceIds": ["block-0869"],
+                        "kind": "paragraph",
+                        "content": [
+                          {
+                            "text": "Multi-hit Chance"
+                          }
+                        ]
+                      }
+                    ],
+                    [
+                      {
+                        "id": "block-0870",
+                        "sourceIds": ["block-0870"],
+                        "kind": "paragraph",
+                        "content": [
+                          {
+                            "text": "HP"
+                          }
+                        ]
+                      }
+                    ],
+                    [
+                      {
+                        "id": "block-0871",
+                        "sourceIds": ["block-0871"],
+                        "kind": "paragraph",
+                        "content": [
+                          {
+                            "text": "Front Attack Damage Boost"
+                          }
+                        ]
+                      }
+                    ]
+                  ]
+                }
+              ]
+            ]
+          },
+          {
+            "id": "list-block-0872",
+            "sourceIds": [],
+            "kind": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "id": "block-0872",
+                  "sourceIds": ["block-0872"],
+                  "kind": "paragraph",
+                  "content": [
+                    {
+                      "text": "Owned Effect",
+                      "underline": true
+                    }
+                  ]
+                },
+                {
+                  "id": "list-block-0873",
+                  "sourceIds": [],
+                  "kind": "list",
+                  "ordered": false,
+                  "items": [
+                    [
+                      {
+                        "id": "block-0873",
+                        "sourceIds": ["block-0873"],
+                        "kind": "paragraph",
+                        "content": [
+                          {
+                            "text": "Flight Power"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "list-block-0874",
+                        "sourceIds": [],
+                        "kind": "list",
+                        "ordered": false,
+                        "items": [
+                          [
+                            {
+                              "id": "block-0874",
+                              "sourceIds": ["block-0874"],
+                              "kind": "paragraph",
+                              "content": [
+                                {
+                                  "text": "Front Attack"
+                                }
+                              ]
+                            }
+                          ],
+                          [
+                            {
+                              "id": "block-0875",
+                              "sourceIds": ["block-0875"],
+                              "kind": "paragraph",
+                              "content": [
+                                {
+                                  "text": "Natural HP Regen"
+                                }
+                              ]
+                            }
+                          ]
+                        ]
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "id": "list-block-0876",
+                  "sourceIds": [],
+                  "kind": "list",
+                  "ordered": false,
+                  "items": [
+                    [
+                      {
+                        "id": "block-0876",
+                        "sourceIds": ["block-0876"],
+                        "kind": "paragraph",
+                        "content": [
+                          {
+                            "text": "Front Attack Damage Boost"
+                          }
+                        ]
+                      }
+                    ]
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "wing-block-0878",
+        "sourceIds": [],
+        "kind": "group",
+        "label": "Wing catalog entry",
+        "blocks": [
+          {
+            "id": "block-0878",
+            "sourceIds": ["block-0878"],
+            "kind": "heading",
+            "content": [
+              {
+                "text": "Forest Spirit Wings"
+              }
+            ],
+            "level": 3
+          },
+          {
+            "id": "list-block-0879",
+            "sourceIds": [],
+            "kind": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "id": "block-0879",
+                  "sourceIds": ["block-0879"],
+                  "kind": "paragraph",
+                  "content": [
+                    {
+                      "text": "Equip Effect",
+                      "underline": true
+                    }
+                  ]
+                },
+                {
+                  "id": "list-block-0880",
+                  "sourceIds": [],
+                  "kind": "list",
+                  "ordered": false,
+                  "items": [
+                    [
+                      {
+                        "id": "block-0880",
+                        "sourceIds": ["block-0880"],
+                        "kind": "paragraph",
+                        "content": [
+                          {
+                            "text": "Boss Attack"
+                          }
+                        ]
+                      }
+                    ],
+                    [
+                      {
+                        "id": "block-0881",
+                        "sourceIds": ["block-0881"],
+                        "kind": "paragraph",
+                        "content": [
+                          {
+                            "text": "Defense Bonus"
+                          }
+                        ]
+                      }
+                    ],
+                    [
+                      {
+                        "id": "block-0882",
+                        "sourceIds": ["block-0882"],
+                        "kind": "paragraph",
+                        "content": [
+                          {
+                            "text": "Damage Tolerance"
+                          }
+                        ]
+                      }
+                    ],
+                    [
+                      {
+                        "id": "block-0883",
+                        "sourceIds": ["block-0883"],
+                        "kind": "paragraph",
+                        "content": [
+                          {
+                            "text": "Boss Damage Boost"
+                          }
+                        ]
+                      }
+                    ]
+                  ]
+                }
+              ]
+            ]
+          },
+          {
+            "id": "list-block-0884",
+            "sourceIds": [],
+            "kind": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "id": "block-0884",
+                  "sourceIds": ["block-0884"],
+                  "kind": "paragraph",
+                  "content": [
+                    {
+                      "text": "Owned Effect",
+                      "underline": true
+                    }
+                  ]
+                },
+                {
+                  "id": "list-block-0885",
+                  "sourceIds": [],
+                  "kind": "list",
+                  "ordered": false,
+                  "items": [
+                    [
+                      {
+                        "id": "block-0885",
+                        "sourceIds": ["block-0885"],
+                        "kind": "paragraph",
+                        "content": [
+                          {
+                            "text": "Flight Power"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "list-block-0886",
+                        "sourceIds": [],
+                        "kind": "list",
+                        "ordered": false,
+                        "items": [
+                          [
+                            {
+                              "id": "block-0886",
+                              "sourceIds": ["block-0886"],
+                              "kind": "paragraph",
+                              "content": [
+                                {
+                                  "text": "Damage Tolerance"
+                                }
+                              ]
+                            }
+                          ],
+                          [
+                            {
+                              "id": "block-0887",
+                              "sourceIds": ["block-0887"],
+                              "kind": "paragraph",
+                              "content": [
+                                {
+                                  "text": "Boss attack"
+                                }
+                              ]
+                            }
+                          ]
+                        ]
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "id": "list-block-0888",
+                  "sourceIds": [],
+                  "kind": "list",
+                  "ordered": false,
+                  "items": [
+                    [
+                      {
+                        "id": "block-0888",
+                        "sourceIds": ["block-0888"],
+                        "kind": "paragraph",
+                        "content": [
+                          {
+                            "text": "PVE Damage Boost"
+                          }
+                        ]
+                      }
+                    ]
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "wing-block-0890",
+        "sourceIds": [],
+        "kind": "group",
+        "label": "Wing catalog entry",
+        "blocks": [
+          {
+            "id": "block-0890",
+            "sourceIds": ["block-0890"],
+            "kind": "heading",
+            "content": [
+              {
+                "text": "Illusory Echo Wings"
+              }
+            ],
+            "level": 3
+          },
+          {
+            "id": "list-block-0891",
+            "sourceIds": [],
+            "kind": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "id": "block-0891",
+                  "sourceIds": ["block-0891"],
+                  "kind": "paragraph",
+                  "content": [
+                    {
+                      "text": "Equip Effect",
+                      "underline": true
+                    }
+                  ]
+                },
+                {
+                  "id": "list-block-0892",
+                  "sourceIds": [],
+                  "kind": "list",
+                  "ordered": false,
+                  "items": [
+                    [
+                      {
+                        "id": "block-0892",
+                        "sourceIds": ["block-0892"],
+                        "kind": "paragraph",
+                        "content": [
+                          {
+                            "text": "Max Attack"
+                          }
+                        ]
+                      }
+                    ],
+                    [
+                      {
+                        "id": "block-0893",
+                        "sourceIds": ["block-0893"],
+                        "kind": "paragraph",
+                        "content": [
+                          {
+                            "text": "Critical Hit"
+                          }
+                        ]
+                      }
+                    ],
+                    [
+                      {
+                        "id": "block-0894",
+                        "sourceIds": ["block-0894"],
+                        "kind": "paragraph",
+                        "content": [
+                          {
+                            "text": "Penetration"
+                          }
+                        ]
+                      }
+                    ],
+                    [
+                      {
+                        "id": "block-0895",
+                        "sourceIds": ["block-0895"],
+                        "kind": "paragraph",
+                        "content": [
+                          {
+                            "text": "Perfect Chance"
+                          }
+                        ]
+                      }
+                    ]
+                  ]
+                }
+              ]
+            ]
+          },
+          {
+            "id": "list-block-0896",
+            "sourceIds": [],
+            "kind": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "id": "block-0896",
+                  "sourceIds": ["block-0896"],
+                  "kind": "paragraph",
+                  "content": [
+                    {
+                      "text": "Owned Effect",
+                      "underline": true
+                    }
+                  ]
+                },
+                {
+                  "id": "list-block-0897",
+                  "sourceIds": [],
+                  "kind": "list",
+                  "ordered": false,
+                  "items": [
+                    [
+                      {
+                        "id": "block-0897",
+                        "sourceIds": ["block-0897"],
+                        "kind": "paragraph",
+                        "content": [
+                          {
+                            "text": "Flight Power"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "list-block-0898",
+                        "sourceIds": [],
+                        "kind": "list",
+                        "ordered": false,
+                        "items": [
+                          [
+                            {
+                              "id": "block-0898",
+                              "sourceIds": ["block-0898"],
+                              "kind": "paragraph",
+                              "content": [
+                                {
+                                  "text": "Double Chance"
+                                }
+                              ]
+                            }
+                          ],
+                          [
+                            {
+                              "id": "block-0899",
+                              "sourceIds": ["block-0899"],
+                              "kind": "paragraph",
+                              "content": [
+                                {
+                                  "text": "Perfect Chance"
+                                }
+                              ]
+                            }
+                          ]
+                        ]
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "id": "list-block-0900",
+                  "sourceIds": [],
+                  "kind": "list",
+                  "ordered": false,
+                  "items": [
+                    [
+                      {
+                        "id": "block-0900",
+                        "sourceIds": ["block-0900"],
+                        "kind": "paragraph",
+                        "content": [
+                          {
+                            "text": "Max Attack"
+                          }
+                        ]
+                      }
+                    ]
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "wing-block-0902",
+        "sourceIds": [],
+        "kind": "group",
+        "label": "Wing catalog entry",
+        "blocks": [
+          {
+            "id": "block-0902",
+            "sourceIds": ["block-0902"],
+            "kind": "heading",
+            "content": [
+              {
+                "text": "Nightmare Wings"
+              }
+            ],
+            "level": 3
+          },
+          {
+            "id": "list-block-0903",
+            "sourceIds": [],
+            "kind": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "id": "block-0903",
+                  "sourceIds": ["block-0903"],
+                  "kind": "paragraph",
+                  "content": [
+                    {
+                      "text": "Equip Effect",
+                      "underline": true
+                    }
+                  ]
+                },
+                {
+                  "id": "list-block-0904",
+                  "sourceIds": [],
+                  "kind": "list",
+                  "ordered": false,
+                  "items": [
+                    [
+                      {
+                        "id": "block-0904",
+                        "sourceIds": ["block-0904"],
+                        "kind": "paragraph",
+                        "content": [
+                          {
+                            "text": "Attack Bonus"
+                          }
+                        ]
+                      }
+                    ],
+                    [
+                      {
+                        "id": "block-0905",
+                        "sourceIds": ["block-0905"],
+                        "kind": "paragraph",
+                        "content": [
+                          {
+                            "text": "Accuracy Bonus"
+                          }
+                        ]
+                      }
+                    ],
+                    [
+                      {
+                        "id": "block-0906",
+                        "sourceIds": ["block-0906"],
+                        "kind": "paragraph",
+                        "content": [
+                          {
+                            "text": "Critical Hit"
+                          }
+                        ]
+                      }
+                    ],
+                    [
+                      {
+                        "id": "block-0907",
+                        "sourceIds": ["block-0907"],
+                        "kind": "paragraph",
+                        "content": [
+                          {
+                            "text": "Boss Damage Boost"
+                          }
+                        ]
+                      }
+                    ]
+                  ]
+                }
+              ]
+            ]
+          },
+          {
+            "id": "list-block-0908",
+            "sourceIds": [],
+            "kind": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "id": "block-0908",
+                  "sourceIds": ["block-0908"],
+                  "kind": "paragraph",
+                  "content": [
+                    {
+                      "text": "Owned Effect",
+                      "underline": true
+                    }
+                  ]
+                },
+                {
+                  "id": "list-block-0909",
+                  "sourceIds": [],
+                  "kind": "list",
+                  "ordered": false,
+                  "items": [
+                    [
+                      {
+                        "id": "block-0909",
+                        "sourceIds": ["block-0909"],
+                        "kind": "paragraph",
+                        "content": [
+                          {
+                            "text": "Flight Power"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "list-block-0910",
+                        "sourceIds": [],
+                        "kind": "list",
+                        "ordered": false,
+                        "items": [
+                          [
+                            {
+                              "id": "block-0910",
+                              "sourceIds": ["block-0910"],
+                              "kind": "paragraph",
+                              "content": [
+                                {
+                                  "text": "Boss Attack"
+                                }
+                              ]
+                            }
+                          ],
+                          [
+                            {
+                              "id": "block-0911",
+                              "sourceIds": ["block-0911"],
+                              "kind": "paragraph",
+                              "content": [
+                                {
+                                  "text": "Boss Defense"
+                                }
+                              ]
+                            }
+                          ]
+                        ]
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "id": "list-block-0912",
+                  "sourceIds": [],
+                  "kind": "list",
+                  "ordered": false,
+                  "items": [
+                    [
+                      {
+                        "id": "block-0912",
+                        "sourceIds": ["block-0912"],
+                        "kind": "paragraph",
+                        "content": [
+                          {
+                            "text": "Double Chance",
+                            "highlight": "#ffff00"
+                          }
+                        ]
+                      }
+                    ]
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "wing-block-0914",
+        "sourceIds": [],
+        "kind": "group",
+        "label": "Wing catalog entry",
+        "blocks": [
+          {
+            "id": "block-0914",
+            "sourceIds": ["block-0914"],
+            "kind": "heading",
+            "content": [
+              {
+                "text": "Salvation Wings"
+              }
+            ],
+            "level": 3
+          },
+          {
+            "id": "list-block-0915",
+            "sourceIds": [],
+            "kind": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "id": "block-0915",
+                  "sourceIds": ["block-0915"],
+                  "kind": "paragraph",
+                  "content": [
+                    {
+                      "text": "Equip Effect",
+                      "underline": true
+                    }
+                  ]
+                },
+                {
+                  "id": "list-block-0916",
+                  "sourceIds": [],
+                  "kind": "list",
+                  "ordered": false,
+                  "items": [
+                    [
+                      {
+                        "id": "block-0916",
+                        "sourceIds": ["block-0916"],
+                        "kind": "paragraph",
+                        "content": [
+                          {
+                            "text": "Critical Hit"
+                          }
+                        ]
+                      }
+                    ],
+                    [
+                      {
+                        "id": "block-0917",
+                        "sourceIds": ["block-0917"],
+                        "kind": "paragraph",
+                        "content": [
+                          {
+                            "text": "Penetration"
+                          }
+                        ]
+                      }
+                    ],
+                    [
+                      {
+                        "id": "block-0918",
+                        "sourceIds": ["block-0918"],
+                        "kind": "paragraph",
+                        "content": [
+                          {
+                            "text": "Front Attack"
+                          }
+                        ]
+                      }
+                    ],
+                    [
+                      {
+                        "id": "block-0919",
+                        "sourceIds": ["block-0919"],
+                        "kind": "paragraph",
+                        "content": [
+                          {
+                            "text": "Front Attack Damage Boost"
+                          }
+                        ]
+                      }
+                    ]
+                  ]
+                }
+              ]
+            ]
+          },
+          {
+            "id": "list-block-0920",
+            "sourceIds": [],
+            "kind": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "id": "block-0920",
+                  "sourceIds": ["block-0920"],
+                  "kind": "paragraph",
+                  "content": [
+                    {
+                      "text": "Owned Effect",
+                      "underline": true
+                    }
+                  ]
+                },
+                {
+                  "id": "list-block-0921",
+                  "sourceIds": [],
+                  "kind": "list",
+                  "ordered": false,
+                  "items": [
+                    [
+                      {
+                        "id": "block-0921",
+                        "sourceIds": ["block-0921"],
+                        "kind": "paragraph",
+                        "content": [
+                          {
+                            "text": "Flight Power"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "list-block-0922",
+                        "sourceIds": [],
+                        "kind": "list",
+                        "ordered": false,
+                        "items": [
+                          [
+                            {
+                              "id": "block-0922",
+                              "sourceIds": ["block-0922"],
+                              "kind": "paragraph",
+                              "content": [
+                                {
+                                  "text": "Front Defense"
+                                }
+                              ]
+                            }
+                          ],
+                          [
+                            {
+                              "id": "block-0923",
+                              "sourceIds": ["block-0923"],
+                              "kind": "paragraph",
+                              "content": [
+                                {
+                                  "text": "PVE Defense"
+                                }
+                              ]
+                            }
+                          ]
+                        ]
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "id": "list-block-0924",
+                  "sourceIds": [],
+                  "kind": "list",
+                  "ordered": false,
+                  "items": [
+                    [
+                      {
+                        "id": "block-0924",
+                        "sourceIds": ["block-0924"],
+                        "kind": "paragraph",
+                        "content": [
+                          {
+                            "text": "Front Attack Damage Boost"
+                          }
+                        ]
+                      }
+                    ]
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "wing-block-0926",
+        "sourceIds": [],
+        "kind": "group",
+        "label": "Wing catalog entry",
+        "blocks": [
+          {
+            "id": "block-0926",
+            "sourceIds": ["block-0926"],
+            "kind": "heading",
+            "content": [
+              {
+                "text": "Talisra "
+              }
+            ],
+            "level": 3
+          },
+          {
+            "id": "list-block-0927",
+            "sourceIds": [],
+            "kind": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "id": "block-0927",
+                  "sourceIds": ["block-0927"],
+                  "kind": "paragraph",
+                  "content": [
+                    {
+                      "text": "Equip Effect",
+                      "underline": true
+                    }
+                  ]
+                },
+                {
+                  "id": "list-block-0928",
+                  "sourceIds": [],
+                  "kind": "list",
+                  "ordered": false,
+                  "items": [
+                    [
+                      {
+                        "id": "block-0928",
+                        "sourceIds": ["block-0928"],
+                        "kind": "paragraph",
+                        "content": [
+                          {
+                            "text": "Attack Bonus"
+                          }
+                        ]
+                      }
+                    ],
+                    [
+                      {
+                        "id": "block-0929",
+                        "sourceIds": ["block-0929"],
+                        "kind": "paragraph",
+                        "content": [
+                          {
+                            "text": "Defense Bonus"
+                          }
+                        ]
+                      }
+                    ],
+                    [
+                      {
+                        "id": "block-0930",
+                        "sourceIds": ["block-0930"],
+                        "kind": "paragraph",
+                        "content": [
+                          {
+                            "text": "Accuracy Bonus"
+                          }
+                        ]
+                      }
+                    ],
+                    [
+                      {
+                        "id": "block-0931",
+                        "sourceIds": ["block-0931"],
+                        "kind": "paragraph",
+                        "content": [
+                          {
+                            "text": "Cooldown Reduction"
+                          }
+                        ]
+                      }
+                    ]
+                  ]
+                }
+              ]
+            ]
+          },
+          {
+            "id": "list-block-0932",
+            "sourceIds": [],
+            "kind": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "id": "block-0932",
+                  "sourceIds": ["block-0932"],
+                  "kind": "paragraph",
+                  "content": [
+                    {
+                      "text": "Owned Effect",
+                      "underline": true
+                    }
+                  ]
+                },
+                {
+                  "id": "list-block-0933",
+                  "sourceIds": [],
+                  "kind": "list",
+                  "ordered": false,
+                  "items": [
+                    [
+                      {
+                        "id": "block-0933",
+                        "sourceIds": ["block-0933"],
+                        "kind": "paragraph",
+                        "content": [
+                          {
+                            "text": "Flight Power"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "list-block-0934",
+                        "sourceIds": [],
+                        "kind": "list",
+                        "ordered": false,
+                        "items": [
+                          [
+                            {
+                              "id": "block-0934",
+                              "sourceIds": ["block-0934"],
+                              "kind": "paragraph",
+                              "content": [
+                                {
+                                  "text": "Defense Bonus"
+                                }
+                              ]
+                            }
+                          ],
+                          [
+                            {
+                              "id": "block-0935",
+                              "sourceIds": ["block-0935"],
+                              "kind": "paragraph",
+                              "content": [
+                                {
+                                  "text": "Evasion Bonus"
+                                }
+                              ]
+                            }
+                          ]
+                        ]
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "id": "list-block-0936",
+                  "sourceIds": [],
+                  "kind": "list",
+                  "ordered": false,
+                  "items": [
+                    [
+                      {
+                        "id": "block-0936",
+                        "sourceIds": ["block-0936"],
+                        "kind": "paragraph",
+                        "content": [
+                          {
+                            "text": "Attack Bonus"
+                          }
+                        ]
+                      }
+                    ]
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "wing-block-0938",
+        "sourceIds": [],
+        "kind": "group",
+        "label": "Wing catalog entry",
+        "blocks": [
+          {
+            "id": "block-0938",
+            "sourceIds": ["block-0938"],
+            "kind": "heading",
+            "content": [
+              {
+                "text": "Ultimate Daeva Wings"
+              }
+            ],
+            "level": 3
+          },
+          {
+            "id": "list-block-0939",
+            "sourceIds": [],
+            "kind": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "id": "block-0939",
+                  "sourceIds": ["block-0939"],
+                  "kind": "paragraph",
+                  "content": [
+                    {
+                      "text": "Equip Effect",
+                      "underline": true
+                    }
+                  ]
+                },
+                {
+                  "id": "list-block-0940",
+                  "sourceIds": [],
+                  "kind": "list",
+                  "ordered": false,
+                  "items": [
+                    [
+                      {
+                        "id": "block-0940",
+                        "sourceIds": ["block-0940"],
+                        "kind": "paragraph",
+                        "content": [
+                          {
+                            "text": "Defense Bonus"
+                          }
+                        ]
+                      }
+                    ],
+                    [
+                      {
+                        "id": "block-0941",
+                        "sourceIds": ["block-0941"],
+                        "kind": "paragraph",
+                        "content": [
+                          {
+                            "text": "HP"
+                          }
+                        ]
+                      }
+                    ],
+                    [
+                      {
+                        "id": "block-0942",
+                        "sourceIds": ["block-0942"],
+                        "kind": "paragraph",
+                        "content": [
+                          {
+                            "text": "MP"
+                          }
+                        ]
+                      }
+                    ],
+                    [
+                      {
+                        "id": "block-0943",
+                        "sourceIds": ["block-0943"],
+                        "kind": "paragraph",
+                        "content": [
+                          {
+                            "text": "Penetration"
+                          }
+                        ]
+                      }
+                    ]
+                  ]
+                }
+              ]
+            ]
+          },
+          {
+            "id": "list-block-0944",
+            "sourceIds": [],
+            "kind": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "id": "block-0944",
+                  "sourceIds": ["block-0944"],
+                  "kind": "paragraph",
+                  "content": [
+                    {
+                      "text": "Owned Effect",
+                      "underline": true
+                    }
+                  ]
+                },
+                {
+                  "id": "list-block-0945",
+                  "sourceIds": [],
+                  "kind": "list",
+                  "ordered": false,
+                  "items": [
+                    [
+                      {
+                        "id": "block-0945",
+                        "sourceIds": ["block-0945"],
+                        "kind": "paragraph",
+                        "content": [
+                          {
+                            "text": "Flight Power"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "list-block-0946",
+                        "sourceIds": [],
+                        "kind": "list",
+                        "ordered": false,
+                        "items": [
+                          [
+                            {
+                              "id": "block-0946",
+                              "sourceIds": ["block-0946"],
+                              "kind": "paragraph",
+                              "content": [
+                                {
+                                  "text": "Penetration"
+                                }
+                              ]
+                            }
+                          ],
+                          [
+                            {
+                              "id": "block-0947",
+                              "sourceIds": ["block-0947"],
+                              "kind": "paragraph",
+                              "content": [
+                                {
+                                  "text": "Accuracy Bonus"
+                                }
+                              ]
+                            }
+                          ]
+                        ]
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "id": "list-block-0948",
+                  "sourceIds": [],
+                  "kind": "list",
+                  "ordered": false,
+                  "items": [
+                    [
+                      {
+                        "id": "block-0948",
+                        "sourceIds": ["block-0948"],
+                        "kind": "paragraph",
+                        "content": [
+                          {
+                            "text": "Attack Bonus"
+                          }
+                        ]
+                      }
+                    ]
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "kr-class-wing-rankings-and-positional-faq",
+    "title": "KR class wing rankings and positional FAQ",
+    "category": "wings",
+    "summary": "KR class usage dated August 21, 2026 and the source’s positional damage FAQ.",
+    "status": "source-uncertain",
+    "sourceUrl": "https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/edit",
+    "qualifiers": [
+      "Source recommendations, first-person statements, and testing claims are Kanon’s. Figures are captured examples rather than universal costs or ideal builds.",
+      "Wings was excluded from the source’s 9/20/2026 update. KR class usage is dated 8/21/2026; launch availability varies."
+    ],
+    "blocks": [
+      {
+        "id": "block-0951",
+        "sourceIds": ["block-0951"],
+        "kind": "heading",
+        "content": [
+          {
+            "text": "TOP WINGS FOR EACH CLASS (KR as of 8/21/2026)"
+          }
+        ],
+        "level": 3
+      },
+      {
+        "id": "block-0953",
+        "sourceIds": ["block-0953"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Based on "
+          },
+          {
+            "text": "https://aion2tool.com/statistics/jobstats",
+            "underline": true,
+            "href": "https://aion2tool.com/statistics/jobstats"
+          },
+          {
+            "text": " "
+          }
+        ]
+      },
+      {
+        "id": "context-block-0953",
+        "sourceIds": [],
+        "kind": "note",
+        "label": "Dated usage sample",
+        "tone": "context",
+        "content": [
+          {
+            "text": "These percentages describe KR usage as of August 21, 2026. The source’s September 20 update explicitly excluded Wings. The Assassin prediction about Awaken Pride overtaking Talisra is a prediction, not an observed later ranking."
+          }
+        ]
+      },
+      {
+        "id": "block-0955",
+        "sourceIds": ["block-0955"],
+        "kind": "heading",
+        "content": [
+          {
+            "text": "Assassin"
+          }
+        ],
+        "level": 3
+      },
+      {
+        "id": "list-block-0956",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": true,
+        "items": [
+          [
+            {
+              "id": "block-0956",
+              "sourceIds": ["block-0956"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Talisra’s Wings (58%)"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0957",
+              "sourceIds": ["block-0957"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Awaken Pride Wings (30%)"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0958",
+              "sourceIds": ["block-0958"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Illusory Echo Wings (3%)"
+                }
+              ]
+            }
+          ]
+        ],
+        "start": 1
+      },
+      {
+        "id": "block-0960",
+        "sourceIds": ["block-0960"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Additional Notes",
+            "emphasis": true,
+            "underline": true,
+            "highlight": "#f8f9fa"
+          },
+          {
+            "text": ": ",
+            "emphasis": true,
+            "highlight": "#f8f9fa"
+          },
+          {
+            "text": "Awaken Pride Wings just released and will overtake the Talisra",
+            "highlight": "#f8f9fa"
+          }
+        ]
+      },
+      {
+        "id": "block-0962",
+        "sourceIds": ["block-0962"],
+        "kind": "heading",
+        "content": [
+          {
+            "text": "Brawler"
+          }
+        ],
+        "level": 3
+      },
+      {
+        "id": "list-block-0963",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": true,
+        "items": [
+          [
+            {
+              "id": "block-0963",
+              "sourceIds": ["block-0963"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Erroded Wings  (60%)"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0964",
+              "sourceIds": ["block-0964"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Talisra Wings (34.5%)"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0965",
+              "sourceIds": ["block-0965"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Salvation (1.5%)"
+                }
+              ]
+            }
+          ]
+        ],
+        "start": 1
+      },
+      {
+        "id": "block-0967",
+        "sourceIds": ["block-0967"],
+        "kind": "heading",
+        "content": [
+          {
+            "text": "Templar"
+          }
+        ],
+        "level": 3
+      },
+      {
+        "id": "list-block-0968",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": true,
+        "items": [
+          [
+            {
+              "id": "block-0968",
+              "sourceIds": ["block-0968"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Erroded Wings (77%)"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0969",
+              "sourceIds": ["block-0969"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Talisra Wings (9%)"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0970",
+              "sourceIds": ["block-0970"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Brawler Wings (3.5%)"
+                }
+              ]
+            }
+          ]
+        ],
+        "start": 1
+      },
+      {
+        "id": "block-0972",
+        "sourceIds": ["block-0972"],
+        "kind": "heading",
+        "content": [
+          {
+            "text": "Gladiator"
+          }
+        ],
+        "level": 3
+      },
+      {
+        "id": "list-block-0973",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": true,
+        "items": [
+          [
+            {
+              "id": "block-0973",
+              "sourceIds": ["block-0973"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Erroded Wings (73%)"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0974",
+              "sourceIds": ["block-0974"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Talisra’s Wings (18.5%)"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0975",
+              "sourceIds": ["block-0975"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Dark Veil Wings (3.5%)"
+                }
+              ]
+            }
+          ]
+        ],
+        "start": 1
+      },
+      {
+        "id": "block-0977",
+        "sourceIds": ["block-0977"],
+        "kind": "heading",
+        "content": [
+          {
+            "text": "Ranger"
+          }
+        ],
+        "level": 3
+      },
+      {
+        "id": "list-block-0978",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": true,
+        "items": [
+          [
+            {
+              "id": "block-0978",
+              "sourceIds": ["block-0978"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Erroded Wings (54.5%)"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0979",
+              "sourceIds": ["block-0979"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Talisra Wings (25.5%)"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0980",
+              "sourceIds": ["block-0980"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Illusory Echo Wings (6.5%)"
+                }
+              ]
+            }
+          ]
+        ],
+        "start": 1
+      },
+      {
+        "id": "block-0982",
+        "sourceIds": ["block-0982"],
+        "kind": "heading",
+        "content": [
+          {
+            "text": "Sorcerer"
+          }
+        ],
+        "level": 3
+      },
+      {
+        "id": "list-block-0983",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": true,
+        "items": [
+          [
+            {
+              "id": "block-0983",
+              "sourceIds": ["block-0983"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Talisra Wings (91.5%)"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0984",
+              "sourceIds": ["block-0984"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Erroded Wings (5%)"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0985",
+              "sourceIds": ["block-0985"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Brawler Wings (2.5%)"
+                }
+              ]
+            }
+          ]
+        ],
+        "start": 1
+      },
+      {
+        "id": "block-0987",
+        "sourceIds": ["block-0987"],
+        "kind": "heading",
+        "content": [
+          {
+            "text": "Spiritmaster"
+          }
+        ],
+        "level": 3
+      },
+      {
+        "id": "list-block-0988",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": true,
+        "items": [
+          [
+            {
+              "id": "block-0988",
+              "sourceIds": ["block-0988"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Erroded "
+                },
+                {
+                  "text": "Wings"
+                },
+                {
+                  "text": " (45%)"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0989",
+              "sourceIds": ["block-0989"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Talisra Wings (43.5%)"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0990",
+              "sourceIds": ["block-0990"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Brawler Wings (5.5%)"
+                }
+              ]
+            }
+          ]
+        ],
+        "start": 1
+      },
+      {
+        "id": "block-0992",
+        "sourceIds": ["block-0992"],
+        "kind": "heading",
+        "content": [
+          {
+            "text": "Cleric "
+          }
+        ],
+        "level": 3
+      },
+      {
+        "id": "list-block-0993",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": true,
+        "items": [
+          [
+            {
+              "id": "block-0993",
+              "sourceIds": ["block-0993"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Eroded Wings (45%)"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0994",
+              "sourceIds": ["block-0994"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Talisra Wings (35%)"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0995",
+              "sourceIds": ["block-0995"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Illusory Echo Wings (9%)"
+                }
+              ]
+            }
+          ]
+        ],
+        "start": 1
+      },
+      {
+        "id": "block-0997",
+        "sourceIds": ["block-0997"],
+        "kind": "heading",
+        "content": [
+          {
+            "text": "Chanter"
+          }
+        ],
+        "level": 3
+      },
+      {
+        "id": "list-block-0998",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": true,
+        "items": [
+          [
+            {
+              "id": "block-0998",
+              "sourceIds": ["block-0998"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Eroded Wings (45%)"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0999",
+              "sourceIds": ["block-0999"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Talisra Wings (23%)"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-1000",
+              "sourceIds": ["block-1000"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Awaken Pride Wings (12.5%)"
+                }
+              ]
+            }
+          ]
+        ],
+        "start": 1
+      },
+      {
+        "id": "block-1002",
+        "sourceIds": ["block-1002"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "QUICK FAQ: ",
+            "strong": true,
+            "highlight": "#f8f9fa"
+          }
+        ]
+      },
+      {
+        "id": "block-1003",
+        "sourceIds": ["block-1003"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Q:",
+            "strong": true
+          },
+          {
+            "text": " Why is everyone running Eroded (Front Attack Damage Boost wings)? "
+          }
+        ]
+      },
+      {
+        "id": "block-1004",
+        "sourceIds": ["block-1004"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "A: ",
+            "strong": true
+          },
+          {
+            "text": "Frontal/Back Attack Damage Boost is a newer stat that was introduced and it is in its own multiplicative damage bucket. Due to the nature of Front/Back Damage Boost being a very high value damage stat, ranged classes have begun to incorporate it into their builds despite having less access to the stat compared to melee positional classes"
+          }
+        ]
+      },
+      {
+        "id": "block-1006",
+        "sourceIds": ["block-1006"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Q:",
+            "strong": true
+          },
+          {
+            "text": " What about Sorcerer and Spiritmaster, it doesn’t seem like they are running it?"
+          }
+        ]
+      },
+      {
+        "id": "block-1007",
+        "sourceIds": ["block-1007"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "A",
+            "strong": true
+          },
+          {
+            "text": ": Simply put, these two classes have abilities in their kit that do not take advantage of Front/Back Attack Boost."
+          }
+        ]
+      }
+    ]
+  }
+]

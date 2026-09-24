@@ -1,0 +1,2956 @@
+[
+  {
+    "slug": "stat-efficiency-and-diminishing-returns",
+    "title": "Stat efficiency and diminishing returns",
+    "category": "how-stats-work",
+    "summary": "Aion Research Lab attribution, conditional KR values, and Double Chance examples.",
+    "status": "source-uncertain",
+    "sourceUrl": "https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/edit",
+    "qualifiers": [
+      "Source recommendations, first-person statements, and testing claims are Kanon’s. Figures are captured examples rather than universal costs or ideal builds.",
+      "Captured source update: 9/20/2026. Regional and unconfirmed details remain qualified as written.",
+      "Efficiency values assume an ideal KR end-game build at the start of Season 1, level 50 and Lava Heart armor, including support buffs. Global launch, future KR, class buffs and diminishing returns can change these values."
+    ],
+    "blocks": [
+      {
+        "id": "block-1026",
+        "sourceIds": ["block-1026"],
+        "kind": "heading",
+        "content": [
+          {
+            "text": "CH 11: HOW STATS WORK (DAMAGE FORMULA)"
+          }
+        ],
+        "level": 2
+      },
+      {
+        "id": "block-1028",
+        "sourceIds": ["block-1028"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "This chapter will include a full breakdown of how all the stats work including detailed formulas. Some of these equations are not known to anyone yet and are becoming public for the first time with this doc. ",
+            "emphasis": true
+          }
+        ]
+      },
+      {
+        "id": "block-1029",
+        "sourceIds": ["block-1029"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "I want to give a special shoutout to a well-recognized Korean Youtuber “Aion Research Lab” and his friends for discovering a lot of the formulas and equations listed out in this section. I spent a lot of time discussing numbers with him and it is STILL a work in progress…understandably so, considering the amount of sheer stats and convolution Aion 2 is with Damage. ",
+            "emphasis": true
+          }
+        ]
+      },
+      {
+        "id": "block-1030",
+        "sourceIds": ["block-1030"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Updates will be made on any new discoveries including fixes, but until then this is the most accurate up-to-date info we have on how all the stats work. I’ve tried my best to lay this out in the easiest to understand way while preserving the details.",
+            "emphasis": true
+          }
+        ]
+      },
+      {
+        "id": "block-1031",
+        "sourceIds": ["block-1031"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "“Aion Research Lab” ",
+            "emphasis": true
+          },
+          {
+            "text": "YouTube Channel Link",
+            "emphasis": true,
+            "underline": true,
+            "href": "https://www.youtube.com/@%EC%95%84%EC%9D%B4%EC%98%A8%EC%97%B0%EA%B5%AC%EC%86%8C"
+          }
+        ]
+      },
+      {
+        "id": "context-block-1031",
+        "sourceIds": [],
+        "kind": "note",
+        "label": "Source attribution",
+        "tone": "context",
+        "content": [
+          {
+            "text": "Kanon credits Aion Research Lab and his friends for these equations and describes the work as ongoing. First-person discovery and testing claims below remain attributed to that source."
+          }
+        ]
+      },
+      {
+        "id": "block-1032",
+        "sourceIds": ["block-1032"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "—",
+            "emphasis": true
+          }
+        ]
+      },
+      {
+        "id": "block-1033",
+        "sourceIds": ["block-1033"],
+        "kind": "heading",
+        "content": [
+          {
+            "text": "End-game Stat Value"
+          }
+        ],
+        "level": 3
+      },
+      {
+        "id": "block-1035",
+        "sourceIds": ["block-1035"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "The following shows the damage efficiency for offensive stats based on current end-game Korea (on an ideal build) which is currently at the start of Season 1 (Start of level 50 and Lava Heart armor introduction). These stats also incorporate support buffs.",
+            "emphasis": true
+          }
+        ]
+      },
+      {
+        "id": "block-1037",
+        "sourceIds": ["block-1037"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Generally speaking, diminishing returns are a thing. This means the values below will be different for Global launch (as well as future KR since more stats are added) considering we will have less stats, therefore less diminishing return impact. There will be a greater discrepancy with some stats for global launch. For example, Front/Back Damage Boost starts at a base value of 0% vs Critical Damage starting at 50%. The first 10% added to both stats favor Front/Back Damage Boost due to diminishing returns.",
+            "emphasis": true
+          }
+        ]
+      },
+      {
+        "id": "block-1039",
+        "sourceIds": ["block-1039"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Also keep in mind certain classes have access to some buffs which diminish the value of certain stats the more you stack them (for example, the Critical Damage Boost stat with Gladiator).",
+            "emphasis": true
+          }
+        ]
+      },
+      {
+        "id": "block-1040",
+        "sourceIds": ["block-1040"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Before we dive into the numbers, quick explanation on…"
+          }
+        ]
+      },
+      {
+        "id": "block-1041",
+        "sourceIds": ["block-1041"],
+        "kind": "heading",
+        "content": [
+          {
+            "text": "How Diminishing Returns Work using Double Chance Efficiency Example"
+          }
+        ],
+        "level": 3
+      },
+      {
+        "id": "block-1042",
+        "sourceIds": ["block-1042"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "What is Double Chance?",
+            "strong": true
+          }
+        ]
+      },
+      {
+        "id": "block-1043",
+        "sourceIds": ["block-1043"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "A:",
+            "strong": true
+          },
+          {
+            "text": " It gives you a certain chance to deal "
+          },
+          {
+            "text": "2× damage",
+            "strong": true
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      {
+        "id": "block-1044",
+        "sourceIds": ["block-1044"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "If my normal damage is "
+          },
+          {
+            "text": "1",
+            "strong": true
+          },
+          {
+            "text": ", then when Double Chanceprocs, the damage becomes "
+          },
+          {
+            "text": "2",
+            "strong": true
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      {
+        "id": "block-1045",
+        "sourceIds": ["block-1045"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "How much stronger does 1% Double Chance make you?",
+            "strong": true
+          }
+        ]
+      },
+      {
+        "id": "block-1046",
+        "sourceIds": ["block-1046"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Imagine that you have a "
+          },
+          {
+            "text": "1% chance for your salary to be doubled",
+            "strong": true
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      {
+        "id": "block-1047",
+        "sourceIds": ["block-1047"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "If your salary is "
+          },
+          {
+            "text": "1,000,000 won",
+            "strong": true
+          },
+          {
+            "text": ", then over 100 paychecks:"
+          }
+        ]
+      },
+      {
+        "id": "block-1048",
+        "sourceIds": ["block-1048"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "1,000,000 won × 100 = 100,000,000 won + 1,000,000 won",
+            "strong": true
+          }
+        ]
+      },
+      {
+        "id": "block-1049",
+        "sourceIds": ["block-1049"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Since this represents receiving your salary 100 times, divide the total by 100 to find out how much you receive "
+          },
+          {
+            "text": "on average per paycheck",
+            "strong": true
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      {
+        "id": "block-1051",
+        "sourceIds": ["block-1051"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "My normal damage is "
+          },
+          {
+            "text": "1",
+            "strong": true
+          },
+          {
+            "text": ", and when Double Chance procs, it becomes "
+          },
+          {
+            "text": "2",
+            "strong": true
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      {
+        "id": "block-1052",
+        "sourceIds": ["block-1052"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Double Chance ",
+            "strong": true
+          },
+          {
+            "text": "0% → 1%",
+            "strong": true
+          }
+        ]
+      },
+      {
+        "id": "block-1053",
+        "sourceIds": ["block-1053"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "How much does my DPS increase?"
+          }
+        ]
+      },
+      {
+        "id": "block-1054",
+        "sourceIds": ["block-1054"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "A: 1.01 → 1% DPS increase",
+            "strong": true
+          }
+        ]
+      },
+      {
+        "id": "block-1055",
+        "sourceIds": ["block-1055"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Double Chance ",
+            "strong": true
+          },
+          {
+            "text": "0% → 2%",
+            "strong": true
+          }
+        ]
+      },
+      {
+        "id": "block-1056",
+        "sourceIds": ["block-1056"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "How much does my DPS increase?"
+          }
+        ]
+      },
+      {
+        "id": "block-1057",
+        "sourceIds": ["block-1057"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "A: 1.02 → 2% DPS increase",
+            "strong": true
+          }
+        ]
+      },
+      {
+        "id": "block-1058",
+        "sourceIds": ["block-1058"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Double Chance ",
+            "strong": true
+          },
+          {
+            "text": "0% → 50%",
+            "strong": true
+          }
+        ]
+      },
+      {
+        "id": "block-1059",
+        "sourceIds": ["block-1059"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "How much does my DPS increase?"
+          }
+        ]
+      },
+      {
+        "id": "block-1060",
+        "sourceIds": ["block-1060"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "A: 1.5 → 50% DPS increase",
+            "strong": true
+          }
+        ]
+      },
+      {
+        "id": "block-1062",
+        "sourceIds": ["block-1062"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Double Chance ",
+            "strong": true
+          },
+          {
+            "text": "1% → 2%",
+            "strong": true
+          }
+        ]
+      },
+      {
+        "id": "block-1063",
+        "sourceIds": ["block-1063"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "How much does my DPS increase?"
+          }
+        ]
+      },
+      {
+        "id": "block-1064",
+        "sourceIds": ["block-1064"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "A: 0.99%",
+            "strong": true
+          }
+        ]
+      },
+      {
+        "id": "block-1065",
+        "sourceIds": ["block-1065"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "At "
+          },
+          {
+            "text": "1% Double Chance:",
+            "strong": true
+          },
+          {
+            "text": " 101 total damage"
+          },
+          {
+            "text": "At "
+          },
+          {
+            "text": "2% Double Chance:",
+            "strong": true
+          },
+          {
+            "text": " 102 total damage"
+          }
+        ]
+      },
+      {
+        "id": "block-1066",
+        "sourceIds": ["block-1066"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "So going from 101 → 102 is approximately a "
+          },
+          {
+            "text": "0.99% actual DPS increase",
+            "strong": true
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      {
+        "id": "block-1068",
+        "sourceIds": ["block-1068"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Practical Calculation",
+            "strong": true
+          }
+        ]
+      },
+      {
+        "id": "block-1069",
+        "sourceIds": ["block-1069"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "At 80% Double Chance, how efficient is another +1% Double Chance?",
+            "strong": true
+          }
+        ]
+      },
+      {
+        "id": "block-1070",
+        "sourceIds": ["block-1070"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Assumptions:"
+          }
+        ]
+      },
+      {
+        "id": "block-1071",
+        "sourceIds": ["block-1071"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Double Chance Resistance: 30%",
+            "strong": true,
+            "breakAfter": true
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "보빛 + 대징 support buffs: +12% Double Chance",
+            "strong": true
+          }
+        ]
+      },
+      {
+        "id": "context-block-1071",
+        "sourceIds": [],
+        "kind": "note",
+        "label": "Untranslated source shorthand",
+        "tone": "uncertain",
+        "content": [
+          {
+            "text": "The Korean passive shorthand is retained as written; no expansion is supplied by this chapter. The support buff and boss resistance assumptions are part of this example."
+          }
+        ]
+      },
+      {
+        "id": "block-1072",
+        "sourceIds": ["block-1072"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "80% Double Chance → 62% Final Double Chance",
+            "strong": true
+          }
+        ]
+      },
+      {
+        "id": "block-1073",
+        "sourceIds": ["block-1073"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Now, how much DPS do you gain going from:"
+          }
+        ]
+      },
+      {
+        "id": "block-1074",
+        "sourceIds": ["block-1074"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "62% → 63% Double Chance?",
+            "strong": true
+          }
+        ]
+      },
+      {
+        "id": "block-1075",
+        "sourceIds": ["block-1075"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "If your base damage is "
+          },
+          {
+            "text": "1",
+            "strong": true
+          },
+          {
+            "text": " and you attack 100 times:"
+          }
+        ]
+      },
+      {
+        "id": "list-block-1076",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-1076",
+              "sourceIds": ["block-1076"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "63 attacks deal "
+                },
+                {
+                  "text": "2 damage",
+                  "strong": true
+                },
+                {
+                  "text": " from Double Chance."
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-1077",
+              "sourceIds": ["block-1077"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "37 attacks deal "
+                },
+                {
+                  "text": "1 damage",
+                  "strong": true
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "id": "block-1078",
+        "sourceIds": ["block-1078"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Therefore:"
+          }
+        ]
+      },
+      {
+        "id": "block-1079",
+        "sourceIds": ["block-1079"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "62% Double Chance = 162 total damage",
+            "strong": true
+          },
+          {
+            "text": "63% Double Chance = 163 total damage",
+            "strong": true
+          }
+        ]
+      },
+      {
+        "id": "block-1080",
+        "sourceIds": ["block-1080"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Answer: 0.617% DPS increase",
+            "strong": true
+          }
+        ]
+      },
+      {
+        "id": "block-1081",
+        "sourceIds": ["block-1081"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "So:"
+          }
+        ]
+      },
+      {
+        "id": "block-1082",
+        "sourceIds": ["block-1082"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "+1% Double Chance = approximately +0.617% actual DPS at this point.",
+            "strong": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "offensive-stat-values-and-attack-comparisons",
+    "title": "Offensive stat values and Attack comparisons",
+    "category": "how-stats-work",
+    "summary": "Conditional KR offensive-stat efficiencies, formulas, and Attack comparisons.",
+    "status": "source-uncertain",
+    "sourceUrl": "https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/edit",
+    "qualifiers": [
+      "Source recommendations, first-person statements, and testing claims are Kanon’s. Figures are captured examples rather than universal costs or ideal builds.",
+      "Captured source update: 9/20/2026. Regional and unconfirmed details remain qualified as written.",
+      "Efficiency values assume an ideal KR end-game build at the start of Season 1, level 50 and Lava Heart armor, including support buffs. Global launch, future KR, class buffs and diminishing returns can change these values."
+    ],
+    "blocks": [
+      {
+        "id": "block-1084",
+        "sourceIds": ["block-1084"],
+        "kind": "heading",
+        "content": [
+          {
+            "text": "End-Game (KR) Damage Efficiency Numbers",
+            "strong": true
+          }
+        ],
+        "level": 3
+      },
+      {
+        "id": "block-1086",
+        "sourceIds": ["block-1086"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "1% Damage Boost = 0.35%"
+          }
+        ]
+      },
+      {
+        "id": "list-block-1087",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-1087",
+              "sourceIds": ["block-1087"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Based on 180% Damage Boost"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-1088",
+              "sourceIds": ["block-1088"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Current end-game total Damage Boost reaches over 200%. Remember, the higher this number goes, the less damage gained"
+                },
+                {
+                  "text": " (keep in mind this is additive to other select Damage Boost stats)"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-1089",
+              "sourceIds": ["block-1089"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "For classes with access to higher Damage Boost, value can be as low as 0.3%"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-1090",
+              "sourceIds": ["block-1090"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Factors Boss Resistance (-50%) ≈ 180% "
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-1091",
+              "sourceIds": ["block-1091"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Less valuable than other Damage Boost buckets (Weapon, Front/Back, Crit) because it is additive with more Damage Boost sources. "
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-1092",
+              "sourceIds": ["block-1092"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Formula:"
+                }
+              ]
+            },
+            {
+              "id": "list-block-1093",
+              "sourceIds": [],
+              "kind": "list",
+              "ordered": false,
+              "items": [
+                [
+                  {
+                    "id": "block-1093",
+                    "sourceIds": ["block-1093"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "(Damage Boost + Boss Damage Boost + PVE Damage Boost + Species Damage Boost)"
+                      }
+                    ]
+                  }
+                ]
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "id": "block-1096",
+        "sourceIds": ["block-1096"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "1% Weapon Damage Boost = 0.5% ~ 0.55%"
+          }
+        ]
+      },
+      {
+        "id": "list-block-1097",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-1097",
+              "sourceIds": ["block-1097"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Weapon Damage Boost has high value due to its unique Damage bucket"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-1098",
+              "sourceIds": ["block-1098"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Formula:"
+                }
+              ]
+            },
+            {
+              "id": "list-block-1099",
+              "sourceIds": [],
+              "kind": "list",
+              "ordered": false,
+              "items": [
+                [
+                  {
+                    "id": "block-1099",
+                    "sourceIds": ["block-1099"],
+                    "kind": "formula",
+                    "expression": "[(Pure Attack × Weapon Damage Boost) + Attack Bonus] × Attack Power Increase %] + PvE Attack + Boss Attack]",
+                    "explanation": []
+                  },
+                  {
+                    "id": "context-block-1099",
+                    "sourceIds": [],
+                    "kind": "note",
+                    "label": "Literal partial formula",
+                    "tone": "uncertain",
+                    "content": [
+                      {
+                        "text": "Mixed and unmatched brackets are preserved. The source does not fully specify displayed percentages versus multiplier conventions."
+                      }
+                    ]
+                  }
+                ]
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "id": "list-block-1100",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-1100",
+              "sourceIds": ["block-1100"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Is amplified the higher “Pure Attack” is. “Pure Attack” is defined below the "
+                },
+                {
+                  "text": "Formula",
+                  "emphasis": true
+                },
+                {
+                  "text": " section"
+                }
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "id": "block-1102",
+        "sourceIds": ["block-1102"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "1% Critical Damage Boost = 0.4% ~ 0.6%"
+          }
+        ]
+      },
+      {
+        "id": "list-block-1103",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-1103",
+              "sourceIds": ["block-1103"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Keep in mind this stat has a base starting value @ 50%"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-1104",
+              "sourceIds": ["block-1104"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Larger variance due to Class passives that impact Crit rate and damage"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-1105",
+              "sourceIds": ["block-1105"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "The above values based on:"
+                }
+              ]
+            },
+            {
+              "id": "list-block-1106",
+              "sourceIds": [],
+              "kind": "list",
+              "ordered": false,
+              "items": [
+                [
+                  {
+                    "id": "block-1106",
+                    "sourceIds": ["block-1106"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "Classes with Critical Damage buffs will be around 120% (≈ 0.4% range)"
+                      }
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "id": "block-1107",
+                    "sourceIds": ["block-1107"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "Classes without will be around 90% (≈ 0.6% range)"
+                      }
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "id": "block-1108",
+                    "sourceIds": ["block-1108"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "Classes such as Gladiator (Murderous Burst), Chanter (Wind’s Promise), Ranger (Hunter’s Resolve, Bow of Blessing), Sin (Assault Stance, Illusive Clone), Cleric (Earth’s Grace) are closer to the 0.4% ~ 0.45% range due to Crit Damage passives"
+                      }
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "id": "block-1109",
+                    "sourceIds": ["block-1109"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "In addition to the above point, some classes have guaranteed Crit rate which could push the value up to 0.6%"
+                      }
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "id": "block-1110",
+                    "sourceIds": ["block-1110"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "Classes that don’t have the Crit Damage buffs + no guaranteed Crit will be around 0.5% range"
+                      }
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "id": "block-1111",
+                    "sourceIds": ["block-1111"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "Factors Boss Crit Res (-25%)."
+                      }
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "id": "block-1112",
+                    "sourceIds": ["block-1112"],
+                    "kind": "formula",
+                    "expression": "Formula:[(1.5+Crit Damage%−Boss Crit Damage Resistance%)×{(Guaranteed Crit Ratio%)+(1−Guaranteed Crit Ratio%)×(Critical Hit Chance%)}+(1−Guaranteed Crit Ratio%)×(1−Critical Hit Chance%)] / [(1.5+Crit Damage%+1%−Boss Crit Damage Resistance%)×{(Guaranteed Crit Ratio%)+(1−Guaranteed Crit Ratio%)×(Critical Hit Chance%)}+(1−Guaranteed Crit Ratio%)×(1−Critical Hit Chance%)]​",
+                    "explanation": []
+                  },
+                  {
+                    "id": "context-block-1112",
+                    "sourceIds": [],
+                    "kind": "note",
+                    "label": "Unresolved ratio direction",
+                    "tone": "uncertain",
+                    "content": [
+                      {
+                        "text": "The source divides old expected damage by new expected damage, producing a ratio below one for a positive added bonus. It supplies no final inversion or subtract-one step. The expression is retained without mathematical correction."
+                      }
+                    ]
+                  }
+                ]
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "id": "block-1114",
+        "sourceIds": ["block-1114"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "1% Perfect = 0.1%"
+          }
+        ]
+      },
+      {
+        "id": "list-block-1115",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-1115",
+              "sourceIds": ["block-1115"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Procs your max damage range on your Weapon"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-1116",
+              "sourceIds": ["block-1116"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Perfect"
+                },
+                {
+                  "text": " has a hidden ≈ "
+                },
+                {
+                  "text": "5% damage "
+                },
+                {
+                  "text": "stat that affects Pure Attack (very few, if not any, know about this, and yes it’s very weird, but tests have proven this to be real)"
+                }
+              ]
+            },
+            {
+              "id": "context-block-1116",
+              "sourceIds": [],
+              "kind": "note",
+              "label": "Attributed testing claim",
+              "tone": "uncertain",
+              "content": [
+                {
+                  "text": "The hidden Perfect effect is a testing claim in the source. The guide supplies no independent dataset here; retain the approximation and its Pure Attack scope."
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-1117",
+              "sourceIds": ["block-1117"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Difficult to calculate due to variables but generally comes out to about a 0.1% for every 1% of Perfect. "
+                }
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "id": "block-1119",
+        "sourceIds": ["block-1119"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "1% "
+          },
+          {
+            "text": "Double Chance"
+          },
+          {
+            "text": "= 0.6% ~ 0.65%"
+          }
+        ]
+      },
+      {
+        "id": "list-block-1120",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-1120",
+              "sourceIds": ["block-1120"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Doubles your damage (similar to Heavy Attack in T&L) and is t"
+                },
+                {
+                  "text": "he highest value offensive stat in the game atm."
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-1121",
+              "sourceIds": ["block-1121"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "All bosses from Dying Dramata and on have 30% Double Chance Resistance"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-1122",
+              "sourceIds": ["block-1122"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "@ 50% "
+                },
+                {
+                  "text": "Double Chance"
+                },
+                {
+                  "text": ", damage gain is ≈ 0.8% for every 1% of "
+                },
+                {
+                  "text": "Double Chance"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-1123",
+              "sourceIds": ["block-1123"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "@ 70% "
+                },
+                {
+                  "text": "Double Chance"
+                },
+                {
+                  "text": ", damage gain is ≈ 0.65% for every 1% of "
+                },
+                {
+                  "text": "Double Chance"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-1124",
+              "sourceIds": ["block-1124"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "@ 80% "
+                },
+                {
+                  "text": "Double Chance"
+                },
+                {
+                  "text": ", damage gain is ≈ 0.60% for every 1% of "
+                },
+                {
+                  "text": "Double Chance"
+                }
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "id": "block-1127",
+        "sourceIds": ["block-1127"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "1% Front/Back Attack Damage Boost = 0.57% ~ 0.65%"
+          }
+        ]
+      },
+      {
+        "id": "list-block-1128",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-1128",
+              "sourceIds": ["block-1128"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "A new stat added after the Level 50 Chapter 1 update that bo"
+                },
+                {
+                  "text": "osts your Damage when attacking from a positional"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-1129",
+              "sourceIds": ["block-1129"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Starts at 0% and is in its own unique multiplicative bracket (Other Damage Boosts do not get added to this) - very high value"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-1130",
+              "sourceIds": ["block-1130"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Based on 75% uptime on landing the positional"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-1131",
+              "sourceIds": ["block-1131"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Currently non positional classes are even stacking this due to its impact on DPS. Explained further "
+                },
+                {
+                  "text": "here",
+                  "underline": true,
+                  "href": "/articles/wing-effects-and-enhancement#block-0781"
+                },
+                {
+                  "text": ". This is likely to be adjusted somehow someway before global launch"
+                }
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "id": "block-1133",
+        "sourceIds": ["block-1133"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "1% PVP Damage Boost = 0.6%"
+          }
+        ]
+      },
+      {
+        "id": "list-block-1134",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-1134",
+              "sourceIds": ["block-1134"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "PVE guide but adding the value of PVP Damage Boost for the PVP Andies"
+                }
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "id": "block-1136",
+        "sourceIds": ["block-1136"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "10 Attack = 0.17% "
+          }
+        ]
+      },
+      {
+        "id": "list-block-1137",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-1137",
+              "sourceIds": ["block-1137"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Attack is in the"
+                },
+                {
+                  "text": " “Pure Attack” "
+                },
+                {
+                  "text": "category, separate from Boss and PVE Attack meaning this is directly multiplied by Weapon Damage Boost "
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-1138",
+              "sourceIds": ["block-1138"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "2 yellow/unique Attack lines on your Manastone ≈ 1% Damage Boost"
+                }
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "id": "block-1140",
+        "sourceIds": ["block-1140"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "10 Max Attack = 0.1325%"
+          }
+        ]
+      },
+      {
+        "id": "list-block-1141",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-1141",
+              "sourceIds": ["block-1141"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Max Attack increases the max "
+                },
+                {
+                  "text": "Attack "
+                },
+                {
+                  "text": "range of your Weapon. In the case of the image below, 20 Max Attack would turn the 709 into 729 making the range now 641~729"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-1142",
+              "sourceIds": ["block-1142"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Max Attack also increases the average median Attack of your Weapon. The average Attack using the image below would be (641+709)/2 = 675. For example, adding 20 Max Attack to this would now make the average Attack (641+729)/2 = 685"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-1143",
+              "sourceIds": ["block-1143"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "When calculating this value you take into consideration your Perfect proc rate (Perfect = % chance to hit your max Attack range) along with your average Attack"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-1144",
+              "sourceIds": ["block-1144"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Max Attack directly impacts your “Pure Attack” making it one of the top Attack Stats per point (2nd to Attack)"
+                }
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "id": "block-1146",
+        "sourceIds": ["block-1146"],
+        "kind": "figure",
+        "figureId": "figure-087"
+      },
+      {
+        "id": "block-1148",
+        "sourceIds": ["block-1148"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "10 Attack Bonus = 0.1%"
+          }
+        ]
+      },
+      {
+        "id": "list-block-1149",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-1149",
+              "sourceIds": ["block-1149"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Attack Bonus gets "
+                },
+                {
+                  "text": "added",
+                  "emphasis": true
+                },
+                {
+                  "text": " directly to Weapon Damage Boost after it has been multiplied by “Pure Attack” "
+                },
+                {
+                  "text": "then gets multiplied by Attack Increase %"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-1150",
+              "sourceIds": ["block-1150"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Max Attack > Attack Bonus point for point but Attack Bonus is still a top stat because it is not outside Attack Increase"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-1151",
+              "sourceIds": ["block-1151"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Formula:"
+                }
+              ]
+            },
+            {
+              "id": "list-block-1152",
+              "sourceIds": [],
+              "kind": "list",
+              "ordered": false,
+              "items": [
+                [
+                  {
+                    "id": "block-1152",
+                    "sourceIds": ["block-1152"],
+                    "kind": "formula",
+                    "expression": "Source formula (verbatim)",
+                    "explanation": [
+                      {
+                        "text": "(((Pure Attack × Weapon Damage Boost) × Multi-Hit × Power Shard) + "
+                      },
+                      {
+                        "text": "Attack Bonus",
+                        "highlight": "#ffff00"
+                      },
+                      {
+                        "text": ") × Attack Increase%"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "context-block-1152",
+                    "sourceIds": [],
+                    "kind": "note",
+                    "label": "Unconfirmed formula placement",
+                    "tone": "uncertain",
+                    "content": [
+                      {
+                        "text": "The literal partial formula is retained. Multi-hit placement is unconfirmed: the source separately considers with or outside Attack Bonus and outside Attack Increase."
+                      }
+                    ]
+                  }
+                ]
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "id": "block-1154",
+        "sourceIds": ["block-1154"],
+        "kind": "heading",
+        "content": [
+          {
+            "text": "STAT VALUE ",
+            "strong": true,
+            "highlight": "#f8f9fa"
+          },
+          {
+            "text": "TLDR",
+            "strong": true,
+            "highlight": "#f8f9fa"
+          },
+          {
+            "text": " ",
+            "strong": true,
+            "highlight": "#f8f9fa"
+          }
+        ],
+        "level": 3
+      },
+      {
+        "id": "block-1155",
+        "sourceIds": ["block-1155"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Double Chance",
+            "highlight": "#f8f9fa"
+          },
+          {
+            "text": " > Front/Back Attack Boost > Weapon Damage Boost > ≈ Critical Damage Boost > Damage Boost",
+            "highlight": "#f8f9fa"
+          }
+        ]
+      },
+      {
+        "id": "block-1157",
+        "sourceIds": ["block-1157"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "ATTACK > MAX ATTACK > ATTACK BONUS > ALL OTHER ATTACK",
+            "highlight": "#f8f9fa"
+          }
+        ]
+      },
+      {
+        "id": "block-1159",
+        "sourceIds": ["block-1159"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Additional Notes on Max Attack vs Attack Bonus",
+            "emphasis": true,
+            "underline": true,
+            "highlight": "#f8f9fa"
+          },
+          {
+            "text": ": If you want to see a detailed breakdown of the efficiency value, refer to this video: ",
+            "emphasis": true,
+            "highlight": "#f8f9fa"
+          },
+          {
+            "text": "https://youtu.be/XFdyimL2_Mk?si=nLHur9uEroXt3v6l&t=377",
+            "emphasis": true,
+            "underline": true,
+            "highlight": "#f8f9fa",
+            "href": "https://youtu.be/XFdyimL2_Mk?si=nLHur9uEroXt3v6l&t=377"
+          },
+          {
+            "text": " ",
+            "emphasis": true,
+            "highlight": "#f8f9fa"
+          }
+        ]
+      },
+      {
+        "id": "context-block-1159",
+        "sourceIds": [],
+        "kind": "note",
+        "label": "Two distinct time references",
+        "tone": "uncertain",
+        "content": [
+          {
+            "text": "The video URL retains t=377 while the next source note says “1:16”. Both references are preserved; their mismatch is unresolved."
+          }
+        ]
+      },
+      {
+        "id": "block-1160",
+        "sourceIds": ["block-1160"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "- 1:16 to show his formula is accurate, watch whole vid though for full breakdown",
+            "emphasis": true,
+            "highlight": "#f8f9fa"
+          }
+        ]
+      },
+      {
+        "id": "block-1161",
+        "sourceIds": ["block-1161"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "- Max Attack (최대공격력), Attack Bonus (추가공격력) ",
+            "emphasis": true,
+            "highlight": "#f8f9fa"
+          }
+        ]
+      },
+      {
+        "id": "block-1162",
+        "sourceIds": ["block-1162"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Keep in mind when looking at your in-game \"Attack\" stat, this stat does not factor in Weapon Damage Boost. This can be easily tested by simply removing Weapon Damage Boost from your Marchutan Daevanion Board and you'll see the \"Attack\" value does not change.",
+            "emphasis": true,
+            "highlight": "#f8f9fa"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "multi-hit",
+    "title": "Multi-hit",
+    "category": "how-stats-work",
+    "summary": "Extra-hit damage, the source estimate, and unconfirmed formula placement.",
+    "status": "source-uncertain",
+    "sourceUrl": "https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/edit",
+    "qualifiers": [
+      "Source recommendations, first-person statements, and testing claims are Kanon’s. Figures are captured examples rather than universal costs or ideal builds.",
+      "Captured source update: 9/20/2026. Regional and unconfirmed details remain qualified as written.",
+      "Efficiency values assume an ideal KR end-game build at the start of Season 1, level 50 and Lava Heart armor, including support buffs. Global launch, future KR, class buffs and diminishing returns can change these values."
+    ],
+    "blocks": [
+      {
+        "id": "block-1163",
+        "sourceIds": ["block-1163"],
+        "kind": "heading",
+        "content": [
+          {
+            "text": "Multi-Hit"
+          }
+        ],
+        "level": 3
+      },
+      {
+        "id": "list-block-1164",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-1164",
+              "sourceIds": ["block-1164"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "A  % chance for your Attack to land 1-4 extra hits."
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-1165",
+              "sourceIds": ["block-1165"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Each hit is 5% of the Damage"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-1166",
+              "sourceIds": ["block-1166"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "When Multi-hit rate is in the 36% ~ 40% range (current KR endgame range) every 1% of hit is roughly "
+                },
+                {
+                  "text": "≈ to 0.33% damage increase"
+                }
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "id": "block-1168",
+        "sourceIds": ["block-1168"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Additional Notes",
+            "emphasis": true,
+            "underline": true,
+            "highlight": "#f8f9fa"
+          },
+          {
+            "text": ": Multi-hit is a pretty straight forward stat on the surface but formulaically it becomes a lot more complex. The description here is a watered down version to keep things simple. This stat is still being studied and its exact value and placement in the equation is still not 100%. More testing needs to be done to establish whether it is with or outside Attack Bonus.",
+            "emphasis": true,
+            "highlight": "#f8f9fa"
+          }
+        ]
+      },
+      {
+        "id": "context-block-1168",
+        "sourceIds": [],
+        "kind": "note",
+        "label": "Unconfirmed Multi-hit",
+        "tone": "uncertain",
+        "content": [
+          {
+            "text": "The source’s simplified explanation and KR efficiency estimate do not settle the exact value or placement. Both Attack Bonus and Attack Increase placement questions remain open."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "power-shards",
+    "title": "Power Shards",
+    "category": "how-stats-work",
+    "summary": "Raw Power Shard tooltips versus estimated effective increases in the source.",
+    "status": "source-uncertain",
+    "sourceUrl": "https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/edit",
+    "qualifiers": [
+      "Source recommendations, first-person statements, and testing claims are Kanon’s. Figures are captured examples rather than universal costs or ideal builds.",
+      "Captured source update: 9/20/2026. Regional and unconfirmed details remain qualified as written.",
+      "Efficiency values assume an ideal KR end-game build at the start of Season 1, level 50 and Lava Heart armor, including support buffs. Global launch, future KR, class buffs and diminishing returns can change these values."
+    ],
+    "blocks": [
+      {
+        "id": "block-1171",
+        "sourceIds": ["block-1171"],
+        "kind": "heading",
+        "content": [
+          {
+            "text": "Power Shards"
+          }
+        ],
+        "level": 3
+      },
+      {
+        "id": "block-1173",
+        "sourceIds": ["block-1173"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Power Shards are consumables you equip that enhance your damage by a % value. Power Shards have slight diminishing returns from the PVE Attack bucket. The damage increase efficiency comes out to:"
+          }
+        ]
+      },
+      {
+        "id": "list-block-1174",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-1174",
+              "sourceIds": ["block-1174"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "(Regular) Power Shard = 4.65% more damage"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-1175",
+              "sourceIds": ["block-1175"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "(Yellow) Superior Power Shard = 8.9% more damage (4.05% more than Regulars)"
+                }
+              ]
+            },
+            {
+              "id": "context-block-1175",
+              "sourceIds": [],
+              "kind": "note",
+              "label": "Tooltip versus effective damage",
+              "tone": "uncertain",
+              "content": [
+                {
+                  "text": "The raw tooltip bonuses are 5% and 10%, whereas the source estimates effective increases of 4.65% and 8.9%. Its 4.05% comparison is approximately relative superiority, not subtraction of percentage points (4.25). Source rounding is retained."
+                }
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "id": "block-1176",
+        "sourceIds": ["block-1176"],
+        "kind": "group",
+        "label": "Related source illustrations",
+        "blocks": [
+          {
+            "id": "block-1176-figure-088",
+            "sourceIds": ["block-1176"],
+            "kind": "figure",
+            "figureId": "figure-088"
+          },
+          {
+            "id": "block-1176-figure-089",
+            "sourceIds": ["block-1176"],
+            "kind": "figure",
+            "figureId": "figure-089"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "accuracy-block-and-critical-hit",
+    "title": "Accuracy Block and Critical Hit",
+    "category": "how-stats-work",
+    "summary": "Accuracy, Block, Critical Hit and resistance, including the cap and graph discrepancy.",
+    "status": "source-uncertain",
+    "sourceUrl": "https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/edit",
+    "qualifiers": [
+      "Source recommendations, first-person statements, and testing claims are Kanon’s. Figures are captured examples rather than universal costs or ideal builds.",
+      "Captured source update: 9/20/2026. Regional and unconfirmed details remain qualified as written.",
+      "Efficiency values assume an ideal KR end-game build at the start of Season 1, level 50 and Lava Heart armor, including support buffs. Global launch, future KR, class buffs and diminishing returns can change these values."
+    ],
+    "blocks": [
+      {
+        "id": "block-1178",
+        "sourceIds": ["block-1178"],
+        "kind": "heading",
+        "content": [
+          {
+            "text": "Accuracy & Block/Parry "
+          }
+        ],
+        "level": 3
+      },
+      {
+        "id": "block-1180",
+        "sourceIds": ["block-1180"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Accuracy ensures your attack lands as a clean hit negating a Block/Parry 1:1. If your Accuracy covers the exact amount of Block a target has, you will land 100% of your attacks."
+          }
+        ]
+      },
+      {
+        "id": "list-block-1181",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-1181",
+              "sourceIds": ["block-1181"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "There are diminishing returns to this stat"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-1182",
+              "sourceIds": ["block-1182"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "The average value of 100 Accuracy is roughly "
+                },
+                {
+                  "text": "≈"
+                },
+                {
+                  "text": " 6% ~ 7%"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-1183",
+              "sourceIds": ["block-1183"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "If my Target has 2,000 Block and my Accuracy is 1,000 then he has a 60% ~ 70% chance to Parry"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-1184",
+              "sourceIds": ["block-1184"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Parry is capped at an 80% chance and a difference of 1,200 is required to reach it"
+                }
+              ]
+            },
+            {
+              "id": "list-block-1185",
+              "sourceIds": [],
+              "kind": "list",
+              "ordered": false,
+              "items": [
+                [
+                  {
+                    "id": "block-1185",
+                    "sourceIds": ["block-1185"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "This allows us to calculate the  6% ~ 7% per 100 (6.66…%*1,200 = 80%)"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "context-block-1185",
+                    "sourceIds": [],
+                    "kind": "note",
+                    "label": "Graph and arithmetic qualification",
+                    "tone": "uncertain",
+                    "content": [
+                      {
+                        "text": "The graph annotates X=1,200 at approximately 79%, while the prose calls a 1,200 difference the 80% cap. The “6.66…%*1,200 = 80%” line omits the per-100 scale; the curve is nonlinear, so the average is not a constant slope. No exact curve equation is given."
+                      }
+                    ]
+                  }
+                ]
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "id": "list-block-1186",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-1186",
+              "sourceIds": ["block-1186"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "The graph below represents how the diminishing returns work for both Crit/Crit Resistance and Accuracy/Block"
+                }
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "id": "block-1188",
+        "sourceIds": ["block-1188"],
+        "kind": "figure",
+        "figureId": "figure-090"
+      },
+      {
+        "id": "block-1190",
+        "sourceIds": ["block-1190"],
+        "kind": "heading",
+        "content": [
+          {
+            "text": "Critical Hit & Critical Hit Resist"
+          }
+        ],
+        "level": 3
+      },
+      {
+        "id": "block-1192",
+        "sourceIds": ["block-1192"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Critical Hit & Critical Resist use the same formula as Accuracy & Block/Parry which includes the 80% cap."
+          }
+        ]
+      },
+      {
+        "id": "list-block-1193",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-1193",
+              "sourceIds": ["block-1193"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Refer to the graph and Accuracy explanation above"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-1194",
+              "sourceIds": ["block-1194"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Skill passives are Additive so if your Critical Hit is 70% and you take a Skill passive that increases your Critical Hit by 30%, your Critical Hit % will be 80%. If you are hitting 80% Crit on a Skill you do "
+                },
+                {
+                  "text": "not",
+                  "emphasis": true
+                },
+                {
+                  "text": " need to take a Crit increasing Specialty Perk"
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "defense-and-penetration",
+    "title": "Defense and Penetration",
+    "category": "how-stats-work",
+    "summary": "Defense and Penetration with the source’s PVE and PVP worked example.",
+    "status": "source-uncertain",
+    "sourceUrl": "https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/edit",
+    "qualifiers": [
+      "Source recommendations, first-person statements, and testing claims are Kanon’s. Figures are captured examples rather than universal costs or ideal builds.",
+      "Captured source update: 9/20/2026. Regional and unconfirmed details remain qualified as written.",
+      "Efficiency values assume an ideal KR end-game build at the start of Season 1, level 50 and Lava Heart armor, including support buffs. Global launch, future KR, class buffs and diminishing returns can change these values."
+    ],
+    "blocks": [
+      {
+        "id": "block-1196",
+        "sourceIds": ["block-1196"],
+        "kind": "heading",
+        "content": [
+          {
+            "text": "Defense & "
+          },
+          {
+            "text": "Penetration"
+          }
+        ],
+        "level": 3
+      },
+      {
+        "id": "block-1198",
+        "sourceIds": ["block-1198"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Defense reduces Damage taken by a %. Penetration subtracts directly from Defense. Penetration is overall a very low value stat due to how Defense works.  "
+          }
+        ]
+      },
+      {
+        "id": "context-block-1198",
+        "sourceIds": [],
+        "kind": "note",
+        "label": "Defense wording ambiguity",
+        "tone": "uncertain",
+        "content": [
+          {
+            "text": "The headline says damage is reduced “by a %”, but the following examples subtract a fraction of the Defense value. Preserve the worked PVE and PVP outcomes rather than interpreting the headline as a separate multiplicative reduction."
+          }
+        ]
+      },
+      {
+        "id": "list-block-1199",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-1199",
+              "sourceIds": ["block-1199"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "In PVE, Damage will be reduced by 10% of your Defense value"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-1200",
+              "sourceIds": ["block-1200"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "In PVP, Damage will be reduced by 1% of your Defense value"
+                }
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "id": "block-1203",
+        "sourceIds": ["block-1203"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Example Scenario:"
+          }
+        ]
+      },
+      {
+        "id": "block-1204",
+        "sourceIds": ["block-1204"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Damage dealt is 500 with 100 penetration against a target with 200 defense"
+          }
+        ]
+      },
+      {
+        "id": "list-block-1205",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-1205",
+              "sourceIds": ["block-1205"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "The Defense after Penetration is 100 (200 Defense - 100 Penetration) "
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-1206",
+              "sourceIds": ["block-1206"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "10% of 100 = 10"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-1207",
+              "sourceIds": ["block-1207"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "500 - 10 = 490 Damage after Defense and Penetration calculations (499 for PVP)"
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "damage-tolerance-endurance-and-combat-speed",
+    "title": "Damage Tolerance Endurance and Combat Speed",
+    "category": "how-stats-work",
+    "summary": "Damage Tolerance, Endurance probability, and source Combat Speed testing claims.",
+    "status": "source-uncertain",
+    "sourceUrl": "https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/edit",
+    "qualifiers": [
+      "Source recommendations, first-person statements, and testing claims are Kanon’s. Figures are captured examples rather than universal costs or ideal builds.",
+      "Captured source update: 9/20/2026. Regional and unconfirmed details remain qualified as written.",
+      "Efficiency values assume an ideal KR end-game build at the start of Season 1, level 50 and Lava Heart armor, including support buffs. Global launch, future KR, class buffs and diminishing returns can change these values."
+    ],
+    "blocks": [
+      {
+        "id": "block-1209",
+        "sourceIds": ["block-1209"],
+        "kind": "heading",
+        "content": [
+          {
+            "text": "Damage Tolerance & Endurance"
+          }
+        ],
+        "level": 3
+      },
+      {
+        "id": "block-1211",
+        "sourceIds": ["block-1211"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Damage Tolerance and Endurance are both highly effective Defensive stats. Damage Tolerance directly reduces Damage Boost against you while Endurance reduces your final damage taken by half."
+          }
+        ]
+      },
+      {
+        "id": "context-block-1211",
+        "sourceIds": [],
+        "kind": "note",
+        "label": "Endurance is a chance",
+        "tone": "context",
+        "content": [
+          {
+            "text": "The source later clarifies that the displayed Endurance percentage is the chance to take half damage, not a permanent halving of every hit."
+          }
+        ]
+      },
+      {
+        "id": "block-1213",
+        "sourceIds": ["block-1213"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Damage Tolerance"
+          }
+        ]
+      },
+      {
+        "id": "list-block-1214",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-1214",
+              "sourceIds": ["block-1214"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "All Damage Tolerance is a direct counter to its respective Damage Boost"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-1215",
+              "sourceIds": ["block-1215"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "In PVE Damage Tolerance, Boss Damage Tolerance, and PVE Damage Tolerance are the only ones of value considering Bosses do have Damage Boost (impossible to measure exactly how much due to damage being random)"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-1216",
+              "sourceIds": ["block-1216"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Bosses do not have Front/Back Damage Boost, Weapon Damage Boost, Critical Hit, or Multi-hit meaning the respective Tolerance and Resistance against those stats are worthless"
+                }
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "id": "block-1218",
+        "sourceIds": ["block-1218"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Endurance"
+          }
+        ]
+      },
+      {
+        "id": "list-block-1219",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-1219",
+              "sourceIds": ["block-1219"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Endurance is only negated by Endurance Penetration. There is no Endurance Penetration from Bosses so whatever the % you see in your stat sheet will be the % chance you have to take 50% damage.",
+                  "breakAfter": true
+                }
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "id": "block-1220",
+        "sourceIds": ["block-1220"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Additional Notes",
+            "emphasis": true,
+            "underline": true,
+            "highlight": "#f8f9fa"
+          },
+          {
+            "text": ":  Combat Speed is a given S-tier individual stat that you stack as much as you can. This, however, is directly impacted by ping and FPS. When tested, a difference of 150-200 ping equated to roughly ≈  50% ~ 70% damage. Contrary to popular belief, there were no major differences between classes. Templar, Brawler, and Assassin were the three classes tested and were roughly similar. Spiritmaster may be an outlier due to the passive pet damage",
+            "emphasis": true,
+            "highlight": "#f8f9fa"
+          }
+        ]
+      },
+      {
+        "id": "context-block-1220",
+        "sourceIds": [],
+        "kind": "note",
+        "label": "Scope of testing claims",
+        "tone": "uncertain",
+        "content": [
+          {
+            "text": "Boss resistance and tolerance assertions and the ping/FPS damage comparison are attributed source claims, with the named tested classes and possible Spiritmaster exception retained. They are not universal measured constants."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "damage-formula-and-pure-attack",
+    "title": "Damage formula and Pure Attack",
+    "category": "how-stats-work",
+    "summary": "The literal source damage formula, unsettled Multi-hit placement, and Pure Attack tiers.",
+    "status": "source-uncertain",
+    "sourceUrl": "https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/edit",
+    "qualifiers": [
+      "Source recommendations, first-person statements, and testing claims are Kanon’s. Figures are captured examples rather than universal costs or ideal builds.",
+      "Captured source update: 9/20/2026. Regional and unconfirmed details remain qualified as written.",
+      "Efficiency values assume an ideal KR end-game build at the start of Season 1, level 50 and Lava Heart armor, including support buffs. Global launch, future KR, class buffs and diminishing returns can change these values."
+    ],
+    "blocks": [
+      {
+        "id": "block-1224",
+        "sourceIds": ["block-1224"],
+        "kind": "heading",
+        "content": [
+          {
+            "text": "Damage Formula"
+          }
+        ],
+        "level": 2
+      },
+      {
+        "id": "block-1225",
+        "sourceIds": ["block-1225"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "English:"
+          }
+        ]
+      },
+      {
+        "id": "block-1226",
+        "sourceIds": ["block-1226"],
+        "kind": "formula",
+        "expression": "[[[((Pure Attack × Weapon Damage Boost) × Multi-Hit × Power Shard) + Attack Bonus) × Attack Increase % + PvE Attack Power + Boss Attack Power + Species Attack Power + Front/Back Attack Power] × Skill Coefficient] − [(Defense − Penetration) × 0.1]] × (Damage Boost + PvE Damage Boost + Boss Damage Boost + Species Damage Boost) × Critical Damage Boost × Double × Front/Back Damage Boost × Skill Additional Damage = Final Damage",
+        "explanation": []
+      },
+      {
+        "id": "context-block-1226",
+        "sourceIds": [],
+        "kind": "note",
+        "label": "Literal source formula and uncertainty",
+        "tone": "uncertain",
+        "content": [
+          {
+            "text": "The source’s mixed and unmatched brackets and percentage conventions remain unresolved. Multi-hit placement is explicitly unconfirmed despite its displayed position. No calculator or repaired grouping is inferred."
+          }
+        ]
+      },
+      {
+        "id": "block-1228",
+        "sourceIds": ["block-1228"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "(*"
+          },
+          {
+            "text": "0.1 multiplier after Defense-Pen is 0.01 in PVP)",
+            "emphasis": true
+          }
+        ]
+      },
+      {
+        "id": "block-1230",
+        "sourceIds": ["block-1230"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "This formula has been tested extensively and IS the closest damage formula we currently have - everything except for the *Multi-hit placement is confirmed.  ",
+            "emphasis": true
+          }
+        ]
+      },
+      {
+        "id": "block-1231",
+        "sourceIds": ["block-1231"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "*Multi-hit - The exact placement of Multi-hit needs to be tested more to 100% confirm its placement on the equation, there’s a chance it could be outside Attack Increase. Will update and remove this bullet once confirmed",
+            "emphasis": true
+          }
+        ]
+      },
+      {
+        "id": "block-1232",
+        "sourceIds": ["block-1232"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "This formula is public for the very first time with this doc…not because it’s some hidden secret, but because it was very difficult to figure out and simply put, no one has yet. There have been some general damage buckets posted and understood but this is the first detailed, specific formula that fully answers the why and how much. Math heads and theory crafters, here’s your baseline…",
+            "emphasis": true
+          }
+        ]
+      },
+      {
+        "id": "block-1234",
+        "sourceIds": ["block-1234"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Important - What is “Pure Attack”?",
+            "strong": true,
+            "highlight": "#f8f9fa"
+          }
+        ]
+      },
+      {
+        "id": "block-1235",
+        "sourceIds": ["block-1235"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "“Pure Attack” is not an official stat in the game. It’s a label created to categorize the Attack t"
+          },
+          {
+            "text": "ha"
+          },
+          {
+            "text": "t gets directly multiplied"
+          },
+          {
+            "text": " by"
+          },
+          {
+            "text": " Weapon Damage Boost. There are a lot of different types of “Attack” stats in-game but they are spread across the equation."
+          }
+        ]
+      },
+      {
+        "id": "block-1236",
+        "sourceIds": ["block-1236"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "You can test the above by calculating the total Attack you get from your Weapon and removing it along with your Weapon Damage Boost % and see what the “Attack” value shows under your Stat Info > Main Stats page. The “Attack” value on here does not consider Weapon Damage Boost%"
+          }
+        ]
+      },
+      {
+        "id": "block-1237",
+        "sourceIds": ["block-1237"],
+        "kind": "heading",
+        "content": [
+          {
+            "text": "The stats that fall under “Pure Attack” is as follows:"
+          }
+        ],
+        "level": 3
+      },
+      {
+        "id": "list-block-1238",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-1238",
+              "sourceIds": ["block-1238"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Weapon Attack"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-1239",
+              "sourceIds": ["block-1239"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Guard Attack"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-1240",
+              "sourceIds": ["block-1240"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Accessories Attack"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-1241",
+              "sourceIds": ["block-1241"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Attack "
+                },
+                {
+                  "text": "Stat Lines",
+                  "strong": true
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-1242",
+              "sourceIds": ["block-1242"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Manastone/Soulstone Attack"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-1243",
+              "sourceIds": ["block-1243"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Closet "
+                }
+              ]
+            },
+            {
+              "id": "list-block-1244",
+              "sourceIds": [],
+              "kind": "list",
+              "ordered": false,
+              "items": [
+                [
+                  {
+                    "id": "block-1244",
+                    "sourceIds": ["block-1244"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "Further Detail",
+                        "strong": true,
+                        "underline": true,
+                        "href": "/articles/closet-stats-and-outfit-calculation#block-1010"
+                      }
+                    ]
+                  }
+                ]
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "id": "block-1246",
+        "sourceIds": ["block-1246"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Outside of “Pure Attack” the rest of the “Attacks” are added together starting from PVE Attack in the equation above. Because this "
+          },
+          {
+            "text": "added after Attack Increase the value is less than Pure Attack"
+          },
+          {
+            "text": ". When it comes to the flat “Attack” stats the value order is:"
+          }
+        ]
+      },
+      {
+        "id": "block-1248",
+        "sourceIds": ["block-1248"],
+        "kind": "heading",
+        "content": [
+          {
+            "text": "Tier 1 "
+          }
+        ],
+        "level": 3
+      },
+      {
+        "id": "list-block-1249",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-1249",
+              "sourceIds": ["block-1249"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Attack "
+                },
+                {
+                  "text": "(Pure Attack)"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-1250",
+              "sourceIds": ["block-1250"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Max Attack (Pure Attack)"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-1251",
+              "sourceIds": ["block-1251"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Attack Bonus ("
+                },
+                {
+                  "text": "within Attack Increase)"
+                }
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "id": "block-1252",
+        "sourceIds": ["block-1252"],
+        "kind": "heading",
+        "content": [
+          {
+            "text": "Tier 2"
+          }
+        ],
+        "level": 3
+      },
+      {
+        "id": "list-block-1253",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-1253",
+              "sourceIds": ["block-1253"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "PVE Attack"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-1254",
+              "sourceIds": ["block-1254"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Boss Attack"
+                }
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "id": "block-1255",
+        "sourceIds": ["block-1255"],
+        "kind": "heading",
+        "content": [
+          {
+            "text": "Tier 3 (Conditional)"
+          }
+        ],
+        "level": 3
+      },
+      {
+        "id": "list-block-1256",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-1256",
+              "sourceIds": ["block-1256"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Front/Back Attack"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-1257",
+              "sourceIds": ["block-1257"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Species Attack"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-1258",
+              "sourceIds": ["block-1258"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Critical Attack"
+                }
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "id": "block-1260",
+        "sourceIds": ["block-1260"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Tier 3 stats are the worst considering they do not fall under “Pure Attack” and only get added to PVE/Boss Attack upon condition. Species being specific to mob type."
+          }
+        ]
+      },
+      {
+        "id": "block-1263",
+        "sourceIds": ["block-1263"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "—"
+          }
+        ]
+      }
+    ]
+  }
+]

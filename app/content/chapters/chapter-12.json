@@ -1,0 +1,41 @@
+[
+  {
+    "slug": "class-passives",
+    "title": "Class Passives",
+    "category": "class-passives",
+    "summary": "The captured Class Passives chapter is marked Coming soon.",
+    "status": "source-pending",
+    "sourceUrl": "https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/edit",
+    "qualifiers": [
+      "Source recommendations, first-person statements, and testing claims are Kanon’s. Figures are captured examples rather than universal costs or ideal builds.",
+      "Captured source update: 9/20/2026. Regional and unconfirmed details remain qualified as written."
+    ],
+    "blocks": [
+      {
+        "id": "block-1266",
+        "sourceIds": ["block-1266"],
+        "kind": "heading",
+        "content": [
+          {
+            "text": "CH 12: "
+          },
+          {
+            "text": "CLASS PASSIVES",
+            "underline": true
+          }
+        ],
+        "level": 2
+      },
+      {
+        "id": "block-1268",
+        "sourceIds": ["block-1268"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "COMING SOON…"
+          }
+        ]
+      }
+    ]
+  }
+]

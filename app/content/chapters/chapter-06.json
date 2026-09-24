@@ -1,0 +1,1511 @@
+[
+  {
+    "slug": "arcana-card-types-and-stat-pools",
+    "title": "Arcana card types and stat pools",
+    "category": "arcana",
+    "summary": "Ten card types, skill and stat pools, seven sets, and regional launch limits.",
+    "status": "source-uncertain",
+    "sourceUrl": "https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/edit",
+    "qualifiers": [
+      "Source recommendations, first-person statements, and testing claims are Kanon’s. Figures are captured examples rather than universal costs or ideal builds.",
+      "Captured source update: 9/20/2026. Regional and unconfirmed details remain qualified as written."
+    ],
+    "blocks": [
+      {
+        "id": "block-0511",
+        "sourceIds": ["block-0511"],
+        "kind": "heading",
+        "content": [
+          {
+            "text": "CH 6: ARCANA"
+          }
+        ],
+        "level": 2
+      },
+      {
+        "id": "block-0513",
+        "sourceIds": ["block-0513"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Arcana "
+          },
+          {
+            "text": "is"
+          },
+          {
+            "text": " simply a card system that gives you Stats and Skill Levels. There are currently 10 different types of Arcana Cards and 7 different sets. If this is confusing, just think of the Cards as Gear in most MMOs - you have different types of Gear pieces like Helmet, Chest, Pants…then you have set bonuses for those gear pieces."
+          }
+        ]
+      },
+      {
+        "id": "block-0515",
+        "sourceIds": ["block-0515"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Arcana Cards offer"
+          },
+          {
+            "text": " Pantheon Stats and up to 4"
+          },
+          {
+            "text": " lines of Stats"
+          },
+          {
+            "text": " or"
+          },
+          {
+            "text": " Skills from a specific pool. Here’s all the Arcana Cards and what each can roll:"
+          }
+        ]
+      },
+      {
+        "id": "block-0517",
+        "sourceIds": ["block-0517"],
+        "kind": "heading",
+        "content": [
+          {
+            "text": "Arcana Cards"
+          }
+        ],
+        "level": 3
+      },
+      {
+        "id": "list-block-0518",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-0518",
+              "sourceIds": ["block-0518"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Chalice"
+                }
+              ]
+            },
+            {
+              "id": "list-block-0519",
+              "sourceIds": [],
+              "kind": "list",
+              "ordered": false,
+              "items": [
+                [
+                  {
+                    "id": "block-0519",
+                    "sourceIds": ["block-0519"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "Pantheon Stat"
+                      }
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "id": "block-0520",
+                    "sourceIds": ["block-0520"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "All Skills & Passives"
+                      }
+                    ]
+                  }
+                ]
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "id": "list-block-0521",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-0521",
+              "sourceIds": ["block-0521"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Parchment"
+                }
+              ]
+            },
+            {
+              "id": "list-block-0522",
+              "sourceIds": [],
+              "kind": "list",
+              "ordered": false,
+              "items": [
+                [
+                  {
+                    "id": "block-0522",
+                    "sourceIds": ["block-0522"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "Pantheon Stat"
+                      }
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "id": "block-0523",
+                    "sourceIds": ["block-0523"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "Half of your Active Skills"
+                      }
+                    ]
+                  }
+                ]
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "id": "list-block-0524",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-0524",
+              "sourceIds": ["block-0524"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Compass"
+                }
+              ]
+            },
+            {
+              "id": "list-block-0525",
+              "sourceIds": [],
+              "kind": "list",
+              "ordered": false,
+              "items": [
+                [
+                  {
+                    "id": "block-0525",
+                    "sourceIds": ["block-0525"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "Pantheon Stat"
+                      }
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "id": "block-0526",
+                    "sourceIds": ["block-0526"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "Other half of your Active Skills"
+                      }
+                    ]
+                  }
+                ]
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "id": "list-block-0527",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-0527",
+              "sourceIds": ["block-0527"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Bell"
+                }
+              ]
+            },
+            {
+              "id": "list-block-0528",
+              "sourceIds": [],
+              "kind": "list",
+              "ordered": false,
+              "items": [
+                [
+                  {
+                    "id": "block-0528",
+                    "sourceIds": ["block-0528"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "Pantheon Stat"
+                      }
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "id": "block-0529",
+                    "sourceIds": ["block-0529"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "Half of your Passive Skills"
+                      }
+                    ]
+                  }
+                ]
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "id": "list-block-0530",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-0530",
+              "sourceIds": ["block-0530"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Mirror"
+                }
+              ]
+            },
+            {
+              "id": "list-block-0531",
+              "sourceIds": [],
+              "kind": "list",
+              "ordered": false,
+              "items": [
+                [
+                  {
+                    "id": "block-0531",
+                    "sourceIds": ["block-0531"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "Pantheon Stat"
+                      }
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "id": "block-0532",
+                    "sourceIds": ["block-0532"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "Other half of your Passive Skills"
+                      }
+                    ]
+                  }
+                ]
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "id": "list-block-0533",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-0533",
+              "sourceIds": ["block-0533"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Scale"
+                }
+              ]
+            },
+            {
+              "id": "list-block-0534",
+              "sourceIds": [],
+              "kind": "list",
+              "ordered": false,
+              "items": [
+                [
+                  {
+                    "id": "block-0534",
+                    "sourceIds": ["block-0534"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "Pantheon Stat"
+                      }
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "id": "block-0535",
+                    "sourceIds": ["block-0535"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "All Skills & Passives"
+                      }
+                    ]
+                  }
+                ]
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "id": "list-block-0536",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-0536",
+              "sourceIds": ["block-0536"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Key"
+                }
+              ]
+            },
+            {
+              "id": "list-block-0537",
+              "sourceIds": [],
+              "kind": "list",
+              "ordered": false,
+              "items": [
+                [
+                  {
+                    "id": "block-0537",
+                    "sourceIds": ["block-0537"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "Offensive Stats"
+                      }
+                    ]
+                  }
+                ]
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "id": "list-block-0538",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-0538",
+              "sourceIds": ["block-0538"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Hourglass"
+                }
+              ]
+            },
+            {
+              "id": "list-block-0539",
+              "sourceIds": [],
+              "kind": "list",
+              "ordered": false,
+              "items": [
+                [
+                  {
+                    "id": "block-0539",
+                    "sourceIds": ["block-0539"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "Defensive Stats"
+                      }
+                    ]
+                  }
+                ]
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "id": "list-block-0540",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-0540",
+              "sourceIds": ["block-0540"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Dice"
+                }
+              ]
+            },
+            {
+              "id": "list-block-0541",
+              "sourceIds": [],
+              "kind": "list",
+              "ordered": false,
+              "items": [
+                [
+                  {
+                    "id": "block-0541",
+                    "sourceIds": ["block-0541"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "Offensive Stats"
+                      }
+                    ]
+                  }
+                ]
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "id": "list-block-0542",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-0542",
+              "sourceIds": ["block-0542"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Lantern"
+                }
+              ]
+            },
+            {
+              "id": "list-block-0543",
+              "sourceIds": [],
+              "kind": "list",
+              "ordered": false,
+              "items": [
+                [
+                  {
+                    "id": "block-0543",
+                    "sourceIds": ["block-0543"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "Defensive Stats"
+                      }
+                    ]
+                  }
+                ]
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "id": "block-0545",
+        "sourceIds": ["block-0545"],
+        "kind": "figure",
+        "figureId": "figure-054"
+      },
+      {
+        "id": "block-0546",
+        "sourceIds": ["block-0546"],
+        "kind": "group",
+        "label": "Related source illustrations",
+        "blocks": [
+          {
+            "id": "block-0546-figure-055",
+            "sourceIds": ["block-0546"],
+            "kind": "figure",
+            "figureId": "figure-055"
+          },
+          {
+            "id": "block-0546-figure-056",
+            "sourceIds": ["block-0546"],
+            "kind": "figure",
+            "figureId": "figure-056"
+          }
+        ]
+      },
+      {
+        "id": "block-0548",
+        "sourceIds": ["block-0548"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": " Arcana Cards also have different “Set Effects” indicated by the left picture above. There are 7 different Sets available. "
+          }
+        ]
+      },
+      {
+        "id": "block-0550",
+        "sourceIds": ["block-0550"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Global Launch will not have all of the Arcana Cards and Sets. Asia Launched with 5 Arcanas (Compass ~ Mirror) with 2 sets (Primal Vigore, Magic Armor)",
+            "emphasis": true
+          }
+        ]
+      },
+      {
+        "id": "context-block-0550",
+        "sourceIds": [],
+        "kind": "note",
+        "label": "Launch wording conflict",
+        "tone": "uncertain",
+        "content": [
+          {
+            "text": "“Compass ~ Mirror” is the source’s abbreviated five-card range. Its later five-card list and image include Chalice, Parchment, Compass, Bell and Mirror. The inconsistent range and “Primal Vigore” spelling remain literal."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "upgrading-arcana",
+    "title": "Upgrading Arcana",
+    "category": "arcana",
+    "summary": "Card enhancement, random improvements, Training Arcana, and imperfect EXP transfer.",
+    "status": "source-uncertain",
+    "sourceUrl": "https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/edit",
+    "qualifiers": [
+      "Source recommendations, first-person statements, and testing claims are Kanon’s. Figures are captured examples rather than universal costs or ideal builds.",
+      "Captured source update: 9/20/2026. Regional and unconfirmed details remain qualified as written."
+    ],
+    "blocks": [
+      {
+        "id": "block-0552",
+        "sourceIds": ["block-0552"],
+        "kind": "heading",
+        "content": [
+          {
+            "text": "Upgrading your Arcana"
+          }
+        ],
+        "level": 2
+      },
+      {
+        "id": "block-0553",
+        "sourceIds": ["block-0553"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Farming Transcendence Dungeons will give you Arcana Cards and Training Arcana. You can smash Arcana Cards into the one you equip or feed Training Arcana into it to level it up. "
+          }
+        ]
+      },
+      {
+        "id": "block-0555",
+        "sourceIds": ["block-0555"],
+        "kind": "figure",
+        "figureId": "figure-057"
+      },
+      {
+        "id": "block-0556",
+        "sourceIds": ["block-0556"],
+        "kind": "group",
+        "label": "Related source illustrations",
+        "blocks": [
+          {
+            "id": "block-0556-figure-058",
+            "sourceIds": ["block-0556"],
+            "kind": "figure",
+            "figureId": "figure-058"
+          },
+          {
+            "id": "block-0556-figure-059",
+            "sourceIds": ["block-0556"],
+            "kind": "figure",
+            "figureId": "figure-059"
+          }
+        ]
+      },
+      {
+        "id": "block-0558",
+        "sourceIds": ["block-0558"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Each level will grant you +1 to a random Skill line you have on the card (or a random Stat by a little if there are no Skills). You can level a Card up to a maximum of level 5. "
+          }
+        ]
+      },
+      {
+        "id": "block-0560",
+        "sourceIds": ["block-0560"],
+        "kind": "figure",
+        "figureId": "figure-060"
+      },
+      {
+        "id": "block-0561",
+        "sourceIds": ["block-0561"],
+        "kind": "figure",
+        "figureId": "figure-061"
+      },
+      {
+        "id": "block-0563",
+        "sourceIds": ["block-0563"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "You can feed whatever Arcana Card you have equipped into a new one if the new one has better lines. However, when you feed it into the new card you will lose a % of the experience you pumped into your current one, the EXP does not transfer over 1:1 (it’s still often worth transferring). You also gain bonus experience for feeding the same type of Arcana Card."
+          }
+        ]
+      },
+      {
+        "id": "context-block-0563",
+        "sourceIds": [],
+        "kind": "note",
+        "label": "Unspecified transfer amounts",
+        "tone": "uncertain",
+        "content": [
+          {
+            "text": "The source does not give the EXP loss percentage or the same-type EXP bonus amount. The enhancement screenshots show both Pantheon stats improving alongside a random skill line."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "crafting-arcana",
+    "title": "Crafting Arcana",
+    "category": "arcana",
+    "summary": "Transmutation, selected skill lines, crystal recipes, and progression priorities.",
+    "status": "source-uncertain",
+    "sourceUrl": "https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/edit",
+    "qualifiers": [
+      "Source recommendations, first-person statements, and testing claims are Kanon’s. Figures are captured examples rather than universal costs or ideal builds.",
+      "Captured source update: 9/20/2026. Regional and unconfirmed details remain qualified as written."
+    ],
+    "blocks": [
+      {
+        "id": "block-0565",
+        "sourceIds": ["block-0565"],
+        "kind": "heading",
+        "content": [
+          {
+            "text": "Crafting Arcana Cards"
+          }
+        ],
+        "level": 2
+      },
+      {
+        "id": "block-0566",
+        "sourceIds": ["block-0566"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "You can also craft your own Arcana Card via the Transmute section. This allows you to choose all of your lines for most of the Arcana Cards at a cost. This is 100% worth doing and should be done if possible."
+          }
+        ]
+      },
+      {
+        "id": "block-0568",
+        "sourceIds": ["block-0568"],
+        "kind": "figure",
+        "figureId": "figure-062"
+      },
+      {
+        "id": "block-0570",
+        "sourceIds": ["block-0570"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Crafting your own Cards will come at the cost of Crystals. Different Arcana Cards cost different Crystals. These Crystals can be Substanced Morph"
+          },
+          {
+            "text": "ed "
+          },
+          {
+            "text": "by consuming Shard versions of the Crystal which are farmed from Transcendence Dungeons - different Dungeons giving different Shards."
+          }
+        ]
+      },
+      {
+        "id": "block-0572",
+        "sourceIds": ["block-0572"],
+        "kind": "figure",
+        "figureId": "figure-063"
+      },
+      {
+        "id": "block-0573",
+        "sourceIds": ["block-0573"],
+        "kind": "figure",
+        "figureId": "figure-064"
+      },
+      {
+        "id": "block-0576",
+        "sourceIds": ["block-0576"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "It’s important to identify what your biggest value Skills are and which card they come from. You want to prioritize getting your key Active Skills to level 20 ASAP. "
+          }
+        ]
+      },
+      {
+        "id": "block-0578",
+        "sourceIds": ["block-0578"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Depending on how content is released and your group, I would recommend using or putting together a cheaper Arcana set that may not be exactly be BIS lines but helps you get your Active Skills to reach level 20. Once you do this you can sit on it while you farm more Transcendence to craft your 4-line crafted Card."
+          }
+        ]
+      },
+      {
+        "id": "block-0580",
+        "sourceIds": ["block-0580"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Chalice and Scale has the most possible lines therefore it is the most difficult card to get perfect lines on. The other cards roll 4 lines from a pool of 6 meaning the likelihood of getting your ideal lines just from a dungeon drop or a yolo craft are pretty high. If you’re planning on doing a 4-line craft, craft the Chalice first"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      {
+        "id": "block-0582",
+        "sourceIds": ["block-0582"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Chalice and Scale have the biggest value considering you can roll any Active Skill or Passive Skill. Scale, however, "
+          },
+          {
+            "text": "is "
+          },
+          {
+            "text": "double the cost ("
+          },
+          {
+            "text": "it"
+          },
+          {
+            "text": " also won’t be available at launch)."
+          }
+        ]
+      },
+      {
+        "id": "context-block-0582",
+        "sourceIds": [],
+        "kind": "note",
+        "label": "Crafting scope",
+        "tone": "uncertain",
+        "content": [
+          {
+            "text": "The screenshots illustrate selected lines and individual recipes; their material and currency amounts are not universal four-line costs. The source explicitly says Scale costs double, without a complete cost schedule or release date."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "five-card-and-eight-card-set-setups",
+    "title": "Five-card and eight-card set setups",
+    "category": "arcana",
+    "summary": "Five-card Pantheon priorities and alternatives, eight-card set effects, and unresolved Parchment membership.",
+    "status": "source-uncertain",
+    "sourceUrl": "https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/edit",
+    "qualifiers": [
+      "Source recommendations, first-person statements, and testing claims are Kanon’s. Figures are captured examples rather than universal costs or ideal builds.",
+      "Captured source update: 9/20/2026. Regional and unconfirmed details remain qualified as written."
+    ],
+    "blocks": [
+      {
+        "id": "block-0584",
+        "sourceIds": ["block-0584"],
+        "kind": "heading",
+        "content": [
+          {
+            "text": "BIS “Set Effects” Setup for All Classes"
+          }
+        ],
+        "level": 2
+      },
+      {
+        "id": "block-0586",
+        "sourceIds": ["block-0586"],
+        "kind": "heading",
+        "content": [
+          {
+            "text": "5-Card Setup"
+          }
+        ],
+        "level": 3
+      },
+      {
+        "id": "block-0587",
+        "sourceIds": ["block-0587"],
+        "kind": "figure",
+        "figureId": "figure-065"
+      },
+      {
+        "id": "block-0589",
+        "sourceIds": ["block-0589"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "There’s some flexibility with the early 5-Card setup"
+          },
+          {
+            "text": ". "
+          },
+          {
+            "text": "At this stage there are only 2 Set Effects, both being less value than the Pantheon Stats attached to the cards so we prioritize the Pantheon Stats. Parchment and Compass can be from either set but try to have 2 Primal Vigor (gold color set) to pick up the 2-piece passive. In a perfect world we go the following but it’s not a big deal if your Parchment and Compass are swapped"
+          }
+        ]
+      },
+      {
+        "id": "context-block-0589",
+        "sourceIds": [],
+        "kind": "note",
+        "label": "Alternatives rather than simultaneous effects",
+        "tone": "uncertain",
+        "content": [
+          {
+            "text": "The five-card image illustrates Parchment Life versus Destiny and Compass Death versus Freedom as alternative cards. Do not combine both alternatives into one card. The earlier “Compass ~ Mirror” launch range is inconsistent with this full five-card list."
+          }
+        ]
+      },
+      {
+        "id": "list-block-0591",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-0591",
+              "sourceIds": ["block-0591"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Primal Vigor"
+                }
+              ]
+            },
+            {
+              "id": "list-block-0592",
+              "sourceIds": [],
+              "kind": "list",
+              "ordered": false,
+              "items": [
+                [
+                  {
+                    "id": "block-0592",
+                    "sourceIds": ["block-0592"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "Set Effects"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "list-block-0593",
+                    "sourceIds": [],
+                    "kind": "list",
+                    "ordered": false,
+                    "items": [
+                      [
+                        {
+                          "id": "block-0593",
+                          "sourceIds": ["block-0593"],
+                          "kind": "paragraph",
+                          "content": [
+                            {
+                              "text": "(2-piece) +60 PVE Attack when HP is 70% or more"
+                            }
+                          ]
+                        }
+                      ]
+                    ]
+                  }
+                ]
+              ]
+            },
+            {
+              "id": "list-block-0594",
+              "sourceIds": [],
+              "kind": "list",
+              "ordered": false,
+              "items": [
+                [
+                  {
+                    "id": "block-0594",
+                    "sourceIds": ["block-0594"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "Cards"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "list-block-0595",
+                    "sourceIds": [],
+                    "kind": "list",
+                    "ordered": false,
+                    "items": [
+                      [
+                        {
+                          "id": "block-0595",
+                          "sourceIds": ["block-0595"],
+                          "kind": "paragraph",
+                          "content": [
+                            {
+                              "text": "Chalice (Time)"
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "id": "block-0596",
+                          "sourceIds": ["block-0596"],
+                          "kind": "paragraph",
+                          "content": [
+                            {
+                              "text": "Parchment (Life)"
+                            }
+                          ]
+                        }
+                      ]
+                    ]
+                  }
+                ]
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "id": "list-block-0597",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-0597",
+              "sourceIds": ["block-0597"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Magic Armor"
+                }
+              ]
+            },
+            {
+              "id": "list-block-0598",
+              "sourceIds": [],
+              "kind": "list",
+              "ordered": false,
+              "items": [
+                [
+                  {
+                    "id": "block-0598",
+                    "sourceIds": ["block-0598"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "Set Effects"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "list-block-0599",
+                    "sourceIds": [],
+                    "kind": "list",
+                    "ordered": false,
+                    "items": [
+                      [
+                        {
+                          "id": "block-0599",
+                          "sourceIds": ["block-0599"],
+                          "kind": "paragraph",
+                          "content": [
+                            {
+                              "text": "(2-piece) Restores 1,500 MP when MP is 20% or less [30s CD]"
+                            }
+                          ]
+                        }
+                      ]
+                    ]
+                  }
+                ]
+              ]
+            },
+            {
+              "id": "list-block-0600",
+              "sourceIds": [],
+              "kind": "list",
+              "ordered": false,
+              "items": [
+                [
+                  {
+                    "id": "block-0600",
+                    "sourceIds": ["block-0600"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "Cards"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "list-block-0601",
+                    "sourceIds": [],
+                    "kind": "list",
+                    "ordered": false,
+                    "items": [
+                      [
+                        {
+                          "id": "block-0601",
+                          "sourceIds": ["block-0601"],
+                          "kind": "paragraph",
+                          "content": [
+                            {
+                              "text": "Compass (Death)"
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "id": "block-0602",
+                          "sourceIds": ["block-0602"],
+                          "kind": "paragraph",
+                          "content": [
+                            {
+                              "text": "Bell (Destruction)"
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "id": "block-0603",
+                          "sourceIds": ["block-0603"],
+                          "kind": "paragraph",
+                          "content": [
+                            {
+                              "text": "Mirror (Wisdom)"
+                            }
+                          ]
+                        }
+                      ]
+                    ]
+                  }
+                ]
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "id": "block-0605",
+        "sourceIds": ["block-0605"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "The 3 most important lines here are Chalice (Time - Combat Speed), Bell (Destruction - Attack Increase % ), and Mirror (Wisdom - "
+          },
+          {
+            "text": "Double Chance"
+          },
+          {
+            "text": ")"
+          }
+        ]
+      },
+      {
+        "id": "block-0607",
+        "sourceIds": ["block-0607"],
+        "kind": "heading",
+        "content": [
+          {
+            "text": "8-Card Setup"
+          }
+        ],
+        "level": 3
+      },
+      {
+        "id": "block-0608",
+        "sourceIds": ["block-0608"],
+        "kind": "figure",
+        "figureId": "figure-066"
+      },
+      {
+        "id": "list-block-0611",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-0611",
+              "sourceIds": ["block-0611"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Punishing Overture"
+                },
+                {
+                  "text": " "
+                }
+              ]
+            },
+            {
+              "id": "list-block-0612",
+              "sourceIds": [],
+              "kind": "list",
+              "ordered": false,
+              "items": [
+                [
+                  {
+                    "id": "block-0612",
+                    "sourceIds": ["block-0612"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "Set Effects"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "list-block-0613",
+                    "sourceIds": [],
+                    "kind": "list",
+                    "ordered": false,
+                    "items": [
+                      [
+                        {
+                          "id": "block-0613",
+                          "sourceIds": ["block-0613"],
+                          "kind": "paragraph",
+                          "content": [
+                            {
+                              "text": "(2-piece) +5% Boss Damage Tolerance"
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "id": "block-0614",
+                          "sourceIds": ["block-0614"],
+                          "kind": "paragraph",
+                          "content": [
+                            {
+                              "text": "(4-piece) +60 PVE Attack, +10% PVE Damage Boost when 70% HP or more"
+                            }
+                          ]
+                        }
+                      ]
+                    ]
+                  }
+                ]
+              ]
+            },
+            {
+              "id": "list-block-0615",
+              "sourceIds": [],
+              "kind": "list",
+              "ordered": false,
+              "items": [
+                [
+                  {
+                    "id": "block-0615",
+                    "sourceIds": ["block-0615"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "Cards"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "list-block-0616",
+                    "sourceIds": [],
+                    "kind": "list",
+                    "ordered": false,
+                    "items": [
+                      [
+                        {
+                          "id": "block-0616",
+                          "sourceIds": ["block-0616"],
+                          "kind": "paragraph",
+                          "content": [
+                            {
+                              "text": "Chalice (Time)"
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "id": "block-0617",
+                          "sourceIds": ["block-0617"],
+                          "kind": "paragraph",
+                          "content": [
+                            {
+                              "text": "Parchment (Life)"
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "id": "block-0618",
+                          "sourceIds": ["block-0618"],
+                          "kind": "paragraph",
+                          "content": [
+                            {
+                              "text": "Key (Attack Bonus)"
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "id": "block-0619",
+                          "sourceIds": ["block-0619"],
+                          "kind": "paragraph",
+                          "content": [
+                            {
+                              "text": "Hourglass (Defense bonus)",
+                              "breakAfter": true
+                            }
+                          ]
+                        }
+                      ]
+                    ]
+                  }
+                ]
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "id": "list-block-0620",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-0620",
+              "sourceIds": ["block-0620"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Protected Soul"
+                }
+              ]
+            },
+            {
+              "id": "list-block-0621",
+              "sourceIds": [],
+              "kind": "list",
+              "ordered": false,
+              "items": [
+                [
+                  {
+                    "id": "block-0621",
+                    "sourceIds": ["block-0621"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "Set Effects"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "list-block-0622",
+                    "sourceIds": [],
+                    "kind": "list",
+                    "ordered": false,
+                    "items": [
+                      [
+                        {
+                          "id": "block-0622",
+                          "sourceIds": ["block-0622"],
+                          "kind": "paragraph",
+                          "content": [
+                            {
+                              "text": "(2-piece) +5% Restoration"
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "id": "block-0623",
+                          "sourceIds": ["block-0623"],
+                          "kind": "paragraph",
+                          "content": [
+                            {
+                              "text": "(4-piece) +5% Weapon Damage Boost, Grants a Protective Shield that blocks 10k dmg for 5s when HP is 30% or less (CD: 2min)"
+                            }
+                          ]
+                        }
+                      ]
+                    ]
+                  }
+                ]
+              ]
+            },
+            {
+              "id": "list-block-0624",
+              "sourceIds": [],
+              "kind": "list",
+              "ordered": false,
+              "items": [
+                [
+                  {
+                    "id": "block-0624",
+                    "sourceIds": ["block-0624"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "Cards"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "list-block-0625",
+                    "sourceIds": [],
+                    "kind": "list",
+                    "ordered": false,
+                    "items": [
+                      [
+                        {
+                          "id": "block-0625",
+                          "sourceIds": ["block-0625"],
+                          "kind": "paragraph",
+                          "content": [
+                            {
+                              "text": "Compass (Death)"
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "id": "block-0626",
+                          "sourceIds": ["block-0626"],
+                          "kind": "paragraph",
+                          "content": [
+                            {
+                              "text": "Parchment (Life)"
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "id": "block-0627",
+                          "sourceIds": ["block-0627"],
+                          "kind": "paragraph",
+                          "content": [
+                            {
+                              "text": "Bell (Destruction)"
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "id": "block-0628",
+                          "sourceIds": ["block-0628"],
+                          "kind": "paragraph",
+                          "content": [
+                            {
+                              "text": "Mirror (Wisdom)"
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "id": "block-0629",
+                          "sourceIds": ["block-0629"],
+                          "kind": "paragraph",
+                          "content": [
+                            {
+                              "text": "Scale (Destruction, Destiny)"
+                            }
+                          ]
+                        },
+                        {
+                          "id": "context-block-0629",
+                          "sourceIds": [],
+                          "kind": "note",
+                          "label": "Eight cards, nine listed memberships",
+                          "tone": "uncertain",
+                          "content": [
+                            {
+                              "text": "The source lists nine set memberships: four Punishing Overture entries and five Protected Soul entries. Parchment occurs in both lists. The screenshot shows eight equipped types and one Parchment, with Dice and Lantern empty. Unnamed artwork does not resolve the allocation; both source lists are retained."
+                            }
+                          ]
+                        }
+                      ]
+                    ]
+                  }
+                ]
+              ]
+            }
+          ]
+        ]
+      }
+    ]
+  }
+]

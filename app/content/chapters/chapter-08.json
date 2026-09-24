@@ -1,0 +1,1327 @@
+[
+  {
+    "slug": "insight-levels-and-efficient-analysis",
+    "title": "Insight levels and efficient analysis",
+    "category": "pet-genus",
+    "summary": "Insight levels, locks, presets, analysis costs, and region-qualified leveling advice.",
+    "status": "source-uncertain",
+    "sourceUrl": "https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/edit",
+    "qualifiers": [
+      "Source recommendations, first-person statements, and testing claims are Kanon’s. Figures are captured examples rather than universal costs or ideal builds.",
+      "Captured source update: 9/20/2026. Regional and unconfirmed details remain qualified as written."
+    ],
+    "blocks": [
+      {
+        "id": "block-0685",
+        "sourceIds": ["block-0685"],
+        "kind": "heading",
+        "content": [
+          {
+            "text": "CH 8: PET GENUS"
+          }
+        ],
+        "level": 2
+      },
+      {
+        "id": "block-0687",
+        "sourceIds": ["block-0687"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Pet Genus is a horizontal system that gives a lot of power. You have 5 boards - Cogni, Fera, Natura, Varian, Special. You can literally just think of this as Boards 1-5."
+          }
+        ]
+      },
+      {
+        "id": "block-0689",
+        "sourceIds": ["block-0689"],
+        "kind": "group",
+        "label": "Related source illustrations",
+        "blocks": [
+          {
+            "id": "block-0689-figure-072",
+            "sourceIds": ["block-0689"],
+            "kind": "figure",
+            "figureId": "figure-072"
+          },
+          {
+            "id": "block-0689-figure-073",
+            "sourceIds": ["block-0689"],
+            "kind": "figure",
+            "figureId": "figure-073"
+          }
+        ]
+      },
+      {
+        "id": "block-0690",
+        "sourceIds": ["block-0690"],
+        "kind": "figure",
+        "figureId": "figure-074"
+      },
+      {
+        "id": "block-0692",
+        "sourceIds": ["block-0692"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Each board will have 9 stats that they can roll called “Slots” (or “Lines” as we refer to them as). Each Line (slot) has its own respective stat pool to roll from. As you level up your “Insight” (the blue bar, commonly referred to as Genus level), you unlock more Lines (slots) and the ability to roll higher grade stats on those Lines (slots). "
+          }
+        ]
+      },
+      {
+        "id": "block-0694",
+        "sourceIds": ["block-0694"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "When you click the yellow Analyze button, you roll random stats with random grades relative to your Insight level for all open Lines. You may lock a Line by clicking on the lock icon to the left of the stat. The more stats you lock, the more expensive the next roll becomes"
+          }
+        ]
+      },
+      {
+        "id": "block-0696",
+        "sourceIds": ["block-0696"],
+        "kind": "group",
+        "label": "Related source illustrations",
+        "blocks": [
+          {
+            "id": "block-0696-figure-075",
+            "sourceIds": ["block-0696"],
+            "kind": "figure",
+            "figureId": "figure-075"
+          },
+          {
+            "id": "block-0696-figure-076",
+            "sourceIds": ["block-0696"],
+            "kind": "figure",
+            "figureId": "figure-076"
+          }
+        ]
+      },
+      {
+        "id": "block-0698",
+        "sourceIds": ["block-0698"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "The goal is to get your Genus level to 10 for all the boards then fish for the best stats for each slot (9 slots, 5 boards). ",
+            "breakAfter": true
+          }
+        ]
+      },
+      {
+        "id": "block-0699",
+        "sourceIds": ["block-0699"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Additional Notes",
+            "emphasis": true,
+            "underline": true,
+            "highlight": "#f8f9fa"
+          },
+          {
+            "text": ": You can have up to 3 presets for Genus",
+            "emphasis": true,
+            "highlight": "#f8f9fa"
+          }
+        ]
+      },
+      {
+        "id": "block-0701",
+        "sourceIds": ["block-0701"],
+        "kind": "heading",
+        "content": [
+          {
+            "text": "HOW TO UPGRADE YOUR GENUS EFFICIENTLY"
+          }
+        ],
+        "level": 3
+      },
+      {
+        "id": "block-0703",
+        "sourceIds": ["block-0703"],
+        "kind": "heading",
+        "content": [
+          {
+            "text": "Step 1"
+          }
+        ],
+        "level": 4
+      },
+      {
+        "id": "list-block-0704",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-0704",
+              "sourceIds": ["block-0704"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Level your board to 10 and ignore the stats you get, do "
+                },
+                {
+                  "text": "not"
+                },
+                {
+                  "text": " lock any line "
+                },
+                {
+                  "text": "until you do this"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0705",
+              "sourceIds": ["block-0705"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "The exception to the above is:"
+                }
+              ]
+            },
+            {
+              "id": "list-block-0706",
+              "sourceIds": [],
+              "kind": "list",
+              "ordered": false,
+              "items": [
+                [
+                  {
+                    "id": "block-0706",
+                    "sourceIds": ["block-0706"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "If "
+                      },
+                      {
+                        "text": "progression on global is "
+                      },
+                      {
+                        "text": "too "
+                      },
+                      {
+                        "text": "slow to the point where level 10 isn’t possible or practical"
+                      },
+                      {
+                        "text": " to wait for"
+                      },
+                      {
+                        "text": " "
+                      }
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "id": "block-0707",
+                    "sourceIds": ["block-0707"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "You get a high yellow"
+                      },
+                      {
+                        "text": " or orange BIS stat roll on Line 4 (all boards, bis stats are listed below)"
+                      }
+                    ]
+                  }
+                ]
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "id": "list-block-0708",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-0708",
+              "sourceIds": ["block-0708"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Saving"
+                },
+                {
+                  "text": " until level 10 gives you the highest chance to roll "
+                },
+                {
+                  "text": "the highest grade lines"
+                }
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "id": "block-0710",
+        "sourceIds": ["block-0710"],
+        "kind": "heading",
+        "content": [
+          {
+            "text": "Step 2"
+          }
+        ],
+        "level": 4
+      },
+      {
+        "id": "list-block-0711",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-0711",
+              "sourceIds": ["block-0711"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "After hitting level 10 on a board, “Analyze” (roll) it with no stats locked until you roll "
+                },
+                {
+                  "text": "the BIS stats on Line 4 across all boards"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0712",
+              "sourceIds": ["block-0712"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Highest Prio Line 4 Boards are Special (Double Chance) and Varian (Front/Back Damage Boost) followed by Fera (Weapon Damage Boost) and Cogni (Critical Damage Boost)"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0713",
+              "sourceIds": ["block-0713"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Some people settle for lower % rolls on "
+                },
+                {
+                  "text": "their Line 4 rolls"
+                },
+                {
+                  "text": " for their first preset then work on higher % rolls on a second preset. "
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0714",
+              "sourceIds": ["block-0714"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Keep in mind a high Yellow roll can be higher than a low Orange roll"
+                }
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "id": "block-0716",
+        "sourceIds": ["block-0716"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Additional Notes",
+            "emphasis": true,
+            "underline": true,
+            "highlight": "#f8f9fa"
+          },
+          {
+            "text": ": You can do this by using the Auto Analysis and selecting Unique (or Heroic) ",
+            "emphasis": true,
+            "highlight": "#f8f9fa"
+          },
+          {
+            "text": "Double Chance ",
+            "highlight": "#f8f9fa"
+          },
+          {
+            "text": "on Lines 3 and 9. It is not possible to roll lower than a Unique on ",
+            "emphasis": true,
+            "highlight": "#f8f9fa"
+          },
+          {
+            "text": "Double Chance",
+            "highlight": "#f8f9fa"
+          },
+          {
+            "text": ".",
+            "emphasis": true,
+            "highlight": "#f8f9fa"
+          }
+        ]
+      },
+      {
+        "id": "context-block-0716",
+        "sourceIds": [],
+        "kind": "note",
+        "label": "Mixed regional workflow",
+        "tone": "uncertain",
+        "content": [
+          {
+            "text": "The preceding Line 4 leveling priorities are updated Global advice. This Auto Analysis note refers to the older Asia-style Lines 3 and 9. Screenshot “Smite” is associated by nearby source prose with Double Chance; this is a contextual alias, not an independently verified localization mapping."
+          }
+        ]
+      },
+      {
+        "id": "block-0720",
+        "sourceIds": ["block-0720"],
+        "kind": "figure",
+        "figureId": "figure-077"
+      }
+    ]
+  },
+  {
+    "slug": "asia-genus-stat-priorities",
+    "title": "Asia Genus stat priorities",
+    "category": "pet-genus",
+    "summary": "Asia slot priorities for ordinary and Special boards, with a numbered example.",
+    "status": "source-uncertain",
+    "sourceUrl": "https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/edit",
+    "qualifiers": [
+      "Source recommendations, first-person statements, and testing claims are Kanon’s. Figures are captured examples rather than universal costs or ideal builds.",
+      "Captured source update: 9/20/2026. Regional and unconfirmed details remain qualified as written."
+    ],
+    "blocks": [
+      {
+        "id": "block-0723",
+        "sourceIds": ["block-0723"],
+        "kind": "heading",
+        "content": [
+          {
+            "text": "ASIA"
+          },
+          {
+            "text": " SERVER BIS GENUS LINES"
+          }
+        ],
+        "level": 3
+      },
+      {
+        "id": "block-0724",
+        "sourceIds": ["block-0724"],
+        "kind": "heading",
+        "content": [
+          {
+            "text": "BIS Lines (slots) to shoot for on all boards EXCEPT “Special” Board :"
+          }
+        ],
+        "level": 4
+      },
+      {
+        "id": "list-block-0725",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-0725",
+              "sourceIds": ["block-0725"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Lines 1, 4, 7: Boss Attack > Crit (least important Line)"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0726",
+              "sourceIds": ["block-0726"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Lines 3, 9: "
+                },
+                {
+                  "text": "Double Chance"
+                },
+                {
+                  "text": " (no exceptions, shoot for 2% rolls ideally for your “end-game” preset)"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0727",
+              "sourceIds": ["block-0727"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Lines 2, 5, 8: Max Attack > Attack Bonu"
+                },
+                {
+                  "text": "s"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0728",
+              "sourceIds": ["block-0728"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Lines 6: Damage Tolerance "
+                }
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "id": "block-0730",
+        "sourceIds": ["block-0730"],
+        "kind": "heading",
+        "content": [
+          {
+            "text": "BIS Lines (slots) to shoot for on "
+          },
+          {
+            "text": "Special Board (5th Board)"
+          }
+        ],
+        "level": 4
+      },
+      {
+        "id": "list-block-0731",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-0731",
+              "sourceIds": ["block-0731"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Lines 3, 9: "
+                },
+                {
+                  "text": "Double Chance"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0732",
+              "sourceIds": ["block-0732"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Lines 6: Damage Tolerance"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-0733",
+              "sourceIds": ["block-0733"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Remaining Lines: Max Attack > Attack Bonus"
+                }
+              ]
+            },
+            {
+              "id": "context-block-0733",
+              "sourceIds": [],
+              "kind": "note",
+              "label": "Numbered roll example",
+              "tone": "uncertain",
+              "content": [
+                {
+                  "text": "The numbered screenshot is an example, not an ideal BIS roll. Its Slot 2 Boss Attack differs from the Asia recommendation Max Attack > Attack Bonus. Read Slots 1–9 in the figure legend; “Smite” follows the screenshot wording."
+                }
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "id": "block-0735",
+        "sourceIds": ["block-0735"],
+        "kind": "group",
+        "label": "Related source illustrations",
+        "blocks": [
+          {
+            "id": "block-0735-figure-078",
+            "sourceIds": ["block-0735"],
+            "kind": "figure",
+            "figureId": "figure-078"
+          },
+          {
+            "id": "block-0735-figure-079",
+            "sourceIds": ["block-0735"],
+            "kind": "figure",
+            "figureId": "figure-079"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "global-genus-stat-priorities",
+    "title": "Global Genus stat priorities",
+    "category": "pet-genus",
+    "summary": "Global slots for every board, including conditional Crit and Accuracy priorities.",
+    "status": "source-uncertain",
+    "sourceUrl": "https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/edit",
+    "qualifiers": [
+      "Source recommendations, first-person statements, and testing claims are Kanon’s. Figures are captured examples rather than universal costs or ideal builds.",
+      "Captured source update: 9/20/2026. Regional and unconfirmed details remain qualified as written."
+    ],
+    "blocks": [
+      {
+        "id": "block-0738",
+        "sourceIds": ["block-0738"],
+        "kind": "heading",
+        "content": [
+          {
+            "text": "GLOBAL BIS GENUS LINES"
+          }
+        ],
+        "level": 3
+      },
+      {
+        "id": "block-0739",
+        "sourceIds": ["block-0739"],
+        "kind": "heading",
+        "content": [
+          {
+            "text": "BIS Lines (slots) to shoot for:"
+          }
+        ],
+        "level": 4
+      },
+      {
+        "id": "global-genus-priorities-table",
+        "sourceIds": [],
+        "kind": "table",
+        "caption": "Global source priorities by board. Each source line and its conditional alternatives are retained together.",
+        "columns": [
+          [
+            {
+              "text": "Board"
+            }
+          ],
+          [
+            {
+              "text": "Slots and priorities"
+            }
+          ]
+        ],
+        "rows": [
+          [
+            [
+              {
+                "id": "numbered-block-0741",
+                "sourceIds": [],
+                "kind": "list",
+                "ordered": true,
+                "start": 1,
+                "items": [
+                  [
+                    {
+                      "id": "block-0741",
+                      "sourceIds": ["block-0741"],
+                      "kind": "paragraph",
+                      "content": [
+                        {
+                          "text": "Cogni Board"
+                        }
+                      ]
+                    }
+                  ]
+                ]
+              }
+            ],
+            [
+              {
+                "id": "list-block-0742",
+                "sourceIds": [],
+                "kind": "list",
+                "ordered": false,
+                "items": [
+                  [
+                    {
+                      "id": "block-0742",
+                      "sourceIds": ["block-0742"],
+                      "kind": "paragraph",
+                      "content": [
+                        {
+                          "text": "Lines 1, 5: Max Attack > Attack Bonus"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "block-0743",
+                      "sourceIds": ["block-0743"],
+                      "kind": "paragraph",
+                      "content": [
+                        {
+                          "text": "Lines 2, 8: HP Increase %"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "block-0744",
+                      "sourceIds": ["block-0744"],
+                      "kind": "paragraph",
+                      "content": [
+                        {
+                          "text": "Lines 3, 6, 9: Power Shard Bonus"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "list-block-0745",
+                      "sourceIds": [],
+                      "kind": "list",
+                      "ordered": true,
+                      "items": [
+                        [
+                          {
+                            "id": "block-0745",
+                            "sourceIds": ["block-0745"],
+                            "kind": "paragraph",
+                            "content": [
+                              {
+                                "text": "Crit, Accuracy > Power Shard Bonus if crit/accuracy cap is not reached"
+                              }
+                            ]
+                          }
+                        ]
+                      ],
+                      "start": 1
+                    }
+                  ]
+                ]
+              },
+              {
+                "id": "list-block-0746",
+                "sourceIds": [],
+                "kind": "list",
+                "ordered": false,
+                "items": [
+                  [
+                    {
+                      "id": "block-0746",
+                      "sourceIds": ["block-0746"],
+                      "kind": "paragraph",
+                      "content": [
+                        {
+                          "text": "Line 4: Critical Damage Boost > Damage Boost"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "block-0747",
+                      "sourceIds": ["block-0747"],
+                      "kind": "paragraph",
+                      "content": [
+                        {
+                          "text": "Line 7: Damage Tolerance, PVE Damage Tolerance > Endurance"
+                        }
+                      ]
+                    }
+                  ]
+                ]
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "id": "numbered-block-0748",
+                "sourceIds": [],
+                "kind": "list",
+                "ordered": true,
+                "start": 2,
+                "items": [
+                  [
+                    {
+                      "id": "block-0748",
+                      "sourceIds": ["block-0748"],
+                      "kind": "paragraph",
+                      "content": [
+                        {
+                          "text": "Fera Board"
+                        }
+                      ]
+                    }
+                  ]
+                ]
+              }
+            ],
+            [
+              {
+                "id": "list-block-0749",
+                "sourceIds": [],
+                "kind": "list",
+                "ordered": false,
+                "items": [
+                  [
+                    {
+                      "id": "block-0749",
+                      "sourceIds": ["block-0749"],
+                      "kind": "paragraph",
+                      "content": [
+                        {
+                          "text": "Lines 1, 5: Max Attack > Attack Bonus"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "block-0750",
+                      "sourceIds": ["block-0750"],
+                      "kind": "paragraph",
+                      "content": [
+                        {
+                          "text": "Lines 2, 8: HP Increase %"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "block-0751",
+                      "sourceIds": ["block-0751"],
+                      "kind": "paragraph",
+                      "content": [
+                        {
+                          "text": "Lines 3, 6, 9: Power Shard Bonus"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "list-block-0752",
+                      "sourceIds": [],
+                      "kind": "list",
+                      "ordered": true,
+                      "items": [
+                        [
+                          {
+                            "id": "block-0752",
+                            "sourceIds": ["block-0752"],
+                            "kind": "paragraph",
+                            "content": [
+                              {
+                                "text": "Crit, Accuracy > Power Shard Bonus if crit/accuracy cap is not reached"
+                              }
+                            ]
+                          }
+                        ]
+                      ],
+                      "start": 1
+                    }
+                  ]
+                ]
+              },
+              {
+                "id": "list-block-0753",
+                "sourceIds": [],
+                "kind": "list",
+                "ordered": false,
+                "items": [
+                  [
+                    {
+                      "id": "block-0753",
+                      "sourceIds": ["block-0753"],
+                      "kind": "paragraph",
+                      "content": [
+                        {
+                          "text": "Line 4: Weapon Damage Boost > Damage Boost"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "block-0754",
+                      "sourceIds": ["block-0754"],
+                      "kind": "paragraph",
+                      "content": [
+                        {
+                          "text": "Line 7: Damage Tolerance, PVE Damage Tolerance > Endurance"
+                        }
+                      ]
+                    }
+                  ]
+                ]
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "id": "numbered-block-0755",
+                "sourceIds": [],
+                "kind": "list",
+                "ordered": true,
+                "start": 3,
+                "items": [
+                  [
+                    {
+                      "id": "block-0755",
+                      "sourceIds": ["block-0755"],
+                      "kind": "paragraph",
+                      "content": [
+                        {
+                          "text": "Natura Board"
+                        }
+                      ]
+                    }
+                  ]
+                ]
+              }
+            ],
+            [
+              {
+                "id": "list-block-0756",
+                "sourceIds": [],
+                "kind": "list",
+                "ordered": false,
+                "items": [
+                  [
+                    {
+                      "id": "block-0756",
+                      "sourceIds": ["block-0756"],
+                      "kind": "paragraph",
+                      "content": [
+                        {
+                          "text": "Lines 1, 5: Max Attack > Attack Bonus"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "block-0757",
+                      "sourceIds": ["block-0757"],
+                      "kind": "paragraph",
+                      "content": [
+                        {
+                          "text": "Lines 2, 8: HP Increase %"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "block-0758",
+                      "sourceIds": ["block-0758"],
+                      "kind": "paragraph",
+                      "content": [
+                        {
+                          "text": "Lines 3, 6, 9: Power Shard Bonus"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "list-block-0759",
+                      "sourceIds": [],
+                      "kind": "list",
+                      "ordered": true,
+                      "items": [
+                        [
+                          {
+                            "id": "block-0759",
+                            "sourceIds": ["block-0759"],
+                            "kind": "paragraph",
+                            "content": [
+                              {
+                                "text": "Crit, Accuracy > Power Shard Bonus if crit/accuracy cap is not reached"
+                              }
+                            ]
+                          }
+                        ]
+                      ],
+                      "start": 1
+                    }
+                  ]
+                ]
+              },
+              {
+                "id": "list-block-0760",
+                "sourceIds": [],
+                "kind": "list",
+                "ordered": false,
+                "items": [
+                  [
+                    {
+                      "id": "block-0760",
+                      "sourceIds": ["block-0760"],
+                      "kind": "paragraph",
+                      "content": [
+                        {
+                          "text": "Line 4: Multi Hit, Perfect Chance"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "block-0761",
+                      "sourceIds": ["block-0761"],
+                      "kind": "paragraph",
+                      "content": [
+                        {
+                          "text": "Line 7: PVE Damage Tolerance > Endurance"
+                        }
+                      ]
+                    }
+                  ]
+                ]
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "id": "numbered-block-0762",
+                "sourceIds": [],
+                "kind": "list",
+                "ordered": true,
+                "start": 4,
+                "items": [
+                  [
+                    {
+                      "id": "block-0762",
+                      "sourceIds": ["block-0762"],
+                      "kind": "paragraph",
+                      "content": [
+                        {
+                          "text": "Varian Board"
+                        }
+                      ]
+                    }
+                  ]
+                ]
+              }
+            ],
+            [
+              {
+                "id": "list-block-0763",
+                "sourceIds": [],
+                "kind": "list",
+                "ordered": false,
+                "items": [
+                  [
+                    {
+                      "id": "block-0763",
+                      "sourceIds": ["block-0763"],
+                      "kind": "paragraph",
+                      "content": [
+                        {
+                          "text": "Lines 1, 5: Max Attack > Attack Bonus"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "block-0764",
+                      "sourceIds": ["block-0764"],
+                      "kind": "paragraph",
+                      "content": [
+                        {
+                          "text": "Lines 2, 8: HP Increase %"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "block-0765",
+                      "sourceIds": ["block-0765"],
+                      "kind": "paragraph",
+                      "content": [
+                        {
+                          "text": "Lines 3, 6, 9: Power Shard Bonus"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "list-block-0766",
+                      "sourceIds": [],
+                      "kind": "list",
+                      "ordered": true,
+                      "items": [
+                        [
+                          {
+                            "id": "block-0766",
+                            "sourceIds": ["block-0766"],
+                            "kind": "paragraph",
+                            "content": [
+                              {
+                                "text": "Crit, Accuracy > Power Shard Bonus if crit/accuracy cap is not reached"
+                              }
+                            ]
+                          }
+                        ]
+                      ],
+                      "start": 1
+                    }
+                  ]
+                ]
+              },
+              {
+                "id": "list-block-0767",
+                "sourceIds": [],
+                "kind": "list",
+                "ordered": false,
+                "items": [
+                  [
+                    {
+                      "id": "block-0767",
+                      "sourceIds": ["block-0767"],
+                      "kind": "paragraph",
+                      "content": [
+                        {
+                          "text": "Line 4: Front/Back Damage Boost"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "block-0768",
+                      "sourceIds": ["block-0768"],
+                      "kind": "paragraph",
+                      "content": [
+                        {
+                          "text": "Line 7: PVE Damage Tolerance > Endurance"
+                        }
+                      ]
+                    }
+                  ]
+                ]
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "id": "numbered-block-0769",
+                "sourceIds": [],
+                "kind": "list",
+                "ordered": true,
+                "start": 5,
+                "items": [
+                  [
+                    {
+                      "id": "block-0769",
+                      "sourceIds": ["block-0769"],
+                      "kind": "paragraph",
+                      "content": [
+                        {
+                          "text": "Special Board"
+                        }
+                      ]
+                    }
+                  ]
+                ]
+              }
+            ],
+            [
+              {
+                "id": "list-block-0770",
+                "sourceIds": [],
+                "kind": "list",
+                "ordered": false,
+                "items": [
+                  [
+                    {
+                      "id": "block-0770",
+                      "sourceIds": ["block-0770"],
+                      "kind": "paragraph",
+                      "content": [
+                        {
+                          "text": "Lines 1, 5: Max Attack > Attack Bonus"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "block-0771",
+                      "sourceIds": ["block-0771"],
+                      "kind": "paragraph",
+                      "content": [
+                        {
+                          "text": "Lines 2, 8: HP Increase %"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "block-0772",
+                      "sourceIds": ["block-0772"],
+                      "kind": "paragraph",
+                      "content": [
+                        {
+                          "text": "Lines 3, 6, 9: Power Shard Bonus"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "list-block-0773",
+                      "sourceIds": [],
+                      "kind": "list",
+                      "ordered": true,
+                      "items": [
+                        [
+                          {
+                            "id": "block-0773",
+                            "sourceIds": ["block-0773"],
+                            "kind": "paragraph",
+                            "content": [
+                              {
+                                "text": "Crit, Accuracy > Power Shard Bonus if crit/accuracy cap is not reached"
+                              }
+                            ]
+                          }
+                        ]
+                      ],
+                      "start": 1
+                    }
+                  ]
+                ]
+              },
+              {
+                "id": "list-block-0774",
+                "sourceIds": [],
+                "kind": "list",
+                "ordered": false,
+                "items": [
+                  [
+                    {
+                      "id": "block-0774",
+                      "sourceIds": ["block-0774"],
+                      "kind": "paragraph",
+                      "content": [
+                        {
+                          "text": "Line 4: Double Chance"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "block-0775",
+                      "sourceIds": ["block-0775"],
+                      "kind": "paragraph",
+                      "content": [
+                        {
+                          "text": "Line 7: Damage Tolerance > Endurance"
+                        }
+                      ]
+                    }
+                  ]
+                ]
+              }
+            ]
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "pet-owned-effects",
+    "title": "Pet owned effects",
+    "category": "pet-genus",
+    "summary": "Pet owned bonuses are separate from Genus, illustrated by one leveled pet.",
+    "status": "source-uncertain",
+    "sourceUrl": "https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/edit",
+    "qualifiers": [
+      "Source recommendations, first-person statements, and testing claims are Kanon’s. Figures are captured examples rather than universal costs or ideal builds.",
+      "Captured source update: 9/20/2026. Regional and unconfirmed details remain qualified as written."
+    ],
+    "blocks": [
+      {
+        "id": "block-0777",
+        "sourceIds": ["block-0777"],
+        "kind": "heading",
+        "content": [
+          {
+            "text": "Pet Passive “Owned Effects”"
+          }
+        ],
+        "level": 3
+      },
+      {
+        "id": "block-0778",
+        "sourceIds": ["block-0778"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Pets also have an “Owned Effects” system where you get passive stats as you unlock and level up more Pets.This can be leveled up by simply farming mobs or obtaining Pet-related rewards from a variety of content."
+          }
+        ]
+      },
+      {
+        "id": "context-block-0778",
+        "sourceIds": [],
+        "kind": "note",
+        "label": "Separate pet progression",
+        "tone": "context",
+        "content": [
+          {
+            "text": "The pictured Snowfield Kalgolem changes are Pet Insight owned effects, not Genus slot rolls. The stamina effect label is truncated in the screenshot."
+          }
+        ]
+      },
+      {
+        "id": "block-0779",
+        "sourceIds": ["block-0779"],
+        "kind": "figure",
+        "figureId": "figure-080"
+      }
+    ]
+  }
+]
