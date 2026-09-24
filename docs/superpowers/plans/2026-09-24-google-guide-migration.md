@@ -34,19 +34,27 @@
 
 ## Execution conventions
 
-Work in `C:/code/aion-wiki` on the existing `codex/aion2-wiki` task branch unless the worktree skill identifies an isolation requirement. Check status and preserve user changes. Read the approved spec and relevant audit before each content task. Do not repeat image inspections except to resolve a specific uncertainty.
+Work in WSL Ubuntu at `/mnt/c/code/aion-wiki` on the existing `codex/aion2-wiki` task branch unless the worktree skill identifies an isolation requirement. Use WSL Git, Node, npm, and Python; do not depend on Windows Codex runtime caches or the recovered `.local-tools/npm` installation. Check status and preserve user changes. Read the approved spec and relevant audit before each content task. Do not repeat image inspection except to resolve a specific uncertainty.
 
-PowerShell setup when npm is not on PATH:
+WSL's interactive Bash initializes nvm. Verified environment: Git 2.53.0, Node 26.10.0, npm 11.19.1, Python 3.14.4. The existing project engine contract is Node `>=24.15.0 <25` and npm `>=12.1.0 <13`; use a compatible WSL nvm environment before execution rather than silently changing that contract:
 
-```powershell
-$wikiNode = 'C:/Users/rings/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node.exe'
-$wikiNpm = 'C:/code/aion-wiki/.local-tools/npm/package/bin/npm-cli.js'
-$wikiPython = 'C:/Users/rings/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe'
-$env:PATH = (Split-Path $wikiNode) + ';' + $env:PATH
-& $wikiNode $wikiNpm test -- tests/content-integrity.test.ts
+```bash
+cd /mnt/c/code/aion-wiki
+source ~/.nvm/nvm.sh
+nvm install 24
+nvm use 24
+npm install --global npm@12
+node --version
+npm --version
+npm ci
+npm test -- tests/content-integrity.test.ts
 ```
 
-Below, `npm` means the explicit Node/npm invocation above when needed. Run failing behavior tests before implementation. Repair dependencies with `npm ci` only if the existing installation is incomplete. After each task, use the subagent-driven skill's specification and code-quality review gates. Execute content groups individually; the coordinator owns shared integration files. Stage only task files; commits may use `git -c safe.directory=C:/code/aion-wiki -c user.name=Codex -c user.email=codex@localhost` where local settings require it.
+Run shell commands through the WSL console, or `wsl.exe --exec bash -ic '<command>'` when only the Windows tool entry point is available. Select Node 24 in each new shell; do not change the user's nvm default. `npm ci` recreates platform-specific dependencies for Linux, so do not alternate Windows and Linux npm installations in this checkout. Resolve Python migration dependencies in WSL before running the importer; use a dedicated venv if required. Do not use shared Codex runtime caches as a fallback.
+
+The saved guide, original media, and completed audits under `.local-tools/source-doc` are source inputs and must remain available. Preserve QA evidence as well. Only obsolete tooling such as `.local-tools/npm` is eligible for cleanup after WSL validation; verify exact paths before deleting. Removing shared Codex runtime caches is unnecessary and outside this environment switch.
+
+Run failing behavior tests before implementation. After each task, use the subagent-driven skill's specification and code-quality review gates. Execute content groups individually; the coordinator owns shared integration files. Stage only task files. WSL Git access is verified; use per-command author settings if needed, never global configuration. Initial WSL status reported line-ending-only changes in the spec, package lock, and favicon; preserve these and exclude them from unrelated commits rather than normalizing the entire tree.
 
 ## File boundaries and interfaces
 
@@ -419,7 +427,7 @@ Also mutate a repeated numeric occurrence, regional qualifier, and external link
 - [ ] Update static verifier to inspect all route headings/status/body content and figure/legend text, verify local assets and internal route/fragment targets, reject sample disclosures/development URLs, and accommodate the legitimately short pending page. Normalize entities/whitespace rather than weakening comparisons when inline markup divides text. Add `verify:content` (`node scripts/content-integrity.ts`) for full-data validation; CLI must exit nonzero on errors.
 - [ ] Run required commands after integration:
 
-```powershell
+```bash
 npm run content:generate
 npm run content:check
 npm run verify:content
@@ -431,7 +439,7 @@ npm run build
 npm run verify:static
 ```
 
-- [ ] Use bundled Playwright with installed Chrome/Edge against the static preview. The persistent script accepts the preview URL as its first argument and imports the bundled Playwright runtime; no product browser dependency. Capture console/page/network failures and assert interactions, not screenshots alone:
+- [ ] Use Playwright and a compatible browser from WSL against the static preview. Resolve an existing WSL browser-test installation first; if absent, provision a task-scoped test environment and browser before QA. The persistent script accepts the preview URL as its first argument and resolves Playwright from that test environment, without depending on Windows Codex runtime caches or adding a product browser dependency. Capture console/page/network failures and assert interactions, not screenshots alone:
 
 ```js
 await page.setViewportSize({ width: 375, height: 812 });
@@ -466,3 +474,4 @@ if (!(await open.evaluate((element) => element === document.activeElement)))
 - Preservation compares actual visible source destinations against an independent baseline, not only metadata counts. Each Review Focus case has an owning test task.
 - Content group article counts reconcile: 14 + 6 + 23 = 43; source overview is separate. Figure counts: 25 + 28 + 37 = 90. Mapping counts: 71 + 106 + 144 = 321.
 - Shared interfaces and ownership are fixed above. Product implementation waits for review of this written plan.
+
