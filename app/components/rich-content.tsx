@@ -201,11 +201,15 @@ export function RichContent({
             <Table.Root
               size="md"
               variant="line"
-              minW="max-content"
+              minW={block.columns.length > 3 ? 'max-content' : undefined}
+              tableLayout={block.columns.length === 2 ? 'fixed' : 'auto'}
+              width="full"
               fontVariantNumeric="tabular-nums"
             >
               <Table.Caption
                 captionSide="top"
+                whiteSpace="normal"
+                overflowWrap="anywhere"
                 color="wiki.muted"
                 textStyle="wiki.caption"
                 textAlign="start"
@@ -220,6 +224,11 @@ export function RichContent({
                     <Table.ColumnHeader
                       key={index}
                       scope="col"
+                      width={
+                        block.columns.length === 2 && index === 0
+                          ? { base: '7rem', md: '22%' }
+                          : undefined
+                      }
                       bg="wiki.accentSoft"
                       color="wiki.ink"
                       px="3"

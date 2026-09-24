@@ -95,9 +95,13 @@ export function GuideFigure({ figure, sourceLinks }: Props): React.JSX.Element {
                   display="grid"
                   gridTemplateColumns={{
                     base: 'minmax(0, 1fr)',
-                    md: 'minmax(8rem, 12rem) minmax(0, 1fr)',
+                    md:
+                      `${mapping.label} ${mapping.visualValue ?? ''}`.length >
+                      90
+                        ? 'minmax(0, 1fr)'
+                        : 'minmax(7rem, 20%) minmax(0, 1fr)',
                   }}
-                  columnGap="5"
+                  columnGap="4"
                   rowGap="1"
                   py="3"
                   borderBottomWidth="1px"
@@ -113,14 +117,19 @@ export function GuideFigure({ figure, sourceLinks }: Props): React.JSX.Element {
                   >
                     {mapping.label}
                     {mapping.color && ` (${mapping.color})`}
-                    {mapping.visualValue && `: ${mapping.visualValue}`}
+                    {mapping.visualValue && (
+                      <Text as="span" fontWeight="normal">
+                        : {mapping.visualValue}
+                      </Text>
+                    )}
                   </DataList.ItemLabel>
                   <DataList.ItemValue
                     display="block"
                     overflowWrap="anywhere"
                     minW="0"
                     color="wiki.ink"
-                    textStyle="wiki.label"
+                    textStyle="wiki.body"
+                    fontWeight="normal"
                   >
                     {mapping.meaning}
                     {mapping.confidence !== 'confirmed' && (
@@ -130,7 +139,18 @@ export function GuideFigure({ figure, sourceLinks }: Props): React.JSX.Element {
                       </Text>
                     )}
                     {destinations.length > 0 && (
-                      <Box as="span" data-guide-references="" ms="2">
+                      <Flex
+                        data-guide-references=""
+                        mt="2"
+                        gap="1"
+                        align="center"
+                        wrap="wrap"
+                        textStyle="wiki.caption"
+                        fontWeight="normal"
+                      >
+                        <Text as="span" color="wiki.muted" me="1">
+                          Sources
+                        </Text>
                         {destinations.map(({ sourceId, href }, linkIndex) => (
                           <Link
                             key={`${sourceId}-${linkIndex}`}
@@ -138,14 +158,15 @@ export function GuideFigure({ figure, sourceLinks }: Props): React.JSX.Element {
                             aria-label={`Source explanation: ${mapping.label} ${mapping.meaning}`}
                             color="wiki.accent"
                             _hover={{ color: 'wiki.accentHover' }}
-                            me="2"
+                            minW="6"
+                            minH="6"
+                            justifyContent="center"
+                            textDecoration="underline"
                           >
-                            {linkIndex === 0
-                              ? 'Source explanation'
-                              : `Source explanation ${linkIndex + 1}`}
+                            {linkIndex + 1}
                           </Link>
                         ))}
-                      </Box>
+                      </Flex>
                     )}
                   </DataList.ItemValue>
                 </DataList.Item>

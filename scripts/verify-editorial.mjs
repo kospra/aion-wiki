@@ -33,6 +33,7 @@ try {
       ['home', '/'],
       ['gear', '/articles/gear-anatomy-and-stat-layers'],
       ['table', '/articles/theostones'],
+      ['priorities', '/articles/global-genus-stat-priorities'],
     ]) {
       const response = await page.goto(baseUrl + route, {
         waitUntil: 'networkidle',
@@ -50,6 +51,19 @@ try {
         ),
         `${name} at ${width}: overflow`,
       );
+      if (name === 'priorities') {
+        const fits = await page
+          .locator('table')
+          .evaluate(
+            (el) =>
+              el.getBoundingClientRect().width <=
+              el.parentElement.getBoundingClientRect().width,
+          );
+        assert.ok(
+          fits,
+          `${width}: two-column priorities must fit without caption-induced scrolling`,
+        );
+      }
       if (name === 'home') {
         const search = await page.getByRole('searchbox').boundingBox();
         assert.ok(
@@ -57,7 +71,9 @@ try {
           `${width}: search should be reachable in first screen`,
         );
       } else {
-        const prose = page.locator('[data-guide-content] p').first();
+        const prose = page
+          .locator('[data-guide-content] p:not(table p)')
+          .first();
         if (await prose.count()) {
           const style = await prose.evaluate((el) => ({
             size: parseFloat(getComputedStyle(el).fontSize),
