@@ -58,7 +58,11 @@ it('renders source text as inert text with inline emphasis, highlighting, underl
   expect(container.querySelector('strong')).toHaveTextContent('strong');
   expect(container.querySelector('em')?.textContent).toBe(' italic');
   expect(container.querySelector('u')?.textContent).toBe(' underlined');
-  expect(container.querySelector('mark')?.textContent).toBe(' yellow');
+  const highlight = container.querySelector('mark');
+  expect(highlight?.textContent).toBe(' yellow');
+  expect(highlight).toHaveAttribute('data-source-highlight', '#ffff00');
+  expect(getComputedStyle(highlight!).backgroundColor).toBe('rgb(255, 255, 0)');
+  expect(getComputedStyle(highlight!).whiteSpace).toBe('normal');
   expect(screen.getByRole('link', { name: 'details' })).toHaveAttribute(
     'href',
     '/articles/gear#block0002',
@@ -181,6 +185,7 @@ it('renders captioned tables with column headers and labeled horizontal scrollin
   render(<RichContent blocks={blocks} figures={{}} sourceLinks={{}} />);
 
   const region = screen.getByRole('region', { name: 'Regional values' });
+  expect(region).toHaveAttribute('tabindex', '0');
   expect(
     within(region).getByRole('table', { name: 'Regional values' }),
   ).toBeVisible();
