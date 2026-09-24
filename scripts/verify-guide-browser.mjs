@@ -7,6 +7,7 @@ import { resolve } from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { staticPaths, categories, articles } from '../app/content/wiki.ts';
 import { loadCompleteGuide } from './guide-data.ts';
+import { validateGuide } from './content-integrity.ts';
 import {
   walkBlocks,
   blockInlineSegments,
@@ -28,6 +29,42 @@ const { chromium } = await import(
 const output = resolve('.local-tools/qa/guide');
 await mkdir(output, { recursive: true });
 const guide = await loadCompleteGuide();
+assert.deepEqual(
+  validateGuide(guide),
+  [],
+  'Browser expectations must match the independent source baseline',
+);
+assert.equal(staticPaths.length, 57);
+const expectedHighlights = guide.pages.flatMap((p) =>
+  walkBlocks(p.blocks).flatMap((b) =>
+    blockInlineSegments(b)
+      .flat()
+      .filter((part) => part.highlight),
+  ),
+);
+assert.equal(expectedHighlights.length, 78);
+assert.equal(
+  guide.pages
+    .filter((p) => p.category !== null)
+    .flatMap((p) =>
+      walkBlocks(p.blocks).flatMap((b) =>
+        blockInlineSegments(b)
+          .flat()
+          .filter((part) => part.highlight),
+      ),
+    ).length,
+  71,
+);
+assert.deepEqual(
+  expectedHighlights.reduce(
+    (counts, part) => ({
+      ...counts,
+      [part.highlight]: (counts[part.highlight] ?? 0) + 1,
+    }),
+    {},
+  ),
+  { '#f8f9fa': 65, '#ffff00': 13 },
+);
 const result = {
   baseUrl,
   started: new Date().toISOString(),
@@ -35,6 +72,9 @@ const result = {
   routes: [],
   interactions: [],
   screenshots: [],
+  highlightChecks: 0,
+  figureLoads: 0,
+  noJavaScript: [],
   failures: [],
 };
 const browser = await chromium.launch({ headless: true });
@@ -59,7 +99,7 @@ page.on('response', (response) => {
 const record = (name) => result.interactions.push(name);
 const screenshot = async (name) => {
   const path = `${output}/${name}.png`;
-  await page.screenshot({ path });
+  await page.screenshot({ path, animations: 'disabled' });
   result.screenshots.push(path);
 };
 const visit = async (route) => {
@@ -68,10 +108,11 @@ const visit = async (route) => {
   });
   assert.equal(response.status(), 200, route);
   await page.locator('main h1').waitFor();
+  result.figureLoads += await page.locator('[data-guide-figure] > img').count();
   // Load every original on each direct visit, including interaction screenshots.
   await page.evaluate(async () => {
     await Promise.all(
-      [...document.querySelectorAll('.guide-figure > img')].map((img) => {
+      [...document.querySelectorAll('[data-guide-figure] > img')].map((img) => {
         img.loading = 'eager';
         return img.decode();
       }),
@@ -87,7 +128,7 @@ async function layout(route) {
         `Page overflow ${document.documentElement.scrollWidth}/${innerWidth}`,
       );
     for (const element of document.querySelectorAll(
-      'main button,main input,.site-header__toggle,dialog[open] button,dialog[open] a',
+      'main button,main input,header button,[role="dialog"][data-state="open"] button,[role="dialog"][data-state="open"] a',
     )) {
       if (!element.checkVisibility({ checkVisibilityCSS: true })) continue;
       const rect = element.getBoundingClientRect();
@@ -99,13 +140,13 @@ async function layout(route) {
       )
         issues.push(`Clipped control: ${element.textContent || element.id}`);
       if (
-        element.closest('dialog[open]') &&
+        element.closest('[role="dialog"][data-state="open"]') &&
         (rect.top < 0 || rect.bottom > innerHeight)
       )
         issues.push(`Unreachable dialog control: ${element.textContent}`);
     }
     for (const element of document.querySelectorAll(
-      '.guide-content [id],.guide-figure figcaption,.guide-figure__legend,.guide-figure__screenshot-facts,.guide-figure > .guide-note',
+      '[data-guide-content] [id],[data-guide-figure] figcaption,[data-guide-legend],[data-guide-screenshot-facts],[data-guide-figure] > [data-guide-uncertainties]',
     )) {
       if (
         !element.checkVisibility({
@@ -147,6 +188,27 @@ async function viewer(figureId, width) {
   await page.keyboard.press('Enter');
   const dialog = page.getByRole('dialog');
   await dialog.waitFor({ state: 'visible' });
+  await dialog.evaluate(async (el) => {
+    await Promise.all(
+      el
+        .getAnimations({ subtree: true })
+        .filter(
+          (animation) =>
+            animation.effect?.getComputedTiming().iterations !== Infinity,
+        )
+        .map((animation) => animation.finished),
+    );
+  });
+  const appearance = await dialog.evaluate((el) => ({
+    opacity: getComputedStyle(el).opacity,
+    background: getComputedStyle(el).backgroundColor,
+  }));
+  assert.equal(appearance.opacity, '1', 'Settled viewer must be opaque');
+  assert.equal(
+    appearance.background,
+    'rgb(255, 255, 255)',
+    'Viewer must have a solid light surface',
+  );
   for (const key of [
     'Tab',
     'Tab',
@@ -162,7 +224,32 @@ async function viewer(figureId, width) {
     );
   }
   await layout(`viewer ${figureId}`);
-  const scroll = dialog.locator('.guide-image-viewer__content');
+  const titleBounds = await dialog.getByRole('heading').boundingBox();
+  const closeBounds = await dialog
+    .getByRole('button', { name: 'Close image' })
+    .boundingBox();
+  const overlapWidth =
+    Math.min(
+      titleBounds.x + titleBounds.width,
+      closeBounds.x + closeBounds.width,
+    ) - Math.max(titleBounds.x, closeBounds.x);
+  const overlapHeight =
+    Math.min(
+      titleBounds.y + titleBounds.height,
+      closeBounds.y + closeBounds.height,
+    ) - Math.max(titleBounds.y, closeBounds.y);
+  assert.ok(
+    overlapWidth <= 0 || overlapHeight <= 0,
+    'Viewer close control overlaps its title',
+  );
+  const scroll = dialog.getByRole('region', { name: 'Scroll full-size image' });
+  const dialogBounds = await dialog.boundingBox();
+  const scrollBounds = await scroll.boundingBox();
+  assert.ok(
+    scrollBounds.y + scrollBounds.height <=
+      dialogBounds.y + dialogBounds.height,
+    'Viewer scroll region is clipped by the dialog',
+  );
   const dimensions = await scroll.evaluate((el) => ({
     height: el.clientHeight,
     scrollHeight: el.scrollHeight,
@@ -176,8 +263,9 @@ async function viewer(figureId, width) {
     await page.keyboard.press('PageDown');
     await page.waitForFunction(
       () =>
-        document.querySelector('dialog[open] .guide-image-viewer__content')
-          .scrollTop > 0,
+        document.querySelector(
+          '[role="dialog"][data-state="open"] [data-guide-image-scroll]',
+        ).scrollTop > 0,
     );
     assert.ok(await scroll.evaluate((el) => el.scrollTop > 0));
   }
@@ -196,6 +284,121 @@ async function viewer(figureId, width) {
     `viewer keyboard, trap, Escape, close, scroll, focus return: ${figureId} at ${width}`,
   );
 }
+
+async function highlights(sourcePage) {
+  let count = 0;
+  for (const block of walkBlocks(sourcePage.blocks)) {
+    const expected = blockInlineSegments(block)
+      .flat()
+      .filter((part) => part.highlight);
+    if (!expected.length) continue;
+    const scope =
+      block.kind === 'table'
+        ? ' thead'
+        : block.kind === 'formula' || block.kind === 'note'
+          ? ' p'
+          : '';
+    const marks = page.locator(`[id="${block.id}"]${scope} mark`);
+    assert.equal(
+      await marks.count(),
+      expected.length,
+      `${block.id}: highlight count`,
+    );
+    for (const [index, part] of expected.entries()) {
+      const mark = marks.nth(index);
+      assert.ok(await mark.isVisible(), `${block.id}: hidden highlight`);
+      const actual = await mark.evaluate((el) => ({
+        text: el.textContent,
+        background: getComputedStyle(el).backgroundColor,
+        foreground: getComputedStyle(el).color,
+      }));
+      assert.equal(
+        actual.text,
+        part.text,
+        `${block.id}: highlighted source text`,
+      );
+      const rgb = part.highlight
+        .slice(1)
+        .match(/../g)
+        .map((hex) => parseInt(hex, 16));
+      assert.equal(
+        actual.background,
+        `rgb(${rgb.join(', ')})`,
+        `${block.id}: actual source highlight color`,
+      );
+      const luminance = (channels) =>
+        channels
+          .map((value) => {
+            const channel = value / 255;
+            return channel <= 0.04045
+              ? channel / 12.92
+              : ((channel + 0.055) / 1.055) ** 2.4;
+          })
+          .reduce(
+            (sum, value, index) =>
+              sum + value * [0.2126, 0.7152, 0.0722][index],
+            0,
+          );
+      const foreground = actual.foreground
+        .match(/[\d.]+/g)
+        .slice(0, 3)
+        .map(Number);
+      const levels = [luminance(rgb), luminance(foreground)].sort(
+        (a, b) => b - a,
+      );
+      assert.ok(
+        (levels[0] + 0.05) / (levels[1] + 0.05) >= 4.5,
+        `${block.id}: readable highlight contrast`,
+      );
+      count++;
+    }
+  }
+  assert.equal(
+    await page.locator('[data-guide-content] mark').count(),
+    count,
+    `${sourcePage.slug}: total highlight coverage`,
+  );
+  result.highlightChecks += count;
+}
+async function noJavaScript() {
+  const context = await browser.newContext({ javaScriptEnabled: false });
+  const staticPage = await context.newPage();
+  for (const width of result.widths) {
+    await staticPage.setViewportSize({ width, height: 812 });
+    for (const route of [
+      '/',
+      `/categories/${categories[0].slug}`,
+      '/articles/wing-stat-catalog',
+      '/articles/class-passives',
+    ]) {
+      const response = await staticPage.goto(`${baseUrl}${route}`, {
+        waitUntil: 'networkidle',
+      });
+      assert.equal(response.status(), 200);
+      const style = await staticPage.locator('main h1').evaluate((el) => ({
+        fontSize: parseFloat(getComputedStyle(el).fontSize),
+        fontFamily: getComputedStyle(el).fontFamily,
+        background: getComputedStyle(document.documentElement).backgroundColor,
+        width: document.documentElement.scrollWidth,
+        viewport: innerWidth,
+      }));
+      assert.ok(style.fontSize >= 30, `${route}: no-JS heading typography`);
+      assert.match(style.fontFamily, /sans-serif/);
+      assert.equal(style.background, 'rgb(255, 255, 255)');
+      assert.ok(style.width <= style.viewport + 1, `${route}: no-JS overflow`);
+      assert.ok(await staticPage.locator('main h1').isVisible());
+      const path = `${output}/no-js-${route.split('/').at(-1) || 'home'}-${width}.png`;
+      await staticPage.screenshot({ path, animations: 'disabled' });
+      result.screenshots.push(path);
+      result.noJavaScript.push({ width, route, ...style });
+    }
+  }
+  await context.close();
+  record(
+    'Styled initial HTML without JavaScript: home, category, rich highlights and pending article at both widths',
+  );
+}
+
 try {
   for (const width of result.widths) {
     await page.setViewportSize({ width, height: 812 });
@@ -207,6 +410,15 @@ try {
           route === (p.category === null ? '/source' : `/articles/${p.slug}`),
       );
       if (sourcePage) {
+        await highlights(sourcePage);
+        const expectedFigures = walkBlocks(sourcePage.blocks).filter(
+          (b) => b.kind === 'figure',
+        ).length;
+        assert.equal(
+          await page.locator('[data-guide-figure] > img').count(),
+          expectedFigures,
+          `${route}: figure selector coverage`,
+        );
         const expected = walkBlocks(sourcePage.blocks).flatMap((block) => {
           const fields = blockInlineSegments(block)
             .map(inlineText)
@@ -250,9 +462,16 @@ try {
         route,
         heading: await page.locator('main h1').innerText(),
       });
-      if (['/', '/source', '/articles/class-passives'].includes(route))
+      if (
+        [
+          '/',
+          '/source',
+          `/categories/${categories[0].slug}`,
+          '/articles/class-passives',
+        ].includes(route)
+      )
         await screenshot(
-          `${route === '/' ? 'home' : route.split('/').at(-1)}-${width}`,
+          `${route === '/' ? 'home' : route.startsWith('/categories/') ? 'category' : route.split('/').at(-1)}-${width}`,
         );
     }
     record(
@@ -260,7 +479,10 @@ try {
     );
     await visit('/');
     if (width === 375) {
-      const toggle = page.getByRole('button', { name: /^Chapters/ });
+      const toggle = page.getByRole('button', {
+        name: 'Browse chapters',
+        exact: true,
+      });
       await toggle.focus();
       for (const key of ['Enter', 'Space']) {
         await page.keyboard.press(key);
@@ -272,6 +494,7 @@ try {
         await layout('mobile chapters open');
         await screenshot(`chapters-${key}-${width}`);
         await page.keyboard.press(key);
+        await page.locator('#chapter-navigation').waitFor({ state: 'hidden' });
         assert.equal(await toggle.getAttribute('aria-expanded'), 'false');
         assert.equal(
           await page.locator('#chapter-navigation a:visible').count(),
@@ -281,19 +504,30 @@ try {
       await toggle.click();
     }
     await page
-      .locator('#chapter-navigation')
-      .getByRole('link', { name: /01 Gear/ })
+      .getByRole('group', {
+        name: width === 375 ? 'Browse chapters' : 'Desktop chapters',
+        exact: true,
+      })
+      .getByRole('link', {
+        name:
+          width === 375
+            ? new RegExp(`01 ${categories[0].title}`)
+            : categories[0].title,
+        exact: width !== 375,
+      })
       .click();
     await page
       .getByRole('heading', { level: 1, name: categories[0].title })
       .waitFor();
-    if (width === 375)
+    if (width === 375) {
+      await page.locator('#chapter-navigation').waitFor({ state: 'hidden' });
       assert.equal(
         await page
-          .getByRole('button', { name: /^Chapters/ })
+          .getByRole('button', { name: 'Browse chapters', exact: true })
           .getAttribute('aria-expanded'),
         'false',
       );
+    }
     await page
       .getByRole('link', { name: /Gear anatomy and stat layers/ })
       .first()
@@ -304,7 +538,7 @@ try {
     await page.reload({ waitUntil: 'networkidle' });
     assert.match(await page.locator('main h1').innerText(), /Gear anatomy/);
     await screenshot(`gear-${width}`);
-    const explanation = page.locator('.guide-figure__references a').first();
+    const explanation = page.locator('[data-guide-references] a').first();
     const destination = await explanation.getAttribute('href');
     await explanation.click();
     await page.waitForURL(`${baseUrl}${destination}`);
@@ -326,14 +560,19 @@ try {
         a.searchText.toLocaleLowerCase().includes(term.toLocaleLowerCase()),
       );
       await page.waitForFunction(
-        (count) => document.querySelectorAll('.article-card').length === count,
+        (count) =>
+          document.querySelectorAll(
+            '[aria-labelledby="directory-title"] article',
+          ).length === count,
         expected.length,
       );
       assert.ok(expected.length > 0);
       for (const entry of expected)
         assert.ok(
           await page
-            .locator(`.article-card a[href="/articles/${entry.slug}"]`)
+            .locator(
+              `[aria-labelledby="directory-title"] article a[href="/articles/${entry.slug}"]`,
+            )
             .isVisible(),
         );
     }
@@ -341,7 +580,10 @@ try {
     await page.getByRole('heading', { name: 'No articles found' }).waitFor();
     await page.getByRole('button', { name: 'Reset filters' }).click();
     assert.equal(await search.inputValue(), '');
-    assert.equal(await page.locator('.article-card').count(), 43);
+    assert.equal(
+      await page.locator('[aria-labelledby="directory-title"] article').count(),
+      43,
+    );
     await search.fill('no-such-captured-phrase-908172');
     await page.getByRole('button', { name: 'Reset filters' }).click();
     assert.equal(
@@ -355,9 +597,9 @@ try {
     );
     for (const [slug, selector] of [
       ['gear-transfer-and-material-costs', '#block-0496'],
-      ['global-genus-stat-priorities', '.guide-table-scroll'],
+      ['global-genus-stat-priorities', '[data-guide-table-scroll]'],
       ['wing-stat-catalog', '#block-0912'],
-      ['theostones', '.guide-table-scroll'],
+      ['theostones', '[data-guide-table-scroll]'],
       ['offensive-stat-values-and-attack-comparisons', '#block-1021'],
       ['damage-tolerance-endurance-and-combat-speed', '#block-1152'],
     ]) {
@@ -379,7 +621,7 @@ try {
       const target = page.locator(selector).first();
       await target.scrollIntoViewIfNeeded();
       await layout(owner.slug);
-      if (selector === '.guide-table-scroll') {
+      if (selector === '[data-guide-table-scroll]') {
         await target.focus();
         const maxScroll = await target.evaluate(
           (el) => el.scrollWidth - el.clientWidth,
@@ -416,9 +658,12 @@ try {
     await page.getByRole('heading', { name: /Page not found/i }).waitFor();
     await screenshot(`missing-page-${width}`);
     await page.getByRole('link', { name: /Return to the homepage/i }).click();
-    await page.locator('#article-search').waitFor();
+    await page.getByRole('searchbox', { name: 'Search articles' }).waitFor();
     record(`client missing-page recovery at ${width}`);
   }
+  assert.equal(result.routes.length, 114);
+  assert.equal(result.highlightChecks, 156);
+  await noJavaScript();
   // Direct unknown requests intentionally return the static server's 404.
   const unknown = await page.request.get(
     `${baseUrl}/articles/missing-guide-page`,

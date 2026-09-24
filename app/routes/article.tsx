@@ -58,7 +58,7 @@ export function GuidePageView({
   return (
     <Box as="article" maxW="5xl" mx="auto">
       <Breadcrumb.Root aria-label="Breadcrumb" mb="8">
-        <Breadcrumb.List>
+        <Breadcrumb.List flexWrap="wrap" rowGap="2">
           <Breadcrumb.Item>
             <Breadcrumb.Link asChild>
               <RouterLink to="/">Home</RouterLink>

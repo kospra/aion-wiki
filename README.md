@@ -1,6 +1,6 @@
 # Aion 2 Wiki
 
-A responsive, fully static reference to Kanon's captured Aion 2 guide, built with React, TypeScript, and React Router. It contains 43 articles in 12 chapters, a source overview, and all 90 original figure placements. Search covers source text and figure details. Regional, dated, and uncertain source claims stay labeled; Class Passives retains the source's Coming soon placeholder.
+A responsive, fully static Chakra UI reference to Kanon's captured Aion 2 guide, built with React, TypeScript, and React Router. It contains 43 articles in 12 chapters, a source overview, and all 90 original figure placements. Search covers source text and figure details. Regional, dated, and uncertain source claims stay labeled; Class Passives retains the source's Coming soon placeholder.
 
 ## Requirements and local development
 
@@ -24,6 +24,22 @@ npm run preview -- --listen 3000
 
 The production preview is normally at `http://localhost:3000`. Stop it with Ctrl+C.
 
+## UI conventions and Chakra MCP
+
+The document `Layout` in `app/root.tsx` wraps route content and error boundaries with `WikiProvider` from `app/components/ui/provider.tsx`. It uses Chakra UI 3.37.0's `defaultSystem` and Emotion 11.14.0. The fixed light document class, neutral Chakra surfaces, and system sans-serif typography render in the prerendered HTML before JavaScript runs. No client-only wrapper or separate application stylesheet is needed.
+
+Build visible UI with Chakra components and styling props. Compose React Router links through Chakra `Link` with `asChild` to retain real anchors. Keep document markup, source `strong`/`em`/`u`/`mark` semantics, and line breaks intact. Source highlights retain their exact captured colors and readable text; they are content rather than theme tokens. Use `htmlWidth`/`htmlHeight` for original image dimensions, local scroll regions for wide content, and Chakra Dialog for the accessible image viewer. Stable `data-guide-*` hooks identify content for audits; computed styles and source baselines independently prove visibility and fidelity.
+
+The official MCP server is `@chakra-ui/react-mcp@2.1.1`, registered locally as `chakra-ui`. This workspace's Codex MCP configuration uses `wsl.exe` with these arguments:
+
+```text
+--exec /usr/bin/env PATH=/home/rings/.nvm/versions/node/v24.21.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin /home/rings/.nvm/versions/node/v24.21.0/bin/npx -y @chakra-ui/react-mcp@2.1.1
+```
+
+Use an absolute path matching your own WSL Node installation when reproducing that setup. Consult its installation, theme, component props and example tools before changing Chakra composition. The migration verified real MCP initialization and tool calls for provider guidance, theme, navigation, cards, tables, images and dialogs; normal TypeScript and browser checks remain independent gates. The MCP server is a development tool and is not needed to build or run the site.
+
+For production builds on Windows, prefer a checkout and dependencies on WSL's native filesystem (for example `~/code/aion-wiki`). On this machine, cold imports from `/mnt/c` exceeded React Router's ten-second prerender timeout, while unchanged source and configuration built successfully on native WSL storage. Do not increase the product timeout to compensate for a mounted-filesystem bottleneck. Keep Node 24/npm 12 and Linux dependencies consistent in either location.
+
 ## Validation
 
 Run from the repository root; all checks use committed content, with no network source fetch or ignored research dependency.
@@ -43,7 +59,7 @@ npm run verify:browser -- http://localhost:3000
 
 `verify:content` runs directly under Node 24 and fails on errors. The tests compare actual source-bearing fields with the independent capture and mutate lost repeated numbers, qualifiers, links, coverage, and figures. The static verifier parses every route as DOM, reconstructs visible source text/style/link fields and revalidates them against the baseline, checks figure legends and uncertainties, and verifies local asset hashes and internal targets. `content:check` detects stale generated search catalogue or source-reference projection data.
 
-Browser QA uses a separate WSL Playwright installation, not a product dependency. Set `GUIDE_BROWSER_ROOT` to a directory containing `node_modules/playwright/index.mjs` and its browser environment; by default it uses `.local-tools/wsl-browser`. Provision that environment with Playwright and compatible Chromium if absent. `PLAYWRIGHT_BROWSERS_PATH` and `LD_LIBRARY_PATH` may be supplied explicitly; this workspace has browsers in `browsers` and locally extracted libraries in `libs/usr/lib/x86_64-linux-gnu` under that test directory. The script accepts the preview base URL and writes screenshots and `results.json` into ignored `.local-tools/qa/guide/`. It checks all 57 routes at 375px/1440px plus reading interactions, keyboard access, image loading, and errors.
+Browser QA uses a separate WSL Playwright installation, not a product dependency. Set `GUIDE_BROWSER_ROOT` to a directory containing `node_modules/playwright/index.mjs` and its browser environment; by default it uses `.local-tools/wsl-browser`. Provision that environment with Playwright and compatible Chromium if absent. `PLAYWRIGHT_BROWSERS_PATH` and `LD_LIBRARY_PATH` may be supplied explicitly; this workspace has browsers in `browsers` and locally extracted libraries in `libs/usr/lib/x86_64-linux-gnu` under that test directory. The script accepts the preview base URL and writes screenshots and `results.json` into ignored `.local-tools/qa/guide/`. It checks all 57 routes at 375px/1440px plus reading interactions, keyboard access, image loading, and errors. It validates all 78 source highlights (71 in chapters and seven in the source overview) against actual computed background colors and text contrast, and checks representative initial HTML with JavaScript disabled at both widths.
 
 ## Content authoring
 

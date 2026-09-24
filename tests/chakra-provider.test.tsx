@@ -10,7 +10,26 @@ it('renders a styled Chakra control through the wiki provider', () => {
   const button = screen.getByRole('button', { name: 'Provider ready' });
   expect(button).toBeVisible();
   expect(button).toHaveClass('chakra-button');
-  expect(document.querySelector('style[data-emotion]')).toBeInTheDocument();
+  // jsdom does not apply Chakra's cascade layers to computed styles. Verify
+  // the generated rule for this actual button, not an unrelated style tag.
+  const rules = (items: CSSRuleList): CSSRule[] =>
+    [...items].flatMap((rule) => [
+      rule,
+      ...('cssRules' in rule ? rules((rule as CSSGroupingRule).cssRules) : []),
+    ]);
+  const buttonRules = [...document.styleSheets]
+    .flatMap((sheet) => rules(sheet.cssRules))
+    .filter(
+      (rule): rule is CSSStyleRule =>
+        'selectorText' in rule &&
+        /^\.css-[\w-]+$/.test(String(rule.selectorText)) &&
+        button.matches(String(rule.selectorText)),
+    );
+  expect(
+    buttonRules.some(
+      (rule) => rule.style.getPropertyValue('display') === 'inline-flex',
+    ),
+  ).toBe(true);
 });
 
 it('keeps the shared shell and footer on a normal route', () => {

@@ -20,7 +20,7 @@ export function visibleText(node) {
   if (node.nodeType !== 1) return '';
   if (
     node.closest(
-      'script,style,template,[hidden],[aria-hidden="true"],dialog:not([open])',
+      'script,style,template,[hidden],[aria-hidden="true"],[role="dialog"][data-state="closed"]',
     )
   )
     return '';
@@ -60,9 +60,7 @@ function renderedInline(element) {
     if (node.tagName === 'EM') flags.emphasis = true;
     if (node.tagName === 'U') flags.underline = true;
     if (node.tagName === 'MARK')
-      flags.highlight =
-        node.getAttribute('style')?.match(/background-color:\s*([^;]+)/)?.[1] ??
-        '';
+      flags.highlight = node.getAttribute('data-source-highlight') ?? '';
     if (node.tagName === 'A') flags.href = node.getAttribute('href');
     if (node.tagName === 'BR') {
       runs.push({ ...flags, text: '\n' });
@@ -136,23 +134,27 @@ export async function verifyStatic(root = 'build/client', suppliedInput) {
     }
     if (page) {
       hasText(main.querySelector('h1'), page.title, route);
-      hasText(main.querySelector('.content-page__header'), page.summary, route);
+      hasText(main.querySelector('article > header'), page.summary, route);
       const status = {
         'source-backed': 'Source backed',
         'source-uncertain': 'Source context and uncertainty',
         'source-pending': 'Source pending',
       };
-      hasText(main.querySelector('.source-status'), status[page.status], route);
+      hasText(
+        main.querySelector('[data-source-status]'),
+        status[page.status],
+        route,
+      );
       for (const qualifier of page.qualifiers)
-        hasText(main.querySelector('.source-status'), qualifier, route);
+        hasText(main.querySelector('[data-source-status]'), qualifier, route);
       assert.equal(
-        main.querySelector('.source-credit a').getAttribute('href'),
+        main.querySelector('[data-source-credit] a').getAttribute('href'),
         page.sourceUrl,
       );
       const expectedOrder = walkBlocks(page.blocks).map((block) => block.id);
       const expectedIds = new Set(expectedOrder);
       assert.deepEqual(
-        [...main.querySelectorAll('.guide-content [id]')]
+        [...main.querySelectorAll('[data-guide-content] [id]')]
           .map((node) => node.id)
           .filter((id) => expectedIds.has(id)),
         expectedOrder,
@@ -171,7 +173,7 @@ export async function verifyStatic(root = 'build/client', suppliedInput) {
         );
         const element = nodes[0];
         assert.ok(
-          element.closest('.guide-content'),
+          element.closest('[data-guide-content]'),
           `${block.id}: source must be in visible article body`,
         );
         if ('content' in block)
@@ -190,7 +192,7 @@ export async function verifyStatic(root = 'build/client', suppliedInput) {
           hasText(element.querySelector('strong'), block.label, block.id);
         if (block.kind === 'group')
           hasText(
-            element.querySelector('.guide-group__label'),
+            element.querySelector('[data-guide-group-label]'),
             block.label,
             block.id,
           );
@@ -244,7 +246,7 @@ export async function verifyStatic(root = 'build/client', suppliedInput) {
             figure.id,
           );
           const mappings = rendered.querySelectorAll(
-            '.guide-figure__legend > div',
+            '[data-guide-legend] > div',
           );
           assert.equal(mappings.length, figure.mappings.length);
           figure.mappings.forEach((mapping, index) => {
@@ -285,8 +287,8 @@ export async function verifyStatic(root = 'build/client', suppliedInput) {
             });
           });
           for (const [selector, values] of [
-            ['.guide-figure__screenshot-facts li', figure.screenshotOnly],
-            ['.guide-note li', figure.uncertainties],
+            ['[data-guide-screenshot-facts] li', figure.screenshotOnly],
+            ['[data-guide-uncertainties] li', figure.uncertainties],
           ]) {
             const items = rendered.querySelectorAll(selector);
             assert.equal(items.length, values.length);

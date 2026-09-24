@@ -83,6 +83,7 @@ export function RichContent({
           <Link
             key={start}
             href={href}
+            display="inline"
             colorPalette="blue"
             textDecoration="underline"
           >

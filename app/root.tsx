@@ -19,10 +19,6 @@ import {
 import { NotFound } from './components/not-found';
 import { SiteHeader } from './components/site-header';
 import { WikiProvider } from './components/ui/provider';
-import './styles/theme.css';
-import './styles/global.css';
-import './styles/wiki.css';
-import './styles/article.css';
 
 export function Layout({
   children,

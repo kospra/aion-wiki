@@ -78,12 +78,21 @@ export function GuideFigure({ figure, sourceLinks }: Props): React.JSX.Element {
             });
             return (
               <DataList.Item key={index}>
-                <DataList.ItemLabel fontWeight="semibold">
+                <DataList.ItemLabel
+                  fontWeight="semibold"
+                  display="block"
+                  overflowWrap="anywhere"
+                  minW="0"
+                >
                   {mapping.label}
                   {mapping.color && ` (${mapping.color})`}
                   {mapping.visualValue && `: ${mapping.visualValue}`}
                 </DataList.ItemLabel>
-                <DataList.ItemValue display="block">
+                <DataList.ItemValue
+                  display="block"
+                  overflowWrap="anywhere"
+                  minW="0"
+                >
                   {mapping.meaning}
                   {mapping.confidence !== 'confirmed' && (
                     <Text as="span" color="gray.600">

@@ -34,7 +34,7 @@ export function ImageViewer({ figure }: { figure: Figure }): React.JSX.Element {
             maxH="94dvh"
             overflow="hidden"
           >
-            <Dialog.Header>
+            <Dialog.Header flexShrink="0">
               <Flex align="center" gap="4" justify="space-between" wrap="wrap">
                 <Dialog.Title fontSize="lg">
                   Full-size: {figure.caption}
@@ -49,7 +49,7 @@ export function ImageViewer({ figure }: { figure: Figure }): React.JSX.Element {
                       Open original image
                     </Link>
                   )}
-                  <Dialog.CloseTrigger asChild>
+                  <Dialog.CloseTrigger asChild position="static">
                     <Button size="sm" variant="outline">
                       Close image
                     </Button>
@@ -57,14 +57,22 @@ export function ImageViewer({ figure }: { figure: Figure }): React.JSX.Element {
                 </Flex>
               </Flex>
             </Dialog.Header>
-            <Dialog.Body minH="0" overflow="hidden" pb="4">
+            <Dialog.Body
+              minH="0"
+              overflow="hidden"
+              pb="4"
+              display="flex"
+              flexDirection="column"
+              flex="1"
+            >
               <Box
                 role="region"
                 aria-label="Scroll full-size image"
                 tabIndex={0}
                 data-guide-image-scroll=""
                 overflow="auto"
-                maxH="calc(94dvh - 7rem)"
+                minH="0"
+                flex="1"
                 maxW="100%"
                 borderWidth="1px"
                 borderColor="gray.200"
