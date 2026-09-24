@@ -1,6 +1,7 @@
 import type { ReactNode } from 'react';
 import { normalizeSourceUrl } from '../content/reader';
 import type { Block, Figure, Inline } from '../content/types';
+import { GuideFigure } from './guide-figure';
 
 type Props = {
   blocks: Block[];
@@ -167,55 +168,10 @@ export function RichContent({
               Image unavailable: {block.figureId}
             </p>
           );
-        const src = normalizeSourceUrl(figure.src);
         return (
-          <figure id={block.id} key={block.id} className="guide-figure">
-            {src ? (
-              <a href={src} aria-label={`Open original image: ${figure.alt}`}>
-                <img
-                  src={src}
-                  alt={figure.alt}
-                  width={figure.width}
-                  height={figure.height}
-                  loading="lazy"
-                />
-              </a>
-            ) : (
-              <p>Image unavailable: {figure.alt}</p>
-            )}
-            <figcaption>{figure.caption}</figcaption>
-            {figure.mappings.length > 0 && (
-              <dl className="guide-figure__legend">
-                {figure.mappings.map((mapping, index) => (
-                  <div key={index}>
-                    <dt>
-                      {mapping.label}
-                      {mapping.color && ` (${mapping.color})`}
-                      {mapping.visualValue && `: ${mapping.visualValue}`}
-                    </dt>
-                    <dd>
-                      {mapping.meaning}
-                      {mapping.confidence !== 'confirmed' &&
-                        ` (${mapping.confidence})`}
-                    </dd>
-                  </div>
-                ))}
-              </dl>
-            )}
-            {figure.screenshotOnly.length > 0 && (
-              <p>Visible in image: {figure.screenshotOnly.join('; ')}</p>
-            )}
-            {figure.uncertainties.length > 0 && (
-              <aside className="guide-note guide-note--uncertain">
-                <strong>Image uncertainty</strong>
-                <ul>
-                  {figure.uncertainties.map((uncertainty, index) => (
-                    <li key={index}>{uncertainty}</li>
-                  ))}
-                </ul>
-              </aside>
-            )}
-          </figure>
+          <div id={block.id} key={block.id} className="guide-figure-placement">
+            <GuideFigure figure={figure} sourceLinks={sourceLinks} />
+          </div>
         );
       }
       case 'group':
