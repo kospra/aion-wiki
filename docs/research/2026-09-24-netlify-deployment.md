@@ -25,11 +25,11 @@ Important: Netlify builds and GitHub checks run independently. Netlify does not 
 
 ## Alternatives and tradeoffs
 
-| Approach | Benefit | Cost / limitation |
-| --- | --- | --- |
-| Native Netlify Git + GitHub CI (recommended) | Native PR previews, Git-linked deployments, familiar rollback; no Netlify deployment token in Actions | Separate builds; branch protection and Netlify's own checks must be explicitly configured |
-| GitHub Actions builds and deploys an artifact through Netlify CLI | Can deploy exactly the artifact tested in CI; explicit release gates | Requires deployment credentials and custom preview lifecycle/concurrency handling; disable native Git builds to avoid competing pipelines |
-| Manual CLI upload | Useful for a one-off test or emergency | Local-state dependence and no enforced PR validation; unsuitable as the normal release workflow |
+| Approach                                                          | Benefit                                                                                               | Cost / limitation                                                                                                                         |
+| ----------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| Native Netlify Git + GitHub CI (recommended)                      | Native PR previews, Git-linked deployments, familiar rollback; no Netlify deployment token in Actions | Separate builds; branch protection and Netlify's own checks must be explicitly configured                                                 |
+| GitHub Actions builds and deploys an artifact through Netlify CLI | Can deploy exactly the artifact tested in CI; explicit release gates                                  | Requires deployment credentials and custom preview lifecycle/concurrency handling; disable native Git builds to avoid competing pipelines |
+| Manual CLI upload                                                 | Useful for a one-off test or emergency                                                                | Local-state dependence and no enforced PR validation; unsuitable as the normal release workflow                                           |
 
 CLI documentation currently lists --no-build, while a Netlify knowledge-base article says manual CLI deploys do not build. Avoid relying on that conflicting shorthand: pin the CLI if selected and explicitly define/test build behavior. Native Git integration avoids this ambiguity. [CLI deploy reference](https://cli.netlify.com/commands/deploy/)
 

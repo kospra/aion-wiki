@@ -1,7 +1,9 @@
 import console from 'node:console';
 import process from 'node:process';
 import { createServer } from 'node:http';
-import { resolve } from 'node:path';
+import { mkdtemp, mkdir, writeFile, rm } from 'node:fs/promises';
+import { tmpdir } from 'node:os';
+import { resolve, join } from 'node:path';
 import { runBrowserChecks } from '../../scripts/run-browser-checks.mjs';
 
 const mode = process.argv[2];
@@ -31,6 +33,15 @@ const afterPortProbe =
         })
     : undefined;
 
+const originalCwd = process.cwd();
+const fixtureRoot = await mkdtemp(join(tmpdir(), 'browser-runner-fixture-'));
+await mkdir(join(fixtureRoot, 'build/client'), { recursive: true });
+await writeFile(
+  join(fixtureRoot, 'build/client/index.html'),
+  '<!doctype html><title>Fixture</title>',
+);
+process.chdir(fixtureRoot);
+
 try {
   await runBrowserChecks({ port, checks, afterPortProbe });
 } catch (error) {
@@ -39,4 +50,6 @@ try {
 } finally {
   if (competitor)
     await new Promise((resolveClose) => competitor.close(resolveClose));
+  process.chdir(originalCwd);
+  await rm(fixtureRoot, { recursive: true, force: true });
 }

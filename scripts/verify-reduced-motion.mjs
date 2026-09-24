@@ -68,8 +68,15 @@ try {
   );
   await noAnimation(dialog, 'Image viewer content');
   assert.equal(await dialog.count(), 1);
+  await page.waitForFunction(() =>
+    document.querySelector('[role="dialog"]')?.contains(document.activeElement),
+  );
   await page.keyboard.press('Escape');
   await dialog.waitFor({ state: 'hidden' });
+  await page.waitForFunction(
+    () =>
+      document.activeElement === document.querySelector('#figure-003 button'),
+  );
   assert.equal(
     await opener.evaluate((element) => document.activeElement === element),
     true,

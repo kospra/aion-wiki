@@ -1,0 +1,17 @@
+[build]
+  command = "npm ci && npm run build:netlify"
+  publish = "build/client"
+
+[build.environment]
+  NPM_VERSION = "12.1.0"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
