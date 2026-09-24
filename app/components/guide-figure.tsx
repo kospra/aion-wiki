@@ -10,6 +10,7 @@ import {
   chakra,
 } from '@chakra-ui/react';
 import { normalizeSourceUrl } from '../content/reader';
+import { sourcePassageLabels } from '../content/repository';
 import type { Figure } from '../content/types';
 import { ImageViewer } from './image-viewer';
 
@@ -87,7 +88,13 @@ export function GuideFigure({ figure, sourceLinks }: Props): React.JSX.Element {
                   : undefined;
                 const href =
                   typeof value === 'string' ? normalizeSourceUrl(value) : null;
-                return href ? [{ sourceId, href }] : [];
+                const label =
+                  href && Object.hasOwn(sourcePassageLabels, href)
+                    ? sourcePassageLabels[href]
+                    : href?.startsWith('https://docs.google.com/')
+                      ? 'Original guide document'
+                      : 'Read supporting guide passage';
+                return href ? [{ sourceId, href, label }] : [];
               });
               return (
                 <DataList.Item
@@ -143,29 +150,32 @@ export function GuideFigure({ figure, sourceLinks }: Props): React.JSX.Element {
                         data-guide-references=""
                         mt="2"
                         gap="1"
-                        align="center"
-                        wrap="wrap"
+                        align="start"
+                        direction="column"
                         textStyle="wiki.caption"
                         fontWeight="normal"
                       >
                         <Text as="span" color="wiki.muted" me="1">
-                          Sources
+                          Related guide passages
                         </Text>
-                        {destinations.map(({ sourceId, href }, linkIndex) => (
-                          <Link
-                            key={`${sourceId}-${linkIndex}`}
-                            href={href}
-                            aria-label={`Source explanation: ${mapping.label} ${mapping.meaning}`}
-                            color="wiki.accent"
-                            _hover={{ color: 'wiki.accentHover' }}
-                            minW="6"
-                            minH="6"
-                            justifyContent="center"
-                            textDecoration="underline"
-                          >
-                            {linkIndex + 1}
-                          </Link>
-                        ))}
+                        {destinations.map(
+                          ({ sourceId, href, label }, linkIndex) => (
+                            <Link
+                              key={`${sourceId}-${linkIndex}`}
+                              href={href}
+                              aria-label={`Source explanation: ${mapping.label} ${mapping.meaning} — ${label}`}
+                              color="wiki.accent"
+                              _hover={{ color: 'wiki.accentHover' }}
+                              minW="6"
+                              minH="6"
+                              display="inline"
+                              whiteSpace="normal"
+                              textDecoration="underline"
+                            >
+                              {label}
+                            </Link>
+                          ),
+                        )}
                       </Flex>
                     )}
                   </DataList.ItemValue>

@@ -20,6 +20,7 @@ import coverageA from '../../content/coverage/group-a.json' with { type: 'json' 
 import coverageB from '../../content/coverage/group-b.json' with { type: 'json' };
 import coverageC from '../../content/coverage/group-c.json' with { type: 'json' };
 import { normalizeSourceUrl, walkBlocks } from './reader';
+import { buildPassageLabels } from './passage-labels';
 import type { CoverageEntry, Figure, GuidePage } from './types';
 
 const chapterPages = [
@@ -143,3 +144,5 @@ for (const block of sourceReferences.blocks) {
     }
   }
 }
+
+export const sourcePassageLabels = buildPassageLabels(pages, pagePath);
