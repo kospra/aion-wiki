@@ -1,4 +1,14 @@
-import { Link, useParams } from 'react-router';
+import {
+  Badge,
+  Box,
+  Breadcrumb,
+  Flex,
+  Heading,
+  Link,
+  Stack,
+  Text,
+} from '@chakra-ui/react';
+import { Link as RouterLink, useParams } from 'react-router';
 import { ArticleContents } from '../components/article-contents';
 import { NotFound } from '../components/not-found';
 import { RichContent } from '../components/rich-content';
@@ -46,43 +56,80 @@ export function GuidePageView({
   );
 
   return (
-    <article className="content-page article-page">
-      <nav className="breadcrumbs" aria-label="Breadcrumb">
-        <Link to="/">Home</Link>
-        <span aria-hidden="true">/</span>
-        {category && (
-          <>
-            <Link to={`/categories/${category.slug}`}>{category.title}</Link>
-            <span aria-hidden="true">/</span>
-          </>
-        )}
-        <span aria-current="page">{page.title}</span>
-      </nav>
-      <header className="content-page__header">
-        <p className="eyebrow">
-          {category ? 'Guide article' : 'Source and author'}
-        </p>
-        <h1>{page.title}</h1>
-        <p>{page.summary}</p>
-        <div className="source-status" role="note">
-          <strong>{statusText[page.status]}</strong>
-          {page.status === 'source-pending' && (
-            <p>
-              The captured chapter says Coming soon; no guide details were
-              supplied for it.
-            </p>
+    <Box as="article" maxW="5xl" mx="auto">
+      <Breadcrumb.Root aria-label="Breadcrumb" mb="8">
+        <Breadcrumb.List>
+          <Breadcrumb.Item>
+            <Breadcrumb.Link asChild>
+              <RouterLink to="/">Home</RouterLink>
+            </Breadcrumb.Link>
+          </Breadcrumb.Item>
+          <Breadcrumb.Separator />
+          {category && (
+            <>
+              <Breadcrumb.Item>
+                <Breadcrumb.Link asChild>
+                  <RouterLink to={`/categories/${category.slug}`}>
+                    {category.title}
+                  </RouterLink>
+                </Breadcrumb.Link>
+              </Breadcrumb.Item>
+              <Breadcrumb.Separator />
+            </>
           )}
-          {page.qualifiers.map((qualifier) => (
-            <p key={qualifier}>{qualifier}</p>
-          ))}
-        </div>
-        <p className="source-credit">
-          This guide preserves Kanon’s source statements and labels the source’s
-          limits. <a href={page.sourceUrl}>Original source document</a>
-          {' · '}
-          <Link to="/source">About the source and author</Link>
-        </p>
-      </header>
+          <Breadcrumb.Item>
+            <Breadcrumb.CurrentLink>{page.title}</Breadcrumb.CurrentLink>
+          </Breadcrumb.Item>
+        </Breadcrumb.List>
+      </Breadcrumb.Root>
+      <Box as="header" maxW="3xl" mb="8">
+        <Stack gap="4">
+          <Text color="gray.600" fontSize="sm" fontWeight="semibold">
+            {category ? 'Guide article' : 'Source and author'}
+          </Text>
+          <Heading as="h1" size={{ base: '3xl', md: '4xl' }}>
+            {page.title}
+          </Heading>
+          <Text color="gray.600" fontSize="lg">
+            {page.summary}
+          </Text>
+          <Box
+            role="note"
+            data-source-status=""
+            p="5"
+            borderWidth="1px"
+            borderColor="gray.200"
+            borderRadius="md"
+            bg="gray.50"
+          >
+            <Stack gap="2">
+              <Badge alignSelf="start" variant="subtle" colorPalette="gray">
+                {statusText[page.status]}
+              </Badge>
+              {page.status === 'source-pending' && (
+                <Text>
+                  The captured chapter says Coming soon; no guide details were
+                  supplied for it.
+                </Text>
+              )}
+              {page.qualifiers.map((qualifier) => (
+                <Text key={qualifier}>{qualifier}</Text>
+              ))}
+            </Stack>
+          </Box>
+          <Text color="gray.600" fontSize="sm" data-source-credit="">
+            This guide preserves Kanon’s source statements and labels the
+            source’s limits.{' '}
+            <Link href={page.sourceUrl} textDecoration="underline">
+              Original source document
+            </Link>
+            {' · '}
+            <Link asChild textDecoration="underline">
+              <RouterLink to="/source">About the source and author</RouterLink>
+            </Link>
+          </Text>
+        </Stack>
+      </Box>
       <ArticleContents blocks={page.blocks} />
       <RichContent
         blocks={page.blocks}
@@ -90,38 +137,73 @@ export function GuidePageView({
         sourceLinks={sourceLinks}
       />
       {ambiguousLinks.size > 0 && (
-        <aside className="source-link-notes" aria-label="Source link notes">
-          <h2>Source link notes</h2>
-          <p>
-            Some original anchors could not be matched unambiguously to a
-            captured block. Those links open the original document.
-          </p>
-          <ul>
-            {[...ambiguousLinks].map((href) => (
-              <li key={href}>
-                <a href={sourceLinks[href]}>{href}</a>: {sourceLinkNotes[href]}
-              </li>
-            ))}
-          </ul>
-        </aside>
+        <Box
+          as="aside"
+          aria-label="Source link notes"
+          mt="10"
+          p="5"
+          borderWidth="1px"
+          borderColor="gray.200"
+          borderRadius="md"
+          bg="gray.50"
+        >
+          <Stack gap="3">
+            <Heading as="h2" size="lg">
+              Source link notes
+            </Heading>
+            <Text>
+              Some original anchors could not be matched unambiguously to a
+              captured block. Those links open the original document.
+            </Text>
+            <Box as="ul" pl="5" listStyleType="disc">
+              {[...ambiguousLinks].map((href) => (
+                <Box as="li" key={href}>
+                  <Link href={sourceLinks[href]} textDecoration="underline">
+                    {href}
+                  </Link>
+                  : {sourceLinkNotes[href]}
+                </Box>
+              ))}
+            </Box>
+          </Stack>
+        </Box>
       )}
       {(previous || next) && (
-        <nav className="article-pager" aria-label="Guide article navigation">
+        <Flex
+          as="nav"
+          aria-label="Guide article navigation"
+          direction={{ base: 'column', sm: 'row' }}
+          justify="space-between"
+          gap="4"
+          mt="10"
+          pt="6"
+          borderTopWidth="1px"
+          borderColor="gray.200"
+        >
           {previous ? (
-            <Link to={pagePath(previous.slug)} rel="prev">
-              ← Previous: {previous.title}
+            <Link asChild color="gray.900" fontWeight="medium">
+              <RouterLink to={pagePath(previous.slug)} rel="prev">
+                ← Previous: {previous.title}
+              </RouterLink>
             </Link>
           ) : (
-            <span />
+            <Box />
           )}
           {next && (
-            <Link to={pagePath(next.slug)} rel="next">
-              Next: {next.title} →
+            <Link
+              asChild
+              color="gray.900"
+              fontWeight="medium"
+              textAlign={{ sm: 'right' }}
+            >
+              <RouterLink to={pagePath(next.slug)} rel="next">
+                Next: {next.title} →
+              </RouterLink>
             </Link>
           )}
-        </nav>
+        </Flex>
       )}
-    </article>
+    </Box>
   );
 }
 

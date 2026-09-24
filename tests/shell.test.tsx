@@ -1,4 +1,5 @@
-import { render, screen, within } from './render';
+import { render, screen, waitFor, within } from './render';
+import userEvent from '@testing-library/user-event';
 import { MemoryRouter } from 'react-router';
 import { expect, it } from 'vitest';
 import { NotFound } from '../app/components/not-found';
@@ -6,7 +7,8 @@ import { SiteHeader } from '../app/components/site-header';
 import { categories, staticPaths } from '../app/content/wiki';
 import Home from '../app/routes/home';
 
-it('offers the full chapter index and source link through a keyboard-accessible control', () => {
+it('offers the full chapter index and source link through a keyboard-accessible control', async () => {
+  const user = userEvent.setup();
   render(
     <MemoryRouter>
       <SiteHeader />
@@ -23,6 +25,10 @@ it('offers the full chapter index and source link through a keyboard-accessible 
   expect(
     screen.getByRole('navigation', { name: 'Main navigation' }),
   ).toBeInTheDocument();
+  const toggle = screen.getByRole('button', { name: /browse chapters/i });
+  expect(toggle).toHaveAttribute('aria-expanded', 'false');
+  await user.click(toggle);
+  expect(toggle).toHaveAttribute('aria-expanded', 'true');
   const control = screen.getByRole('group', { name: 'Browse chapters' });
   expect(
     within(control).getByRole('link', { name: /01 Gear and basics explained/ }),
@@ -31,11 +37,16 @@ it('offers the full chapter index and source link through a keyboard-accessible 
     within(control).getByRole('link', { name: /12 Class Passives/ }),
   ).toHaveAttribute('href', '/categories/class-passives');
   expect(
-    screen.getByRole('link', { name: /About the source/ }),
+    within(control).getByRole('link', { name: /About the source/ }),
   ).toHaveAttribute('href', '/source');
+  await user.click(
+    within(control).getByRole('link', { name: /01 Gear and basics explained/ }),
+  );
+  await waitFor(() => expect(toggle).toHaveAttribute('aria-expanded', 'false'));
 });
 
-it('derives navigation from a newly added category', () => {
+it('derives navigation from a newly added category', async () => {
+  const user = userEvent.setup();
   categories.push({
     slug: 'crafting',
     title: 'Crafting',
@@ -47,10 +58,13 @@ it('derives navigation from a newly added category', () => {
         <SiteHeader />
       </MemoryRouter>,
     );
-    expect(screen.getByRole('link', { name: /13 Crafting/ })).toHaveAttribute(
-      'href',
-      '/categories/crafting',
-    );
+    await user.click(screen.getByRole('button', { name: /browse chapters/i }));
+    expect(
+      within(screen.getByRole('group', { name: 'Browse chapters' })).getByRole(
+        'link',
+        { name: /13 Crafting/ },
+      ),
+    ).toHaveAttribute('href', '/categories/crafting');
   } finally {
     categories.pop();
   }

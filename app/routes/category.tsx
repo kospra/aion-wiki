@@ -1,4 +1,5 @@
-import { Link, useParams } from 'react-router';
+import { Box, Breadcrumb, Heading, Stack, Text } from '@chakra-ui/react';
+import { Link as RouterLink, useParams } from 'react-router';
 import { NotFound } from '../components/not-found';
 import { WikiDirectory } from '../components/wiki-directory';
 import { categories } from '../content/wiki';
@@ -20,18 +21,34 @@ export default function CategoryRoute(): React.JSX.Element {
   if (!category) return <NotFound />;
 
   return (
-    <div className="content-page category-page">
-      <nav className="breadcrumbs" aria-label="Breadcrumb">
-        <Link to="/">Home</Link>
-        <span aria-hidden="true"> / </span>
-        <span aria-current="page">{category.title}</span>
-      </nav>
-      <header className="content-page__header">
-        <p className="eyebrow">Category</p>
-        <h1>{category.title}</h1>
-        <p>{category.description}</p>
-      </header>
+    <Stack gap="8">
+      <Breadcrumb.Root aria-label="Breadcrumb">
+        <Breadcrumb.List>
+          <Breadcrumb.Item>
+            <Breadcrumb.Link asChild>
+              <RouterLink to="/">Home</RouterLink>
+            </Breadcrumb.Link>
+          </Breadcrumb.Item>
+          <Breadcrumb.Separator />
+          <Breadcrumb.Item>
+            <Breadcrumb.CurrentLink>{category.title}</Breadcrumb.CurrentLink>
+          </Breadcrumb.Item>
+        </Breadcrumb.List>
+      </Breadcrumb.Root>
+      <Box as="header" maxW="3xl">
+        <Stack gap="3">
+          <Text color="gray.600" fontSize="sm" fontWeight="semibold">
+            Category
+          </Text>
+          <Heading as="h1" size="3xl">
+            {category.title}
+          </Heading>
+          <Text color="gray.600" fontSize="lg">
+            {category.description}
+          </Text>
+        </Stack>
+      </Box>
       <WikiDirectory key={category.slug} initialCategory={category.slug} />
-    </div>
+    </Stack>
   );
 }

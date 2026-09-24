@@ -1,3 +1,4 @@
+import { Box, Link, Text } from '@chakra-ui/react';
 import { inlineText, walkBlocks } from '../content/reader';
 import type { Block } from '../content/types';
 
@@ -40,21 +41,38 @@ export function ArticleContents({
 
   function renderItems(items: HeadingItem[]): React.JSX.Element {
     return (
-      <ul>
+      <Box as="ul" listStyleType="none" pl="4">
         {items.map((item) => (
-          <li key={item.id}>
-            <a href={`#${item.id}`}>{item.title}</a>
+          <Box as="li" key={item.id} py="1">
+            <Link
+              href={`#${item.id}`}
+              color="gray.700"
+              _hover={{ color: 'gray.900' }}
+            >
+              {item.title}
+            </Link>
             {item.children.length > 0 && renderItems(item.children)}
-          </li>
+          </Box>
         ))}
-      </ul>
+      </Box>
     );
   }
 
   return (
-    <nav className="article-contents" aria-label="On this page">
-      <p className="article-contents__title">On this page</p>
+    <Box
+      as="nav"
+      aria-label="On this page"
+      my="8"
+      p="5"
+      borderWidth="1px"
+      borderColor="gray.200"
+      borderRadius="lg"
+      bg="gray.50"
+    >
+      <Text fontWeight="semibold" color="gray.900" mb="2">
+        On this page
+      </Text>
       {renderItems(roots)}
-    </nav>
+    </Box>
   );
 }
