@@ -1,6 +1,6 @@
-import { fireEvent, render, screen, within } from './render';
+import { render, screen, waitFor, within } from './render';
 import userEvent from '@testing-library/user-event';
-import { afterEach, expect, it } from 'vitest';
+import { expect, it } from 'vitest';
 import { GuideFigure } from '../app/components/guide-figure';
 import { RichContent } from '../app/components/rich-content';
 import type { Block, Figure } from '../app/content/types';
@@ -48,42 +48,6 @@ const sourceLinks = {
   block0052: '/articles/gear#soul-binding',
   block0053: '/articles/gear#cropped-value',
 };
-
-const originalShowModal = Object.getOwnPropertyDescriptor(
-  HTMLDialogElement.prototype,
-  'showModal',
-);
-const originalClose = Object.getOwnPropertyDescriptor(
-  HTMLDialogElement.prototype,
-  'close',
-);
-
-function installDialogMethods() {
-  Object.defineProperty(HTMLDialogElement.prototype, 'showModal', {
-    configurable: true,
-    value(this: HTMLDialogElement) {
-      this.setAttribute('open', '');
-    },
-  });
-  Object.defineProperty(HTMLDialogElement.prototype, 'close', {
-    configurable: true,
-    value(this: HTMLDialogElement) {
-      this.removeAttribute('open');
-      this.dispatchEvent(new Event('close'));
-    },
-  });
-}
-
-afterEach(() => {
-  for (const [name, descriptor] of [
-    ['showModal', originalShowModal],
-    ['close', originalClose],
-  ] as const) {
-    if (descriptor)
-      Object.defineProperty(HTMLDialogElement.prototype, name, descriptor);
-    else Reflect.deleteProperty(HTMLDialogElement.prototype, name);
-  }
-});
 
 it('shows numbered color meanings, linked explanations, cropped values, and screenshot caveats beside the image', () => {
   const blocks: Block[] = [
@@ -184,8 +148,7 @@ it('ignores inherited and unsafe source-link values without losing the mapping t
   ).toHaveAttribute('href', '/articles/gear#enhancement');
 });
 
-it('opens a native dialog and returns focus on close button and cancel', async () => {
-  installDialogMethods();
+it('opens a Chakra dialog and returns focus after Close and Escape', async () => {
   const user = userEvent.setup();
   const { container } = render(
     <GuideFigure figure={figure} sourceLinks={sourceLinks} />,
@@ -193,7 +156,7 @@ it('opens a native dialog and returns focus on close button and cancel', async (
   const open = screen.getByRole('button', { name: /view full-size/i });
 
   await user.click(open);
-  let dialog = screen.getByRole('dialog');
+  const dialog = await screen.findByRole('dialog');
   expect(dialog).toBeVisible();
   expect(
     within(dialog).getByRole('link', { name: /open original image/i }),
@@ -207,22 +170,25 @@ it('opens a native dialog and returns focus on close button and cancel', async (
   expect(container.querySelectorAll('#figure005')).toHaveLength(1);
 
   await user.click(within(dialog).getByRole('button', { name: /close/i }));
-  expect(dialog).not.toHaveAttribute('open');
-  expect(open).toHaveFocus();
+  await waitFor(() =>
+    expect(screen.queryByRole('dialog')).not.toBeInTheDocument(),
+  );
+  await waitFor(() => expect(open).toHaveFocus());
 
   await user.click(open);
-  dialog = screen.getByRole('dialog');
-  fireEvent(dialog, new Event('cancel', { cancelable: true }));
-  expect(dialog).not.toHaveAttribute('open');
-  expect(open).toHaveFocus();
+  await screen.findByRole('dialog');
+  await user.keyboard('{Escape}');
+  await waitFor(() =>
+    expect(screen.queryByRole('dialog')).not.toBeInTheDocument(),
+  );
+  await waitFor(() => expect(open).toHaveFocus());
 });
 
 it('keeps Tab and Shift+Tab within the viewer and exposes keyboard image scrolling', async () => {
-  installDialogMethods();
   const user = userEvent.setup();
   render(<GuideFigure figure={figure} sourceLinks={sourceLinks} />);
   await user.click(screen.getByRole('button', { name: /view full-size/i }));
-  const dialog = screen.getByRole('dialog');
+  const dialog = await screen.findByRole('dialog');
   const first = within(dialog).getByRole('link', {
     name: /open original image/i,
   });
@@ -231,8 +197,9 @@ it('keeps Tab and Shift+Tab within the viewer and exposes keyboard image scrolli
   });
   expect(scroller).toHaveAttribute('tabindex', '0');
   scroller.focus();
-  fireEvent.keyDown(scroller, { key: 'Tab' });
-  expect(first).toHaveFocus();
-  fireEvent.keyDown(first, { key: 'Tab', shiftKey: true });
-  expect(scroller).toHaveFocus();
+  await user.tab();
+  expect(dialog).toContainElement(document.activeElement as HTMLElement);
+  first.focus();
+  await user.tab({ shift: true });
+  expect(dialog).toContainElement(document.activeElement as HTMLElement);
 });

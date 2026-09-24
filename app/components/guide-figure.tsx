@@ -1,3 +1,14 @@
+import {
+  Box,
+  DataList,
+  Flex,
+  Image,
+  Link,
+  List,
+  Strong,
+  Text,
+  chakra,
+} from '@chakra-ui/react';
 import { normalizeSourceUrl } from '../content/reader';
 import type { Figure } from '../content/types';
 import { ImageViewer } from './image-viewer';
@@ -11,29 +22,51 @@ export function GuideFigure({ figure, sourceLinks }: Props): React.JSX.Element {
   const src = normalizeSourceUrl(figure.src);
 
   return (
-    <figure id={figure.id} className="guide-figure">
+    <chakra.figure
+      id={figure.id}
+      data-guide-figure=""
+      my="6"
+      maxW="100%"
+      minW="0"
+    >
       {src ? (
-        <img
+        <Image
           src={src}
           alt={figure.alt}
-          width={figure.width}
-          height={figure.height}
+          htmlWidth={figure.width}
+          htmlHeight={figure.height}
           loading="lazy"
+          maxW="100%"
+          height="auto"
+          borderWidth="1px"
+          borderColor="gray.200"
+          borderRadius="md"
         />
       ) : (
-        <p>Image unavailable: {figure.alt}</p>
+        <Text>Image unavailable: {figure.alt}</Text>
       )}
-      <figcaption>{figure.caption}</figcaption>
+      <chakra.figcaption mt="2" color="gray.600" fontSize="sm">
+        {figure.caption}
+      </chakra.figcaption>
       {src && (
-        <div className="guide-figure__actions">
+        <Flex align="center" gap="4" mt="3" wrap="wrap">
           <ImageViewer figure={figure} />
-          <a href={src} aria-label={`Open original image: ${figure.alt}`}>
+          <Link
+            href={src}
+            aria-label={`Open original image: ${figure.alt}`}
+            colorPalette="blue"
+          >
             Open original image
-          </a>
-        </div>
+          </Link>
+        </Flex>
       )}
       {figure.mappings.length > 0 && (
-        <dl className="guide-figure__legend" aria-label="Image annotations">
+        <DataList.Root
+          data-guide-legend=""
+          aria-label="Image annotations"
+          mt="5"
+          gap="3"
+        >
           {figure.mappings.map((mapping, index) => {
             const destinations = mapping.textSourceIds.flatMap((sourceId) => {
               const value = Object.hasOwn(sourceLinks, sourceId)
@@ -44,65 +77,79 @@ export function GuideFigure({ figure, sourceLinks }: Props): React.JSX.Element {
               return href ? [{ sourceId, href }] : [];
             });
             return (
-              <div key={index}>
-                <dt>
+              <DataList.Item key={index}>
+                <DataList.ItemLabel fontWeight="semibold">
                   {mapping.label}
                   {mapping.color && ` (${mapping.color})`}
                   {mapping.visualValue && `: ${mapping.visualValue}`}
-                </dt>
-                <dd>
+                </DataList.ItemLabel>
+                <DataList.ItemValue display="block">
                   {mapping.meaning}
                   {mapping.confidence !== 'confirmed' && (
-                    <span className="guide-figure__confidence">
+                    <Text as="span" color="gray.600">
                       {' '}
                       ({mapping.confidence})
-                    </span>
+                    </Text>
                   )}
                   {destinations.length > 0 && (
-                    <span className="guide-figure__references">
-                      {' '}
+                    <Box as="span" data-guide-references="" ms="2">
                       {destinations.map(({ sourceId, href }, linkIndex) => (
-                        <a
+                        <Link
                           key={`${sourceId}-${linkIndex}`}
                           href={href}
                           aria-label={`Source explanation: ${mapping.label} ${mapping.meaning}`}
+                          colorPalette="blue"
+                          me="2"
                         >
                           {linkIndex === 0
                             ? 'Source explanation'
                             : `Source explanation ${linkIndex + 1}`}
-                        </a>
+                        </Link>
                       ))}
-                    </span>
+                    </Box>
                   )}
-                </dd>
-              </div>
+                </DataList.ItemValue>
+              </DataList.Item>
             );
           })}
-        </dl>
+        </DataList.Root>
       )}
       {figure.screenshotOnly.length > 0 && (
-        <section
-          className="guide-figure__screenshot-facts"
+        <Box
+          as="section"
+          data-guide-screenshot-facts=""
           aria-label="Facts visible only in the image"
+          mt="5"
+          p="4"
+          bg="gray.50"
+          borderRadius="md"
         >
-          <strong>Visible in image</strong>
-          <ul>
+          <Strong>Visible in image</Strong>
+          <List.Root as="ul" listStyleType="disc" ps="6" mt="2">
             {figure.screenshotOnly.map((fact, index) => (
-              <li key={index}>{fact}</li>
+              <List.Item key={index}>{fact}</List.Item>
             ))}
-          </ul>
-        </section>
+          </List.Root>
+        </Box>
       )}
       {figure.uncertainties.length > 0 && (
-        <aside className="guide-note guide-note--uncertain">
-          <strong>Image uncertainty</strong>
-          <ul>
+        <Box
+          as="aside"
+          data-guide-uncertainties=""
+          mt="4"
+          p="4"
+          bg="gray.50"
+          borderStartWidth="3px"
+          borderColor="gray.300"
+        >
+          <Strong>Image uncertainty</Strong>
+          <List.Root as="ul" listStyleType="disc" ps="6" mt="2">
             {figure.uncertainties.map((uncertainty, index) => (
-              <li key={index}>{uncertainty}</li>
+              <List.Item key={index}>{uncertainty}</List.Item>
             ))}
-          </ul>
-        </aside>
+          </List.Root>
+        </Box>
       )}
-    </figure>
+    </chakra.figure>
   );
 }

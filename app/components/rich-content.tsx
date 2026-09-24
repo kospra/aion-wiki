@@ -1,4 +1,17 @@
 import type { ReactNode } from 'react';
+import {
+  Box,
+  Em,
+  Heading,
+  Link,
+  List,
+  Mark,
+  Span,
+  Strong,
+  Table,
+  Text,
+  chakra,
+} from '@chakra-ui/react';
 import { normalizeSourceUrl } from '../content/reader';
 import type { Block, Figure, Inline } from '../content/types';
 import { GuideFigure } from './guide-figure';
@@ -11,25 +24,30 @@ type Props = {
 
 function formattedPart(part: Inline, key: number): ReactNode {
   let content: ReactNode = part.text;
-  if (part.strong) content = <strong>{content}</strong>;
-  if (part.emphasis) content = <em>{content}</em>;
-  if (part.underline) content = <u>{content}</u>;
+  if (part.strong) content = <Strong>{content}</Strong>;
+  if (part.emphasis) content = <Em>{content}</Em>;
+  if (part.underline) content = <chakra.u>{content}</chakra.u>;
   if (part.highlight) {
     const backgroundColor =
       /^#[0-9a-f]{3}(?:[0-9a-f]{3})?(?:[0-9a-f]{2})?$/i.test(part.highlight)
         ? part.highlight
         : undefined;
     content = (
-      <mark style={backgroundColor ? { backgroundColor } : undefined}>
+      <Mark
+        bg={backgroundColor}
+        whiteSpace="normal"
+        color={backgroundColor ? 'black' : undefined}
+        data-source-highlight={backgroundColor}
+      >
         {content}
-      </mark>
+      </Mark>
     );
   }
   return (
-    <span key={key}>
+    <Span key={key}>
       {content}
       {part.breakAfter && <br />}
-    </span>
+    </Span>
   );
 }
 
@@ -60,14 +78,18 @@ export function RichContent({
       const href = normalizeSourceUrl(
         typeof mappedHref === 'string' ? mappedHref : part.href,
       );
-      // Blank source spans often flank a labeled link to the same target.
       runs.push(
         href && linkedParts.some((linked) => linked.text.trim()) ? (
-          <a key={start} href={href}>
+          <Link
+            key={start}
+            href={href}
+            colorPalette="blue"
+            textDecoration="underline"
+          >
             {content}
-          </a>
+          </Link>
         ) : (
-          <span key={start}>{content}</span>
+          <Span key={start}>{content}</Span>
         ),
       );
     }
@@ -78,117 +100,184 @@ export function RichContent({
     switch (block.kind) {
       case 'paragraph':
         return (
-          <p id={block.id} key={block.id}>
+          <Text id={block.id} key={block.id} lineHeight="1.75">
             {renderInline(block.content)}
-          </p>
+          </Text>
         );
-      case 'heading': {
-        const Heading = `h${block.level}` as 'h2' | 'h3' | 'h4';
+      case 'heading':
         return (
-          <Heading id={block.id} key={block.id}>
+          <Heading
+            as={`h${block.level}` as 'h2' | 'h3' | 'h4'}
+            id={block.id}
+            key={block.id}
+            size={block.level === 2 ? 'xl' : block.level === 3 ? 'lg' : 'md'}
+            mt={block.level === 2 ? '8' : '6'}
+            mb="2"
+          >
             {renderInline(block.content)}
           </Heading>
         );
-      }
       case 'list': {
         const items = block.items.map((item, index) => (
-          <li key={`${block.id}-item-${index}`}>{item.map(renderBlock)}</li>
+          <List.Item key={`${block.id}-item-${index}`}>
+            {item.map(renderBlock)}
+          </List.Item>
         ));
         return block.ordered ? (
-          <ol
+          <List.Root
+            asChild
+            key={block.id}
+            listStyleType="decimal"
+            ps="6"
+            spaceY="2"
+          >
+            <chakra.ol
+              id={block.id}
+              start={block.start}
+              aria-label="Numbered guide list"
+            >
+              {items}
+            </chakra.ol>
+          </List.Root>
+        ) : (
+          <List.Root
+            as="ul"
             id={block.id}
             key={block.id}
-            start={block.start}
-            aria-label="Numbered guide list"
+            listStyleType="disc"
+            ps="6"
+            spaceY="2"
           >
             {items}
-          </ol>
-        ) : (
-          <ul id={block.id} key={block.id}>
-            {items}
-          </ul>
+          </List.Root>
         );
       }
       case 'table':
         return (
-          <div
+          <Table.ScrollArea
             id={block.id}
             key={block.id}
-            className="guide-table-scroll"
+            tabIndex={0}
             role="region"
             aria-label={block.caption}
-            tabIndex={0}
+            data-guide-table-scroll=""
+            maxW="100%"
+            borderWidth="1px"
+            borderColor="gray.200"
+            borderRadius="md"
           >
-            <table>
-              <caption>{block.caption}</caption>
-              <thead>
-                <tr>
+            <Table.Root size="sm" variant="outline" minW="max-content">
+              <Table.Caption captionSide="top">{block.caption}</Table.Caption>
+              <Table.Header>
+                <Table.Row>
                   {block.columns.map((column, index) => (
-                    <th key={index} scope="col">
+                    <Table.ColumnHeader key={index} scope="col">
                       {renderInline(column)}
-                    </th>
+                    </Table.ColumnHeader>
                   ))}
-                </tr>
-              </thead>
-              <tbody>
+                </Table.Row>
+              </Table.Header>
+              <Table.Body>
                 {block.rows.map((row, rowIndex) => (
-                  <tr key={rowIndex}>
+                  <Table.Row key={rowIndex}>
                     {row.map((cell, cellIndex) => (
-                      <td key={cellIndex}>{cell.map(renderBlock)}</td>
+                      <Table.Cell key={cellIndex} verticalAlign="top">
+                        {cell.map(renderBlock)}
+                      </Table.Cell>
                     ))}
-                  </tr>
+                  </Table.Row>
                 ))}
-              </tbody>
-            </table>
-          </div>
+              </Table.Body>
+            </Table.Root>
+          </Table.ScrollArea>
         );
       case 'formula':
         return (
-          <section id={block.id} key={block.id} className="guide-formula">
-            <pre>{block.expression}</pre>
-            <p>{renderInline(block.explanation)}</p>
-          </section>
+          <Box
+            as="section"
+            id={block.id}
+            key={block.id}
+            p="4"
+            bg="gray.50"
+            borderWidth="1px"
+            borderColor="gray.200"
+            borderRadius="md"
+          >
+            <chakra.pre
+              overflowX="auto"
+              maxW="100%"
+              fontFamily="mono"
+              fontSize="sm"
+              whiteSpace="pre"
+            >
+              {block.expression}
+            </chakra.pre>
+            <Text mt="3" lineHeight="1.7">
+              {renderInline(block.explanation)}
+            </Text>
+          </Box>
         );
       case 'note':
         return (
-          <aside
+          <Box
+            as="aside"
             id={block.id}
             key={block.id}
-            className={`guide-note guide-note--${block.tone}`}
+            p="4"
+            bg="gray.50"
+            borderStartWidth="3px"
+            borderColor="gray.300"
+            borderRadius="sm"
           >
-            <strong>{block.label}</strong>
-            <p>{renderInline(block.content)}</p>
-          </aside>
+            <Strong>{block.label}</Strong>
+            <Text mt="1" lineHeight="1.7">
+              {renderInline(block.content)}
+            </Text>
+          </Box>
         );
       case 'figure': {
         const figure = figures[block.figureId];
         if (!figure)
           return (
-            <p id={block.id} key={block.id}>
+            <Text id={block.id} key={block.id}>
               Image unavailable: {block.figureId}
-            </p>
+            </Text>
           );
         return (
-          <div id={block.id} key={block.id} className="guide-figure-placement">
+          <Box id={block.id} key={block.id} maxW="100%">
             <GuideFigure figure={figure} sourceLinks={sourceLinks} />
-          </div>
+          </Box>
         );
       }
       case 'group':
         return (
-          <div
+          <Box
             id={block.id}
             key={block.id}
             role="group"
             aria-label={block.label}
-            className="guide-group"
+            borderStartWidth="2px"
+            borderColor="gray.200"
+            ps="4"
+            py="2"
+            spaceY="4"
           >
-            <p className="guide-group__label">{block.label}</p>
+            <Text
+              data-guide-group-label=""
+              fontWeight="semibold"
+              color="gray.700"
+            >
+              {block.label}
+            </Text>
             {block.blocks.map(renderBlock)}
-          </div>
+          </Box>
         );
     }
   }
 
-  return <div className="guide-content">{blocks.map(renderBlock)}</div>;
+  return (
+    <Box data-guide-content="" spaceY="5" minW="0" overflowWrap="anywhere">
+      {blocks.map(renderBlock)}
+    </Box>
+  );
 }
