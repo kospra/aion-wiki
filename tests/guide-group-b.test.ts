@@ -5,10 +5,24 @@ import coverageData from '../content/coverage/group-b.json';
 import baseline from '../content/source/baseline.json';
 import taxonomy from '../content/source/taxonomy.json';
 import audit from '../content/source/figure-audit.json';
-import sourceAudit from '../.local-tools/source-doc/figure-audit-b.json';
 import { inlineText, pageText, walkBlocks } from '../app/content/reader';
 import type { CoverageEntry, Figure, GuidePage } from '../app/content/types';
 import { validateGuide } from '../scripts/content-integrity';
+
+type AuditRecord = {
+  purpose: string;
+  screenshotOnlyInformation: string[];
+  unresolved: string[];
+  mappings: {
+    label: string;
+    color?: string;
+    visualValue?: string;
+    meaning: string;
+    textBlockIds: string[];
+    confidence: string;
+  }[];
+  combatTable?: { columns: string[]; rows: (string | number)[][] };
+};
 
 const groupPages = chapter as GuidePage[];
 const groupFigures = figureData as Figure[];
@@ -65,7 +79,7 @@ describe('Enhancement chapter source migration', () => {
       ),
     ).toBe(20);
     for (const entry of records) {
-      const source = entry.sourceRecord as (typeof sourceAudit.figures)[number];
+      const source = entry.sourceRecord as AuditRecord;
       const item = figure(entry.figureId);
       expect(item.caption).toBe(source.purpose);
       expect(
@@ -107,9 +121,10 @@ describe('Enhancement chapter source migration', () => {
     expect(table?.kind).toBe('table');
     if (table?.kind !== 'table') return;
     expect(blocks.indexOf(table)).toBe(placement + 1);
-    const audited = sourceAudit.figures.find(
-      (item) => item.figureId === 'figure-039',
-    )!.combatTable!;
+    const audited = (
+      audit.find((item) => item.figureId === 'figure-039')!
+        .sourceRecord as AuditRecord
+    ).combatTable!;
     expect(table.columns.map(inlineText)).toEqual(audited.columns);
     expect(table.rows).toHaveLength(16);
     expect(
@@ -137,6 +152,27 @@ describe('Enhancement chapter source migration', () => {
     expect(text('manastones-and-soulstones')).toMatch(/Common Manastone/);
     expect(text('soul-binding-bind-sync-and-reset')).toMatch(/90\.2%/);
     expect(text('soul-binding-bind-sync-and-reset')).toMatch(/32%/);
+  });
+
+  it('places each source arrow between its recipe output and input', () => {
+    const blocks = walkBlocks(page('gear-transfer-and-material-costs').blocks);
+    for (const [id, output, input] of [
+      ['block-0496', 'figure-048', 'figure-049'],
+      ['block-0497', 'figure-050', 'figure-051'],
+    ] as const) {
+      const group = blocks.find((item) => item.id === id);
+      expect(group?.kind).toBe('group');
+      if (group?.kind !== 'group') continue;
+      expect(
+        group.blocks.map((child) =>
+          child.kind === 'figure' ? child.figureId : 'arrow',
+        ),
+      ).toEqual([output, 'arrow', input]);
+      const arrow = group.blocks[1];
+      expect(arrow.kind).toBe('paragraph');
+      if (arrow.kind === 'paragraph')
+        expect(inlineText(arrow.content)).toBe('⬅️');
+    }
   });
 
   it('keeps transfer donor direction, paired recipes, and chapter transition context', () => {

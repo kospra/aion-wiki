@@ -3909,6 +3909,12 @@
         "label": "Source text and illustration",
         "blocks": [
           {
+            "id": "block-0496-figure-048",
+            "sourceIds": ["block-0496"],
+            "kind": "figure",
+            "figureId": "figure-048"
+          },
+          {
             "id": "block-0496-text",
             "sourceIds": ["block-0496"],
             "kind": "paragraph",
@@ -3918,12 +3924,6 @@
                 "strong": true
               }
             ]
-          },
-          {
-            "id": "block-0496-figure-048",
-            "sourceIds": ["block-0496"],
-            "kind": "figure",
-            "figureId": "figure-048"
           },
           {
             "id": "block-0496-figure-049",
@@ -3940,6 +3940,12 @@
         "label": "Source text and illustration",
         "blocks": [
           {
+            "id": "block-0497-figure-050",
+            "sourceIds": ["block-0497"],
+            "kind": "figure",
+            "figureId": "figure-050"
+          },
+          {
             "id": "block-0497-text",
             "sourceIds": ["block-0497"],
             "kind": "paragraph",
@@ -3949,12 +3955,6 @@
                 "strong": true
               }
             ]
-          },
-          {
-            "id": "block-0497-figure-050",
-            "sourceIds": ["block-0497"],
-            "kind": "figure",
-            "figureId": "figure-050"
           },
           {
             "id": "block-0497-figure-051",
