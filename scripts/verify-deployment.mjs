@@ -66,6 +66,10 @@ async function request(base, path, expectedStatus) {
       cause: error,
     });
   }
+  if (new URL(response.url).origin !== base.origin) {
+    await response.body?.cancel();
+    throw new Error(`${path}: response redirected to a different origin`);
+  }
   if (response.status !== expectedStatus) {
     await response.body?.cancel();
     throw new Error(

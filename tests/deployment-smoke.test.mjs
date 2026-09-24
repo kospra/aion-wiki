@@ -56,6 +56,7 @@ beforeEach(async () => {
       }[path] ?? { status: 404, body: 'missing' };
     response.writeHead(fixture.status ?? 200, {
       'content-type': fixture.type ?? 'text/html; charset=utf-8',
+      ...fixture.headers,
     });
     response.end(fixture.body);
   });
@@ -72,6 +73,29 @@ it('accepts representative HTML and image routes with semantic 404s', async () =
   await expect(checkDeployment(baseUrl)).resolves.toBeUndefined();
 });
 
+it('accepts redirects to trailing slashes on the same origin', async () => {
+  for (const path of [category, article, '/source']) {
+    changes.set(path, { status: 308, headers: { location: `${path}/` } });
+  }
+  await expect(checkDeployment(baseUrl)).resolves.toBeUndefined();
+});
+
+it('rejects a different origin even when every redirected response is valid', async () => {
+  const redirector = createServer((request, response) => {
+    response.writeHead(302, { location: `${baseUrl}${request.url}` });
+    response.end();
+  });
+  await new Promise((resolve) => redirector.listen(0, '127.0.0.1', resolve));
+  const redirectUrl = `http://127.0.0.1:${redirector.address().port}`;
+  try {
+    await expect(checkDeployment(redirectUrl)).rejects.toThrow(
+      /origin|redirect/i,
+    );
+  } finally {
+    redirector.closeAllConnections();
+    await new Promise((resolve) => redirector.close(resolve));
+  }
+});
 it('rejects a soft 404 for an unknown page', async () => {
   changes.set('missingPage', { status: 200, body: '<h1>Aion 2 Wiki</h1>' });
   await expect(checkDeployment(baseUrl)).rejects.toThrow(/404/);
