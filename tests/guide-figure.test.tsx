@@ -216,3 +216,23 @@ it('opens a native dialog and returns focus on close button and cancel', async (
   expect(dialog).not.toHaveAttribute('open');
   expect(open).toHaveFocus();
 });
+
+it('keeps Tab and Shift+Tab within the viewer and exposes keyboard image scrolling', async () => {
+  installDialogMethods();
+  const user = userEvent.setup();
+  render(<GuideFigure figure={figure} sourceLinks={sourceLinks} />);
+  await user.click(screen.getByRole('button', { name: /view full-size/i }));
+  const dialog = screen.getByRole('dialog');
+  const first = within(dialog).getByRole('link', {
+    name: /open original image/i,
+  });
+  const scroller = within(dialog).getByRole('region', {
+    name: /scroll full-size image/i,
+  });
+  expect(scroller).toHaveAttribute('tabindex', '0');
+  scroller.focus();
+  fireEvent.keyDown(scroller, { key: 'Tab' });
+  expect(first).toHaveFocus();
+  fireEvent.keyDown(first, { key: 'Tab', shiftKey: true });
+  expect(scroller).toHaveFocus();
+});

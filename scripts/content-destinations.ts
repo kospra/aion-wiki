@@ -1,4 +1,4 @@
-import { normalizeSourceUrl } from '../app/content/reader';
+import { normalizeSourceUrl } from '../app/content/reader.ts';
 import type {
   CoverageEntry,
   GuidePage,

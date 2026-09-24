@@ -1,4 +1,4 @@
-import { blockChildren, blockInlineSegments } from '../app/content/reader';
+import { blockChildren, blockInlineSegments } from '../app/content/reader.ts';
 import type { Block, Inline, SourceBaseline } from '../app/content/types';
 
 type IndexedBlock = {

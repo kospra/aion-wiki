@@ -148,6 +148,7 @@
   color: var(--muted);
 }
 .guide-figure__legend {
+  overflow-wrap: anywhere;
   margin-top: 1rem;
 }
 .guide-figure__legend > div {

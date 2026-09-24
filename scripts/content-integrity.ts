@@ -1,17 +1,24 @@
-import { blockInlineSegments, normalizeSourceUrl } from '../app/content/reader';
+import { readFile } from 'node:fs/promises';
+import { resolve } from 'node:path';
+import { fileURLToPath } from 'node:url';
+import { loadCompleteGuide } from './guide-data.ts';
+import {
+  blockInlineSegments,
+  normalizeSourceUrl,
+} from '../app/content/reader.ts';
 import type {
   CoverageEntry,
   Figure,
   GuidePage,
   SourceBaseline,
 } from '../app/content/types';
-import { createDestinations, pagePath } from './content-destinations';
+import { createDestinations, pagePath } from './content-destinations.ts';
 import {
   indexBlocks,
   normalizeWhitespace,
   primaryFragments,
   validateFragments,
-} from './content-fragments';
+} from './content-fragments.ts';
 
 export type GuideValidationInput = {
   baseline: SourceBaseline;
@@ -305,4 +312,24 @@ export function validateGuide(input: GuideValidationInput): string[] {
   }
   errors.push(...validateFigures(input, destinations, indexes));
   return errors;
+}
+
+// Importing this module stays pure; direct execution provides an offline CI gate.
+if (
+  process.argv[1] &&
+  resolve(process.argv[1]) === fileURLToPath(import.meta.url)
+) {
+  const inputPath = process.argv[2] === '--input' ? process.argv[3] : undefined;
+  const input: GuideValidationInput = inputPath
+    ? JSON.parse(await readFile(inputPath, 'utf8'))
+    : await loadCompleteGuide();
+  const errors = validateGuide(input);
+  if (errors.length) {
+    console.error(errors.join('\n'));
+    process.exitCode = 1;
+  } else {
+    console.log(
+      `Verified ${input.coverage.length} source blocks, ${input.figures.length} figure placements and ${input.pages.length} source/article pages.`,
+    );
+  }
 }

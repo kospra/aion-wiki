@@ -24,6 +24,21 @@ export function ImageViewer({ figure }: { figure: Figure }): React.JSX.Element {
         ref={dialogRef}
         className="guide-image-viewer"
         aria-label={`Full-size image: ${figure.caption}`}
+        onKeyDown={(event) => {
+          if (event.key !== 'Tab') return;
+          const controls = event.currentTarget.querySelectorAll<HTMLElement>(
+            'a[href],button:not([disabled]),[tabindex="0"]',
+          );
+          const first = controls[0];
+          const last = controls[controls.length - 1];
+          if (event.shiftKey && document.activeElement === first) {
+            event.preventDefault();
+            last?.focus();
+          } else if (!event.shiftKey && document.activeElement === last) {
+            event.preventDefault();
+            first?.focus();
+          }
+        }}
         onCancel={(event) => {
           event.preventDefault();
           close();
@@ -41,7 +56,12 @@ export function ImageViewer({ figure }: { figure: Figure }): React.JSX.Element {
             Close image
           </button>
         </div>
-        <div className="guide-image-viewer__content">
+        <div
+          className="guide-image-viewer__content"
+          role="region"
+          aria-label="Scroll full-size image"
+          tabIndex={0}
+        >
           {src ? (
             <img
               src={src}

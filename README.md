@@ -1,75 +1,64 @@
 # Aion 2 Wiki
 
-An independent, responsive Aion 2 wiki built with React, strict TypeScript, and React Router framework mode. Search titles and summaries, combine category filters, and read individual articles. The navy-and-gold design uses original CSS geometry, an SVG favicon, and local system fonts; it needs no remote artwork or font service.
+A responsive, fully static reference to Kanon's captured Aion 2 guide, built with React, TypeScript, and React Router. It contains 43 articles in 12 chapters, a source overview, and all 90 original figure placements. Search covers source text and figure details. Regional, dated, and uncertain source claims stay labeled; Class Passives retains the source's Coming soon placeholder.
 
-**All six starter articles are explicitly labeled sample content.** They demonstrate the wiki structure and are not verified game guides, mechanics, or statistics. Verify information and add reliable sources before replacing these examples.
+## Requirements and local development
 
-## Requirements
+Use WSL Ubuntu in this Windows workspace, with Node **24.15+ within Node 24** and npm **12.1+ within npm 12** (verified with Node 24.21.0/npm 12.1.0). Dependencies are pinned. Do not alternate Windows and Linux npm installs in one checkout.
 
-- Node.js **24.15+ within the Node 24 release line** (verified with 24.19.0). The static verifier uses Node's built-in TypeScript stripping.
-- npm **12.1+ within the npm 12 release line**. Dependencies are pinned in `package-lock.json`.
-
-## Run locally
-
-```sh
+```bash
+cd /mnt/c/code/aion-wiki
+source ~/.nvm/nvm.sh
+nvm use 24
 npm ci
 npm run dev
 ```
 
-Open the URL printed by React Router, normally `http://localhost:5173`.
+If needed, provision Node 24 with `nvm install 24` and npm 12 with `npm install --global npm@12`; changing the default nvm version is unnecessary. From PowerShell, enter WSL with `wsl.exe --exec bash -ic 'cd /mnt/c/code/aion-wiki && nvm use 24 && npm run dev'`. Open the URL printed by React Router, normally `http://localhost:5173`.
 
-```sh
+```bash
 npm run build
 npm run verify:static
-npm run preview
+npm run preview -- --listen 3000
 ```
 
-The preview serves the production files, normally at `http://localhost:3000`. It supports directory indexes for every generated route. Stop the process with Ctrl+C.
-
-### Bundled Windows runtime
-
-In this workspace Node is bundled but npm is not on `PATH`. The official npm CLI is installed in the ignored `.local-tools/npm` directory. If that directory is missing, first download and extract it:
-
-```powershell
-$nodeExe = Join-Path $env:USERPROFILE '.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node.exe'
-$npmRoot = Join-Path (Get-Location) '.local-tools/npm'
-New-Item -ItemType Directory -Force -Path $npmRoot | Out-Null
-Invoke-WebRequest 'https://registry.npmjs.org/npm/-/npm-12.1.0.tgz' -OutFile (Join-Path $npmRoot 'npm.tgz')
-tar.exe -xzf (Join-Path $npmRoot 'npm.tgz') -C $npmRoot
-$npmCli = Join-Path $npmRoot 'package/bin/npm-cli.js'
-& $nodeExe $npmCli ci
-& $nodeExe $npmCli run dev
-```
-
-Use `& $nodeExe $npmCli <command>` in place of `npm <command>` for the commands below in this environment.
+The production preview is normally at `http://localhost:3000`. Stop it with Ctrl+C.
 
 ## Validation
 
-```sh
-npm run format
-npm ci
+Run from the repository root; all checks use committed content, with no network source fetch or ignored research dependency.
+
+```bash
+npm run content:generate
+npm run content:check
+npm run verify:content
 npm run lint
 npm run format:check
 npm run typecheck
-npm test
+npm test -- --pool=vmThreads --maxWorkers=1
 npm run build
 npm run verify:static
+npm run verify:browser -- http://localhost:3000
 ```
 
-The Vitest tests cover directory search and filters, empty-result recovery, category and article rendering, sample labels, navigation links, and unknown-page content. Route transitions and direct refreshes require separate browser QA; they are not asserted by the Vitest suite. The static verifier checks every declared route for a semantic main and heading, sample disclosure, article section content, and absence of development-server references. Run it from the project root after building; missing output intentionally fails.
+`verify:content` runs directly under Node 24 and fails on errors. The tests compare actual source-bearing fields with the independent capture and mutate lost repeated numbers, qualifiers, links, coverage, and figures. The static verifier parses every route as DOM, reconstructs visible source text/style/link fields and revalidates them against the baseline, checks figure legends and uncertainties, and verifies local asset hashes and internal targets. `content:check` detects a stale generated search catalogue.
+
+Browser QA uses a separate WSL Playwright installation, not a product dependency. Set `GUIDE_BROWSER_ROOT` to a directory containing `node_modules/playwright/index.mjs` and its browser environment; by default it uses `.local-tools/wsl-browser`. Provision that environment with Playwright and compatible Chromium if absent. `PLAYWRIGHT_BROWSERS_PATH` and `LD_LIBRARY_PATH` may be supplied explicitly; this workspace has browsers in `browsers` and locally extracted libraries in `libs/usr/lib/x86_64-linux-gnu` under that test directory. The script accepts the preview base URL and writes screenshots and `results.json` into ignored `.local-tools/qa/guide/`. It checks all 57 routes at 375px/1440px plus reading interactions, keyboard access, image loading, and errors.
 
 ## Content authoring
 
-Edit `app/content/wiki.ts`. A category has `slug`, `title`, and `description`. An article has a unique `slug`, `title`, a category slug in `category`, `summary`, `sections` (an array of `{ heading, body }`), and `status: 'sample'`. Use lowercase hyphenated slugs and an existing category. Keep text plain; React escapes it safely.
+Structured `GuidePage` bodies live in `app/content/chapters/chapter-01.json` through `chapter-12.json` and `app/content/source-overview.json`. `app/content/types.ts` defines paragraphs, headings, lists, tables, formulas, notes, figures, and groups. Inline runs retain strong/emphasis/underline/highlight/link fields. Keep source wording, original numbers and repeated occurrences, generated list numbering, and source context intact.
 
-Category navigation, directory search, and `staticPaths` are derived from this data. Adding an entry automatically creates its route on the next build: `/categories/<slug>` or `/articles/<slug>`. No route file is needed per article. To introduce verified articles later, deliberately extend the status type, update the disclosure UI, and include a source model; do not silently remove sample labels.
+Figures live in `app/content/figures/group-{a,b,c}.json`; local originals are under `public/images/guide/`. Figure IDs identify placements, while hashes identify unique originals. Each figure includes accessible text, annotation meanings, screenshot-only facts and uncertainties. Keep text labels alongside colors.
 
-Shared components are in `app/components`; route pages in `app/routes`. Theme tokens, global layout, and wiki presentation are in `app/styles/theme.css`, `global.css`, and `wiki.css`.
+`content/source/baseline.json`, `figure-audit.json`, `taxonomy.json`, and `category-contract.json` are the independent captured source and approved structure. Primary destinations and justified layout-only exclusions live in `content/coverage/group-{a,b,c}.json`. Stable source block anchors connect those records to visible content. Do not change the baseline to make a content regression pass.
+
+`app/content/repository.ts` loads full bodies for article/source routes and resolves source links. `app/content/wiki.ts` exposes the lightweight generated `catalogue.json` to navigation and search; the header does not load article bodies. After content edits run `npm run content:generate`, then all validation gates. See [migration provenance and limitations](docs/source-guide-migration.md).
 
 ## Static hosting
 
-Publish the contents of **`build/client`** to a static host at the site root. Runtime server rendering is disabled. The build produces `index.html` for the homepage and a directory index for each known route, for example `articles/choosing-your-class/index.html`. Configure the host to resolve both `/articles/choosing-your-class` and its trailing-slash form to that directory index, so direct links and refreshes work.
+Publish the contents of **`build/client`** to a static host at the site root. Runtime server rendering is disabled. The build produces a directory `index.html` for every known route, for example `articles/gear-anatomy-and-stat-layers/index.html`. The host must resolve both the route and its trailing-slash form to that index, so direct links and refreshes work.
 
-React Router also emits `__spa-fallback.html`. Unknown routes reached through the React application show its not-found screen. For direct requests to unknown URLs, a static host normally returns its own 404. To show the React not-found screen on those requests, configure the host to serve `__spa-fallback.html` as its fallback after checking real files and directory indexes. Prefer preserving HTTP 404 status where the host supports it. The fallback page requires JavaScript; known pages already contain their content in HTML.
+React Router also emits `__spa-fallback.html`. Unknown routes reached through the React application show its not-found screen. For direct requests to unknown URLs, an ordinary static host returns its own 404. To show the React not-found screen on those requests, configure that host to serve `__spa-fallback.html` after checking real files and directory indexes, preserving HTTP 404 where supported. The fallback requires JavaScript; known pages already contain their content in HTML.
 
-The default local preview intentionally uses ordinary static-file behavior, so unknown URLs show the preview server's 404. A host's fallback setup is separate from the build and varies by provider. No provider configuration or public deployment is included. No application server, database, authentication, or CMS is required.
+The default local preview intentionally returns its server 404 for unknown direct URLs. No provider configuration or public deployment is included. No application server, database, authentication, CMS, remote font service, or runtime source fetch is required.

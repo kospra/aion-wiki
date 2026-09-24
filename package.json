@@ -13,6 +13,8 @@
     "format:check": "prettier --check .",
     "test": "vitest run",
     "verify:static": "node scripts/verify-static.mjs",
+    "verify:content": "node scripts/content-integrity.ts",
+    "verify:browser": "node scripts/verify-guide-browser.mjs",
     "content:generate": "node scripts/generate-catalogue.ts",
     "content:check": "node scripts/generate-catalogue.ts --check"
   },
