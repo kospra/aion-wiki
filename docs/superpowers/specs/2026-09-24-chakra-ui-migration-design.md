@@ -1,7 +1,7 @@
 # Chakra UI migration design
 
 Date: 2026-09-24
-Status: Proposed for user review
+Status: Approved; user authorized recommended decisions and execution through completion
 
 ## Intent and scope
 
@@ -40,16 +40,16 @@ Use semantic HTML where it is necessary for the document shell or content, such 
 
 ## Component migration
 
-| Surface | Chakra implementation and preserved behavior |
-| --- | --- |
-| Application shell | Provider, Container, Flex, Stack, Text, and semantic landmarks; retain skip link, focus target, footer, and error states. |
-| Header and navigation | Chakra Link composed with React Router links, Button, and collapsible navigation; preserve active routes, keyboard activation, expanded state, and closing after selection. |
-| Home and categories | Heading, Text, Grid, Card, and Badge; preserve chapter order, all links, article summaries, and status labels. |
-| Search directory | Field/Input, Button, Wrap, Cards, and an empty state; retain search normalization, category selection, reset behavior, and live result count. |
-| Article header and navigation | Breadcrumb, Heading, Text, informational components, Link, and layout primitives; preserve attribution, qualifiers, table of contents, previous/next navigation, and all anchor IDs. |
-| Rich article content | Chakra typography, lists, Table and scroll container, Code or semantic preformatted content, and informational notes; preserve heading levels, nested lists, list starts, source formatting, formulas, grouped recipes, and complete cell contents. |
-| Figures | Semantic figure/figcaption composed with Chakra Image, DataList, List, Link, and informational components; preserve legends, confidence, screenshot-only facts, uncertainties, and source explanation links. |
-| Image viewer | Chakra Dialog and Portal with Chakra controls and a focusable image scroll region; preserve Escape dismissal, focus trapping and return, full-resolution scrolling, and direct access to the original image. |
+| Surface                       | Chakra implementation and preserved behavior                                                                                                                                                                                                        |
+| ----------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Application shell             | Provider, Container, Flex, Stack, Text, and semantic landmarks; retain skip link, focus target, footer, and error states.                                                                                                                           |
+| Header and navigation         | Chakra Link composed with React Router links, Button, and collapsible navigation; preserve active routes, keyboard activation, expanded state, and closing after selection.                                                                         |
+| Home and categories           | Heading, Text, Grid, Card, and Badge; preserve chapter order, all links, article summaries, and status labels.                                                                                                                                      |
+| Search directory              | Field/Input, Button, Wrap, Cards, and an empty state; retain search normalization, category selection, reset behavior, and live result count.                                                                                                       |
+| Article header and navigation | Breadcrumb, Heading, Text, informational components, Link, and layout primitives; preserve attribution, qualifiers, table of contents, previous/next navigation, and all anchor IDs.                                                                |
+| Rich article content          | Chakra typography, lists, Table and scroll container, Code or semantic preformatted content, and informational notes; preserve heading levels, nested lists, list starts, source formatting, formulas, grouped recipes, and complete cell contents. |
+| Figures                       | Semantic figure/figcaption composed with Chakra Image, DataList, List, Link, and informational components; preserve legends, confidence, screenshot-only facts, uncertainties, and source explanation links.                                        |
+| Image viewer                  | Chakra Dialog and Portal with Chakra controls and a focusable image scroll region; preserve Escape dismissal, focus trapping and return, full-resolution scrolling, and direct access to the original image.                                        |
 
 Static informational notes must not become assertive live alerts. Router links must remain actual anchors and must not produce nested anchors. Closed viewer portals must not remove the article's original figures, captions, or legends from static HTML. Keep viewer state local to the existing viewer boundary unless profiling identifies a concrete need to share it.
 
@@ -80,6 +80,10 @@ Run content generation/integrity checks, type checking, lint, formatting, the fu
 - No page-wide horizontal overflow, hydration errors, missing prerendered styles, or inaccessible replacement controls are introduced.
 - Verification selectors are migrated without weakening content fidelity checks.
 - Setup and architecture documentation describe the Chakra provider and component conventions.
+
+## Chakra MCP requirement
+
+Before implementation, configure and use the official Chakra MCP server. This was completed with `@chakra-ui/react-mcp@2.1.1`, registered as `chakra-ui` in Codex using the existing WSL Node 24 runtime. A real MCP initialization, tool discovery, and calls for installation guidance, theme tokens, Dialog props/examples, and Table props succeeded. Keep consulting its component APIs during the migration; retain runtime type checking and browser tests as independent verification of the generated implementation.
 
 ## Delivery workflow
 

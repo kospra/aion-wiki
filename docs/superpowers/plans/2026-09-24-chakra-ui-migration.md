@@ -68,7 +68,9 @@ export function WikiProvider({ children }: { children: React.ReactNode }) {
 
 ```tsx
 await user.click(screen.getByRole('button', { name: /browse chapters/i }));
-expect(screen.getByRole('button', { name: /browse chapters/i })).toHaveAttribute('aria-expanded', 'true');
+expect(
+  screen.getByRole('button', { name: /browse chapters/i }),
+).toHaveAttribute('aria-expanded', 'true');
 ```
 
 - [ ] Replace the header, home hero and chapter cards, search directory, cards, category/reader frames, TOC, source status/attribution, pagination, and not-found UI with Chakra components. Compose routing links using Chakra Link asChild and React Router Link; use semantic headings and landmarks.
@@ -95,7 +97,9 @@ expect(screen.getByRole('button', { name: /browse chapters/i })).toHaveAttribute
 await user.click(screen.getByRole('button', { name: /view full-size/i }));
 expect(await screen.findByRole('dialog')).toBeVisible();
 await user.keyboard('{Escape}');
-await waitFor(() => expect(screen.queryByRole('dialog')).not.toBeInTheDocument());
+await waitFor(() =>
+  expect(screen.queryByRole('dialog')).not.toBeInTheDocument(),
+);
 await waitFor(() => expect(opener).toHaveFocus());
 ```
 
@@ -121,7 +125,9 @@ await waitFor(() => expect(opener).toHaveFocus());
 ```js
 const dialog = page.getByRole('dialog');
 const scroller = dialog.getByRole('region', { name: 'Scroll full-size image' });
-const color = await mark.evaluate((element) => getComputedStyle(element).backgroundColor);
+const color = await mark.evaluate(
+  (element) => getComputedStyle(element).backgroundColor,
+);
 ```
 
 - [ ] Delete all four legacy stylesheets and imports. Search app for className, style=, raw visible HTML and CSS imports; replace remaining application presentation with Chakra components/props. Keep intrinsic document markup and source semantic data appropriate to the spec.
