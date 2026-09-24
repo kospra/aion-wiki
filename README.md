@@ -56,7 +56,7 @@ npm run build
 npm run verify:static
 ```
 
-The tests cover search, category filtering, combined filters, empty-result recovery, content integrity, route changes, articles, and unknown routes. The static verifier checks every declared route for a semantic main and heading, sample disclosure, article section content, and absence of development-server references. Run it from the project root after building; missing output intentionally fails.
+The Vitest tests cover directory search and filters, empty-result recovery, category and article rendering, sample labels, navigation links, and unknown-page content. Route transitions and direct refreshes require separate browser QA; they are not asserted by the Vitest suite. The static verifier checks every declared route for a semantic main and heading, sample disclosure, article section content, and absence of development-server references. Run it from the project root after building; missing output intentionally fails.
 
 ## Content authoring
 

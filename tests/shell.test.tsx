@@ -3,6 +3,7 @@ import { MemoryRouter } from 'react-router';
 import { expect, it } from 'vitest';
 import { NotFound } from '../app/components/not-found';
 import { SiteHeader } from '../app/components/site-header';
+import { categories } from '../app/content/wiki';
 import Home from '../app/routes/home';
 
 it('exposes an accessible home link and skip link', () => {
@@ -25,6 +26,28 @@ it('exposes an accessible home link and skip link', () => {
   ).toBeInTheDocument();
 });
 
+it('includes a newly added category in main navigation', () => {
+  categories.push({
+    slug: 'crafting',
+    title: 'Crafting',
+    description: 'Crafting guides.',
+  });
+
+  try {
+    render(
+      <MemoryRouter>
+        <SiteHeader />
+      </MemoryRouter>,
+    );
+
+    expect(screen.getByRole('link', { name: 'Crafting' })).toHaveAttribute(
+      'href',
+      '/categories/crafting',
+    );
+  } finally {
+    categories.pop();
+  }
+});
 it('offers a way home from an unknown page', () => {
   render(
     <MemoryRouter>

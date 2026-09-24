@@ -1,4 +1,5 @@
 import { Link } from 'react-router';
+import { categories } from '../content/wiki';
 
 export function SiteHeader(): React.JSX.Element {
   return (
@@ -15,9 +16,11 @@ export function SiteHeader(): React.JSX.Element {
             <span>Aion 2 Wiki</span>
           </Link>
           <div className="site-header__links">
-            <Link to="/categories/getting-started">Getting started</Link>
-            <Link to="/categories/classes">Classes</Link>
-            <Link to="/categories/exploration">Exploration</Link>
+            {categories.map(({ slug, title }) => (
+              <Link key={slug} to={`/categories/${slug}`}>
+                {title}
+              </Link>
+            ))}
           </div>
         </nav>
         <span className="site-header__eyebrow">A field guide in progress</span>
