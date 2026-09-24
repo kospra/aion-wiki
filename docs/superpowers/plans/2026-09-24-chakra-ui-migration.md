@@ -36,16 +36,16 @@
 
 **Interfaces:** Export WikiProvider({ children }: { children: React.ReactNode }): React.JSX.Element. Export a Testing Library-compatible render from tests/render.tsx that wraps WikiProvider and re-exports the library's utilities. Preserve all existing component signatures. Later tasks consume these exports.
 
-- [ ] Run baseline tests with `npm test -- --pool=vmThreads --maxWorkers=1`; record existing results before installing dependencies.
-- [ ] Query MCP installation/provider guidance and npm peer dependencies; install compatible exact stable versions of @chakra-ui/react and @emotion/react through WSL npm.
-- [ ] Add a provider test that renders a Chakra Button through WikiProvider and checks its accessible name and generated style presence. Record the missing-provider-module failure before implementation.
+- [x] Run baseline tests with `npm test -- --pool=vmThreads --maxWorkers=1`; record existing results before installing dependencies.
+- [x] Query MCP installation/provider guidance and npm peer dependencies; install compatible exact stable versions of @chakra-ui/react and @emotion/react through WSL npm.
+- [x] Add a provider test that renders a Chakra Button through WikiProvider and checks its accessible name and generated style presence. Record the missing-provider-module failure before implementation.
 
 ```tsx
 render(<Button>Provider ready</Button>);
 expect(screen.getByRole('button', { name: 'Provider ready' })).toBeVisible();
 ```
 
-- [ ] Implement the provider with ChakraProvider value={defaultSystem}, using a fixed light class on the document. Use a small createSystem config only where a concrete requirement warrants it. Add provider coverage for normal and error layouts. Retain the legacy stylesheet imports temporarily until Task 4.
+- [x] Implement the provider with ChakraProvider value={defaultSystem}, using a fixed light class on the document. Use a small createSystem config only where a concrete requirement warrants it. Add provider coverage for normal and error layouts. Retain the legacy stylesheet imports temporarily until Task 4.
 
 ```tsx
 export function WikiProvider({ children }: { children: React.ReactNode }) {
@@ -53,9 +53,9 @@ export function WikiProvider({ children }: { children: React.ReactNode }) {
 }
 ```
 
-- [ ] Convert root footer, main container, and generic error UI to Chakra components, with light theme-color metadata. Update all existing TSX test render imports to the shared wrapper; add only necessary actual browser API polyfills.
-- [ ] Run focused tests, typecheck, and production build. Use Playwright against the production output to verify an actual Chakra-rendered surface with JavaScript disabled and then enabled, checking computed styles and hydration errors. Establish working Emotion SSR behavior before proceeding; follow framework requirements rather than hiding content client-side.
-- [ ] Self-review and commit the foundation. Report exact commands/results and any remaining known transitional style effects.
+- [x] Convert root footer, main container, and generic error UI to Chakra components, with light theme-color metadata. Update all existing TSX test render imports to the shared wrapper; add only necessary actual browser API polyfills.
+- [x] Run focused tests, typecheck, and production build. Use Playwright against the production output to verify an actual Chakra-rendered surface with JavaScript disabled and then enabled, checking computed styles and hydration errors. Establish working Emotion SSR behavior before proceeding; follow framework requirements rather than hiding content client-side.
+- [x] Self-review and commit the foundation. Report exact commands/results and any remaining known transitional style effects.
 
 ## Task 2: Navigation, discovery, and page frames
 
@@ -63,8 +63,8 @@ export function WikiProvider({ children }: { children: React.ReactNode }) {
 
 **Interfaces:** Consume WikiProvider from Task 1 through the root/test wrapper. Preserve every existing component export and data prop. GuidePageView still consumes existing page/content/figure data and renders RichContent unchanged at its boundary.
 
-- [ ] Consult MCP examples/props for Card, Collapsible, Field, Breadcrumb and Link. Preserve original route metadata and reader data flow.
-- [ ] Extend shell tests to activate the chapter toggle and select a destination, asserting expanded state and closure. Keep the 12 chapters, dynamic category test, source link, skip link, and recovery link coverage. Add error surface coverage if not already present.
+- [x] Consult MCP examples/props for Card, Collapsible, Field, Breadcrumb and Link. Preserve original route metadata and reader data flow.
+- [x] Extend shell tests to activate the chapter toggle and select a destination, asserting expanded state and closure. Keep the 12 chapters, dynamic category test, source link, skip link, and recovery link coverage. Add error surface coverage if not already present.
 
 ```tsx
 await user.click(screen.getByRole('button', { name: /browse chapters/i }));
@@ -73,16 +73,16 @@ expect(
 ).toHaveAttribute('aria-expanded', 'true');
 ```
 
-- [ ] Replace the header, home hero and chapter cards, search directory, cards, category/reader frames, TOC, source status/attribution, pagination, and not-found UI with Chakra components. Compose routing links using Chakra Link asChild and React Router Link; use semantic headings and landmarks.
+- [x] Replace the header, home hero and chapter cards, search directory, cards, category/reader frames, TOC, source status/attribution, pagination, and not-found UI with Chakra components. Compose routing links using Chakra Link asChild and React Router Link; use semantic headings and landmarks.
 
 ```tsx
 <Link asChild><RouterLink to="/source">About the source</RouterLink></Link>
 <Field.Root><Field.Label>Search articles</Field.Label><Input type="search" value={query} onChange={(event) => setQuery(event.target.value)} /></Field.Root>
 ```
 
-- [ ] Retain normalization, filtering, reset, aria-pressed and live counts. Keep mobile chapter navigation keyboard accessible and close after navigation. Keep neutral colors, standard typography and responsive spacing; remove bespoke hero ornaments.
-- [ ] Run shell, directory, and content-route tests plus typecheck. Verify mobile navigation behavior in a browser rather than assuming JSDOM breakpoints match the viewport.
-- [ ] Self-review and commit. Record any selector changes needed by Task 4 in the report.
+- [x] Retain normalization, filtering, reset, aria-pressed and live counts. Keep mobile chapter navigation keyboard accessible and close after navigation. Keep neutral colors, standard typography and responsive spacing; remove bespoke hero ornaments.
+- [x] Run shell, directory, and content-route tests plus typecheck. Verify mobile navigation behavior in a browser rather than assuming JSDOM breakpoints match the viewport.
+- [x] Self-review and commit. Record any selector changes needed by Task 4 in the report.
 
 ## Task 3: Structured content, figures, and accessible image dialog
 
@@ -90,8 +90,8 @@ expect(
 
 **Interfaces:** Preserve RichContent({ blocks, figures, sourceLinks }), GuideFigure and ImageViewer public props. Preserve source block and figure IDs exactly. Establish stable data hooks data-guide-content, data-guide-figure, data-guide-legend, data-guide-references, data-guide-screenshot-facts, data-guide-uncertainties, data-guide-group-label, data-guide-table-scroll, data-guide-image-scroll and data-source-highlight for independent audits; these hooks do not style content.
 
-- [ ] Query MCP for Dialog, Table, DataList, List, Mark, Strong, and Em APIs/examples relevant to the implementation.
-- [ ] Replace native dialog mock tests with real Chakra Dialog interaction tests: userEvent opens, Escape and Close dismiss, waitFor focus returns, and Tab/Shift+Tab stay within the dialog. Keep the keyboard-scroll region labeled and focusable. Record failures from the new behavior assertions before implementation.
+- [x] Query MCP for Dialog, Table, DataList, List, Mark, Strong, and Em APIs/examples relevant to the implementation.
+- [x] Replace native dialog mock tests with real Chakra Dialog interaction tests: userEvent opens, Escape and Close dismiss, waitFor focus returns, and Tab/Shift+Tab stay within the dialog. Keep the keyboard-scroll region labeled and focusable. Record failures from the new behavior assertions before implementation.
 
 ```tsx
 await user.click(screen.getByRole('button', { name: /view full-size/i }));
@@ -103,16 +103,16 @@ await waitFor(() =>
 await waitFor(() => expect(opener).toHaveFocus());
 ```
 
-- [ ] Convert all rich block cases to Chakra typography, semantic lists, Table/ScrollArea, preformatted formula, and non-live informational notes. Keep run grouping, link guards, exact text and source IDs. Use Mark with validated source background, data-source-highlight, and readable text; preserve strong/em/u/mark tags for independent format audits.
+- [x] Convert all rich block cases to Chakra typography, semantic lists, Table/ScrollArea, preformatted formula, and non-live informational notes. Keep run grouping, link guards, exact text and source IDs. Use Mark with validated source background, data-source-highlight, and readable text; preserve strong/em/u/mark tags for independent format audits.
 
 ```tsx
 <Mark bg={validatedHighlight} color="black" data-source-highlight={validatedHighlight}>{content}</Mark>
 <Table.ScrollArea tabIndex={0} role="region" aria-label={block.caption} data-guide-table-scroll=""><Table.Root>{children}</Table.Root></Table.ScrollArea>
 ```
 
-- [ ] Migrate original figures, caption, legend, facts, uncertainty notes, and links with Chakra Image/DataList/List/Text. Keep width/height HTML attributes, lazy loading, every original link, and all annotation text.
-- [ ] Implement Chakra Dialog.Root/Trigger/Portal/Backdrop/Positioner/Content/Title/CloseTrigger and an image scroll region. Prefer library focus handling; keep image intrinsic resolution inside the viewer and prevent page overflow. Closed portals must not remove the primary article figure.
-- [ ] Run rich-content and figure tests, typecheck and build. Check an actual large image dialog and wide table at mobile width using Playwright. Self-review and commit with selector contract in the report.
+- [x] Migrate original figures, caption, legend, facts, uncertainty notes, and links with Chakra Image/DataList/List/Text. Keep width/height HTML attributes, lazy loading, every original link, and all annotation text.
+- [x] Implement Chakra Dialog.Root/Trigger/Portal/Backdrop/Positioner/Content/Title/CloseTrigger and an image scroll region. Prefer library focus handling; keep image intrinsic resolution inside the viewer and prevent page overflow. Closed portals must not remove the primary article figure.
+- [x] Run rich-content and figure tests, typecheck and build. Check an actual large image dialog and wide table at mobile width using Playwright. Self-review and commit with selector contract in the report.
 
 ## Task 4: Remove CSS and verify the complete static wiki
 
@@ -120,7 +120,7 @@ await waitFor(() => expect(opener).toHaveFocus());
 
 **Interfaces:** Consume the data hooks established in Task 3 and accessible component semantics from Task 2. Preserve independent source contract and existing route audits. Do not change content data to satisfy tests.
 
-- [ ] Replace validator CSS selectors/native dialog[open] selectors with semantic/data hooks. Keep all source text/style/link/numeric/figure coverage and route counts. Recognize semantic source highlights in static output and compare actual computed background colors in the browser against expected source values.
+- [x] Replace validator CSS selectors/native dialog[open] selectors with semantic/data hooks. Keep all source text/style/link/numeric/figure coverage and route counts. Recognize semantic source highlights in static output and compare actual computed background colors in the browser against expected source values.
 
 ```js
 const dialog = page.getByRole('dialog');
@@ -130,8 +130,8 @@ const color = await mark.evaluate(
 );
 ```
 
-- [ ] Delete all four legacy stylesheets and imports. Search app for className, style=, raw visible HTML and CSS imports; replace remaining application presentation with Chakra components/props. Keep intrinsic document markup and source semantic data appropriate to the spec.
-- [ ] Build and run the static and browser validators. Check every route at existing desktop/mobile widths, all interaction groups, no page overflow, source formatting visibility, initial no-JS style, and zero hydration/console errors. Inspect screenshots of home, category, rich article, wide table, figure and open viewer. Fix actual regressions without weakening checks.
-- [ ] Run the complete final verification set through WSL: `npm run content:check`, `npm run verify:content`, `npm run typecheck`, `npm run lint`, `npm run format:check`, `npm test -- --pool=vmThreads --maxWorkers=1`, `npm run build`, `npm run verify:static`, `npm run verify:browser -- http://localhost:3000`. Scope unrelated preexisting formatting differences explicitly if needed.
-- [ ] Document Chakra provider/component conventions and the MCP setup/usage in README. Preserve existing WSL runtime setup. Update migration evidence documentation with final counts and limitations supported by logs.
-- [ ] Self-review, commit, and report exact test commands, results, screenshot paths, remaining limitations, and final preview URL. Controller then commissions a broad independent review and resolves material findings before final delivery.
+- [x] Delete all four legacy stylesheets and imports. Search app for className, style=, raw visible HTML and CSS imports; replace remaining application presentation with Chakra components/props. Keep intrinsic document markup and source semantic data appropriate to the spec.
+- [x] Build and run the static and browser validators. Check every route at existing desktop/mobile widths, all interaction groups, no page overflow, source formatting visibility, initial no-JS style, and zero hydration/console errors. Inspect screenshots of home, category, rich article, wide table, figure and open viewer. Fix actual regressions without weakening checks.
+- [x] Run the complete final verification set through WSL: `npm run content:check`, `npm run verify:content`, `npm run typecheck`, `npm run lint`, `npm run format:check`, `npm test -- --pool=vmThreads --maxWorkers=1`, `npm run build`, `npm run verify:static`, `npm run verify:browser -- http://localhost:3000`. Scope unrelated preexisting formatting differences explicitly if needed.
+- [x] Document Chakra provider/component conventions and the MCP setup/usage in README. Preserve existing WSL runtime setup. Update migration evidence documentation with final counts and limitations supported by logs.
+- [x] Self-review, commit, and report exact test commands, results, screenshot paths, remaining limitations, and final preview URL. Controller then commissions a broad independent review and resolves material findings before final delivery.
