@@ -16,7 +16,8 @@
     "verify:content": "node scripts/content-integrity.ts",
     "verify:browser": "node scripts/verify-guide-browser.mjs",
     "content:generate": "node scripts/generate-catalogue.ts",
-    "content:check": "node scripts/generate-catalogue.ts --check"
+    "content:check": "node scripts/generate-catalogue.ts --check",
+    "verify:browser:all": "node scripts/run-browser-checks.mjs"
   },
   "dependencies": {
     "@chakra-ui/react": "3.37.0",
@@ -40,6 +41,7 @@
     "eslint-plugin-react-hooks": "7.1.1",
     "globals": "17.12.0",
     "jsdom": "30.1.1",
+    "playwright": "1.63.0",
     "prettier": "3.9.9",
     "serve": "14.2.6",
     "typescript": "6.0.3",

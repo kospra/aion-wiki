@@ -2,21 +2,10 @@
 import console from 'node:console';
 import assert from 'node:assert/strict';
 import process from 'node:process';
-import { resolve } from 'node:path';
-import { pathToFileURL } from 'node:url';
+import { loadChromium } from './browser-runtime.mjs';
 
 const baseUrl = (process.argv[2] ?? 'http://localhost:3000').replace(/\/$/, '');
-const testRoot = resolve(
-  process.env.GUIDE_BROWSER_ROOT ?? '.local-tools/wsl-browser',
-);
-process.env.PLAYWRIGHT_BROWSERS_PATH ??= resolve(testRoot, 'browsers');
-process.env.LD_LIBRARY_PATH ??= resolve(
-  testRoot,
-  'libs/usr/lib/x86_64-linux-gnu',
-);
-const { chromium } = await import(
-  pathToFileURL(resolve(testRoot, 'node_modules/playwright/index.mjs')).href
-);
+const chromium = await loadChromium();
 const browser = await chromium.launch({ headless: true });
 
 try {

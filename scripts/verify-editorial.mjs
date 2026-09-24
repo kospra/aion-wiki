@@ -4,19 +4,9 @@ import console from 'node:console';
 import process from 'node:process';
 import { mkdir, writeFile } from 'node:fs/promises';
 import { resolve } from 'node:path';
-import { pathToFileURL } from 'node:url';
+import { loadChromium } from './browser-runtime.mjs';
 const baseUrl = (process.argv[2] ?? 'http://localhost:3000').replace(/\/$/, '');
-const testRoot = resolve(
-  process.env.GUIDE_BROWSER_ROOT ?? '.local-tools/wsl-browser',
-);
-process.env.PLAYWRIGHT_BROWSERS_PATH ??= resolve(testRoot, 'browsers');
-process.env.LD_LIBRARY_PATH ??= resolve(
-  testRoot,
-  'libs/usr/lib/x86_64-linux-gnu',
-);
-const { chromium } = await import(
-  pathToFileURL(resolve(testRoot, 'node_modules/playwright/index.mjs')).href
-);
+const chromium = await loadChromium();
 const browser = await chromium.launch({ headless: true });
 const output = resolve('.local-tools/qa/editorial');
 await mkdir(output, { recursive: true });
