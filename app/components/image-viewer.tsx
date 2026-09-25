@@ -26,7 +26,6 @@ export function ImageViewer({ figure }: { figure: Figure }): React.JSX.Element {
           type="button"
           aria-label={`View full-size image: ${figure.alt}`}
           display="block"
-          position="relative"
           maxW="100%"
           width="fit-content"
           p="2"
@@ -54,33 +53,6 @@ export function ImageViewer({ figure }: { figure: Figure }): React.JSX.Element {
             height="auto"
             borderRadius="sm"
           />
-          <Box
-            as="span"
-            aria-hidden="true"
-            position="absolute"
-            bottom="3"
-            right="3"
-            p="1.5"
-            bg="wiki.surface"
-            color="wiki.muted"
-            borderWidth="1px"
-            borderColor="wiki.border"
-            borderRadius="sm"
-            pointerEvents="none"
-          >
-            <svg
-              width="16"
-              height="16"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1.5"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
-              <path d="M8 3H3v5M16 3h5v5M21 16v5h-5M8 21H3v-5" />
-            </svg>
-          </Box>
         </chakra.button>
       </Dialog.Trigger>
       <Portal>
