@@ -81,7 +81,7 @@
         "tone": "context",
         "content": [
           {
-            "text": "Kanon credits Aion Research Lab and his friends for these equations and describes the work as ongoing. First-person discovery and testing claims below remain attributed to that source."
+            "text": "Kanon credits Aion Research Lab and his friends for these equations. The research is ongoing, and the testing claims are his."
           }
         ]
       },
@@ -557,11 +557,11 @@
         "id": "context-block-1071",
         "sourceIds": [],
         "kind": "note",
-        "label": "Untranslated source shorthand",
+        "label": "Example assumptions",
         "tone": "uncertain",
         "content": [
           {
-            "text": "The Korean passive shorthand is retained as written; no expansion is supplied by this chapter. The support buff and boss resistance assumptions are part of this example."
+            "text": "The chapter does not explain the Korean passive shorthand. The support buff and boss resistance assumptions apply to this example."
           }
         ]
       },
@@ -914,11 +914,11 @@
                     "id": "context-block-1099",
                     "sourceIds": [],
                     "kind": "note",
-                    "label": "Literal partial formula",
+                    "label": "Incomplete formula",
                     "tone": "uncertain",
                     "content": [
                       {
-                        "text": "Mixed and unmatched brackets are preserved. The source does not fully specify displayed percentages versus multiplier conventions."
+                        "text": "The formula has unmatched brackets and does not fully distinguish displayed percentages from multipliers."
                       }
                     ]
                   }
@@ -1100,7 +1100,7 @@
                     "tone": "uncertain",
                     "content": [
                       {
-                        "text": "The source divides old expected damage by new expected damage, producing a ratio below one for a positive added bonus. It supplies no final inversion or subtract-one step. The expression is retained without mathematical correction."
+                        "text": "The formula divides old expected damage by new expected damage, giving a ratio below one for a positive bonus. It supplies no inversion or subtract-one step, so the intended final calculation is unclear."
                       }
                     ]
                   }
@@ -1162,11 +1162,11 @@
               "id": "context-block-1116",
               "sourceIds": [],
               "kind": "note",
-              "label": "Attributed testing claim",
+              "label": "Testing limitation",
               "tone": "uncertain",
               "content": [
                 {
-                  "text": "The hidden Perfect effect is a testing claim in the source. The guide supplies no independent dataset here; retain the approximation and its Pure Attack scope."
+                  "text": "The hidden Perfect effect is an approximate testing claim from the guide, limited to Pure Attack. No independent dataset is provided."
                 }
               ]
             }
@@ -1622,11 +1622,11 @@
                     "id": "context-block-1152",
                     "sourceIds": [],
                     "kind": "note",
-                    "label": "Unconfirmed formula placement",
+                    "label": "Unconfirmed Multi-hit placement",
                     "tone": "uncertain",
                     "content": [
                       {
-                        "text": "The literal partial formula is retained. Multi-hit placement is unconfirmed: the source separately considers with or outside Attack Bonus and outside Attack Increase."
+                        "text": "The partial formula is unresolved. The guide considers Multi-hit both with and outside Attack Bonus, and outside Attack Increase."
                       }
                     ]
                   }
@@ -1719,11 +1719,11 @@
         "id": "context-block-1159",
         "sourceIds": [],
         "kind": "note",
-        "label": "Two distinct time references",
+        "label": "Video timestamp mismatch",
         "tone": "uncertain",
         "content": [
           {
-            "text": "The video URL retains t=377 while the next source note says “1:16”. Both references are preserved; their mismatch is unresolved."
+            "text": "The video link opens at 6:17 (377 seconds), while the accompanying note says 1:16. The intended timestamp is unclear."
           }
         ]
       },
@@ -1939,7 +1939,7 @@
               "tone": "uncertain",
               "content": [
                 {
-                  "text": "The raw tooltip bonuses are 5% and 10%, whereas the source estimates effective increases of 4.65% and 8.9%. Its 4.05% comparison is approximately relative superiority, not subtraction of percentage points (4.25). Source rounding is retained."
+                  "text": "The tooltips show 5% and 10%; the guide estimates effective gains of 4.65% and 8.9%. Its “4.05% more” comparison is approximately the relative gain (~4.06%), not the 4.25-percentage-point difference."
                 }
               ]
             }
@@ -2229,7 +2229,7 @@
         "tone": "uncertain",
         "content": [
           {
-            "text": "The headline says damage is reduced “by a %”, but the following examples subtract a fraction of the Defense value. Preserve the worked PVE and PVP outcomes rather than interpreting the headline as a separate multiplicative reduction."
+            "text": "Although the heading says damage is reduced “by a %”, the worked PVE and PVP examples subtract a fraction of the Defense value. A separate multiplicative reduction is not established."
           }
         ]
       },
@@ -2484,11 +2484,11 @@
         "id": "context-block-1220",
         "sourceIds": [],
         "kind": "note",
-        "label": "Scope of testing claims",
+        "label": "Testing scope",
         "tone": "uncertain",
         "content": [
           {
-            "text": "Boss resistance and tolerance assertions and the ping/FPS damage comparison are attributed source claims, with the named tested classes and possible Spiritmaster exception retained. They are not universal measured constants."
+            "text": "The boss resistance, tolerance, and ping/FPS comparisons are claims from the guide’s tests. They depend on the named classes and possible Spiritmaster exception, rather than universal measured constants."
           }
         ]
       }
@@ -2539,11 +2539,11 @@
         "id": "context-block-1226",
         "sourceIds": [],
         "kind": "note",
-        "label": "Literal source formula and uncertainty",
+        "label": "Unresolved formula",
         "tone": "uncertain",
         "content": [
           {
-            "text": "The source’s mixed and unmatched brackets and percentage conventions remain unresolved. Multi-hit placement is explicitly unconfirmed despite its displayed position. No calculator or repaired grouping is inferred."
+            "text": "The formula has unmatched brackets and unclear percentage conventions. Multi-hit’s position is unconfirmed, so a reliable calculation is not yet possible."
           }
         ]
       },

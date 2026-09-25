@@ -41,6 +41,10 @@ const figure: Figure = {
     'The displayed 24% roll is an example, not a universal target.',
   ],
   uncertainties: ['The cropped amount cannot be confirmed from this image.'],
+  readerNotes: {
+    details: ['The displayed 24% roll is an example, not a universal target.'],
+    caveats: ['The cropped amount cannot be confirmed from this image.'],
+  },
 };
 
 const sourceLinks = {
@@ -119,8 +123,11 @@ it('shows numbered color meanings, linked explanations, cropped values, and scre
   expect(image).toHaveAttribute('height', '3200');
   expect(image).toHaveAttribute('loading', 'lazy');
   expect(
-    displayedFigure.getByRole('link', { name: /open original image/i }),
-  ).toHaveAttribute('href', figure.src);
+    displayedFigure.queryByRole('link', { name: /open original image/i }),
+  ).not.toBeInTheDocument();
+  expect(
+    displayedFigure.getByRole('button', { name: /view full-size/i }),
+  ).toContainElement(image);
   expect(container.querySelectorAll('#figure005')).toHaveLength(1);
 });
 
@@ -155,12 +162,13 @@ it('opens a Chakra dialog and returns focus after Close and Escape', async () =>
   );
   const open = screen.getByRole('button', { name: /view full-size/i });
 
-  await user.click(open);
+  await user.click(within(open).getByRole('img'));
   const dialog = await screen.findByRole('dialog');
   expect(dialog).toBeVisible();
   expect(
-    within(dialog).getByRole('link', { name: /open original image/i }),
-  ).toHaveAttribute('href', figure.src);
+    within(dialog).queryByRole('link', { name: /open original image/i }),
+  ).not.toBeInTheDocument();
+  expect(within(dialog).getAllByRole('button')).toHaveLength(1);
   expect(within(dialog).getByRole('button', { name: /close/i })).toBeVisible();
   expect(within(dialog).getByRole('img', { name: figure.alt })).toBeVisible();
   expect(within(dialog).getByRole('img', { name: figure.alt })).toHaveAttribute(
@@ -194,8 +202,8 @@ it('keeps Tab and Shift+Tab within the viewer and exposes keyboard image scrolli
   render(<GuideFigure figure={figure} sourceLinks={sourceLinks} />);
   await user.click(screen.getByRole('button', { name: /view full-size/i }));
   const dialog = await screen.findByRole('dialog');
-  const first = within(dialog).getByRole('link', {
-    name: /open original image/i,
+  const first = within(dialog).getByRole('button', {
+    name: /close image/i,
   });
   const scroller = within(dialog).getByRole('region', {
     name: /scroll full-size image/i,
@@ -207,4 +215,30 @@ it('keeps Tab and Shift+Tab within the viewer and exposes keyboard image scrolli
   first.focus();
   await user.tab({ shift: true });
   expect(dialog).toContainElement(document.activeElement as HTMLElement);
+});
+
+it('keeps extraction instructions out of the rendered figure and search text', async () => {
+  const { figureById, getPage } = await import('../app/content/repository');
+  const { pageText } = await import('../app/content/reader');
+  const sourceFigure = figureById['figure-003'];
+  const { container } = render(
+    <GuideFigure figure={sourceFigure} sourceLinks={{}} />,
+  );
+  expect(container).not.toHaveTextContent('HTML viewport');
+  expect(container).not.toHaveTextContent('Do not reconstruct');
+  expect(container).toHaveTextContent('Select an item and Source');
+  expect(
+    pageText(getPage('gear-anatomy-and-stat-layers')!, [sourceFigure]),
+  ).not.toMatch(/HTML viewport|Do not reconstruct/);
+  expect(sourceFigure.screenshotOnly.join(' ')).toContain('HTML viewport');
+});
+
+it('keeps regional restrictions visible when audit instructions are removed', async () => {
+  const { figureById } = await import('../app/content/repository');
+  const { container } = render(
+    <GuideFigure figure={figureById['figure-075']} sourceLinks={{}} />,
+  );
+  expect(container).not.toHaveTextContent('do not use');
+  expect(container).toHaveTextContent('Asia');
+  expect(container).toHaveTextContent('Global');
 });

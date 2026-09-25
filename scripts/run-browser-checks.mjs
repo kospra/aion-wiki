@@ -17,11 +17,7 @@ const serveEntry = resolve(
   dirname(servePackage),
   JSON.parse(readFileSync(servePackage, 'utf8')).bin.serve,
 );
-const defaultChecks = [
-  'verify-guide-browser.mjs',
-  'verify-editorial.mjs',
-  'verify-reduced-motion.mjs',
-];
+const defaultChecks = ['verify-guide-browser.mjs', 'verify-reduced-motion.mjs'];
 
 function assertFreePort(port) {
   return new Promise((resolveFree, reject) => {

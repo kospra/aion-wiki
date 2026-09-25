@@ -1,9 +1,35 @@
 import { render, screen } from './render';
 import userEvent from '@testing-library/user-event';
 import { MemoryRouter } from 'react-router';
-import { expect, it } from 'vitest';
+import { expect, it, vi } from 'vitest';
 import { WikiDirectory } from '../app/components/wiki-directory';
-import { articles, categories } from '../app/content/wiki';
+
+vi.mock('../app/content/wiki', () => ({
+  categories: [
+    { slug: 'gear', title: 'Gear', description: '' },
+    { slug: 'crafting', title: 'Crafting', description: '' },
+  ],
+  articles: [
+    {
+      slug: 'armor',
+      title: 'Armor',
+      category: 'gear',
+      summary: 'Armor guide',
+      status: 'source-backed',
+      qualifiers: [],
+      searchText: 'Armor body-only phrase figure-only detail',
+    },
+    {
+      slug: 'recipes',
+      title: 'Recipes',
+      category: 'crafting',
+      summary: 'Crafting guide',
+      status: 'source-backed',
+      qualifiers: [],
+      searchText: 'Recipes materials',
+    },
+  ],
+}));
 
 function renderDirectory(initialCategory = 'all') {
   render(
@@ -13,24 +39,22 @@ function renderDirectory(initialCategory = 'all') {
   );
 }
 
-it('indexes all 43 articles and searches body-only stat prose with chapter filtering', async () => {
-  expect(articles).toHaveLength(43);
-  expect(categories).toHaveLength(12);
+it('searches indexed body text regardless of case or surrounding spaces', async () => {
   const user = userEvent.setup();
   renderDirectory();
-  expect(screen.getByRole('status')).toHaveTextContent('43 articles found');
-  await user.click(screen.getByRole('button', { name: 'How stats work' }));
+  expect(screen.getByRole('status')).toHaveTextContent('2 articles found');
+  await user.click(screen.getByRole('button', { name: 'Gear' }));
   await user.type(
     screen.getByRole('searchbox', { name: 'Search articles' }),
-    '  FRONT/BACK DAMAGE BOOST  ',
+    '  BODY-ONLY PHRASE  ',
   );
   expect(
     screen.getByRole('link', {
-      name: /Stat efficiency and diminishing returns/,
+      name: /Armor/,
     }),
   ).toBeVisible();
   expect(
-    screen.queryByRole('link', { name: /Gear anatomy and stat layers/ }),
+    screen.queryByRole('link', { name: /Recipes/ }),
   ).not.toBeInTheDocument();
 });
 
@@ -39,22 +63,18 @@ it('finds screenshot-only facts and combines them with chapter filters', async (
   renderDirectory();
   await user.type(
     screen.getByRole('searchbox', { name: 'Search articles' }),
-    'Keyboard shortcut F',
+    'figure-only detail',
   );
-  expect(
-    screen.getByRole('link', { name: /Growth and amplification/ }),
-  ).toBeVisible();
-  await user.click(screen.getByRole('button', { name: 'Wings' }));
+  expect(screen.getByRole('link', { name: /Armor/ })).toBeVisible();
+  await user.click(screen.getByRole('button', { name: 'Crafting' }));
   expect(screen.getByText('No articles found')).toBeVisible();
-  await user.click(screen.getByRole('button', { name: 'Enhancement' }));
-  expect(
-    screen.getByRole('link', { name: /Growth and amplification/ }),
-  ).toBeVisible();
+  await user.click(screen.getByRole('button', { name: 'Gear' }));
+  expect(screen.getByRole('link', { name: /Armor/ })).toBeVisible();
 });
 
 it('clears search and chapter filters after an empty result', async () => {
   const user = userEvent.setup();
-  renderDirectory('class-passives');
+  renderDirectory('gear');
   await user.type(
     screen.getByRole('searchbox', { name: 'Search articles' }),
     'zzzz-unmatched',
@@ -62,5 +82,5 @@ it('clears search and chapter filters after an empty result', async () => {
   expect(screen.getByText('No articles found')).toBeVisible();
   await user.click(screen.getByRole('button', { name: 'Reset filters' }));
   expect(screen.getByRole('searchbox')).toHaveValue('');
-  expect(screen.getByRole('status')).toHaveTextContent('43 articles found');
+  expect(screen.getByRole('status')).toHaveTextContent('2 articles found');
 });

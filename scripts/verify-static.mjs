@@ -1,3 +1,4 @@
+import { readerFigure } from '../app/content/reader-figure.ts';
 /* global structuredClone, URL */
 import console from 'node:console';
 import process from 'node:process';
@@ -293,7 +294,9 @@ export async function verifyStatic(root = 'build/client', suppliedInput) {
           );
         }
         if (block.kind === 'figure') {
-          const figure = input.figures.find((f) => f.id === block.figureId);
+          const figure = readerFigure(
+            input.figures.find((f) => f.id === block.figureId),
+          );
           const rendered = element.querySelector('figure');
           assert.equal(rendered.id, figure.id);
           const img = rendered.querySelector('[data-guide-primary-image]');

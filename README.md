@@ -4,17 +4,17 @@ A responsive, fully static Chakra UI reference to Kanon's captured Aion 2 guide,
 
 ## Requirements and local development
 
-Use WSL Ubuntu in this Windows workspace, with Node **24.15+ within Node 24** and npm **12.1+ within npm 12** (verified with Node 24.21.0/npm 12.1.0). Dependencies are pinned. Do not alternate Windows and Linux npm installs in one checkout.
+Use native Windows Node, npm, Git, and PowerShell in this workspace; WSL is not required. Use Node **24.21.0** from `.nvmrc` and npm **12.1.0**. Dependencies are pinned. When switching operating systems, remove `node_modules` and reinstall dependencies for the current platform.
 
-```bash
-cd /mnt/c/code/aion-wiki
-source ~/.nvm/nvm.sh
-nvm use 24
-npm ci
-npm run dev
+```powershell
+Set-Location C:\code\aion-wiki
+node --version
+npm.cmd --version
+npm.cmd ci
+npm.cmd run dev
 ```
 
-If needed, provision Node 24 with `nvm install 24` and npm 12 with `npm install --global npm@12`; changing the default nvm version is unnecessary. From PowerShell, enter WSL with `wsl.exe --exec bash -ic 'cd /mnt/c/code/aion-wiki && nvm use 24 && npm run dev'`. Open the URL printed by React Router, normally `http://localhost:5173`.
+Install the matching Windows Node release using your preferred installer or Windows version manager. If needed, install npm with `npm.cmd install --global npm@12.1.0`. To avoid a global npm change, prefix a command with `npm.cmd exec --yes --package=npm@12.1.0 -- npm`, for example `npm.cmd exec --yes --package=npm@12.1.0 -- npm ci`. Use `npm.cmd` and `npx.cmd` if PowerShell execution policy blocks their `.ps1` wrappers. Open the URL printed by React Router, normally `http://localhost:5173`.
 
 ```bash
 npm run build:static
@@ -31,15 +31,15 @@ The editorial theme centralizes colors as `wiki.*` semantic tokens, reading styl
 
 Build visible UI with Chakra components and styling props. Compose React Router links through Chakra `Link` with `asChild` to retain real anchors. Keep document markup, source `strong`/`em`/`u`/`mark` semantics, and line breaks intact. Source highlights retain their exact captured colors and readable text; they are content rather than theme tokens. Use `htmlWidth`/`htmlHeight` for original image dimensions, local scroll regions for wide content, and Chakra Dialog for the accessible image viewer. Stable `data-guide-*` hooks identify content for audits; computed styles and source baselines independently prove visibility and fidelity.
 
-The official MCP server is `@chakra-ui/react-mcp@2.1.1`, registered locally as `chakra-ui`. This workspace's Codex MCP configuration uses `wsl.exe` with these arguments:
+The official MCP server is `@chakra-ui/react-mcp@2.1.1`. An optional native Windows MCP setup can launch it with:
 
-```text
---exec /usr/bin/env PATH=/home/rings/.nvm/versions/node/v24.21.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin /home/rings/.nvm/versions/node/v24.21.0/bin/npx -y @chakra-ui/react-mcp@2.1.1
+```powershell
+npx.cmd -y @chakra-ui/react-mcp@2.1.1
 ```
 
-Use an absolute path matching your own WSL Node installation when reproducing that setup. Consult its installation, theme, component props and example tools before changing Chakra composition. The migration verified real MCP initialization and tool calls for provider guidance, theme, navigation, cards, tables, images and dialogs; normal TypeScript and browser checks remain independent gates. The MCP server is a development tool and is not needed to build or run the site.
+Consult its installation, theme, component props and example tools before changing Chakra composition. Normal TypeScript and browser checks remain independent gates. The MCP server is a development tool and is not needed to build or run the site. Machine-level MCP registrations are configured separately from this repository.
 
-For production builds on Windows, prefer a checkout and dependencies on WSL's native filesystem (for example `~/code/aion-wiki`). On this machine, cold imports from `/mnt/c` exceeded React Router's ten-second prerender timeout, while unchanged source and configuration built successfully on native WSL storage. Do not increase the product timeout to compensate for a mounted-filesystem bottleneck. Keep Node 24/npm 12 and Linux dependencies consistent in either location.
+Build directly from the Windows checkout with Windows dependencies. Earlier WSL builds encountered slow imports across `/mnt/c`; that observation does not require WSL for native Windows development. Keep the existing prerender timeout and validate with the commands below. Historical documents under `docs/research` and `docs/superpowers` describe earlier tooling decisions; this README and `AGENTS.md` define the current workflow.
 
 ## Validation
 
@@ -55,13 +55,17 @@ npm run verify:browser:all
 
 `npm run check` covers catalogue drift, source/content integrity, lint, formatting, types, and unit tests. `build:static` builds the 57 prerendered routes, prepares the standalone 404 page, and verifies source text, figures, internal targets, and publish boundaries. `build:netlify` combines `check` and `build:static` for the native Netlify build. Run `npm run content:generate` only after intentional content edits, then rerun validation; CI checks drift without repairing it.
 
-Browser QA uses the installed Playwright package and Chromium by default. `verify:browser:all` starts and stops a local preview, runs the guide, editorial, and reduced-motion suites, and writes ignored QA output under `.local-tools/qa/`. For an existing WSL browser runtime, set `GUIDE_BROWSER_ROOT=/path/to/browser-runtime` explicitly; only this optional override uses its custom browser or library paths. The hosted Linux workflow installs Chromium with `npx playwright install --with-deps chromium`.
+During development, run a focused test with `npm test -- tests/wiki-directory.test.tsx`, then run the required checks once before delivery. Tests cover generic behavior using small fixtures; avoid adding article wording, game values, fixed catalogue counts, or framework-internal assertions. The integrity validator and static-output checks own source fidelity; the frozen source baseline remains protected.
+
+Browser QA uses the installed Playwright package and Chromium by default. On Windows, install Chromium with `npx.cmd playwright install chromium` and leave `GUIDE_BROWSER_ROOT` unset. `verify:browser:all` starts and stops a local preview and runs a compact mobile/desktop smoke check plus reduced-motion and image-viewer keyboard checks. It checks representative templates, navigation, search reset, 404 recovery, overflow and no-JavaScript reading; it does not repeat the full content audit in a browser. Smoke failures save a screenshot under `.local-tools/qa/guide/`. The hosted Linux workflow installs Chromium with `npx playwright install --with-deps chromium`.
+
+Generated `build/`, `.react-router/`, coverage, and `.local-tools/qa/` can be deleted and regenerated. Keep `node_modules/` for local development, or recreate it with `npm ci`. The ignored `.local-tools/source-doc/` contains the original captured guide and migration audits; retain it as provenance, although normal development and validation use committed content only. Old local WSL runtimes and temporary inspection tools are unnecessary.
 
 ## Content authoring
 
 Structured `GuidePage` bodies live in `app/content/chapters/chapter-01.json` through `chapter-12.json` and `app/content/source-overview.json`. `app/content/types.ts` defines paragraphs, headings, lists, tables, formulas, notes, figures, and groups. Inline runs retain strong/emphasis/underline/highlight/link fields. Keep source wording, original numbers and repeated occurrences, generated list numbering, and source context intact.
 
-Figures live in `app/content/figures/group-{a,b,c}.json`; local originals are under `public/images/guide/`. Figure IDs identify placements, while hashes identify unique originals. Each figure includes accessible text, annotation meanings, screenshot-only facts and uncertainties. Keep text labels alongside colors.
+Figures live in `app/content/figures/group-{a,b,c}.json`; local originals are under `public/images/guide/`. Figure IDs identify placements, while hashes identify unique originals. Each figure retains the original image audit, including screenshot-only facts and uncertainties. Pages and search use the reviewed `readerNotes` details, caveats, and optional legend wording through `readerFigure`; extraction measurements and editor instructions stay internal. Every figure needs a reviewed `readerNotes` entry, even when both note lists are empty. Keep useful regional limits and numerical caveats visible, and keep text labels alongside colors.
 
 `content/source/baseline.json`, `figure-audit.json`, `taxonomy.json`, and `category-contract.json` are the independent captured source and approved structure. Primary destinations and justified layout-only exclusions live in `content/coverage/group-{a,b,c}.json`. Stable source block anchors connect those records to visible content. Do not change the baseline to make a content regression pass.
 

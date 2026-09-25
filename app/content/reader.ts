@@ -1,3 +1,4 @@
+import { readerFigure } from './reader-figure.ts';
 import type { Block, Figure, GuidePage, Inline } from './types';
 
 /** Direct children, in the same order the rich renderer displays them. */
@@ -44,7 +45,9 @@ export function blockInlineSegments(block: Block): Inline[][] {
 }
 
 export function pageText(page: GuidePage, figures: Figure[]): string {
-  const byId = new Map(figures.map((figure) => [figure.id, figure]));
+  const byId = new Map(
+    figures.map((figure) => [figure.id, readerFigure(figure)]),
+  );
   const text = [page.title, page.summary, ...page.qualifiers];
   for (const block of walkBlocks(page.blocks)) {
     text.push(...blockInlineSegments(block).map(inlineText));

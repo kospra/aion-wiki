@@ -26,7 +26,16 @@
     "screenshotOnly": [
       "Blue/cyan Aion 2 logo on dark ornamental background; author credit embedded in artwork."
     ],
-    "uncertainties": []
+    "uncertainties": [],
+    "readerNotes": {
+      "details": [],
+      "caveats": [],
+      "mappingText": {
+        "Title": {
+          "meaning": "Guide title and author credit."
+        }
+      }
+    }
   },
   {
     "id": "figure-002",
@@ -106,7 +115,14 @@
     "uncertainties": [
       "Source block-0022 says users within “20 Combat Power”; block-0018 says 560k–580k. Do not silently add “k” to source definition.",
       "Screenshot English such as “30 cents”, “servings”, “fatal” appears translated; retain literal transcription without redefining."
-    ]
+    ],
+    "readerNotes": {
+      "details": [],
+      "caveats": [
+        "The guide describes a 560k–580k Combat Power bracket, but separately defines the comparison as players within “20 Combat Power”; that wording is inconsistent.",
+        "Some English dashboard labels appear translated and may not match official localization."
+      ]
+    }
   },
   {
     "id": "figure-003",
@@ -148,7 +164,11 @@
     ],
     "uncertainties": [
       "Do not reconstruct clipped item-name suffix or imply this specific source list applies to all items."
-    ]
+    ],
+    "readerNotes": {
+      "details": [],
+      "caveats": []
+    }
   },
   {
     "id": "figure-004",
@@ -199,7 +219,11 @@
     ],
     "uncertainties": [
       "Small unnamed slot icons cannot establish exact item identity. Some tiny indicators must be viewed as illustrative rather than complete stat data."
-    ]
+    ],
+    "readerNotes": {
+      "details": [],
+      "caveats": []
+    }
   },
   {
     "id": "figure-005",
@@ -316,7 +340,16 @@
       "Clipped manastone labels and Philosopher’s Stone prompt cannot be completed from this image.",
       "Item values are examples, not BIS stat targets.",
       "Block-0051 explicitly says Armor DOUBLE CHECK for following armor Amp figures."
-    ]
+    ],
+    "readerNotes": {
+      "details": [
+        "Sif’s Knowledge has a 1-second cooldown. The tooltip also mentions an identical-stone restriction, but the full restriction is cut off."
+      ],
+      "caveats": [
+        "These item values are examples, not best-in-slot targets.",
+        "The guide marks the armor amplification values “DOUBLE CHECK”."
+      ]
+    }
   },
   {
     "id": "figure-006",
@@ -415,7 +448,22 @@
     "uncertainties": [
       "Potential behavior on crafted gear is Asia-specific in block-0086; Global will not auto-unlock and relative value remains unconfirmed in block-0091.",
       "Freedom example differs from ideal Bracelet list (block-0325 onward includes Space); it is an example, not a contradiction requiring replacement."
-    ]
+    ],
+    "readerNotes": {
+      "details": [],
+      "caveats": [
+        "Crafted-gear Potential behavior is described for Asia. The guide says Global will not auto-unlock it, and its relative value remains unconfirmed.",
+        "This bracelet’s Freedom roll is an example; the recommended bracelet stat list includes Space."
+      ],
+      "mappingText": {
+        "7": {
+          "meaning": "Potential stat, marked as layer 7 in the guide."
+        },
+        "Soulstones": {
+          "meaning": "Accessory Soulstones of different grades; the Critical Damage label is cut off."
+        }
+      }
+    }
   },
   {
     "id": "figure-007",
@@ -457,7 +505,13 @@
     ],
     "uncertainties": [
       "Do not assign other unnamed outer icons to gods purely by position or visual guess."
-    ]
+    ],
+    "readerNotes": {
+      "details": [
+        "The guide highlights Destruction, Wisdom, Illusion, and Time as high-value Pantheon stats. The underlined effects are Attack Increase, Double Chance, Reduces Cooldown, and Increases Combat Speed."
+      ],
+      "caveats": []
+    }
   },
   {
     "id": "figure-008",
@@ -504,7 +558,13 @@
     "screenshotOnly": [
       "Final purple Freedom row should not be misread as prose’s highest-value highlight, which is yellow and refers to four different names."
     ],
-    "uncertainties": []
+    "uncertainties": [],
+    "readerNotes": {
+      "details": [],
+      "caveats": [
+        "The purple Freedom row is an item roll. The guide’s yellow high-value Pantheon highlights refer to Destruction, Wisdom, Illusion, and Time."
+      ]
+    }
   },
   {
     "id": "figure-009",
@@ -544,7 +604,11 @@
     "screenshotOnly": ["No value for Time stat is shown in this figure."],
     "uncertainties": [
       "Do not invent numeric Time bonus or card name from icon alone."
-    ]
+    ],
+    "readerNotes": {
+      "details": [],
+      "caveats": ["The image does not show a numeric Time bonus."]
+    }
   },
   {
     "id": "figure-010",
@@ -586,7 +650,11 @@
     ],
     "uncertainties": [
       "Item title cannot be completed; source TODO ***ADD MORE DETAILS ON PORTRAITS*** must remain tracked."
-    ]
+    ],
+    "readerNotes": {
+      "details": [],
+      "caveats": ["The guide has not yet supplied further portrait details."]
+    }
   },
   {
     "id": "figure-011",
@@ -616,7 +684,11 @@
       }
     ],
     "screenshotOnly": ["Item name absent."],
-    "uncertainties": []
+    "uncertainties": [],
+    "readerNotes": {
+      "details": [],
+      "caveats": []
+    }
   },
   {
     "id": "figure-012",
@@ -646,7 +718,11 @@
       }
     ],
     "screenshotOnly": ["Item name absent."],
-    "uncertainties": []
+    "uncertainties": [],
+    "readerNotes": {
+      "details": [],
+      "caveats": []
+    }
   },
   {
     "id": "figure-013",
@@ -678,7 +754,11 @@
     "screenshotOnly": [
       "A representative chest icon stands for seven armor slots."
     ],
-    "uncertainties": []
+    "uncertainties": [],
+    "readerNotes": {
+      "details": ["The chest icon represents seven armor slots."],
+      "caveats": []
+    }
   },
   {
     "id": "figure-014",
@@ -710,7 +790,13 @@
     "screenshotOnly": [
       "Representative ring stands for accessory group; active/passive allocation differs by slot."
     ],
-    "uncertainties": []
+    "uncertainties": [],
+    "readerNotes": {
+      "details": [
+        "The ring icon represents accessories; active and passive skill allocations differ by slot."
+      ],
+      "caveats": []
+    }
   },
   {
     "id": "figure-015",
@@ -741,7 +827,11 @@
     "screenshotOnly": [
       "Source says Orange/Heroid; do not silently convert typo in source record."
     ],
-    "uncertainties": []
+    "uncertainties": [],
+    "readerNotes": {
+      "details": [],
+      "caveats": []
+    }
   },
   {
     "id": "figure-016",
@@ -772,7 +862,11 @@
     "screenshotOnly": [
       "Keep paired with belt but distinguish scroll source and offensive role."
     ],
-    "uncertainties": []
+    "uncertainties": [],
+    "readerNotes": {
+      "details": [],
+      "caveats": []
+    }
   },
   {
     "id": "figure-017",
@@ -807,7 +901,13 @@
     "screenshotOnly": [
       "Screenshot +5 is an example; prose says high-rank players around +7 and explicitly questions multi-hit growth after +9."
     ],
-    "uncertainties": []
+    "uncertainties": [],
+    "readerNotes": {
+      "details": [
+        "The +5 rune is an example. The guide describes high-ranked players around +7 and leaves multi-hit growth after +9 unconfirmed."
+      ],
+      "caveats": []
+    }
   },
   {
     "id": "figure-018",
@@ -845,7 +945,13 @@
     "screenshotOnly": [
       "Original is 1080×1002 but displayed around 57.50×53.24; it is a magnified low-detail icon. +20 matches prose cap, not a guarantee for launch."
     ],
-    "uncertainties": []
+    "uncertainties": [],
+    "readerNotes": {
+      "details": [
+        "The pendant shows +20, matching the cap described in the guide; launch availability is unconfirmed."
+      ],
+      "caveats": []
+    }
   },
   {
     "id": "figure-019",
@@ -911,7 +1017,13 @@
     ],
     "uncertainties": [
       "Do not fill obscured Might or Combat Speed maximum. UI Sync versus prose Synch should be indexed as aliases, not silently reconciled in source."
-    ]
+    ],
+    "readerNotes": {
+      "details": [
+        "The 10% chance is reroll success. It is separate from stat-rarity probabilities and the 32% Soul Binding progress."
+      ],
+      "caveats": []
+    }
   },
   {
     "id": "figure-020",
@@ -969,7 +1081,19 @@
     ],
     "uncertainties": [
       "UI says Sync Stone and Kina; prose uses Synch and Kinah. Some item suffixes and bottom recipe details are clipped."
-    ]
+    ],
+    "readerNotes": {
+      "details": [],
+      "caveats": [
+        "Recipe quantities and costs are examples from the captured region and date, not universal costs.",
+        "The UI uses “Sync Stone” and “Kina”; the guide uses “Synch” and “Kinah”."
+      ],
+      "mappingText": {
+        "Other recipes": {
+          "meaning": "Other recipes are listed, but their ingredients are not shown."
+        }
+      }
+    }
   },
   {
     "id": "figure-021",
@@ -1025,7 +1149,11 @@
     "screenshotOnly": [],
     "uncertainties": [
       "Do not complete red warning, item name, or obscured Might value."
-    ]
+    ],
+    "readerNotes": {
+      "details": [],
+      "caveats": []
+    }
   },
   {
     "id": "figure-022",
@@ -1091,7 +1219,13 @@
     ],
     "uncertainties": [
       "Do not complete clipped Defia... or final perk effect; do not infer skill’s name merely from references to Defiance."
-    ]
+    ],
+    "readerNotes": {
+      "details": [
+        "Specialty unlocks: level 8 gives three options and one slot; level 12 adds a fourth option and a second slot; level 16 adds a fifth option; level 20 adds a third slot. Option colors are not gear grades."
+      ],
+      "caveats": []
+    }
   },
   {
     "id": "figure-023",
@@ -1131,7 +1265,13 @@
     ],
     "uncertainties": [
       "Skill names not shown; do not assign art to named class skills. Small corner indicators should remain visual without invented meaning."
-    ]
+    ],
+    "readerNotes": {
+      "details": [
+        "The active skill grid includes effective level 22. Level 20 is a specialty-slot target, not an absolute effective-level cap."
+      ],
+      "caveats": []
+    }
   },
   {
     "id": "figure-024",
@@ -1155,7 +1295,11 @@
     "screenshotOnly": ["Grid only provides artwork/levels, no names."],
     "uncertainties": [
       "Do not infer individual passive identity or universal target levels."
-    ]
+    ],
+    "readerNotes": {
+      "details": [],
+      "caveats": []
+    }
   },
   {
     "id": "figure-025",
@@ -1197,6 +1341,19 @@
     ],
     "uncertainties": [
       "Skill names absent; cannot label individual icons as Undefeated Mantra or Light of Protection."
-    ]
+    ],
+    "readerNotes": {
+      "details": [
+        "The guide describes up to six equipped Stigma skills, possibly fewer for Global. All unlocked perks benefit Stigma; the final perk unlocks at level 20, with a level-25 cap after Chapter 1."
+      ],
+      "caveats": [
+        "The pictured allocation is an example, not the fully maxed setup described in the guide: three skills at 25, one at 23, and the rest at 20."
+      ],
+      "mappingText": {
+        "Corner indicators": {
+          "meaning": "Corner indicators are separate from the displayed skill levels."
+        }
+      }
+    }
   }
 ]

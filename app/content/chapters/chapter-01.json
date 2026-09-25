@@ -1636,11 +1636,11 @@
         "id": "pantheon-editorial-fragments",
         "sourceIds": [],
         "kind": "note",
-        "label": "Unfinished source text",
+        "label": "Reading the highlights",
         "tone": "uncertain",
         "content": [
           {
-            "text": "The standalone “is” fragment and portrait TODO above are retained from the source. Yellow highlighted names identify the priorities explained by the underlined component stats; purple screenshot rows are item UI styling."
+            "text": "Yellow names mark the priority Pantheon stats; underlined effects explain their value. Purple rows in the screenshots are item styling, not priority highlights."
           }
         ]
       }

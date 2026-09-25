@@ -78,11 +78,11 @@
         "id": "context-block-0790",
         "sourceIds": [],
         "kind": "note",
-        "label": "Base tooltip conflict",
+        "label": "Base wing tooltip",
         "tone": "uncertain",
         "content": [
           {
-            "text": "The source says the base tooltip only shows Owned Effects, but figure 083 visibly includes Equip and Owned sections. Its fourth owned Weapon Damage Boost line is absent at base and present after enhancement; the hidden-line explanation remains supported."
+            "text": "The base tooltip shows both Equip and Owned Effects, despite the guide saying it only shows Owned Effects. The fourth owned stat, Weapon Damage Boost, appears after enhancement and is absent at base level."
           }
         ]
       },
@@ -231,7 +231,7 @@
         "tone": "context",
         "content": [
           {
-            "text": "Equip Effect and Owned Effect are separate lists. Within each Owned Effect, source-indented lines two and three do not scale with enhancement; the first and final lines do. Only Nightmare Wings’ owned Double Chance is yellow-highlighted in the captured catalog. Wing headings are not highlighted."
+            "text": "Equip Effect and Owned Effect are separate lists. For Owned Effects, the first and final lines scale with enhancement; the second and third do not. The guide highlights Nightmare Wings’ owned Double Chance."
           }
         ]
       },

@@ -3712,11 +3712,11 @@
         "id": "binding-stage-context",
         "sourceIds": [],
         "kind": "note",
-        "label": "Binding screenshot stage",
+        "label": "After adding a stat line",
         "tone": "uncertain",
         "content": [
           {
-            "text": "Figures 042 and 043 are separate source placements of the same artwork. Six yellow original lines show 100%; a seventh purple Multi-hit Chance line is at 32% with 11.37%/12.54% shown. The aggregate displays 90.2% at this later stage. No averaging formula is given. Soul Codex 540 is inventory, not the per-action book cost."
+            "text": "Six original yellow lines are at 100%. The added purple Multi-hit Chance line is at 32%, with 11.37%/12.54% shown. Overall binding is 90.2% at this stage; the averaging formula is not documented. The 540 Soul Codex count is inventory, not the cost per action."
           }
         ]
       },
@@ -3830,7 +3830,7 @@
         "tone": "context",
         "content": [
           {
-            "text": "Transfer moves from the right donor to the left recipient. The donor is consumed on success; equipped and Preset gear cannot be used. The left-side values in figures 046 and 052 are the recipient’s existing stats, not a post-transfer result. The dim added donor line says Cannot Transfer."
+            "text": "Transfer moves from the right donor to the left recipient. The donor is consumed on success; equipped and Preset gear cannot be used. The left-side values are the recipient’s existing stats, not a post-transfer result. The dim added donor line says Cannot Transfer."
           }
         ]
       },
@@ -3968,11 +3968,11 @@
         "id": "transfer-recipe-pairs",
         "sourceIds": [],
         "kind": "note",
-        "label": "Read the two left-arrow recipes",
+        "label": "Transfer Stone recipes",
         "tone": "context",
         "content": [
           {
-            "text": "In the first pair, figure 049 is the fragment input → figure 048 is the completed Armor Transfer Stone output: 15 Heroic fragments are required, and 20/15 shows held/required. In the second pair, figure 051 is Heroic gear input → figure 050 is fragment output: each pictured gear tile yields five fragments."
+            "text": "15 Heroic fragments make one Armor Transfer Stone; the example shows 20 held and 15 required. Each pictured Heroic gear item produces five Transfer Stone Fragments."
           }
         ]
       },
@@ -4028,7 +4028,7 @@
         "tone": "uncertain",
         "content": [
           {
-            "text": "Cyan x1–x5 on the Unique gear tiles are fragment yields. The prose says higher Item Level yields more fragments, but the image gives no numeric Item Level thresholds. The preceding Heroic-only wording is preserved alongside this later Unique-gear explanation."
+            "text": "Cyan x1–x5 labels show how many fragments each Unique gear item yields. Higher Item Level gives more fragments, but numeric thresholds are not provided. The guide initially describes Heroic gear only, then includes this Unique-gear recipe."
           }
         ]
       },
@@ -4067,18 +4067,6 @@
             "text": ". Orange/Heroic gear is MUCH more difficult and expensive to upgrade altogether so be sure to only transfer when you’re ready. I personally recommend not transferring or using the first Heroic Set (Ancient Spirit) and wait for the second set before going Orange/Heroic (Faded Shadow) unless additional changes are made to the game. Currently you can NOT upgrade a Yellow/Unique Transfer stone to an Orange/Heroic one. Transferring and Rolling lines on Yellow/Unique is free compared to Orange/Heroic). You need a LOT of Orange/Heroic Transfer Fragments for the future so just horde them early on. ",
             "emphasis": true,
             "highlight": "#f8f9fa"
-          }
-        ]
-      },
-      {
-        "id": "next-chapter-transition",
-        "sourceIds": [],
-        "kind": "note",
-        "label": "Source transition",
-        "tone": "context",
-        "content": [
-          {
-            "text": "The following “CHAPTER 6:” is the captured document’s transition marker into Arcana, not an Enhancement mechanic."
           }
         ]
       },

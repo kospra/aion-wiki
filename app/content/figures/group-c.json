@@ -37,7 +37,11 @@
     "screenshotOnly": [],
     "uncertainties": [
       "Image truncates 4-piece shield description; use block0623 for full conditional effect, not imagined image text."
-    ]
+    ],
+    "readerNotes": {
+      "details": [],
+      "caveats": []
+    }
   },
   {
     "id": "figure-055",
@@ -63,7 +67,13 @@
     ],
     "uncertainties": [
       "Five sets beyond the two launch sets have no complete set-bonus catalog in chapter; preserve names without inventing bonuses."
-    ]
+    ],
+    "readerNotes": {
+      "details": [],
+      "caveats": [
+        "Global availability differs from this Asia snapshot. The chapter only provides complete bonuses for the two launch sets."
+      ]
+    }
   },
   {
     "id": "figure-056",
@@ -104,7 +114,11 @@
       }
     ],
     "screenshotOnly": [],
-    "uncertainties": []
+    "uncertainties": [],
+    "readerNotes": {
+      "details": [],
+      "caveats": []
+    }
   },
   {
     "id": "figure-057",
@@ -126,7 +140,11 @@
       }
     ],
     "screenshotOnly": [],
-    "uncertainties": []
+    "uncertainties": [],
+    "readerNotes": {
+      "details": [],
+      "caveats": []
+    }
   },
   {
     "id": "figure-058",
@@ -166,7 +184,13 @@
     "screenshotOnly": [],
     "uncertainties": [
       "Names and EXP yields of green/blue training materials are not visible. Do not infer rarity names solely from color."
-    ]
+    ],
+    "readerNotes": {
+      "details": [],
+      "caveats": [
+        "The names and EXP yields of the green and blue training materials are not shown."
+      ]
+    }
   },
   {
     "id": "figure-059",
@@ -188,7 +212,11 @@
       }
     ],
     "screenshotOnly": [],
-    "uncertainties": []
+    "uncertainties": [],
+    "readerNotes": {
+      "details": [],
+      "caveats": []
+    }
   },
   {
     "id": "figure-060",
@@ -228,7 +256,13 @@
     "screenshotOnly": [],
     "uncertainties": [
       "Prose0558 describes random line growth but omits explicit Pantheon growth shown here; preserve both."
-    ]
+    ],
+    "readerNotes": {
+      "details": [
+        "Enhancement increases Pantheon stats as well as a random skill line."
+      ],
+      "caveats": []
+    }
   },
   {
     "id": "figure-061",
@@ -266,7 +300,11 @@
       }
     ],
     "screenshotOnly": [],
-    "uncertainties": []
+    "uncertainties": [],
+    "readerNotes": {
+      "details": [],
+      "caveats": []
+    }
   },
   {
     "id": "figure-062",
@@ -322,7 +360,13 @@
     "screenshotOnly": [],
     "uncertainties": [
       "Popup clips several ability names and central artwork; do not reconstruct clipped list. Does not demonstrate four selected lines despite prose recommending a four-line craft."
-    ]
+    ],
+    "readerNotes": {
+      "details": [],
+      "caveats": [
+        "The example selects two lines; it does not demonstrate the four-line craft recommended in the guide."
+      ]
+    }
   },
   {
     "id": "figure-063",
@@ -370,7 +414,13 @@
     "screenshotOnly": [],
     "uncertainties": [
       "Cannot establish a universal recipe/cost from partially occluded UI. Do not label red15/3 as a definitive ratio."
-    ]
+    ],
+    "readerNotes": {
+      "details": [],
+      "caveats": [
+        "The partly covered UI does not establish a universal recipe or cost. The red 15/3 display has no confirmed required/owned interpretation."
+      ]
+    }
   },
   {
     "id": "figure-064",
@@ -416,7 +466,11 @@
       }
     ],
     "screenshotOnly": [],
-    "uncertainties": []
+    "uncertainties": [],
+    "readerNotes": {
+      "details": [],
+      "caveats": []
+    }
   },
   {
     "id": "figure-065",
@@ -473,7 +527,14 @@
     "uncertainties": [
       "Life/Destiny and Death/Freedom are side-by-side alternative labels; do not flatten into simultaneous dual stats.",
       "Block0550 says five cards '(Compass ~ Mirror)', inconsistent with actual five-card list including Chalice and Parchment."
-    ]
+    ],
+    "readerNotes": {
+      "details": ["This is the early five-card setup described for launch."],
+      "caveats": [
+        "Life/Destiny and Death/Freedom are alternatives, not simultaneous stats.",
+        "The guide’s “Compass ~ Mirror” wording does not match its five-card list, which includes Chalice and Parchment."
+      ]
+    }
   },
   {
     "id": "figure-066",
@@ -528,7 +589,18 @@
     "uncertainties": [
       "Eight-card prose lists nine memberships: four Punishing Overture plus five Protected Soul; Parchment repeated in blocks0617/0626. Figure has one Parchment and eight equipped cards.",
       "Set membership cannot be definitively mapped from unnamed artwork. Do not silently repair list or claim artwork proves exact set allocation."
-    ]
+    ],
+    "readerNotes": {
+      "details": [],
+      "caveats": [
+        "The eight-card recommendation lists nine set memberships: four Punishing Overture and five Protected Soul, with Parchment repeated. The image shows one Parchment and eight equipped cards; the exact set allocation remains unclear."
+      ],
+      "mappingText": {
+        "Artwork grouping": {
+          "meaning": "The card artwork does not identify the sets by name."
+        }
+      }
+    }
   },
   {
     "id": "figure-067",
@@ -601,7 +673,18 @@
     "uncertainties": [
       "Individual glyphs do not reveal every node's stat value. Preserve full-resolution board image; do not fabricate textual route nodes.",
       "Gray/gold lit versus near-black tiles communicates example allocation state; exact costs and reset fee not shown."
-    ]
+    ],
+    "readerNotes": {
+      "details": [],
+      "caveats": [
+        "Lit and dark tiles show an example allocation. Individual node values, exact costs, and the reset fee are not all shown."
+      ],
+      "mappingText": {
+        "Completion cost": {
+          "meaning": "The UI displays 38, but the full cost label is cut off; this is not a confirmed full-board price."
+        }
+      }
+    }
   },
   {
     "id": "figure-068",
@@ -623,7 +706,13 @@
       }
     ],
     "screenshotOnly": [],
-    "uncertainties": ["Prose spells Vailzel once; screenshot spells Vaizel."]
+    "uncertainties": ["Prose spells Vailzel once; screenshot spells Vaizel."],
+    "readerNotes": {
+      "details": [],
+      "caveats": [
+        "The guide spells the board “Vailzel” once; the UI spells it “Vaizel”."
+      ]
+    }
   },
   {
     "id": "figure-069",
@@ -645,7 +734,11 @@
       }
     ],
     "screenshotOnly": [],
-    "uncertainties": []
+    "uncertainties": [],
+    "readerNotes": {
+      "details": [],
+      "caveats": []
+    }
   },
   {
     "id": "figure-070",
@@ -692,7 +785,13 @@
     "screenshotOnly": [],
     "uncertainties": [
       "Cannot infer every node's name/value or acquisition sequence from glyphs; retain zoomable original. 'Finished' does not mean every tile unlocked."
-    ]
+    ],
+    "readerNotes": {
+      "details": [],
+      "caveats": [
+        "This is a Brawler allocation example, not a route for every class. “Finished” does not mean every tile is unlocked, and the image does not specify an unlock order."
+      ]
+    }
   },
   {
     "id": "figure-071",
@@ -754,7 +853,11 @@
       }
     ],
     "screenshotOnly": [],
-    "uncertainties": []
+    "uncertainties": [],
+    "readerNotes": {
+      "details": [],
+      "caveats": []
+    }
   },
   {
     "id": "figure-072",
@@ -784,7 +887,16 @@
       }
     ],
     "screenshotOnly": [],
-    "uncertainties": []
+    "uncertainties": [],
+    "readerNotes": {
+      "details": [],
+      "caveats": [],
+      "mappingText": {
+        "Perimeter dots": {
+          "meaning": "Slot/grade indicators, separate from board points."
+        }
+      }
+    }
   },
   {
     "id": "figure-073",
@@ -831,7 +943,14 @@
     "screenshotOnly": ["Asia-style screenshot, not Global slot plan."],
     "uncertainties": [
       "Smite is source screenshot label associated contextually with prose Double Chance. Preserve both terms; formal localization equivalence not independently verified."
-    ]
+    ],
+    "readerNotes": {
+      "details": [],
+      "caveats": [
+        "This is an Asia example, not a Global slot plan.",
+        "The screenshot’s “Smite” label is associated with Double Chance in the guide; the localization equivalence is unconfirmed."
+      ]
+    }
   },
   {
     "id": "figure-074",
@@ -871,7 +990,13 @@
     "screenshotOnly": [],
     "uncertainties": [
       "Only one property and two visible grades; not complete probability table."
-    ]
+    ],
+    "readerNotes": {
+      "details": [],
+      "caveats": [
+        "Only one property and two grades are visible; this is not a complete probability table."
+      ]
+    }
   },
   {
     "id": "figure-075",
@@ -983,7 +1108,13 @@
     "screenshotOnly": [
       "Asia-style example pools; do not use as Global stat recommendations."
     ],
-    "uncertainties": []
+    "uncertainties": [],
+    "readerNotes": {
+      "details": [],
+      "caveats": [
+        "These are Asia example stat pools, not Global stat recommendations."
+      ]
+    }
   },
   {
     "id": "figure-076",
@@ -1095,7 +1226,13 @@
     "screenshotOnly": [
       "Asia-style example pools; do not use as Global stat recommendations."
     ],
-    "uncertainties": []
+    "uncertainties": [],
+    "readerNotes": {
+      "details": [],
+      "caveats": [
+        "These are Asia example stat pools, not Global stat recommendations."
+      ]
+    }
   },
   {
     "id": "figure-077",
@@ -1145,7 +1282,15 @@
       "Ranges are displayed overall min/max; not separate exact bounds for every rarity.",
       "Source step2 focuses Line4 for Global, but Auto Analysis note uses Asia-style lines3/9. Keep region distinction.",
       "Smite=Double Chance contextual mapping, not externally verified localization."
-    ]
+    ],
+    "readerNotes": {
+      "details": [],
+      "caveats": [
+        "The ranges are overall minimums and maximums, not exact bounds for each rarity.",
+        "This Auto Analysis example uses Asia slots 3/9. The Global instructions focus on line 4.",
+        "The screenshot’s “Smite” label is associated with Double Chance in the guide; the localization equivalence is unconfirmed."
+      ]
+    }
   },
   {
     "id": "figure-078",
@@ -1175,7 +1320,11 @@
       }
     ],
     "screenshotOnly": [],
-    "uncertainties": []
+    "uncertainties": [],
+    "readerNotes": {
+      "details": [],
+      "caveats": []
+    }
   },
   {
     "id": "figure-079",
@@ -1272,7 +1421,13 @@
     "uncertainties": [
       "This is a numbered example, not a perfect BIS board: slot2 contradicts recommended distribution and some rolls below stated ideal.",
       "Do not carry Asia numbering into Global guidance."
-    ]
+    ],
+    "readerNotes": {
+      "details": [],
+      "caveats": [
+        "This uses Asia slot numbering, not Global numbering. It is not a perfect best-in-slot board: slot 2 differs from the recommended distribution, and some rolls are below the stated ideal."
+      ]
+    }
   },
   {
     "id": "figure-080",
@@ -1328,7 +1483,11 @@
     "screenshotOnly": [],
     "uncertainties": [
       "Mount stamina effect label truncated; do not add an unsupported suffix."
-    ]
+    ],
+    "readerNotes": {
+      "details": [],
+      "caveats": []
+    }
   },
   {
     "id": "figure-081",
@@ -1388,7 +1547,13 @@
     "screenshotOnly": [
       "KR-era wing example; not assumed available Global launch."
     ],
-    "uncertainties": []
+    "uncertainties": [],
+    "readerNotes": {
+      "details": [
+        "This is a KR-era wing example; Global launch availability is unconfirmed."
+      ],
+      "caveats": []
+    }
   },
   {
     "id": "figure-082",
@@ -1418,7 +1583,11 @@
       }
     ],
     "screenshotOnly": [],
-    "uncertainties": []
+    "uncertainties": [],
+    "readerNotes": {
+      "details": [],
+      "caveats": []
+    }
   },
   {
     "id": "figure-083",
@@ -1477,7 +1646,13 @@
     "screenshotOnly": [],
     "uncertainties": [
       "Block0790 says tooltip will only show Owned Effects at base0; actual image includes Equip Effect too. Intended point is hidden fourth owned stat; preserve source wording with note."
-    ]
+    ],
+    "readerNotes": {
+      "details": [],
+      "caveats": [
+        "The guide says the base tooltip only shows Owned Effects, but this image also shows Equip Effect. The fourth owned stat, Weapon Damage Boost, is absent at base level."
+      ]
+    }
   },
   {
     "id": "figure-084",
@@ -1549,7 +1724,11 @@
     "screenshotOnly": [],
     "uncertainties": [
       "Material names absent; do not infer currency or named feathers from icons."
-    ]
+    ],
+    "readerNotes": {
+      "details": [],
+      "caveats": ["The material names are not shown."]
+    }
   },
   {
     "id": "figure-085",
@@ -1571,7 +1750,11 @@
       }
     ],
     "screenshotOnly": [],
-    "uncertainties": []
+    "uncertainties": [],
+    "readerNotes": {
+      "details": [],
+      "caveats": []
+    }
   },
   {
     "id": "figure-086",
@@ -1645,7 +1828,14 @@
       "Do not read48% from figure085 as account-wide completion.",
       "Stat labels shortened with ellipses; retain originals for exact display.",
       "Closet formula1021 has unclear brackets and defines Outfit Damage while adding Pure Attack; retain verbatim and flag before calculator use."
-    ]
+    ],
+    "readerNotes": {
+      "details": [],
+      "caveats": [
+        "The 48% progress in the preceding image is for Armor, not the entire Closet.",
+        "The guide’s Closet formula has unclear brackets and describes Outfit Damage while adding Pure Attack; its interpretation remains uncertain."
+      ]
+    }
   },
   {
     "id": "figure-087",
@@ -1677,7 +1867,13 @@
     "screenshotOnly": [],
     "uncertainties": [
       "Meaning of(+350) is not explained here; do not fold into the example endpoints or invent complete weapon name."
-    ]
+    ],
+    "readerNotes": {
+      "details": [],
+      "caveats": [
+        "The meaning of (+350) is not explained; it is not included in the example’s attack-range calculation."
+      ]
+    }
   },
   {
     "id": "figure-088",
@@ -1707,7 +1903,16 @@
       }
     ],
     "screenshotOnly": [],
-    "uncertainties": []
+    "uncertainties": [],
+    "readerNotes": {
+      "details": [],
+      "caveats": [],
+      "mappingText": {
+        "Flavor text": {
+          "meaning": "Item description."
+        }
+      }
+    }
   },
   {
     "id": "figure-089",
@@ -1739,7 +1944,13 @@
     "screenshotOnly": [],
     "uncertainties": [
       "Prose8.9%-4.65%=4.25 percentage points, whereas parenthetical says4.05% more: relative gain gives~4.06%; preserve explicit relative-vs-percentage-point distinction."
-    ]
+    ],
+    "readerNotes": {
+      "details": [],
+      "caveats": [
+        "8.9% − 4.65% is 4.25 percentage points. The guide’s “4.05% more” wording is approximately the relative gain (~4.06%), not the percentage-point difference."
+      ]
+    }
   },
   {
     "id": "figure-090",
@@ -1797,6 +2008,13 @@
       "No exact equation is supplied in graph; do not reverse-engineer a calculator as source fact.",
       "1200~79% image versus1200=80% prose. Block1185 dimensional arithmetic6.66…%*1200=80% omits per100 scale.",
       "Graph appears near77–79% at1200; exact stated label~79% takes precedence over pixel-estimated coordinate."
-    ]
+    ],
+    "readerNotes": {
+      "details": [],
+      "caveats": [
+        "The graph provides no exact equation.",
+        "At 1200, the image labels approximately 79%, while the text says 80%. The text’s 6.66…% × 1200 example omits the per-100 scale."
+      ]
+    }
   }
 ]

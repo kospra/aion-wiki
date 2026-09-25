@@ -201,7 +201,7 @@ it('renders captioned tables with column headers and labeled horizontal scrollin
   );
 });
 
-it('shows literal formulas, uncertain notes, group labels, and original figure links', () => {
+it('shows literal formulas, uncertain notes, group labels, and clickable figures', () => {
   const blocks: Block[] = [
     {
       id: 'block0011',
@@ -248,8 +248,10 @@ it('shows literal formulas, uncertain notes, group labels, and original figure l
   expect(screen.getByText('The value is unknown.')).toBeVisible();
   expect(screen.getByText('Source uncertainty')).toBeVisible();
   expect(
-    screen.getByRole('link', { name: /Equipment stats screenshot/ }),
-  ).toHaveAttribute('href', '/images/guide/original.png');
+    screen.getByRole('button', { name: /Equipment stats screenshot/ }),
+  ).toContainElement(
+    screen.getByRole('img', { name: 'Equipment stats screenshot' }),
+  );
   expect(screen.getByText('Equipment stat layers')).toBeVisible();
 });
 

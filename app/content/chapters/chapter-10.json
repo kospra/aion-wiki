@@ -84,7 +84,7 @@
         "tone": "context",
         "content": [
           {
-            "text": "The image’s 48% and 454/937 belong to Armor, not total account completion. Weapon skins for other classes do not contribute to collection points. The visible point totals and other-class counts are retained in the image legend."
+            "text": "The 48% and 454/937 counts refer to Armor, not the whole Closet. Weapon skins for other classes do not contribute to collection points."
           }
         ]
       },
@@ -113,11 +113,11 @@
         "id": "context-block-1021",
         "sourceIds": [],
         "kind": "note",
-        "label": "Unspecified outfit grouping",
+        "label": "Unclear outfit formula",
         "tone": "uncertain",
         "content": [
           {
-            "text": "The source brackets leave the Outfit Damage assignment unclear and add Pure Attack outside it. The literal formula is retained; it is not a fully specified calculator."
+            "text": "The formula’s brackets leave Outfit Damage unclear and add Pure Attack outside it. It is not sufficiently specified for a reliable calculator."
           }
         ]
       },

@@ -57,7 +57,7 @@ try {
   });
   const opener = page
     .locator('#figure-003')
-    .getByRole('button', { name: 'View full-size image' });
+    .getByRole('button', { name: /^View full-size image:/ });
   await opener.focus();
   await page.keyboard.press('Enter');
   const dialog = page.getByRole('dialog');

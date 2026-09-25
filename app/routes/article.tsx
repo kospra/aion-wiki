@@ -9,6 +9,7 @@ import {
   Text,
 } from '@chakra-ui/react';
 import { Link as RouterLink, useParams } from 'react-router';
+import { BackToTop } from '../components/back-to-top';
 import { ArticleContents } from '../components/article-contents';
 import { NotFound } from '../components/not-found';
 import { RichContent } from '../components/rich-content';
@@ -66,6 +67,7 @@ export function GuidePageView({
       columnGap={{ xl: '12' }}
       alignItems="start"
     >
+      {page.category && <BackToTop key={page.slug} targetId="article-title" />}
       <Breadcrumb.Root
         aria-label="Breadcrumb"
         gridColumn={{ xl: '1' }}
@@ -115,6 +117,8 @@ export function GuidePageView({
           </Text>
           <Heading
             as="h1"
+            id="article-title"
+            tabIndex={-1}
             textStyle="wiki.title"
             color="wiki.ink"
             overflowWrap="anywhere"

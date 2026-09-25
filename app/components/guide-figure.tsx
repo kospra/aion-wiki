@@ -2,13 +2,13 @@ import {
   Box,
   DataList,
   Flex,
-  Image,
   Link,
   List,
   Strong,
   Text,
   chakra,
 } from '@chakra-ui/react';
+import { readerFigure } from '../content/reader-figure';
 import { normalizeSourceUrl } from '../content/reader';
 import { sourcePassageLabels } from '../content/repository';
 import type { Figure } from '../content/types';
@@ -19,8 +19,11 @@ type Props = {
   sourceLinks: Record<string, string>;
 };
 
-export function GuideFigure({ figure, sourceLinks }: Props): React.JSX.Element {
-  const src = normalizeSourceUrl(figure.src);
+export function GuideFigure({
+  figure: originalFigure,
+  sourceLinks,
+}: Props): React.JSX.Element {
+  const figure = readerFigure(originalFigure);
 
   return (
     <chakra.figure
@@ -30,48 +33,11 @@ export function GuideFigure({ figure, sourceLinks }: Props): React.JSX.Element {
       maxW="100%"
       minW="0"
     >
-      <Box
-        bg="wiki.surface"
-        borderWidth="1px"
-        borderColor="wiki.border"
-        borderRadius="md"
-        p={{ base: '3', md: '4' }}
-      >
-        {src ? (
-          <Image
-            data-guide-primary-image=""
-            src={src}
-            alt={figure.alt}
-            htmlWidth={figure.width}
-            htmlHeight={figure.height}
-            loading="lazy"
-            maxW="100%"
-            height="auto"
-            borderWidth="1px"
-            borderColor="wiki.border"
-            borderRadius="sm"
-          />
-        ) : (
-          <Text>Image unavailable: {figure.alt}</Text>
-        )}
-      </Box>
+      <ImageViewer figure={figure} />
       <chakra.figcaption>
         <Text mt="3" color="wiki.muted" textStyle="wiki.caption">
           {figure.caption}
         </Text>
-        {src && (
-          <Flex align="center" gap="4" mt="3" wrap="wrap">
-            <ImageViewer figure={figure} />
-            <Link
-              href={src}
-              aria-label={`Open original image: ${figure.alt}`}
-              color="wiki.accent"
-              _hover={{ color: 'wiki.accentHover' }}
-            >
-              Open original image
-            </Link>
-          </Flex>
-        )}
         {figure.mappings.length > 0 && (
           <DataList.Root
             data-guide-legend=""
@@ -188,14 +154,14 @@ export function GuideFigure({ figure, sourceLinks }: Props): React.JSX.Element {
           <Box
             as="section"
             data-guide-screenshot-facts=""
-            aria-label="Facts visible only in the image"
+            aria-label="Example details"
             mt="5"
             pt="4"
             borderTopWidth="1px"
             borderColor="wiki.border"
             color="wiki.ink"
           >
-            <Strong>Visible in image</Strong>
+            <Strong>Example details</Strong>
             <List.Root as="ul" listStyleType="disc" ps="6" mt="2">
               {figure.screenshotOnly.map((fact, index) => (
                 <List.Item key={index}>{fact}</List.Item>
@@ -214,7 +180,7 @@ export function GuideFigure({ figure, sourceLinks }: Props): React.JSX.Element {
             borderColor="wiki.border"
             color="wiki.muted"
           >
-            <Strong>Image uncertainty</Strong>
+            <Strong>Important context</Strong>
             <List.Root as="ul" listStyleType="disc" ps="6" mt="2">
               {figure.uncertainties.map((uncertainty, index) => (
                 <List.Item key={index}>{uncertainty}</List.Item>

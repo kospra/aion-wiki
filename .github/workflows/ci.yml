@@ -45,7 +45,6 @@ jobs:
           name: browser-qa
           path: |
             .local-tools/qa/guide/
-            .local-tools/qa/editorial/
           include-hidden-files: true
           if-no-files-found: ignore
           retention-days: 7

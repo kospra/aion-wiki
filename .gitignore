@@ -3,6 +3,7 @@ build/
 .react-router/
 /coverage/
 .local-tools/
+.rtk/
 .env
 .env.*
 !.env.example

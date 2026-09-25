@@ -52,8 +52,14 @@ export type Figure = {
     textSourceIds: string[];
     confidence: 'confirmed' | 'approximate' | 'unresolved';
   }[];
+  /** Original image audit; not rendered directly. */
   screenshotOnly: string[];
   uncertainties: string[];
+  readerNotes?: {
+    details: string[];
+    caveats: string[];
+    mappingText?: Record<string, { label?: string; meaning?: string }>;
+  };
 };
 
 export type CoverageEntry = {

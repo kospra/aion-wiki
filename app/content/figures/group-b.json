@@ -55,7 +55,14 @@
     ],
     "uncertainties": [
       "Do not universalize 25.5% or +3.0% failure bonus to every level. Source's 60% reset at +15→+16 is text-only, not shown here."
-    ]
+    ],
+    "readerNotes": {
+      "details": [],
+      "caveats": [
+        "The 25.5% success chance and +3.0% failure bonus apply to this example. The origins of the 16.5% baseline and 9% bonus are not explained here.",
+        "The guide’s 60% reset at +15 → +16 is described in the text, not demonstrated in this image."
+      ]
+    }
   },
   {
     "id": "figure-027",
@@ -81,7 +88,13 @@
     ],
     "uncertainties": [
       "No explicit required/owned labels in crop; do not convert sample cost to universal formula."
-    ]
+    ],
+    "readerNotes": {
+      "details": [],
+      "caveats": [
+        "The crop does not label required versus owned quantities. The displayed 250 and 8.3K are an example, not a universal cost formula."
+      ]
+    }
   },
   {
     "id": "figure-028",
@@ -103,7 +116,11 @@
       }
     ],
     "screenshotOnly": ["Keyboard shortcut F."],
-    "uncertainties": []
+    "uncertainties": [],
+    "readerNotes": {
+      "details": ["Keyboard shortcut F."],
+      "caveats": []
+    }
   },
   {
     "id": "figure-029",
@@ -127,7 +144,13 @@
     "screenshotOnly": ["Displayed item and numeric resource counts."],
     "uncertainties": [
       "No explicit required/owned labels; exact level of this sample not identified."
-    ]
+    ],
+    "readerNotes": {
+      "details": [],
+      "caveats": [
+        "The required/owned quantities are inferred from the layout; the example’s enhancement level is not identified."
+      ]
+    }
   },
   {
     "id": "figure-030",
@@ -149,7 +172,11 @@
       }
     ],
     "screenshotOnly": ["F shortcut and 2,000,000 price."],
-    "uncertainties": []
+    "uncertainties": [],
+    "readerNotes": {
+      "details": ["Keyboard shortcut F. The example price is 2,000,000."],
+      "caveats": []
+    }
   },
   {
     "id": "figure-031",
@@ -207,7 +234,15 @@
     ],
     "uncertainties": [
       "Label is truncated in image; PvE Damage Tolerance expanded by source block-0424. Material count roles inferred from UI placement."
-    ]
+    ],
+    "readerNotes": {
+      "details": [
+        "This example has a 100% success chance and five diamond positions, with the first two cyan."
+      ],
+      "caveats": [
+        "The material counts are interpreted from their position in the UI."
+      ]
+    }
   },
   {
     "id": "figure-032",
@@ -241,7 +276,16 @@
     ],
     "uncertainties": [
       "Do not fabricate complete bound suffix or hidden tooltip."
-    ]
+    ],
+    "readerNotes": {
+      "details": [],
+      "caveats": [],
+      "mappingText": {
+        "ntial Stone: Accessory [★★★★★] (": {
+          "meaning": "Five-star accessory Potential Stone tier."
+        }
+      }
+    }
   },
   {
     "id": "figure-033",
@@ -323,7 +367,13 @@
     ],
     "uncertainties": [
       "Higher tier row endings truncated; do not claim full star counts past what is visible. Currency identities not legible from icons alone."
-    ]
+    ],
+    "readerNotes": {
+      "details": [],
+      "caveats": [
+        "Higher-tier recipe names are cut off, and the currency icons are not identified."
+      ]
+    }
   },
   {
     "id": "figure-034",
@@ -373,7 +423,11 @@
     ],
     "uncertainties": [
       "Do not infer market prices or item names for unlabeled icons."
-    ]
+    ],
+    "readerNotes": {
+      "details": [],
+      "caveats": []
+    }
   },
   {
     "id": "figure-035",
@@ -433,7 +487,11 @@
       }
     ],
     "screenshotOnly": ["Exact five-line example."],
-    "uncertainties": []
+    "uncertainties": [],
+    "readerNotes": {
+      "details": [],
+      "caveats": []
+    }
   },
   {
     "id": "figure-036",
@@ -507,7 +565,13 @@
     ],
     "uncertainties": [
       "Prose calls yellow lines yellow/unique; screenshot quality tab calls them Ultimate. Preserve terminology context rather than silently equating gear and roll tiers. Blue +30 is prose-only here."
-    ]
+    ],
+    "readerNotes": {
+      "details": [],
+      "caveats": [
+        "The guide calls yellow rolls “yellow/unique”; this UI calls the roll-quality tier “Ultimate”. Gear rarity and roll quality use different terminology. The blue +30 value is described only in the text."
+      ]
+    }
   },
   {
     "id": "figure-037",
@@ -539,7 +603,11 @@
     "screenshotOnly": [
       "All five visible rows share probability and value; preserve probability table independently from recommended ranking."
     ],
-    "uncertainties": []
+    "uncertainties": [],
+    "readerNotes": {
+      "details": [],
+      "caveats": []
+    }
   },
   {
     "id": "figure-038",
@@ -597,7 +665,11 @@
     ],
     "uncertainties": [
       "Tooltip name incomplete; do not reconstruct as certain from proximity alone."
-    ]
+    ],
+    "readerNotes": {
+      "details": [],
+      "caveats": []
+    }
   },
   {
     "id": "figure-039",
@@ -632,7 +704,15 @@
     ],
     "uncertainties": [
       "This is one combat sample; duration, encounter and build absent. Do not generalize displayed percentages into universal DPS values or call 626,330 literally zero damage. Column acronym expansions not provided."
-    ]
+    ],
+    "readerNotes": {
+      "details": [
+        "Freyr’s Wisdom deals 626,330 damage in this sample, even though its displayed share rounds to 0%. Yellow outlines highlight the author’s comparison; they are not gear-rarity markers."
+      ],
+      "caveats": [
+        "This is one combat sample. Its encounter, duration, and build are not provided, so these percentages are not universal DPS values."
+      ]
+    }
   },
   {
     "id": "figure-040",
@@ -656,7 +736,11 @@
     "screenshotOnly": [
       "Character in dark clothing with pale hair; glowing weapon edges and yellow floating particles."
     ],
-    "uncertainties": []
+    "uncertainties": [],
+    "readerNotes": {
+      "details": [],
+      "caveats": []
+    }
   },
   {
     "id": "figure-041",
@@ -712,7 +796,16 @@
     "screenshotOnly": ["Colored rectangular boxes are annotation overlays."],
     "uncertainties": [
       "No image numbers 1/2/3; do not invent numbered callouts. Full item title truncated."
-    ]
+    ],
+    "readerNotes": {
+      "details": [],
+      "caveats": [],
+      "mappingText": {
+        "Bind": {
+          "meaning": "Bind action, identified by its colored outline."
+        }
+      }
+    }
   },
   {
     "id": "figure-042",
@@ -794,7 +887,15 @@
     ],
     "uncertainties": [
       "Text says blue rate 100% when yellow lines 100%; this screenshot already has additional purple line, so aggregate is 90.2% despite six gold lines being 100%. Explain stage difference; do not silently alter numbers or assert undocumented averaging formula."
-    ]
+    ],
+    "readerNotes": {
+      "details": [
+        "The six original yellow lines are at 100%; the added purple line is at 32%."
+      ],
+      "caveats": [
+        "The guide’s 100% binding milestone refers to completing the original lines. This image already has an added line and shows 90.2% overall; the averaging formula is not documented."
+      ]
+    }
   },
   {
     "id": "figure-043",
@@ -876,7 +977,15 @@
     ],
     "uncertainties": [
       "Same stage/aggregate caveat as figure-042; preserve both figure occurrences in provenance even if asset storage is deduplicated."
-    ]
+    ],
+    "readerNotes": {
+      "details": [
+        "The six original yellow lines are at 100%; the added purple line is at 32%."
+      ],
+      "caveats": [
+        "The guide’s 100% binding milestone refers to completing the original lines. This image already has an added line and shows 90.2% overall; the averaging formula is not documented."
+      ]
+    }
   },
   {
     "id": "figure-044",
@@ -908,7 +1017,11 @@
     "screenshotOnly": [
       "A cropped 17.67% line and cyan/yellow bars behind tooltip link it to Soul Binding screen."
     ],
-    "uncertainties": []
+    "uncertainties": [],
+    "readerNotes": {
+      "details": [],
+      "caveats": []
+    }
   },
   {
     "id": "figure-045",
@@ -942,7 +1055,13 @@
     ],
     "uncertainties": [
       "2-stone requirement and Conquest source come from prose, not this tooltip; do not mistake inventory 12 for required amount."
-    ]
+    ],
+    "readerNotes": {
+      "details": [
+        "Adding the extra ability requires two Philosopher’s Stones, obtained from Conquest according to the guide. The 12 shown in the tooltip is inventory, not the required amount."
+      ],
+      "caveats": []
+    }
   },
   {
     "id": "figure-046",
@@ -1032,7 +1151,13 @@
     ],
     "uncertainties": [
       "Full Natural H... label obscured. Do not read pre-transfer recipient stats as transferred result."
-    ]
+    ],
+    "readerNotes": {
+      "details": [],
+      "caveats": [
+        "These are pre-transfer recipient and donor stats. The resulting recipient stats are not shown."
+      ]
+    }
   },
   {
     "id": "figure-047",
@@ -1074,7 +1199,13 @@
     ],
     "uncertainties": [
       "Full bound suffix truncated; count roles inferred by placement and shortage color."
-    ]
+    ],
+    "readerNotes": {
+      "details": [],
+      "caveats": [
+        "The required/owned interpretation follows the UI layout and shortage color."
+      ]
+    }
   },
   {
     "id": "figure-048",
@@ -1098,7 +1229,16 @@
     "screenshotOnly": [
       "Black/orange complete stone icon contrasts fragment in figure-049."
     ],
-    "uncertainties": []
+    "uncertainties": [],
+    "readerNotes": {
+      "details": [],
+      "caveats": [],
+      "mappingText": {
+        "Transfer Stone: Armor (Heroic) (...": {
+          "meaning": "Morph output: a complete Heroic Armor Transfer Stone."
+        }
+      }
+    }
   },
   {
     "id": "figure-049",
@@ -1130,7 +1270,17 @@
     "screenshotOnly": ["Plus button to add material; Material header."],
     "uncertainties": [
       "Label suffix truncated; owned/required interpretation supported by source's explicit 15-fragment cost."
-    ]
+    ],
+    "readerNotes": {
+      "details": [],
+      "caveats": [],
+      "mappingText": {
+        "HTML left arrow between figures": {
+          "meaning": "Fragments are the input; the complete Armor Transfer Stone is the output.",
+          "label": "Crafting direction"
+        }
+      }
+    }
   },
   {
     "id": "figure-050",
@@ -1154,7 +1304,11 @@
     "screenshotOnly": [
       "Broken stone/fragment shape, distinct from completed stone."
     ],
-    "uncertainties": []
+    "uncertainties": [],
+    "readerNotes": {
+      "details": [],
+      "caveats": []
+    }
   },
   {
     "id": "figure-051",
@@ -1188,7 +1342,17 @@
     ],
     "uncertainties": [
       "No visible item names or levels; do not assign exact levels from icons."
-    ]
+    ],
+    "readerNotes": {
+      "details": [],
+      "caveats": [],
+      "mappingText": {
+        "HTML left arrow between figures": {
+          "meaning": "Heroic gear is the input; Transfer Stone Fragments are the output.",
+          "label": "Crafting direction"
+        }
+      }
+    }
   },
   {
     "id": "figure-052",
@@ -1286,7 +1450,15 @@
     ],
     "uncertainties": [
       "Required/held roles inferred from layout and corroborated by text. These are pre-transfer stats, not result."
-    ]
+    ],
+    "readerNotes": {
+      "details": [
+        "The “successes: 5” display is separate from the five yellow stones required as materials."
+      ],
+      "caveats": [
+        "These are pre-transfer stats. Material counts are interpreted from the layout and corroborated by the guide."
+      ]
+    }
   },
   {
     "id": "figure-053",
@@ -1328,6 +1500,12 @@
     ],
     "uncertainties": [
       "Do not convert x1–x5 into Item Level or item counts. Badge meanings unprovided."
-    ]
+    ],
+    "readerNotes": {
+      "details": [
+        "The x1–x5 overlays are fragment yields. Numeric Item Levels are not shown."
+      ],
+      "caveats": []
+    }
   }
 ]

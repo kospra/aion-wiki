@@ -594,11 +594,11 @@
         "id": "context-block-0550",
         "sourceIds": [],
         "kind": "note",
-        "label": "Launch wording conflict",
+        "label": "Launch lineup",
         "tone": "uncertain",
         "content": [
           {
-            "text": "“Compass ~ Mirror” is the source’s abbreviated five-card range. Its later five-card list and image include Chalice, Parchment, Compass, Bell and Mirror. The inconsistent range and “Primal Vigore” spelling remain literal."
+            "text": "The five-card list includes Chalice, Parchment, Compass, Bell and Mirror. This differs from the guide’s abbreviated “Compass ~ Mirror” range."
           }
         ]
       }
@@ -905,11 +905,11 @@
         "id": "context-block-0589",
         "sourceIds": [],
         "kind": "note",
-        "label": "Alternatives rather than simultaneous effects",
+        "label": "Alternative card effects",
         "tone": "uncertain",
         "content": [
           {
-            "text": "The five-card image illustrates Parchment Life versus Destiny and Compass Death versus Freedom as alternative cards. Do not combine both alternatives into one card. The earlier “Compass ~ Mirror” launch range is inconsistent with this full five-card list."
+            "text": "Parchment Life/Destiny and Compass Death/Freedom are alternatives, not simultaneous effects on one card. The earlier “Compass ~ Mirror” range does not match this full five-card list."
           }
         ]
       },
@@ -1493,7 +1493,7 @@
                           "tone": "uncertain",
                           "content": [
                             {
-                              "text": "The source lists nine set memberships: four Punishing Overture entries and five Protected Soul entries. Parchment occurs in both lists. The screenshot shows eight equipped types and one Parchment, with Dice and Lantern empty. Unnamed artwork does not resolve the allocation; both source lists are retained."
+                              "text": "The guide lists four Punishing Overture and five Protected Soul memberships, with Parchment in both lists. The screenshot shows eight equipped cards, one Parchment, and empty Dice and Lantern slots. The intended set allocation remains unclear."
                             }
                           ]
                         }
