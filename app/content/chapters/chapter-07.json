@@ -6,22 +6,7 @@
     "summary": "Shared white boards, tile colors, skill milestones, and a Brawler allocation example.",
     "status": "source-uncertain",
     "sourceUrl": "https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/edit",
-    "qualifiers": [
-      "Source recommendations, first-person statements, and testing claims are Kanon’s. Figures are captured examples rather than universal costs or ideal builds.",
-      "Captured source update: 9/20/2026. Regional and unconfirmed details remain qualified as written."
-    ],
     "blocks": [
-      {
-        "id": "block-0632",
-        "sourceIds": ["block-0632"],
-        "kind": "heading",
-        "content": [
-          {
-            "text": "CH 7: DAEVANION BOARDS"
-          }
-        ],
-        "level": 2
-      },
       {
         "id": "block-0633",
         "sourceIds": ["block-0633"],
@@ -267,18 +252,6 @@
         ]
       },
       {
-        "id": "context-block-0661",
-        "sourceIds": [],
-        "kind": "note",
-        "label": "Allocation example",
-        "tone": "context",
-        "content": [
-          {
-            "text": "The finished Nezekan Brawler image is an allocation map with lit and dark nodes, not a numbered path or a template for every class. The source’s Vailzel spelling and screenshot Vaizel name refer to the discussed white board."
-          }
-        ]
-      },
-      {
         "id": "block-0662",
         "sourceIds": ["block-0662"],
         "kind": "figure",
@@ -293,10 +266,6 @@
     "summary": "Independent PVE, PVP, mid-game and end-game boards and crystal sources.",
     "status": "source-uncertain",
     "sourceUrl": "https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/edit",
-    "qualifiers": [
-      "Source recommendations, first-person statements, and testing claims are Kanon’s. Figures are captured examples rather than universal costs or ideal builds.",
-      "Captured source update: 9/20/2026. Regional and unconfirmed details remain qualified as written."
-    ],
     "blocks": [
       {
         "id": "block-0664",

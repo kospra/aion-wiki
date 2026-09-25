@@ -108,7 +108,6 @@ export const validGuide: {
       summary: 'A source example',
       status: 'source-backed',
       sourceUrl: 'https://docs.google.com/document/d/example/edit',
-      qualifiers: [],
       blocks: [
         {
           id: 'attack',
@@ -194,19 +193,6 @@ export const validGuide: {
       width: 640,
       height: 900,
       alt: 'Example stat panel',
-      caption: 'A 32% example roll',
-      mappings: [
-        {
-          label: 'Stat row',
-          color: 'green',
-          visualValue: '32%',
-          meaning: 'Value illustrated in the example',
-          textSourceIds: ['s3'],
-          confidence: 'confirmed',
-        },
-      ],
-      screenshotOnly: ['32%'],
-      uncertainties: [],
     },
   ],
   coverage: [

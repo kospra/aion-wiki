@@ -63,6 +63,8 @@ export function ChapterNavigation(): React.JSX.Element {
       borderColor="wiki.border"
       borderRadius="lg"
       p="4"
+      mt="8"
+      ms="8"
       alignSelf="start"
     >
       <Stack gap="2">
@@ -87,8 +89,8 @@ export function ChapterNavigation(): React.JSX.Element {
         <ChapterList />
         <Box borderTopWidth="1px" borderColor="wiki.border" />
         <Stack px="3" gap="2" color="wiki.muted" fontSize="xs">
-          <Text>Kanon’s captured guide</Text>
-          <Text>Source context stays with every explanation.</Text>
+          <Text>Based on Kanon’s guide</Text>
+          <Text>Aion 2 progression, gear and stat reference.</Text>
         </Stack>
       </Stack>
     </Box>

@@ -63,12 +63,12 @@
     "chapter": 11,
     "slug": "how-stats-work",
     "title": "How stats work",
-    "description": "Stat efficiency, combat values, and source damage formulas."
+    "description": "Stat efficiency, combat values, and damage formulas."
   },
   {
     "chapter": 12,
     "slug": "class-passives",
     "title": "Class Passives",
-    "description": "A source-pending chapter marked Coming soon."
+    "description": "Not written yet; marked Coming soon in the original guide."
   }
 ]

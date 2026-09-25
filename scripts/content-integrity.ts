@@ -48,9 +48,55 @@ function isLayoutOnly(source: SourceBaseline['blocks'][number]): boolean {
   );
 }
 
+// Keep in sync with wiki.annotation.* in app/components/ui/theme.ts.
+const annotationColors = new Set([
+  'green',
+  'white',
+  'orange',
+  'purple',
+  'red',
+  'cyan',
+  'gold',
+  'yellow',
+]);
+
+const separatorText = /^[-_=─━═*–—]+$/u;
+const chapterTitle = /^(?:CH|CHAPTER)\s*\d+\s*:/iu;
+const documentNavigation = /\b(?:document|doc|tabs?)\b/iu;
+
+/** Omissions are limited to Google Docs structure with a checkable shape. */
+function validateOmission(
+  source: SourceBaseline['blocks'][number],
+  entry: CoverageEntry,
+  pages: GuidePage[],
+): string[] {
+  const errors: string[] = [];
+  const text = normalizeWhitespace(source.text);
+  if (!entry.reason?.trim())
+    errors.push(`${source.id}: omitted coverage requires a reason`);
+  if (entry.primary)
+    errors.push(`${source.id}: omitted coverage cannot have a primary`);
+  if (!pages.some((page) => page.slug === entry.pageSlug))
+    errors.push(`${source.id}: omitted coverage needs its article pageSlug`);
+  if (source.figureIds.length || source.links.length)
+    errors.push(`${source.id}: figures and links cannot be omitted`);
+  const valid =
+    entry.omission === 'separator'
+      ? separatorText.test(text) && !source.numbers.length
+      : entry.omission === 'chapter-title'
+        ? chapterTitle.test(text)
+        : entry.omission === 'document-navigation'
+          ? documentNavigation.test(text) && !source.numbers.length
+          : false;
+  if (!valid)
+    errors.push(
+      `${source.id}: text does not match omission ${entry.omission ?? '(none)'}`,
+    );
+  return errors;
+}
+
 function validateFigures(
   input: GuideValidationInput,
-  destinations: ReturnType<typeof createDestinations>,
   indexes: Map<string, ReturnType<typeof indexBlocks>>,
 ): string[] {
   const errors: string[] = [];
@@ -86,8 +132,8 @@ function validateFigures(
       errors.push(
         `${figure.id}: figure requires exactly one visible placement, got ${placementCount}`,
       );
-    if (!figure.alt.trim() || !figure.caption.trim())
-      errors.push(`${figure.id}: figure needs accessible alt and caption`);
+    if (!figure.alt.trim())
+      errors.push(`${figure.id}: figure needs accessible alt text`);
     if (
       !Number.isInteger(figure.width) ||
       figure.width <= 0 ||
@@ -101,17 +147,22 @@ function validateFigures(
       normalizeSourceUrl(figure.src) !== figure.src
     )
       errors.push(`${figure.id}: unsafe figure asset path`);
-    for (const mapping of figure.mappings) {
-      if (!mapping.label.trim() || !mapping.meaning.trim())
+    const owner = [...indexes.values()].find((index) =>
+      index.some(
+        ({ block }) => block.kind === 'figure' && block.figureId === figure.id,
+      ),
+    );
+    for (const annotation of figure.annotations ?? []) {
+      if (!annotation.label.trim() || !annotation.title.trim())
+        errors.push(`${figure.id}: annotation needs a label and title`);
+      if (!annotationColors.has(annotation.color))
         errors.push(
-          `${figure.id}: figure mapping needs a text label and meaning`,
+          `${figure.id}: unknown annotation color ${annotation.color}`,
         );
-      for (const sourceId of mapping.textSourceIds) {
-        if (!destinations.textDestination(sourceId))
-          errors.push(
-            `${figure.id}: figure linked text ${sourceId} has no rendered destination`,
-          );
-      }
+      if (!owner?.some(({ block }) => block.id === annotation.target))
+        errors.push(
+          `${figure.id}: annotation ${annotation.label} targets missing block ${annotation.target}`,
+        );
     }
   }
   for (const expected of input.baseline.figures) {
@@ -259,6 +310,10 @@ export function validateGuide(input: GuideValidationInput): string[] {
         errors.push(`${source.id}: missing coverage`);
       continue;
     }
+    if (entry.disposition === 'omitted') {
+      errors.push(...validateOmission(source, entry, pages));
+      continue;
+    }
     if (entry.disposition === 'layout-only') {
       if (!entry.reason?.trim())
         errors.push(`${source.id}: layout-only coverage requires a reason`);
@@ -293,10 +348,25 @@ export function validateGuide(input: GuideValidationInput): string[] {
         errors.push(`${source.id}: missing primary block ${id}`);
     }
     const fragments = primaryFragments(index, primary.blockIds, source.id);
+    if (entry.strayText) {
+      const stray = normalizeWhitespace(source.text);
+      if (
+        !source.figureIds.length ||
+        source.links.length ||
+        source.numbers.length ||
+        !/^\p{L}{1,3}$/u.test(stray)
+      )
+        errors.push(
+          `${source.id}: strayText is only for a word of 3 letters or fewer beside a figure`,
+        );
+    }
+    const checked = entry.strayText
+      ? { ...source, text: '', formatting: [] }
+      : source;
     if (!fragments.length)
       errors.push(`${source.id}: primary blocks lack source attribution`);
     errors.push(
-      ...validateFragments(source, fragments, (href, fromSource) =>
+      ...validateFragments(checked, fragments, (href, fromSource) =>
         destinations.canonical(href, page, fromSource),
       ),
     );
@@ -310,7 +380,7 @@ export function validateGuide(input: GuideValidationInput): string[] {
         );
     }
   }
-  errors.push(...validateFigures(input, destinations, indexes));
+  errors.push(...validateFigures(input, indexes));
   return errors;
 }
 

@@ -2,6 +2,7 @@ import type { ReactNode } from 'react';
 import {
   Box,
   Em,
+  Flex,
   Heading,
   Link,
   List,
@@ -12,9 +13,9 @@ import {
   Text,
   chakra,
 } from '@chakra-ui/react';
-import { normalizeSourceUrl } from '../content/reader';
+import { inlineText, normalizeSourceUrl, walkBlocks } from '../content/reader';
 import type { Block, Figure, Inline } from '../content/types';
-import { GuideFigure } from './guide-figure';
+import { AnnotationSwatch, GuideFigure } from './guide-figure';
 
 type Props = {
   blocks: Block[];
@@ -56,6 +57,18 @@ export function RichContent({
   figures,
   sourceLinks,
 }: Props): React.JSX.Element {
+  // Headings explained by a screenshot marker repeat its color square. The
+  // heading text (or source list number) already names the marker.
+  const markers = new Map<string, { label: string; color: string }[]>();
+  for (const block of walkBlocks(blocks)) {
+    if (block.kind !== 'figure') continue;
+    for (const annotation of figures[block.figureId]?.annotations ?? []) {
+      const list = markers.get(annotation.target) ?? [];
+      list.push({ label: annotation.label, color: annotation.color });
+      markers.set(annotation.target, list);
+    }
+  }
+
   function renderInline(parts: Inline[]): ReactNode {
     const runs: ReactNode[] = [];
     for (let index = 0; index < parts.length;) {
@@ -113,8 +126,9 @@ export function RichContent({
             {renderInline(block.content)}
           </Text>
         );
-      case 'heading':
-        return (
+      case 'heading': {
+        const headingMarkers = markers.get(block.id) ?? [];
+        const heading = (
           <Heading
             as={`h${block.level}` as 'h2' | 'h3' | 'h4'}
             id={block.id}
@@ -130,13 +144,32 @@ export function RichContent({
             lineHeight="1.3"
             color="wiki.ink"
             maxW={inTable ? undefined : '65ch'}
-            mt={block.level === 2 ? '12' : '8'}
-            mb="3"
+            mt={headingMarkers.length ? '0' : block.level === 2 ? '12' : '8'}
+            mb={headingMarkers.length ? '0' : '3'}
             scrollMarginTop="6"
           >
             {renderInline(block.content)}
           </Heading>
         );
+        if (!headingMarkers.length) return heading;
+        // Squares sit beside the heading, so its text stays the source's own.
+        return (
+          <Flex
+            key={block.id}
+            data-guide-heading-markers=""
+            align="center"
+            flexWrap="wrap"
+            gap="3"
+            mt={block.level === 2 ? '12' : '8'}
+            mb="3"
+          >
+            {headingMarkers.map((marker) => (
+              <AnnotationSwatch key={marker.label} color={marker.color} />
+            ))}
+            {heading}
+          </Flex>
+        );
+      }
       case 'list': {
         const items = block.items.map((item, index) => (
           <List.Item key={`${block.id}-item-${index}`}>
@@ -330,34 +363,53 @@ export function RichContent({
           );
         return (
           <Box id={block.id} key={block.id} maxW="100%">
-            <GuideFigure figure={figure} sourceLinks={sourceLinks} />
+            <GuideFigure figure={figure} />
           </Box>
         );
       }
-      case 'group':
-        return (
-          <Box
-            id={block.id}
-            key={block.id}
-            role="group"
-            aria-label={block.label}
-            borderStartWidth="2px"
-            borderColor="wiki.border"
-            ps="4"
-            py="2"
-            spaceY="4"
-          >
-            <Text
-              data-guide-group-label=""
-              fontWeight="semibold"
-              color="wiki.muted"
-              textStyle="wiki.label"
+      case 'group': {
+        const [first, middle, last] = block.blocks;
+        // The source places "result ⬅️ ingredients" screenshots side by side.
+        const arrowPair =
+          block.blocks.length === 3 &&
+          first.kind === 'figure' &&
+          last.kind === 'figure' &&
+          middle.kind === 'paragraph' &&
+          /^\s*(?:⬅️|⬅|←)\s*$/u.test(inlineText(middle.content));
+        if (arrowPair)
+          return (
+            <Flex
+              id={block.id}
+              key={block.id}
+              data-guide-figure-pair=""
+              direction={{ base: 'column', md: 'row' }}
+              align="center"
+              gap={{ base: '0', md: '4' }}
             >
-              {block.label}
-            </Text>
+              {block.blocks.map((child, index) =>
+                index === 1 ? (
+                  <Box
+                    key={child.id}
+                    flexShrink="0"
+                    fontSize="2xl"
+                    transform={{ base: 'rotate(90deg)', md: 'none' }}
+                  >
+                    {renderBlock(child, inTable)}
+                  </Box>
+                ) : (
+                  <Box key={child.id} flex="1 1 0" minW="0" maxW="100%">
+                    {renderBlock(child, inTable)}
+                  </Box>
+                ),
+              )}
+            </Flex>
+          );
+        return (
+          <Box id={block.id} key={block.id} spaceY={{ base: '5', md: '6' }}>
             {block.blocks.map((child) => renderBlock(child, inTable))}
           </Box>
         );
+      }
     }
   }
 

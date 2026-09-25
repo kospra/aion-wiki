@@ -49,9 +49,7 @@ function SiteFooter(): React.JSX.Element {
       py="6"
     >
       <Flex align="center" justify="space-between" gap="3" flexWrap="wrap">
-        <Text fontSize="xs">
-          KANON’S GUIDE / Original figures. Visible source context.
-        </Text>
+        <Text fontSize="xs">Based on Kanon’s Aion 2 guide.</Text>
         <Link href="/source" fontSize="xs" color="wiki.muted">
           About the source
         </Link>

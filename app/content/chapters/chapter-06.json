@@ -6,22 +6,7 @@
     "summary": "Ten card types, skill and stat pools, seven sets, and regional launch limits.",
     "status": "source-uncertain",
     "sourceUrl": "https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/edit",
-    "qualifiers": [
-      "Source recommendations, first-person statements, and testing claims are Kanon’s. Figures are captured examples rather than universal costs or ideal builds.",
-      "Captured source update: 9/20/2026. Regional and unconfirmed details remain qualified as written."
-    ],
     "blocks": [
-      {
-        "id": "block-0511",
-        "sourceIds": ["block-0511"],
-        "kind": "heading",
-        "content": [
-          {
-            "text": "CH 6: ARCANA"
-          }
-        ],
-        "level": 2
-      },
       {
         "id": "block-0513",
         "sourceIds": ["block-0513"],
@@ -553,7 +538,6 @@
         "id": "block-0546",
         "sourceIds": ["block-0546"],
         "kind": "group",
-        "label": "Related source illustrations",
         "blocks": [
           {
             "id": "block-0546-figure-055",
@@ -589,18 +573,6 @@
             "emphasis": true
           }
         ]
-      },
-      {
-        "id": "context-block-0550",
-        "sourceIds": [],
-        "kind": "note",
-        "label": "Launch lineup",
-        "tone": "uncertain",
-        "content": [
-          {
-            "text": "The five-card list includes Chalice, Parchment, Compass, Bell and Mirror. This differs from the guide’s abbreviated “Compass ~ Mirror” range."
-          }
-        ]
       }
     ]
   },
@@ -611,10 +583,6 @@
     "summary": "Card enhancement, random improvements, Training Arcana, and imperfect EXP transfer.",
     "status": "source-uncertain",
     "sourceUrl": "https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/edit",
-    "qualifiers": [
-      "Source recommendations, first-person statements, and testing claims are Kanon’s. Figures are captured examples rather than universal costs or ideal builds.",
-      "Captured source update: 9/20/2026. Regional and unconfirmed details remain qualified as written."
-    ],
     "blocks": [
       {
         "id": "block-0552",
@@ -647,7 +615,6 @@
         "id": "block-0556",
         "sourceIds": ["block-0556"],
         "kind": "group",
-        "label": "Related source illustrations",
         "blocks": [
           {
             "id": "block-0556-figure-058",
@@ -694,18 +661,6 @@
             "text": "You can feed whatever Arcana Card you have equipped into a new one if the new one has better lines. However, when you feed it into the new card you will lose a % of the experience you pumped into your current one, the EXP does not transfer over 1:1 (it’s still often worth transferring). You also gain bonus experience for feeding the same type of Arcana Card."
           }
         ]
-      },
-      {
-        "id": "context-block-0563",
-        "sourceIds": [],
-        "kind": "note",
-        "label": "Unspecified transfer amounts",
-        "tone": "uncertain",
-        "content": [
-          {
-            "text": "The source does not give the EXP loss percentage or the same-type EXP bonus amount. The enhancement screenshots show both Pantheon stats improving alongside a random skill line."
-          }
-        ]
       }
     ]
   },
@@ -716,10 +671,6 @@
     "summary": "Transmutation, selected skill lines, crystal recipes, and progression priorities.",
     "status": "source-uncertain",
     "sourceUrl": "https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/edit",
-    "qualifiers": [
-      "Source recommendations, first-person statements, and testing claims are Kanon’s. Figures are captured examples rather than universal costs or ideal builds.",
-      "Captured source update: 9/20/2026. Regional and unconfirmed details remain qualified as written."
-    ],
     "blocks": [
       {
         "id": "block-0565",
@@ -830,18 +781,6 @@
             "text": " also won’t be available at launch)."
           }
         ]
-      },
-      {
-        "id": "context-block-0582",
-        "sourceIds": [],
-        "kind": "note",
-        "label": "Crafting scope",
-        "tone": "uncertain",
-        "content": [
-          {
-            "text": "The screenshots illustrate selected lines and individual recipes; their material and currency amounts are not universal four-line costs. The source explicitly says Scale costs double, without a complete cost schedule or release date."
-          }
-        ]
       }
     ]
   },
@@ -849,13 +788,9 @@
     "slug": "five-card-and-eight-card-set-setups",
     "title": "Five-card and eight-card set setups",
     "category": "arcana",
-    "summary": "Five-card Pantheon priorities and alternatives, eight-card set effects, and unresolved Parchment membership.",
+    "summary": "Five-card Pantheon priorities and alternatives, and eight-card set effects.",
     "status": "source-uncertain",
     "sourceUrl": "https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/edit",
-    "qualifiers": [
-      "Source recommendations, first-person statements, and testing claims are Kanon’s. Figures are captured examples rather than universal costs or ideal builds.",
-      "Captured source update: 9/20/2026. Regional and unconfirmed details remain qualified as written."
-    ],
     "blocks": [
       {
         "id": "block-0584",
@@ -898,18 +833,6 @@
           },
           {
             "text": "At this stage there are only 2 Set Effects, both being less value than the Pantheon Stats attached to the cards so we prioritize the Pantheon Stats. Parchment and Compass can be from either set but try to have 2 Primal Vigor (gold color set) to pick up the 2-piece passive. In a perfect world we go the following but it’s not a big deal if your Parchment and Compass are swapped"
-          }
-        ]
-      },
-      {
-        "id": "context-block-0589",
-        "sourceIds": [],
-        "kind": "note",
-        "label": "Alternative card effects",
-        "tone": "uncertain",
-        "content": [
-          {
-            "text": "Parchment Life/Destiny and Compass Death/Freedom are alternatives, not simultaneous effects on one card. The earlier “Compass ~ Mirror” range does not match this full five-card list."
           }
         ]
       },
@@ -1482,18 +1405,6 @@
                           "content": [
                             {
                               "text": "Scale (Destruction, Destiny)"
-                            }
-                          ]
-                        },
-                        {
-                          "id": "context-block-0629",
-                          "sourceIds": [],
-                          "kind": "note",
-                          "label": "Eight cards, nine listed memberships",
-                          "tone": "uncertain",
-                          "content": [
-                            {
-                              "text": "The guide lists four Punishing Overture and five Protected Soul memberships, with Parchment in both lists. The screenshot shows eight equipped cards, one Parchment, and empty Dice and Lantern slots. The intended set allocation remains unclear."
                             }
                           ]
                         }

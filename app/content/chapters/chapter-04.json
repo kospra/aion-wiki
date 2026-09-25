@@ -6,22 +6,7 @@
     "summary": "Active skill levels, Specialty perk options and slots, and regional build priorities.",
     "status": "source-uncertain",
     "sourceUrl": "https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/edit",
-    "qualifiers": [
-      "Source recommendations and first-person statements are Kanon’s. Captured update: 9/20/2026; Global changes were not all confirmed.",
-      "KR targets are dated to the Chapter 1 level 50 expansion. The source predicts fewer Arcana cards at Global launch."
-    ],
     "blocks": [
-      {
-        "id": "block-0365",
-        "sourceIds": ["block-0365"],
-        "kind": "heading",
-        "content": [
-          {
-            "text": "CH 4: SKILLS "
-          }
-        ],
-        "level": 2
-      },
       {
         "id": "block-0367",
         "sourceIds": ["block-0367"],
@@ -76,7 +61,6 @@
         "id": "block-0372",
         "sourceIds": ["block-0372"],
         "kind": "group",
-        "label": "Related source illustrations",
         "blocks": [
           {
             "id": "block-0372-figure-022",
@@ -204,7 +188,7 @@
             "text": "Chapter 6 - Arcana",
             "emphasis": true,
             "underline": true,
-            "href": "/articles/arcana-card-types-and-stat-pools#block-0511"
+            "href": "/articles/arcana-card-types-and-stat-pools"
           },
           {
             "text": " section below",
@@ -224,10 +208,6 @@
     "summary": "Passive skill upgrades and the source’s current KR endgame priorities.",
     "status": "source-backed",
     "sourceUrl": "https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/edit",
-    "qualifiers": [
-      "Source recommendations and first-person statements are Kanon’s. Captured update: 9/20/2026; Global changes were not all confirmed.",
-      "The level 25–30 passive examples describe the source’s current KR endgame."
-    ],
     "blocks": [
       {
         "id": "block-0385",
@@ -281,10 +261,6 @@
     "summary": "Stigma skills, all unlocked perks, shard sources, and level allocation examples.",
     "status": "source-uncertain",
     "sourceUrl": "https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/edit",
-    "qualifiers": [
-      "Source recommendations and first-person statements are Kanon’s. Captured update: 9/20/2026; Global changes were not all confirmed.",
-      "The source says Global may allow fewer equipped Stigma skills; level 25 upgrades follow the Chapter 1 level 50 update."
-    ],
     "blocks": [
       {
         "id": "block-0392",

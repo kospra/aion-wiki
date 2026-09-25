@@ -20,7 +20,6 @@ import coverageA from '../../content/coverage/group-a.json' with { type: 'json' 
 import coverageB from '../../content/coverage/group-b.json' with { type: 'json' };
 import coverageC from '../../content/coverage/group-c.json' with { type: 'json' };
 import { normalizeSourceUrl, walkBlocks } from './reader';
-import { buildPassageLabels } from './passage-labels';
 import type { CoverageEntry, Figure, GuidePage } from './types';
 
 const chapterPages = [
@@ -66,7 +65,6 @@ const primary = new Map(
 );
 const sourceDocument = overview.sourceUrl;
 export const sourceLinks: Record<string, string> = {};
-export const sourceLinkNotes: Record<string, string> = {};
 const blockIds = new Map(
   pages.map((page) => [
     page.slug,
@@ -84,7 +82,15 @@ function pageForSource(sourceId: string): string | undefined {
       number >= sourceNumber(firstBlock) && number <= sourceNumber(lastBlock),
   )?.slug;
 }
+const omitted = new Map(
+  coverage
+    .filter((item) => item.disposition === 'omitted' && item.pageSlug)
+    .map((item) => [item.sourceId, item.pageSlug!]),
+);
+
 function destination(sourceId: string): string {
+  const omittedPage = omitted.get(sourceId);
+  if (omittedPage) return pagePath(omittedPage);
   const mapped = primary.get(sourceId);
   if (mapped) {
     const blockId = mapped.blockIds.find((id) =>
@@ -124,11 +130,7 @@ for (const block of sourceReferences.blocks) {
   for (const href of block.links) {
     const normalized = normalizeSourceUrl(href);
     if (href.startsWith('#')) {
-      if (!sourceLinks[href]) {
-        sourceLinks[href] = `${sourceDocument}${href}`;
-        sourceLinkNotes[href] =
-          'This source anchor has no unambiguous destination in the captured guide. Open it in the original document.';
-      }
+      if (!sourceLinks[href]) sourceLinks[href] = `${sourceDocument}${href}`;
     } else if (normalized) {
       const parsed = new URL(normalized);
       const sameDocument =
@@ -137,12 +139,6 @@ for (const block of sourceReferences.blocks) {
       const target =
         sameDocument && parsed.hash ? sourceLinks[parsed.hash] : undefined;
       sourceLinks[href] = target ?? normalized;
-      if (sameDocument && parsed.hash && !target) {
-        sourceLinkNotes[href] =
-          'This source anchor has no unambiguous destination in the captured guide. Open it in the original document.';
-      }
     }
   }
 }
-
-export const sourcePassageLabels = buildPassageLabels(pages, pagePath);

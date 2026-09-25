@@ -1,11 +1,10 @@
 [
   {
     "sourceId": "block-0511",
-    "disposition": "rendered",
-    "primary": {
-      "pageSlug": "arcana-card-types-and-stat-pools",
-      "blockIds": ["block-0511"]
-    }
+    "disposition": "omitted",
+    "omission": "chapter-title",
+    "pageSlug": "arcana-card-types-and-stat-pools",
+    "reason": "Google Docs chapter title; the article header shows the chapter."
   },
   {
     "sourceId": "block-0512",
@@ -879,11 +878,10 @@
   },
   {
     "sourceId": "block-0632",
-    "disposition": "rendered",
-    "primary": {
-      "pageSlug": "shared-boards-and-tile-priorities",
-      "blockIds": ["block-0632"]
-    }
+    "disposition": "omitted",
+    "omission": "chapter-title",
+    "pageSlug": "shared-boards-and-tile-priorities",
+    "reason": "Google Docs chapter title; the article header shows the chapter."
   },
   {
     "sourceId": "block-0633",
@@ -1252,11 +1250,10 @@
   },
   {
     "sourceId": "block-0685",
-    "disposition": "rendered",
-    "primary": {
-      "pageSlug": "insight-levels-and-efficient-analysis",
-      "blockIds": ["block-0685"]
-    }
+    "disposition": "omitted",
+    "omission": "chapter-title",
+    "pageSlug": "insight-levels-and-efficient-analysis",
+    "reason": "Google Docs chapter title; the article header shows the chapter."
   },
   {
     "sourceId": "block-0686",
@@ -1954,11 +1951,10 @@
   },
   {
     "sourceId": "block-0781",
-    "disposition": "rendered",
-    "primary": {
-      "pageSlug": "wing-effects-and-enhancement",
-      "blockIds": ["block-0781"]
-    }
+    "disposition": "omitted",
+    "omission": "chapter-title",
+    "pageSlug": "wing-effects-and-enhancement",
+    "reason": "Google Docs chapter title; the article header shows the chapter."
   },
   {
     "sourceId": "block-0782",
@@ -3669,11 +3665,10 @@
   },
   {
     "sourceId": "block-1010",
-    "disposition": "rendered",
-    "primary": {
-      "pageSlug": "closet-stats-and-outfit-calculation",
-      "blockIds": ["block-1010"]
-    }
+    "disposition": "omitted",
+    "omission": "chapter-title",
+    "pageSlug": "closet-stats-and-outfit-calculation",
+    "reason": "Google Docs chapter title; the article header shows the chapter."
   },
   {
     "sourceId": "block-1011",
@@ -3770,11 +3765,10 @@
   },
   {
     "sourceId": "block-1026",
-    "disposition": "rendered",
-    "primary": {
-      "pageSlug": "stat-efficiency-and-diminishing-returns",
-      "blockIds": ["block-1026"]
-    }
+    "disposition": "omitted",
+    "omission": "chapter-title",
+    "pageSlug": "stat-efficiency-and-diminishing-returns",
+    "reason": "Google Docs chapter title; the article header shows the chapter."
   },
   {
     "sourceId": "block-1027",
@@ -3815,11 +3809,10 @@
   },
   {
     "sourceId": "block-1032",
-    "disposition": "rendered",
-    "primary": {
-      "pageSlug": "stat-efficiency-and-diminishing-returns",
-      "blockIds": ["block-1032"]
-    }
+    "disposition": "omitted",
+    "omission": "separator",
+    "pageSlug": "stat-efficiency-and-diminishing-returns",
+    "reason": "Google Docs divider line; article spacing separates sections."
   },
   {
     "sourceId": "block-1033",
@@ -5510,11 +5503,10 @@
   },
   {
     "sourceId": "block-1263",
-    "disposition": "rendered",
-    "primary": {
-      "pageSlug": "damage-formula-and-pure-attack",
-      "blockIds": ["block-1263"]
-    }
+    "disposition": "omitted",
+    "omission": "separator",
+    "pageSlug": "damage-formula-and-pure-attack",
+    "reason": "Google Docs divider line; article spacing separates sections."
   },
   {
     "sourceId": "block-1264",
@@ -5528,11 +5520,10 @@
   },
   {
     "sourceId": "block-1266",
-    "disposition": "rendered",
-    "primary": {
-      "pageSlug": "class-passives",
-      "blockIds": ["block-1266"]
-    }
+    "disposition": "omitted",
+    "omission": "chapter-title",
+    "pageSlug": "class-passives",
+    "reason": "Google Docs chapter title; the article header shows the chapter."
   },
   {
     "sourceId": "block-1267",

@@ -93,11 +93,10 @@
   },
   {
     "sourceId": "block-0014",
-    "disposition": "rendered",
-    "primary": {
-      "pageSlug": "about-the-source-and-author",
-      "blockIds": ["block-0014"]
-    }
+    "disposition": "omitted",
+    "omission": "document-navigation",
+    "pageSlug": "about-the-source-and-author",
+    "reason": "Instruction for navigating the Google Doc; the wiki has its own navigation."
   },
   {
     "sourceId": "block-0015",
@@ -175,11 +174,10 @@
   },
   {
     "sourceId": "block-0025",
-    "disposition": "rendered",
-    "primary": {
-      "pageSlug": "about-the-source-and-author",
-      "blockIds": ["block-0025"]
-    }
+    "disposition": "omitted",
+    "omission": "separator",
+    "pageSlug": "about-the-source-and-author",
+    "reason": "Google Docs divider line; article spacing separates sections."
   },
   {
     "sourceId": "block-0026",
@@ -188,11 +186,10 @@
   },
   {
     "sourceId": "block-0027",
-    "disposition": "rendered",
-    "primary": {
-      "pageSlug": "gear-anatomy-and-stat-layers",
-      "blockIds": ["block-0027"]
-    }
+    "disposition": "omitted",
+    "omission": "chapter-title",
+    "pageSlug": "gear-anatomy-and-stat-layers",
+    "reason": "Google Docs chapter title; the article header shows the chapter."
   },
   {
     "sourceId": "block-0028",
@@ -217,11 +214,10 @@
   },
   {
     "sourceId": "block-0031",
-    "disposition": "rendered",
-    "primary": {
-      "pageSlug": "gear-anatomy-and-stat-layers",
-      "blockIds": ["block-0031"]
-    }
+    "disposition": "omitted",
+    "omission": "separator",
+    "pageSlug": "gear-anatomy-and-stat-layers",
+    "reason": "Google Docs divider line; article spacing separates sections."
   },
   {
     "sourceId": "block-0032",
@@ -811,7 +807,8 @@
     "primary": {
       "pageSlug": "pantheon-stats-and-statues",
       "blockIds": ["block-0110"]
-    }
+    },
+    "strayText": true
   },
   {
     "sourceId": "block-0111",
@@ -1024,11 +1021,10 @@
   },
   {
     "sourceId": "block-0139",
-    "disposition": "rendered",
-    "primary": {
-      "pageSlug": "weapon-and-guard",
-      "blockIds": ["block-0139"]
-    }
+    "disposition": "omitted",
+    "omission": "chapter-title",
+    "pageSlug": "weapon-and-guard",
+    "reason": "Google Docs chapter title; the article header shows the chapter."
   },
   {
     "sourceId": "block-0140",
@@ -1707,11 +1703,10 @@
   },
   {
     "sourceId": "block-0230",
-    "disposition": "rendered",
-    "primary": {
-      "pageSlug": "stat-line-rerolling-strategy",
-      "blockIds": ["block-0230"]
-    }
+    "disposition": "omitted",
+    "omission": "chapter-title",
+    "pageSlug": "stat-line-rerolling-strategy",
+    "reason": "Google Docs chapter title; the article header shows the chapter."
   },
   {
     "sourceId": "block-0231",
@@ -2697,11 +2692,10 @@
   },
   {
     "sourceId": "block-0365",
-    "disposition": "rendered",
-    "primary": {
-      "pageSlug": "active-skills-and-specialty-perks",
-      "blockIds": ["block-0365"]
-    }
+    "disposition": "omitted",
+    "omission": "chapter-title",
+    "pageSlug": "active-skills-and-specialty-perks",
+    "reason": "Google Docs chapter title; the article header shows the chapter."
   },
   {
     "sourceId": "block-0366",

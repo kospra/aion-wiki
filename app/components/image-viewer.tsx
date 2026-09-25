@@ -29,7 +29,7 @@ export function ImageViewer({ figure }: { figure: Figure }): React.JSX.Element {
           position="relative"
           maxW="100%"
           width="fit-content"
-          p="0"
+          p="2"
           bg="wiki.surface"
           borderWidth="1px"
           borderColor="wiki.border"
@@ -96,7 +96,7 @@ export function ImageViewer({ figure }: { figure: Figure }): React.JSX.Element {
             overflow="hidden"
             _motionReduce={{ animation: 'none' }}
           >
-            <Dialog.Title srOnly>{figure.caption}</Dialog.Title>
+            <Dialog.Title srOnly>{figure.alt}</Dialog.Title>
             <Box display="flex" justifyContent="flex-end" p="2" flexShrink="0">
               <Dialog.CloseTrigger asChild position="static">
                 <CloseButton

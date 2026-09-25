@@ -3,26 +3,10 @@
     "slug": "stat-efficiency-and-diminishing-returns",
     "title": "Stat efficiency and diminishing returns",
     "category": "how-stats-work",
-    "summary": "Aion Research Lab attribution, conditional KR values, and Double Chance examples.",
+    "summary": "How stat value diminishes, KR reference values, and Double Chance examples.",
     "status": "source-uncertain",
     "sourceUrl": "https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/edit",
-    "qualifiers": [
-      "Source recommendations, first-person statements, and testing claims are Kanon’s. Figures are captured examples rather than universal costs or ideal builds.",
-      "Captured source update: 9/20/2026. Regional and unconfirmed details remain qualified as written.",
-      "Efficiency values assume an ideal KR end-game build at the start of Season 1, level 50 and Lava Heart armor, including support buffs. Global launch, future KR, class buffs and diminishing returns can change these values."
-    ],
     "blocks": [
-      {
-        "id": "block-1026",
-        "sourceIds": ["block-1026"],
-        "kind": "heading",
-        "content": [
-          {
-            "text": "CH 11: HOW STATS WORK (DAMAGE FORMULA)"
-          }
-        ],
-        "level": 2
-      },
       {
         "id": "block-1028",
         "sourceIds": ["block-1028"],
@@ -70,29 +54,6 @@
             "emphasis": true,
             "underline": true,
             "href": "https://www.youtube.com/@%EC%95%84%EC%9D%B4%EC%98%A8%EC%97%B0%EA%B5%AC%EC%86%8C"
-          }
-        ]
-      },
-      {
-        "id": "context-block-1031",
-        "sourceIds": [],
-        "kind": "note",
-        "label": "Source attribution",
-        "tone": "context",
-        "content": [
-          {
-            "text": "Kanon credits Aion Research Lab and his friends for these equations. The research is ongoing, and the testing claims are his."
-          }
-        ]
-      },
-      {
-        "id": "block-1032",
-        "sourceIds": ["block-1032"],
-        "kind": "paragraph",
-        "content": [
-          {
-            "text": "—",
-            "emphasis": true
           }
         ]
       },
@@ -554,18 +515,6 @@
         ]
       },
       {
-        "id": "context-block-1071",
-        "sourceIds": [],
-        "kind": "note",
-        "label": "Example assumptions",
-        "tone": "uncertain",
-        "content": [
-          {
-            "text": "The chapter does not explain the Korean passive shorthand. The support buff and boss resistance assumptions apply to this example."
-          }
-        ]
-      },
-      {
         "id": "block-1072",
         "sourceIds": ["block-1072"],
         "kind": "paragraph",
@@ -723,14 +672,9 @@
     "slug": "offensive-stat-values-and-attack-comparisons",
     "title": "Offensive stat values and Attack comparisons",
     "category": "how-stats-work",
-    "summary": "Conditional KR offensive-stat efficiencies, formulas, and Attack comparisons.",
+    "summary": "What each offensive stat is worth, with formulas and Attack comparisons.",
     "status": "source-uncertain",
     "sourceUrl": "https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/edit",
-    "qualifiers": [
-      "Source recommendations, first-person statements, and testing claims are Kanon’s. Figures are captured examples rather than universal costs or ideal builds.",
-      "Captured source update: 9/20/2026. Regional and unconfirmed details remain qualified as written.",
-      "Efficiency values assume an ideal KR end-game build at the start of Season 1, level 50 and Lava Heart armor, including support buffs. Global launch, future KR, class buffs and diminishing returns can change these values."
-    ],
     "blocks": [
       {
         "id": "block-1084",
@@ -909,18 +853,6 @@
                     "kind": "formula",
                     "expression": "[(Pure Attack × Weapon Damage Boost) + Attack Bonus] × Attack Power Increase %] + PvE Attack + Boss Attack]",
                     "explanation": []
-                  },
-                  {
-                    "id": "context-block-1099",
-                    "sourceIds": [],
-                    "kind": "note",
-                    "label": "Incomplete formula",
-                    "tone": "uncertain",
-                    "content": [
-                      {
-                        "text": "The formula has unmatched brackets and does not fully distinguish displayed percentages from multipliers."
-                      }
-                    ]
                   }
                 ]
               ]
@@ -1091,18 +1023,6 @@
                     "kind": "formula",
                     "expression": "Formula:[(1.5+Crit Damage%−Boss Crit Damage Resistance%)×{(Guaranteed Crit Ratio%)+(1−Guaranteed Crit Ratio%)×(Critical Hit Chance%)}+(1−Guaranteed Crit Ratio%)×(1−Critical Hit Chance%)] / [(1.5+Crit Damage%+1%−Boss Crit Damage Resistance%)×{(Guaranteed Crit Ratio%)+(1−Guaranteed Crit Ratio%)×(Critical Hit Chance%)}+(1−Guaranteed Crit Ratio%)×(1−Critical Hit Chance%)]​",
                     "explanation": []
-                  },
-                  {
-                    "id": "context-block-1112",
-                    "sourceIds": [],
-                    "kind": "note",
-                    "label": "Unresolved ratio direction",
-                    "tone": "uncertain",
-                    "content": [
-                      {
-                        "text": "The formula divides old expected damage by new expected damage, giving a ratio below one for a positive bonus. It supplies no inversion or subtract-one step, so the intended final calculation is unclear."
-                      }
-                    ]
                   }
                 ]
               ]
@@ -1155,18 +1075,6 @@
                 },
                 {
                   "text": "stat that affects Pure Attack (very few, if not any, know about this, and yes it’s very weird, but tests have proven this to be real)"
-                }
-              ]
-            },
-            {
-              "id": "context-block-1116",
-              "sourceIds": [],
-              "kind": "note",
-              "label": "Testing limitation",
-              "tone": "uncertain",
-              "content": [
-                {
-                  "text": "The hidden Perfect effect is an approximate testing claim from the guide, limited to Pure Attack. No independent dataset is provided."
                 }
               ]
             }
@@ -1366,7 +1274,7 @@
                 {
                   "text": "here",
                   "underline": true,
-                  "href": "/articles/wing-effects-and-enhancement#block-0781"
+                  "href": "/articles/wing-effects-and-enhancement"
                 },
                 {
                   "text": ". This is likely to be adjusted somehow someway before global launch"
@@ -1617,18 +1525,6 @@
                         "text": ") × Attack Increase%"
                       }
                     ]
-                  },
-                  {
-                    "id": "context-block-1152",
-                    "sourceIds": [],
-                    "kind": "note",
-                    "label": "Unconfirmed Multi-hit placement",
-                    "tone": "uncertain",
-                    "content": [
-                      {
-                        "text": "The partial formula is unresolved. The guide considers Multi-hit both with and outside Attack Bonus, and outside Attack Increase."
-                      }
-                    ]
                   }
                 ]
               ]
@@ -1716,18 +1612,6 @@
         ]
       },
       {
-        "id": "context-block-1159",
-        "sourceIds": [],
-        "kind": "note",
-        "label": "Video timestamp mismatch",
-        "tone": "uncertain",
-        "content": [
-          {
-            "text": "The video link opens at 6:17 (377 seconds), while the accompanying note says 1:16. The intended timestamp is unclear."
-          }
-        ]
-      },
-      {
         "id": "block-1160",
         "sourceIds": ["block-1160"],
         "kind": "paragraph",
@@ -1769,14 +1653,9 @@
     "slug": "multi-hit",
     "title": "Multi-hit",
     "category": "how-stats-work",
-    "summary": "Extra-hit damage, the source estimate, and unconfirmed formula placement.",
+    "summary": "How Multi-hit adds extra hits and roughly how much it is worth.",
     "status": "source-uncertain",
     "sourceUrl": "https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/edit",
-    "qualifiers": [
-      "Source recommendations, first-person statements, and testing claims are Kanon’s. Figures are captured examples rather than universal costs or ideal builds.",
-      "Captured source update: 9/20/2026. Regional and unconfirmed details remain qualified as written.",
-      "Efficiency values assume an ideal KR end-game build at the start of Season 1, level 50 and Lava Heart armor, including support buffs. Global launch, future KR, class buffs and diminishing returns can change these values."
-    ],
     "blocks": [
       {
         "id": "block-1163",
@@ -1853,18 +1732,6 @@
             "highlight": "#f8f9fa"
           }
         ]
-      },
-      {
-        "id": "context-block-1168",
-        "sourceIds": [],
-        "kind": "note",
-        "label": "Unconfirmed Multi-hit",
-        "tone": "uncertain",
-        "content": [
-          {
-            "text": "The source’s simplified explanation and KR efficiency estimate do not settle the exact value or placement. Both Attack Bonus and Attack Increase placement questions remain open."
-          }
-        ]
       }
     ]
   },
@@ -1872,14 +1739,9 @@
     "slug": "power-shards",
     "title": "Power Shards",
     "category": "how-stats-work",
-    "summary": "Raw Power Shard tooltips versus estimated effective increases in the source.",
+    "summary": "Power Shard tooltip values versus their estimated effective damage increase.",
     "status": "source-uncertain",
     "sourceUrl": "https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/edit",
-    "qualifiers": [
-      "Source recommendations, first-person statements, and testing claims are Kanon’s. Figures are captured examples rather than universal costs or ideal builds.",
-      "Captured source update: 9/20/2026. Regional and unconfirmed details remain qualified as written.",
-      "Efficiency values assume an ideal KR end-game build at the start of Season 1, level 50 and Lava Heart armor, including support buffs. Global launch, future KR, class buffs and diminishing returns can change these values."
-    ],
     "blocks": [
       {
         "id": "block-1171",
@@ -1930,18 +1792,6 @@
                   "text": "(Yellow) Superior Power Shard = 8.9% more damage (4.05% more than Regulars)"
                 }
               ]
-            },
-            {
-              "id": "context-block-1175",
-              "sourceIds": [],
-              "kind": "note",
-              "label": "Tooltip versus effective damage",
-              "tone": "uncertain",
-              "content": [
-                {
-                  "text": "The tooltips show 5% and 10%; the guide estimates effective gains of 4.65% and 8.9%. Its “4.05% more” comparison is approximately the relative gain (~4.06%), not the 4.25-percentage-point difference."
-                }
-              ]
             }
           ]
         ]
@@ -1950,7 +1800,6 @@
         "id": "block-1176",
         "sourceIds": ["block-1176"],
         "kind": "group",
-        "label": "Related source illustrations",
         "blocks": [
           {
             "id": "block-1176-figure-088",
@@ -1972,14 +1821,9 @@
     "slug": "accuracy-block-and-critical-hit",
     "title": "Accuracy Block and Critical Hit",
     "category": "how-stats-work",
-    "summary": "Accuracy, Block, Critical Hit and resistance, including the cap and graph discrepancy.",
+    "summary": "Accuracy, Block, Critical Hit and their resistances, including the Accuracy cap.",
     "status": "source-uncertain",
     "sourceUrl": "https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/edit",
-    "qualifiers": [
-      "Source recommendations, first-person statements, and testing claims are Kanon’s. Figures are captured examples rather than universal costs or ideal builds.",
-      "Captured source update: 9/20/2026. Regional and unconfirmed details remain qualified as written.",
-      "Efficiency values assume an ideal KR end-game build at the start of Season 1, level 50 and Lava Heart armor, including support buffs. Global launch, future KR, class buffs and diminishing returns can change these values."
-    ],
     "blocks": [
       {
         "id": "block-1178",
@@ -2075,18 +1919,6 @@
                     "content": [
                       {
                         "text": "This allows us to calculate the  6% ~ 7% per 100 (6.66…%*1,200 = 80%)"
-                      }
-                    ]
-                  },
-                  {
-                    "id": "context-block-1185",
-                    "sourceIds": [],
-                    "kind": "note",
-                    "label": "Graph and arithmetic qualification",
-                    "tone": "uncertain",
-                    "content": [
-                      {
-                        "text": "The graph annotates X=1,200 at approximately 79%, while the prose calls a 1,200 difference the 80% cap. The “6.66…%*1,200 = 80%” line omits the per-100 scale; the curve is nonlinear, so the average is not a constant slope. No exact curve equation is given."
                       }
                     ]
                   }
@@ -2188,14 +2020,9 @@
     "slug": "defense-and-penetration",
     "title": "Defense and Penetration",
     "category": "how-stats-work",
-    "summary": "Defense and Penetration with the source’s PVE and PVP worked example.",
+    "summary": "Defense and Penetration, with PVE and PVP worked examples.",
     "status": "source-uncertain",
     "sourceUrl": "https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/edit",
-    "qualifiers": [
-      "Source recommendations, first-person statements, and testing claims are Kanon’s. Figures are captured examples rather than universal costs or ideal builds.",
-      "Captured source update: 9/20/2026. Regional and unconfirmed details remain qualified as written.",
-      "Efficiency values assume an ideal KR end-game build at the start of Season 1, level 50 and Lava Heart armor, including support buffs. Global launch, future KR, class buffs and diminishing returns can change these values."
-    ],
     "blocks": [
       {
         "id": "block-1196",
@@ -2218,18 +2045,6 @@
         "content": [
           {
             "text": "Defense reduces Damage taken by a %. Penetration subtracts directly from Defense. Penetration is overall a very low value stat due to how Defense works.  "
-          }
-        ]
-      },
-      {
-        "id": "context-block-1198",
-        "sourceIds": [],
-        "kind": "note",
-        "label": "Defense wording ambiguity",
-        "tone": "uncertain",
-        "content": [
-          {
-            "text": "Although the heading says damage is reduced “by a %”, the worked PVE and PVP examples subtract a fraction of the Defense value. A separate multiplicative reduction is not established."
           }
         ]
       },
@@ -2335,14 +2150,9 @@
     "slug": "damage-tolerance-endurance-and-combat-speed",
     "title": "Damage Tolerance Endurance and Combat Speed",
     "category": "how-stats-work",
-    "summary": "Damage Tolerance, Endurance probability, and source Combat Speed testing claims.",
+    "summary": "Damage Tolerance, Endurance, and Combat Speed test results.",
     "status": "source-uncertain",
     "sourceUrl": "https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/edit",
-    "qualifiers": [
-      "Source recommendations, first-person statements, and testing claims are Kanon’s. Figures are captured examples rather than universal costs or ideal builds.",
-      "Captured source update: 9/20/2026. Regional and unconfirmed details remain qualified as written.",
-      "Efficiency values assume an ideal KR end-game build at the start of Season 1, level 50 and Lava Heart armor, including support buffs. Global launch, future KR, class buffs and diminishing returns can change these values."
-    ],
     "blocks": [
       {
         "id": "block-1209",
@@ -2362,18 +2172,6 @@
         "content": [
           {
             "text": "Damage Tolerance and Endurance are both highly effective Defensive stats. Damage Tolerance directly reduces Damage Boost against you while Endurance reduces your final damage taken by half."
-          }
-        ]
-      },
-      {
-        "id": "context-block-1211",
-        "sourceIds": [],
-        "kind": "note",
-        "label": "Endurance is a chance",
-        "tone": "context",
-        "content": [
-          {
-            "text": "The source later clarifies that the displayed Endurance percentage is the chance to take half damage, not a permanent halving of every hit."
           }
         ]
       },
@@ -2479,18 +2277,6 @@
             "highlight": "#f8f9fa"
           }
         ]
-      },
-      {
-        "id": "context-block-1220",
-        "sourceIds": [],
-        "kind": "note",
-        "label": "Testing scope",
-        "tone": "uncertain",
-        "content": [
-          {
-            "text": "The boss resistance, tolerance, and ping/FPS comparisons are claims from the guide’s tests. They depend on the named classes and possible Spiritmaster exception, rather than universal measured constants."
-          }
-        ]
       }
     ]
   },
@@ -2498,14 +2284,9 @@
     "slug": "damage-formula-and-pure-attack",
     "title": "Damage formula and Pure Attack",
     "category": "how-stats-work",
-    "summary": "The literal source damage formula, unsettled Multi-hit placement, and Pure Attack tiers.",
+    "summary": "The full damage formula, where Multi-hit may fit, and Pure Attack tiers.",
     "status": "source-uncertain",
     "sourceUrl": "https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/edit",
-    "qualifiers": [
-      "Source recommendations, first-person statements, and testing claims are Kanon’s. Figures are captured examples rather than universal costs or ideal builds.",
-      "Captured source update: 9/20/2026. Regional and unconfirmed details remain qualified as written.",
-      "Efficiency values assume an ideal KR end-game build at the start of Season 1, level 50 and Lava Heart armor, including support buffs. Global launch, future KR, class buffs and diminishing returns can change these values."
-    ],
     "blocks": [
       {
         "id": "block-1224",
@@ -2534,18 +2315,6 @@
         "kind": "formula",
         "expression": "[[[((Pure Attack × Weapon Damage Boost) × Multi-Hit × Power Shard) + Attack Bonus) × Attack Increase % + PvE Attack Power + Boss Attack Power + Species Attack Power + Front/Back Attack Power] × Skill Coefficient] − [(Defense − Penetration) × 0.1]] × (Damage Boost + PvE Damage Boost + Boss Damage Boost + Species Damage Boost) × Critical Damage Boost × Double × Front/Back Damage Boost × Skill Additional Damage = Final Damage",
         "explanation": []
-      },
-      {
-        "id": "context-block-1226",
-        "sourceIds": [],
-        "kind": "note",
-        "label": "Unresolved formula",
-        "tone": "uncertain",
-        "content": [
-          {
-            "text": "The formula has unmatched brackets and unclear percentage conventions. Multi-hit’s position is unconfirmed, so a reliable calculation is not yet possible."
-          }
-        ]
       },
       {
         "id": "block-1228",
@@ -2746,7 +2515,7 @@
                         "text": "Further Detail",
                         "strong": true,
                         "underline": true,
-                        "href": "/articles/closet-stats-and-outfit-calculation#block-1010"
+                        "href": "/articles/closet-stats-and-outfit-calculation"
                       }
                     ]
                   }
@@ -2938,16 +2707,6 @@
         "content": [
           {
             "text": "Tier 3 stats are the worst considering they do not fall under “Pure Attack” and only get added to PVE/Boss Attack upon condition. Species being specific to mob type."
-          }
-        ]
-      },
-      {
-        "id": "block-1263",
-        "sourceIds": ["block-1263"],
-        "kind": "paragraph",
-        "content": [
-          {
-            "text": "—"
           }
         ]
       }

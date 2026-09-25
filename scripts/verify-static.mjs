@@ -1,4 +1,3 @@
-import { readerFigure } from '../app/content/reader-figure.ts';
 /* global structuredClone, URL */
 import console from 'node:console';
 import process from 'node:process';
@@ -213,18 +212,6 @@ export async function verifyStatic(root = 'build/client', suppliedInput) {
     if (page) {
       hasText(main.querySelector('h1'), page.title, route);
       hasText(main.querySelector('article > header'), page.summary, route);
-      const status = {
-        'source-backed': 'Source backed',
-        'source-uncertain': 'Source context and uncertainty',
-        'source-pending': 'Source pending',
-      };
-      hasText(
-        main.querySelector('[data-source-status]'),
-        status[page.status],
-        route,
-      );
-      for (const qualifier of page.qualifiers)
-        hasText(main.querySelector('[data-source-status]'), qualifier, route);
       assert.equal(
         main.querySelector('[data-source-credit] a').getAttribute('href'),
         page.sourceUrl,
@@ -268,12 +255,6 @@ export async function verifyStatic(root = 'build/client', suppliedInput) {
           assert.equal(element.tagName, `H${block.level}`);
         if (block.kind === 'note')
           hasText(element.querySelector('strong'), block.label, block.id);
-        if (block.kind === 'group')
-          hasText(
-            element.querySelector('[data-guide-group-label]'),
-            block.label,
-            block.id,
-          );
         if (block.kind === 'formula') {
           actual.expression = visibleText(element.querySelector('pre'));
           actual.explanation = renderedInline(element.querySelector('p'));
@@ -303,9 +284,7 @@ export async function verifyStatic(root = 'build/client', suppliedInput) {
           );
         }
         if (block.kind === 'figure') {
-          const figure = readerFigure(
-            input.figures.find((f) => f.id === block.figureId),
-          );
+          const figure = input.figures.find((f) => f.id === block.figureId);
           const rendered = element.querySelector('figure');
           assert.equal(rendered.id, figure.id);
           const img = rendered.querySelector('[data-guide-primary-image]');
@@ -320,72 +299,6 @@ export async function verifyStatic(root = 'build/client', suppliedInput) {
               String(value),
               `${figure.id}: ${name}`,
             );
-          hasText(
-            rendered.querySelector('figcaption'),
-            figure.caption,
-            figure.id,
-          );
-          const mappings = rendered.querySelectorAll(
-            '[data-guide-legend] > div',
-          );
-          assert.equal(mappings.length, figure.mappings.length);
-          figure.mappings.forEach((mapping, index) => {
-            for (const value of [mapping.label, mapping.meaning].filter(
-              Boolean,
-            ))
-              hasText(mappings[index].querySelector('dt'), value, figure.id);
-            if (mapping.color)
-              hasText(
-                mappings[index].querySelector('[data-guide-color-description]'),
-                mapping.color,
-                figure.id,
-              );
-            if (mapping.visualValue)
-              hasText(
-                mappings[index].querySelector('[data-guide-visual-value]'),
-                mapping.visualValue,
-                figure.id,
-              );
-            hasText(
-              mappings[index].querySelector('[data-guide-annotation-title]'),
-              mapping.meaning,
-              figure.id,
-            );
-            if (mapping.confidence !== 'confirmed')
-              hasText(mappings[index], mapping.confidence, figure.id);
-            assert.equal(
-              mappings[index].querySelectorAll('a').length,
-              mapping.textSourceIds.length,
-            );
-            mapping.textSourceIds.forEach((sourceId, linkIndex) => {
-              const primary = input.coverage.find(
-                (entry) => entry.sourceId === sourceId,
-              ).primary;
-              const owner = input.pages.find(
-                (entry) => entry.slug === primary.pageSlug,
-              );
-              const path =
-                owner.category === null ? '/source' : `/articles/${owner.slug}`;
-              assert.equal(
-                mappings[index]
-                  .querySelectorAll('a')
-                  .item(linkIndex)
-                  .getAttribute('href'),
-                `${path}#${primary.blockIds[0]}`,
-                `${figure.id}: annotation source destination`,
-              );
-            });
-          });
-          for (const [selector, values] of [
-            ['[data-guide-screenshot-facts] li', figure.screenshotOnly],
-            ['[data-guide-uncertainties] li', figure.uncertainties],
-          ]) {
-            const items = rendered.querySelectorAll(selector);
-            assert.equal(items.length, values.length);
-            values.forEach((value, index) =>
-              hasText(items[index], value, figure.id),
-            );
-          }
         }
       }
     }
