@@ -38,25 +38,26 @@ try {
     assert.equal(await search.inputValue(), '');
     assert.ok(await page.locator('main a[href^="/articles/"]').count());
 
-    if (width === 375) {
-      const toggle = page.getByRole('button', {
-        name: 'Browse chapters',
-        exact: true,
-      });
-      await toggle.focus();
-      await page.keyboard.press('Enter');
-      await page.locator('#chapter-navigation').waitFor({ state: 'visible' });
-      assert.equal(await toggle.getAttribute('aria-expanded'), 'true');
-    }
-    const chapter = page
-      .locator('header a[href^="/categories/"]:visible')
-      .first();
-    const destination = await chapter.getAttribute('href');
-    await chapter.click();
+    assert.equal(
+      await page.locator('header a[href^="/categories/"]').count(),
+      0,
+    );
+    const sourceLink = page
+      .locator('header')
+      .getByRole('link', { name: 'About the source' });
+    await sourceLink.click();
+    await page.waitForURL(baseUrl + '/source');
+    await page
+      .locator('header')
+      .getByRole('link', { name: 'Aion 2 Wiki' })
+      .click();
+    await page.waitForURL(baseUrl + '/');
+    await page.getByRole('searchbox', { name: 'Search articles' }).waitFor();
+    const article = page.locator('main a[href^="/articles/"]').first();
+    const destination = await article.getAttribute('href');
+    await article.click();
     await page.waitForURL(baseUrl + destination);
     await page.locator('main h1').waitFor({ state: 'visible' });
-    assert.ok(await page.locator('main a[href^="/articles/"]').count());
-
     // All-route content and assets are checked by verify:static.
     for (const route of [
       '/articles/gear-anatomy-and-stat-layers',

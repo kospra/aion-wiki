@@ -36,21 +36,6 @@ try {
     ),
     true,
   );
-  const browse = page.getByRole('button', { name: 'Browse chapters' });
-  await browse.click();
-  await noAnimation(
-    page.locator('[data-scope="collapsible"][data-part="content"]'),
-    'Mobile chapter navigation',
-  );
-  assert.equal(await browse.getAttribute('aria-expanded'), 'true');
-  await browse.click();
-  await page.waitForFunction(
-    () =>
-      document
-        .querySelector('header button[aria-expanded]')
-        ?.getAttribute('aria-expanded') === 'false',
-  );
-
   await page.goto(`${baseUrl}/articles/gear-anatomy-and-stat-layers`, {
     waitUntil: 'networkidle',
   });
