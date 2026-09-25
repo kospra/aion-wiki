@@ -124,7 +124,7 @@ export async function checkDeployment(baseUrl) {
   if (!category || !article || !figures[0]?.src)
     throw new Error('Missing source catalogue or figure contract');
 
-  await assertPage(base, '/', 'Aion 2 Wiki');
+  await assertPage(base, '/', 'Aion 2, explained.');
   for (const path of [
     `/categories/${category.slug}`,
     `/categories/${category.slug}/`,

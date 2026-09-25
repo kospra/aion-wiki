@@ -2,7 +2,12 @@ import { createSystem, defaultConfig, defineConfig } from '@chakra-ui/react';
 
 const config = defineConfig({
   globalCss: {
-    html: { bg: 'wiki.canvas', color: 'wiki.ink', colorScheme: 'light' },
+    html: {
+      bg: 'wiki.canvas',
+      color: 'wiki.ink',
+      colorScheme: 'dark',
+      scrollbarGutter: 'stable',
+    },
     body: {
       bg: 'wiki.canvas',
       color: 'wiki.ink',
@@ -18,34 +23,86 @@ const config = defineConfig({
         outlineOffset: '3px',
       },
     '[id]': { scrollMarginTop: '6' },
+    '*': {
+      scrollbarColor: '{colors.wiki.scrollbar} {colors.wiki.surface}',
+      scrollbarWidth: 'thin',
+      '@media (forced-colors: active)': { scrollbarColor: 'auto' },
+    },
+    '*::-webkit-scrollbar': { width: '10px', height: '10px' },
+    '*::-webkit-scrollbar-track': { bg: 'wiki.surface' },
+    '*::-webkit-scrollbar-thumb': {
+      bg: 'wiki.scrollbar',
+      borderRadius: 'full',
+      border: '2px solid',
+      borderColor: 'wiki.surface',
+    },
+    '*::-webkit-scrollbar-thumb:hover': { bg: 'wiki.muted' },
+    '*::-webkit-scrollbar-thumb:active': { bg: 'wiki.accent' },
+    'input[type="search"]::-webkit-search-cancel-button': { display: 'none' },
   },
   theme: {
+    tokens: {
+      fonts: {
+        body: { value: '"Inter Variable", Inter, system-ui, sans-serif' },
+        heading: { value: '"Inter Variable", Inter, system-ui, sans-serif' },
+      },
+    },
     semanticTokens: {
       colors: {
         wiki: {
-          canvas: { value: '#FAF9F6' },
-          surface: { value: '#FFFFFF' },
-          ink: { value: '#20242B' },
-          muted: { value: '#5F6672' },
-          accent: { value: '#4338CA' },
-          accentHover: { value: '#3730A3' },
-          accentSoft: { value: '#EEECFC' },
-          border: { value: '#E3E1DC' },
-          controlBorder: { value: '#85858F' },
+          // Sampled from the original screenshot annotation borders.
+          annotation: {
+            green: { value: '#22B14C' },
+            white: { value: '#FFFFFF' },
+            orange: { value: '#FF7F27' },
+            purple: { value: '#A349A4' },
+            red: { value: '#ED1C24' },
+            cyan: { value: '#00A2E8' },
+            gold: { value: '#FFC90E' },
+            yellow: { value: '#FFF200' },
+          },
+          canvas: { value: '#000000' },
+          surface: { value: '#111111' },
+          raised: { value: '#18181B' },
+          ink: { value: '#FAFAFA' },
+          muted: { value: '#A1A1AA' },
+          accent: { value: '#5EEAD4' },
+          accentHover: { value: '#99F6E4' },
+          accentSoft: { value: '#032726' },
+          accentBorder: { value: '#286A62' },
+          border: { value: '#27272A' },
+          controlBorder: { value: '#71717A' },
+          scrollbar: { value: '#52525B' },
         },
       },
     },
     textStyles: {
+      'wiki.eyebrow': {
+        value: {
+          fontSize: '0.75rem',
+          lineHeight: '1.55',
+          fontWeight: '500',
+          textTransform: 'uppercase',
+        },
+      },
+      'wiki.hero': {
+        value: {
+          fontSize: { base: '2.625rem', md: '3.5rem' },
+          lineHeight: '1.1',
+          fontWeight: '600',
+          letterSpacing: '-0.035em',
+        },
+      },
       'wiki.body': {
         value: {
           fontSize: { base: '1.0625rem', md: '1.125rem' },
-          lineHeight: '1.7',
+          lineHeight: '1.65',
           fontWeight: '400',
         },
       },
       'wiki.title': {
         value: {
-          fontSize: { base: '1.875rem', md: '2.5rem' },
+          fontSize: { base: '2.25rem', md: '3rem' },
           lineHeight: '1.15',
           fontWeight: '600',
           letterSpacing: '-0.035em',
@@ -57,6 +114,14 @@ const config = defineConfig({
           lineHeight: '1.3',
           fontWeight: '600',
           letterSpacing: '-0.02em',
+        },
+      },
+      'wiki.annotationTitle': {
+        value: {
+          fontSize: { base: '1.125rem', md: '1.25rem' },
+          lineHeight: '1.4',
+          fontWeight: '600',
+          letterSpacing: '-0.01em',
         },
       },
       'wiki.label': {
@@ -71,9 +136,49 @@ const config = defineConfig({
         value: { fontSize: '0.875rem', lineHeight: '1.6', fontWeight: '400' },
       },
     },
+    layerStyles: {
+      'wiki.navRow': {
+        value: {
+          display: 'flex',
+          alignItems: 'center',
+          gap: '2',
+          width: 'full',
+          minH: '14',
+          px: '3',
+          py: '2',
+          borderRadius: 'lg',
+          borderWidth: '1px',
+          fontSize: '0.8125rem',
+          lineHeight: '1.5',
+          textDecoration: 'none',
+          _hover: {
+            bg: 'wiki.raised',
+            color: 'wiki.accent',
+            textDecoration: 'none',
+          },
+          _active: { bg: 'wiki.accentSoft' },
+        },
+      },
+      'wiki.card': {
+        value: {
+          bg: 'wiki.surface',
+          borderWidth: '1px',
+          borderColor: 'wiki.border',
+          borderRadius: 'md',
+          p: '6',
+          _hover: {
+            borderColor: 'wiki.accentBorder',
+            bg: 'wiki.raised',
+            textDecoration: 'none',
+          },
+          _active: { bg: 'wiki.accentSoft' },
+        },
+      },
+    },
     recipes: {
       heading: {
         base: {
+          textWrap: 'balance',
           color: 'wiki.ink',
           fontWeight: '600',
           letterSpacing: '-0.025em',
@@ -84,11 +189,15 @@ const config = defineConfig({
           color: 'wiki.accent',
           textUnderlineOffset: '3px',
           _hover: { color: 'wiki.accentHover' },
+          cursor: 'pointer',
         },
       },
       button: {
         base: {
           borderRadius: 'md',
+          cursor: 'pointer',
+          _disabled: { cursor: 'not-allowed', opacity: 0.5 },
+          _active: { transform: 'translateY(1px)' },
           fontWeight: '600',
           minH: '11',
           whiteSpace: 'normal',
@@ -101,7 +210,7 @@ const config = defineConfig({
           variant: {
             solid: {
               bg: 'wiki.accent',
-              color: 'white',
+              color: 'wiki.canvas',
               _hover: { bg: 'wiki.accentHover' },
             },
             outline: {

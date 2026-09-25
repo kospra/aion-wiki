@@ -307,9 +307,9 @@ export function RichContent({
             id={block.id}
             key={block.id}
             p={{ base: '4', md: '5' }}
-            bg="wiki.accentSoft"
+            bg="wiki.surface"
             borderStartWidth="3px"
-            borderColor="wiki.accent"
+            borderColor="wiki.accentBorder"
             borderRadius="sm"
             maxW={inTable ? undefined : '65ch'}
             color="wiki.ink"

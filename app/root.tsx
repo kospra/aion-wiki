@@ -1,12 +1,4 @@
-import {
-  Box,
-  Container,
-  Flex,
-  Heading,
-  Link,
-  Stack,
-  Text,
-} from '@chakra-ui/react';
+import { Box, Flex, Heading, Link, Stack, Text } from '@chakra-ui/react';
 import {
   Links,
   Meta,
@@ -19,6 +11,8 @@ import {
 import { NotFound } from './components/not-found';
 import { SiteHeader } from './components/site-header';
 import { WikiProvider } from './components/ui/provider';
+import { ChapterNavigation } from './components/chapter-navigation';
+import '@fontsource-variable/inter';
 
 export function Layout({
   children,
@@ -26,11 +20,11 @@ export function Layout({
   children: React.ReactNode;
 }): React.JSX.Element {
   return (
-    <html lang="en" className="light">
+    <html lang="en" className="dark">
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="theme-color" content="#faf9f6" />
+        <meta name="theme-color" content="#000000" />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <Meta />
         <Links />
@@ -50,41 +44,45 @@ function SiteFooter(): React.JSX.Element {
       as="footer"
       borderTopWidth="1px"
       borderColor="wiki.border"
-      bg="wiki.surface"
       color="wiki.muted"
+      mt="8"
+      py="6"
     >
-      <Container maxW="7xl">
-        <Flex
-          minH="24"
-          py="6"
-          align="center"
-          justify="space-between"
-          gap="3"
-          direction={{ base: 'column', sm: 'row' }}
-        >
-          <Text fontSize="lg" fontWeight="semibold" color="wiki.ink">
-            Aion 2 Wiki
-          </Text>
-          <Text fontSize="sm">An independent reference in progress</Text>
-        </Flex>
-      </Container>
+      <Flex align="center" justify="space-between" gap="3" flexWrap="wrap">
+        <Text fontSize="xs">
+          KANON’S GUIDE / Original figures. Visible source context.
+        </Text>
+        <Link href="/source" fontSize="xs" color="wiki.muted">
+          About the source
+        </Link>
+      </Flex>
     </Box>
   );
 }
 
 function Main({ children }: { children: React.ReactNode }): React.JSX.Element {
   return (
-    <Container
-      as="main"
-      id="main-content"
-      tabIndex={-1}
-      maxW="7xl"
+    <Flex
+      maxW="90rem"
+      w="full"
+      mx="auto"
+      gap={{ lg: '2' }}
       flex="1"
-      px={{ base: '4', md: '6' }}
-      py={{ base: '6', md: '10' }}
+      align="start"
     >
-      {children}
-    </Container>
+      <ChapterNavigation />
+      <Box
+        as="main"
+        id="main-content"
+        tabIndex={-1}
+        minW="0"
+        flex="1"
+        p={{ base: '4', md: '8' }}
+      >
+        {children}
+        <SiteFooter />
+      </Box>
+    </Flex>
   );
 }
 
@@ -95,7 +93,6 @@ export default function App(): React.JSX.Element {
       <Main>
         <Outlet />
       </Main>
-      <SiteFooter />
     </>
   );
 }
@@ -142,7 +139,7 @@ export function ErrorBoundary(): React.JSX.Element {
                 px="5"
                 py="2"
                 bg="wiki.accent"
-                color="white"
+                color="wiki.canvas"
                 borderRadius="md"
                 fontWeight="semibold"
                 _hover={{ bg: 'wiki.accentHover' }}
@@ -153,7 +150,6 @@ export function ErrorBoundary(): React.JSX.Element {
           </Box>
         )}
       </Main>
-      <SiteFooter />
     </>
   );
 }

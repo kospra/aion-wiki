@@ -1,15 +1,10 @@
-import { Box, Container, Flex, Link, Text } from '@chakra-ui/react';
+import { Box, Button, Flex, Link, Text } from '@chakra-ui/react';
 import { Link as RouterLink, useLocation } from 'react-router';
 
 export function SiteHeader(): React.JSX.Element {
   const { pathname } = useLocation();
   return (
-    <Box
-      as="header"
-      bg="wiki.canvas"
-      borderBottomWidth="1px"
-      borderColor="wiki.border"
-    >
+    <Box as="header" bg="wiki.surface">
       <Link
         href="#main-content"
         position="absolute"
@@ -17,7 +12,7 @@ export function SiteHeader(): React.JSX.Element {
         left="-9999px"
         zIndex="10"
         bg="wiki.accent"
-        color="white"
+        color="wiki.canvas"
         px="4"
         py="2"
         borderRadius="md"
@@ -25,44 +20,54 @@ export function SiteHeader(): React.JSX.Element {
       >
         Skip to content
       </Link>
-      <Container maxW="7xl" px={{ base: '4', md: '6' }}>
-        <Flex
-          as="nav"
-          aria-label="Main navigation"
-          minH="16"
-          align="center"
-          justify="space-between"
-          gap="4"
+      <Flex
+        as="nav"
+        aria-label="Main navigation"
+        maxW="90rem"
+        mx="auto"
+        minH={{ base: '76px', lg: '92px' }}
+        p={{ base: '4', lg: '6' }}
+        align="center"
+        gap="6"
+      >
+        <Link
+          asChild
+          aria-label="Aion 2 Wiki"
+          color="wiki.ink"
+          fontWeight="semibold"
+          fontSize={{ base: 'lg', lg: '22px' }}
+          flexShrink="0"
+          w={{ lg: '248px' }}
+          _hover={{ color: 'wiki.accent', textDecoration: 'none' }}
         >
-          <Link
-            asChild
-            color="wiki.ink"
-            fontWeight="bold"
-            fontSize="lg"
-            letterSpacing="-0.02em"
-            _hover={{ color: 'wiki.accent', textDecoration: 'none' }}
-          >
-            <RouterLink to="/">Aion 2 Wiki</RouterLink>
-          </Link>
-          <Text
-            display={{ base: 'none', lg: 'block' }}
-            textStyle="wiki.caption"
-            color="wiki.muted"
-            ml="auto"
-          >
-            Kanon's guide reference
-          </Text>
-          <Link
-            asChild
-            display="inline-flex"
-            textStyle="wiki.label"
-            color={pathname === '/source' ? 'wiki.accent' : 'wiki.muted'}
-            _hover={{ color: 'wiki.accent' }}
-          >
-            <RouterLink to="/source">About the source</RouterLink>
-          </Link>
-        </Flex>
-      </Container>
+          <RouterLink to="/">AION 2 / WIKI</RouterLink>
+        </Link>
+        <Text
+          display={{ base: 'none', lg: 'block' }}
+          textStyle="wiki.eyebrow"
+          color="wiki.muted"
+          flex="1"
+        >
+          The community field guide
+        </Text>
+        <Button
+          asChild
+          variant="ghost"
+          display={{ base: 'none', lg: 'inline-flex' }}
+          aria-current={pathname === '/source' ? 'page' : undefined}
+        >
+          <RouterLink to="/source">About the source</RouterLink>
+        </Button>
+        <Button
+          asChild
+          variant="outline"
+          display={{ base: 'inline-flex', lg: 'none' }}
+          ml="auto"
+          minW="28"
+        >
+          <RouterLink to="/#chapters">Chapters</RouterLink>
+        </Button>
+      </Flex>
     </Box>
   );
 }

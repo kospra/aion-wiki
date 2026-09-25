@@ -27,10 +27,10 @@ export default function CategoryRoute(): React.JSX.Element {
         color="wiki.muted"
         textStyle="wiki.caption"
       >
-        <Breadcrumb.List>
+        <Breadcrumb.List flexWrap="wrap">
           <Breadcrumb.Item>
             <Breadcrumb.Link asChild color="wiki.accent">
-              <RouterLink to="/">Home</RouterLink>
+              <RouterLink to="/">Discover</RouterLink>
             </Breadcrumb.Link>
           </Breadcrumb.Item>
           <Breadcrumb.Separator />

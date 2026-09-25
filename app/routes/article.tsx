@@ -59,11 +59,10 @@ export function GuidePageView({
   return (
     <Box
       as="article"
-      maxW="7xl"
-      mx="auto"
+      maxW="full"
       minW="0"
       display={{ xl: 'grid' }}
-      gridTemplateColumns={{ xl: 'minmax(0, 1fr) 15rem' }}
+      gridTemplateColumns={{ xl: 'minmax(0, 44rem) minmax(13rem, 17.5rem)' }}
       columnGap={{ xl: '12' }}
       alignItems="start"
     >
@@ -72,13 +71,13 @@ export function GuidePageView({
         aria-label="Breadcrumb"
         gridColumn={{ xl: '1' }}
         mb={{ base: '6', md: '8' }}
-        textStyle="wiki.label"
+        textStyle="wiki.caption"
         color="wiki.muted"
       >
         <Breadcrumb.List flexWrap="wrap" rowGap="2">
           <Breadcrumb.Item>
             <Breadcrumb.Link asChild>
-              <RouterLink to="/">Home</RouterLink>
+              <RouterLink to="/">Discover</RouterLink>
             </Breadcrumb.Link>
           </Breadcrumb.Item>
           <Breadcrumb.Separator />
@@ -99,27 +98,25 @@ export function GuidePageView({
           </Breadcrumb.Item>
         </Breadcrumb.List>
       </Breadcrumb.Root>
-      <Box
-        as="header"
-        gridColumn={{ xl: '1' }}
-        maxW="65ch"
-        mb={{ base: '8', md: '10' }}
-      >
-        <Stack gap={{ base: '3', md: '4' }}>
+      <Box as="header" gridColumn={{ xl: '1' }} maxW="65ch" mb="6">
+        <Stack gap="6">
           <Text
             color="wiki.accent"
-            textStyle="wiki.label"
+            textStyle="wiki.eyebrow"
             fontWeight="semibold"
             textTransform="uppercase"
             letterSpacing="wide"
           >
-            {category ? 'Guide article' : 'Source and author'}
+            {category
+              ? `Chapter ${String(categories.indexOf(category) + 1).padStart(2, '0')} / ${category.title}`
+              : 'Source and author'}
           </Text>
           <Heading
             as="h1"
             id="article-title"
             tabIndex={-1}
             textStyle="wiki.title"
+            maxW="18ch"
             color="wiki.ink"
             overflowWrap="anywhere"
           >
@@ -131,17 +128,16 @@ export function GuidePageView({
           <Box
             role="note"
             data-source-status=""
-            ps="4"
-            py="1"
-            borderStartWidth="2px"
+            p="4"
+            bg="wiki.surface"
             borderColor="wiki.border"
           >
-            <Stack gap="1" textStyle="wiki.label" color="wiki.muted">
+            <Stack gap="3" textStyle="wiki.caption" color="wiki.muted">
               <Badge
                 alignSelf="start"
                 variant="subtle"
-                bg="wiki.accentSoft"
-                color="wiki.accent"
+                bg="wiki.raised"
+                color="wiki.ink"
                 px="2"
                 py="1"
               >
@@ -253,7 +249,13 @@ export function GuidePageView({
             {previous ? (
               <Link
                 asChild
-                color="wiki.accent"
+                color="wiki.ink"
+                borderWidth="1px"
+                borderColor="wiki.border"
+                borderRadius="md"
+                minH="11"
+                px="4"
+                py="2"
                 _hover={{ color: 'wiki.accentHover' }}
                 fontWeight="medium"
               >
@@ -267,7 +269,13 @@ export function GuidePageView({
             {next && (
               <Link
                 asChild
-                color="wiki.accent"
+                color="wiki.ink"
+                borderWidth="1px"
+                borderColor="wiki.border"
+                borderRadius="md"
+                minH="11"
+                px="4"
+                py="2"
                 _hover={{ color: 'wiki.accentHover' }}
                 fontWeight="medium"
                 textAlign={{ sm: 'right' }}

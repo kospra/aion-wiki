@@ -97,8 +97,14 @@ it('shows numbered color meanings, linked explanations, cropped values, and scre
   expect(placement?.querySelector('figcaption')).toHaveTextContent(
     figure.caption,
   );
-  expect(displayedFigure.getByText(/1.*green/i)).toBeVisible();
-  expect(displayedFigure.getByText(/4.*purple/i)).toBeVisible();
+  expect(displayedFigure.getAllByRole('term')[0]).toHaveTextContent(
+    '1Enhancement and amplification',
+  );
+  expect(displayedFigure.getAllByRole('term')[1]).toHaveTextContent(
+    '4Soul Binding',
+  );
+  expect(displayedFigure.getByText('green')).toBeVisible();
+  expect(displayedFigure.getByText('purple')).toBeVisible();
   expect(
     displayedFigure.getByText('Enhancement and amplification'),
   ).toBeVisible();

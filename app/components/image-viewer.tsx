@@ -29,7 +29,7 @@ export function ImageViewer({ figure }: { figure: Figure }): React.JSX.Element {
           position="relative"
           maxW="100%"
           width="fit-content"
-          p="2"
+          p="0"
           bg="wiki.surface"
           borderWidth="1px"
           borderColor="wiki.border"

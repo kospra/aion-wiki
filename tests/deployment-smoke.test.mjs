@@ -40,7 +40,7 @@ beforeEach(async () => {
     if (override?.hang) return;
     const fixture = override ??
       {
-        '/': { body: '<h1>Aion 2 Wiki</h1><p>Kanon’s guide</p>' },
+        '/': { body: '<h1>Aion 2, explained.</h1><p>Kanon’s guide</p>' },
         [category]: {
           body: `<h1>${categoryEntry.title}</h1><p>Example category description.</p>`,
         },

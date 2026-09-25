@@ -12,7 +12,7 @@ it('renders an independent styled 404 with a working home link', () => {
   expect(document.querySelector('style')).not.toBeNull();
   expect(document.querySelector('script')).toBeNull();
   expect(document.documentElement.lang).toBe('en');
-  expect(document.documentElement.className).toBe('light');
+  expect(document.documentElement.className).toBe('dark');
   expect(document.querySelector('main')).not.toBeNull();
   expect(
     document.querySelector('meta[name="robots"]')?.getAttribute('content'),

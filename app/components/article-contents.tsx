@@ -99,11 +99,16 @@ export function ArticleContents({
           <Box as="li" key={item.id}>
             <Link
               href={`#${item.id}`}
-              display="block"
+              display="flex"
+              alignItems="center"
+              minH="11"
               py="2"
               px="3"
-              borderStartWidth="2px"
-              borderColor={activeId === item.id ? 'wiki.accent' : 'transparent'}
+              borderWidth="1px"
+              borderRadius="md"
+              borderColor={
+                activeId === item.id ? 'wiki.accentBorder' : 'transparent'
+              }
               bg={activeId === item.id ? 'wiki.accentSoft' : 'transparent'}
               fontWeight={activeId === item.id ? 'semibold' : 'normal'}
               aria-current={activeId === item.id ? 'location' : undefined}
@@ -111,7 +116,11 @@ export function ArticleContents({
               lineHeight="1.5"
               color={activeId === item.id ? 'wiki.accent' : 'wiki.muted'}
               overflowWrap="anywhere"
-              _hover={{ color: 'wiki.accent' }}
+              _hover={{
+                color: 'wiki.accent',
+                bg: 'wiki.raised',
+                textDecoration: 'none',
+              }}
               _focusVisible={{
                 outline: '2px solid',
                 outlineColor: 'wiki.accent',
@@ -132,24 +141,19 @@ export function ArticleContents({
       as="nav"
       aria-label="On this page"
       my={{ base: '7', xl: '0' }}
-      py={{ base: '4', xl: '1' }}
-      ps={{ base: '0', xl: '5' }}
-      borderTopWidth={{ base: '1px', xl: '0' }}
-      borderBottomWidth={{ base: '1px', xl: '0' }}
-      borderStartWidth={{ base: '0', xl: '1px' }}
-      borderColor="wiki.border"
+      p="4"
+      bg="wiki.surface"
       minW="0"
     >
       <Text
-        textStyle="wiki.label"
+        textStyle="wiki.eyebrow"
         fontWeight="semibold"
-        color="wiki.ink"
+        color="wiki.accent"
         mb="3"
-        ps="calc(0.75rem + 2px)"
         textTransform="uppercase"
         letterSpacing="wide"
       >
-        On this page
+        In this article
       </Text>
       {renderItems(roots)}
     </Box>

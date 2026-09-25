@@ -35,7 +35,7 @@ export function NotFound(): React.JSX.Element {
           px="5"
           py="2"
           bg="wiki.accent"
-          color="white"
+          color="wiki.canvas"
           borderRadius="md"
           fontWeight="semibold"
           _hover={{ bg: 'wiki.accentHover' }}

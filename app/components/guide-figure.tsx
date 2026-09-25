@@ -1,4 +1,5 @@
 import {
+  Badge,
   Box,
   DataList,
   Flex,
@@ -19,6 +20,25 @@ type Props = {
   sourceLinks: Record<string, string>;
 };
 
+// Explicit screenshot annotation mappings: secondary text/item colors do not
+// determine the swatch. Unannotated or unverified colors remain text-only.
+const annotationColors: Record<string, Record<string, string>> = {
+  'figure-005': {
+    '1': 'wiki.annotation.green',
+    '2': 'wiki.annotation.white',
+    '3': 'wiki.annotation.orange',
+    '4': 'wiki.annotation.purple',
+    '5': 'wiki.annotation.red',
+    '6': 'wiki.annotation.cyan',
+  },
+  'figure-006': { '7': 'wiki.annotation.gold' },
+  'figure-041': {
+    Bind: 'wiki.annotation.yellow',
+    Sync: 'wiki.annotation.purple',
+    Reset: 'wiki.annotation.green',
+  },
+};
+
 export function GuideFigure({
   figure: originalFigure,
   sourceLinks,
@@ -32,6 +52,9 @@ export function GuideFigure({
       my={{ base: '8', md: '10' }}
       maxW="100%"
       minW="0"
+      p="4"
+      bg="wiki.surface"
+      borderRadius="md"
     >
       <ImageViewer figure={figure} />
       <chakra.figcaption>
@@ -48,6 +71,7 @@ export function GuideFigure({
             borderColor="wiki.border"
           >
             {figure.mappings.map((mapping, index) => {
+              const swatchColor = annotationColors[figure.id]?.[mapping.label];
               const destinations = mapping.textSourceIds.flatMap((sourceId) => {
                 const value = Object.hasOwn(sourceLinks, sourceId)
                   ? sourceLinks[sourceId]
@@ -66,17 +90,10 @@ export function GuideFigure({
                 <DataList.Item
                   key={index}
                   display="grid"
-                  gridTemplateColumns={{
-                    base: 'minmax(0, 1fr)',
-                    md:
-                      `${mapping.label} ${mapping.visualValue ?? ''}`.length >
-                      90
-                        ? 'minmax(0, 1fr)'
-                        : 'minmax(7rem, 20%) minmax(0, 1fr)',
-                  }}
+                  gridTemplateColumns="minmax(0, 1fr)"
                   columnGap="4"
-                  rowGap="1"
-                  py="3"
+                  rowGap="3"
+                  py="6"
                   borderBottomWidth="1px"
                   borderColor="wiki.border"
                 >
@@ -84,17 +101,45 @@ export function GuideFigure({
                     fontWeight="semibold"
                     color="wiki.ink"
                     textStyle="wiki.label"
-                    display="block"
+                    display="flex"
+                    alignItems="start"
+                    flexWrap="wrap"
+                    gap="3"
                     overflowWrap="anywhere"
                     minW="0"
                   >
-                    {mapping.label}
-                    {mapping.color && ` (${mapping.color})`}
-                    {mapping.visualValue && (
-                      <Text as="span" fontWeight="normal">
-                        : {mapping.visualValue}
-                      </Text>
+                    <Badge
+                      size="md"
+                      variant="subtle"
+                      bg="wiki.raised"
+                      color="wiki.ink"
+                      whiteSpace="normal"
+                    >
+                      {mapping.label}
+                    </Badge>
+                    {swatchColor && (
+                      <Box
+                        as="span"
+                        data-guide-color-swatch=""
+                        aria-hidden="true"
+                        bg={swatchColor}
+                        w="3"
+                        h="3"
+                        mt="1.5"
+                        flexShrink="0"
+                        borderRadius="2px"
+                      />
                     )}
+                    <Text
+                      as="span"
+                      data-guide-annotation-title=""
+                      textStyle="wiki.annotationTitle"
+                      color="wiki.ink"
+                      flex="1"
+                      minW="0"
+                    >
+                      {mapping.meaning}
+                    </Text>
                   </DataList.ItemLabel>
                   <DataList.ItemValue
                     display="block"
@@ -104,7 +149,26 @@ export function GuideFigure({
                     textStyle="wiki.body"
                     fontWeight="normal"
                   >
-                    {mapping.meaning}
+                    {mapping.color && (
+                      <Text
+                        data-guide-color-description=""
+                        srOnly={Boolean(swatchColor)}
+                        color="wiki.muted"
+                        textStyle="wiki.caption"
+                      >
+                        {mapping.color}
+                      </Text>
+                    )}
+                    {mapping.visualValue && (
+                      <Text
+                        data-guide-visual-value=""
+                        mt={mapping.color && !swatchColor ? '3' : '0'}
+                        color="wiki.muted"
+                        textStyle="wiki.caption"
+                      >
+                        {mapping.visualValue}
+                      </Text>
+                    )}
                     {mapping.confidence !== 'confirmed' && (
                       <Text as="span" color="wiki.muted">
                         {' '}
@@ -114,14 +178,14 @@ export function GuideFigure({
                     {destinations.length > 0 && (
                       <Flex
                         data-guide-references=""
-                        mt="2"
-                        gap="1"
+                        mt="3"
+                        gap="2"
                         align="start"
                         direction="column"
                         textStyle="wiki.caption"
                         fontWeight="normal"
                       >
-                        <Text as="span" color="wiki.muted" me="1">
+                        <Text as="span" color="wiki.muted" fontSize="xs">
                           Related guide passages
                         </Text>
                         {destinations.map(
@@ -134,11 +198,16 @@ export function GuideFigure({
                               _hover={{ color: 'wiki.accentHover' }}
                               minW="6"
                               minH="6"
-                              display="inline"
+                              display="inline-flex"
+                              alignItems="baseline"
+                              gap="2"
                               whiteSpace="normal"
                               textDecoration="underline"
                             >
                               {label}
+                              <Text as="span" aria-hidden="true" flexShrink="0">
+                                ↗
+                              </Text>
                             </Link>
                           ),
                         )}

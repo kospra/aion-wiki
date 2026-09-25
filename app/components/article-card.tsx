@@ -11,15 +11,20 @@ export function ArticleCard({
   const category = categories.find(({ slug }) => slug === article.category);
 
   return (
-    <Box as="article" borderTopWidth="1px" borderColor="wiki.border">
+    <Box as="article" minW="0">
       <Link
         asChild
         display="block"
         h="full"
-        py="5"
+        layerStyle="wiki.card"
         color="wiki.ink"
         borderRadius="sm"
-        _hover={{ color: 'wiki.accent', textDecoration: 'none' }}
+        _hover={{
+          color: 'wiki.accent',
+          borderColor: 'wiki.accentBorder',
+          bg: 'wiki.raised',
+          textDecoration: 'none',
+        }}
         _focusVisible={{ outlineColor: 'wiki.accent', outlineOffset: '3px' }}
       >
         <RouterLink to={`/articles/${article.slug}`}>

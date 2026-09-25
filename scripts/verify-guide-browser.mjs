@@ -36,14 +36,14 @@ try {
     await page.getByText('No articles found').waitFor();
     await page.getByRole('button', { name: 'Reset filters' }).click();
     assert.equal(await search.inputValue(), '');
-    assert.ok(await page.locator('main a[href^="/articles/"]').count());
+    assert.ok(await page.locator('main a[href^="/categories/"]').count());
 
     assert.equal(
       await page.locator('header a[href^="/categories/"]').count(),
       0,
     );
     const sourceLink = page
-      .locator('header')
+      .locator('footer')
       .getByRole('link', { name: 'About the source' });
     await sourceLink.click();
     await page.waitForURL(baseUrl + '/source');
@@ -53,6 +53,7 @@ try {
       .click();
     await page.waitForURL(baseUrl + '/');
     await page.getByRole('searchbox', { name: 'Search articles' }).waitFor();
+    await page.locator('main a[href^="/categories/"]:visible').first().click();
     const article = page.locator('main a[href^="/articles/"]').first();
     const destination = await article.getAttribute('href');
     await article.click();

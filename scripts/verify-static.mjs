@@ -119,7 +119,7 @@ export async function verifyStatic(root = 'build/client', suppliedInput) {
   const notFoundHtml = await readFile(join(root, '404.html'), 'utf8');
   const notFoundDocument = new JSDOM(notFoundHtml).window.document;
   assert.equal(notFoundDocument.documentElement.lang, 'en');
-  assert.equal(notFoundDocument.documentElement.className, 'light');
+  assert.equal(notFoundDocument.documentElement.className, 'dark');
   assert.equal(notFoundDocument.querySelectorAll('main').length, 1);
   assert.equal(
     notFoundDocument.querySelector('h1')?.textContent,
@@ -188,17 +188,26 @@ export async function verifyStatic(root = 'build/client', suppliedInput) {
     if (category || route === '/') {
       hasText(
         main.querySelector('h1'),
-        category?.title ?? 'Aion 2 Wiki',
+        category?.title ?? 'Aion 2, explained.',
         route,
       );
-      for (const entry of articles.filter(
-        (a) => !category || a.category === category.slug,
-      )) {
+      for (const entry of category
+        ? articles.filter((a) => a.category === category.slug)
+        : []) {
         hasText(
           main.querySelector(`a[href="/articles/${entry.slug}"]`),
           entry.title,
           `${route}/${entry.slug}`,
         );
+      }
+      if (route === '/') {
+        for (const chapter of categories) {
+          hasText(
+            main.querySelector(`a[href="/categories/${chapter.slug}"]`),
+            chapter.title,
+            `${route}/${chapter.slug}`,
+          );
+        }
       }
     }
     if (page) {
@@ -321,14 +330,24 @@ export async function verifyStatic(root = 'build/client', suppliedInput) {
           );
           assert.equal(mappings.length, figure.mappings.length);
           figure.mappings.forEach((mapping, index) => {
-            for (const value of [
-              mapping.label,
-              mapping.color,
-              mapping.visualValue,
-            ].filter(Boolean))
+            for (const value of [mapping.label, mapping.meaning].filter(
+              Boolean,
+            ))
               hasText(mappings[index].querySelector('dt'), value, figure.id);
+            if (mapping.color)
+              hasText(
+                mappings[index].querySelector('[data-guide-color-description]'),
+                mapping.color,
+                figure.id,
+              );
+            if (mapping.visualValue)
+              hasText(
+                mappings[index].querySelector('[data-guide-visual-value]'),
+                mapping.visualValue,
+                figure.id,
+              );
             hasText(
-              mappings[index].querySelector('dd'),
+              mappings[index].querySelector('[data-guide-annotation-title]'),
               mapping.meaning,
               figure.id,
             );

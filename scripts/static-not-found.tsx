@@ -7,12 +7,12 @@ export function renderNotFoundDocument(): string {
   return (
     '<!doctype html>' +
     renderToStaticMarkup(
-      <html lang="en" className="light">
+      <html lang="en" className="dark">
         <head>
           <meta charSet="utf-8" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <meta name="robots" content="noindex" />
-          <meta name="theme-color" content="#faf9f6" />
+          <meta name="theme-color" content="#000000" />
           <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
           <title>Page not found | Aion 2 Wiki</title>
         </head>
