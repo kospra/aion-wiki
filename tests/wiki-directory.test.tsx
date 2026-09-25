@@ -18,7 +18,6 @@ vi.mock('../app/content/wiki', () => ({
       category: 'gear',
       summary: 'Armor guide',
       status: 'source-backed',
-      qualifiers: [],
       searchText: 'Armor body-only phrase figure-only detail',
     },
     {
@@ -27,7 +26,6 @@ vi.mock('../app/content/wiki', () => ({
       category: 'crafting',
       summary: 'Crafting guide',
       status: 'source-backed',
-      qualifiers: [],
       searchText: 'Recipes materials',
     },
   ],

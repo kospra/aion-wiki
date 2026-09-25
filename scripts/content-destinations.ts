@@ -35,6 +35,9 @@ export function createDestinations(
         return `${path}#${encodeURIComponent(id)}`;
       return null;
     }
+    // Omitted chapter titles are represented by their article's header.
+    if (entry?.disposition === 'omitted' && entry.pageSlug)
+      return paths.get(entry.pageSlug) ?? null;
     return external[sourceId] ?? null;
   }
 

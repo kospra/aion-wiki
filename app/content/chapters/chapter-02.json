@@ -6,26 +6,11 @@
     "summary": "Weapon and Guard base stats, skill lines, amplification, and region-qualified Potential values.",
     "status": "source-uncertain",
     "sourceUrl": "https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/edit",
-    "qualifiers": [
-      "Source recommendations and first-person statements are Kanon’s. Captured update: 9/20/2026; Global changes were not all confirmed."
-    ],
     "blocks": [
-      {
-        "id": "block-0139",
-        "sourceIds": ["block-0139"],
-        "kind": "heading",
-        "content": [
-          {
-            "text": "CH 2: A CLOSER LOOK "
-          }
-        ],
-        "level": 2
-      },
       {
         "id": "block-0141",
         "sourceIds": ["block-0141"],
         "kind": "group",
-        "label": "Source text and illustration",
         "blocks": [
           {
             "id": "block-0141-text",
@@ -265,38 +250,11 @@
     "summary": "Armor slots, defensive stats, passive skill lines, and region-qualified Potential values.",
     "status": "source-uncertain",
     "sourceUrl": "https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/edit",
-    "qualifiers": [
-      "Source recommendations and first-person statements are Kanon’s. Captured update: 9/20/2026; Global changes were not all confirmed."
-    ],
     "blocks": [
-      {
-        "id": "armor-source-check",
-        "sourceIds": [],
-        "kind": "note",
-        "label": "Source uncertainty",
-        "tone": "uncertain",
-        "content": [
-          {
-            "text": "The earlier gear anatomy explanation marks these Armor amplification values “DOUBLE CHECK”. The source’s PVP Potential line below literally says “Damage Boost”."
-          }
-        ]
-      },
-      {
-        "id": "armor-check-reference",
-        "sourceIds": [],
-        "kind": "paragraph",
-        "content": [
-          {
-            "text": "Original Armor DOUBLE CHECK note",
-            "href": "/articles/gear-anatomy-and-stat-layers#block-0051"
-          }
-        ]
-      },
       {
         "id": "block-0155",
         "sourceIds": ["block-0155"],
         "kind": "group",
-        "label": "Source text and illustration",
         "blocks": [
           {
             "id": "block-0155-text",
@@ -526,15 +484,11 @@
     "summary": "Accessory stats, skill-line differences, bracelets, brooches, and Potential values.",
     "status": "source-uncertain",
     "sourceUrl": "https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/edit",
-    "qualifiers": [
-      "Source recommendations and first-person statements are Kanon’s. Captured update: 9/20/2026; Global changes were not all confirmed."
-    ],
     "blocks": [
       {
         "id": "block-0169",
         "sourceIds": ["block-0169"],
         "kind": "group",
-        "label": "Source text and illustration",
         "blocks": [
           {
             "id": "block-0169-text",
@@ -900,16 +854,11 @@
     "summary": "Belt and Amulet acquisition, scrolls, enhancement, and morphing.",
     "status": "source-backed",
     "sourceUrl": "https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/edit",
-    "qualifiers": [
-      "Source recommendations and first-person statements are Kanon’s. Captured update: 9/20/2026; Global changes were not all confirmed.",
-      "Orange/Heroid is the original source spelling."
-    ],
     "blocks": [
       {
         "id": "block-0191",
         "sourceIds": ["block-0191"],
         "kind": "group",
-        "label": "Source text and illustration",
         "blocks": [
           {
             "id": "block-0191-text",
@@ -1022,19 +971,14 @@
     "slug": "runes",
     "title": "Runes",
     "category": "a-closer-look",
-    "summary": "Rune enhancement risks, base stats, and the source’s unconfirmed Multi-hit threshold.",
+    "summary": "Rune enhancement risks, base stats, and the unconfirmed Multi-hit threshold.",
     "status": "source-uncertain",
     "sourceUrl": "https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/edit",
-    "qualifiers": [
-      "Source recommendations and first-person statements are Kanon’s. Captured update: 9/20/2026; Global changes were not all confirmed.",
-      "The Multi-hit increase after +9 is explicitly unconfirmed in the source."
-    ],
     "blocks": [
       {
         "id": "block-0200",
         "sourceIds": ["block-0200"],
         "kind": "group",
-        "label": "Source text and illustration",
         "blocks": [
           {
             "id": "block-0200-text",
@@ -1211,15 +1155,11 @@
     "summary": "Pendant acquisition, enhancement materials, and stat growth thresholds.",
     "status": "source-backed",
     "sourceUrl": "https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/edit",
-    "qualifiers": [
-      "Source recommendations and first-person statements are Kanon’s. Captured update: 9/20/2026; Global changes were not all confirmed."
-    ],
     "blocks": [
       {
         "id": "block-0213",
         "sourceIds": ["block-0213"],
         "kind": "group",
-        "label": "Source text and illustration",
         "blocks": [
           {
             "id": "block-0213-text",

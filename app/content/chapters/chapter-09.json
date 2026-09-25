@@ -6,22 +6,7 @@
     "summary": "Equipped and owned effects, enhancement scaling, hidden lines, and launch limits.",
     "status": "source-uncertain",
     "sourceUrl": "https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/edit",
-    "qualifiers": [
-      "Source recommendations, first-person statements, and testing claims are Kanon’s. Figures are captured examples rather than universal costs or ideal builds.",
-      "Wings was excluded from the source’s 9/20/2026 update. KR class usage is dated 8/21/2026; launch availability varies."
-    ],
     "blocks": [
-      {
-        "id": "block-0781",
-        "sourceIds": ["block-0781"],
-        "kind": "heading",
-        "content": [
-          {
-            "text": "CH 9: WINGS"
-          }
-        ],
-        "level": 2
-      },
       {
         "id": "block-0783",
         "sourceIds": ["block-0783"],
@@ -75,18 +60,6 @@
         ]
       },
       {
-        "id": "context-block-0790",
-        "sourceIds": [],
-        "kind": "note",
-        "label": "Base wing tooltip",
-        "tone": "uncertain",
-        "content": [
-          {
-            "text": "The base tooltip shows both Equip and Owned Effects, despite the guide saying it only shows Owned Effects. The fourth owned stat, Weapon Damage Boost, appears after enhancement and is absent at base level."
-          }
-        ]
-      },
-      {
         "id": "block-0792",
         "sourceIds": ["block-0792"],
         "kind": "paragraph",
@@ -112,7 +85,6 @@
         "id": "block-0797",
         "sourceIds": ["block-0797"],
         "kind": "group",
-        "label": "Related source illustrations",
         "blocks": [
           {
             "id": "block-0797-figure-083",
@@ -215,31 +187,14 @@
     "slug": "wing-stat-catalog",
     "title": "Wing stat catalog",
     "category": "wings",
-    "summary": "All twelve wing entries with distinct Equip and Owned effects and source indentation.",
+    "summary": "All twelve wings with their Equip and Owned effects.",
     "status": "source-uncertain",
     "sourceUrl": "https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/edit",
-    "qualifiers": [
-      "Source recommendations, first-person statements, and testing claims are Kanon’s. Figures are captured examples rather than universal costs or ideal builds.",
-      "Wings was excluded from the source’s 9/20/2026 update. KR class usage is dated 8/21/2026; launch availability varies."
-    ],
     "blocks": [
-      {
-        "id": "wing-catalog-reading",
-        "sourceIds": [],
-        "kind": "note",
-        "label": "Reading owned effects",
-        "tone": "context",
-        "content": [
-          {
-            "text": "Equip Effect and Owned Effect are separate lists. For Owned Effects, the first and final lines scale with enhancement; the second and third do not. The guide highlights Nightmare Wings’ owned Double Chance."
-          }
-        ]
-      },
       {
         "id": "wing-block-0806",
         "sourceIds": [],
         "kind": "group",
-        "label": "Wing catalog entry",
         "blocks": [
           {
             "id": "block-0806",
@@ -428,7 +383,6 @@
         "id": "wing-block-0818",
         "sourceIds": [],
         "kind": "group",
-        "label": "Wing catalog entry",
         "blocks": [
           {
             "id": "block-0818",
@@ -617,7 +571,6 @@
         "id": "wing-block-0830",
         "sourceIds": [],
         "kind": "group",
-        "label": "Wing catalog entry",
         "blocks": [
           {
             "id": "block-0830",
@@ -806,7 +759,6 @@
         "id": "wing-block-0842",
         "sourceIds": [],
         "kind": "group",
-        "label": "Wing catalog entry",
         "blocks": [
           {
             "id": "block-0842",
@@ -995,7 +947,6 @@
         "id": "wing-block-0854",
         "sourceIds": [],
         "kind": "group",
-        "label": "Wing catalog entry",
         "blocks": [
           {
             "id": "block-0854",
@@ -1184,7 +1135,6 @@
         "id": "wing-block-0866",
         "sourceIds": [],
         "kind": "group",
-        "label": "Wing catalog entry",
         "blocks": [
           {
             "id": "block-0866",
@@ -1373,7 +1323,6 @@
         "id": "wing-block-0878",
         "sourceIds": [],
         "kind": "group",
-        "label": "Wing catalog entry",
         "blocks": [
           {
             "id": "block-0878",
@@ -1562,7 +1511,6 @@
         "id": "wing-block-0890",
         "sourceIds": [],
         "kind": "group",
-        "label": "Wing catalog entry",
         "blocks": [
           {
             "id": "block-0890",
@@ -1751,7 +1699,6 @@
         "id": "wing-block-0902",
         "sourceIds": [],
         "kind": "group",
-        "label": "Wing catalog entry",
         "blocks": [
           {
             "id": "block-0902",
@@ -1941,7 +1888,6 @@
         "id": "wing-block-0914",
         "sourceIds": [],
         "kind": "group",
-        "label": "Wing catalog entry",
         "blocks": [
           {
             "id": "block-0914",
@@ -2130,7 +2076,6 @@
         "id": "wing-block-0926",
         "sourceIds": [],
         "kind": "group",
-        "label": "Wing catalog entry",
         "blocks": [
           {
             "id": "block-0926",
@@ -2319,7 +2264,6 @@
         "id": "wing-block-0938",
         "sourceIds": [],
         "kind": "group",
-        "label": "Wing catalog entry",
         "blocks": [
           {
             "id": "block-0938",
@@ -2513,10 +2457,6 @@
     "summary": "KR class usage dated August 21, 2026 and the source’s positional damage FAQ.",
     "status": "source-uncertain",
     "sourceUrl": "https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/edit",
-    "qualifiers": [
-      "Source recommendations, first-person statements, and testing claims are Kanon’s. Figures are captured examples rather than universal costs or ideal builds.",
-      "Wings was excluded from the source’s 9/20/2026 update. KR class usage is dated 8/21/2026; launch availability varies."
-    ],
     "blocks": [
       {
         "id": "block-0951",
@@ -2544,18 +2484,6 @@
           },
           {
             "text": " "
-          }
-        ]
-      },
-      {
-        "id": "context-block-0953",
-        "sourceIds": [],
-        "kind": "note",
-        "label": "Dated usage sample",
-        "tone": "context",
-        "content": [
-          {
-            "text": "These percentages describe KR usage as of August 21, 2026. The source’s September 20 update explicitly excluded Wings. The Assassin prediction about Awaken Pride overtaking Talisra is a prediction, not an observed later ranking."
           }
         ]
       },

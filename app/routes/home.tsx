@@ -7,7 +7,7 @@ export function meta() {
     {
       name: 'description',
       content:
-        'Browse a sourced Aion 2 guide with 12 chapters, 43 articles, figures, and source context.',
+        'An Aion 2 progression reference based on Kanon’s guide: gear, enhancement, Arcana, Daevanion, Genus and damage formulas.',
     },
   ];
 }

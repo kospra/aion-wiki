@@ -21,7 +21,7 @@ export type Block = { id: string; sourceIds: string[] } & (
       tone: 'context' | 'uncertain';
     }
   | { kind: 'figure'; figureId: string }
-  | { kind: 'group'; label: string; blocks: Block[] }
+  | { kind: 'group'; blocks: Block[] }
 );
 
 export type GuidePage = {
@@ -31,7 +31,6 @@ export type GuidePage = {
   summary: string;
   status: 'source-backed' | 'source-uncertain' | 'source-pending';
   sourceUrl: string;
-  qualifiers: string[];
   blocks: Block[];
 };
 
@@ -43,30 +42,37 @@ export type Figure = {
   width: number;
   height: number;
   alt: string;
-  caption: string;
-  mappings: {
+  /** Numbered or colored markers drawn on the original screenshot. */
+  annotations?: {
     label: string;
-    color?: string;
-    visualValue?: string;
-    meaning: string;
-    textSourceIds: string[];
-    confidence: 'confirmed' | 'approximate' | 'unresolved';
+    title: string;
+    /** Key of a `wiki.annotation.*` color token. */
+    color: string;
+    /** Block id of the section explaining this marker, on the same page. */
+    target: string;
   }[];
-  /** Original image audit; not rendered directly. */
-  screenshotOnly: string[];
-  uncertainties: string[];
-  readerNotes?: {
-    details: string[];
-    caveats: string[];
-    mappingText?: Record<string, { label?: string; meaning?: string }>;
-  };
 };
+
+/** Google Docs leftovers that carry no guide content on a wiki page. */
+export type Omission =
+  /** A divider line such as "—". */
+  | 'separator'
+  /** "CH 3: IDEAL STAT LINES"; the article header already names the chapter. */
+  | 'chapter-title'
+  /** Instructions for navigating the Google Doc itself. */
+  | 'document-navigation';
 
 export type CoverageEntry = {
   sourceId: string;
-  disposition: 'rendered' | 'layout-only';
+  disposition: 'rendered' | 'layout-only' | 'omitted';
   primary?: { pageSlug: string; blockIds: string[] };
   reason?: string;
+  /** Required for omitted blocks. */
+  omission?: Omission;
+  /** Omitted blocks: the article they belonged to; links to them open it. */
+  pageSlug?: string;
+  /** Rendered blocks: drop a stray word (≤3 letters) beside a figure. */
+  strayText?: boolean;
 };
 
 export type SourceBaseline = {

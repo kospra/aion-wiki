@@ -3,7 +3,7 @@ import { fileURLToPath } from 'node:url';
 import { resolve } from 'node:path';
 import { format } from 'prettier';
 import { inlineText, pageText, walkBlocks } from '../app/content/reader.ts';
-import type { Figure, GuidePage } from '../app/content/types.ts';
+import type { GuidePage } from '../app/content/types.ts';
 
 const root = resolve(fileURLToPath(new URL('..', import.meta.url)));
 const readJson = async <T>(path: string): Promise<T> =>
@@ -12,13 +12,6 @@ const readJson = async <T>(path: string): Promise<T> =>
 const categories = await readJson<
   { slug: string; title: string; description: string }[]
 >('content/source/category-contract.json');
-const figures = (
-  await Promise.all(
-    ['a', 'b', 'c'].map((group) =>
-      readJson<Figure[]>(`app/content/figures/group-${group}.json`),
-    ),
-  )
-).flat();
 const chapters = await Promise.all(
   Array.from({ length: 12 }, (_, index) =>
     readJson<GuidePage[]>(
@@ -36,8 +29,7 @@ const articles = chapters.flat().map((page) => ({
   summary: page.summary,
   status: page.status,
   sourceUrl: page.sourceUrl,
-  qualifiers: page.qualifiers,
-  searchText: pageText(page, figures),
+  searchText: pageText(page),
   headings: walkBlocks(page.blocks)
     .filter((block) => block.kind === 'heading')
     .map((block) => ({ id: block.id, title: inlineText(block.content) })),

@@ -31,10 +31,10 @@ describe('source fidelity', () => {
     expect(validateGuide(validGuide)).toEqual([]);
   });
 
-  it('detects an omitted percentage even when a figure caption repeats it', () => {
+  it('detects an omitted percentage even when figure alt text repeats it', () => {
     const broken = copy();
     paragraph(broken).content = [{ text: 'Attack 150' }];
-    broken.figures[0].caption += ' 5%';
+    broken.figures[0].alt += ' 5%';
     expect(validateGuide(broken).join(' ')).toMatch(/5%|numeric/);
   });
 
@@ -178,23 +178,39 @@ describe('source fidelity', () => {
 });
 
 describe('figures and destinations', () => {
-  it.each([
-    'missing',
-    'placement',
-    'hash',
-    'dimensions',
-    'source',
-    'linked-text',
-  ] as const)('rejects broken figure %s', (mutation) => {
+  it.each(['missing', 'placement', 'hash', 'dimensions', 'source'] as const)(
+    'rejects broken figure %s',
+    (mutation) => {
+      const guide = copy();
+      if (mutation === 'missing') guide.figures = [];
+      if (mutation === 'placement') guide.pages[0].blocks.splice(3, 1);
+      if (mutation === 'hash') guide.figures[0].sha256 = 'wrong';
+      if (mutation === 'dimensions') guide.figures[0].width = 10;
+      if (mutation === 'source') guide.figures[0].sourceId = 's1';
+      expect(validateGuide(guide).join(' ')).toMatch(/figure/);
+    },
+  );
+
+  it('accepts an omitted divider but refuses to omit real text as one', () => {
     const guide = copy();
-    if (mutation === 'missing') guide.figures = [];
-    if (mutation === 'placement') guide.pages[0].blocks.splice(3, 1);
-    if (mutation === 'hash') guide.figures[0].sha256 = 'wrong';
-    if (mutation === 'dimensions') guide.figures[0].width = 10;
-    if (mutation === 'source') guide.figures[0].sourceId = 's1';
-    if (mutation === 'linked-text')
-      guide.figures[0].mappings[0].textSourceIds = ['absent'];
-    expect(validateGuide(guide).join(' ')).toMatch(/figure/);
+    guide.baseline.blocks.push({
+      id: 'divider',
+      text: '—',
+      numbers: [],
+      figureIds: [],
+      links: [],
+      formatting: [],
+    });
+    guide.coverage.push({
+      sourceId: 'divider',
+      disposition: 'omitted',
+      omission: 'separator',
+      pageSlug: guide.pages[0].slug,
+      reason: 'Document divider.',
+    });
+    expect(validateGuide(guide)).toEqual([]);
+    guide.baseline.blocks.at(-1)!.text = 'Attack matters';
+    expect(validateGuide(guide).join(' ')).toMatch(/does not match omission/);
   });
 
   it('rejects duplicate visible anchors', () => {
@@ -268,7 +284,6 @@ describe('shared reading helpers', () => {
         id: 'group',
         sourceIds: [],
         kind: 'group',
-        label: 'Example group',
         blocks: [
           ...copy().pages[0].blocks,
           {
@@ -310,25 +325,16 @@ describe('shared reading helpers', () => {
     ).toBe('one\ntwo');
     const guide = copy();
     guide.pages[0].blocks = blocks;
-    const text = pageText(guide.pages[0], [
-      ...guide.figures,
-      { ...guide.figures[0], id: 'unrelated', caption: 'UNRELATED IMAGE' },
-    ]);
+    const text = pageText(guide.pages[0]);
     for (const expected of [
-      'Example group',
       'Attack 150',
       'Stat',
       'Examples',
       'Attack × 2',
       'Double\nAttack',
       'Unknown cap',
-      'Stat row',
-      'green',
-      '32%',
-      'Value illustrated',
     ])
       expect(text).toContain(expected);
-    expect(text).not.toContain('UNRELATED IMAGE');
   });
 });
 
@@ -494,7 +500,6 @@ describe('reviewed provenance boundaries', () => {
     guide.pages[0].blocks.push({
       id: 'shared-context',
       kind: 'group',
-      label: 'Context',
       sourceIds: ['s6', 's7'],
       blocks: [reference, details],
     });

@@ -6,21 +6,7 @@
     "summary": "Reroll materials, rare-line strategy, transfer cautions, and probability context.",
     "status": "source-uncertain",
     "sourceUrl": "https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/edit",
-    "qualifiers": [
-      "Source recommendations and first-person statements are Kanon’s. Captured update: 9/20/2026; Global changes were not all confirmed."
-    ],
     "blocks": [
-      {
-        "id": "block-0230",
-        "sourceIds": ["block-0230"],
-        "kind": "heading",
-        "content": [
-          {
-            "text": "CH 3: IDEAL STAT LINES"
-          }
-        ],
-        "level": 2
-      },
       {
         "id": "block-0232",
         "sourceIds": ["block-0232"],
@@ -190,10 +176,6 @@
     "summary": "Global equipment stat-line priorities ordered by roll rarity, with conditional alternatives.",
     "status": "source-uncertain",
     "sourceUrl": "https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/edit",
-    "qualifiers": [
-      "Source recommendations and first-person statements are Kanon’s. Captured update: 9/20/2026; Global changes were not all confirmed.",
-      "These stat lines are for Global; the order prioritizes approximate roll rarity, not damage value. Percentages vary by equipment piece."
-    ],
     "blocks": [
       {
         "id": "context-block-0248",
@@ -219,17 +201,6 @@
         ]
       },
       {
-        "id": "reference-block-0248",
-        "sourceIds": [],
-        "kind": "paragraph",
-        "content": [
-          {
-            "text": "Original context in Stat-line rerolling strategy",
-            "href": "/articles/stat-line-rerolling-strategy#block-0248"
-          }
-        ]
-      },
-      {
         "id": "context-block-0250",
         "sourceIds": ["block-0250"],
         "kind": "note",
@@ -248,17 +219,6 @@
           {
             "text": " are for Global)",
             "emphasis": true
-          }
-        ]
-      },
-      {
-        "id": "reference-block-0250",
-        "sourceIds": [],
-        "kind": "paragraph",
-        "content": [
-          {
-            "text": "Original context in Stat-line rerolling strategy",
-            "href": "/articles/stat-line-rerolling-strategy#block-0250"
           }
         ]
       },
@@ -1594,10 +1554,6 @@
     "summary": "Approximate raid Accuracy and Critical Hit requirements, supplemental stats, and unknown Muspel values.",
     "status": "source-uncertain",
     "sourceUrl": "https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/edit",
-    "qualifiers": [
-      "Source recommendations and first-person statements are Kanon’s. Captured update: 9/20/2026; Global changes were not all confirmed.",
-      "Raid values are approximate and not confirmed for Global. Muspel Normal Accuracy and Crit remain unknown."
-    ],
     "blocks": [
       {
         "id": "block-0339",

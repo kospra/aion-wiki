@@ -1,11 +1,10 @@
 [
   {
     "sourceId": "block-0407",
-    "disposition": "rendered",
-    "primary": {
-      "pageSlug": "growth-and-amplification",
-      "blockIds": ["block-0407"]
-    }
+    "disposition": "omitted",
+    "omission": "chapter-title",
+    "pageSlug": "growth-and-amplification",
+    "reason": "Google Docs chapter title; the article header shows the chapter."
   },
   {
     "sourceId": "block-0408",
@@ -693,10 +692,9 @@
   },
   {
     "sourceId": "block-0510",
-    "disposition": "rendered",
-    "primary": {
-      "pageSlug": "gear-transfer-and-material-costs",
-      "blockIds": ["block-0510"]
-    }
+    "disposition": "omitted",
+    "omission": "chapter-title",
+    "pageSlug": "arcana-card-types-and-stat-pools",
+    "reason": "Google Docs chapter title; the article header shows the chapter."
   }
 ]

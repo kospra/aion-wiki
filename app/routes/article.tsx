@@ -1,5 +1,4 @@
 import {
-  Badge,
   Box,
   Breadcrumb,
   Flex,
@@ -18,10 +17,8 @@ import {
   figureById,
   getPage,
   pagePath,
-  sourceLinkNotes,
   sourceLinks,
 } from '../content/repository';
-import { blockInlineSegments, walkBlocks } from '../content/reader';
 import type { GuidePage } from '../content/types';
 
 export function meta({ params }: { params: { slug?: string } }) {
@@ -34,12 +31,6 @@ export function meta({ params }: { params: { slug?: string } }) {
     : [{ title: 'Page not found | Aion 2 Wiki' }];
 }
 
-const statusText = {
-  'source-backed': 'Source backed',
-  'source-uncertain': 'Source context and uncertainty',
-  'source-pending': 'Source pending',
-};
-
 export function GuidePageView({
   page,
 }: {
@@ -49,12 +40,6 @@ export function GuidePageView({
   const index = articles.findIndex((item) => item.slug === page.slug);
   const previous = index > 0 ? articles[index - 1] : undefined;
   const next = index >= 0 ? articles[index + 1] : undefined;
-  const ambiguousLinks = new Set(
-    walkBlocks(page.blocks)
-      .flatMap((block) => blockInlineSegments(block).flat())
-      .map((part) => part.href)
-      .filter((href): href is string => Boolean(href && sourceLinkNotes[href])),
-  );
 
   return (
     <Box
@@ -99,7 +84,7 @@ export function GuidePageView({
         </Breadcrumb.List>
       </Breadcrumb.Root>
       <Box as="header" gridColumn={{ xl: '1' }} maxW="65ch" mb="6">
-        <Stack gap="6">
+        <Stack gap="4">
           <Text
             color="wiki.accent"
             textStyle="wiki.eyebrow"
@@ -125,59 +110,46 @@ export function GuidePageView({
           <Text color="wiki.muted" textStyle="wiki.body">
             {page.summary}
           </Text>
-          <Box
-            role="note"
-            data-source-status=""
-            p="4"
-            bg="wiki.surface"
-            borderColor="wiki.border"
-          >
-            <Stack gap="3" textStyle="wiki.caption" color="wiki.muted">
-              <Badge
-                alignSelf="start"
-                variant="subtle"
-                bg="wiki.raised"
-                color="wiki.ink"
-                px="2"
-                py="1"
-              >
-                {statusText[page.status]}
-              </Badge>
-              {page.status === 'source-pending' && (
-                <Text>
-                  The captured chapter says Coming soon; no guide details were
-                  supplied for it.
-                </Text>
-              )}
-              {page.qualifiers.map((qualifier) => (
-                <Text key={qualifier}>{qualifier}</Text>
-              ))}
-            </Stack>
-          </Box>
+          {page.status === 'source-pending' && (
+            <Text
+              role="note"
+              p="4"
+              bg="wiki.surface"
+              borderRadius="md"
+              color="wiki.muted"
+              textStyle="wiki.body"
+            >
+              This chapter is not written yet. The original guide marks it as
+              Coming soon.
+            </Text>
+          )}
           <Text
             color="wiki.muted"
             textStyle="wiki.caption"
             data-source-credit=""
           >
-            This guide preserves Kanon’s source statements and labels the
-            source’s limits.{' '}
+            Source:{' '}
             <Link
               href={page.sourceUrl}
               color="wiki.accent"
               _hover={{ color: 'wiki.accentHover' }}
               textDecoration="underline"
             >
-              Original source document
+              Kanon’s Aion 2 guide
             </Link>
-            {' · '}
-            <Link
-              asChild
-              color="wiki.accent"
-              _hover={{ color: 'wiki.accentHover' }}
-              textDecoration="underline"
-            >
-              <RouterLink to="/source">About the source and author</RouterLink>
-            </Link>
+            {category && (
+              <>
+                {' · '}
+                <Link
+                  asChild
+                  color="wiki.accent"
+                  _hover={{ color: 'wiki.accentHover' }}
+                  textDecoration="underline"
+                >
+                  <RouterLink to="/source">About the author</RouterLink>
+                </Link>
+              </>
+            )}
           </Text>
         </Stack>
       </Box>
@@ -199,41 +171,6 @@ export function GuidePageView({
           figures={figureById}
           sourceLinks={sourceLinks}
         />
-        {ambiguousLinks.size > 0 && (
-          <Box
-            as="aside"
-            aria-label="Source link notes"
-            mt="10"
-            pt="5"
-            borderTopWidth="1px"
-            borderColor="wiki.border"
-            color="wiki.muted"
-          >
-            <Stack gap="3">
-              <Heading as="h2" textStyle="wiki.section" color="wiki.ink">
-                Source link notes
-              </Heading>
-              <Text>
-                Some original anchors could not be matched unambiguously to a
-                captured block. Those links open the original document.
-              </Text>
-              <Box as="ul" pl="5" listStyleType="disc">
-                {[...ambiguousLinks].map((href) => (
-                  <Box as="li" key={href}>
-                    <Link
-                      href={sourceLinks[href]}
-                      color="wiki.accent"
-                      textDecoration="underline"
-                    >
-                      {href}
-                    </Link>
-                    : {sourceLinkNotes[href]}
-                  </Box>
-                ))}
-              </Box>
-            </Stack>
-          </Box>
-        )}
         {(previous || next) && (
           <Flex
             as="nav"

@@ -19,10 +19,6 @@ const figure: Figure = {
   width: 800,
   height: 1200,
   alt: 'Equipment stats screenshot',
-  caption: 'Equipment stat layers',
-  mappings: [],
-  screenshotOnly: [],
-  uncertainties: [],
 };
 
 it('renders source text as inert text with inline emphasis, highlighting, underlining, and safe links', () => {
@@ -201,13 +197,12 @@ it('renders captioned tables with column headers and labeled horizontal scrollin
   );
 });
 
-it('shows literal formulas, uncertain notes, group labels, and clickable figures', () => {
+it('shows literal formulas, notes, grouped blocks, and clickable figures', () => {
   const blocks: Block[] = [
     {
       id: 'block0011',
       sourceIds: [],
       kind: 'group',
-      label: 'Damage calculation',
       blocks: [
         {
           id: 'block0012',
@@ -241,9 +236,9 @@ it('shows literal formulas, uncertain notes, group labels, and clickable figures
     />,
   );
 
-  expect(
-    screen.getByRole('group', { name: 'Damage calculation' }),
-  ).toBeVisible();
+  expect(container.querySelector('#block0011')).toContainElement(
+    container.querySelector('#block0012'),
+  );
   expect(container.querySelector('pre')).toHaveTextContent('((A + B) × C) / D');
   expect(screen.getByText('The value is unknown.')).toBeVisible();
   expect(screen.getByText('Source uncertainty')).toBeVisible();
@@ -252,7 +247,6 @@ it('shows literal formulas, uncertain notes, group labels, and clickable figures
   ).toContainElement(
     screen.getByRole('img', { name: 'Equipment stats screenshot' }),
   );
-  expect(screen.getByText('Equipment stat layers')).toBeVisible();
 });
 
 it('gives repeated heading titles their distinct source-derived ids and matching nested contents targets', () => {
@@ -261,7 +255,6 @@ it('gives repeated heading titles their distinct source-derived ids and matching
       id: 'block0020',
       sourceIds: [],
       kind: 'group',
-      label: 'Regional priorities',
       blocks: [
         {
           id: 'block0021',
@@ -337,4 +330,51 @@ it('does not emit empty anchors for whitespace-only link spans adjacent to the s
     'href',
     'https://example.com/video',
   );
+});
+
+it('repeats a screenshot marker color beside the heading it links to, leaving the heading text unchanged', () => {
+  const blocks: Block[] = [
+    {
+      id: 'block0030',
+      sourceIds: ['block0042'],
+      kind: 'figure',
+      figureId: 'figure-1',
+    },
+    {
+      id: 'block0031',
+      sourceIds: ['block0031'],
+      kind: 'heading',
+      level: 2,
+      content: [{ text: 'Base Stats' }],
+    },
+  ];
+  const { container } = render(
+    <RichContent
+      blocks={blocks}
+      figures={{
+        'figure-1': {
+          ...figure,
+          annotations: [
+            {
+              label: '2',
+              title: 'Base Stats',
+              color: 'white',
+              target: 'block0031',
+            },
+          ],
+        },
+      }}
+      sourceLinks={{}}
+    />,
+  );
+  const heading = screen.getByRole('heading', { name: 'Base Stats', level: 2 });
+  expect(heading).toHaveTextContent(/^Base Stats$/);
+  const wrapper = container.querySelector('[data-guide-heading-markers]');
+  expect(wrapper).toContainElement(heading);
+  expect(
+    within(wrapper as HTMLElement).queryByText('2'),
+  ).not.toBeInTheDocument();
+  expect(
+    wrapper?.querySelector('[data-guide-color-swatch]'),
+  ).toBeInTheDocument();
 });

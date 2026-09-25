@@ -6,22 +6,7 @@
     "summary": "Insight levels, locks, presets, analysis costs, and region-qualified leveling advice.",
     "status": "source-uncertain",
     "sourceUrl": "https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/edit",
-    "qualifiers": [
-      "Source recommendations, first-person statements, and testing claims are Kanon’s. Figures are captured examples rather than universal costs or ideal builds.",
-      "Captured source update: 9/20/2026. Regional and unconfirmed details remain qualified as written."
-    ],
     "blocks": [
-      {
-        "id": "block-0685",
-        "sourceIds": ["block-0685"],
-        "kind": "heading",
-        "content": [
-          {
-            "text": "CH 8: PET GENUS"
-          }
-        ],
-        "level": 2
-      },
       {
         "id": "block-0687",
         "sourceIds": ["block-0687"],
@@ -36,7 +21,6 @@
         "id": "block-0689",
         "sourceIds": ["block-0689"],
         "kind": "group",
-        "label": "Related source illustrations",
         "blocks": [
           {
             "id": "block-0689-figure-072",
@@ -82,7 +66,6 @@
         "id": "block-0696",
         "sourceIds": ["block-0696"],
         "kind": "group",
-        "label": "Related source illustrations",
         "blocks": [
           {
             "id": "block-0696-figure-075",
@@ -379,18 +362,6 @@
         ]
       },
       {
-        "id": "context-block-0716",
-        "sourceIds": [],
-        "kind": "note",
-        "label": "Mixed regional workflow",
-        "tone": "uncertain",
-        "content": [
-          {
-            "text": "The preceding Line 4 leveling priorities are updated Global advice. This Auto Analysis note refers to the older Asia-style Lines 3 and 9. Screenshot “Smite” is associated by nearby source prose with Double Chance; this is a contextual alias, not an independently verified localization mapping."
-          }
-        ]
-      },
-      {
         "id": "block-0720",
         "sourceIds": ["block-0720"],
         "kind": "figure",
@@ -405,10 +376,6 @@
     "summary": "Asia slot priorities for ordinary and Special boards, with a numbered example.",
     "status": "source-uncertain",
     "sourceUrl": "https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/edit",
-    "qualifiers": [
-      "Source recommendations, first-person statements, and testing claims are Kanon’s. Figures are captured examples rather than universal costs or ideal builds.",
-      "Captured source update: 9/20/2026. Regional and unconfirmed details remain qualified as written."
-    ],
     "blocks": [
       {
         "id": "block-0723",
@@ -557,18 +524,6 @@
                   "text": "Remaining Lines: Max Attack > Attack Bonus"
                 }
               ]
-            },
-            {
-              "id": "context-block-0733",
-              "sourceIds": [],
-              "kind": "note",
-              "label": "Numbered roll example",
-              "tone": "uncertain",
-              "content": [
-                {
-                  "text": "The numbered screenshot is an example, not an ideal BIS roll. Its Slot 2 Boss Attack differs from the Asia recommendation Max Attack > Attack Bonus. Read Slots 1–9 in the figure legend; “Smite” follows the screenshot wording."
-                }
-              ]
             }
           ]
         ]
@@ -577,7 +532,6 @@
         "id": "block-0735",
         "sourceIds": ["block-0735"],
         "kind": "group",
-        "label": "Related source illustrations",
         "blocks": [
           {
             "id": "block-0735-figure-078",
@@ -602,10 +556,6 @@
     "summary": "Global slots for every board, including conditional Crit and Accuracy priorities.",
     "status": "source-uncertain",
     "sourceUrl": "https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/edit",
-    "qualifiers": [
-      "Source recommendations, first-person statements, and testing claims are Kanon’s. Figures are captured examples rather than universal costs or ideal builds.",
-      "Captured source update: 9/20/2026. Regional and unconfirmed details remain qualified as written."
-    ],
     "blocks": [
       {
         "id": "block-0738",
@@ -1278,10 +1228,6 @@
     "summary": "Pet owned bonuses are separate from Genus, illustrated by one leveled pet.",
     "status": "source-uncertain",
     "sourceUrl": "https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/edit",
-    "qualifiers": [
-      "Source recommendations, first-person statements, and testing claims are Kanon’s. Figures are captured examples rather than universal costs or ideal builds.",
-      "Captured source update: 9/20/2026. Regional and unconfirmed details remain qualified as written."
-    ],
     "blocks": [
       {
         "id": "block-0777",
@@ -1301,18 +1247,6 @@
         "content": [
           {
             "text": "Pets also have an “Owned Effects” system where you get passive stats as you unlock and level up more Pets.This can be leveled up by simply farming mobs or obtaining Pet-related rewards from a variety of content."
-          }
-        ]
-      },
-      {
-        "id": "context-block-0778",
-        "sourceIds": [],
-        "kind": "note",
-        "label": "Separate pet progression",
-        "tone": "context",
-        "content": [
-          {
-            "text": "The pictured Snowfield Kalgolem changes are Pet Insight owned effects, not Genus slot rolls. The stamina effect label is truncated in the screenshot."
           }
         ]
       },

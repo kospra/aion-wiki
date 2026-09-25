@@ -3,36 +3,10 @@
     "slug": "gear-anatomy-and-stat-layers",
     "title": "Gear anatomy and stat layers",
     "category": "gear-and-basics-explained",
-    "summary": "Seven equipment stat layers, their numbered visual legend, and transfer restrictions.",
+    "summary": "The seven stat layers on a piece of gear and which of them survive a gear transfer.",
     "status": "source-uncertain",
     "sourceUrl": "https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/edit",
-    "qualifiers": [
-      "Source recommendations and first-person statements are Kanon’s. Captured update: 9/20/2026; Global changes were not all confirmed."
-    ],
     "blocks": [
-      {
-        "id": "gear-source-uncertainty",
-        "sourceIds": [],
-        "kind": "note",
-        "label": "Source uncertainty",
-        "tone": "uncertain",
-        "content": [
-          {
-            "text": "The Armor amplification values are marked “DOUBLE CHECK” in the source. Crafted Potential differences are described for Asia and remain unconfirmed for Global."
-          }
-        ]
-      },
-      {
-        "id": "block-0027",
-        "sourceIds": ["block-0027"],
-        "kind": "heading",
-        "content": [
-          {
-            "text": "CH 1: GEAR & BASICS EXPLAINED "
-          }
-        ],
-        "level": 2
-      },
       {
         "id": "block-0028",
         "sourceIds": ["block-0028"],
@@ -58,20 +32,9 @@
         "figureId": "figure-003"
       },
       {
-        "id": "block-0031",
-        "sourceIds": ["block-0031"],
-        "kind": "paragraph",
-        "content": [
-          {
-            "text": "—"
-          }
-        ]
-      },
-      {
         "id": "block-0032",
         "sourceIds": ["block-0032"],
         "kind": "group",
-        "label": "Related source illustrations",
         "blocks": [
           {
             "id": "block-0032-figure-004",
@@ -1033,12 +996,9 @@
     "slug": "pantheon-stats-and-statues",
     "title": "Pantheon stats and statues",
     "category": "gear-and-basics-explained",
-    "summary": "Pantheon stat pairs, highlighted priorities, and the source’s statue and portrait examples.",
+    "summary": "Pantheon stat pairs, which ones to prioritize, and where they come from.",
     "status": "source-uncertain",
     "sourceUrl": "https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/edit",
-    "qualifiers": [
-      "Source recommendations and first-person statements are Kanon’s. Captured update: 9/20/2026; Global changes were not all confirmed."
-    ],
     "blocks": [
       {
         "id": "block-0096",
@@ -1114,7 +1074,7 @@
             "text": "CH: 6 Arcana",
             "emphasis": true,
             "underline": true,
-            "href": "/articles/arcana-card-types-and-stat-pools#block-0511"
+            "href": "/articles/arcana-card-types-and-stat-pools"
           },
           {
             "text": ")"
@@ -1143,19 +1103,7 @@
         "id": "block-0110",
         "sourceIds": ["block-0110"],
         "kind": "group",
-        "label": "Source text and illustration",
         "blocks": [
-          {
-            "id": "block-0110-text",
-            "sourceIds": ["block-0110"],
-            "kind": "paragraph",
-            "content": [
-              {
-                "text": "is",
-                "emphasis": true
-              }
-            ]
-          },
           {
             "id": "block-0110-figure-010",
             "sourceIds": ["block-0110"],
@@ -1629,18 +1577,6 @@
         "content": [
           {
             "text": "***ADD MORE DETAILS ON PORTRAITS***"
-          }
-        ]
-      },
-      {
-        "id": "pantheon-editorial-fragments",
-        "sourceIds": [],
-        "kind": "note",
-        "label": "Reading the highlights",
-        "tone": "uncertain",
-        "content": [
-          {
-            "text": "Yellow names mark the priority Pantheon stats; underlined effects explain their value. Purple rows in the screenshots are item styling, not priority highlights."
           }
         ]
       }

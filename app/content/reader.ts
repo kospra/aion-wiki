@@ -1,5 +1,4 @@
-import { readerFigure } from './reader-figure.ts';
-import type { Block, Figure, GuidePage, Inline } from './types';
+import type { Block, GuidePage, Inline } from './types';
 
 /** Direct children, in the same order the rich renderer displays them. */
 export function blockChildren(block: Block): Block[] {
@@ -44,33 +43,12 @@ export function blockInlineSegments(block: Block): Inline[][] {
   }
 }
 
-export function pageText(page: GuidePage, figures: Figure[]): string {
-  const byId = new Map(
-    figures.map((figure) => [figure.id, readerFigure(figure)]),
-  );
-  const text = [page.title, page.summary, ...page.qualifiers];
+export function pageText(page: GuidePage): string {
+  const text = [page.title, page.summary];
   for (const block of walkBlocks(page.blocks)) {
     text.push(...blockInlineSegments(block).map(inlineText));
     if (block.kind === 'table') text.push(block.caption);
-    if (block.kind === 'note' || block.kind === 'group') text.push(block.label);
-    if (block.kind === 'figure') {
-      const figure = byId.get(block.figureId);
-      if (!figure) continue;
-      text.push(
-        figure.alt,
-        figure.caption,
-        ...figure.screenshotOnly,
-        ...figure.uncertainties,
-      );
-      for (const mapping of figure.mappings) {
-        text.push(
-          mapping.label,
-          mapping.color ?? '',
-          mapping.visualValue ?? '',
-          mapping.meaning,
-        );
-      }
-    }
+    if (block.kind === 'note') text.push(block.label);
   }
   return text.filter(Boolean).join('\n');
 }

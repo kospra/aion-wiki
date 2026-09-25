@@ -2,37 +2,10 @@
   "slug": "about-the-source-and-author",
   "title": "About the source and author",
   "category": null,
-  "summary": "Kanon’s guide, author-reported experience, source credits, and captured update limitations.",
+  "summary": "Who wrote the guide, the author’s experience, and credits.",
   "status": "source-uncertain",
   "sourceUrl": "https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/edit",
-  "qualifiers": [
-    "Source recommendations and first-person statements are Kanon’s. Captured update: 9/20/2026; Global changes were not all confirmed."
-  ],
   "blocks": [
-    {
-      "id": "author-attribution",
-      "sourceIds": [],
-      "kind": "note",
-      "label": "About this source",
-      "tone": "context",
-      "content": [
-        {
-          "text": "The following introduction, requests to readers, and credential claims are Kanon’s original words. Screenshots show historical examples rather than wiki-author credentials or universal targets."
-        }
-      ]
-    },
-    {
-      "id": "captured-update",
-      "sourceIds": [],
-      "kind": "note",
-      "label": "Source date and scope",
-      "tone": "context",
-      "content": [
-        {
-          "text": "The source header literally reads “Last Updated: /20/2026”; the missing month is not repaired. Its separate update note is dated 9/20/2026. Kanon had not yet updated Wings, and described Global changes as unconfirmed until launch."
-        }
-      ]
-    },
     {
       "id": "block-0001",
       "sourceIds": ["block-0001"],
@@ -165,23 +138,6 @@
       ]
     },
     {
-      "id": "block-0014",
-      "sourceIds": ["block-0014"],
-      "kind": "paragraph",
-      "content": [
-        {
-          "text": "← "
-        },
-        {
-          "text": "Use the Document Tabs on the left for Chapters",
-          "emphasis": true
-        },
-        {
-          "text": ". "
-        }
-      ]
-    },
-    {
       "id": "block-0016",
       "sourceIds": ["block-0016"],
       "kind": "heading",
@@ -259,17 +215,6 @@
       "sourceIds": ["block-0023"],
       "kind": "figure",
       "figureId": "figure-002"
-    },
-    {
-      "id": "block-0025",
-      "sourceIds": ["block-0025"],
-      "kind": "paragraph",
-      "content": [
-        {
-          "text": "—",
-          "strong": true
-        }
-      ]
     },
     {
       "id": "research-attribution",

@@ -103,7 +103,7 @@ export function WikiDirectory({
               display={{ base: discover ? 'none' : 'block', md: 'block' }}
               mt="2"
             >
-              Search across articles, source text and figure details.
+              Search article titles and text.
             </Field.HelperText>
           </Field.Root>
           {discover && (
@@ -112,8 +112,7 @@ export function WikiDirectory({
               color="wiki.muted"
               display={{ base: 'block', xl: 'none' }}
             >
-              {categories.length} chapters · {articles.length} articles ·
-              Original figures
+              {categories.length} chapters · {articles.length} articles
             </Text>
           )}
         </Stack>
@@ -129,7 +128,7 @@ export function WikiDirectory({
             flexShrink="0"
           >
             <Text textStyle="wiki.eyebrow" color="wiki.accent">
-              Read with context
+              About this wiki
             </Text>
             <Heading
               as="h2"
@@ -137,16 +136,17 @@ export function WikiDirectory({
               lineHeight="1.1"
               color="wiki.accent"
             >
-              A guide with
+              Kanon’s Aion 2
               <br />
-              its sources.
+              progression guide.
             </Heading>
             <Box borderTopWidth="1px" borderColor="wiki.border" />
             <Text fontWeight="semibold">
               {categories.length} chapters / {articles.length} articles
             </Text>
             <Text fontSize="sm" color="wiki.muted">
-              Original figures and source context
+              Gear, enhancement, Arcana, Daevanion, Genus and damage formulas,
+              organized for quick reference.
             </Text>
             <Link asChild alignSelf="start">
               <RouterLink to="/source">
