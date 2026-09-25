@@ -36,7 +36,7 @@ omitted:
 
 ## Overview
 
-The approved [Figma design](https://www.figma.com/design/M1BKIOXsv2IJvTEbK4Cj1t/aion-wiki) is the visual reference: desktop Discover `3:10487`, desktop Article `3:10489`, mobile Discover `3:10490`, mobile Article `3:10491`. Its restrained game-reference identity uses real chapter numbering, original annotated figures and visible source context. This replaces the former warm editorial theme.
+The user prefers the current app's appearance. Use the running app and its shared Chakra tokens as the reference when reconciling existing Figma drift. The [Figma design](https://www.figma.com/design/M1BKIOXsv2IJvTEbK4Cj1t/aion-wiki) documents desktop Discover `3:10487`, desktop Article `3:10489`, mobile Discover `3:10490`, and mobile Article `3:10491`. Its restrained game-reference identity uses real chapter numbering, original annotated figures and visible source context. This replaces the former warm editorial theme.
 
 This is an English content site for players consulting equipment and progression information on desktop or phone. README.md and the captured content define scope. No Japan-specific product behavior is inferred from the game's origin. Preserve all canonical content, source highlights, figure mappings and regional uncertainty. Figma article excerpts are layout examples, not permission to truncate real articles.
 
@@ -78,5 +78,7 @@ The [application design-system board](https://www.figma.com/design/M1BKIOXsv2IJv
 Enabled controls have hover, active and visible keyboard focus states. Links use native anchors. Disabled controls use Chakra disabled behavior. App UI motion respects reduced motion. Global scrollbar tokens cover all owned scroll regions, with forced-color fallback.
 
 ## Verification
+
+The September 25 reconciliation compared the app at 1440px and 390px with the four canonical Figma frames. It corrected header controls, navigation typography, Discover spacing and card descriptions, source status versus uncertainty, the complete article contents list, and responsive figure annotations. Supporting source, empty-search, and pending-status compositions were updated too. Article frames are named **Opening excerpt** and include the first figure and its three mappings; the source composition is also an opening excerpt. They do not represent the full long articles. Browser scrollbar space accounts for the 10px difference between viewport and content width in these Windows captures. Shared page instances remain linked to application components and nested Chakra primitives.
 
 Run `npm run check`, `npm run build`, and `npm run verify:browser`. Compare desktop and phone Discover/article layouts with Figma; also check chapter pages, search success/empty/reset, source, pending content, 404, long tables, keyboard modal use, reduced motion and no-JavaScript reading. Content integrity remains owned by the existing validators.
