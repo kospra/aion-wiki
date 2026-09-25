@@ -8,12 +8,12 @@ Use Node 24.21.0 from `.nvmrc` and npm 12.1.0. On a clean Linux checkout, run:
 
 ```bash
 npm ci
-npm run build:netlify
+npm run validate
 npx playwright install --with-deps chromium
-npm run verify:browser:all
+npm run verify:browser
 ```
 
-`build:netlify` runs the source/content, lint, format, type, and unit checks, then builds and audits the static artifact and its 404 page. The browser command serves that artifact locally and checks the guide, editorial behavior, and reduced motion. Native Netlify builds run `npm ci && npm run build:netlify` through `netlify.toml`; they do not wait for GitHub Actions. GitHub's `wiki-ci` job separately validates each pull request and builds/tests its own artifact. Both jobs must complete successfully before a protected merge, once provider checks are configured.
+`validate` runs the source/content, lint, format, type, and unit checks, then builds and audits the static artifact and its 404 page. The browser command serves that artifact locally and checks the representative guide behavior and reduced motion. Native Netlify builds run `npm ci && npm run validate` through `netlify.toml`; they do not wait for GitHub Actions. GitHub's `wiki-ci` job separately validates each pull request and builds/tests its own artifact. Both jobs must complete successfully before a protected merge, once provider checks are configured.
 
 The local HTTP fixture tests prove that the smoke checker rejects soft 404s, missing images, wrong article content, mismatched content types, and stalled responses. They do not prove Netlify's live routing, headers, visibility, or actual build compatibility.
 
@@ -36,6 +36,6 @@ The local HTTP fixture tests prove that the smoke checker rejects soft 404s, mis
 
 ## Failure and rollback
 
-A failing `build:netlify` command aborts Netlify's build. A failing GitHub browser check blocks merging only if the required check is configured and enforced. GitHub uploads available browser QA results and screenshots as failure artifacts with seven-day retention; workflow console logs follow separate GitHub retention settings. Investigate the failed command or preview before retrying; a missing package registry or browser download should fail visibly.
+A failing `validate` command aborts Netlify's build. A failing GitHub browser check blocks merging only if the required check is configured and enforced. GitHub uploads available browser QA results and screenshots as failure artifacts with seven-day retention; workflow console logs follow separate GitHub retention settings. Investigate the failed command or preview before retrying; a missing package registry or browser download should fail visibly.
 
 For a production incident, select a retained, previously successful production deploy in Netlify's deploy history and publish it as the rollback. If needed, pause automatic publishing while investigating so a new Git-triggered deploy does not overwrite the rollback. Netlify's retention and rollback controls depend on the actual plan; do not assume old deploys remain forever. Revert or fix the Git source, validate through a pull request, then resume publishing and confirm the next production commit and smoke results. Keep the Git SHA, deploy URL, and provider history as the release record.

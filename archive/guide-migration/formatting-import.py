@@ -12,7 +12,7 @@ from lxml import html
 sys.dont_write_bytecode = True
 
 spec = importlib.util.spec_from_file_location(
-    "guide_importer", Path(__file__).resolve().parents[2] / "scripts/import-guide.py"
+    "guide_importer", Path(__file__).resolve().with_name("import-guide.py")
 )
 importer = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(importer)

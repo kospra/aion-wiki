@@ -33,11 +33,11 @@ jobs:
       - name: Check source
         run: npm run check
       - name: Build static site
-        run: npm run build:static
+        run: npm run build
       - name: Install Chromium
         run: npx playwright install --with-deps chromium
       - name: Verify browser behavior
-        run: npm run verify:browser:all
+        run: npm run verify:browser
       - name: Upload browser QA on failure
         if: failure()
         uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f # v6

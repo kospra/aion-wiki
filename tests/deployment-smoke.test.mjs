@@ -1,13 +1,20 @@
 // @vitest-environment node
 import { createServer } from 'node:http';
 import { Buffer } from 'node:buffer';
+import { readFileSync } from 'node:fs';
+import { URL } from 'node:url';
 import { afterEach, beforeEach, expect, it } from 'vitest';
 import { checkDeployment } from '../scripts/verify-deployment.mjs';
 
-const category = '/categories/gear-and-basics-explained';
-const article = '/articles/gear-anatomy-and-stat-layers';
-const image =
-  '/images/guide/75c12a28cb5482b515bd5690a050cbaf35ef78f6cc70fd38830633edbae241e0.png';
+const readJson = (path) =>
+  JSON.parse(readFileSync(new URL(path, import.meta.url), 'utf8'));
+const catalogue = readJson('../app/content/catalogue.json');
+const categoryEntry = catalogue.categories[0];
+const articleEntry = catalogue.articles[0];
+const source = readJson('../app/content/source-overview.json');
+const category = `/categories/${categoryEntry.slug}`;
+const article = `/articles/${articleEntry.slug}`;
+const image = readJson('../app/content/figures/group-a.json')[0].src;
 
 let server;
 let baseUrl;
@@ -35,22 +42,22 @@ beforeEach(async () => {
       {
         '/': { body: '<h1>Aion 2 Wiki</h1><p>Kanon’s guide</p>' },
         [category]: {
-          body: '<h1>Gear and basics explained</h1><p>Equipment stat layers and Pantheon priorities.</p>',
+          body: `<h1>${categoryEntry.title}</h1><p>Example category description.</p>`,
         },
         [`${category}/`]: {
-          body: '<h1>Gear and basics explained</h1><p>Equipment stat layers and Pantheon priorities.</p>',
+          body: `<h1>${categoryEntry.title}</h1><p>Example category description.</p>`,
         },
         [article]: {
-          body: '<h1>Gear anatomy and stat layers</h1><p>Enhancement/Amp Level</p>',
+          body: `<h1>${articleEntry.title}</h1><p>Example article body.</p>`,
         },
         [`${article}/`]: {
-          body: '<h1>Gear anatomy and stat layers</h1><p>Enhancement/Amp Level</p>',
+          body: `<h1>${articleEntry.title}</h1><p>Example article body.</p>`,
         },
         '/source': {
-          body: '<h1>About the source and author</h1><p>Kanon’s original words</p>',
+          body: `<h1>${source.title}</h1><p>Example source description.</p>`,
         },
         '/source/': {
-          body: '<h1>About the source and author</h1><p>Kanon’s original words</p>',
+          body: `<h1>${source.title}</h1><p>Example source description.</p>`,
         },
         [image]: { body: Buffer.from([137, 80, 78, 71]), type: 'image/png' },
       }[path] ?? { status: 404, body: 'missing' };
@@ -107,9 +114,11 @@ it('rejects a missing referenced image', async () => {
 });
 
 it('rejects fallback HTML at a known article route', async () => {
-  changes.set(article, { body: '<h1>Page not found</h1><a href="/">Home</a>' });
+  changes.set(article, {
+    body: `<h1>Aion 2 Wiki</h1><nav><a href="${article}">${articleEntry.title}</a></nav>`,
+  });
   await expect(checkDeployment(baseUrl)).rejects.toThrow(
-    /Gear anatomy|article/i,
+    /article\/page title/i,
   );
 });
 

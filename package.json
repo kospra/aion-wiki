@@ -5,9 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "react-router dev",
-    "build": "react-router build",
-    "build:static": "npm run build && node scripts/prepare-static.mjs && npm run verify:static",
-    "build:netlify": "npm run check && npm run build:static",
+    "build": "react-router build && node scripts/prepare-static.mjs && npm run verify:static",
+    "validate": "npm run check && npm run build",
     "preview": "serve build/client",
     "typecheck": "react-router typegen && tsc --noEmit",
     "lint": "eslint . --max-warnings 0",
@@ -16,10 +15,9 @@
     "test": "vitest run --pool=vmThreads --maxWorkers=1 --reporter=dot",
     "verify:static": "node scripts/verify-static.mjs",
     "verify:content": "node scripts/content-integrity.ts",
-    "verify:browser": "node scripts/verify-guide-browser.mjs",
+    "verify:browser": "node scripts/run-browser-checks.mjs",
     "content:generate": "node scripts/generate-catalogue.ts",
     "content:check": "node scripts/generate-catalogue.ts --check",
-    "verify:browser:all": "node scripts/run-browser-checks.mjs",
     "check": "npm run content:check && npm run verify:content && npm run lint && npm run format:check && npm run typecheck && npm test",
     "verify:deployment": "node scripts/verify-deployment.mjs"
   },

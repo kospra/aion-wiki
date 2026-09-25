@@ -17,7 +17,7 @@ from pathlib import Path, PureWindowsPath
 from lxml import html
 
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 SOURCE = ROOT / ".local-tools" / "source-doc"
 OUTPUT = ROOT / "content" / "source"
 ASSETS = ROOT / "public" / "images" / "guide"
@@ -283,7 +283,8 @@ def main() -> None:
     write_json("figure-audit.json", figure_audit)
     subprocess.run(
         [
-            str(ROOT / "node_modules" / ".bin" / "prettier"),
+            "node",
+            str(ROOT / "node_modules" / "prettier" / "bin" / "prettier.cjs"),
             "--write",
             *(
                 str(OUTPUT / name)

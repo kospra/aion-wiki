@@ -17,7 +17,7 @@ npm.cmd run dev
 Install the matching Windows Node release using your preferred installer or Windows version manager. If needed, install npm with `npm.cmd install --global npm@12.1.0`. To avoid a global npm change, prefix a command with `npm.cmd exec --yes --package=npm@12.1.0 -- npm`, for example `npm.cmd exec --yes --package=npm@12.1.0 -- npm ci`. Use `npm.cmd` and `npx.cmd` if PowerShell execution policy blocks their `.ps1` wrappers. Open the URL printed by React Router, normally `http://localhost:5173`.
 
 ```bash
-npm run build:static
+npm run build
 npm run preview -- --listen 3000
 ```
 
@@ -48,18 +48,20 @@ Run from the repository root. All checks use committed content, with no network 
 ```bash
 npm ci
 npm run check
-npm run build:static
+npm run build
 npx playwright install --with-deps chromium
-npm run verify:browser:all
+npm run verify:browser
 ```
 
-`npm run check` covers catalogue drift, source/content integrity, lint, formatting, types, and unit tests. `build:static` builds the 57 prerendered routes, prepares the standalone 404 page, and verifies source text, figures, internal targets, and publish boundaries. `build:netlify` combines `check` and `build:static` for the native Netlify build. Run `npm run content:generate` only after intentional content edits, then rerun validation; CI checks drift without repairing it.
+`npm run check` covers catalogue drift, source/content integrity, lint, formatting, types, and unit tests. `build` builds the 57 prerendered routes, prepares the standalone 404 page, and verifies source text, figures, internal targets, and publish boundaries. `validate` combines `check` and `build` for the native Netlify build. Run `npm run content:generate` only after intentional content edits, then rerun validation; CI checks drift without repairing it.
 
 During development, run a focused test with `npm test -- tests/wiki-directory.test.tsx`, then run the required checks once before delivery. Tests cover generic behavior using small fixtures; avoid adding article wording, game values, fixed catalogue counts, or framework-internal assertions. The integrity validator and static-output checks own source fidelity; the frozen source baseline remains protected.
 
-Browser QA uses the installed Playwright package and Chromium by default. On Windows, install Chromium with `npx.cmd playwright install chromium` and leave `GUIDE_BROWSER_ROOT` unset. `verify:browser:all` starts and stops a local preview and runs a compact mobile/desktop smoke check plus reduced-motion and image-viewer keyboard checks. It checks representative templates, navigation, search reset, 404 recovery, overflow and no-JavaScript reading; it does not repeat the full content audit in a browser. Smoke failures save a screenshot under `.local-tools/qa/guide/`. The hosted Linux workflow installs Chromium with `npx playwright install --with-deps chromium`.
+Browser QA uses the installed Playwright package and Chromium by default. On Windows, install Chromium with `npx.cmd playwright install chromium`. `verify:browser` starts and stops a local preview and runs a compact mobile/desktop smoke check plus reduced-motion and image-viewer keyboard checks. It checks representative templates, navigation, search reset, 404 recovery, overflow and no-JavaScript reading; it does not repeat the full content audit in a browser. Smoke failures save a screenshot under `.local-tools/qa/guide/`. The hosted Linux workflow installs Chromium with `npx playwright install --with-deps chromium`.
 
 Generated `build/`, `.react-router/`, coverage, and `.local-tools/qa/` can be deleted and regenerated. Keep `node_modules/` for local development, or recreate it with `npm ci`. The ignored `.local-tools/source-doc/` contains the original captured guide and migration audits; retain it as provenance, although normal development and validation use committed content only. Old local WSL runtimes and temporary inspection tools are unnecessary.
+
+The old `build:static`, `build:netlify`, and `verify:browser:all` commands are replaced by `build`, `validate`, and `verify:browser`, respectively. The browser command runs both smoke scripts against its own preview; `verify:deployment` remains a separate, explicit check of a hosted URL. Original Python import tools are archived under [archive/guide-migration](archive/guide-migration/README.md) and are not required for normal development.
 
 ## Content authoring
 

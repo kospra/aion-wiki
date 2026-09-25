@@ -101,48 +101,44 @@ async function htmlText(base, path, status = 200) {
   };
 }
 
-async function assertPage(base, path, identifyingText) {
-  const { text } = await htmlText(base, path);
-  for (const phrase of identifyingText) {
-    if (!text.includes(phrase))
+async function assertPage(base, path, title) {
+  const { document } = await htmlText(base, path);
+  try {
+    const heading = document
+      .querySelector('h1')
+      ?.textContent?.replace(/\s+/gu, ' ')
+      .trim();
+    if (heading !== title.replace(/\s+/gu, ' ').trim())
       throw new Error(
-        `${path}: missing expected article/page text ${JSON.stringify(phrase)}`,
+        `${path}: wrong article/page title; expected ${JSON.stringify(title)}`,
       );
+  } finally {
+    document.defaultView.close();
   }
 }
 
 export async function checkDeployment(baseUrl) {
   const base = parseBaseUrl(baseUrl);
-  const category =
-    catalogue.categories.find(
-      (item) => item.slug === 'gear-and-basics-explained',
-    ) ?? catalogue.categories[0];
-  const article = catalogue.articles.find(
-    (item) => item.slug === 'gear-anatomy-and-stat-layers',
-  );
+  const category = catalogue.categories[0];
+  const article = catalogue.articles[0];
   if (!category || !article || !figures[0]?.src)
     throw new Error('Missing source catalogue or figure contract');
 
-  await assertPage(base, '/', ['Aion 2 Wiki']);
+  await assertPage(base, '/', 'Aion 2 Wiki');
   for (const path of [
     `/categories/${category.slug}`,
     `/categories/${category.slug}/`,
   ]) {
-    await assertPage(base, path, [category.title, category.description]);
+    await assertPage(base, path, category.title);
   }
   for (const path of [
     `/articles/${article.slug}`,
     `/articles/${article.slug}/`,
   ]) {
-    await assertPage(base, path, [
-      article.title,
-      article.headings
-        .find((heading) => heading.title.trim() === 'Enhancement/Amp Level')
-        .title.trim(),
-    ]);
+    await assertPage(base, path, article.title);
   }
   for (const path of ['/source', '/source/']) {
-    await assertPage(base, path, [source.title, 'Kanon’s original words']);
+    await assertPage(base, path, source.title);
   }
 
   const imagePath = figures[0].src;

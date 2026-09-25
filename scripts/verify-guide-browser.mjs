@@ -3,10 +3,10 @@ import assert from 'node:assert/strict';
 import console from 'node:console';
 import process from 'node:process';
 import { mkdir } from 'node:fs/promises';
-import { loadChromium } from './browser-runtime.mjs';
+import { chromium } from 'playwright';
 
 const baseUrl = (process.argv[2] ?? 'http://localhost:3000').replace(/\/$/, '');
-const browser = await (await loadChromium()).launch({ headless: true });
+const browser = await chromium.launch({ headless: true });
 const errors = [];
 let page;
 
