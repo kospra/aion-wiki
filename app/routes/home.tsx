@@ -1,12 +1,4 @@
-import {
-  Box,
-  Flex,
-  Heading,
-  Link,
-  SimpleGrid,
-  Stack,
-  Text,
-} from '@chakra-ui/react';
+import { Box, Heading, Link, Stack, Text } from '@chakra-ui/react';
 import { Link as RouterLink } from 'react-router';
 import { WikiDirectory } from '../components/wiki-directory';
 import { articles, categories } from '../content/wiki';
@@ -54,90 +46,6 @@ export default function Home(): React.JSX.Element {
       </Box>
 
       <WikiDirectory />
-
-      <Box as="section" aria-labelledby="category-title">
-        <Stack gap={{ base: '5', md: '7' }}>
-          <Stack gap="2">
-            <Text textStyle="wiki.label" color="wiki.accent">
-              Find your path
-            </Text>
-            <Heading
-              as="h2"
-              id="category-title"
-              textStyle="wiki.section"
-              color="wiki.ink"
-            >
-              Browse by category
-            </Heading>
-          </Stack>
-          <SimpleGrid columns={{ base: 1, md: 2, xl: 3 }} gapX="8" gapY="0">
-            {categories.map((category, index) => (
-              <Box
-                key={category.slug}
-                borderTopWidth="1px"
-                borderColor="wiki.border"
-              >
-                <Link
-                  asChild
-                  display="block"
-                  color="wiki.ink"
-                  py="5"
-                  h="full"
-                  borderRadius="sm"
-                  _hover={{ color: 'wiki.accent', textDecoration: 'none' }}
-                  _focusVisible={{
-                    outlineColor: 'wiki.accent',
-                    outlineOffset: '3px',
-                  }}
-                >
-                  <RouterLink to={`/categories/${category.slug}`}>
-                    <Stack gap="2">
-                      <Flex align="baseline" gap="3">
-                        <Text
-                          as="span"
-                          textStyle="wiki.caption"
-                          color="wiki.muted"
-                          flexShrink="0"
-                        >
-                          {String(index + 1).padStart(2, '0')}
-                        </Text>
-                        <Heading
-                          as="h3"
-                          fontSize="lg"
-                          lineHeight="1.35"
-                          fontWeight="semibold"
-                        >
-                          {category.title}
-                        </Heading>
-                        <Text
-                          as="span"
-                          aria-hidden="true"
-                          ml="auto"
-                          color="wiki.accent"
-                        >
-                          ↗
-                        </Text>
-                      </Flex>
-                      <Text textStyle="wiki.caption" color="wiki.muted" pl="8">
-                        {category.description}
-                      </Text>
-                      {category.slug === 'class-passives' && (
-                        <Text
-                          textStyle="wiki.caption"
-                          color="wiki.muted"
-                          pl="8"
-                        >
-                          Source pending
-                        </Text>
-                      )}
-                    </Stack>
-                  </RouterLink>
-                </Link>
-              </Box>
-            ))}
-          </SimpleGrid>
-        </Stack>
-      </Box>
 
       <Box
         as="section"
