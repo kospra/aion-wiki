@@ -105,7 +105,7 @@ export function ArticleContents({
               py="2"
               px="3"
               borderWidth="1px"
-              borderRadius="md"
+              borderRadius="wiki.control"
               borderColor={
                 activeId === item.id ? 'wiki.accentBorder' : 'transparent'
               }
@@ -142,7 +142,7 @@ export function ArticleContents({
       aria-label="On this page"
       my={{ base: '7', xl: '0' }}
       p="4"
-      bg="wiki.surface"
+      layerStyle="wiki.panel"
       minW="0"
     >
       <Text

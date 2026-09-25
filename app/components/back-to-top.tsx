@@ -36,7 +36,7 @@ export function BackToTop({
       bg="wiki.surface"
       color="wiki.muted"
       borderColor="wiki.border"
-      borderRadius="full"
+      borderRadius="wiki.control"
       boxShadow="sm"
       _hover={{ color: 'wiki.accent', borderColor: 'wiki.accent' }}
       onClick={() => {

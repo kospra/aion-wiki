@@ -223,7 +223,7 @@ export function RichContent({
             maxW="100%"
             borderWidth="1px"
             borderColor="wiki.border"
-            borderRadius="md"
+            borderRadius="wiki.panel"
             overflowX="auto"
             _focusVisible={{
               outline: '2px solid',
@@ -309,10 +309,7 @@ export function RichContent({
             id={block.id}
             key={block.id}
             p={{ base: '4', md: '5' }}
-            bg="wiki.surface"
-            borderWidth="1px"
-            borderColor="wiki.border"
-            borderRadius="md"
+            layerStyle="wiki.panel"
           >
             <chakra.pre
               overflowX="auto"
@@ -343,7 +340,7 @@ export function RichContent({
             bg="wiki.surface"
             borderStartWidth="3px"
             borderColor="wiki.accentBorder"
-            borderRadius="sm"
+            borderRadius="wiki.inset"
             maxW={inTable ? undefined : '65ch'}
             color="wiki.ink"
           >

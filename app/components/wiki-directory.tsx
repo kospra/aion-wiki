@@ -248,10 +248,7 @@ export function WikiDirectory({
             ) : (
               <Stack
                 align="start"
-                bg="wiki.surface"
-                borderWidth="1px"
-                borderColor="wiki.border"
-                borderRadius="md"
+                layerStyle="wiki.panel"
                 p={{ base: '6', md: '8' }}
                 gap="3"
               >

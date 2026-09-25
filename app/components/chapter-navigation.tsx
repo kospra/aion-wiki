@@ -58,10 +58,7 @@ export function ChapterNavigation(): React.JSX.Element {
       display={{ base: 'none', lg: 'block' }}
       w="64"
       flexShrink="0"
-      bg="wiki.surface"
-      borderWidth="1px"
-      borderColor="wiki.border"
-      borderRadius="lg"
+      layerStyle="wiki.panel"
       p="4"
       mt="8"
       ms="8"

@@ -48,6 +48,19 @@ const config = defineConfig({
       },
     },
     semanticTokens: {
+      // Shape roles: every bordered surface uses one of these, never a raw radius.
+      radii: {
+        wiki: {
+          // Framed surfaces: rails, cards, content blocks, dialogs and states.
+          panel: { value: '{radii.lg}' },
+          // Interactive rows and controls, including rows inside panels.
+          control: { value: '{radii.md}' },
+          // Content nested inside a framed surface, and callout edges.
+          inset: { value: '{radii.sm}' },
+          // Annotation color squares.
+          swatch: { value: '{radii.xs}' },
+        },
+      },
       colors: {
         wiki: {
           // Sampled from the original screenshot annotation borders.
@@ -137,6 +150,14 @@ const config = defineConfig({
       },
     },
     layerStyles: {
+      'wiki.panel': {
+        value: {
+          bg: 'wiki.surface',
+          borderWidth: '1px',
+          borderColor: 'wiki.border',
+          borderRadius: 'wiki.panel',
+        },
+      },
       'wiki.navRow': {
         value: {
           display: 'flex',
@@ -146,7 +167,7 @@ const config = defineConfig({
           minH: '14',
           px: '3',
           py: '2',
-          borderRadius: 'lg',
+          borderRadius: 'wiki.control',
           borderWidth: '1px',
           fontSize: '0.8125rem',
           lineHeight: '1.5',
@@ -164,7 +185,7 @@ const config = defineConfig({
           bg: 'wiki.surface',
           borderWidth: '1px',
           borderColor: 'wiki.border',
-          borderRadius: 'md',
+          borderRadius: 'wiki.panel',
           p: '6',
           _hover: {
             borderColor: 'wiki.accentBorder',
@@ -194,7 +215,7 @@ const config = defineConfig({
       },
       button: {
         base: {
-          borderRadius: 'md',
+          borderRadius: 'wiki.control',
           cursor: 'pointer',
           _disabled: { cursor: 'not-allowed', opacity: 0.5 },
           _active: { transform: 'translateY(1px)' },
@@ -233,7 +254,7 @@ const config = defineConfig({
       },
       input: {
         base: {
-          borderRadius: 'md',
+          borderRadius: 'wiki.control',
           minH: '12',
           color: 'wiki.ink',
           '--focus-color': '{colors.wiki.accent}',

@@ -18,13 +18,7 @@ export function ArticleCard({
         h="full"
         layerStyle="wiki.card"
         color="wiki.ink"
-        borderRadius="sm"
-        _hover={{
-          color: 'wiki.accent',
-          borderColor: 'wiki.accentBorder',
-          bg: 'wiki.raised',
-          textDecoration: 'none',
-        }}
+        _hover={{ color: 'wiki.accent' }}
         _focusVisible={{ outlineColor: 'wiki.accent', outlineOffset: '3px' }}
       >
         <RouterLink to={`/articles/${article.slug}`}>

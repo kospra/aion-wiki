@@ -10,10 +10,7 @@ export function NotFound(): React.JSX.Element {
       mx="auto"
       my="12"
       p={{ base: '8', md: '12' }}
-      borderWidth="1px"
-      borderColor="wiki.border"
-      borderRadius="lg"
-      bg="wiki.surface"
+      layerStyle="wiki.panel"
       textAlign="center"
     >
       <Stack gap="4" align="center">
@@ -36,7 +33,7 @@ export function NotFound(): React.JSX.Element {
           py="2"
           bg="wiki.accent"
           color="wiki.canvas"
-          borderRadius="md"
+          borderRadius="wiki.control"
           fontWeight="semibold"
           _hover={{ bg: 'wiki.accentHover' }}
         >

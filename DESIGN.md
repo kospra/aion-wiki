@@ -20,8 +20,10 @@ typography:
   mono:
     fontFamily: 'ui-monospace, monospace'
 rounded:
-  md: '0.375rem'
-  lg: '0.5rem'
+  panel: '0.5rem'
+  control: '0.375rem'
+  inset: '0.25rem'
+  swatch: '0.125rem'
 spacing:
   page-max: '90rem'
   reading-max: '44rem'
@@ -60,7 +62,7 @@ Black canvas, charcoal panels and fine borders establish hierarchy. No gradients
 
 ## Shapes
 
-Chakra md/lg corners and 1px borders; no pill-shaped category filters. Navigation rows have 12px inner padding and a fixed number column. Controls are at least 44px high.
+Corners come only from the semantic `wiki.*` radii in `theme.ts`, never raw values. `wiki.panel` (8px) frames every bordered surface: both desktop rails, cards, tables, formulas, image frames, dialogs, and empty/error/pending states; use the `wiki.panel` layer style for surface + border + radius. `wiki.control` (6px) covers buttons, inputs, links styled as controls, and navigation/contents rows inside panels. `wiki.inset` (4px) is for content nested inside a frame and source callouts; `wiki.swatch` (2px) is for annotation color squares. 1px borders; no pill shapes. Navigation rows have 12px inner padding and a fixed number column. Controls are at least 44px high.
 
 ## Components
 

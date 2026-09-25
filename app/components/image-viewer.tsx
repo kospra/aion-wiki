@@ -32,7 +32,7 @@ export function ImageViewer({ figure }: { figure: Figure }): React.JSX.Element {
           bg="wiki.surface"
           borderWidth="1px"
           borderColor="wiki.border"
-          borderRadius="md"
+          borderRadius="wiki.panel"
           cursor="zoom-in"
           _hover={{ borderColor: 'wiki.accent', bg: 'wiki.accentSoft' }}
           _focusVisible={{
@@ -51,7 +51,7 @@ export function ImageViewer({ figure }: { figure: Figure }): React.JSX.Element {
             display="block"
             maxW="100%"
             height="auto"
-            borderRadius="sm"
+            borderRadius="wiki.inset"
           />
         </chakra.button>
       </Dialog.Trigger>
@@ -64,7 +64,7 @@ export function ImageViewer({ figure }: { figure: Figure }): React.JSX.Element {
             maxH="94dvh"
             bg="wiki.surface"
             color="wiki.ink"
-            borderRadius="md"
+            borderRadius="wiki.panel"
             overflow="hidden"
             _motionReduce={{ animation: 'none' }}
           >
@@ -96,7 +96,7 @@ export function ImageViewer({ figure }: { figure: Figure }): React.JSX.Element {
                 minH="0"
                 flex="1"
                 maxW="100%"
-                borderRadius="sm"
+                borderRadius="wiki.inset"
               >
                 <Image
                   src={src}

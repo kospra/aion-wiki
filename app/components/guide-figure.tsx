@@ -17,7 +17,7 @@ export function AnnotationSwatch({
       w="3"
       h="3"
       flexShrink="0"
-      borderRadius="2px"
+      borderRadius="wiki.swatch"
     />
   );
 }

@@ -15,7 +15,7 @@ export function SiteHeader(): React.JSX.Element {
         color="wiki.canvas"
         px="4"
         py="2"
-        borderRadius="md"
+        borderRadius="wiki.control"
         _focusVisible={{ left: '4', outlineColor: 'wiki.accent' }}
       >
         Skip to content
