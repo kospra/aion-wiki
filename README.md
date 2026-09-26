@@ -75,6 +75,6 @@ Figures live in `app/content/figures/group-{a,b,c}.json`; local originals are un
 
 ## Static hosting
 
-Publish **`build/client`** at the site root. Known routes have prerendered directory indexes, and the build also writes a standalone `404.html` with a real home link. Netlify configuration preserves HTTP 404 for unknown pages and assets; there is no catch-all HTTP 200 rewrite. No application server or runtime source fetch is required.
+Publish **`build/client`** at the site root. Known routes have prerendered directory indexes, and the build also writes a standalone `404.html` with a real home link. Netlify configuration preserves HTTP 404 for unknown pages and assets; there is no catch-all HTTP 200 rewrite. No application server or runtime source fetch is required. The build also writes `sitemap.xml` and `robots.txt`. `app/seo.ts` owns the production origin (`https://aion2simple.wiki`), canonical links, link-preview tags and structured data; see the runbook's Search engines section.
 
 Use [the deployment runbook](docs/deployment.md) to connect GitHub and Netlify, configure provider checks, validate the first preview, and release or roll back. After a live URL exists, run `npm run verify:deployment -- https://YOUR-DEPLOY-URL.netlify.app` with that operator-supplied URL. The smoke command makes read-only requests and is never scheduled automatically. Local fixture and preview tests do not establish live Netlify behavior until the connected site is checked.
