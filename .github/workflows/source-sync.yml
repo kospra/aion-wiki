@@ -1,0 +1,83 @@
+name: source-sync
+
+# Pulls Kanon's Google Doc with `npm run source:sync` and proposes the result as a pull request.
+# Nothing publishes until a person merges it. See README "Syncing with the Google Doc".
+on:
+  schedule:
+    - cron: '17 */6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+  # Pull requests opened with GITHUB_TOKEN do not start CI; the job dispatches it instead.
+  actions: write
+
+concurrency:
+  group: source-sync
+  cancel-in-progress: false
+
+env:
+  BRANCH: content/doc-sync
+  GH_TOKEN: ${{ github.token }}
+
+jobs:
+  source-sync:
+    name: source-sync
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - name: Check out source
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+      - name: Continue the open sync pull request
+        id: branch
+        run: |
+          pr=$(gh pr list --head "$BRANCH" --base main --state open --json number --jq '.[0].number // empty')
+          echo "pr=$pr" >> "$GITHUB_OUTPUT"
+          if [ -n "$pr" ]; then
+            git fetch origin "$BRANCH"
+            git switch "$BRANCH"
+          else
+            git switch -C "$BRANCH"
+          fi
+      - name: Set up Node.js
+        uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - name: Install npm
+        run: npm install --global npm@12.1.0
+      - name: Install dependencies
+        run: npm ci
+      - name: Sync the Google Doc
+        run: npm run source:sync
+      - name: Commit and propose the changes
+        env:
+          PR: ${{ steps.branch.outputs.pr }}
+        run: |
+          if [ -z "$(git status --porcelain)" ]; then
+            echo 'The Doc has not changed since the last capture.'
+            exit 0
+          fi
+          report=$(node -p "require('./content/source/captures.json').at(-1).report")
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A
+          git commit -m "Sync the Google Doc ($(basename "$report" .md) UTC)"
+          # Pull request bodies and comments hold at most 65536 characters.
+          body=$(mktemp)
+          if [ "$(wc -c < "$report")" -lt 60000 ]; then
+            cp "$report" "$body"
+          else
+            echo "The change report is too long to show here; see \`$report\`." > "$body"
+          fi
+          if [ -n "$PR" ]; then
+            git push origin "$BRANCH"
+            gh pr comment "$PR" --body-file "$body"
+          else
+            # A branch left from an earlier, closed pull request is replaced.
+            git push --force origin "$BRANCH"
+            gh pr create --base main --head "$BRANCH" \
+              --title "Sync the Google Doc ($(date -u +%F))" --body-file "$body"
+          fi
+          gh workflow run ci.yml --ref "$BRANCH"

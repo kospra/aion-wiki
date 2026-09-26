@@ -58,14 +58,14 @@ it('updates articles, snapshot and captures from a saved export', async () => {
   expect(result).toEqual({
     changed: true,
     flags: 0,
-    reportPath: 'content/source/changes/2026-10-07.md',
+    reportPath: 'content/source/changes/2026-10-07-1200.md',
   });
   const content = await loadContent(root);
   expect(validateGuide(guideInput(content))).toEqual([]);
   expect(content.captures).toHaveLength(2);
   expect(content.captures[1]).toMatchObject({
     nextBlock: 10,
-    report: 'content/source/changes/2026-10-07.md',
+    report: 'content/source/changes/2026-10-07-1200.md',
     baselineDigest: baselineDigest(content.baseline),
   });
   expect(await readFile(join(root, result.reportPath!), 'utf8')).toContain(
