@@ -1,6 +1,7 @@
-/* global document */
-// Renders the 1200×630 link-preview card (og:image) from the site's own copy
-// and DESIGN.md colors. Run it by hand after `npx playwright install chromium`:
+/* global document, URL */
+// Renders the link-preview card (og:image) from the site's own copy, DESIGN.md
+// colors, and the domain and size in app/seo.ts. Run it by hand after
+// `npx playwright install chromium`, and again whenever any of those change:
 //   node scripts/render-share-card.mjs
 // Builds never run it; the PNG is committed.
 import assert from 'node:assert/strict';
@@ -8,8 +9,10 @@ import console from 'node:console';
 import { readFile, stat } from 'node:fs/promises';
 import { createRequire } from 'node:module';
 import { chromium } from 'playwright';
+import { shareCard, siteOrigin } from '../app/seo.ts';
 
-const output = 'public/images/share-card.png';
+const output = `public${shareCard.path}`;
+const domain = new URL(siteOrigin).host;
 const require = createRequire(import.meta.url);
 const font = await readFile(
   require.resolve('@fontsource-variable/inter/files/inter-latin-wght-normal.woff2'),
@@ -27,8 +30,8 @@ const html = `<!doctype html>
       }
       * { box-sizing: border-box; margin: 0; }
       body {
-        width: 1200px;
-        height: 630px;
+        width: ${shareCard.width}px;
+        height: ${shareCard.height}px;
         padding: 80px;
         display: flex;
         flex-direction: column;
@@ -51,14 +54,14 @@ const html = `<!doctype html>
       <h1>Aion 2, explained.</h1>
       <div class="lede">Equipment, progression and combat.</div>
     </div>
-    <div class="domain">aion2simple.wiki</div>
+    <div class="domain">${domain}</div>
   </body>
 </html>`;
 
 const browser = await chromium.launch();
 try {
   const page = await browser.newPage({
-    viewport: { width: 1200, height: 630 },
+    viewport: { width: shareCard.width, height: shareCard.height },
     deviceScaleFactor: 1,
   });
   await page.setContent(html);
