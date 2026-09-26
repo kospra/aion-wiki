@@ -1,8 +1,9 @@
 import { Box, Button, Flex, Link, Text } from '@chakra-ui/react';
-import { Link as RouterLink, useLocation } from 'react-router';
+import { Link as RouterLink } from 'react-router';
+import { usePathname } from './use-pathname';
 
 export function SiteHeader(): React.JSX.Element {
-  const { pathname } = useLocation();
+  const pathname = usePathname();
   return (
     <Box as="header" bg="wiki.surface">
       <Link

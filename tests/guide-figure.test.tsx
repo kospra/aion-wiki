@@ -129,10 +129,10 @@ it('renders an icon-sized original as a plain image without the viewer', () => {
     id: 'figure-icon',
     width: 52,
     height: 53,
-    alt: 'Slot icon',
+    alt: 'Small icon',
   };
   const { container } = render(<GuideFigure figure={icon} />);
-  const image = screen.getByRole('img', { name: 'Slot icon' });
+  const image = screen.getByRole('img', { name: 'Small icon' });
   expect(image).toHaveAttribute('data-guide-primary-image');
   expect(image).toHaveAttribute('width', '52');
   expect(screen.queryByRole('button')).not.toBeInTheDocument();

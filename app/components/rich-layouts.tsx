@@ -4,7 +4,8 @@ import type { CalloutTone, InlineTag as Tag } from '../content/rules';
 
 /** Clears the author's note shading inside surfaces that already show it. */
 export const quietShade = {
-  '& mark[data-source-highlight="#f8f9fa"]': { bg: 'transparent' },
+  // `i`: the shading rule matches the color in any letter case.
+  '& mark[data-source-highlight="#f8f9fa" i]': { bg: 'transparent' },
 };
 
 const iconPaths: Record<CalloutTone, string> = {
@@ -79,17 +80,18 @@ export function CardGrid({
         : wide
           ? '20rem'
           : '12rem';
-  // Columns share their card's width; card grids keep equal card widths.
-  const tracks = kind === 'columns' ? 'auto-fit' : 'auto-fill';
   return (
     <Box
       data-guide-grid={kind}
       display="grid"
       gap={kind === 'columns' ? '4' : '3'}
-      gridTemplateColumns={{
-        base: '1fr',
-        sm: `repeat(${tracks}, minmax(${minimum}, 1fr))`,
-      }}
+      // Section cards keep equal widths and form columns from md; label cards
+      // and in-card columns form columns from sm and share the row they fill.
+      gridTemplateColumns={
+        kind === 'sections'
+          ? { base: '1fr', md: `repeat(auto-fill, minmax(${minimum}, 1fr))` }
+          : { base: '1fr', sm: `repeat(auto-fit, minmax(${minimum}, 1fr))` }
+      }
     >
       {children}
     </Box>
@@ -111,6 +113,7 @@ export function GridCard({
   return (
     <Box
       as={list ? 'ul' : 'div'}
+      role={list ? 'list' : undefined}
       id={id}
       data-guide-card=""
       layerStyle={plain ? undefined : 'wiki.gridCard'}

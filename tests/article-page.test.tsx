@@ -17,22 +17,22 @@ vi.mock('../app/content/wiki', () => {
   });
   return {
     categories: [
-      { slug: 'gear', title: 'Gear', description: '' },
-      { slug: 'skills', title: 'Skills', description: '' },
+      { slug: 'first', title: 'Chapter One', description: '' },
+      { slug: 'second', title: 'Chapter Two', description: '' },
     ],
     articles: [
-      entry('weapons', 'Weapons', 'gear'),
-      entry('armor', 'Armor', 'gear'),
-      entry('active', 'Active skills', 'skills'),
+      entry('alpha', 'Alpha', 'first'),
+      entry('beta', 'Beta', 'first'),
+      entry('gamma', 'Gamma', 'second'),
     ],
   };
 });
 
 const page: GuidePage = {
-  slug: 'armor',
-  title: 'Armor',
-  category: 'gear',
-  summary: 'Armor summary',
+  slug: 'beta',
+  title: 'Beta',
+  category: 'first',
+  summary: 'Beta summary',
   status: 'source-backed',
   sourceUrl: 'https://example.com/guide',
   blocks: [
@@ -40,13 +40,13 @@ const page: GuidePage = {
       id: 'body',
       sourceIds: ['body'],
       kind: 'paragraph',
-      content: [{ text: 'Slots and stats' }],
+      content: [{ text: 'Body text' }],
     },
     {
       id: 'tldr',
       sourceIds: ['tldr'],
       kind: 'paragraph',
-      content: [{ text: 'TLDR: Defensive', highlight: '#f8f9fa' }],
+      content: [{ text: 'TLDR: Short answer', highlight: '#f8f9fa' }],
     },
   ],
 };
@@ -63,9 +63,36 @@ it('shows the author’s TLDR first and labels a link into another chapter', () 
     ),
   ).toEqual(['tldr', 'body']);
   expect(
-    screen.getByRole('link', { name: /Next chapter · Skills/ }),
-  ).toHaveAttribute('href', '/articles/active');
+    screen.getByRole('link', { name: /Next chapter · Chapter Two/ }),
+  ).toHaveAttribute('href', '/articles/gamma');
   expect(
-    screen.getByRole('link', { name: /Previous: Weapons/ }),
+    screen.getByRole('link', { name: /Previous: Alpha/ }),
   ).not.toHaveTextContent('Previous chapter');
+});
+
+it('starts each article with its contents box closed', () => {
+  const withSections = (slug: string): GuidePage => ({
+    ...page,
+    slug,
+    blocks: ['One', 'Two'].map((title, index) => ({
+      id: `${slug}-${index}`,
+      sourceIds: [],
+      kind: 'heading',
+      level: 2,
+      content: [{ text: title }],
+    })),
+  });
+  const view = (slug: string) => (
+    <MemoryRouter>
+      <GuidePageView page={withSections(slug)} />
+    </MemoryRouter>
+  );
+  const details = () =>
+    screen
+      .getByRole('navigation', { name: 'On this page' })
+      .querySelector('details');
+  const { rerender } = render(view('beta'));
+  details()!.open = true;
+  rerender(view('alpha'));
+  expect(details()).not.toHaveAttribute('open');
 });

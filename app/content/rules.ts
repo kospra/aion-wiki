@@ -104,7 +104,16 @@ export function valueLine(
   const match = valueLinePattern.exec(textOf(parts));
   if (!match) return null;
   const equals = match[1].length;
-  return { stat: match[1].trim(), equals, value: equals + match[2].length };
+  const value = equals + match[2].length;
+  // Cutting through a link would render it as separate anchors.
+  let position = 0;
+  for (const part of parts) {
+    const end = position + part.text.length;
+    if (part.href && [equals, value].some((cut) => position < cut && cut < end))
+      return null;
+    position = end;
+  }
+  return { stat: match[1].trim(), equals, value };
 }
 
 /** Splits runs at ascending offsets of their joined text, keeping each run's formatting. */
@@ -136,17 +145,22 @@ export function splitRuns(parts: Inline[], offsets: number[]): Inline[][] {
 
 export type InlineTag = 'scope' | 'todo';
 
+// The phrases the phase 1 spec lists; other asides that mention a region stay
+// plain. `\s` also matches the non-breaking spaces Google Docs exports.
 const tagPatterns: [RegExp, InlineTag][] = [
-  [/\([^()]*\b(?:for|on) global\b[^()]*\)/giu, 'scope'],
-  [/\([^()]*\bKR\b[^()]*\)/gu, 'scope'],
-  [/\bnot (?:yet )?confirmed (?:yet )?(?:for|on) global\b/giu, 'scope'],
-  [/\bon (?:the )?asian? servers?\b/giu, 'scope'],
   [
-    /\b(?:will not be in the game|won[’']t be available) at launch\b/giu,
+    /\((?:not\s(?:yet\s)?confirmed\s(?:yet\s)?(?:for|on)\sglobal|the\sfollowing\s[^()]*\s(?:is|are)\sfor\sglobal)\)/giu,
+    'scope',
+  ],
+  [/\(KR\sas\sof\s[^()]*\)/gu, 'scope'],
+  [/\bnot\s(?:yet\s)?confirmed\s(?:yet\s)?(?:for|on)\sglobal\b/giu, 'scope'],
+  [/\bon\s(?:the\s)?asian?\sservers?\b/giu, 'scope'],
+  [
+    /\b(?:will\snot\sbe\sin\sthe\sgame|won[’']t\sbe\savailable)\sat\slaunch\b/giu,
     'scope',
   ],
   [/^\s*\*{3}[^*]+\*{3}\s*$/gu, 'todo'],
-  [/\(need values for this\)/giu, 'todo'],
+  [/\(need\svalues\sfor\sthis\)/giu, 'todo'],
 ];
 
 /** The guide's own qualifier phrases and to-do notes, as tagged segments of its runs. */
@@ -266,6 +280,16 @@ function startsSection(block: Block | undefined): boolean {
   );
 }
 
+/** Whether the next heading from `from` on is deeper than `level`, opening a subsection. */
+function hasSubsections(blocks: Block[], from: number, level: number): boolean {
+  for (let index = from; index < blocks.length; index++) {
+    const block = blocks[index];
+    const heading = block.kind === 'group' ? block.blocks[0] : block;
+    if (heading?.kind === 'heading') return heading.level > level;
+  }
+  return false;
+}
+
 type Section = {
   blocks: Block[];
   level: number;
@@ -279,6 +303,7 @@ function sectionAt(blocks: Block[], start: number): Section | null {
   if (first.kind === 'group') {
     const [heading, ...content] = first.blocks;
     if (heading?.kind !== 'heading' || !content.length) return null;
+    if (hasSubsections(blocks, start + 1, heading.level)) return null;
     const count = lineCount(content);
     if (count === null || count > maxSectionLines) return null;
     return {
@@ -306,7 +331,12 @@ function sectionAt(blocks: Block[], start: number): Section | null {
     content.push(block);
     count += lines.length;
   }
-  if (!content.length || isShadedBlock(content[0])) return null;
+  if (
+    !content.length ||
+    isShadedBlock(content[0]) ||
+    hasSubsections(blocks, index, first.level)
+  )
+    return null;
   return {
     blocks: [first, ...content],
     level: first.level,
@@ -343,9 +373,13 @@ function sectionRun(blocks: Block[], start: number): Section[] {
   return run;
 }
 
-/** A one-item list: a short label with nested lines, such as a card, set or stat pair. */
+/**
+ * A one-item bulleted list: a short label with nested lines, such as a card,
+ * set or stat pair. Numbered lists stay lists so their numbers show.
+ */
 function isLabelList(block: Block): boolean {
-  if (block.kind !== 'list' || block.items.length !== 1) return false;
+  if (block.kind !== 'list' || block.ordered || block.items.length !== 1)
+    return false;
   const [label, ...rest] = block.items[0];
   if (label?.kind !== 'paragraph' || isShadedRuns(label.content)) return false;
   if (textOf(label.content).trim().length > maxLabelLength) return false;

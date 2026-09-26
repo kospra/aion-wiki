@@ -1,15 +1,7 @@
 import { Box, Link, Stack, Text } from '@chakra-ui/react';
-import { Link as RouterLink, useLocation } from 'react-router';
+import { Link as RouterLink } from 'react-router';
 import { articles, categories } from '../content/wiki';
-
-/**
- * The current path without a trailing slash. Prerendering sees
- * "/articles/x/" while browsers may request "/articles/x", and both must
- * render the same navigation for hydration to match.
- */
-function usePathname(): string {
-  return useLocation().pathname.replace(/(.)\/+$/, '$1');
-}
+import { usePathname } from './use-pathname';
 
 export function ChapterList({
   showArticles = false,
@@ -21,7 +13,7 @@ export function ChapterList({
     (article) => pathname === `/articles/${article.slug}`,
   )?.category;
   return (
-    <Stack as="ul" listStyleType="none" m="0" p="0" gap="1">
+    <Stack as="ul" role="list" listStyleType="none" m="0" p="0" gap="1">
       {categories.map((category, index) => {
         const active =
           current === category.slug ||
@@ -58,6 +50,7 @@ export function ChapterList({
             {showArticles && active && (
               <Box
                 as="ul"
+                role="list"
                 listStyleType="none"
                 m="0"
                 mt="1"

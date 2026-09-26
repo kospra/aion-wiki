@@ -168,7 +168,8 @@ export function GuidePageView({
         overflowY={{ xl: 'auto' }}
         minW="0"
       >
-        <ArticleContents blocks={blocks} />
+        {/* A new article starts with its own contents box, closed. */}
+        <ArticleContents key={page.slug} blocks={blocks} />
       </Box>
       <Box gridColumn={{ xl: '1' }} gridRow={{ xl: '3' }} minW="0">
         <RichContent

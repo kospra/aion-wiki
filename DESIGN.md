@@ -14,6 +14,9 @@ colors:
   primary-border: '#286A62'
   border: '#27272A'
   control-border: '#71717A'
+  source-shade: '#F8F9FA'
+  warning: '#FBBF24'
+  tag-border: '#3F3F46'
 typography:
   sans:
     fontFamily: 'Inter Variable, Inter, system-ui, sans-serif'
@@ -44,7 +47,7 @@ This is an English content site for players consulting equipment and progression
 
 ## Colors
 
-Runtime authority is `app/components/ui/theme.ts`: `wiki.canvas`, `surface`, `raised`, `ink`, `muted`, `accent`, `accentHover`, `accentSoft`, `accentBorder`, `border`, `controlBorder`, and `scrollbar` map to the corresponding colors above. The document is dark before hydration. Teal marks navigation and interactions. Yellow source highlights remain exact content with black foregrounds. The author's near-white `#f8f9fa` note shading renders as a callout (`wiki.callout`): charcoal surface, body text in `wiki.ink`, and a 3px start edge in the exact `wiki.sourceShade`. Warning icons use `wiki.warning`; qualifier tags use `wiki.tagBorder`. Muted copy uses gray/400, not the lower-contrast gray/500.
+Runtime authority is `app/components/ui/theme.ts`: `wiki.canvas`, `surface`, `raised`, `ink`, `muted`, `accent`, `accentHover`, `accentSoft`, `accentBorder`, `border`, `controlBorder`, `scrollbar`, `sourceShade`, `warning` and `tagBorder` map to the corresponding colors above. The document is dark before hydration. Teal marks navigation and interactions. Yellow source highlights remain exact content with black foregrounds. The author's near-white `#f8f9fa` note shading renders as a callout (`wiki.callout`): charcoal surface, body text in `wiki.ink`, and a 3px start edge in the exact `wiki.sourceShade`. Warning icons use `wiki.warning`; qualifier tags use `wiki.tagBorder`. Muted copy uses gray/400, not the lower-contrast gray/500.
 
 ## Typography
 
@@ -52,7 +55,7 @@ Inter Variable is bundled locally through Fontsource. Semibold headings: Discove
 
 ## Layout
 
-The site shell caps at 1440px. Desktop navigation is 256px with 16px padding and a 32px top/start margin matching the main gutter, numbered rows and a full-row active surface. Main gutters are 32px; phone gutters are 16px. Below Chakra `lg`, the header's Chapters link returns to the home chapter list. It is a real anchor and works without JavaScript. Tablet pages use two-column cards. Desktop uses three-column chapter cards and a right contents rail from `xl`; mobile uses chapter rows. The article contents box is a native `details` disclosure, "On this page · N": closed by default, opened as the sticky rail from `xl`, and hidden when it would list one entry.
+The site shell caps at 1440px. Desktop navigation is 256px with 16px padding and a 32px top/start margin matching the main gutter, numbered rows and a full-row active surface. Main gutters are 32px; phone gutters are 16px. Below Chakra `lg`, the header's Chapters link returns to the home chapter list. It is a real anchor and works without JavaScript. Tablet pages use two-column cards. Desktop uses three-column chapter cards and a right contents rail from `xl`; mobile uses chapter rows. The article contents box is hidden when it would list one entry. Below `xl` it is a native `details` disclosure, "On this page · N", closed by default and reset for each article. From `xl` it is the sticky rail. CSS alone shows the list, which sits after the disclosure rather than inside it, so the rail never waits for JavaScript.
 
 Document scrolling owns the page. The desktop contents rail alone may scroll within its sticky height. Never constrain article height or hide overflowing content to match a mockup. Keep media dimensions reserved and use local Inter files to avoid runtime font services.
 
@@ -72,7 +75,7 @@ Components live in `app/components/` and routes in `app/routes/`. Change a share
 - `WikiDirectory` owns the home page's local search, chapter filtering, results, empty state, and immediate clear with input focus restoration. Query state remains transient, matching the existing app. Chapter pages are overviews: the chapter's articles in order with their summaries, then previous/next chapter links. They have no search. Home search folds the guide's spelling variants, such as Erroded and Eroded. All local results are rendered; this small static catalogue needs no pagination or asynchronous loading state.
 - `ArticleCard` and `wiki.card` share search-result and home chapter card surfaces. Cards show chapter, title and summary; pending articles say Not written yet. NativeSelect is deliberately platform-owned for category filtering; OS popup geometry is acceptable.
 - `GuidePageView`, `ArticleContents`, `RichContent`, and `GuideFigure` retain existing content and source semantics. Contents list actual headings and value lines, with full-row active styling.
-- `RichContent` applies the content rules in `app/content/rules.ts`. Fully shaded notes become `Callout`s whose icon follows the author's lead-in (IMPORTANT, TLDR, BEGINNER NOTE, QUICK FAQ, Additional Notes). Three or more short sections of the same shape become a `CardGrid` of `GridCard`s. Two or more one-item label lists become label cards, or columns inside a card; section grids whose cards hold columns use wider cards so two columns fit. Whole-paragraph "1% X = Y%" lines become `ValueLine` headers. The guide's own qualifier phrases and to-do notes become `InlineTag`s. Rules key on content, never on block IDs, so they re-apply after a Google Doc import, and layouts never reorder blocks.
+- `RichContent` applies the content rules in `app/content/rules.ts`. Fully shaded notes become `Callout`s whose icon follows the author's lead-in (IMPORTANT, TLDR, BEGINNER NOTE, QUICK FAQ, Additional Notes). Three or more short sections of the same shape become a `CardGrid` of `GridCard`s. Two or more one-item bulleted label lists become label cards, or columns inside a card; section grids whose cards hold columns use wider cards so two columns fit. Section grids form columns from `md` with equal card widths; label cards and in-card columns form columns from `sm` and stretch to fill their row. A section with deeper subheadings, and a numbered list, keep their normal flow. Whole-paragraph "1% X = Y%" lines become `ValueLine` headers. The qualifier phrases the phase 1 spec lists (such as "(not confirmed for Global)" and "(KR as of …)") and the author's to-do notes become `InlineTag`s; other asides that mention a region stay plain. Rules key on content, never on block IDs, so they re-apply after a Google Doc import, and layouts never reorder blocks.
 - `ImageViewer` remains a clickable image, framed by 8px inner padding so the hover border never touches the image. The hover frame and zoom-in cursor are the only affordance; there is no expand icon and a simple modal: full-size original and close button. Chakra owns focus trapping, Escape and focus restoration. Figures of 64px or less on both sides render as plain images without the viewer.
 - Article headers show the chapter eyebrow, title, summary and one muted `Source:` byline (original document, plus About the author on articles). No status badges, qualifier lists, source-link notes or provenance boilerplate.
 - Articles show the author's TLDR first: `orderTldrFirst` moves TLDR paragraphs, and any heading naming TLDR with its section, directly under the header. The static verifier expects that order. Previous/next links name the chapter when they cross into another one.
@@ -80,7 +83,7 @@ Components live in `app/components/` and routes in `app/routes/`. Change a share
 - Groups are invisible containers for anchors; they have no visible label or border. A group of two figures around a source "⬅️" renders as a side-by-side pair (result ⬅️ ingredients) from `md`; below `md` it stacks with the arrow turned upward. Notes are reserved for source-backed callouts.
 - Pending content, source overview, errors and 404 use the same tokens and primitives. Do not invent content for empty source chapters.
 
-Enabled controls have hover, active and visible keyboard focus states. Links use native anchors. Disabled controls use Chakra disabled behavior. App UI motion respects reduced motion. Global scrollbar tokens cover all owned scroll regions, with forced-color fallback.
+Lists styled without markers carry `role="list"` so Safari and VoiceOver keep announcing them as lists. Enabled controls have hover, active and visible keyboard focus states. Links use native anchors. Disabled controls use Chakra disabled behavior. App UI motion respects reduced motion. Global scrollbar tokens cover all owned scroll regions, with forced-color fallback.
 
 ## Verification
 

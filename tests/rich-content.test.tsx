@@ -288,6 +288,8 @@ it('gives repeated heading titles their distinct source-derived ids and matching
     </>,
   );
   const contents = screen.getByRole('navigation', { name: 'On this page' });
+  // Below the wide breakpoint the list shows once its disclosure is open.
+  contents.querySelector('details')!.open = true;
 
   expect(
     screen.getByRole('heading', { name: 'Global', level: 2 }),
@@ -386,10 +388,7 @@ it('keeps formatting inside a formula and omits an empty explanation', () => {
       id: 'formula-styled',
       sourceIds: ['formula-styled'],
       kind: 'formula',
-      expression: [
-        { text: '(Pure × Boost) + ' },
-        { text: 'Bonus', highlight: '#ffff00' },
-      ],
+      expression: [{ text: '(A × B) + ' }, { text: 'C', highlight: '#ffff00' }],
       explanation: [],
     },
   ];
@@ -397,7 +396,7 @@ it('keeps formatting inside a formula and omits an empty explanation', () => {
     <RichContent blocks={blocks} figures={{}} sourceLinks={{}} />,
   );
   const pre = container.querySelector('pre');
-  expect(pre).toHaveTextContent('(Pure × Boost) + Bonus');
+  expect(pre).toHaveTextContent('(A × B) + C');
   expect(pre?.querySelector('mark')).toHaveAttribute(
     'data-source-highlight',
     '#ffff00',
@@ -416,7 +415,7 @@ it('renders the author’s note shading as a callout and keeps the source mark',
   const { container } = render(
     <RichContent
       blocks={[
-        shadedParagraph('n1', 'IMPORTANT: Lost on transfer'),
+        shadedParagraph('n1', 'IMPORTANT: Keep this'),
         shadedParagraph('n2', 'Second line'),
       ]}
       figures={{}}
@@ -426,7 +425,7 @@ it('renders the author’s note shading as a callout and keeps the source mark',
   const callout = screen.getByRole('note');
   expect(callout).toHaveAttribute('data-guide-callout', 'warning');
   expect(
-    within(callout).getByText('IMPORTANT: Lost on transfer').closest('p'),
+    within(callout).getByText('IMPORTANT: Keep this').closest('p'),
   ).toHaveAttribute('id', 'n1');
   expect(callout).toContainElement(container.querySelector('#n2'));
   expect(
@@ -443,7 +442,7 @@ it('tags a qualifier in place, keeping its formatting and the paragraph text', (
           sourceIds: ['q'],
           kind: 'paragraph',
           content: [
-            { text: 'Crafted 5% (not confirmed for ' },
+            { text: 'Value 5% (not confirmed for ' },
             { text: 'Global)', strong: true },
           ],
         },
@@ -456,7 +455,7 @@ it('tags a qualifier in place, keeping its formatting and the paragraph text', (
   expect(tag).toHaveTextContent('(not confirmed for Global)');
   expect(tag?.querySelector('strong')).toHaveTextContent('Global)');
   expect(container.querySelector('#q')).toHaveTextContent(
-    'Crafted 5% (not confirmed for Global)',
+    'Value 5% (not confirmed for Global)',
   );
 });
 
@@ -493,35 +492,88 @@ it('lays out sections, label lists and value lines without changing block order'
       [line(`${id}-label`, `Label ${id}`), list(`${id}-nested`, ['Detail'])],
     ],
   });
+  const group = (id: string): Block => ({
+    id,
+    sourceIds: [],
+    kind: 'group',
+    blocks: [
+      {
+        id: `${id}-heading`,
+        sourceIds: [],
+        kind: 'heading',
+        level: 3,
+        content: [{ text: `Group ${id}` }],
+      },
+      labelList(`${id}-a`),
+      labelList(`${id}-b`),
+    ],
+  });
   // A paragraph ends the section grid; lists directly after a heading's list
-  // belong to that heading's section, as they do in the source.
+  // belong to that heading's section, as they do in the source. A shaded note
+  // after the last section speaks for the grid and follows it as a callout.
   const blocks: Block[] = [
     ...section('s1'),
     ...section('s2'),
     ...section('s3'),
+    shadedParagraph('n', 'Additional Notes: For every section'),
     line('mid', 'Between the grids'),
     labelList('c1'),
     labelList('c2'),
-    line('v', '1% Crit = 0.5%'),
+    group('g1'),
+    group('g2'),
+    group('g3'),
+    line('v', '1% Speed = 0.5%'),
   ];
   const { container } = render(
     <RichContent blocks={blocks} figures={{}} sourceLinks={{}} />,
   );
-  expect(
-    container.querySelectorAll(
-      '[data-guide-grid="sections"] [data-guide-card]',
-    ),
-  ).toHaveLength(3);
+  const [sections, groups] = container.querySelectorAll<HTMLElement>(
+    '[data-guide-grid="sections"]',
+  );
+  expect(sections.querySelectorAll(':scope > [data-guide-card]')).toHaveLength(
+    3,
+  );
+  expect(groups.querySelectorAll('[data-guide-grid="columns"]')).toHaveLength(
+    3,
+  );
+  expect(container.querySelector('[role="note"] #n')).not.toBeNull();
   expect(
     container.querySelectorAll('[data-guide-grid="labels"] [data-guide-card]'),
   ).toHaveLength(2);
+  for (const card of container.querySelectorAll(
+    '[data-guide-grid="labels"] [data-guide-card], [data-guide-grid="columns"] [data-guide-card]',
+  ))
+    expect(card).toHaveAttribute('role', 'list');
   expect(container.querySelector('#v')).toHaveAttribute(
     'data-guide-value-line',
   );
-  expect(container.querySelector('#v')).toHaveTextContent('1% Crit = 0.5%');
+  expect(container.querySelector('#v')).toHaveTextContent('1% Speed = 0.5%');
   expect(
     [...container.querySelectorAll('[data-guide-content] [id]')].map(
       (node) => node.id,
     ),
   ).toEqual(walkBlocks(blocks).map((block) => block.id));
+});
+
+it('keeps the number of a numbered note inside a callout', () => {
+  const { container } = render(
+    <RichContent
+      blocks={[
+        {
+          id: 'numbered',
+          sourceIds: [],
+          kind: 'list',
+          ordered: true,
+          start: 3,
+          items: [[shadedParagraph('numbered-item', 'IMPORTANT: Keep this')]],
+        },
+      ]}
+      figures={{}}
+      sourceLinks={{}}
+    />,
+  );
+  const list = container.querySelector('ol#numbered');
+  expect(list?.closest('[role="note"]')).not.toBeNull();
+  expect(list).toHaveAttribute('start', '3');
+  expect(getComputedStyle(list!).listStyleType).toBe('decimal');
 });

@@ -13,10 +13,15 @@ const blocks: Block[] = ['Overview', 'Materials', 'Result'].map(
     content: [{ text }],
   }),
 );
-afterEach(() => {
-  vi.restoreAllMocks();
-  vi.unstubAllGlobals();
-});
+afterEach(() => vi.restoreAllMocks());
+
+// Below the wide breakpoint the list shows once its disclosure is open.
+const openContents = () => {
+  const details = screen
+    .getByRole('navigation', { name: 'On this page' })
+    .querySelector('details');
+  if (details) details.open = true;
+};
 
 it('tracks the section across downward and upward scrolling and anchor navigation', async () => {
   let tops = [100, 700, 1400];
@@ -46,6 +51,7 @@ it('tracks the section across downward and upward scrolling and anchor navigatio
       ))}
     </>,
   );
+  openContents();
   const active = async (name: string) => {
     await waitFor(() =>
       expect(screen.getByRole('link', { name })).toHaveAttribute(
@@ -76,14 +82,14 @@ it('hides the contents box when it would list one entry', () => {
   ).not.toBeInTheDocument();
 });
 
-it('lists value lines under their heading in a closed disclosure by default', () => {
+it('lists value lines under their heading behind a disclosure that starts closed', () => {
   const withValue: Block[] = [
     blocks[0],
     {
       id: 'value',
       sourceIds: [],
       kind: 'paragraph',
-      content: [{ text: '1% Crit = 0.5%' }],
+      content: [{ text: '1% Speed = 0.5%' }],
     },
     blocks[2],
   ];
@@ -92,24 +98,19 @@ it('lists value lines under their heading in a closed disclosure by default', ()
   expect(nav.querySelector('details')).not.toHaveAttribute('open');
   expect(within(nav).getByText('On this page · 3')).toBeInTheDocument();
   expect(
-    within(nav).getByRole('link', { name: '1% Crit' }).closest('ul')
+    within(nav).queryByRole('link', { name: '1% Speed' }),
+  ).not.toBeInTheDocument();
+  openContents();
+  expect(
+    within(nav).getByRole('link', { name: '1% Speed' }).closest('ul')
       ?.parentElement,
   ).toHaveTextContent('Overview');
 });
 
-it('opens the disclosure on wide screens', async () => {
-  vi.stubGlobal('matchMedia', (query: string) => ({
-    matches: true,
-    media: query,
-    addEventListener: () => {},
-    removeEventListener: () => {},
-  }));
+it('keeps the list outside the disclosure so wide screens show it without JavaScript', () => {
   render(<ArticleContents blocks={blocks} />);
-  await waitFor(() =>
-    expect(
-      screen
-        .getByRole('navigation', { name: 'On this page' })
-        .querySelector('details'),
-    ).toHaveAttribute('open'),
-  );
+  const nav = screen.getByRole('navigation', { name: 'On this page' });
+  const list = nav.querySelector<HTMLElement>('[data-contents-list]');
+  expect(list).not.toBeNull();
+  expect(nav.querySelector('details')).not.toContainElement(list);
 });

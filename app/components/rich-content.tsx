@@ -315,8 +315,12 @@ export function RichContent({
         );
       }
       case 'list': {
-        // A shaded one-item list is the callout itself, so it drops its bullet.
-        const bare = Boolean(context.inCallout) && block.items.length === 1;
+        // A shaded one-item bulleted list is the callout itself, so it drops
+        // its bullet. Numbered lists keep their numbers.
+        const bare =
+          Boolean(context.inCallout) &&
+          block.items.length === 1 &&
+          !block.ordered;
         const items = block.items.map((item, index) => (
           <List.Item key={`${block.id}-item-${index}`}>
             {renderBlocks(item, context)}

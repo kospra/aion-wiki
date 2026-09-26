@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState, useSyncExternalStore } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { Box, Link, Text, chakra } from '@chakra-ui/react';
 import { inlineText, walkBlocks } from '../content/reader';
 import { valueLine } from '../content/rules';
@@ -10,24 +10,6 @@ type HeadingItem = {
   level: number;
   children: HeadingItem[];
 };
-
-/** Chakra's `xl` breakpoint, where the contents box becomes the sticky rail. */
-const wideScreen = '(min-width: 80em)';
-
-function useWideScreen(): boolean {
-  return useSyncExternalStore(
-    (onChange) => {
-      if (typeof window.matchMedia !== 'function') return () => {};
-      const query = window.matchMedia(wideScreen);
-      query.addEventListener('change', onChange);
-      return () => query.removeEventListener('change', onChange);
-    },
-    () =>
-      typeof window.matchMedia === 'function' &&
-      window.matchMedia(wideScreen).matches,
-    () => false,
-  );
-}
 
 export function ArticleContents({
   blocks,
@@ -55,9 +37,6 @@ export function ArticleContents({
     [blocks],
   );
   const [activeId, setActiveId] = useState<string>();
-  const wide = useWideScreen();
-  const [toggled, setToggled] = useState<boolean>();
-  const open = toggled ?? wide;
 
   useEffect(() => {
     const elements = headings
@@ -121,7 +100,13 @@ export function ArticleContents({
     nested = false,
   ): React.JSX.Element {
     return (
-      <Box as="ul" listStyleType="none" m="0" ps={nested ? '4' : '0'}>
+      <Box
+        as="ul"
+        role="list"
+        listStyleType="none"
+        m="0"
+        ps={nested ? '4' : '0'}
+      >
         {items.map((item) => (
           <Box as="li" key={item.id}>
             <Link
@@ -171,11 +156,17 @@ export function ArticleContents({
       p="4"
       layerStyle="wiki.panel"
       minW="0"
+      css={{
+        // CSS alone shows the list: always from xl, and below xl once the
+        // native disclosure is open, so the layout never waits for JavaScript.
+        '& > [data-contents-list]': { display: { base: 'none', xl: 'block' } },
+        '& > details[open] ~ [data-contents-list]': { display: 'block' },
+        '& > details[open] [data-contents-chevron]': {
+          transform: 'rotate(180deg)',
+        },
+      }}
     >
-      <chakra.details
-        open={open}
-        onToggle={(event) => setToggled(event.currentTarget.open)}
-      >
+      <chakra.details display={{ xl: 'none' }}>
         <chakra.summary
           display="flex"
           alignItems="center"
@@ -206,16 +197,30 @@ export function ArticleContents({
           <Box
             as="span"
             aria-hidden="true"
+            data-contents-chevron=""
             fontSize="xs"
             transition="transform 120ms ease"
-            transform={open ? 'rotate(180deg)' : undefined}
             _motionReduce={{ transition: 'none' }}
           >
             ▾
           </Box>
         </chakra.summary>
-        <Box mt="2">{renderItems(roots)}</Box>
       </chakra.details>
+      <Text
+        display={{ base: 'none', xl: 'block' }}
+        px="1"
+        mb="3"
+        color="wiki.accent"
+        textStyle="wiki.eyebrow"
+        fontWeight="semibold"
+        textTransform="uppercase"
+        letterSpacing="wide"
+      >
+        On this page
+      </Text>
+      <Box data-contents-list="" mt={{ base: '2', xl: '0' }}>
+        {renderItems(roots)}
+      </Box>
     </Box>
   );
 }

@@ -71,6 +71,7 @@ export default function CategoryRoute(): React.JSX.Element {
       </Box>
       <Box
         as="ol"
+        role="list"
         aria-label="Articles in this chapter"
         listStyleType="none"
         m="0"

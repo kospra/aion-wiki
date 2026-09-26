@@ -93,13 +93,11 @@ describe('lead-ins', () => {
         sourceIds: [],
         kind: 'list',
         ordered: false,
-        items: [[text('a', 'IMPORTANT: Lost on transfer')]],
+        items: [[text('a', 'IMPORTANT: Keep this')]],
       }),
     ).toBe('warning');
-    expect(leadInTone(heading('h', 'STAT VALUE TLDR'))).toBe('summary');
-    expect(
-      leadInTone(text('b', 'This guide is a work in progress')),
-    ).toBeUndefined();
+    expect(leadInTone(heading('h', 'VALUES TLDR'))).toBe('summary');
+    expect(leadInTone(text('b', 'A plain opening line'))).toBeUndefined();
   });
 });
 
@@ -136,9 +134,9 @@ describe('figures and value lines', () => {
   });
 
   it.each([
-    ['1% Damage Boost = 0.35%', '1% Damage Boost'],
-    ['1% Double Chance= 0.6% ~ 0.65%', '1% Double Chance'],
-    ['10 Attack = 0.17% ', '10 Attack'],
+    ['1% Speed = 0.35%', '1% Speed'],
+    ['1% Luck= 0.6% ~ 0.65%', '1% Luck'],
+    ['10 Power = 0.17% ', '10 Power'],
   ])('reads %s as a value line', (value, stat) => {
     const line = valueLine([{ text: value }]);
     expect(line?.stat).toBe(stat);
@@ -151,10 +149,10 @@ describe('figures and value lines', () => {
   });
 
   it('ignores sentences and values without a percentage', () => {
-    expect(valueLine([{ text: '1500 Accuracy' }])).toBeNull();
-    expect(valueLine([{ text: '1 Heroic Gear = 5 Fragments' }])).toBeNull();
+    expect(valueLine([{ text: '1500 Points' }])).toBeNull();
+    expect(valueLine([{ text: '1 Box = 5 Parts' }])).toBeNull();
     expect(
-      valueLine([{ text: 'Damage is 5% = more than before, roughly' }]),
+      valueLine([{ text: 'Speed is 5% = more than before, roughly' }]),
     ).toBeNull();
   });
 });
@@ -177,7 +175,7 @@ describe('splitting runs', () => {
 describe('inline tags', () => {
   it('tags qualifiers and to-do notes without changing the text', () => {
     const parts: Inline[] = [
-      { text: 'Crafted 5% (not confirmed for Global) and ' },
+      { text: 'Value 5% (not confirmed for Global) and ' },
       { text: '(need values for this)', strong: true },
     ];
     const segments = tagPhrases(parts);
@@ -198,7 +196,7 @@ describe('inline tags', () => {
   it('tags a qualifier that spans formatted runs as one segment', () => {
     const segments = tagPhrases([
       { text: '(The following ', emphasis: true },
-      { text: 'Stat Lines', strong: true },
+      { text: 'rows', strong: true },
       { text: ' are for Global)', emphasis: true },
     ]);
     expect(segments).toHaveLength(1);
@@ -281,7 +279,7 @@ describe('layout planning', () => {
 
   it('gives a callout after a TLDR heading the summary tone', () => {
     const segments = planLayout([
-      heading('h', 'STAT VALUE TLDR'),
+      heading('h', 'VALUES TLDR'),
       shaded('a', 'A > B'),
     ]);
     expect(segments[1]).toMatchObject({ kind: 'callout', tone: 'summary' });
@@ -366,8 +364,8 @@ describe('layout planning', () => {
       kind: 'group',
       blocks: [
         heading(`${id}-h`, id),
-        labelList(`${id}-a`, 'Equip Effect', ['x', 'y']),
-        labelList(`${id}-b`, 'Owned Effect', ['z']),
+        labelList(`${id}-a`, 'First', ['x', 'y']),
+        labelList(`${id}-b`, 'Second', ['z']),
       ],
     });
     const segments = planLayout([group('g1'), group('g2'), group('g3')]);
@@ -395,8 +393,8 @@ describe('layout planning', () => {
   it('puts two or more one-item label lists in a label grid', () => {
     expect(
       kinds([
-        labelList('a', 'Chalice', ['Pantheon Stat', 'All Skills']),
-        labelList('b', 'Parchment', ['Pantheon Stat']),
+        labelList('a', 'Alpha', ['Line one', 'Line two']),
+        labelList('b', 'Beta', ['Line one']),
         text('t', 'After'),
       ]),
     ).toEqual(['labels', 'block']);
@@ -413,5 +411,65 @@ describe('layout planning', () => {
         { structure: false },
       ).map((segment) => segment.kind),
     ).toEqual(['block', 'block', 'callout']);
+  });
+});
+
+describe('rules on content shapes that do not occur yet', () => {
+  it('keeps numbered label lists as lists so their numbers show', () => {
+    const numbered = (id: string): Block => ({
+      id,
+      sourceIds: [],
+      kind: 'list',
+      ordered: true,
+      items: [
+        [text(`${id}-label`, `Label ${id}`), list(`${id}-nested`, ['x'])],
+      ],
+    });
+    expect(kinds([numbered('a'), numbered('b')])).toEqual(['block', 'block']);
+  });
+
+  it('keeps a section with deeper subheadings out of a card grid', () => {
+    expect(
+      kinds([
+        heading('h1', 'One'),
+        list('l1', ['a']),
+        heading('h2', 'Two'),
+        list('l2', ['b']),
+        heading('h3', 'Three'),
+        list('l3', ['c']),
+        heading('h4', 'Three A', 4),
+        list('l4', ['d']),
+        heading('h5', 'Three B', 4),
+        list('l5', ['e']),
+        heading('h6', 'Three C', 4),
+        list('l6', ['f']),
+      ]),
+    ).toEqual([...Array(6).fill('block'), 'sections']);
+  });
+
+  it('tags only the listed qualifier phrases, not other asides naming a region', () => {
+    const tagged = (value: string) =>
+      tagPhrases([{ text: value }])
+        .filter((segment) => segment.tag)
+        .map((segment) => textOf(segment.parts));
+    expect(tagged('Rows (KR as of 1/1/2026) apply')).toEqual([
+      '(KR as of 1/1/2026)',
+    ]);
+    expect(tagged('Rows (The following rows are for Global)')).toEqual([
+      '(The following rows are for Global)',
+    ]);
+    // Google Docs often exports non-breaking spaces inside phrases.
+    expect(tagged('Rows (The following rows are for Global)')).toEqual([
+      '(The following rows are for Global)',
+    ]);
+    expect(tagged('Value (maybe lower for global though)')).toEqual([]);
+    expect(tagged('Range (current KR range) and (KR)')).toEqual([]);
+  });
+
+  it('leaves a value line whole when a link crosses its parts', () => {
+    expect(valueLine([{ text: '1% Speed = 0.5%', href: '#a' }])).toBeNull();
+    expect(
+      valueLine([{ text: '1% Speed', href: '#a' }, { text: ' = 0.5%' }])?.stat,
+    ).toBe('1% Speed');
   });
 });
