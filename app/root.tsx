@@ -9,6 +9,7 @@ import {
   useRouteError,
 } from 'react-router';
 import { NotFound } from './components/not-found';
+import { siteIcons } from './seo';
 import { SiteHeader } from './components/site-header';
 import { WikiProvider } from './components/ui/provider';
 import { ChapterNavigation } from './components/chapter-navigation';
@@ -25,7 +26,9 @@ export function Layout({
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#000000" />
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        {siteIcons.links.map((link) => (
+          <link key={link.href} {...link} />
+        ))}
         <Meta />
         <Links />
       </head>

@@ -12,7 +12,7 @@ try {
     '/scripts/static-not-found.tsx',
   );
   await writeFile('build/client/404.html', renderNotFoundDocument(), 'utf8');
-  const { renderRobots, renderSitemap, sitemapUrls } =
+  const { renderRobots, renderSitemap, renderWebManifest, sitemapUrls } =
     await server.ssrLoadModule('/app/seo.ts');
   await writeFile(
     'build/client/sitemap.xml',
@@ -20,6 +20,7 @@ try {
     'utf8',
   );
   await writeFile('build/client/robots.txt', renderRobots(), 'utf8');
+  await writeFile('build/client/site.webmanifest', renderWebManifest(), 'utf8');
   // Every route is prerendered and unknown paths get the static 404 page, so
   // nothing serves React Router's SPA fallback shell. Published, it would only
   // be an empty page that search engines could index.

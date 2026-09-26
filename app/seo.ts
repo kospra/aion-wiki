@@ -15,6 +15,21 @@ export const shareCard = {
   height: 630,
   alt: 'Aion 2 Wiki: Aion 2, explained.',
 };
+// Google Search shows the favicon.ico (a multiple of 48px) beside results;
+// browsers take the SVG, iOS the touch icon and Android the manifest icons.
+// scripts/render-icons.mjs rasterizes favicon.svg into the other files.
+export const siteIcons = {
+  links: [
+    { rel: 'icon', href: '/favicon.ico', sizes: '48x48' },
+    { rel: 'icon', href: '/favicon.svg', type: 'image/svg+xml' },
+    { rel: 'apple-touch-icon', href: '/apple-touch-icon.png' },
+    { rel: 'manifest', href: '/site.webmanifest' },
+  ],
+  manifest: [
+    { src: '/images/icon-192.png', sizes: '192x192', type: 'image/png' },
+    { src: '/images/icon-512.png', sizes: '512x512', type: 'image/png' },
+  ],
+};
 export const guideAuthor = { name: 'Kanon', path: '/source' };
 
 /** Netlify serves each prerendered route as a directory, so its URL ends in a slash. */
@@ -82,6 +97,19 @@ export function renderSitemap(urls: string[]): string {
 
 export function renderRobots(): string {
   return `User-agent: *\nAllow: /\n\nSitemap: ${siteOrigin}/sitemap.xml\n`;
+}
+
+export function renderWebManifest(): string {
+  const manifest = {
+    name: siteName,
+    short_name: siteName,
+    start_url: '/',
+    display: 'browser',
+    background_color: '#000000',
+    theme_color: '#000000',
+    icons: siteIcons.manifest,
+  };
+  return `${JSON.stringify(manifest, null, 2)}\n`;
 }
 
 /** Topic first, then the words people search with: "<topic> – Aion 2 Guide | Aion 2 Wiki". */
