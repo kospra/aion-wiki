@@ -4,7 +4,8 @@ name: source-sync
 # Nothing publishes until a person merges it. See README "Syncing with the Google Doc".
 on:
   schedule:
-    - cron: '17 */6 * * *'
+    # Once a day, at 05:17 UTC.
+    - cron: '17 5 * * *'
   workflow_dispatch:
 
 permissions:

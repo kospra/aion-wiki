@@ -22,7 +22,7 @@ Nothing publishes until someone reviews the diff, commits and pushes.
 | Baseline rule (D9) | The baseline changes only through the importer, and each capture keeps its fingerprints.          | 2026-09-25 |
 | Scope              | Detect changes, apply text edits to today's hand-built articles, and flag structural changes.     | 2026-09-26 |
 | Trigger            | A manual command, which the scheduled sync below also runs.                                                             | 2026-09-26 |
-| Scheduled sync     | A GitHub Action runs the command every 6 hours and proposes a pull request; a person merges it.    | 2026-09-26 |
+| Scheduled sync     | A GitHub Action runs the command once a day and proposes a pull request; a person merges it.    | 2026-09-26 |
 | Shape              | One command does everything, and `git diff` plus the report is the review step (approach A).      | 2026-09-26 |
 
 ## What the investigation found (2026-09-26)
