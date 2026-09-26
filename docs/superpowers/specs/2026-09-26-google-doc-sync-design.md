@@ -23,6 +23,7 @@ Nothing publishes until someone reviews the diff, commits and pushes.
 | Scope              | Detect changes, apply text edits to today's hand-built articles, and flag structural changes.     | 2026-09-26 |
 | Trigger            | A manual command, which the scheduled sync below also runs.                                                             | 2026-09-26 |
 | Scheduled sync     | A GitHub Action runs the command once a day and proposes a pull request; a person merges it.    | 2026-09-26 |
+| Flagged items      | When the scheduled sync flags items, a Claude step places them on the same branch, limited to content files; a person reviews. | 2026-09-26 |
 | Shape              | One command does everything, and `git diff` plus the report is the review step (approach A).      | 2026-09-26 |
 
 ## What the investigation found (2026-09-26)
@@ -253,6 +254,6 @@ The run stops, writes nothing and explains why when:
 ## Out of scope
 
 - The converter and overlay (option B), and text-slug heading anchors.
-- Placing structural changes automatically: new chapters or articles, list nesting changes, tables, multi-image groups.
+- Placing structural changes in the importer (the scheduled sync's Claude step attempts them): new chapters or articles, list nesting changes, tables, multi-image groups.
 - Writing alt text, which needs someone to look at the image.
 - Google Docs tabs, beyond the chapter guard.
