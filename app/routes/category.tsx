@@ -10,12 +10,7 @@ import {
 import { Link as RouterLink, useParams } from 'react-router';
 import { NotFound } from '../components/not-found';
 import { articles, categories } from '../content/wiki';
-import {
-  breadcrumbJsonLd,
-  guideTitle,
-  notFoundMeta,
-  pageMeta,
-} from '../seo';
+import { breadcrumbJsonLd, guideTitle, notFoundMeta, pageMeta } from '../seo';
 
 export function meta({ params }: { params: { slug?: string } }) {
   const category = categories.find(({ slug }) => slug === params.slug);
