@@ -60,6 +60,14 @@ beforeEach(async () => {
           body: `<h1>${source.title}</h1><p>Example source description.</p>`,
         },
         [image]: { body: Buffer.from([137, 80, 78, 71]), type: 'image/png' },
+        '/robots.txt': {
+          body: 'User-agent: *\nAllow: /\n\nSitemap: https://example.com/sitemap.xml\n',
+          type: 'text/plain; charset=utf-8',
+        },
+        '/sitemap.xml': {
+          body: '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>https://example.com/</loc></url></urlset>\n',
+          type: 'application/xml',
+        },
       }[path] ?? { status: 404, body: 'missing' };
     response.writeHead(fixture.status ?? 200, {
       'content-type': fixture.type ?? 'text/html; charset=utf-8',
@@ -112,6 +120,17 @@ it('rejects a missing referenced image', async () => {
   changes.set(image, { status: 404, body: 'missing' });
   await expect(checkDeployment(baseUrl)).rejects.toThrow(/image|404/i);
 });
+
+it.each([
+  ['/robots.txt', 'User-agent: *\nAllow: /\n', /robots/i],
+  ['/sitemap.xml', '<h1>Aion 2, explained.</h1>', /sitemap/i],
+])(
+  'rejects %s without its search engine content',
+  async (path, body, error) => {
+    changes.set(path, { body });
+    await expect(checkDeployment(baseUrl)).rejects.toThrow(error);
+  },
+);
 
 it('rejects fallback HTML at a known article route', async () => {
   changes.set(article, {

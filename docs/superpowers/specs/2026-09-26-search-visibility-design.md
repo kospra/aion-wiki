@@ -1,6 +1,6 @@
 # Search visibility: design
 
-Date: 2026-09-26. Status: written at the user's request for later execution; awaits review. Not implemented.
+Date: 2026-09-26. Status: approved and implemented (2026-09-26); the addendum records guards added after implementation.
 
 ## Goal
 
@@ -163,6 +163,8 @@ Expected head for an article:
 
 ### S6 Netlify header
 
+Superseded by A5: the shell is no longer published, so this header rule was removed. Original design:
+
 Add to `netlify.toml`:
 
 ```toml
@@ -284,11 +286,21 @@ After the first deploy that includes this change:
 
 ## Risks
 
-- **Wrong origin.** A typo in `siteOrigin` would point every canonical tag at another site. S8 keeps every page consistent with the constant but cannot check the constant itself. URL Inspection after the first deploy confirms it.
+- **Wrong origin.** A typo in `siteOrigin` would point every canonical tag at another site. S8 keeps every page consistent with the constant, and production builds compare the constant with Netlify's primary domain (A2). URL Inspection after the first deploy confirms what Google reads.
 - **Accidental `noindex`.** A bug that emits `noindex` widely would drop pages from Google. S8 fails the build when any indexable route carries it.
 - **Stale placeholder.** Indexability keys on `status`, so the Class Passives pages become indexable as soon as the article's status changes.
 - **Card drift.** When the home copy or branding changes, rerun the card script.
 - **Deploy Previews.** Previews carry production canonical tags and share URLs. Netlify's preview `noindex` header keeps them out of the index.
+
+## Addendum: keeping search in step with changes
+
+Decided with the user after implementation, 2026-09-26.
+
+- **A1 Only placeholders may be noindex.** `verify:static` fails when a page carries `noindex` without being placeholder content: an article with status `source-pending`, or a chapter holding only such articles. A new kind of page must be added to `isIndexable` instead of silently dropping out of search.
+- **A2 Domain guard.** On Netlify production builds (`CONTEXT=production`), `verify:static` fails unless Netlify's primary domain, its `URL` variable, equals `siteOrigin`. Output still depends only on committed files. Deploy Previews, branch deploys, CI and local builds skip the check.
+- **A3 Share card from `app/seo.ts`.** The render script reads the domain and image size from `siteOrigin` and `shareCard`.
+- **A4 Content changes.** Search metadata follows content automatically. The one manual step is a 301 in `netlify.toml` when a published URL changes or disappears. AGENTS.md states this rule, and the runbook covers it along with the domain-move steps.
+- **A5 No SPA shell.** Netlify's pretty URLs served the shell at `/__spa-fallback` as well as `/__spa-fallback.html`, and S6's header covered only the second. Nothing serves the shell: every route is prerendered, and unknown paths get the static 404 page. So `scripts/prepare-static.mjs` deletes it, and `verifyPublishRoot` rejects it. Both paths now return the real 404, and the S6 header rule is gone.
 
 ## Sources
 

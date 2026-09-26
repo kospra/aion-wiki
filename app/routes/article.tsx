@@ -20,17 +20,46 @@ import {
   pagePath,
   sourceLinks,
 } from '../content/repository';
+import { walkBlocks } from '../content/reader';
 import { orderTldrFirst } from '../content/rules';
 import type { GuidePage } from '../content/types';
+import {
+  articleJsonLd,
+  breadcrumbJsonLd,
+  notFoundMeta,
+  pageMeta,
+} from '../seo';
 
 export function meta({ params }: { params: { slug?: string } }) {
-  const article = articles.find(({ slug }) => slug === params.slug);
-  return article
-    ? [
-        { title: `${article.title} | Aion 2 Wiki` },
-        { name: 'description', content: article.summary },
-      ]
-    : [{ title: 'Page not found | Aion 2 Wiki' }];
+  const page = params.slug ? getPage(params.slug) : undefined;
+  const category = categories.find((item) => item.slug === page?.category);
+  if (!page || !category) return notFoundMeta();
+  const path = pagePath(page.slug);
+  const figures = walkBlocks(page.blocks).flatMap((block) =>
+    block.kind === 'figure' && figureById[block.figureId]
+      ? [figureById[block.figureId]]
+      : [],
+  );
+  return pageMeta({
+    path,
+    title: `${page.title} | Aion 2 Wiki`,
+    description: page.summary,
+    type: 'article',
+    jsonLd: [
+      articleJsonLd({
+        path,
+        title: page.title,
+        description: page.summary,
+        sourceUrl: page.sourceUrl,
+        figures,
+      }),
+      breadcrumbJsonLd([
+        { name: 'Discover', path: '/' },
+        { name: category.title, path: `/categories/${category.slug}` },
+        { name: page.title, path },
+      ]),
+    ],
+  });
 }
 
 export function GuidePageView({

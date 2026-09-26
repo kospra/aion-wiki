@@ -30,9 +30,43 @@ The local HTTP fixture tests prove that the smoke checker rejects soft 404s, mis
    npm run verify:deployment -- https://YOUR-DEPLOY-URL.netlify.app
    ```
 
-   The URL is an operator-supplied example, never a configured production target. The command makes read-only HTTP requests for known pages, trailing-slash forms, a referenced image, and random nonexistent page/asset paths. It requires genuine HTTP 404 responses and a useful not-found page. Resolve any preview issue before merging.
+   The URL is an operator-supplied example, never a configured production target. The command makes read-only HTTP requests for known pages, trailing-slash forms, `robots.txt`, the sitemap, a referenced image, and random nonexistent page/asset paths. It requires genuine HTTP 404 responses and a useful not-found page. Resolve any preview issue before merging.
 
 7. Merge only after enforced checks pass. Confirm Netlify's production deploy is built from the expected merge commit, with `build/client` published and no generated runtime functions. Run the same smoke command against the assigned production URL, review direct route refreshes and response headers, and record the Git commit SHA and Netlify deploy URL together. Smoke checks after publication detect problems; they cannot prevent the initial publication. Inspect Netlify's deployment and billing history after the first release. Batch coherent releases instead of publishing every experimental commit.
+
+## Search engines
+
+Production is `https://aion2simple.wiki`. `www` and `http` redirect to it, and `aion-wiki.netlify.app` serves the same build with Netlify's canonical header pointing to it. `app/seo.ts` holds that origin and builds each page's canonical link, link-preview tags and structured data. The build writes `sitemap.xml` and `robots.txt` from the same module, and `verify:static` fails unless page heads and the sitemap agree. Articles marked Coming soon, and chapters holding only such articles, carry `noindex` and stay out of the sitemap until they are written.
+
+Search engine accounts belong to the site owner, so these steps are manual:
+
+1. In Google Search Console, add a Domain property for `aion2simple.wiki`. Add the TXT record it shows in Netlify under Domains → aion2simple.wiki → DNS settings, then verify.
+2. In Search Console → Sitemaps, submit `https://aion2simple.wiki/sitemap.xml`. In URL Inspection, request indexing for the home page.
+3. In Bing Webmaster Tools, import the site from Search Console. Bing also feeds DuckDuckGo and Yahoo.
+4. Check the home page, a chapter and an article with Google's Rich Results Test, and a link preview in Discord.
+
+Crawling can take from a few days to a few weeks. Afterwards, watch Search Console's Page indexing, Sitemaps and Breadcrumbs reports. Links from the guide's author and from player communities help search engines find the site.
+
+Search metadata follows the content on every build, so content edits need no SEO step, with one exception. When a published URL changes or disappears (a renamed slug, or a split, merged or deleted article), add a 301 from the old path to its replacement in `netlify.toml`; search engines and other sites still link to the old URL. A new kind of page must also be added to `isIndexable` in `app/seo.ts`; until it is, `verify:static` fails, because only placeholder content may carry `noindex`.
+
+### Changing the domain
+
+Netlify production builds fail while Netlify's primary domain differs from `siteOrigin` in `app/seo.ts`, so a domain change cannot ship canonical links that point to the old domain. To move the site:
+
+1. In Netlify, add the new domain and make it primary. Keep the old domain attached and redirect every path on it to the new domain with a 301, for example:
+
+   ```toml
+   [[redirects]]
+     from = "https://old-domain.example/*"
+     to = "https://new-domain.example/:splat"
+     status = 301
+     force = true
+   ```
+
+   Keep the redirect for at least 180 days, and preferably for good.
+
+2. Change `siteOrigin`, rerender the share card with `node scripts/render-share-card.mjs`, and update the domain in this runbook and the README. Deploy.
+3. In Search Console, add and verify the new domain, submit its sitemap, and use Change of Address from the old property. Add the new domain in Bing Webmaster Tools too, and update the GitHub repository's website field.
 
 ## Failure and rollback
 

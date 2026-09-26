@@ -19,9 +19,10 @@ beforeEach(async () => {
     await mkdir(join(root, directory));
   for (const file of [
     '404.html',
-    '__spa-fallback.html',
     'favicon.svg',
     'index.html',
+    'robots.txt',
+    'sitemap.xml',
   ])
     await writeFile(join(root, file), 'fixture');
   await writeFile(join(root, 'source', 'index.html'), 'source route');
@@ -51,5 +52,12 @@ it('rejects copied build tooling', async () => {
   await writeFile(join(root, 'scripts', 'prepare-static.mjs'), 'tooling');
   await expect(staticVerifier.verifyPublishRoot(root)).rejects.toThrow(
     /Forbidden publish artifact.*scripts/,
+  );
+});
+
+it('rejects the unused React Router SPA shell', async () => {
+  await writeFile(join(root, '__spa-fallback.html'), 'shell');
+  await expect(staticVerifier.verifyPublishRoot(root)).rejects.toThrow(
+    /Forbidden publish artifact.*__spa-fallback\.html/,
   );
 });
