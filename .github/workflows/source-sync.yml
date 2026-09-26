@@ -1,0 +1,177 @@
+name: source-sync
+
+# Pulls Kanon's Google Doc with `npm run source:sync` and proposes the result as a pull request.
+# When the sync flags items it cannot place, Claude places them on the same branch.
+# Nothing publishes until a person merges it. See README "Syncing with the Google Doc".
+on:
+  schedule:
+    # Once a day, at 05:17 UTC.
+    - cron: '17 5 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+  # Pull requests opened with GITHUB_TOKEN do not start CI; the job dispatches it instead.
+  actions: write
+  id-token: write
+
+concurrency:
+  group: source-sync
+  cancel-in-progress: false
+
+env:
+  BRANCH: content/doc-sync
+  GH_TOKEN: ${{ github.token }}
+  # The Claude step is skipped until the ANTHROPIC_API_KEY repository secret exists.
+  CLAUDE_CONFIGURED: ${{ secrets.ANTHROPIC_API_KEY != '' }}
+
+jobs:
+  source-sync:
+    name: source-sync
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    steps:
+      - name: Check out source
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+      - name: Continue the open sync pull request
+        id: branch
+        run: |
+          pr=$(gh pr list --head "$BRANCH" --base main --state open --json number --jq '.[0].number // empty')
+          echo "pr=$pr" >> "$GITHUB_OUTPUT"
+          if [ -n "$pr" ]; then
+            git fetch origin "$BRANCH"
+            git switch "$BRANCH"
+          else
+            git switch -C "$BRANCH"
+          fi
+      - name: Set up Node.js
+        uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - name: Install npm
+        run: npm install --global npm@12.1.0
+      - name: Install dependencies
+        run: npm ci
+      - name: Sync the Google Doc
+        run: npm run source:sync
+      - name: Commit and propose the changes
+        id: propose
+        env:
+          PR: ${{ steps.branch.outputs.pr }}
+        run: |
+          if [ -z "$(git status --porcelain)" ]; then
+            echo 'The Doc has not changed since the last capture.'
+            exit 0
+          fi
+          report=$(node -p "require('./content/source/captures.json').at(-1).report")
+          pending=$(node -p "(require('./content/source/captures.json').at(-1).pending ?? []).length")
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A
+          git commit -m "Sync the Google Doc ($(basename "$report" .md) UTC)"
+          # Pull request bodies and comments hold at most 65536 characters.
+          body=$(mktemp)
+          if [ "$(wc -c < "$report")" -lt 60000 ]; then
+            cp "$report" "$body"
+          else
+            echo "The change report is too long to show here; see \`$report\`." > "$body"
+          fi
+          if [ -n "$PR" ]; then
+            git push origin "$BRANCH"
+            gh pr comment "$PR" --body-file "$body"
+          else
+            # A branch left from an earlier, closed pull request is replaced.
+            git push --force origin "$BRANCH"
+            gh pr create --base main --head "$BRANCH" \
+              --title "Sync the Google Doc ($(date -u +%F))" --body-file "$body"
+          fi
+          {
+            echo "changed=true"
+            echo "report=$report"
+            echo "pending=$pending"
+            echo "sha=$(git rev-parse HEAD)"
+          } >> "$GITHUB_OUTPUT"
+      - name: Place the flagged items
+        id: claude
+        if: steps.propose.outputs.changed == 'true' && steps.propose.outputs.pending != '0' && env.CLAUDE_CONFIGURED == 'true'
+        # A failed attempt leaves the pull request as the sync made it, for a person to finish.
+        continue-on-error: true
+        timeout-minutes: 30
+        uses: anthropics/claude-code-action@756cc22e19660d20e8cc9496b4f242475a7f7790 # v1.0.235
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          github_token: ${{ github.token }}
+          claude_args: >-
+            --model claude-opus-5-5
+            --max-turns 80
+            --allowedTools "Read,Edit,Write,Glob,Grep,Bash(npm run content:generate),Bash(npm run check),Bash(npm test:*),Bash(npx prettier:*)"
+          prompt: |
+            You are finishing an automatic sync of Kanon's Google Doc into this Aion 2 wiki.
+            The sync already applied every edit it could place with certainty and committed it.
+            The items it could not place are the `pending` list of the last entry in
+            `content/source/captures.json`; the change report `${{ steps.propose.outputs.report }}`
+            explains each one under "Needs attention".
+
+            First read AGENTS.md, the "Syncing with the Google Doc" and content sections of README.md,
+            and `docs/superpowers/specs/2026-09-26-google-doc-sync-design.md`. Their rules bind you. Above all:
+            - Preserve the source text, numbers, figure placements, links, highlights and the source's own
+              regional or uncertainty wording exactly as `content/source/baseline.json` has them.
+            - Do not invent game facts, add editorial notes, or weaken any check or test.
+            - Never edit `content/source/baseline.json`, `content/source/category-contract.json`, the
+              change reports, scripts, tests, workflows or configuration.
+            - Edit only `app/content/chapters/`, `app/content/source-overview.json`, `app/content/figures/`,
+              `content/coverage/` and `content/source/taxonomy.json`, and remove entries from the last
+              capture's `pending` list in `content/source/captures.json`. Change nothing else in that file.
+
+            For each pending item: find the block in `content/source/baseline.json`, place or update it in
+            the right article the way the surrounding content is built, and remove its entry. If you are
+            not confident where an item belongs, leave its entry in place. A person finishes those.
+            New images need alt text that describes the image without transcribing it.
+
+            Then run `npm run content:generate` and `npm run check`, and fix what you changed until the
+            check passes, or until only items you left pending fail.
+
+            Finally write `.local-tools/doc-sync-summary.md`: one bullet per item saying where you placed
+            it or why you left it, for the reviewer of the pull request. Do not commit or push; the
+            workflow does that after checking which files you changed.
+      - name: Commit the placed items
+        if: steps.claude.outcome == 'success'
+        env:
+          PR: ${{ steps.branch.outputs.pr }}
+          SYNC_SHA: ${{ steps.propose.outputs.sha }}
+        run: |
+          git add -A
+          # Only content files may change, and captures.json only by removing pending entries.
+          outside=$(git diff --cached --name-only "$SYNC_SHA" | grep -Ev '^(app/content/chapters/|app/content/figures/|content/coverage/|app/content/source-overview\.json$|app/content/catalogue\.json$|app/content/source-references\.json$|content/source/taxonomy\.json$|content/source/captures\.json$)' || true)
+          if [ -n "$outside" ]; then
+            echo "::error::Claude changed files it may not touch; nothing was committed:"
+            echo "$outside"
+            exit 1
+          fi
+          git show "$SYNC_SHA:content/source/captures.json" > "$RUNNER_TEMP/captures-before.json"
+          node -e '
+            const fs = require("node:fs");
+            const [before, after] = [process.argv[1], "content/source/captures.json"].map((path) => JSON.parse(fs.readFileSync(path, "utf8")));
+            const key = (entry) => JSON.stringify({ ...entry, pending: undefined });
+            const kept = (after.at(-1).pending ?? []).every((item) => (before.at(-1).pending ?? []).some((old) => JSON.stringify(old) === JSON.stringify(item)));
+            if (after.length !== before.length || after.some((entry, index) => key(entry) !== key(before[index])) || !kept) {
+              console.error("::error::captures.json changed beyond removing pending entries; nothing was committed.");
+              process.exit(1);
+            }
+          ' "$RUNNER_TEMP/captures-before.json"
+          if [ -z "$(git status --porcelain)" ]; then
+            echo 'Nothing was placed.'
+            exit 0
+          fi
+          git commit -m 'Place the items the Doc sync flagged'
+          git push origin "$BRANCH"
+          pr=${PR:-$(gh pr list --head "$BRANCH" --base main --state open --json number --jq '.[0].number')}
+          if [ -f .local-tools/doc-sync-summary.md ]; then
+            { echo '### Flagged items placed automatically'; echo; head -c 60000 .local-tools/doc-sync-summary.md; } > "$RUNNER_TEMP/summary.md"
+            gh pr comment "$pr" --body-file "$RUNNER_TEMP/summary.md"
+          fi
+      - name: Start wiki-ci on the branch
+        if: always() && steps.propose.outputs.changed == 'true'
+        run: gh workflow run ci.yml --ref "$BRANCH"

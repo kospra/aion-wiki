@@ -163,7 +163,8 @@ export async function runSync(options: SyncOptions): Promise<SyncResult> {
   }
   const result = reconcile(content, alignment);
   const capturedAt = (options.now ?? new Date()).toISOString();
-  const reportPath = `content/source/changes/${capturedAt.slice(0, 10)}.md`;
+  // Date and UTC time, so several syncs on one day keep separate reports.
+  const reportPath = `content/source/changes/${capturedAt.slice(0, 10)}-${capturedAt.slice(11, 13)}${capturedAt.slice(14, 16)}.md`;
   const capture: Capture = {
     capturedAt,
     fingerprints: alignment.baseline.fingerprints,

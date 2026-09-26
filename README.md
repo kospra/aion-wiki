@@ -80,7 +80,7 @@ Figures live in `app/content/figures/group-{a,b,c}.json`; local originals are un
 - records the capture in `content/source/baseline.json` and `content/source/captures.json`;
 - applies text edits to the articles;
 - regenerates the catalogue;
-- writes a report to `content/source/changes/<date>.md`.
+- writes a report to `content/source/changes/<date>-<UTC time>.md`.
 
 Run it on a branch with no uncommitted content changes:
 
@@ -104,6 +104,8 @@ To pass options, run the script directly, for example `node scripts/source-sync.
 - `--from <file>` reads a saved export;
 - `--force` continues when most blocks changed;
 - `--allow-dirty` skips the uncommitted-changes check.
+
+The `source-sync` GitHub Action (`.github/workflows/source-sync.yml`) runs `npm run source:sync` once a day (05:17 UTC), and on demand from the Actions tab. When the Doc changed, it commits the result to the `content/doc-sync` branch and opens a pull request whose description is the report. While that pull request is open, later runs add their commits to it and post each new report as a comment. It then starts `wiki-ci` on the branch, and Netlify builds a deploy preview. Nothing publishes until someone merges. If the sync flagged anything and the `ANTHROPIC_API_KEY` repository secret is set, a Claude step (`anthropics/claude-code-action`) then tries to place the flagged items on the same branch under the rules in this README and AGENTS.md, and comments with where it put each one. It may change only article, figure, coverage and taxonomy files and remove `pending` entries; the workflow checks the changed files and commits nothing if anything else changed. Review its placement like any other edit. Without the secret, or for items it leaves pending, `wiki-ci` fails until the items are fixed by hand on that branch. A failed run (for example the churn guard) sends GitHub's usual failure notice; run the command locally to decide. The workflow needs "Allow GitHub Actions to create and approve pull requests" enabled under Settings → Actions → General.
 
 Only this command touches the network. Each raw download is also kept under the ignored `.local-tools/source-doc/captures/`. See [the design](docs/superpowers/specs/2026-09-26-google-doc-sync-design.md).
 
