@@ -1,0 +1,16 @@
+[
+  {
+    "capturedAt": "2026-09-24T00:00:00.000Z",
+    "fingerprints": {
+      "html": "3d1a5c34900c95b1cc7af1c19167be836adbf23570e71684172a2a00480c5eb8",
+      "docx": "ac7c3833a4d39ada22045deb471772df73b1abaf9d54e53f0f92baeb9caed826"
+    },
+    "updateNote": "***Update Note 9/20/2026: Updated Stat Lines, Gear, and Genus the best I could given the info we know so far. There are for sure some big changes for global and it’s impossible for us to be 100% sure of ALL the changes until launch. Will update this doc with confirmed info as soon as I can. If there is any confirmed info that needs to be updated on this doc that you notice, please shoot me an X msg or DM on Discord. I have not yet updated the Wings section.",
+    "blocks": 1268,
+    "figures": 90,
+    "nextBlock": 1269,
+    "nextFigure": 91,
+    "report": null,
+    "baselineDigest": "710fb98787161e484839fdad09e5fe3e92b3bcf8b6953c6e7d341f7d6b9fb376"
+  }
+]

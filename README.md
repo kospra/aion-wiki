@@ -55,7 +55,7 @@ npm run verify:browser
 
 `npm run check` covers catalogue drift, source/content integrity, lint, formatting, types, and unit tests. `build` builds the 57 prerendered routes, prepares the standalone 404 page, and verifies source text, figures, internal targets, and publish boundaries. `validate` combines `check` and `build` for the native Netlify build. Run `npm run content:generate` only after intentional content edits, then rerun validation; CI checks drift without repairing it.
 
-During development, run a focused test with `npm test -- tests/wiki-directory.test.tsx`, then run the required checks once before delivery. Tests cover generic behavior using small fixtures; avoid adding article wording, game values, fixed catalogue counts, or framework-internal assertions. The integrity validator and static-output checks own source fidelity; the frozen source baseline remains protected.
+During development, run a focused test with `npm test -- tests/wiki-directory.test.tsx`, then run the required checks once before delivery. Tests cover generic behavior using small fixtures; avoid adding article wording, game values, fixed catalogue counts, or framework-internal assertions. The integrity validator and static-output checks own source fidelity; the source baseline changes only through `npm run source:sync`.
 
 Browser QA uses the installed Playwright package and Chromium by default. On Windows, install Chromium with `npx.cmd playwright install chromium`. `verify:browser` starts and stops a local preview and runs a compact mobile/desktop smoke check plus reduced-motion and image-viewer keyboard checks. It checks representative templates, navigation, search reset, 404 recovery, overflow and no-JavaScript reading; it does not repeat the full content audit in a browser. Smoke failures save a screenshot under `.local-tools/qa/guide/`. The hosted Linux workflow installs Chromium with `npx playwright install --with-deps chromium`.
 
@@ -69,9 +69,43 @@ Structured `GuidePage` bodies live in `app/content/chapters/chapter-01.json` thr
 
 Figures live in `app/content/figures/group-{a,b,c}.json`; local originals are under `public/images/guide/`. Figure IDs identify placements, while hashes identify unique originals. Each figure records its source placement, image hash, dimensions and alt text; articles render the image with a full-size viewer. Figures whose screenshots carry numbered or colored markers also list them in `annotations` (label, section title, `wiki.annotation.*` color, target block id), shown as a compact marker key; no other screenshot transcription is rendered. The original screenshot audit remains in `content/source/figure-audit.json` as provenance.
 
-`content/source/baseline.json`, `figure-audit.json`, `taxonomy.json`, and `category-contract.json` are the independent captured source and approved structure. Primary destinations, justified layout-only exclusions and omissions live in `content/coverage/group-{a,b,c}.json`. An `omitted` entry drops a Google Docs leftover (a `separator` line, a repeated `chapter-title` such as "CH 3: …", or `document-navigation` text) and must name its article `pageSlug`; links to it open that article. The validator checks each omission's text shape and never allows omitting figures or links. `strayText` drops a stray word of three letters or fewer beside a figure. Stable source block anchors connect those records to visible content. Do not change the baseline to make a content regression pass.
+`content/source/baseline.json`, `figure-audit.json`, `taxonomy.json`, and `category-contract.json` are the independent captured source and approved structure. Primary destinations, justified layout-only exclusions and omissions live in `content/coverage/group-{a,b,c}.json`. An `omitted` entry drops a Google Docs leftover (a `separator` line, a repeated `chapter-title` such as "CH 3: …", or `document-navigation` text) and must name its article `pageSlug`; links to it open that article. The validator checks each omission's text shape and never allows omitting figures or links. `strayText` drops a stray word of three letters or fewer beside a figure. Stable source block anchors connect those records to visible content. The baseline changes only through `npm run source:sync`; never edit it by hand or to make a content regression pass.
 
 `app/content/repository.ts` loads full bodies for article/source routes and resolves source links using generated `app/content/source-references.json`. The projection contains only source block IDs, optional anchors, and link hrefs derived from the committed baseline; the full baseline remains an offline validation input. `app/content/wiki.ts` exposes the lightweight generated `catalogue.json` to navigation and search; the header does not load article bodies. After content edits run `npm run content:generate`, then all validation gates. See [migration provenance and limitations](docs/source-guide-migration.md).
+
+### Syncing with the Google Doc
+
+`npm run source:check` downloads [Kanon's guide](https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/edit) and prints what changed since the last capture, without writing anything. `npm run source:sync` then:
+
+- records the capture in `content/source/baseline.json` and `content/source/captures.json`;
+- applies text edits to the articles;
+- regenerates the catalogue;
+- writes a report to `content/source/changes/<date>.md`.
+
+Run it on a branch with no uncommitted content changes:
+
+```sh
+git switch -c content/doc-sync-YYYY-MM-DD
+npm run source:sync
+npm run check && npm run build
+```
+
+Block IDs stay stable across captures, and numbers are never reused.
+
+Some changes apply automatically:
+
+- an edit to a paragraph or heading that renders exactly one source block;
+- a new paragraph, heading, list item or single image placed after such a block.
+
+Everything else is listed under "Needs attention" in the report and keeps `npm run check` failing until it is resolved by hand. New images also need alt text.
+
+To pass options, run the script directly, for example `node scripts/source-sync.ts --force && npm run content:generate`:
+
+- `--from <file>` reads a saved export;
+- `--force` continues when most blocks changed;
+- `--allow-dirty` skips the uncommitted-changes check.
+
+Only this command touches the network. Each raw download is also kept under the ignored `.local-tools/source-doc/captures/`. See [the design](docs/superpowers/specs/2026-09-26-google-doc-sync-design.md).
 
 ## Static hosting
 

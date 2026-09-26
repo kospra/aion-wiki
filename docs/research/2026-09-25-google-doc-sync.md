@@ -1,6 +1,6 @@
 # Keeping the wiki in sync with the Google Doc
 
-Date: 2026-09-25. Status: research and recommendation. The staged approach (option C) and D9 were approved on 2026-09-25; implementation has not started.
+Date: 2026-09-25. Status: research and recommendation. The staged approach (option C) and D9 were approved on 2026-09-25; the importer and text-edit reconciler are specified in [the sync design](../superpowers/specs/2026-09-26-google-doc-sync-design.md) and run as `npm run source:sync`.
 
 ## Question
 
