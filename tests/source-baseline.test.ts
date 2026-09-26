@@ -2,112 +2,49 @@ import { createHash } from 'node:crypto';
 import { existsSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { expect, it } from 'vitest';
-
-type BaselineSnapshot = {
-  fingerprints: { html: string; docx: string };
-  blocks: {
-    id: string;
-    text: string;
-    numbers: string[];
-    figureIds: string[];
-    anchor?: string;
-    listStart?: number;
-    links: { label: string; href: string }[];
-    formatting: {
-      text: string;
-      start: number;
-      end: number;
-      strong?: boolean;
-      emphasis?: boolean;
-      underline?: boolean;
-      highlight?: string;
-    }[];
-  }[];
-  figures: {
-    id: string;
-    sourceId: string;
-    sha256: string;
-    src: string;
-    width: number;
-    height: number;
-  }[];
-};
-
-type TaxonomyEntry = {
-  chapter: number;
-  title: string;
-  sourceTitle?: string;
-  slug: string;
-  firstBlock: string;
-  lastBlock: string;
-  nonemptyBlocks: number;
-  figures: string[];
-};
+import type { SourceBaseline } from '../app/content/types';
+import { baselineDigest } from '../scripts/source/captures.ts';
+import type { Capture, TaxonomyEntry } from '../scripts/source/model.ts';
 
 const load = <T>(path: string): T =>
   JSON.parse(readFileSync(path, 'utf8')) as T;
-const baseline = (): BaselineSnapshot =>
-  load<BaselineSnapshot>('content/source/baseline.json');
-// Frozen from JSON.stringify(JSON.parse(saved audit)) before the original, ignored
-// research inputs were imported. These digests cover every nested record.
+const baseline = load<SourceBaseline>('content/source/baseline.json');
+const captures = load<Capture[]>('content/source/captures.json');
+const taxonomy = load<TaxonomyEntry[]>('content/source/taxonomy.json');
 const sourceDigest = (value: unknown): string =>
   createHash('sha256').update(JSON.stringify(value)).digest('hex');
-const taxonomySourceDigest =
-  '6bcdca4876e79fe8f98f908f995dd7d9eda5c7b4d1f8a396a9c537c0d164da82';
+// The original visual audit is provenance and never changes with a sync.
 const figureAuditSourceDigest =
   'b6875fb48a72944260c42deb28d2633e88f4889211a77c8e00735abb4bf83f44';
 
-it('freezes the complete source block, number, link, and figure baseline', () => {
-  const snapshot = baseline();
-  expect(snapshot.fingerprints).toEqual({
-    html: '3d1a5c34900c95b1cc7af1c19167be836adbf23570e71684172a2a00480c5eb8',
-    docx: 'ac7c3833a4d39ada22045deb471772df73b1abaf9d54e53f0f92baeb9caed826',
-  });
-  expect(snapshot.blocks).toHaveLength(1268);
-  expect(
-    snapshot.blocks.filter(
-      (block) => block.text.trim() || block.figureIds.length,
-    ),
-  ).toHaveLength(959);
-  expect(snapshot.blocks.flatMap((block) => block.numbers)).toHaveLength(651);
-  expect(snapshot.blocks.flatMap((block) => block.links)).toHaveLength(21);
-  expect(snapshot.figures).toHaveLength(90);
-  expect(new Set(snapshot.figures.map((figure) => figure.sha256)).size).toBe(
-    89,
-  );
-  expect(
-    snapshot.figures.find((figure) => figure.id === 'figure-042')?.src,
-  ).toBe(snapshot.figures.find((figure) => figure.id === 'figure-043')?.src);
-  expect(
-    snapshot.figures.find((figure) => figure.id === 'figure-042')?.sourceId,
-  ).not.toBe(
-    snapshot.figures.find((figure) => figure.id === 'figure-043')?.sourceId,
-  );
+it('changes the baseline only through the importer', () => {
+  // npm run source:sync records each capture's digest; a hand edit no longer matches.
+  expect(baselineDigest(baseline)).toBe(captures.at(-1)?.baselineDigest);
 });
 
-it('preserves source anchors, numbered list starts, and meaningful styling', () => {
-  const blocks = baseline().blocks;
-  expect(blocks.find((block) => block.id === 'block-0408')?.anchor).toBe(
-    'h.u6i0vc6bqc0l',
+it('has nothing left unresolved from the last sync', () => {
+  // source:sync lists what it could not apply; remove each entry once it is fixed by hand.
+  expect(captures.at(-1)?.pending ?? []).toEqual([]);
+});
+
+it('numbers blocks and figures uniquely, below the next free numbers', () => {
+  const last = captures.at(-1)!;
+  const blockIds = baseline.blocks.map((block) => block.id);
+  const figureIds = baseline.figures.map((figure) => figure.id);
+  expect(new Set(blockIds).size).toBe(blockIds.length);
+  expect(new Set(figureIds).size).toBe(figureIds.length);
+  for (const id of blockIds) expect(id).toMatch(/^block-\d{4,}$/u);
+  for (const id of figureIds) expect(id).toMatch(/^figure-\d{3,}$/u);
+  expect(Math.max(...blockIds.map((id) => Number(id.slice(6))))).toBeLessThan(
+    last.nextBlock,
   );
-  expect(blocks.find((block) => block.id === 'block-0034')?.listStart).toBe(1);
-  expect(blocks.find((block) => block.id === 'block-0042')?.listStart).toBe(2);
-  expect(blocks.find((block) => block.id === 'block-0005')?.formatting).toEqual(
-    expect.arrayContaining([
-      expect.objectContaining({
-        text: 'Last Updated: /',
-        strong: true,
-        emphasis: true,
-        underline: true,
-        highlight: '#ffff00',
-      }),
-    ]),
+  expect(Math.max(...figureIds.map((id) => Number(id.slice(7))))).toBeLessThan(
+    last.nextFigure,
   );
 });
 
 it('stores the exact original bytes at every figure path', () => {
-  const figures = baseline().figures;
-  for (const figure of figures) {
+  for (const figure of baseline.figures) {
     const path = join('public', figure.src.replace(/^\//, ''));
     expect(existsSync(path), figure.id).toBe(true);
     expect(
@@ -117,42 +54,40 @@ it('stores the exact original bytes at every figure path', () => {
   }
 });
 
-it('freezes all approved page ranges with distinct ASCII slugs', () => {
-  const pages = load<TaxonomyEntry[]>('content/source/taxonomy.json');
-  expect(pages).toHaveLength(44);
-  expect(
-    sourceDigest(
-      pages.map((page) => ({
-        chapter: page.chapter,
-        title: page.sourceTitle ?? page.title,
-        firstBlock: page.firstBlock,
-        lastBlock: page.lastBlock,
-        nonemptyBlocks: page.nonemptyBlocks,
-        figures: page.figures,
-      })),
-    ),
-  ).toBe(taxonomySourceDigest);
-  expect(pages.at(-1)).toEqual(
-    expect.objectContaining({
-      title: 'Class Passives',
-      sourceTitle: 'Class Passives source placeholder',
-      slug: 'class-passives',
-    }),
+it('covers every source block with one article range, in order', () => {
+  const positions = new Map(
+    baseline.blocks.map((block, index) => [block.id, index]),
   );
-  expect(new Set(pages.map((page) => page.slug)).size).toBe(44);
-  for (const page of pages) {
-    expect(page.slug).toMatch(/^[a-z0-9]+(?:-[a-z0-9]+)*$/);
+  let expected = 0;
+  for (const page of taxonomy) {
+    expect(positions.get(page.firstBlock), page.slug).toBe(expected);
+    const last = positions.get(page.lastBlock)!;
+    expect(last, page.slug).toBeGreaterThanOrEqual(expected);
+    const blocks = baseline.blocks.slice(expected, last + 1);
+    expect(page.nonemptyBlocks, page.slug).toBe(
+      blocks.filter((block) => block.text || block.figureIds.length).length,
+    );
+    expect(page.figures, page.slug).toEqual(
+      blocks.flatMap((block) => block.figureIds),
+    );
+    expected = last + 1;
   }
+  expect(expected).toBe(baseline.blocks.length);
+});
+
+it('uses distinct ASCII slugs', () => {
+  expect(new Set(taxonomy.map((page) => page.slug)).size).toBe(taxonomy.length);
+  for (const page of taxonomy)
+    expect(page.slug).toMatch(/^[a-z0-9]+(?:-[a-z0-9]+)*$/);
 });
 
 it('retains complete normalized figure audit evidence', () => {
   const preserved = load<unknown[]>('content/source/figure-audit.json');
-  expect(preserved).toHaveLength(90);
   expect(sourceDigest(preserved)).toBe(figureAuditSourceDigest);
 });
 
 it('positions every formatting run in whitespace-normalized UTF-16 source text', () => {
-  for (const block of baseline().blocks) {
+  for (const block of baseline.blocks) {
     const normalized = block.text.replace(/\s+/gu, ' ').trim();
     for (const run of block.formatting) {
       expect(Number.isInteger(run.start), block.id).toBe(true);
@@ -163,20 +98,4 @@ it('positions every formatting run in whitespace-normalized UTF-16 source text',
       );
     }
   }
-});
-
-it('preserves every nonformatting source field while enriching formatting provenance', () => {
-  const snapshot = baseline();
-  const sourceContent = {
-    ...snapshot,
-    blocks: snapshot.blocks.map((block) =>
-      Object.fromEntries(
-        Object.entries(block).filter(([key]) => key !== 'formatting'),
-      ),
-    ),
-  };
-  // Frozen from c9beaad before the formatting provenance repair.
-  expect(sourceDigest(sourceContent)).toBe(
-    '79a6a9e1b886abc40afb40311745cc4c0e36990ed41de1bcc8caa6cf03b99cc2',
-  );
 });

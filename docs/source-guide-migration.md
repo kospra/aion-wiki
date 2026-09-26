@@ -38,7 +38,7 @@ All 71 figure uncertainty records are rendered verbatim beside their figure, wit
 - The source's approximate 79%/80% values, Defense percentage-versus-subtraction wording ambiguity, literal formula notation, and unconfirmed Multi-Hit behavior. The 490 and 499 worked results belong to separate PVE and PVP examples.
 - Class Passives contains only the captured Coming soon placeholder.
 
-No uncertain values are silently promoted to confirmed mechanics. A later source revision requires a new capture and deliberate reconciliation, not changes to this baseline to satisfy a test.
+No uncertain values are silently promoted to confirmed mechanics. A later source revision requires a new capture and deliberate reconciliation, not changes to this baseline to satisfy a test. `npm run source:sync` performs that capture and reconciliation; see the README.
 
 ## Evidence and deployment boundary
 

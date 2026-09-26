@@ -432,7 +432,8 @@
             "strong": true
           },
           {
-            "text": " 101 total damage"
+            "text": " 101 total damage",
+            "breakAfter": true
           },
           {
             "text": "At "
@@ -442,7 +443,7 @@
             "strong": true
           },
           {
-            "text": " 102 total damage"
+            "text": " 102 total damage"
           }
         ]
       },
@@ -504,9 +505,6 @@
             "text": "Double Chance Resistance: 30%",
             "strong": true,
             "breakAfter": true
-          },
-          {
-            "text": " "
           },
           {
             "text": "보빛 + 대징 support buffs: +12% Double Chance",
@@ -626,7 +624,8 @@
         "content": [
           {
             "text": "62% Double Chance = 162 total damage",
-            "strong": true
+            "strong": true,
+            "breakAfter": true
           },
           {
             "text": "63% Double Chance = 163 total damage",
@@ -1027,7 +1026,11 @@
                     "kind": "formula",
                     "expression": [
                       {
-                        "text": "Formula:[(1.5+Crit Damage%−Boss Crit Damage Resistance%)×{(Guaranteed Crit Ratio%)+(1−Guaranteed Crit Ratio%)×(Critical Hit Chance%)}+(1−Guaranteed Crit Ratio%)×(1−Critical Hit Chance%)] / [(1.5+Crit Damage%+1%−Boss Crit Damage Resistance%)×{(Guaranteed Crit Ratio%)+(1−Guaranteed Crit Ratio%)×(Critical Hit Chance%)}+(1−Guaranteed Crit Ratio%)×(1−Critical Hit Chance%)]​"
+                        "text": "Formula:",
+                        "breakAfter": true
+                      },
+                      {
+                        "text": "[(1.5+Crit Damage%−Boss Crit Damage Resistance%)×{(Guaranteed Crit Ratio%)+(1−Guaranteed Crit Ratio%)×(Critical Hit Chance%)}+(1−Guaranteed Crit Ratio%)×(1−Critical Hit Chance%)] / [(1.5+Crit Damage%+1%−Boss Crit Damage Resistance%)×{(Guaranteed Crit Ratio%)+(1−Guaranteed Crit Ratio%)×(Critical Hit Chance%)}+(1−Guaranteed Crit Ratio%)×(1−Critical Hit Chance%)]​"
                       }
                     ],
                     "explanation": []

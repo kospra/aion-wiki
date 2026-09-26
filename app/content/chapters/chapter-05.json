@@ -251,7 +251,8 @@
         "kind": "paragraph",
         "content": [
           {
-            "text": "Manastones/Soulstones are items that you’ll use on your gear for RNG stats. Manastones are for Weapons and Armor, Soulstones are for Accessories. Every time you consume a single stone, you’ll roll random lines on all your Manastone/Soulstone sockets, in the case of the image below, 5 lines."
+            "text": "Manastones/Soulstones are items that you’ll use on your gear for RNG stats. Manastones are for Weapons and Armor, Soulstones are for Accessories. Every time you consume a single stone, you’ll roll random lines on all your Manastone/Soulstone sockets, in the case of the image below, 5 lines.",
+            "breakAfter": true
           },
           {
             "text": "You’ll be wanting to roll Superiors on end-game gear. Do not waste too many of these, if at all, on gear you’ll replace soon."

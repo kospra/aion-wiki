@@ -20,6 +20,7 @@ import coverageA from '../../content/coverage/group-a.json' with { type: 'json' 
 import coverageB from '../../content/coverage/group-b.json' with { type: 'json' };
 import coverageC from '../../content/coverage/group-c.json' with { type: 'json' };
 import { normalizeSourceUrl, walkBlocks } from './reader';
+import { pageForSource, sourceDistance, sourcePositions } from './source-order';
 import type { CoverageEntry, Figure, GuidePage } from './types';
 
 const chapterPages = [
@@ -72,16 +73,9 @@ const blockIds = new Map(
   ]),
 );
 
-function sourceNumber(sourceId: string): number {
-  return Number(sourceId.slice(6));
-}
-function pageForSource(sourceId: string): string | undefined {
-  const number = sourceNumber(sourceId);
-  return taxonomy.find(
-    ({ firstBlock, lastBlock }) =>
-      number >= sourceNumber(firstBlock) && number <= sourceNumber(lastBlock),
-  )?.slug;
-}
+const positions = sourcePositions(
+  sourceReferences.blocks.map((block) => block.id),
+);
 const omitted = new Map(
   coverage
     .filter((item) => item.disposition === 'omitted' && item.pageSlug)
@@ -100,7 +94,7 @@ function destination(sourceId: string): string {
   }
   // Spacing-only source blocks have no visible destination. Use the nearest
   // source-bearing block in their article to keep every captured id navigable.
-  const slug = pageForSource(sourceId);
+  const slug = pageForSource(sourceId, positions, taxonomy);
   if (!slug) return sourceDocument;
   const candidates = [...primary.entries()]
     .filter(
@@ -110,8 +104,8 @@ function destination(sourceId: string): string {
     )
     .sort(
       ([a], [b]) =>
-        Math.abs(sourceNumber(a) - sourceNumber(sourceId)) -
-        Math.abs(sourceNumber(b) - sourceNumber(sourceId)),
+        sourceDistance(positions, a, sourceId) -
+        sourceDistance(positions, b, sourceId),
     );
   const closest = candidates[0]?.[1];
   const blockId = closest?.blockIds.find((id) => blockIds.get(slug)?.has(id));

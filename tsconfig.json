@@ -3,6 +3,8 @@
     "app/**/*",
     "tests/**/*",
     "scripts/static-not-found.tsx",
+    "scripts/source/**/*",
+    "scripts/source-sync.ts",
     "*.ts",
     ".react-router/types/**/*"
   ],

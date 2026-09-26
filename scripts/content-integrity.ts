@@ -38,7 +38,9 @@ function duplicateIds(values: string[], kind: string): string[] {
   });
 }
 
-function isLayoutOnly(source: SourceBaseline['blocks'][number]): boolean {
+export function isLayoutOnly(
+  source: SourceBaseline['blocks'][number],
+): boolean {
   const text = normalizeWhitespace(source.text);
   return (
     !source.figureIds.length &&

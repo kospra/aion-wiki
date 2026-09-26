@@ -76,15 +76,20 @@ export type CoverageEntry = {
 };
 
 export type SourceBaseline = {
-  fingerprints: { html: string; docx: string };
+  /** SHA-256 of each capture's export files. Captures by `source:sync` have no DOCX. */
+  fingerprints: { html: string; docx?: string };
   blocks: {
     id: string;
     tag?: string;
+    /** Whitespace-normalized; a newline marks a line break in the source. */
     text: string;
     numbers: string[];
     figureIds: string[];
     anchor?: string;
+    ordered?: boolean;
     listStart?: number;
+    /** Nesting level of a list item, counted from 0. */
+    level?: number;
     links: { label: string; href: string }[];
     formatting: (Pick<
       Inline,
