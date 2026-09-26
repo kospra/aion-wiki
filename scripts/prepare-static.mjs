@@ -12,6 +12,14 @@ try {
     '/scripts/static-not-found.tsx',
   );
   await writeFile('build/client/404.html', renderNotFoundDocument(), 'utf8');
+  const { renderRobots, renderSitemap, sitemapUrls } =
+    await server.ssrLoadModule('/app/seo.ts');
+  await writeFile(
+    'build/client/sitemap.xml',
+    renderSitemap(sitemapUrls()),
+    'utf8',
+  );
+  await writeFile('build/client/robots.txt', renderRobots(), 'utf8');
 } finally {
   await server.close();
 }

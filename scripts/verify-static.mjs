@@ -12,6 +12,7 @@ import { walkBlocks, inlineText } from '../app/content/reader.ts';
 import { orderTldrFirst } from '../app/content/rules.ts';
 import { loadCompleteGuide } from './guide-data.ts';
 import { validateGuide } from './content-integrity.ts';
+import { canonicalUrl, isIndexable, siteOrigin } from '../app/seo.ts';
 
 export const normalize = (text) => text.replace(/\s+/gu, ' ').trim();
 // DOM parsing decodes entities and preserves inline boundaries. Hidden source
@@ -72,12 +73,57 @@ function renderedInline(element) {
   visit(element);
   return runs;
 }
+// Search engines see one canonical URL per indexable page and noindex on every
+// other page; link previews need an absolute image on the site's own origin.
+function checkSearchMetadata(route, document) {
+  const url = canonicalUrl(route);
+  const indexable = isIndexable(route);
+  const canonical = [...document.querySelectorAll('link[rel="canonical"]')].map(
+    (link) => link.getAttribute('href'),
+  );
+  const robots =
+    document.querySelector('meta[name="robots"]')?.getAttribute('content') ??
+    '';
+  if (indexable) {
+    assert.deepEqual(canonical, [url], `${route}: canonical link`);
+    assert.doesNotMatch(robots, /noindex/, `${route}: indexable but noindex`);
+  } else {
+    assert.deepEqual(canonical, [], `${route}: noindex page with canonical`);
+    assert.match(robots, /noindex/, `${route}: missing noindex`);
+  }
+  assert.equal(
+    document.querySelector('meta[property="og:url"]')?.getAttribute('content'),
+    url,
+    `${route}: og:url`,
+  );
+  const image =
+    document
+      .querySelector('meta[property="og:image"]')
+      ?.getAttribute('content') ?? '';
+  assert.ok(image.startsWith(`${siteOrigin}/`), `${route}: og:image origin`);
+  for (const script of document.querySelectorAll(
+    'script[type="application/ld+json"]',
+  ))
+    for (const item of [JSON.parse(script.textContent)].flat())
+      assert.equal(
+        item['@context'],
+        'https://schema.org',
+        `${route}: structured data context`,
+      );
+  return {
+    indexed: indexable ? url : undefined,
+    image: new URL(image).pathname,
+  };
+}
+
 export async function verifyPublishRoot(root) {
   const allowedTopLevel = new Set([
     '404.html',
     '__spa-fallback.html',
     'favicon.svg',
     'index.html',
+    'robots.txt',
+    'sitemap.xml',
     'articles',
     'assets',
     'categories',
@@ -151,6 +197,7 @@ export async function verifyStatic(root = 'build/client', suppliedInput) {
   const renderedInput = structuredClone(input);
   const documents = new Map();
   const assetPaths = new Set();
+  const indexedUrls = new Set();
   let checkedBlocks = 0;
   for (const route of staticPaths) {
     const html = await readFile(
@@ -164,6 +211,9 @@ export async function verifyStatic(root = 'build/client', suppliedInput) {
     );
     const document = new JSDOM(html).window.document;
     documents.set(route, document);
+    const search = checkSearchMetadata(route, document);
+    if (search.indexed) indexedUrls.add(search.indexed);
+    assetPaths.add(search.image);
     const main = document.querySelector('main');
     assert.equal(
       document.querySelectorAll('main').length,
@@ -359,11 +409,46 @@ export async function verifyStatic(root = 'build/client', suppliedInput) {
       `${figure.id}: original image changed`,
     );
   }
+  const sitemap = new JSDOM(await readFile(join(root, 'sitemap.xml'), 'utf8'), {
+    contentType: 'application/xml',
+  }).window;
+  const urlset = sitemap.document.documentElement;
+  assert.equal(urlset.localName, 'urlset', 'Sitemap root');
+  assert.equal(
+    urlset.namespaceURI,
+    'http://www.sitemaps.org/schemas/sitemap/0.9',
+    'Sitemap namespace',
+  );
+  const sitemapLocs = [...urlset.getElementsByTagName('loc')].map((loc) =>
+    loc.textContent.trim(),
+  );
+  sitemap.close();
+  assert.equal(
+    new Set(sitemapLocs).size,
+    sitemapLocs.length,
+    'Sitemap URLs must be unique',
+  );
+  assert.deepEqual(
+    new Set(sitemapLocs),
+    indexedUrls,
+    'Sitemap must list exactly the indexable canonical URLs',
+  );
+  const robots = await readFile(join(root, 'robots.txt'), 'utf8');
+  assert.ok(
+    robots.split('\n').includes(`Sitemap: ${siteOrigin}/sitemap.xml`),
+    'robots.txt must name the sitemap',
+  );
+  assert.doesNotMatch(
+    robots,
+    /^Disallow:\s*\/\s*$/m,
+    'robots.txt must not block the site',
+  );
   const result = {
     routes: documents.size,
     blocks: checkedBlocks,
     figures: input.figures.length,
     localAssets: assetPaths.size,
+    sitemapUrls: sitemapLocs.length,
   };
   console.log(`Verified static guide: ${JSON.stringify(result)}`);
   for (const document of documents.values()) document.defaultView.close();

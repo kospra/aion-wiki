@@ -22,6 +22,8 @@ beforeEach(async () => {
     '__spa-fallback.html',
     'favicon.svg',
     'index.html',
+    'robots.txt',
+    'sitemap.xml',
   ])
     await writeFile(join(root, file), 'fixture');
   await writeFile(join(root, 'source', 'index.html'), 'source route');

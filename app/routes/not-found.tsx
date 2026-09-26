@@ -1,7 +1,8 @@
 import { NotFound } from '../components/not-found';
+import { notFoundMeta } from '../seo';
 
 export function meta() {
-  return [{ title: 'Page not found | Aion 2 Wiki' }];
+  return notFoundMeta();
 }
 
 export default function NotFoundRoute(): React.JSX.Element {

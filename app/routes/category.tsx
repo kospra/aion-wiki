@@ -10,15 +10,23 @@ import {
 import { Link as RouterLink, useParams } from 'react-router';
 import { NotFound } from '../components/not-found';
 import { articles, categories } from '../content/wiki';
+import { breadcrumbJsonLd, notFoundMeta, pageMeta } from '../seo';
 
 export function meta({ params }: { params: { slug?: string } }) {
   const category = categories.find(({ slug }) => slug === params.slug);
-  return category
-    ? [
-        { title: `${category.title} | Aion 2 Wiki` },
-        { name: 'description', content: category.description },
-      ]
-    : [{ title: 'Page not found | Aion 2 Wiki' }];
+  if (!category) return notFoundMeta();
+  const path = `/categories/${category.slug}`;
+  return pageMeta({
+    path,
+    title: `${category.title} | Aion 2 Wiki`,
+    description: category.description,
+    jsonLd: [
+      breadcrumbJsonLd([
+        { name: 'Discover', path: '/' },
+        { name: category.title, path },
+      ]),
+    ],
+  });
 }
 
 const number = (position: number) => String(position + 1).padStart(2, '0');
