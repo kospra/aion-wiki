@@ -3,6 +3,7 @@ import { expect, it } from 'vitest';
 import { ArticleContents } from '../app/components/article-contents';
 import { RichContent } from '../app/components/rich-content';
 import type { Block, Figure } from '../app/content/types';
+import { walkBlocks } from '../app/content/reader';
 
 const paragraph = (id: string, text: string): Block => ({
   id,
@@ -208,7 +209,7 @@ it('shows literal formulas, notes, grouped blocks, and clickable figures', () =>
           id: 'block0012',
           sourceIds: ['block0012'],
           kind: 'formula',
-          expression: '((A + B) × C) / D',
+          expression: [{ text: '((A + B) × C) / D' }],
           explanation: [{ text: 'Before mitigation.' }],
         },
         {
@@ -377,4 +378,150 @@ it('repeats a screenshot marker color beside the heading it links to, leaving th
   expect(
     wrapper?.querySelector('[data-guide-color-swatch]'),
   ).toBeInTheDocument();
+});
+
+it('keeps formatting inside a formula and omits an empty explanation', () => {
+  const blocks: Block[] = [
+    {
+      id: 'formula-styled',
+      sourceIds: ['formula-styled'],
+      kind: 'formula',
+      expression: [
+        { text: '(Pure × Boost) + ' },
+        { text: 'Bonus', highlight: '#ffff00' },
+      ],
+      explanation: [],
+    },
+  ];
+  const { container } = render(
+    <RichContent blocks={blocks} figures={{}} sourceLinks={{}} />,
+  );
+  const pre = container.querySelector('pre');
+  expect(pre).toHaveTextContent('(Pure × Boost) + Bonus');
+  expect(pre?.querySelector('mark')).toHaveAttribute(
+    'data-source-highlight',
+    '#ffff00',
+  );
+  expect(container.querySelector('#formula-styled p')).toBeNull();
+});
+
+const shadedParagraph = (id: string, value: string): Block => ({
+  id,
+  sourceIds: [id],
+  kind: 'paragraph',
+  content: [{ text: value, highlight: '#f8f9fa' }],
+});
+
+it('renders the author’s note shading as a callout and keeps the source mark', () => {
+  const { container } = render(
+    <RichContent
+      blocks={[
+        shadedParagraph('n1', 'IMPORTANT: Lost on transfer'),
+        shadedParagraph('n2', 'Second line'),
+      ]}
+      figures={{}}
+      sourceLinks={{}}
+    />,
+  );
+  const callout = screen.getByRole('note');
+  expect(callout).toHaveAttribute('data-guide-callout', 'warning');
+  expect(
+    within(callout).getByText('IMPORTANT: Lost on transfer').closest('p'),
+  ).toHaveAttribute('id', 'n1');
+  expect(callout).toContainElement(container.querySelector('#n2'));
+  expect(
+    container.querySelectorAll('mark[data-source-highlight="#f8f9fa"]'),
+  ).toHaveLength(2);
+});
+
+it('tags a qualifier in place, keeping its formatting and the paragraph text', () => {
+  const { container } = render(
+    <RichContent
+      blocks={[
+        {
+          id: 'q',
+          sourceIds: ['q'],
+          kind: 'paragraph',
+          content: [
+            { text: 'Crafted 5% (not confirmed for ' },
+            { text: 'Global)', strong: true },
+          ],
+        },
+      ]}
+      figures={{}}
+      sourceLinks={{}}
+    />,
+  );
+  const tag = container.querySelector('[data-guide-tag="scope"]');
+  expect(tag).toHaveTextContent('(not confirmed for Global)');
+  expect(tag?.querySelector('strong')).toHaveTextContent('Global)');
+  expect(container.querySelector('#q')).toHaveTextContent(
+    'Crafted 5% (not confirmed for Global)',
+  );
+});
+
+it('lays out sections, label lists and value lines without changing block order', () => {
+  const line = (id: string, value: string): Block => ({
+    id,
+    sourceIds: [id],
+    kind: 'paragraph',
+    content: [{ text: value }],
+  });
+  const list = (id: string, values: string[]): Block => ({
+    id,
+    sourceIds: [],
+    kind: 'list',
+    ordered: false,
+    items: values.map((value, index) => [line(`${id}-${index}`, value)]),
+  });
+  const section = (id: string): Block[] => [
+    {
+      id,
+      sourceIds: [id],
+      kind: 'heading',
+      level: 3,
+      content: [{ text: `Section ${id}` }],
+    },
+    list(`${id}-list`, ['Short line']),
+  ];
+  const labelList = (id: string): Block => ({
+    id,
+    sourceIds: [],
+    kind: 'list',
+    ordered: false,
+    items: [
+      [line(`${id}-label`, `Label ${id}`), list(`${id}-nested`, ['Detail'])],
+    ],
+  });
+  // A paragraph ends the section grid; lists directly after a heading's list
+  // belong to that heading's section, as they do in the source.
+  const blocks: Block[] = [
+    ...section('s1'),
+    ...section('s2'),
+    ...section('s3'),
+    line('mid', 'Between the grids'),
+    labelList('c1'),
+    labelList('c2'),
+    line('v', '1% Crit = 0.5%'),
+  ];
+  const { container } = render(
+    <RichContent blocks={blocks} figures={{}} sourceLinks={{}} />,
+  );
+  expect(
+    container.querySelectorAll(
+      '[data-guide-grid="sections"] [data-guide-card]',
+    ),
+  ).toHaveLength(3);
+  expect(
+    container.querySelectorAll('[data-guide-grid="labels"] [data-guide-card]'),
+  ).toHaveLength(2);
+  expect(container.querySelector('#v')).toHaveAttribute(
+    'data-guide-value-line',
+  );
+  expect(container.querySelector('#v')).toHaveTextContent('1% Crit = 0.5%');
+  expect(
+    [...container.querySelectorAll('[data-guide-content] [id]')].map(
+      (node) => node.id,
+    ),
+  ).toEqual(walkBlocks(blocks).map((block) => block.id));
 });

@@ -1,6 +1,7 @@
-import { useEffect, useMemo, useState } from 'react';
-import { Box, Link, Text } from '@chakra-ui/react';
+import { useEffect, useMemo, useState, useSyncExternalStore } from 'react';
+import { Box, Link, Text, chakra } from '@chakra-ui/react';
 import { inlineText, walkBlocks } from '../content/reader';
+import { valueLine } from '../content/rules';
 import type { Block } from '../content/types';
 
 type HeadingItem = {
@@ -10,6 +11,24 @@ type HeadingItem = {
   children: HeadingItem[];
 };
 
+/** Chakra's `xl` breakpoint, where the contents box becomes the sticky rail. */
+const wideScreen = '(min-width: 80em)';
+
+function useWideScreen(): boolean {
+  return useSyncExternalStore(
+    (onChange) => {
+      if (typeof window.matchMedia !== 'function') return () => {};
+      const query = window.matchMedia(wideScreen);
+      query.addEventListener('change', onChange);
+      return () => query.removeEventListener('change', onChange);
+    },
+    () =>
+      typeof window.matchMedia === 'function' &&
+      window.matchMedia(wideScreen).matches,
+    () => false,
+  );
+}
+
 export function ArticleContents({
   blocks,
 }: {
@@ -17,20 +36,28 @@ export function ArticleContents({
 }): React.JSX.Element | null {
   const headings = useMemo(
     () =>
-      walkBlocks(blocks)
-        .filter(
-          (block): block is Extract<Block, { kind: 'heading' }> =>
-            block.kind === 'heading',
-        )
-        .map((block): HeadingItem => ({
-          id: block.id,
-          title: inlineText(block.content),
-          level: block.level,
-          children: [],
-        })),
+      walkBlocks(blocks).flatMap((block): HeadingItem[] => {
+        if (block.kind === 'heading')
+          return [
+            {
+              id: block.id,
+              title: inlineText(block.content),
+              level: block.level,
+              children: [],
+            },
+          ];
+        const value =
+          block.kind === 'paragraph' ? valueLine(block.content) : null;
+        return value
+          ? [{ id: block.id, title: value.stat, level: 4, children: [] }]
+          : [];
+      }),
     [blocks],
   );
   const [activeId, setActiveId] = useState<string>();
+  const wide = useWideScreen();
+  const [toggled, setToggled] = useState<boolean>();
+  const open = toggled ?? wide;
 
   useEffect(() => {
     const elements = headings
@@ -74,7 +101,7 @@ export function ArticleContents({
       observer?.disconnect();
     };
   }, [headings]);
-  if (headings.length === 0) return null;
+  if (headings.length <= 1) return null;
 
   const roots: HeadingItem[] = [];
   const ancestors: HeadingItem[] = [];
@@ -145,17 +172,50 @@ export function ArticleContents({
       layerStyle="wiki.panel"
       minW="0"
     >
-      <Text
-        textStyle="wiki.eyebrow"
-        fontWeight="semibold"
-        color="wiki.accent"
-        mb="3"
-        textTransform="uppercase"
-        letterSpacing="wide"
+      <chakra.details
+        open={open}
+        onToggle={(event) => setToggled(event.currentTarget.open)}
       >
-        In this article
-      </Text>
-      {renderItems(roots)}
+        <chakra.summary
+          display="flex"
+          alignItems="center"
+          justifyContent="space-between"
+          gap="3"
+          minH="11"
+          px="1"
+          cursor="pointer"
+          listStyleType="none"
+          color="wiki.accent"
+          borderRadius="wiki.control"
+          css={{ '&::-webkit-details-marker': { display: 'none' } }}
+          _focusVisible={{
+            outline: '2px solid',
+            outlineColor: 'wiki.accent',
+            outlineOffset: '2px',
+          }}
+        >
+          <Text
+            as="span"
+            textStyle="wiki.eyebrow"
+            fontWeight="semibold"
+            textTransform="uppercase"
+            letterSpacing="wide"
+          >
+            On this page · {headings.length}
+          </Text>
+          <Box
+            as="span"
+            aria-hidden="true"
+            fontSize="xs"
+            transition="transform 120ms ease"
+            transform={open ? 'rotate(180deg)' : undefined}
+            _motionReduce={{ transition: 'none' }}
+          >
+            ▾
+          </Box>
+        </chakra.summary>
+        <Box mt="2">{renderItems(roots)}</Box>
+      </chakra.details>
     </Box>
   );
 }

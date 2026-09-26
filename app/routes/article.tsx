@@ -1,3 +1,4 @@
+import { useMemo } from 'react';
 import {
   Box,
   Breadcrumb,
@@ -19,6 +20,7 @@ import {
   pagePath,
   sourceLinks,
 } from '../content/repository';
+import { orderTldrFirst } from '../content/rules';
 import type { GuidePage } from '../content/types';
 
 export function meta({ params }: { params: { slug?: string } }) {
@@ -40,6 +42,9 @@ export function GuidePageView({
   const index = articles.findIndex((item) => item.slug === page.slug);
   const previous = index > 0 ? articles[index - 1] : undefined;
   const next = index >= 0 ? articles[index + 1] : undefined;
+  const blocks = useMemo(() => orderTldrFirst(page.blocks), [page.blocks]);
+  const chapterTitle = (slug: string | null) =>
+    categories.find((item) => item.slug === slug)?.title;
 
   return (
     <Box
@@ -163,11 +168,11 @@ export function GuidePageView({
         overflowY={{ xl: 'auto' }}
         minW="0"
       >
-        <ArticleContents blocks={page.blocks} />
+        <ArticleContents blocks={blocks} />
       </Box>
       <Box gridColumn={{ xl: '1' }} gridRow={{ xl: '3' }} minW="0">
         <RichContent
-          blocks={page.blocks}
+          blocks={blocks}
           figures={figureById}
           sourceLinks={sourceLinks}
         />
@@ -186,6 +191,9 @@ export function GuidePageView({
             {previous ? (
               <Link
                 asChild
+                display="flex"
+                flexDirection="column"
+                alignItems="flex-start"
                 color="wiki.ink"
                 borderWidth="1px"
                 borderColor="wiki.border"
@@ -197,6 +205,17 @@ export function GuidePageView({
                 fontWeight="medium"
               >
                 <RouterLink to={pagePath(previous.slug)} rel="prev">
+                  {previous.category !== page.category && (
+                    <Text
+                      as="span"
+                      display="block"
+                      textStyle="wiki.caption"
+                      color="wiki.muted"
+                      fontWeight="normal"
+                    >
+                      Previous chapter · {chapterTitle(previous.category)}
+                    </Text>
+                  )}{' '}
                   ← Previous: {previous.title}
                 </RouterLink>
               </Link>
@@ -206,6 +225,9 @@ export function GuidePageView({
             {next && (
               <Link
                 asChild
+                display="flex"
+                flexDirection="column"
+                alignItems={{ base: 'flex-start', sm: 'flex-end' }}
                 color="wiki.ink"
                 borderWidth="1px"
                 borderColor="wiki.border"
@@ -218,6 +240,17 @@ export function GuidePageView({
                 textAlign={{ sm: 'right' }}
               >
                 <RouterLink to={pagePath(next.slug)} rel="next">
+                  {next.category !== page.category && (
+                    <Text
+                      as="span"
+                      display="block"
+                      textStyle="wiki.caption"
+                      color="wiki.muted"
+                      fontWeight="normal"
+                    >
+                      Next chapter · {chapterTitle(next.category)}
+                    </Text>
+                  )}{' '}
                   Next: {next.title} →
                 </RouterLink>
               </Link>

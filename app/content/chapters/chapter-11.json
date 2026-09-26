@@ -851,7 +851,11 @@
                     "id": "block-1099",
                     "sourceIds": ["block-1099"],
                     "kind": "formula",
-                    "expression": "[(Pure Attack × Weapon Damage Boost) + Attack Bonus] × Attack Power Increase %] + PvE Attack + Boss Attack]",
+                    "expression": [
+                      {
+                        "text": "[(Pure Attack × Weapon Damage Boost) + Attack Bonus] × Attack Power Increase %] + PvE Attack + Boss Attack]"
+                      }
+                    ],
                     "explanation": []
                   }
                 ]
@@ -1021,7 +1025,11 @@
                     "id": "block-1112",
                     "sourceIds": ["block-1112"],
                     "kind": "formula",
-                    "expression": "Formula:[(1.5+Crit Damage%−Boss Crit Damage Resistance%)×{(Guaranteed Crit Ratio%)+(1−Guaranteed Crit Ratio%)×(Critical Hit Chance%)}+(1−Guaranteed Crit Ratio%)×(1−Critical Hit Chance%)] / [(1.5+Crit Damage%+1%−Boss Crit Damage Resistance%)×{(Guaranteed Crit Ratio%)+(1−Guaranteed Crit Ratio%)×(Critical Hit Chance%)}+(1−Guaranteed Crit Ratio%)×(1−Critical Hit Chance%)]​",
+                    "expression": [
+                      {
+                        "text": "Formula:[(1.5+Crit Damage%−Boss Crit Damage Resistance%)×{(Guaranteed Crit Ratio%)+(1−Guaranteed Crit Ratio%)×(Critical Hit Chance%)}+(1−Guaranteed Crit Ratio%)×(1−Critical Hit Chance%)] / [(1.5+Crit Damage%+1%−Boss Crit Damage Resistance%)×{(Guaranteed Crit Ratio%)+(1−Guaranteed Crit Ratio%)×(Critical Hit Chance%)}+(1−Guaranteed Crit Ratio%)×(1−Critical Hit Chance%)]​"
+                      }
+                    ],
                     "explanation": []
                   }
                 ]
@@ -1512,8 +1520,7 @@
                     "id": "block-1152",
                     "sourceIds": ["block-1152"],
                     "kind": "formula",
-                    "expression": "Source formula (verbatim)",
-                    "explanation": [
+                    "expression": [
                       {
                         "text": "(((Pure Attack × Weapon Damage Boost) × Multi-Hit × Power Shard) + "
                       },
@@ -1524,7 +1531,8 @@
                       {
                         "text": ") × Attack Increase%"
                       }
-                    ]
+                    ],
+                    "explanation": []
                   }
                 ]
               ]
@@ -1819,7 +1827,7 @@
   },
   {
     "slug": "accuracy-block-and-critical-hit",
-    "title": "Accuracy Block and Critical Hit",
+    "title": "Accuracy, Block and Critical Hit",
     "category": "how-stats-work",
     "summary": "Accuracy, Block, Critical Hit and their resistances, including the Accuracy cap.",
     "status": "source-uncertain",
@@ -2148,7 +2156,7 @@
   },
   {
     "slug": "damage-tolerance-endurance-and-combat-speed",
-    "title": "Damage Tolerance Endurance and Combat Speed",
+    "title": "Damage Tolerance, Endurance and Combat Speed",
     "category": "how-stats-work",
     "summary": "Damage Tolerance, Endurance, and Combat Speed test results.",
     "status": "source-uncertain",
@@ -2313,7 +2321,11 @@
         "id": "block-1226",
         "sourceIds": ["block-1226"],
         "kind": "formula",
-        "expression": "[[[((Pure Attack × Weapon Damage Boost) × Multi-Hit × Power Shard) + Attack Bonus) × Attack Increase % + PvE Attack Power + Boss Attack Power + Species Attack Power + Front/Back Attack Power] × Skill Coefficient] − [(Defense − Penetration) × 0.1]] × (Damage Boost + PvE Damage Boost + Boss Damage Boost + Species Damage Boost) × Critical Damage Boost × Double × Front/Back Damage Boost × Skill Additional Damage = Final Damage",
+        "expression": [
+          {
+            "text": "[[[((Pure Attack × Weapon Damage Boost) × Multi-Hit × Power Shard) + Attack Bonus) × Attack Increase % + PvE Attack Power + Boss Attack Power + Species Attack Power + Front/Back Attack Power] × Skill Coefficient] − [(Defense − Penetration) × 0.1]] × (Damage Boost + PvE Damage Boost + Boss Damage Boost + Species Damage Boost) × Critical Damage Boost × Double × Front/Back Damage Boost × Skill Additional Damage = Final Damage"
+          }
+        ],
         "explanation": []
       },
       {

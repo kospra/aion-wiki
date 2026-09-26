@@ -13,7 +13,7 @@ export type Block = { id: string; sourceIds: string[] } & (
   | { kind: 'heading'; level: 2 | 3 | 4; content: Inline[] }
   | { kind: 'list'; ordered: boolean; start?: number; items: Block[][] }
   | { kind: 'table'; caption: string; columns: Inline[][]; rows: Block[][][] }
-  | { kind: 'formula'; expression: string; explanation: Inline[] }
+  | { kind: 'formula'; expression: Inline[]; explanation: Inline[] }
   | {
       kind: 'note';
       label: string;

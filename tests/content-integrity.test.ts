@@ -290,7 +290,7 @@ describe('shared reading helpers', () => {
             id: 'formula',
             sourceIds: [],
             kind: 'formula',
-            expression: 'Attack × 2',
+            expression: [{ text: 'Attack × 2' }],
             explanation: [
               { text: 'Double', breakAfter: true },
               { text: 'Attack' },
@@ -402,7 +402,7 @@ describe('captured-source edge cases', () => {
       id: 'attack',
       sourceIds: ['s1'],
       kind: 'formula',
-      expression: 'Attack 150',
+      expression: [{ text: 'Attack 150' }],
       explanation: [{ text: 'and 5%', underline: true }],
     };
     guide.pages[0].blocks[5] = {
@@ -414,7 +414,7 @@ describe('captured-source edge cases', () => {
       content: [{ text: 'Details' }],
     };
     expect(validateGuide(guide)).toEqual([]);
-    guide.pages[0].blocks[0].expression = 'Attack';
+    guide.pages[0].blocks[0].expression = [{ text: 'Attack' }];
     expect(validateGuide(guide).join(' ')).toMatch(/numeric.*150/);
   });
 

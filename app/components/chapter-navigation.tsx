@@ -2,8 +2,21 @@ import { Box, Link, Stack, Text } from '@chakra-ui/react';
 import { Link as RouterLink, useLocation } from 'react-router';
 import { articles, categories } from '../content/wiki';
 
-export function ChapterList(): React.JSX.Element {
-  const { pathname } = useLocation();
+/**
+ * The current path without a trailing slash. Prerendering sees
+ * "/articles/x/" while browsers may request "/articles/x", and both must
+ * render the same navigation for hydration to match.
+ */
+function usePathname(): string {
+  return useLocation().pathname.replace(/(.)\/+$/, '$1');
+}
+
+export function ChapterList({
+  showArticles = false,
+}: {
+  showArticles?: boolean;
+}): React.JSX.Element {
+  const pathname = usePathname();
   const current = articles.find(
     (article) => pathname === `/articles/${article.slug}`,
   )?.category;
@@ -42,6 +55,51 @@ export function ChapterList(): React.JSX.Element {
                 </Text>
               </RouterLink>
             </Link>
+            {showArticles && active && (
+              <Box
+                as="ul"
+                listStyleType="none"
+                m="0"
+                mt="1"
+                ms="9"
+                ps="2"
+                borderStartWidth="1px"
+                borderColor="wiki.border"
+              >
+                {articles
+                  .filter((article) => article.category === category.slug)
+                  .map((article) => {
+                    const isCurrent = pathname === `/articles/${article.slug}`;
+                    return (
+                      <Box as="li" key={article.slug}>
+                        <Link
+                          asChild
+                          display="flex"
+                          alignItems="center"
+                          minH="11"
+                          px="2"
+                          py="1"
+                          fontSize="0.8125rem"
+                          lineHeight="1.45"
+                          borderRadius="wiki.control"
+                          color={isCurrent ? 'wiki.ink' : 'wiki.muted'}
+                          fontWeight={isCurrent ? 'semibold' : 'normal'}
+                          aria-current={isCurrent ? 'page' : undefined}
+                          _hover={{
+                            color: 'wiki.accent',
+                            bg: 'wiki.raised',
+                            textDecoration: 'none',
+                          }}
+                        >
+                          <RouterLink to={`/articles/${article.slug}`}>
+                            {article.title}
+                          </RouterLink>
+                        </Link>
+                      </Box>
+                    );
+                  })}
+              </Box>
+            )}
           </Box>
         );
       })}
@@ -50,7 +108,7 @@ export function ChapterList(): React.JSX.Element {
 }
 
 export function ChapterNavigation(): React.JSX.Element {
-  const { pathname } = useLocation();
+  const pathname = usePathname();
   return (
     <Box
       as="nav"
@@ -83,7 +141,7 @@ export function ChapterNavigation(): React.JSX.Element {
         <Text textStyle="wiki.eyebrow" color="wiki.muted" px="3">
           Chapters
         </Text>
-        <ChapterList />
+        <ChapterList showArticles />
         <Box borderTopWidth="1px" borderColor="wiki.border" />
         <Stack px="3" gap="2" color="wiki.muted" fontSize="xs">
           <Text>Based on Kanon’s guide</Text>

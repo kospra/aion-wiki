@@ -1,4 +1,15 @@
-import { Badge, Box, Flex, Link, List, chakra } from '@chakra-ui/react';
+import {
+  Badge,
+  Box,
+  Flex,
+  Image,
+  Link,
+  List,
+  Text,
+  chakra,
+} from '@chakra-ui/react';
+import { normalizeSourceUrl } from '../content/reader';
+import { isSmallFigure } from '../content/rules';
 import type { Figure } from '../content/types';
 import { ImageViewer } from './image-viewer';
 
@@ -48,15 +59,32 @@ export function AnnotationMarker({
 
 export function GuideFigure({ figure }: { figure: Figure }): React.JSX.Element {
   const annotations = figure.annotations ?? [];
+  const small = isSmallFigure(figure);
+  const smallSrc = small ? normalizeSourceUrl(figure.src) : null;
   return (
     <chakra.figure
       id={figure.id}
       data-guide-figure=""
-      my={{ base: '6', md: '8' }}
+      my={small ? '2' : { base: '6', md: '8' }}
       maxW="100%"
       minW="0"
     >
-      <ImageViewer figure={figure} />
+      {!small ? (
+        <ImageViewer figure={figure} />
+      ) : smallSrc ? (
+        <Image
+          data-guide-primary-image=""
+          src={smallSrc}
+          alt={figure.alt}
+          htmlWidth={figure.width}
+          htmlHeight={figure.height}
+          loading="lazy"
+          display="block"
+          borderRadius="wiki.inset"
+        />
+      ) : (
+        <Text>Image unavailable: {figure.alt}</Text>
+      )}
       {annotations.length > 0 && (
         <chakra.figcaption mt="3">
           <List.Root

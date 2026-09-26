@@ -35,7 +35,7 @@ export function blockInlineSegments(block: Block): Inline[][] {
     case 'note':
       return [block.content];
     case 'formula':
-      return [[{ text: block.expression }], block.explanation];
+      return [block.expression, block.explanation];
     case 'table':
       return block.columns;
     default:

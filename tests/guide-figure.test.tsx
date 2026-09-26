@@ -122,3 +122,19 @@ it('keeps Tab and Shift+Tab within the viewer and exposes keyboard image scrolli
   await user.tab({ shift: true });
   expect(dialog).toContainElement(document.activeElement as HTMLElement);
 });
+
+it('renders an icon-sized original as a plain image without the viewer', () => {
+  const icon: Figure = {
+    ...figure,
+    id: 'figure-icon',
+    width: 52,
+    height: 53,
+    alt: 'Slot icon',
+  };
+  const { container } = render(<GuideFigure figure={icon} />);
+  const image = screen.getByRole('img', { name: 'Slot icon' });
+  expect(image).toHaveAttribute('data-guide-primary-image');
+  expect(image).toHaveAttribute('width', '52');
+  expect(screen.queryByRole('button')).not.toBeInTheDocument();
+  expect(container.querySelector('figure#figure-icon')).toContainElement(image);
+});

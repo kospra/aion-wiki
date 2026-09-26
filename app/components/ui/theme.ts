@@ -86,6 +86,10 @@ const config = defineConfig({
           border: { value: '#27272A' },
           controlBorder: { value: '#71717A' },
           scrollbar: { value: '#52525B' },
+          // Google Docs' near-white note shading; callout edges keep it exactly.
+          sourceShade: { value: '#F8F9FA' },
+          warning: { value: '#FBBF24' },
+          tagBorder: { value: '#3F3F46' },
         },
       },
     },
@@ -195,6 +199,40 @@ const config = defineConfig({
           _active: { bg: 'wiki.accentSoft' },
         },
       },
+      'wiki.callout': {
+        value: {
+          bg: 'wiki.surface',
+          color: 'wiki.ink',
+          borderWidth: '1px',
+          borderColor: 'wiki.border',
+          borderInlineStartWidth: '3px',
+          borderInlineStartColor: 'wiki.sourceShade',
+          borderRadius: 'wiki.inset',
+          px: '4',
+          py: '3',
+        },
+      },
+      'wiki.gridCard': {
+        value: {
+          bg: 'wiki.surface',
+          borderWidth: '1px',
+          borderColor: 'wiki.border',
+          borderRadius: 'wiki.panel',
+          p: '4',
+        },
+      },
+      'wiki.scope': {
+        value: {
+          bg: 'wiki.raised',
+          color: 'wiki.ink',
+          borderWidth: '1px',
+          borderColor: 'wiki.tagBorder',
+          borderRadius: 'wiki.inset',
+          px: '1',
+          boxDecorationBreak: 'clone',
+        },
+      },
+      'wiki.todo': { value: { color: 'wiki.muted', fontStyle: 'italic' } },
     },
     recipes: {
       heading: {

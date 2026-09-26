@@ -14,8 +14,23 @@ import {
   chakra,
 } from '@chakra-ui/react';
 import { inlineText, normalizeSourceUrl, walkBlocks } from '../content/reader';
+import {
+  SOURCE_SHADE,
+  planLayout,
+  splitRuns,
+  tagPhrases,
+  valueLine,
+} from '../content/rules';
 import type { Block, Figure, Inline } from '../content/types';
 import { AnnotationSwatch, GuideFigure } from './guide-figure';
+import {
+  Callout,
+  CardGrid,
+  GridCard,
+  InlineTag,
+  ValueLine,
+  quietShade,
+} from './rich-layouts';
 
 type Props = {
   blocks: Block[];
@@ -23,7 +38,10 @@ type Props = {
   sourceLinks: Record<string, string>;
 };
 
-function formattedPart(part: Inline, key: number): ReactNode {
+/** Where a block renders. Table cells and cards use compact type. */
+type Context = { inTable?: boolean; inCard?: boolean; inCallout?: boolean };
+
+function formattedPart(part: Inline, key: string): ReactNode {
   let content: ReactNode = part.text;
   if (part.strong) content = <Strong>{content}</Strong>;
   if (part.emphasis) content = <Em>{content}</Em>;
@@ -33,11 +51,14 @@ function formattedPart(part: Inline, key: number): ReactNode {
       /^#[0-9a-f]{3}(?:[0-9a-f]{3})?(?:[0-9a-f]{2})?$/i.test(part.highlight)
         ? part.highlight
         : undefined;
+    // The author's near-white note shading would glare on the dark theme.
+    // Callouts and headings clear it; anywhere else it stays subtle.
+    const shade = backgroundColor?.toLowerCase() === SOURCE_SHADE;
     content = (
       <Mark
-        bg={backgroundColor}
+        bg={shade ? 'wiki.raised' : backgroundColor}
         whiteSpace="normal"
-        color={backgroundColor ? 'black' : undefined}
+        color={shade ? 'inherit' : backgroundColor ? 'black' : undefined}
         data-source-highlight={backgroundColor}
       >
         {content}
@@ -69,12 +90,12 @@ export function RichContent({
     }
   }
 
-  function renderInline(parts: Inline[]): ReactNode {
+  function renderRuns(parts: Inline[], prefix: string): ReactNode[] {
     const runs: ReactNode[] = [];
     for (let index = 0; index < parts.length;) {
       const part = parts[index];
       if (!part.href) {
-        runs.push(formattedPart(part, index));
+        runs.push(formattedPart(part, `${prefix}${index}`));
         index += 1;
         continue;
       }
@@ -83,7 +104,7 @@ export function RichContent({
         index += 1;
       const linkedParts = parts.slice(start, index);
       const content = linkedParts.map((linked, offset) =>
-        formattedPart(linked, start + offset),
+        formattedPart(linked, `${prefix}${start + offset}`),
       );
       const mappedHref = Object.hasOwn(sourceLinks, part.href)
         ? sourceLinks[part.href]
@@ -94,7 +115,7 @@ export function RichContent({
       runs.push(
         href && linkedParts.some((linked) => linked.text.trim()) ? (
           <Link
-            key={start}
+            key={`${prefix}${start}`}
             href={href}
             display="inline"
             color="wiki.accent"
@@ -104,28 +125,140 @@ export function RichContent({
             {content}
           </Link>
         ) : (
-          <Span key={start}>{content}</Span>
+          <Span key={`${prefix}${start}`}>{content}</Span>
         ),
       );
     }
     return runs;
   }
 
-  function renderBlock(block: Block, inTable = false): ReactNode {
+  // The guide's own qualifiers and to-do notes become inline tags; text is unchanged.
+  function renderInline(parts: Inline[]): ReactNode[] {
+    return tagPhrases(parts).flatMap((segment, index): ReactNode[] => {
+      const runs = renderRuns(segment.parts, `${index}-`);
+      return segment.tag
+        ? [
+            <InlineTag key={`tag-${index}`} tag={segment.tag}>
+              {runs}
+            </InlineTag>,
+          ]
+        : runs;
+    });
+  }
+
+  function renderBlocks(children: Block[], context: Context = {}): ReactNode[] {
+    // A callout already shows the shading, so its content is not planned again.
+    if (context.inCallout)
+      return children.map((child) => renderBlock(child, context));
+    return planLayout(children, { structure: !context.inTable }).map(
+      (segment) => {
+        switch (segment.kind) {
+          case 'block':
+            return renderBlock(segment.block, context);
+          case 'callout':
+            return (
+              <Callout
+                key={`callout-${segment.blocks[0].id}`}
+                tone={segment.tone}
+              >
+                {segment.blocks.map((block) =>
+                  renderBlock(block, { ...context, inCallout: true }),
+                )}
+              </Callout>
+            );
+          case 'sections':
+            return (
+              <CardGrid
+                key={`sections-${segment.sections[0][0].id}`}
+                kind="sections"
+                wide={segment.columns}
+              >
+                {segment.sections.map((section) => {
+                  const [first, ...rest] = section;
+                  if (first.kind === 'group') {
+                    const [heading, ...content] = first.blocks;
+                    return (
+                      <GridCard key={first.id} id={first.id}>
+                        {renderBlock(heading, { inCard: true })}
+                        {renderBlocks(content, { inCard: true })}
+                      </GridCard>
+                    );
+                  }
+                  return (
+                    <GridCard key={first.id}>
+                      {renderBlock(first, { inCard: true })}
+                      {renderBlocks(rest, { inCard: true })}
+                    </GridCard>
+                  );
+                })}
+              </CardGrid>
+            );
+          case 'labels':
+            return (
+              <CardGrid
+                key={`labels-${segment.lists[0].id}`}
+                kind={context.inCard ? 'columns' : 'labels'}
+              >
+                {segment.lists.map((list) => {
+                  if (list.kind !== 'list') return renderBlock(list, context);
+                  const [label, ...rest] = list.items[0];
+                  return (
+                    <GridCard
+                      key={list.id}
+                      id={list.id}
+                      list
+                      plain={context.inCard}
+                    >
+                      <Box as="li" spaceY="2">
+                        <Box fontWeight="semibold">
+                          {renderBlock(label, { inCard: true })}
+                        </Box>
+                        {renderBlocks(rest, { inCard: true })}
+                      </Box>
+                    </GridCard>
+                  );
+                })}
+              </CardGrid>
+            );
+        }
+      },
+    );
+  }
+
+  function renderBlock(block: Block, context: Context = {}): ReactNode {
+    const compact = Boolean(context.inTable || context.inCard);
     switch (block.kind) {
-      case 'paragraph':
+      case 'paragraph': {
+        const value =
+          compact || context.inCallout ? null : valueLine(block.content);
+        if (value) {
+          const [stat, equals, amount] = splitRuns(block.content, [
+            value.equals,
+            value.value,
+          ]);
+          return (
+            <ValueLine
+              key={block.id}
+              id={block.id}
+              stat={renderInline(stat)}
+              equals={renderInline(equals)}
+              value={renderInline(amount)}
+            />
+          );
+        }
         return (
           <Text
             id={block.id}
             key={block.id}
-            textStyle={inTable ? undefined : 'wiki.body'}
-            fontSize={inTable ? 'md' : undefined}
-            lineHeight={inTable ? '1.6' : undefined}
-            maxW={inTable ? undefined : '65ch'}
+            textStyle={compact ? undefined : 'wiki.body'}
+            fontSize={compact ? 'md' : undefined}
+            lineHeight={compact ? '1.6' : undefined}
+            maxW={compact || context.inCallout ? undefined : '65ch'}
           >
             {renderInline(block.content)}
           </Text>
         );
+      }
       case 'heading': {
         const headingMarkers = markers.get(block.id) ?? [];
         const heading = (
@@ -133,20 +266,31 @@ export function RichContent({
             as={`h${block.level}` as 'h2' | 'h3' | 'h4'}
             id={block.id}
             key={block.id}
-            textStyle={block.level === 2 ? 'wiki.section' : undefined}
+            textStyle={
+              block.level === 2 && !context.inCard ? 'wiki.section' : undefined
+            }
             fontSize={
-              block.level === 3
-                ? '22px'
-                : block.level === 4
-                  ? '19px'
-                  : undefined
+              context.inCard
+                ? '17px'
+                : block.level === 3
+                  ? '22px'
+                  : block.level === 4
+                    ? '19px'
+                    : undefined
             }
             lineHeight="1.3"
             color="wiki.ink"
-            maxW={inTable ? undefined : '65ch'}
-            mt={headingMarkers.length ? '0' : block.level === 2 ? '12' : '8'}
-            mb={headingMarkers.length ? '0' : '3'}
+            maxW={compact ? undefined : '65ch'}
+            mt={
+              headingMarkers.length || context.inCard
+                ? '0'
+                : block.level === 2
+                  ? '12'
+                  : '8'
+            }
+            mb={headingMarkers.length ? '0' : context.inCard ? '2' : '3'}
             scrollMarginTop="6"
+            css={quietShade}
           >
             {renderInline(block.content)}
           </Heading>
@@ -171,20 +315,23 @@ export function RichContent({
         );
       }
       case 'list': {
+        // A shaded one-item list is the callout itself, so it drops its bullet.
+        const bare = Boolean(context.inCallout) && block.items.length === 1;
         const items = block.items.map((item, index) => (
           <List.Item key={`${block.id}-item-${index}`}>
-            {item.map((child) => renderBlock(child, inTable))}
+            {renderBlocks(item, context)}
           </List.Item>
         ));
         return block.ordered ? (
           <List.Root
             asChild
             key={block.id}
-            listStyleType="decimal"
-            ps="6"
-            spaceY="2"
-            maxW={inTable ? undefined : '65ch'}
-            textStyle={inTable ? undefined : 'wiki.body'}
+            listStyleType={bare ? 'none' : 'decimal'}
+            ps={bare ? '0' : compact ? '5' : '6'}
+            spaceY={compact ? '1' : '2'}
+            maxW={compact || context.inCallout ? undefined : '65ch'}
+            textStyle={compact ? undefined : 'wiki.body'}
+            fontSize={compact ? 'md' : undefined}
             color="wiki.ink"
           >
             <chakra.ol
@@ -200,11 +347,12 @@ export function RichContent({
             as="ul"
             id={block.id}
             key={block.id}
-            listStyleType="disc"
-            ps="6"
-            spaceY="2"
-            maxW={inTable ? undefined : '65ch'}
-            textStyle={inTable ? undefined : 'wiki.body'}
+            listStyleType={bare ? 'none' : 'disc'}
+            ps={bare ? '0' : compact ? '5' : '6'}
+            spaceY={compact ? '1' : '2'}
+            maxW={compact || context.inCallout ? undefined : '65ch'}
+            textStyle={compact ? undefined : 'wiki.body'}
+            fontSize={compact ? 'md' : undefined}
             color="wiki.ink"
           >
             {items}
@@ -293,7 +441,7 @@ export function RichContent({
                         whiteSpace="normal"
                         overflowWrap="anywhere"
                       >
-                        {cell.map((child) => renderBlock(child, true))}
+                        {renderBlocks(cell, { inTable: true })}
                       </Table.Cell>
                     ))}
                   </Table.Row>
@@ -312,22 +460,24 @@ export function RichContent({
             layerStyle="wiki.panel"
           >
             <chakra.pre
-              overflowX="auto"
-              maxW="100%"
+              m="0"
               fontFamily="mono"
               fontSize="md"
-              whiteSpace="pre"
+              whiteSpace="pre-wrap"
+              overflowWrap="anywhere"
               color="wiki.ink"
             >
-              {block.expression}
+              {renderInline(block.expression)}
             </chakra.pre>
-            <Text
-              mt="3"
-              textStyle="wiki.body"
-              maxW={inTable ? undefined : '65ch'}
-            >
-              {renderInline(block.explanation)}
-            </Text>
+            {inlineText(block.explanation).trim() ? (
+              <Text
+                mt="3"
+                textStyle="wiki.body"
+                maxW={compact ? undefined : '65ch'}
+              >
+                {renderInline(block.explanation)}
+              </Text>
+            ) : null}
           </Box>
         );
       case 'note':
@@ -341,7 +491,7 @@ export function RichContent({
             borderStartWidth="3px"
             borderColor="wiki.accentBorder"
             borderRadius="wiki.inset"
-            maxW={inTable ? undefined : '65ch'}
+            maxW={compact ? undefined : '65ch'}
             color="wiki.ink"
           >
             <Strong>{block.label}</Strong>
@@ -391,11 +541,11 @@ export function RichContent({
                     fontSize="2xl"
                     transform={{ base: 'rotate(90deg)', md: 'none' }}
                   >
-                    {renderBlock(child, inTable)}
+                    {renderBlock(child, context)}
                   </Box>
                 ) : (
                   <Box key={child.id} flex="1 1 0" minW="0" maxW="100%">
-                    {renderBlock(child, inTable)}
+                    {renderBlock(child, context)}
                   </Box>
                 ),
               )}
@@ -403,7 +553,7 @@ export function RichContent({
           );
         return (
           <Box id={block.id} key={block.id} spaceY={{ base: '5', md: '6' }}>
-            {block.blocks.map((child) => renderBlock(child, inTable))}
+            {renderBlocks(block.blocks, context)}
           </Box>
         );
       }
@@ -418,7 +568,7 @@ export function RichContent({
       overflowWrap="anywhere"
       color="wiki.ink"
     >
-      {blocks.map((block) => renderBlock(block))}
+      {renderBlocks(blocks)}
     </Box>
   );
 }

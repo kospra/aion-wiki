@@ -18,6 +18,7 @@ import { Link as RouterLink } from 'react-router';
 import { ArticleCard } from './article-card';
 import { ChapterList } from './chapter-navigation';
 import { articles, categories } from '../content/wiki';
+import { matchesSearch } from '../content/rules';
 
 export function WikiDirectory({
   initialCategory = 'all',
@@ -34,7 +35,7 @@ export function WikiDirectory({
   const visibleArticles = articles.filter(
     (article) =>
       (category === 'all' || article.category === category) &&
-      article.searchText.toLocaleLowerCase().includes(normalizedQuery),
+      matchesSearch(article.searchText, normalizedQuery),
   );
   function clearSearch(reset = false) {
     setQuery('');

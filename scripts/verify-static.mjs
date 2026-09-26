@@ -9,6 +9,7 @@ import { fileURLToPath } from 'node:url';
 import { JSDOM } from 'jsdom';
 import { articles, categories, staticPaths } from '../app/content/wiki.ts';
 import { walkBlocks, inlineText } from '../app/content/reader.ts';
+import { orderTldrFirst } from '../app/content/rules.ts';
 import { loadCompleteGuide } from './guide-data.ts';
 import { validateGuide } from './content-integrity.ts';
 
@@ -216,7 +217,10 @@ export async function verifyStatic(root = 'build/client', suppliedInput) {
         main.querySelector('[data-source-credit] a').getAttribute('href'),
         page.sourceUrl,
       );
-      const expectedOrder = walkBlocks(page.blocks).map((block) => block.id);
+      // Articles show the author's TLDR first (app/content/rules.ts).
+      const expectedOrder = walkBlocks(orderTldrFirst(page.blocks)).map(
+        (block) => block.id,
+      );
       const expectedIds = new Set(expectedOrder);
       assert.deepEqual(
         [...main.querySelectorAll('[data-guide-content] [id]')]
@@ -256,14 +260,27 @@ export async function verifyStatic(root = 'build/client', suppliedInput) {
         if (block.kind === 'note')
           hasText(element.querySelector('strong'), block.label, block.id);
         if (block.kind === 'formula') {
-          actual.expression = visibleText(element.querySelector('pre'));
-          actual.explanation = renderedInline(element.querySelector('p'));
-          hasText(element.querySelector('pre'), block.expression, block.id);
+          actual.expression = renderedInline(element.querySelector('pre'));
           hasText(
-            element.querySelector('p'),
-            inlineText(block.explanation),
+            element.querySelector('pre'),
+            inlineText(block.expression),
             block.id,
           );
+          if (inlineText(block.explanation).trim()) {
+            actual.explanation = renderedInline(element.querySelector('p'));
+            hasText(
+              element.querySelector('p'),
+              inlineText(block.explanation),
+              block.id,
+            );
+          } else {
+            assert.equal(
+              element.querySelector('p'),
+              null,
+              `${block.id}: empty formula explanation must not render`,
+            );
+            actual.explanation = [];
+          }
         }
         if (block.kind === 'list' && block.ordered)
           assert.equal(

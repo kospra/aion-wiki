@@ -26,7 +26,7 @@ vi.mock('../app/content/wiki', () => ({
       category: 'crafting',
       summary: 'Crafting guide',
       status: 'source-backed',
-      searchText: 'Recipes materials',
+      searchText: 'Recipes materials Erroded Wings',
     },
   ],
 }));
@@ -141,4 +141,25 @@ it('returns to chapter browsing when Chapters is selected during a home search',
   expect(screen.getByRole('searchbox')).toHaveValue('');
   expect(screen.queryByRole('status')).not.toBeInTheDocument();
   expect(document.getElementById('chapters')).not.toBeNull();
+});
+
+it('finds the guide’s spelling variants of a word', async () => {
+  const user = userEvent.setup();
+  renderDirectory();
+  await user.type(
+    screen.getByRole('searchbox', { name: 'Search articles' }),
+    'eroded',
+  );
+  expect(screen.getByRole('link', { name: /Recipes/ })).toBeVisible();
+  expect(screen.queryByRole('link', { name: /Armor/ })).not.toBeInTheDocument();
+});
+
+it('keeps matching a variant spelling while it is typed', async () => {
+  const user = userEvent.setup();
+  renderDirectory();
+  await user.type(
+    screen.getByRole('searchbox', { name: 'Search articles' }),
+    'errode',
+  );
+  expect(screen.getByRole('link', { name: /Recipes/ })).toBeVisible();
 });
