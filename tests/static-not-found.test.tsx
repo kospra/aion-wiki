@@ -1,6 +1,4 @@
 // @vitest-environment node
-// jsdom does not publish TypeScript declarations in this dependency set.
-// @ts-expect-error Runtime import is covered by the render test.
 import { JSDOM } from 'jsdom';
 import { expect, it } from 'vitest';
 import { renderNotFoundDocument } from '../scripts/static-not-found';
