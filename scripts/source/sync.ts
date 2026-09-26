@@ -4,6 +4,10 @@ import { mkdir, readdir, readFile, writeFile } from 'node:fs/promises';
 import { dirname, join } from 'node:path';
 import { gzipSync } from 'node:zlib';
 import { format, resolveConfig } from 'prettier';
+// parse.ts loads jsdom, whose undici 8 installs itself behind Node's built-in
+// fetch; over HTTP/2 that pairing drops every response header, including the
+// export's content-encoding. undici's own fetch always matches its dispatcher.
+import { fetch } from 'undici';
 import type {
   CoverageEntry,
   Figure,

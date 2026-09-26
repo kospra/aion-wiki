@@ -12,7 +12,7 @@ import { isSourceSpace, LINE_BREAK, numbersIn } from './text.ts';
 
 const BLOCKS = 'p,li,h1,h2,h3,h4,h5,h6,table';
 
-/** Google serves the HTML export gzip-compressed without saying so; detect it by its bytes. */
+/** Accept a downloaded export (already decoded HTML) or a stored gzip capture; detect which by its bytes. */
 export function decodeExport(bytes: Uint8Array): string {
   const raw =
     bytes[0] === 0x1f && bytes[1] === 0x8b
