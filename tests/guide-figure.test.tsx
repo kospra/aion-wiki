@@ -108,6 +108,11 @@ it('keeps Tab and Shift+Tab within the viewer and exposes keyboard image scrolli
   render(<GuideFigure figure={figure} />);
   await user.click(screen.getByRole('button', { name: /view full-size/i }));
   const dialog = await screen.findByRole('dialog');
+  // The focus trap activates on the next animation frame, moving focus inside;
+  // Tab pressed before then escapes the dialog.
+  await waitFor(() =>
+    expect(dialog).toContainElement(document.activeElement as HTMLElement),
+  );
   const first = within(dialog).getByRole('button', {
     name: /close image/i,
   });
