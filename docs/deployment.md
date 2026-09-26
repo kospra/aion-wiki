@@ -45,7 +45,28 @@ Search engine accounts belong to the site owner, so these steps are manual:
 3. In Bing Webmaster Tools, import the site from Search Console. Bing also feeds DuckDuckGo and Yahoo.
 4. Check the home page, a chapter and an article with Google's Rich Results Test, and a link preview in Discord.
 
-Crawling can take from a few days to a few weeks. Afterwards, watch Search Console's Page indexing, Sitemaps and Breadcrumbs reports. Links from the guide's author and from player communities help search engines find the site. If the domain changes, update `siteOrigin`, redirect the old domain with 301s, and add the new domain in Search Console.
+Crawling can take from a few days to a few weeks. Afterwards, watch Search Console's Page indexing, Sitemaps and Breadcrumbs reports. Links from the guide's author and from player communities help search engines find the site.
+
+Search metadata follows the content on every build, so content edits need no SEO step, with one exception. When a published URL changes or disappears (a renamed slug, or a split, merged or deleted article), add a 301 from the old path to its replacement in `netlify.toml`; search engines and other sites still link to the old URL. A new kind of page must also be added to `isIndexable` in `app/seo.ts`; until it is, `verify:static` fails, because only placeholder content may carry `noindex`.
+
+### Changing the domain
+
+Netlify production builds fail while Netlify's primary domain differs from `siteOrigin` in `app/seo.ts`, so a domain change cannot ship canonical links that point to the old domain. To move the site:
+
+1. In Netlify, add the new domain and make it primary. Keep the old domain attached and redirect every path on it to the new domain with a 301, for example:
+
+   ```toml
+   [[redirects]]
+     from = "https://old-domain.example/*"
+     to = "https://new-domain.example/:splat"
+     status = 301
+     force = true
+   ```
+
+   Keep the redirect for at least 180 days, and preferably for good.
+
+2. Change `siteOrigin`, rerender the share card with `node scripts/render-share-card.mjs`, and update the domain in this runbook and the README. Deploy.
+3. In Search Console, add and verify the new domain, submit its sitemap, and use Change of Address from the old property. Add the new domain in Bing Webmaster Tools too, and update the GitHub repository's website field.
 
 ## Failure and rollback
 
