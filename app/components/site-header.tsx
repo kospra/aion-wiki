@@ -49,7 +49,7 @@ export function SiteHeader(): React.JSX.Element {
           color="wiki.muted"
           flex="1"
         >
-          The community field guide
+          The Aion 2 community wiki
         </Text>
         <Button
           asChild

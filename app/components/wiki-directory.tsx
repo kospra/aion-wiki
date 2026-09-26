@@ -49,7 +49,7 @@ export function WikiDirectory({
           {discover && (
             <>
               <Text textStyle="wiki.eyebrow" color="wiki.accent">
-                The community field guide
+                The Aion 2 community wiki
               </Text>
               <Heading as="h1" id="home-title" textStyle="wiki.hero">
                 Aion 2,

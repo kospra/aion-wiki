@@ -6,6 +6,8 @@ import { articles, categories, staticPaths } from './content/wiki.ts';
 // Imports carry .ts extensions so scripts/verify-static.mjs can load it in Node.
 export const siteOrigin = 'https://aion2simple.wiki';
 export const siteName = 'Aion 2 Wiki';
+// The domain's own name, so Google can pair the brand with "aion2simple".
+export const siteAlternateNames = ['Aion 2 Simple Wiki', 'aion2simple.wiki'];
 export const siteLanguage = 'en';
 export const shareCard = {
   path: '/images/share-card.png',
@@ -82,6 +84,11 @@ export function renderRobots(): string {
   return `User-agent: *\nAllow: /\n\nSitemap: ${siteOrigin}/sitemap.xml\n`;
 }
 
+/** Topic first, then the words people search with: "<topic> – Aion 2 Guide | Aion 2 Wiki". */
+export function guideTitle(topic: string): string {
+  return `${topic} – Aion 2 Guide | ${siteName}`;
+}
+
 export type JsonLd = Record<string, unknown>;
 
 const schemaContext = 'https://schema.org';
@@ -140,6 +147,7 @@ export function websiteJsonLd(description: string): JsonLd {
     '@context': schemaContext,
     '@type': 'WebSite',
     name: siteName,
+    alternateName: siteAlternateNames,
     url: canonicalUrl('/'),
     inLanguage: siteLanguage,
     description,

@@ -26,6 +26,7 @@ import type { GuidePage } from '../content/types';
 import {
   articleJsonLd,
   breadcrumbJsonLd,
+  guideTitle,
   notFoundMeta,
   pageMeta,
 } from '../seo';
@@ -42,7 +43,7 @@ export function meta({ params }: { params: { slug?: string } }) {
   );
   return pageMeta({
     path,
-    title: `${page.title} | Aion 2 Wiki`,
+    title: guideTitle(page.title),
     description: page.summary,
     type: 'article',
     jsonLd: [

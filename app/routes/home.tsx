@@ -3,12 +3,12 @@ import { useLocation } from 'react-router';
 import { pageMeta, websiteJsonLd } from '../seo';
 
 const description =
-  'An Aion 2 progression reference based on Kanon’s guide: gear, enhancement, Arcana, Daevanion, Genus and damage formulas.';
+  'A simple Aion 2 wiki and guide to gear, enhancement, Arcana, Daevanion boards, Genus, wings and damage formulas, based on Kanon’s guide.';
 
 export function meta() {
   return pageMeta({
     path: '/',
-    title: 'Aion 2 Wiki | Kanon guide reference',
+    title: 'Aion 2 Wiki – Gear, Enhancement & Combat Guide',
     description,
     jsonLd: [websiteJsonLd(description)],
   });

@@ -50,7 +50,7 @@ const html = `<!doctype html>
   <body>
     <div class="wordmark">AION 2 / WIKI</div>
     <div>
-      <div class="eyebrow">THE COMMUNITY FIELD GUIDE</div>
+      <div class="eyebrow">THE AION 2 COMMUNITY WIKI</div>
       <h1>Aion 2, explained.</h1>
       <div class="lede">Equipment, progression and combat.</div>
     </div>

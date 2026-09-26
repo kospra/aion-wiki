@@ -10,7 +10,12 @@ import {
 import { Link as RouterLink, useParams } from 'react-router';
 import { NotFound } from '../components/not-found';
 import { articles, categories } from '../content/wiki';
-import { breadcrumbJsonLd, notFoundMeta, pageMeta } from '../seo';
+import {
+  breadcrumbJsonLd,
+  guideTitle,
+  notFoundMeta,
+  pageMeta,
+} from '../seo';
 
 export function meta({ params }: { params: { slug?: string } }) {
   const category = categories.find(({ slug }) => slug === params.slug);
@@ -18,7 +23,7 @@ export function meta({ params }: { params: { slug?: string } }) {
   const path = `/categories/${category.slug}`;
   return pageMeta({
     path,
-    title: `${category.title} | Aion 2 Wiki`,
+    title: guideTitle(category.title),
     description: category.description,
     jsonLd: [
       breadcrumbJsonLd([
