@@ -24,6 +24,18 @@ it('accepts an indexable page whose canonical link and og:url agree', () => {
   ).toEqual({ indexed: url, image: '/images/share-card.png' });
 });
 
+it('names the page whose structured data is not valid JSON', () => {
+  const url = `${siteOrigin}/`;
+  expect(() =>
+    checkSearchMetadata(
+      '/',
+      page(
+        `<link rel="canonical" href="${url}"><meta property="og:url" content="${url}">${shareImage}<script type="application/ld+json">{"@context": </script>`,
+      ),
+    ),
+  ).toThrow(/^\/: structured data is not valid JSON/);
+});
+
 it('rejects noindex on a kind of page that search does not know yet', () => {
   expect(() =>
     checkSearchMetadata(

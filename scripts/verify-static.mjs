@@ -98,6 +98,17 @@ export function checkSiteOrigin(env) {
   );
 }
 
+function structuredData(route, script) {
+  try {
+    return JSON.parse(script.textContent);
+  } catch (error) {
+    throw new Error(
+      `${route}: structured data is not valid JSON (${error.message})`,
+      { cause: error },
+    );
+  }
+}
+
 // Search engines see one canonical URL per indexable page and noindex on every
 // other page; link previews need an absolute image on the site's own origin.
 export function checkSearchMetadata(route, document) {
@@ -133,7 +144,7 @@ export function checkSearchMetadata(route, document) {
   for (const script of document.querySelectorAll(
     'script[type="application/ld+json"]',
   ))
-    for (const item of [JSON.parse(script.textContent)].flat())
+    for (const item of [structuredData(route, script)].flat())
       assert.equal(
         item['@context'],
         'https://schema.org',
