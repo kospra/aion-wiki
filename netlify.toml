@@ -12,11 +12,6 @@
     Referrer-Policy = "strict-origin-when-cross-origin"
 
 [[headers]]
-  for = "/__spa-fallback.html"
-  [headers.values]
-    X-Robots-Tag = "noindex"
-
-[[headers]]
   for = "/assets/*"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"

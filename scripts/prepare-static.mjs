@@ -1,4 +1,4 @@
-import { writeFile } from 'node:fs/promises';
+import { rm, writeFile } from 'node:fs/promises';
 import { createServer } from 'vite';
 
 const server = await createServer({
@@ -20,6 +20,10 @@ try {
     'utf8',
   );
   await writeFile('build/client/robots.txt', renderRobots(), 'utf8');
+  // Every route is prerendered and unknown paths get the static 404 page, so
+  // nothing serves React Router's SPA fallback shell. Published, it would only
+  // be an empty page that search engines could index.
+  await rm('build/client/__spa-fallback.html', { force: true });
 } finally {
   await server.close();
 }

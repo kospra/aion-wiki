@@ -148,7 +148,6 @@ export function checkSearchMetadata(route, document) {
 export async function verifyPublishRoot(root) {
   const allowedTopLevel = new Set([
     '404.html',
-    '__spa-fallback.html',
     'favicon.svg',
     'index.html',
     'robots.txt',

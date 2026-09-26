@@ -163,6 +163,8 @@ Expected head for an article:
 
 ### S6 Netlify header
 
+Superseded by A5: the shell is no longer published, so this header rule was removed. Original design:
+
 Add to `netlify.toml`:
 
 ```toml
@@ -298,6 +300,7 @@ Decided with the user after implementation, 2026-09-26.
 - **A2 Domain guard.** On Netlify production builds (`CONTEXT=production`), `verify:static` fails unless Netlify's primary domain, its `URL` variable, equals `siteOrigin`. Output still depends only on committed files. Deploy Previews, branch deploys, CI and local builds skip the check.
 - **A3 Share card from `app/seo.ts`.** The render script reads the domain and image size from `siteOrigin` and `shareCard`.
 - **A4 Content changes.** Search metadata follows content automatically. The one manual step is a 301 in `netlify.toml` when a published URL changes or disappears. AGENTS.md states this rule, and the runbook covers it along with the domain-move steps.
+- **A5 No SPA shell.** Netlify's pretty URLs served the shell at `/__spa-fallback` as well as `/__spa-fallback.html`, and S6's header covered only the second. Nothing serves the shell: every route is prerendered, and unknown paths get the static 404 page. So `scripts/prepare-static.mjs` deletes it, and `verifyPublishRoot` rejects it. Both paths now return the real 404, and the S6 header rule is gone.
 
 ## Sources
 
