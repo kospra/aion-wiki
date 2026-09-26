@@ -30,7 +30,7 @@ The local HTTP fixture tests prove that the smoke checker rejects soft 404s, mis
    npm run verify:deployment -- https://YOUR-DEPLOY-URL.netlify.app
    ```
 
-   The URL is an operator-supplied example, never a configured production target. The command makes read-only HTTP requests for known pages, trailing-slash forms, a referenced image, and random nonexistent page/asset paths. It requires genuine HTTP 404 responses and a useful not-found page. Resolve any preview issue before merging.
+   The URL is an operator-supplied example, never a configured production target. The command makes read-only HTTP requests for known pages, trailing-slash forms, `robots.txt`, the sitemap, a referenced image, and random nonexistent page/asset paths. It requires genuine HTTP 404 responses and a useful not-found page. Resolve any preview issue before merging.
 
 7. Merge only after enforced checks pass. Confirm Netlify's production deploy is built from the expected merge commit, with `build/client` published and no generated runtime functions. Run the same smoke command against the assigned production URL, review direct route refreshes and response headers, and record the Git commit SHA and Netlify deploy URL together. Smoke checks after publication detect problems; they cannot prevent the initial publication. Inspect Netlify's deployment and billing history after the first release. Batch coherent releases instead of publishing every experimental commit.
 

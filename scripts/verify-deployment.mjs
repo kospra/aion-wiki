@@ -141,6 +141,13 @@ export async function checkDeployment(baseUrl) {
     await assertPage(base, path, source.title);
   }
 
+  const robots = await (await request(base, '/robots.txt', 200)).text();
+  if (!/^Sitemap:\s*https?:\/\/\S+\/sitemap\.xml\s*$/im.test(robots))
+    throw new Error('/robots.txt: missing Sitemap line');
+  const sitemap = await (await request(base, '/sitemap.xml', 200)).text();
+  if (!/<urlset[\s>][\s\S]*<loc>https?:\/\/[^<]+<\/loc>/.test(sitemap))
+    throw new Error('/sitemap.xml: expected a urlset with <loc> entries');
+
   const imagePath = figures[0].src;
   const image = await request(base, imagePath, 200);
   const imageType = image.headers.get('content-type') ?? '';
