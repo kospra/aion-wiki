@@ -1,7 +1,7 @@
 # Agent guide
 
 - This is a fully static Aion 2 wiki: React, TypeScript, React Router, and Chakra UI. Publish only `build/client`; keep runtime SSR disabled.
-- Use Node from `.nvmrc` and npm 12.1.0 on Linux or macOS (WSL counts as Linux). Never reuse a `node_modules` installed from another operating system; delete it and run `npm ci`.
+- Use the Node version from `.nvmrc` and the npm version from `engines` in `package.json`, on Linux or macOS (WSL counts as Linux). Never reuse a `node_modules` installed from another operating system; delete it and run `npm ci`.
 - Use Chakra components and shared tokens in `app/components/ui/theme.ts`. Preserve responsive layouts, keyboard access, reduced motion, and readable no-JavaScript content.
 - For UI/design reviews or changes, read [DESIGN.md](DESIGN.md) before planning or editing and keep it current when design decisions change. Code is the design source of truth; there is no Figma file.
 - Preserve all imported guide text, numbers, figure placements, source links, highlights, and the source's own regional/uncertainty wording. Articles render source content and original images only: do not add editorial audit notes, screenshot transcriptions, or status boilerplate. The one exception is the marker key for numbered/colored markers actually drawn on a screenshot (figure `annotations`). Remove Google Docs leftovers only through coverage `omitted`/`strayText` entries (see README), never by deleting content silently. Do not invent game facts or weaken integrity checks.
