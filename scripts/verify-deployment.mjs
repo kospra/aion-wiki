@@ -1,4 +1,4 @@
-/* global fetch, AbortSignal */
+/* global AbortSignal */
 import console from 'node:console';
 import process from 'node:process';
 import { randomUUID } from 'node:crypto';
@@ -6,6 +6,10 @@ import { readFile } from 'node:fs/promises';
 import { resolve } from 'node:path';
 import { fileURLToPath, URL } from 'node:url';
 import { JSDOM } from 'jsdom';
+// jsdom loads undici 8, which installs itself behind Node's built-in fetch.
+// Over HTTP/2, as live hosts serve, that pairing drops every response header,
+// so use undici's own fetch, which always matches its dispatcher.
+import { fetch } from 'undici';
 
 const catalogue = JSON.parse(
   await readFile(
