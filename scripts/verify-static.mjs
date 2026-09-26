@@ -73,9 +73,34 @@ function renderedInline(element) {
   visit(element);
   return runs;
 }
+// Only placeholder content may be noindex. A new kind of page that isIndexable
+// in app/seo.ts does not know yet would otherwise drop out of search silently.
+function isPlaceholder(route) {
+  const [, section, slug] = route.split('/');
+  const pending = (article) => article.status === 'source-pending';
+  if (section === 'articles')
+    return articles.some(
+      (article) => article.slug === slug && pending(article),
+    );
+  if (section !== 'categories') return false;
+  const chapter = articles.filter((article) => article.category === slug);
+  return chapter.length > 0 && chapter.every(pending);
+}
+
+// Netlify sets CONTEXT to the deploy context and URL to the site's primary
+// domain. A production deploy must not publish canonical links to another one.
+export function checkSiteOrigin(env) {
+  if (env.CONTEXT !== 'production' || !env.URL) return;
+  assert.equal(
+    new URL(env.URL).origin,
+    siteOrigin,
+    `Netlify's primary domain is ${env.URL}, but siteOrigin in app/seo.ts is ${siteOrigin}. Follow "Changing the domain" in docs/deployment.md before deploying.`,
+  );
+}
+
 // Search engines see one canonical URL per indexable page and noindex on every
 // other page; link previews need an absolute image on the site's own origin.
-function checkSearchMetadata(route, document) {
+export function checkSearchMetadata(route, document) {
   const url = canonicalUrl(route);
   const indexable = isIndexable(route);
   const canonical = [...document.querySelectorAll('link[rel="canonical"]')].map(
@@ -88,6 +113,10 @@ function checkSearchMetadata(route, document) {
     assert.deepEqual(canonical, [url], `${route}: canonical link`);
     assert.doesNotMatch(robots, /noindex/, `${route}: indexable but noindex`);
   } else {
+    assert.ok(
+      isPlaceholder(route),
+      `${route}: noindex, but only placeholder content may be; add this kind of page to isIndexable in app/seo.ts`,
+    );
     assert.deepEqual(canonical, [], `${route}: noindex page with canonical`);
     assert.match(robots, /noindex/, `${route}: missing noindex`);
   }
@@ -161,6 +190,7 @@ export async function verifyPublishRoot(root) {
 }
 
 export async function verifyStatic(root = 'build/client', suppliedInput) {
+  checkSiteOrigin(process.env);
   await verifyPublishRoot(root);
   const notFoundHtml = await readFile(join(root, '404.html'), 'utf8');
   const notFoundDocument = new JSDOM(notFoundHtml).window.document;
