@@ -67,7 +67,8 @@
         "expression": [
           {
             "text": "Formula",
-            "strong": true
+            "strong": true,
+            "breakAfter": true
           },
           {
             "text": "[Outfit Damage = [(Min Attack "
