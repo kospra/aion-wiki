@@ -19,9 +19,12 @@ beforeEach(async () => {
     await mkdir(join(root, directory));
   for (const file of [
     '404.html',
+    'apple-touch-icon.png',
+    'favicon.ico',
     'favicon.svg',
     'index.html',
     'robots.txt',
+    'site.webmanifest',
     'sitemap.xml',
   ])
     await writeFile(join(root, file), 'fixture');

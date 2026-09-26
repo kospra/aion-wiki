@@ -1,6 +1,6 @@
 /* global document, URL */
-// Renders the link-preview card (og:image) from the site's own copy, DESIGN.md
-// colors, and the domain and size in app/seo.ts. Run it by hand after
+// Renders the link-preview card (og:image) from the site's own copy and icon,
+// DESIGN.md colors, and the domain and size in app/seo.ts. Run it by hand after
 // `npx playwright install chromium`, and again whenever any of those change:
 //   node scripts/render-share-card.mjs
 // Builds never run it; the PNG is committed.
@@ -17,6 +17,8 @@ const require = createRequire(import.meta.url);
 const font = await readFile(
   require.resolve('@fontsource-variable/inter/files/inter-latin-wght-normal.woff2'),
 );
+
+const icon = await readFile('public/favicon.svg');
 
 const html = `<!doctype html>
 <html lang="en">
@@ -40,7 +42,7 @@ const html = `<!doctype html>
         color: #fafafa;
         font-family: 'Inter Variable', sans-serif;
       }
-      .wordmark { font-size: 32px; font-weight: 600; }
+      .wordmark { display: flex; align-items: center; gap: 20px; font-size: 32px; font-weight: 600; }
       .eyebrow { color: #5eead4; font-size: 22px; font-weight: 600; letter-spacing: 0.12em; }
       h1 { margin: 12px 0 20px; font-size: 104px; font-weight: 600; line-height: 1.05; letter-spacing: -0.02em; }
       .lede { color: #a1a1aa; font-size: 34px; }
@@ -48,7 +50,10 @@ const html = `<!doctype html>
     </style>
   </head>
   <body>
-    <div class="wordmark">AION 2 / WIKI</div>
+    <div class="wordmark">
+      <img src="data:image/svg+xml;base64,${icon.toString('base64')}" width="72" height="72" alt="" />
+      AION 2 / WIKI
+    </div>
     <div>
       <div class="eyebrow">THE AION 2 COMMUNITY WIKI</div>
       <h1>Aion 2, explained.</h1>

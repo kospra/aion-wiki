@@ -12,7 +12,12 @@ import { walkBlocks, inlineText } from '../app/content/reader.ts';
 import { orderTldrFirst } from '../app/content/rules.ts';
 import { loadCompleteGuide } from './guide-data.ts';
 import { validateGuide } from './content-integrity.ts';
-import { canonicalUrl, isIndexable, siteOrigin } from '../app/seo.ts';
+import {
+  canonicalUrl,
+  isIndexable,
+  siteIcons,
+  siteOrigin,
+} from '../app/seo.ts';
 
 export const normalize = (text) => text.replace(/\s+/gu, ' ').trim();
 // DOM parsing decodes entities and preserves inline boundaries. Hidden source
@@ -159,9 +164,12 @@ export function checkSearchMetadata(route, document) {
 export async function verifyPublishRoot(root) {
   const allowedTopLevel = new Set([
     '404.html',
+    'apple-touch-icon.png',
+    'favicon.ico',
     'favicon.svg',
     'index.html',
     'robots.txt',
+    'site.webmanifest',
     'sitemap.xml',
     'articles',
     'assets',
@@ -254,6 +262,13 @@ export async function verifyStatic(root = 'build/client', suppliedInput) {
     const search = checkSearchMetadata(route, document);
     if (search.indexed) indexedUrls.add(search.indexed);
     assetPaths.add(search.image);
+    for (const { rel, href } of siteIcons.links) {
+      assert.ok(
+        document.querySelector(`head link[rel="${rel}"][href="${href}"]`),
+        `${route}: missing ${rel} link to ${href}`,
+      );
+      assetPaths.add(href);
+    }
     const main = document.querySelector('main');
     assert.equal(
       document.querySelectorAll('main').length,
@@ -436,6 +451,10 @@ export async function verifyStatic(root = 'build/client', suppliedInput) {
         );
     }
   }
+  const manifest = JSON.parse(
+    await readFile(join(root, 'site.webmanifest'), 'utf8'),
+  );
+  for (const { src } of manifest.icons) assetPaths.add(src);
   for (const asset of assetPaths) {
     const path = resolve(root, `.${asset}`);
     assert.ok(path.startsWith(resolve(root) + sep), `Unsafe asset ${asset}`);
