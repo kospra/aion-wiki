@@ -1,4 +1,4 @@
-# Claude test page
+# kitty
 
 This page exists only to try the `@claude` workflow on a pull request. Close the pull request without merging.
 
