@@ -174,6 +174,7 @@ export async function runSync(options: SyncOptions): Promise<SyncResult> {
     nextFigure: alignment.nextFigure,
     report: reportPath,
     baselineDigest: baselineDigest(alignment.baseline),
+    pending: result.flags,
   };
   const count = (kind: string) =>
     alignment.changes.filter((change) => change.kind === kind).length;

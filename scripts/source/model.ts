@@ -56,6 +56,8 @@ export type Capture = {
   report: string | null;
   /** SHA-256 of JSON.stringify(baseline) as written by this capture. */
   baselineDigest: string;
+  /** What the sync could not apply; `npm run check` fails until each entry is resolved and removed. */
+  pending?: { sourceId: string; pageSlug: string | null; reason: string }[];
 };
 
 /** Every committed file the sync reads and rewrites, keyed by file name. */

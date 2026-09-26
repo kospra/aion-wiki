@@ -229,12 +229,17 @@ export function alignSnapshot(
       return figure.id;
     });
     blocks.push(sourceBlock(id, after, figureIds, before));
+    // Level and numbering style are not in the key: captures before levels were recorded lack them.
+    const restructured =
+      !!before &&
+      ((before.level !== undefined && before.level !== after.level) ||
+        (before.ordered !== undefined && before.ordered !== after.ordered));
     changes.push({
       id,
       kind:
         o === undefined
           ? 'added'
-          : oldKeys[o] === newKeys[n]
+          : oldKeys[o] === newKeys[n] && !restructured
             ? 'unchanged'
             : 'edited',
     });

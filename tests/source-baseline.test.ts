@@ -22,6 +22,11 @@ it('changes the baseline only through the importer', () => {
   expect(baselineDigest(baseline)).toBe(captures.at(-1)?.baselineDigest);
 });
 
+it('has nothing left unresolved from the last sync', () => {
+  // source:sync lists what it could not apply; remove each entry once it is fixed by hand.
+  expect(captures.at(-1)?.pending ?? []).toEqual([]);
+});
+
 it('numbers blocks and figures uniquely, below the next free numbers', () => {
   const last = captures.at(-1)!;
   const blockIds = baseline.blocks.map((block) => block.id);

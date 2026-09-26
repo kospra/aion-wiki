@@ -145,3 +145,70 @@ it('flags what it cannot place and leaves the check failing', () => {
     ),
   ).toBe(true);
 });
+
+/** The fixture with a third article, "extra", opened by the Alpha paragraph. */
+function withExtraArticle(): ContentSet {
+  const content = fixtureContent();
+  const page = basics(content);
+  const moved = page.blocks.splice(1);
+  content.chapters[0].pages.push({
+    ...page,
+    slug: 'extra',
+    title: 'Extra',
+    blocks: moved,
+  });
+  for (const entry of content.coverage[0].entries)
+    if (
+      entry.primary &&
+      ['block-0005', 'block-0006', 'block-0007'].includes(entry.sourceId)
+    )
+      entry.primary.pageSlug = 'extra';
+  Object.assign(content.taxonomy[1], {
+    lastBlock: 'block-0004',
+    nonemptyBlocks: 2,
+  });
+  content.taxonomy.push({
+    slug: 'extra',
+    chapter: 1,
+    title: 'Extra',
+    firstBlock: 'block-0005',
+    lastBlock: 'block-0008',
+    nonemptyBlocks: 3,
+    figures: [],
+  });
+  return content;
+}
+
+it('flags a list item that changes level', () => {
+  const result = run(
+    fixtureContent(),
+    HEAD +
+      '<p>Alpha has 10 points.</p><ul class="lst-kix_a-0"><li>First item</li></ul>' +
+      '<ul class="lst-kix_a-1"><li>Second item</li></ul><p></p>',
+  );
+  expect(result.flags.map((flag) => flag.sourceId)).toEqual(['block-0007']);
+});
+
+it('flags new blocks that follow an unplaced new chapter', () => {
+  const result = run(
+    fixtureContent(),
+    HEAD +
+      '<p>Alpha has 10 points.</p>' +
+      LIST +
+      '<h1>CH 2: More</h1><p>Chapter two text.</p>',
+  );
+  expect(result.flags.map((flag) => flag.sourceId)).toEqual([
+    'block-0009',
+    'block-0010',
+  ]);
+});
+
+it('flags a new block that takes the place of a removed article opener', () => {
+  const content = withExtraArticle();
+  expect(validateGuide(guideInput(content))).toEqual([]);
+  const result = run(
+    content,
+    HEAD + '<h2>Completely renamed opener</h2>' + LIST,
+  );
+  expect(result.flags.map((flag) => flag.sourceId)).toEqual(['block-0009']);
+});

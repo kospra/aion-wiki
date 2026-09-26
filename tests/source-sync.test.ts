@@ -162,3 +162,32 @@ it('refuses to run over uncommitted content changes', async () => {
     runSync({ root, from: join(root, 'export.html.gz'), now }),
   ).rejects.toThrow('uncommitted changes');
 });
+
+it('records what it could not apply so the check keeps failing', async () => {
+  const root = await fixtureRoot();
+  await write(
+    root,
+    'flagged.html',
+    exportHtml(
+      '<p>About text</p><p>More about text</p><h1>CH 1: Basics</h1><h2 id="h.intro">Intro</h2>' +
+        '<h3>Alpha has 10 points.</h3><ul class="lst-kix_a-0"><li>First item</li><li>Second item</li></ul><p></p>',
+    ),
+  );
+  const result = await runSync({
+    root,
+    from: join(root, 'flagged.html'),
+    allowDirty: true,
+    now,
+  });
+  expect(result.flags).toBe(1);
+  const content = await loadContent(root);
+  expect(content.captures[1].pending).toEqual([
+    {
+      sourceId: 'block-0005',
+      pageSlug: 'basics',
+      reason: 'Changed from p to h3; update the leaf by hand',
+    },
+  ]);
+  // The heading level change passes the integrity validator; only the pending list catches it.
+  expect(validateGuide(guideInput(content))).toEqual([]);
+});

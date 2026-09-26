@@ -198,6 +198,29 @@ export function reconcile(
       );
   }
 
+  // New blocks just before an article's surviving first block may be its new opening.
+  const added = new Set(
+    alignment.changes
+      .filter((change) => change.kind === 'added')
+      .map((change) => change.id),
+  );
+  const openers = new Map<string, string>();
+  for (const entry of content.taxonomy) {
+    if (
+      entry.firstBlock ===
+      current.taxonomy.find((range) => range.slug === entry.slug)?.firstBlock
+    )
+      continue;
+    for (
+      let index = order.get(entry.firstBlock)! - 1;
+      index >= 0 && added.has(snapshot[index].id);
+      index--
+    )
+      openers.set(snapshot[index].id, entry.slug);
+  }
+  /** Added blocks left for a person; blocks that follow them wait too. */
+  const unplaced = new Set<string>();
+
   // 2. Removed blocks.
   for (const id of alignment.removed) {
     const before = previous.get(id)!;
@@ -242,6 +265,7 @@ export function reconcile(
   for (const block of snapshot) {
     article = starts.get(block.id) ?? article;
     if (!article) {
+      unplaced.add(block.id);
       flag(block.id, null, 'Comes before the first article; place it by hand');
       continue;
     }
@@ -249,6 +273,10 @@ export function reconcile(
     article.lastBlock = block.id;
   }
 
+  const hold = (id: string, slug: string, reason: string) => {
+    unplaced.add(id);
+    flag(id, slug, reason);
+  };
   const add = (id: string): void => {
     const block = next.get(id)!;
     const slug = pageOf.get(id);
@@ -272,9 +300,27 @@ export function reconcile(
       });
       return;
     }
+    const opens = openers.get(id);
+    if (opens)
+      return hold(
+        id,
+        slug,
+        `New content where the article "${opens}" used to start; decide which article it belongs to and place it by hand`,
+      );
+    for (let index = order.get(id)! - 1; index >= 0; index--) {
+      const earlier = snapshot[index];
+      if (isLayoutOnly(earlier)) continue;
+      if (unplaced.has(earlier.id))
+        return hold(
+          id,
+          slug,
+          `Follows ${earlier.id}, which is not placed yet; place both by hand`,
+        );
+      break;
+    }
     const kind = leafKind(block);
     if (!kind)
-      return flag(
+      return hold(
         id,
         slug,
         'A new h1, h5, h6, table, image group or image with text; place it by hand',
@@ -289,20 +335,20 @@ export function reconcile(
       }
     }
     if (!predecessor)
-      return flag(
+      return hold(
         id,
         slug,
         'A new block at the start of an article; place it by hand',
       );
     const anchor = sole(predecessor.id, ['paragraph', 'heading', 'figure']);
     if (!anchor)
-      return flag(
+      return hold(
         id,
         slug,
         `The block before it (${predecessor.id}) is not a single leaf; place it by hand`,
       );
     if (anchor.ancestors.some((slot) => slot.block.kind === 'table'))
-      return flag(
+      return hold(
         id,
         slug,
         'The block before it sits in a table; place it by hand',
@@ -318,7 +364,7 @@ export function reconcile(
         predecessor.tag !== 'li' ||
         predecessor.level !== block.level
       )
-        return flag(
+        return hold(
           id,
           slug,
           'A new list item that starts a list or changes level; place it by hand',
@@ -398,6 +444,15 @@ export function reconcile(
         id,
         pageSlug,
         `Changed from ${before.tag} to ${after.tag}; update the leaf by hand`,
+      );
+    if (
+      (before.level !== undefined && before.level !== after.level) ||
+      (before.ordered !== undefined && before.ordered !== after.ordered)
+    )
+      return flag(
+        id,
+        pageSlug,
+        'Its list level or numbering changed; move the leaf by hand',
       );
     if (before.figureIds.join() !== after.figureIds.join())
       return flag(

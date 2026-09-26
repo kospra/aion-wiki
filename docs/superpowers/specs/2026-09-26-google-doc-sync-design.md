@@ -140,7 +140,7 @@ Taxonomy:
 - When a range's first or last block is removed, the boundary moves to the nearest remaining block inside the range. A range left empty is flagged.
 - `nonemptyBlocks` and `figures` are recalculated for every article.
 
-A flagged change is never half-applied. Its old leaf stays as it is, and the new snapshot makes `npm run check` fail, through a text mismatch, an unknown source ID or missing coverage, until someone resolves it. The report says what to do and suggests where.
+A flagged change is never half-applied, and the capture records it in `captures.json` as `pending`; a test fails while that list is non-empty, because some flags (a heading level change, a sentence removed from a note) would otherwise pass the integrity validator. Its old leaf stays as it is, and the new snapshot makes `npm run check` fail, through a text mismatch, an unknown source ID or missing coverage, until someone resolves it. The report says what to do and suggests where.
 
 Changes that need editorial review but don't fail the check go under "Review" in the report:
 

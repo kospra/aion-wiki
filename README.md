@@ -97,7 +97,7 @@ Some changes apply automatically:
 - an edit to a paragraph or heading that renders exactly one source block;
 - a new paragraph, heading, list item or single image placed after such a block.
 
-Everything else is listed under "Needs attention" in the report and keeps `npm run check` failing until it is resolved by hand. New images also need alt text.
+Everything else is listed under "Needs attention" in the report and in the `pending` list of the newest entry in `content/source/captures.json`. `npm run check` fails until each item is fixed by hand and its entry removed. New images also need alt text.
 
 To pass options, run the script directly, for example `node scripts/source-sync.ts --force && npm run content:generate`:
 
