@@ -38,12 +38,6 @@
     "nextFigure": 91,
     "report": "content/source/changes/2026-09-27-1034.md",
     "baselineDigest": "2841fcf007033633b88b25a5b1340293d1e965a483deafe385844ec2578687c9",
-    "pending": [
-      {
-        "sourceId": "block-1226",
-        "pageSlug": "damage-formula-and-pure-attack",
-        "reason": "Edited, but its text sits in a formula, note or group; update it by hand"
-      }
-    ]
+    "pending": []
   }
 ]
