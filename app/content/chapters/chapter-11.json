@@ -46,11 +46,16 @@
         "kind": "paragraph",
         "content": [
           {
-            "text": "“Aion Research Lab” ",
+            "text": "“Aion Research Lab”",
+            "strong": true,
             "emphasis": true
           },
           {
+            "text": " "
+          },
+          {
             "text": "YouTube Channel Link",
+            "strong": true,
             "emphasis": true,
             "underline": true,
             "href": "https://www.youtube.com/@%EC%95%84%EC%9D%B4%EC%98%A8%EC%97%B0%EA%B5%AC%EC%86%8C"

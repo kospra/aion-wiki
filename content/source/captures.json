@@ -25,5 +25,25 @@
     "nextFigure": 91,
     "report": "content/source/changes/2026-09-26.md",
     "baselineDigest": "ebcfd26995d91774bd492c3362d4dcb0baf0a033ff6e27d4b84af273e915e756"
+  },
+  {
+    "capturedAt": "2026-09-27T10:34:14.350Z",
+    "fingerprints": {
+      "html": "60f0231ead1d2540211869ff84fd10111c177ce37e015942d372f7f8e7688756"
+    },
+    "updateNote": "***Update Note 9/20/2026: Updated Stat Lines, Gear, and Genus the best I could given the info we know so far. There are for sure some big changes for global and it’s impossible for us to be 100% sure of ALL the changes until launch. Will update this doc with confirmed info as soon as I can. If there is any confirmed info that needs to be updated on this doc that you notice, please shoot me an X msg or DM on Discord. I have not yet updated the Wings section.",
+    "blocks": 1268,
+    "figures": 90,
+    "nextBlock": 1269,
+    "nextFigure": 91,
+    "report": "content/source/changes/2026-09-27-1034.md",
+    "baselineDigest": "2841fcf007033633b88b25a5b1340293d1e965a483deafe385844ec2578687c9",
+    "pending": [
+      {
+        "sourceId": "block-1226",
+        "pageSlug": "damage-formula-and-pure-attack",
+        "reason": "Edited, but its text sits in a formula, note or group; update it by hand"
+      }
+    ]
   }
 ]
