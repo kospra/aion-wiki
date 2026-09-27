@@ -1,6 +1,6 @@
 {
   "fingerprints": {
-    "html": "935feae666b6139b0920ff28d48f7354f9e63c671770a6329bd72ce80466a498"
+    "html": "60f0231ead1d2540211869ff84fd10111c177ce37e015942d372f7f8e7688756"
   },
   "blocks": [
     {
@@ -11934,12 +11934,14 @@
           "text": "“Aion Research Lab”",
           "start": 0,
           "end": 19,
+          "strong": true,
           "emphasis": true
         },
         {
           "text": "YouTube Channel Link",
           "start": 20,
           "end": 40,
+          "strong": true,
           "emphasis": true,
           "underline": true
         }
@@ -14305,7 +14307,7 @@
     {
       "id": "block-1226",
       "tag": "p",
-      "text": "[[[((Pure Attack × Weapon Damage Boost) × Multi-Hit × Power Shard) + Attack Bonus) × Attack Increase % + PvE Attack Power + Boss Attack Power + Species Attack Power + Front/Back Attack Power] × Skill Coefficient] − [(Defense − Penetration) × 0.1]] × (Damage Boost + PvE Damage Boost + Boss Damage Boost + Species Damage Boost) × Critical Damage Boost × Double × Front/Back Damage Boost × Skill Additional Damage = Final Damage",
+      "text": "[[[((Pure Attack × Weapon Damage Boost) × Multi-Hit × Power Shard) + Attack Bonus) × Attack Increase % + PvE Attack Power + Boss Attack Power + Species Attack Power + Front/Back Attack Power] × Skill Coefficient] + Skill Additional Damage − [(Defense − Penetration) × 0.1]] × (Damage Boost + PvE Damage Boost + Boss Damage Boost + Species Damage Boost) × Critical Damage Boost × Double × Front/Back Damage Boost × Skill Specialty Enhancement = Final Damage",
       "numbers": ["0.1"],
       "figureIds": [],
       "links": [],
