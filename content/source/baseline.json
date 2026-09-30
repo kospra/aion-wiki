@@ -1,6 +1,6 @@
 {
   "fingerprints": {
-    "html": "60f0231ead1d2540211869ff84fd10111c177ce37e015942d372f7f8e7688756"
+    "html": "7867f5cf2ccb003687e96b08c5ba791040c4e21a609c8044fe5af9c3deab0031"
   },
   "blocks": [
     {
@@ -11888,15 +11888,15 @@
     {
       "id": "block-1029",
       "tag": "p",
-      "text": "I want to give a special shoutout to a well-recognized Korean Youtuber “Aion Research Lab” and his friends for discovering a lot of the formulas and equations listed out in this section. I spent a lot of time discussing numbers with him and it is STILL a work in progress…understandably so, considering the amount of sheer stats and convolution Aion 2 is with Damage.",
-      "numbers": ["2"],
+      "text": "I want to give a special shoutout to a well-recognized Korean Youtuber “Aion Research Lab” or “AionLab” for discovering a lot of the formulas and equations listed out in this section. I spent a lot of time discussing numbers with him and it is STILL a work in progress…understandably so, considering the amount of sheer stats and convolution Aion 2 is with Damage. He’s not only seen as a gold standard for info in KR but also has parsed multiple Rank 1 logs on dps charts (notmeter) across both Templar and Sin.",
+      "numbers": ["2", "1"],
       "figureIds": [],
       "links": [],
       "formatting": [
         {
-          "text": "I want to give a special shoutout to a well-recognized Korean Youtuber “Aion Research Lab” and his friends for discovering a lot of the formulas and equations listed out in this section. I spent a lot of time discussing numbers with him and it is STILL a work in progress…understandably so, considering the amount of sheer stats and convolution Aion 2 is with Damage.",
+          "text": "I want to give a special shoutout to a well-recognized Korean Youtuber “Aion Research Lab” or “AionLab” for discovering a lot of the formulas and equations listed out in this section. I spent a lot of time discussing numbers with him and it is STILL a work in progress…understandably so, considering the amount of sheer stats and convolution Aion 2 is with Damage. He’s not only seen as a gold standard for info in KR but also has parsed multiple Rank 1 logs on dps charts (notmeter) across both Templar and Sin.",
           "start": 0,
-          "end": 367,
+          "end": 512,
           "emphasis": true
         }
       ]
