@@ -1,6 +1,6 @@
 {
   "fingerprints": {
-    "html": "7867f5cf2ccb003687e96b08c5ba791040c4e21a609c8044fe5af9c3deab0031"
+    "html": "fadef23799b3f74317cb062523fef9657b9e49f5dc376fc92cf722f18e41bd3a"
   },
   "blocks": [
     {
@@ -8784,7 +8784,7 @@
     {
       "id": "block-0760",
       "tag": "li",
-      "text": "Line 4: Multi Hit, Perfect Chance",
+      "text": "Line 4: PVE Damage Boost > Multi Hit, Perfect Chance",
       "numbers": ["4"],
       "figureIds": [],
       "links": [],
