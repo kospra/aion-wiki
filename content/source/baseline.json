@@ -1,6 +1,6 @@
 {
   "fingerprints": {
-    "html": "fadef23799b3f74317cb062523fef9657b9e49f5dc376fc92cf722f18e41bd3a"
+    "html": "0d7a0579352ed5fd533c5c843555bafde5962be91ea3e5f7622dc123d2710727"
   },
   "blocks": [
     {
@@ -103,15 +103,15 @@
       ]
     },
     {
-      "id": "block-0006",
+      "id": "block-1269",
       "tag": "p",
-      "text": "***Update Note 9/20/2026: Updated Stat Lines, Gear, and Genus the best I could given the info we know so far. There are for sure some big changes for global and it’s impossible for us to be 100% sure of ALL the changes until launch. Will update this doc with confirmed info as soon as I can. If there is any confirmed info that needs to be updated on this doc that you notice, please shoot me an X msg or DM on Discord. I have not yet updated the Wings section.",
-      "numbers": ["9", "20", "2026", "100"],
+      "text": "***Update Note 10/4/2026: There are a LOT of changes for Global. I’ve updated everything we know so far. I’ve added a Chapter 12: Class Builds section that links you to builds.",
+      "numbers": ["10", "4", "2026", "12"],
       "figureIds": [],
       "links": [],
       "formatting": [
         {
-          "text": "***Update Note 9/20/2026",
+          "text": "***Update Note 10/4/2026",
           "start": 0,
           "end": 24,
           "strong": true,
@@ -120,9 +120,9 @@
           "highlight": "#ffff00"
         },
         {
-          "text": ": Updated Stat Lines, Gear, and Genus the best I could given the info we know so far. There are for sure some big changes for global and it’s impossible for us to be 100% sure of ALL the changes until launch. Will update this doc with confirmed info as soon as I can. If there is any confirmed info that needs to be updated on this doc that you notice, please shoot me an X msg or DM on Discord. I have not yet updated the Wings section.",
+          "text": ": There are a LOT of changes for Global. I’ve updated everything we know so far. I’ve added a Chapter 12: Class Builds section that links you to builds.",
           "start": 24,
-          "end": 461,
+          "end": 176,
           "strong": true,
           "emphasis": true,
           "highlight": "#ffff00"
@@ -252,7 +252,7 @@
     {
       "id": "block-0017",
       "tag": "p",
-      "text": "I probably have around or close to 1k hours played. I play/played this game offstream a LOT, way more than I stream it. I have completed all the content in the game, including the pinnacle raids and got to just under 900k combat power.",
+      "text": "I probably have around or close to 1k hours played prior to Global Launch. I play/played this game offstream a LOT, way more than I stream it. I have completed all the content in the game, including the pinnacle raids and got to just under 900k combat power.",
       "numbers": ["1", "900"],
       "figureIds": [],
       "links": [],
@@ -1102,9 +1102,9 @@
       "level": 0
     },
     {
-      "id": "block-0086",
+      "id": "block-1270",
       "tag": "li",
-      "text": "Unlocked automatically at maximum value on Crafted gear on Asia Server. Crafted Gear on Global will not have this",
+      "text": "PVP Exclusive stat on Global",
       "numbers": [],
       "figureIds": [],
       "links": [],
@@ -1124,9 +1124,9 @@
       "level": 0
     },
     {
-      "id": "block-0088",
+      "id": "block-1271",
       "tag": "li",
-      "text": "“Potential Stones” mainly obtained from Expedition - Conquest Dungeons",
+      "text": "“Potential Stones” mainly obtained from Abyss & Abyss Shop",
       "numbers": [],
       "figureIds": [],
       "links": [],
@@ -1135,37 +1135,37 @@
       "level": 1
     },
     {
-      "id": "block-0089",
+      "id": "block-1272",
       "tag": "li",
-      "text": "Weapons and Accessories give PVE Damage Boost %",
+      "text": "Asia",
       "numbers": [],
       "figureIds": [],
       "links": [],
       "formatting": [],
       "ordered": false,
       "level": 0
+    },
+    {
+      "id": "block-0089",
+      "tag": "li",
+      "text": "Weapons and Accessories give PVP Damage Boost %",
+      "numbers": [],
+      "figureIds": [],
+      "links": [],
+      "formatting": [],
+      "ordered": false,
+      "level": 1
     },
     {
       "id": "block-0090",
       "tag": "li",
-      "text": "Armor gives PVE Damage Tolerance %",
+      "text": "Armor gives PVP Damage Tolerance %",
       "numbers": [],
       "figureIds": [],
       "links": [],
       "formatting": [],
       "ordered": false,
-      "level": 0
-    },
-    {
-      "id": "block-0091",
-      "tag": "li",
-      "text": "Crafted gear gives more PVE Damage Boost/Tolerance % than Dungeon gear on Asia Server, not confirmed yet on Global",
-      "numbers": [],
-      "figureIds": [],
-      "links": [],
-      "formatting": [],
-      "ordered": false,
-      "level": 0
+      "level": 1
     },
     {
       "id": "block-0092",
@@ -1848,9 +1848,9 @@
       "level": 0
     },
     {
-      "id": "block-0145",
+      "id": "block-1273",
       "tag": "li",
-      "text": "Amp Stats (at max)",
+      "text": "Types of Weapons",
       "numbers": [],
       "figureIds": [],
       "links": [],
@@ -1859,10 +1859,10 @@
       "level": 0
     },
     {
-      "id": "block-0146",
+      "id": "block-1274",
       "tag": "li",
-      "text": "Attack 150",
-      "numbers": ["150"],
+      "text": "Dungeon Weapon",
+      "numbers": [],
       "figureIds": [],
       "links": [],
       "formatting": [],
@@ -1870,10 +1870,218 @@
       "level": 1
     },
     {
-      "id": "block-0147",
+      "id": "block-1275",
       "tag": "li",
-      "text": "Attack Increase 5%",
+      "text": "4 Stat Lines",
+      "numbers": ["4"],
+      "figureIds": [],
+      "links": [],
+      "formatting": [
+        {
+          "text": "Stat Lines",
+          "start": 2,
+          "end": 12,
+          "strong": true
+        }
+      ],
+      "ordered": false,
+      "level": 2
+    },
+    {
+      "id": "block-1276",
+      "tag": "li",
+      "text": "Amp 3 Max",
+      "numbers": ["3"],
+      "figureIds": [],
+      "links": [],
+      "formatting": [],
+      "ordered": false,
+      "level": 2
+    },
+    {
+      "id": "block-1277",
+      "tag": "li",
+      "text": "Extendable Weapons (Khromede, Ludra)",
+      "numbers": [],
+      "figureIds": [],
+      "links": [],
+      "formatting": [],
+      "ordered": false,
+      "level": 1
+    },
+    {
+      "id": "block-1278",
+      "tag": "li",
+      "text": "4 Stat Lines",
+      "numbers": ["4"],
+      "figureIds": [],
+      "links": [],
+      "formatting": [
+        {
+          "text": "Stat Lines",
+          "start": 2,
+          "end": 12,
+          "strong": true
+        }
+      ],
+      "ordered": false,
+      "level": 2
+    },
+    {
+      "id": "block-1279",
+      "tag": "li",
+      "text": "Amp 5 Max",
       "numbers": ["5"],
+      "figureIds": [],
+      "links": [],
+      "formatting": [],
+      "ordered": false,
+      "level": 2
+    },
+    {
+      "id": "block-1280",
+      "tag": "li",
+      "text": "Crafted Weapons",
+      "numbers": [],
+      "figureIds": [],
+      "links": [],
+      "formatting": [],
+      "ordered": false,
+      "level": 1
+    },
+    {
+      "id": "block-1281",
+      "tag": "li",
+      "text": "5 Stat Lines",
+      "numbers": ["5"],
+      "figureIds": [],
+      "links": [],
+      "formatting": [
+        {
+          "text": "Stat Lines",
+          "start": 2,
+          "end": 12,
+          "strong": true
+        }
+      ],
+      "ordered": false,
+      "level": 2
+    },
+    {
+      "id": "block-1282",
+      "tag": "li",
+      "text": "Amp 1 to 5 Max",
+      "numbers": ["1", "5"],
+      "figureIds": [],
+      "links": [],
+      "formatting": [],
+      "ordered": false,
+      "level": 2
+    },
+    {
+      "id": "block-1283",
+      "tag": "li",
+      "text": "There are currently 6 tiers of “Dragon Lord” Crafted Weapons",
+      "numbers": ["6"],
+      "figureIds": [],
+      "links": [],
+      "formatting": [],
+      "ordered": false,
+      "level": 0
+    },
+    {
+      "id": "block-1284",
+      "tag": "li",
+      "text": "Tier 1 True Dragon (Amp 1 Max)",
+      "numbers": ["1", "1"],
+      "figureIds": [],
+      "links": [],
+      "formatting": [],
+      "ordered": false,
+      "level": 1
+    },
+    {
+      "id": "block-1285",
+      "tag": "li",
+      "text": "Amp 1: Attack 10, Damage Boost 1%",
+      "numbers": ["1", "10", "1"],
+      "figureIds": [],
+      "links": [],
+      "formatting": [],
+      "ordered": false,
+      "level": 2
+    },
+    {
+      "id": "block-1286",
+      "tag": "li",
+      "text": "Tier 2 Splendent True Dragon (Amp 3 Max)",
+      "numbers": ["2", "3"],
+      "figureIds": [],
+      "links": [],
+      "formatting": [],
+      "ordered": false,
+      "level": 1
+    },
+    {
+      "id": "block-1287",
+      "tag": "li",
+      "text": "Amp 1: Attack 12, Damage Boost 2%",
+      "numbers": ["1", "12", "2"],
+      "figureIds": [],
+      "links": [],
+      "formatting": [],
+      "ordered": false,
+      "level": 2
+    },
+    {
+      "id": "block-1288",
+      "tag": "li",
+      "text": "Tier 3 White Dragon (Amp 5 Max)",
+      "numbers": ["3", "5"],
+      "figureIds": [],
+      "links": [],
+      "formatting": [],
+      "ordered": false,
+      "level": 1
+    },
+    {
+      "id": "block-1289",
+      "tag": "li",
+      "text": "Amp 1:",
+      "numbers": ["1"],
+      "figureIds": [],
+      "links": [],
+      "formatting": [],
+      "ordered": false,
+      "level": 2
+    },
+    {
+      "id": "block-1290",
+      "tag": "li",
+      "text": "Tier 4 Splendent White Dragon (Amp 5 Max)",
+      "numbers": ["4", "5"],
+      "figureIds": [],
+      "links": [],
+      "formatting": [],
+      "ordered": false,
+      "level": 1
+    },
+    {
+      "id": "block-1291",
+      "tag": "li",
+      "text": "Tier 5 Wise Dragon (Amp 5 Max)",
+      "numbers": ["5", "5"],
+      "figureIds": [],
+      "links": [],
+      "formatting": [],
+      "ordered": false,
+      "level": 1
+    },
+    {
+      "id": "block-1292",
+      "tag": "li",
+      "text": "Tier 6 Splendent Wise Dragon (Amp 5 Max)",
+      "numbers": ["6", "5"],
       "figureIds": [],
       "links": [],
       "formatting": [],
@@ -1883,46 +2091,13 @@
     {
       "id": "block-0148",
       "tag": "li",
-      "text": "Potential Stats (at max)",
+      "text": "Potential Stats",
       "numbers": [],
       "figureIds": [],
       "links": [],
       "formatting": [],
       "ordered": false,
       "level": 0
-    },
-    {
-      "id": "block-0149",
-      "tag": "li",
-      "text": "Crafted Gear: PVE Damage Boost 5% (not confirmed for Global)",
-      "numbers": ["5"],
-      "figureIds": [],
-      "links": [],
-      "formatting": [],
-      "ordered": false,
-      "level": 1
-    },
-    {
-      "id": "block-0150",
-      "tag": "li",
-      "text": "Dungeon Gear: PVE Damage Boost 2.4% (not confirmed for Global)",
-      "numbers": ["2.4"],
-      "figureIds": [],
-      "links": [],
-      "formatting": [],
-      "ordered": false,
-      "level": 1
-    },
-    {
-      "id": "block-0151",
-      "tag": "li",
-      "text": "PVP Gear: PVP Damage Boost 10%",
-      "numbers": ["10"],
-      "figureIds": [],
-      "links": [],
-      "formatting": [],
-      "ordered": false,
-      "level": 1
     },
     {
       "id": "block-0152",
@@ -2022,9 +2197,9 @@
       "level": 0
     },
     {
-      "id": "block-0159",
+      "id": "block-1293",
       "tag": "li",
-      "text": "Amp Stats (at max)",
+      "text": "Amp Stats (at max in Asia, Global Not Confirmed)",
       "numbers": [],
       "figureIds": [],
       "links": [],
@@ -2057,46 +2232,13 @@
     {
       "id": "block-0162",
       "tag": "li",
-      "text": "Potential Stats (at max)",
+      "text": "Potential Stats",
       "numbers": [],
       "figureIds": [],
       "links": [],
       "formatting": [],
       "ordered": false,
       "level": 0
-    },
-    {
-      "id": "block-0163",
-      "tag": "li",
-      "text": "Crafted Gear: PVE Damage Tolerance 5% (not confirmed for Global)",
-      "numbers": ["5"],
-      "figureIds": [],
-      "links": [],
-      "formatting": [],
-      "ordered": false,
-      "level": 1
-    },
-    {
-      "id": "block-0164",
-      "tag": "li",
-      "text": "Dungeon Gear: PVE Damage Tolerance 1.2% (not confirmed for Global)",
-      "numbers": ["1.2"],
-      "figureIds": [],
-      "links": [],
-      "formatting": [],
-      "ordered": false,
-      "level": 1
-    },
-    {
-      "id": "block-0165",
-      "tag": "li",
-      "text": "PVP Gear: PVP Damage Boost 5%",
-      "numbers": ["5"],
-      "figureIds": [],
-      "links": [],
-      "formatting": [],
-      "ordered": false,
-      "level": 1
     },
     {
       "id": "block-0166",
@@ -2178,9 +2320,9 @@
       "level": 0
     },
     {
-      "id": "block-0172",
+      "id": "block-1294",
       "tag": "li",
-      "text": "Amp Stats (at max)",
+      "text": "Amp Stats (at max in Asia, Global Not Confirmed)",
       "numbers": [],
       "figureIds": [],
       "links": [],
@@ -2224,46 +2366,13 @@
     {
       "id": "block-0176",
       "tag": "li",
-      "text": "Potential Stats (at max)",
+      "text": "Potential Stats",
       "numbers": [],
       "figureIds": [],
       "links": [],
       "formatting": [],
       "ordered": false,
       "level": 0
-    },
-    {
-      "id": "block-0177",
-      "tag": "li",
-      "text": "Crafted Gear: PVE Damage Boost 2.5% (not confirmed for Global)",
-      "numbers": ["2.5"],
-      "figureIds": [],
-      "links": [],
-      "formatting": [],
-      "ordered": false,
-      "level": 1
-    },
-    {
-      "id": "block-0178",
-      "tag": "li",
-      "text": "Dungeon Gear: PVE Damage Boost 1.2% (not confirmed for Global)",
-      "numbers": ["1.2"],
-      "figureIds": [],
-      "links": [],
-      "formatting": [],
-      "ordered": false,
-      "level": 1
-    },
-    {
-      "id": "block-0179",
-      "tag": "li",
-      "text": "PVP Gear: PVP Damage Boost 5%",
-      "numbers": ["5"],
-      "figureIds": [],
-      "links": [],
-      "formatting": [],
-      "ordered": false,
-      "level": 1
     },
     {
       "id": "block-0180",
@@ -4445,6 +4554,15 @@
       "formatting": []
     },
     {
+      "id": "block-1295",
+      "tag": "p",
+      "text": "Global Cap is 50%.",
+      "numbers": ["50"],
+      "figureIds": [],
+      "links": [],
+      "formatting": []
+    },
+    {
       "id": "block-0344",
       "tag": "p",
       "text": "",
@@ -4481,17 +4599,17 @@
     {
       "id": "block-0347",
       "tag": "h3",
-      "text": "Ludra Raid",
+      "text": "Ludra Raid (Global)",
       "numbers": [],
       "figureIds": [],
       "links": [],
       "formatting": []
     },
     {
-      "id": "block-0348",
+      "id": "block-1296",
       "tag": "p",
-      "text": "1500 Accuracy",
-      "numbers": ["1500"],
+      "text": "1450 Accuracy",
+      "numbers": ["1450"],
       "figureIds": [],
       "links": [],
       "formatting": []
@@ -5246,6 +5364,31 @@
     },
     {
       "id": "block-0423",
+      "tag": "p",
+      "text": "",
+      "numbers": [],
+      "figureIds": [],
+      "links": [],
+      "formatting": []
+    },
+    {
+      "id": "block-1297",
+      "tag": "p",
+      "text": "Update: Potential is a PVP exclusive stat in Global, you can disregard this for PVE. The explanation below is how it works on the Asia server.",
+      "numbers": [],
+      "figureIds": [],
+      "links": [],
+      "formatting": [
+        {
+          "text": "Update: Potential is a PVP exclusive stat in Global, you can disregard this for PVE. The explanation below is how it works on the Asia server.",
+          "start": 0,
+          "end": 142,
+          "emphasis": true
+        }
+      ]
+    },
+    {
+      "id": "block-1298",
       "tag": "p",
       "text": "",
       "numbers": [],
@@ -8567,6 +8710,31 @@
       "formatting": []
     },
     {
+      "id": "block-1299",
+      "tag": "p",
+      "text": "Note: I’ve listed out BIS lines but for Lines 2, 8, it’s recommended to ignore these considering it would be way to expensive to try and get these stats. It’s not worth the cost of Cyrstals.",
+      "numbers": ["2", "8"],
+      "figureIds": [],
+      "links": [],
+      "formatting": [
+        {
+          "text": "Note: I’ve listed out BIS lines but for Lines 2, 8, it’s recommended to ignore these considering it would be way to expensive to try and get these stats. It’s not worth the cost of Cyrstals.",
+          "start": 0,
+          "end": 190,
+          "emphasis": true
+        }
+      ]
+    },
+    {
+      "id": "block-1300",
+      "tag": "p",
+      "text": "",
+      "numbers": [],
+      "figureIds": [],
+      "links": [],
+      "formatting": []
+    },
+    {
       "id": "block-0741",
       "tag": "li",
       "text": "Cogni Board",
@@ -8626,7 +8794,7 @@
     {
       "id": "block-0746",
       "tag": "li",
-      "text": "Line 4: Critical Damage Boost > Damage Boost",
+      "text": "Line 4: Critical Damage Boost, Damage Boost",
       "numbers": ["4"],
       "figureIds": [],
       "links": [],
@@ -8784,7 +8952,7 @@
     {
       "id": "block-0760",
       "tag": "li",
-      "text": "Line 4: PVE Damage Boost > Multi Hit, Perfect Chance",
+      "text": "Line 4: PVE Damage Boost > Multi Hit > Perfect Chance",
       "numbers": ["4"],
       "figureIds": [],
       "links": [],
@@ -8971,6 +9139,31 @@
       "formatting": []
     },
     {
+      "id": "block-1301",
+      "tag": "p",
+      "text": "Upgrade Order: Line 4 > Line 1, 5 > Line 6, 9, Line 7, Line 2, 8",
+      "numbers": ["4", "1", "5", "6", "9", "7", "2", "8"],
+      "figureIds": [],
+      "links": [],
+      "formatting": [
+        {
+          "text": "Upgrade Order: Line 4 > Line 1, 5 > Line 6, 9, Line 7, Line 2, 8",
+          "start": 0,
+          "end": 64,
+          "strong": true
+        }
+      ]
+    },
+    {
+      "id": "block-1302",
+      "tag": "p",
+      "text": "",
+      "numbers": [],
+      "figureIds": [],
+      "links": [],
+      "formatting": []
+    },
+    {
       "id": "block-0777",
       "tag": "h3",
       "text": "Pet Passive “Owned Effects”",
@@ -8982,23 +9175,50 @@
     {
       "id": "block-0778",
       "tag": "p",
-      "text": "Pets also have an “Owned Effects” system where you get passive stats as you unlock and level up more Pets.This can be leveled up by simply farming mobs or obtaining Pet-related rewards from a variety of content.",
+      "text": "Pets also have an “Owned Effects” system where you get passive stats as you unlock and level up more Pets. This can be leveled up by simply farming mobs or obtaining Pet-related rewards from a variety of content.",
       "numbers": [],
       "figureIds": [],
       "links": [],
       "formatting": []
     },
     {
-      "id": "block-0779",
+      "id": "block-1303",
       "tag": "p",
-      "text": "",
-      "numbers": [],
-      "figureIds": ["figure-080"],
+      "text": "For Global launch, the max level is 3 and at max you get a Pantheon Stat - focus on Might and Precision first. All Cogni mobs give you 1 Might each, all Natura mobs give you 1 Precision each.",
+      "numbers": ["3", "1", "1"],
+      "figureIds": [],
       "links": [],
       "formatting": []
     },
     {
       "id": "block-0780",
+      "tag": "p",
+      "text": "",
+      "numbers": [],
+      "figureIds": [],
+      "links": [],
+      "formatting": []
+    },
+    {
+      "id": "block-1304",
+      "tag": "p",
+      "text": "You can find the location for these mobs by selecting Source. If the mob does not show a source, it is on the other faction’s land.",
+      "numbers": [],
+      "figureIds": [],
+      "links": [],
+      "formatting": []
+    },
+    {
+      "id": "block-1305",
+      "tag": "p",
+      "text": "",
+      "numbers": [],
+      "figureIds": ["figure-091", "figure-092"],
+      "links": [],
+      "formatting": []
+    },
+    {
+      "id": "block-1306",
       "tag": "p",
       "text": "",
       "numbers": [],
@@ -9091,7 +9311,7 @@
     {
       "id": "block-0790",
       "tag": "p",
-      "text": "Wings can be upgraded or “Enhanced” up to a maximum of level 10 where the “Owned Effect” will increase. At level 0, wings will not show all their stats. When enhancing a pair of wings to +1, an additional stat will become available…in the case of the Brawler Wings (Abyss Shop Wings), the tooltip will only show the “Owned Effects” at base level 0. Upon upgrading these wings, you get Weapon Damage Boost making these wings high value.",
+      "text": "Wings can be upgraded or “Enhanced” up to a maximum of level 10 where the “Owned Effect” will increase. They can NOT be upgraded at Global launch though. At level 0, wings will not show all their stats. When enhancing a pair of wings to +1, an additional stat will become available…in the case of the Brawler Wings (Abyss Shop Wings), the tooltip will only show the “Owned Effects” at base level 0. Upon upgrading these wings, you get Weapon Damage Boost making these wings high value.",
       "numbers": ["10", "0", "1", "0"],
       "figureIds": [],
       "links": [],
@@ -14753,15 +14973,15 @@
     {
       "id": "block-1266",
       "tag": "h1",
-      "text": "CH 12: CLASS PASSIVES",
+      "text": "CH 12: CLASS BUILDS",
       "numbers": ["12"],
       "figureIds": [],
       "links": [],
       "formatting": [
         {
-          "text": "CLASS PASSIVES",
+          "text": "CLASS BUILDS",
           "start": 7,
-          "end": 21,
+          "end": 19,
           "underline": true
         }
       ],
@@ -14777,13 +14997,34 @@
       "formatting": []
     },
     {
-      "id": "block-1268",
+      "id": "block-1307",
       "tag": "p",
-      "text": "COMING SOON…",
+      "text": "Notmeter (the main site to track performance/dps/parses) now has a section that showcases all builds and loadouts across all classes. Link:",
       "numbers": [],
       "figureIds": [],
       "links": [],
       "formatting": []
+    },
+    {
+      "id": "block-1308",
+      "tag": "p",
+      "text": "https://notmeter.com/?view=setup-guide",
+      "numbers": [],
+      "figureIds": [],
+      "links": [
+        {
+          "label": "https://notmeter.com/?view=setup-guide",
+          "href": "https://www.google.com/url?q=https://notmeter.com/?view%3Dsetup-guide&sa=D&source=editors&ust=1791115653708246&usg=AOvVaw1WE4fJ6fc_Gx0cHTyQWmeB"
+        }
+      ],
+      "formatting": [
+        {
+          "text": "https://notmeter.com/?view=setup-guide",
+          "start": 0,
+          "end": 38,
+          "underline": true
+        }
+      ]
     }
   ],
   "figures": [
@@ -15420,12 +15661,20 @@
       "height": 421
     },
     {
-      "id": "figure-080",
-      "sourceId": "block-0779",
-      "sha256": "211170fe132b92b3c05d36627801ffc9da04c666a4155184b9b07da90337ca09",
-      "src": "/images/guide/211170fe132b92b3c05d36627801ffc9da04c666a4155184b9b07da90337ca09.png",
-      "width": 548,
-      "height": 515
+      "id": "figure-091",
+      "sourceId": "block-1305",
+      "sha256": "6aa537b53003cbab53bdf96f6340b42c4e9d805bbc892a965e69949804c059bc",
+      "src": "/images/guide/6aa537b53003cbab53bdf96f6340b42c4e9d805bbc892a965e69949804c059bc.png",
+      "width": 613,
+      "height": 575
+    },
+    {
+      "id": "figure-092",
+      "sourceId": "block-1305",
+      "sha256": "16970e2dfc60768da78774a069e84fd864b3e1ebf84c49f2616e461ab26e1511",
+      "src": "/images/guide/16970e2dfc60768da78774a069e84fd864b3e1ebf84c49f2616e461ab26e1511.png",
+      "width": 635,
+      "height": 621
     },
     {
       "id": "figure-081",

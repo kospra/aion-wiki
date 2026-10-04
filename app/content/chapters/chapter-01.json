@@ -852,21 +852,6 @@
               "items": [
                 [
                   {
-                    "id": "block-0086",
-                    "sourceIds": ["block-0086"],
-                    "kind": "paragraph",
-                    "content": [
-                      {
-                        "text": "Unlocked automatically at maximum value on Crafted gear"
-                      },
-                      {
-                        "text": " on Asia Server. Crafted Gear on Global will not have this"
-                      }
-                    ]
-                  }
-                ],
-                [
-                  {
                     "id": "block-0087",
                     "sourceIds": ["block-0087"],
                     "kind": "paragraph",
@@ -874,26 +859,6 @@
                       {
                         "text": "Unlocked via “Potential Stones” "
                       }
-                    ]
-                  },
-                  {
-                    "id": "list-block-0088",
-                    "sourceIds": [],
-                    "kind": "list",
-                    "ordered": false,
-                    "items": [
-                      [
-                        {
-                          "id": "block-0088",
-                          "sourceIds": ["block-0088"],
-                          "kind": "paragraph",
-                          "content": [
-                            {
-                              "text": "“Potential Stones” mainly obtained from Expedition - Conquest Dungeons"
-                            }
-                          ]
-                        }
-                      ]
                     ]
                   }
                 ]
@@ -931,18 +896,6 @@
                 ],
                 [
                   {
-                    "id": "block-0091",
-                    "sourceIds": ["block-0091"],
-                    "kind": "paragraph",
-                    "content": [
-                      {
-                        "text": "Crafted gear gives more PVE Damage Boost/Tolerance % than Dungeon gear on Asia Server, not confirmed yet on Global"
-                      }
-                    ]
-                  }
-                ],
-                [
-                  {
                     "id": "block-0092",
                     "sourceIds": ["block-0092"],
                     "kind": "paragraph",
@@ -956,6 +909,18 @@
                     ]
                   }
                 ]
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-1270",
+              "sourceIds": ["block-1270"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "PVP Exclusive stat on Global"
+                }
               ]
             }
           ]

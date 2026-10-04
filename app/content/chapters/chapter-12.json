@@ -6,17 +6,6 @@
     "summary": "The original guide marks this chapter as Coming soon.",
     "status": "source-pending",
     "sourceUrl": "https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/edit",
-    "blocks": [
-      {
-        "id": "block-1268",
-        "sourceIds": ["block-1268"],
-        "kind": "paragraph",
-        "content": [
-          {
-            "text": "COMING SOON…"
-          }
-        ]
-      }
-    ]
+    "blocks": []
   }
 ]

@@ -100,48 +100,17 @@
           ],
           [
             {
-              "id": "block-0145",
-              "sourceIds": ["block-0145"],
+              "id": "block-1273",
+              "sourceIds": ["block-1273"],
               "kind": "paragraph",
               "content": [
                 {
-                  "text": "Amp Stats (at max) "
+                  "text": "Types of Weapons"
                 }
               ]
-            },
-            {
-              "id": "list-block-0146",
-              "sourceIds": [],
-              "kind": "list",
-              "ordered": false,
-              "items": [
-                [
-                  {
-                    "id": "block-0146",
-                    "sourceIds": ["block-0146"],
-                    "kind": "paragraph",
-                    "content": [
-                      {
-                        "text": "Attack 150"
-                      }
-                    ]
-                  }
-                ],
-                [
-                  {
-                    "id": "block-0147",
-                    "sourceIds": ["block-0147"],
-                    "kind": "paragraph",
-                    "content": [
-                      {
-                        "text": "Attack Increase 5%"
-                      }
-                    ]
-                  }
-                ]
-              ]
             }
-          ]
+          ],
+          []
         ]
       },
       {
@@ -157,73 +126,8 @@
               "kind": "paragraph",
               "content": [
                 {
-                  "text": "Potential Stats (at max)"
+                  "text": "Potential Stats"
                 }
-              ]
-            },
-            {
-              "id": "list-block-0149",
-              "sourceIds": [],
-              "kind": "list",
-              "ordered": false,
-              "items": [
-                [
-                  {
-                    "id": "block-0149",
-                    "sourceIds": ["block-0149"],
-                    "kind": "paragraph",
-                    "content": [
-                      {
-                        "text": "Crafted Gear"
-                      },
-                      {
-                        "text": ": PVE "
-                      },
-                      {
-                        "text": "Damage Boost 5% (not confirmed for "
-                      },
-                      {
-                        "text": "Global)"
-                      }
-                    ]
-                  }
-                ],
-                [
-                  {
-                    "id": "block-0150",
-                    "sourceIds": ["block-0150"],
-                    "kind": "paragraph",
-                    "content": [
-                      {
-                        "text": "Dungeon Gear"
-                      },
-                      {
-                        "text": ": PVE "
-                      },
-                      {
-                        "text": "Damage Boost 2.4% (not confirmed for Global)"
-                      }
-                    ]
-                  }
-                ],
-                [
-                  {
-                    "id": "block-0151",
-                    "sourceIds": ["block-0151"],
-                    "kind": "paragraph",
-                    "content": [
-                      {
-                        "text": "PVP Gear"
-                      },
-                      {
-                        "text": ": PVP "
-                      },
-                      {
-                        "text": "Damage Boost 10%"
-                      }
-                    ]
-                  }
-                ]
               ]
             }
           ]
@@ -337,15 +241,17 @@
           ],
           [
             {
-              "id": "block-0159",
-              "sourceIds": ["block-0159"],
+              "id": "block-1293",
+              "sourceIds": ["block-1293"],
               "kind": "paragraph",
               "content": [
                 {
-                  "text": "Amp Stats (at max) "
+                  "text": "Amp Stats (at max in Asia, Global Not Confirmed)"
                 }
               ]
-            },
+            }
+          ],
+          [
             {
               "id": "list-block-0160",
               "sourceIds": [],
@@ -394,70 +300,8 @@
               "kind": "paragraph",
               "content": [
                 {
-                  "text": " Potential Stats (at max)"
+                  "text": "Potential Stats"
                 }
-              ]
-            },
-            {
-              "id": "list-block-0163",
-              "sourceIds": [],
-              "kind": "list",
-              "ordered": false,
-              "items": [
-                [
-                  {
-                    "id": "block-0163",
-                    "sourceIds": ["block-0163"],
-                    "kind": "paragraph",
-                    "content": [
-                      {
-                        "text": "Crafted Gear: PVE Damage Tolerance 5% "
-                      },
-                      {
-                        "text": "(not confirmed for Global)"
-                      }
-                    ]
-                  }
-                ],
-                [
-                  {
-                    "id": "block-0164",
-                    "sourceIds": ["block-0164"],
-                    "kind": "paragraph",
-                    "content": [
-                      {
-                        "text": "Dungeon Gear"
-                      },
-                      {
-                        "text": ": PVE "
-                      },
-                      {
-                        "text": "Damage Tolerance 1.2% "
-                      },
-                      {
-                        "text": " (not confirmed for Global)"
-                      }
-                    ]
-                  }
-                ],
-                [
-                  {
-                    "id": "block-0165",
-                    "sourceIds": ["block-0165"],
-                    "kind": "paragraph",
-                    "content": [
-                      {
-                        "text": "PVP Gear"
-                      },
-                      {
-                        "text": ": PVP "
-                      },
-                      {
-                        "text": "Damage Boost 5%"
-                      }
-                    ]
-                  }
-                ]
               ]
             }
           ]
@@ -552,15 +396,17 @@
           ],
           [
             {
-              "id": "block-0172",
-              "sourceIds": ["block-0172"],
+              "id": "block-1294",
+              "sourceIds": ["block-1294"],
               "kind": "paragraph",
               "content": [
                 {
-                  "text": "Amp Stats (at max) "
+                  "text": "Amp Stats (at max in Asia, Global Not Confirmed)"
                 }
               ]
-            },
+            }
+          ],
+          [
             {
               "id": "list-block-0173",
               "sourceIds": [],
@@ -621,70 +467,8 @@
               "kind": "paragraph",
               "content": [
                 {
-                  "text": " Potential Stats (at max)"
+                  "text": "Potential Stats"
                 }
-              ]
-            },
-            {
-              "id": "list-block-0177",
-              "sourceIds": [],
-              "kind": "list",
-              "ordered": false,
-              "items": [
-                [
-                  {
-                    "id": "block-0177",
-                    "sourceIds": ["block-0177"],
-                    "kind": "paragraph",
-                    "content": [
-                      {
-                        "text": "Crafted Gear"
-                      },
-                      {
-                        "text": ": PVE "
-                      },
-                      {
-                        "text": "Damage Boost 2.5% "
-                      },
-                      {
-                        "text": " (not confirmed for Global)"
-                      }
-                    ]
-                  }
-                ],
-                [
-                  {
-                    "id": "block-0178",
-                    "sourceIds": ["block-0178"],
-                    "kind": "paragraph",
-                    "content": [
-                      {
-                        "text": "Dungeon Gear"
-                      },
-                      {
-                        "text": ": PVE "
-                      },
-                      {
-                        "text": "Damage Boost 1.2% "
-                      },
-                      {
-                        "text": " (not confirmed for Global)"
-                      }
-                    ]
-                  }
-                ],
-                [
-                  {
-                    "id": "block-0179",
-                    "sourceIds": ["block-0179"],
-                    "kind": "paragraph",
-                    "content": [
-                      {
-                        "text": "PVP Gear: PVP Damage Boost 5%"
-                      }
-                    ]
-                  }
-                ]
               ]
             }
           ]

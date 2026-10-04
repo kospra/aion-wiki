@@ -67,5 +67,155 @@
     "report": "content/source/changes/2026-10-02-1107.md",
     "baselineDigest": "83bedb7915ebebe2397d56480f67955dd125fbff47794f447e8f83b7fc85cd05",
     "pending": []
+  },
+  {
+    "capturedAt": "2026-10-04T11:07:40.402Z",
+    "fingerprints": {
+      "html": "0d7a0579352ed5fd533c5c843555bafde5962be91ea3e5f7622dc123d2710727"
+    },
+    "updateNote": "***Update Note 10/4/2026: There are a LOT of changes for Global. I’ve updated everything we know so far. I’ve added a Chapter 12: Class Builds section that links you to builds.",
+    "blocks": 1287,
+    "figures": 91,
+    "nextBlock": 1309,
+    "nextFigure": 93,
+    "report": "content/source/changes/2026-10-04-1107.md",
+    "baselineDigest": "ea28372e4fddb22eab0c9c5bdeb9d412dd1be76b4d5d6c6d9023010afa9c5783",
+    "pending": [
+      {
+        "sourceId": "block-1271",
+        "pageSlug": "gear-anatomy-and-stat-layers",
+        "reason": "A new list item that starts a list or changes level; place it by hand"
+      },
+      {
+        "sourceId": "block-1272",
+        "pageSlug": "gear-anatomy-and-stat-layers",
+        "reason": "Follows block-1271, which is not placed yet; place both by hand"
+      },
+      {
+        "sourceId": "block-0089",
+        "pageSlug": "gear-anatomy-and-stat-layers",
+        "reason": "Its list level or numbering changed; move the leaf by hand"
+      },
+      {
+        "sourceId": "block-0090",
+        "pageSlug": "gear-anatomy-and-stat-layers",
+        "reason": "Its list level or numbering changed; move the leaf by hand"
+      },
+      {
+        "sourceId": "block-1274",
+        "pageSlug": "weapon-and-guard",
+        "reason": "A new list item that starts a list or changes level; place it by hand"
+      },
+      {
+        "sourceId": "block-1275",
+        "pageSlug": "weapon-and-guard",
+        "reason": "Follows block-1274, which is not placed yet; place both by hand"
+      },
+      {
+        "sourceId": "block-1276",
+        "pageSlug": "weapon-and-guard",
+        "reason": "Follows block-1275, which is not placed yet; place both by hand"
+      },
+      {
+        "sourceId": "block-1277",
+        "pageSlug": "weapon-and-guard",
+        "reason": "Follows block-1276, which is not placed yet; place both by hand"
+      },
+      {
+        "sourceId": "block-1278",
+        "pageSlug": "weapon-and-guard",
+        "reason": "Follows block-1277, which is not placed yet; place both by hand"
+      },
+      {
+        "sourceId": "block-1279",
+        "pageSlug": "weapon-and-guard",
+        "reason": "Follows block-1278, which is not placed yet; place both by hand"
+      },
+      {
+        "sourceId": "block-1280",
+        "pageSlug": "weapon-and-guard",
+        "reason": "Follows block-1279, which is not placed yet; place both by hand"
+      },
+      {
+        "sourceId": "block-1281",
+        "pageSlug": "weapon-and-guard",
+        "reason": "Follows block-1280, which is not placed yet; place both by hand"
+      },
+      {
+        "sourceId": "block-1282",
+        "pageSlug": "weapon-and-guard",
+        "reason": "Follows block-1281, which is not placed yet; place both by hand"
+      },
+      {
+        "sourceId": "block-1283",
+        "pageSlug": "weapon-and-guard",
+        "reason": "Follows block-1282, which is not placed yet; place both by hand"
+      },
+      {
+        "sourceId": "block-1284",
+        "pageSlug": "weapon-and-guard",
+        "reason": "Follows block-1283, which is not placed yet; place both by hand"
+      },
+      {
+        "sourceId": "block-1285",
+        "pageSlug": "weapon-and-guard",
+        "reason": "Follows block-1284, which is not placed yet; place both by hand"
+      },
+      {
+        "sourceId": "block-1286",
+        "pageSlug": "weapon-and-guard",
+        "reason": "Follows block-1285, which is not placed yet; place both by hand"
+      },
+      {
+        "sourceId": "block-1287",
+        "pageSlug": "weapon-and-guard",
+        "reason": "Follows block-1286, which is not placed yet; place both by hand"
+      },
+      {
+        "sourceId": "block-1288",
+        "pageSlug": "weapon-and-guard",
+        "reason": "Follows block-1287, which is not placed yet; place both by hand"
+      },
+      {
+        "sourceId": "block-1289",
+        "pageSlug": "weapon-and-guard",
+        "reason": "Follows block-1288, which is not placed yet; place both by hand"
+      },
+      {
+        "sourceId": "block-1290",
+        "pageSlug": "weapon-and-guard",
+        "reason": "Follows block-1289, which is not placed yet; place both by hand"
+      },
+      {
+        "sourceId": "block-1291",
+        "pageSlug": "weapon-and-guard",
+        "reason": "Follows block-1290, which is not placed yet; place both by hand"
+      },
+      {
+        "sourceId": "block-1292",
+        "pageSlug": "weapon-and-guard",
+        "reason": "Follows block-1291, which is not placed yet; place both by hand"
+      },
+      {
+        "sourceId": "block-1301",
+        "pageSlug": "global-genus-stat-priorities",
+        "reason": "The block before it sits in a table; place it by hand"
+      },
+      {
+        "sourceId": "block-1305",
+        "pageSlug": "pet-owned-effects",
+        "reason": "A new h1, h5, h6, table, image group or image with text; place it by hand"
+      },
+      {
+        "sourceId": "block-1307",
+        "pageSlug": "class-passives",
+        "reason": "A new block at the start of an article; place it by hand"
+      },
+      {
+        "sourceId": "block-1308",
+        "pageSlug": "class-passives",
+        "reason": "Follows block-1307, which is not placed yet; place both by hand"
+      }
+    ]
   }
 ]

@@ -32,7 +32,7 @@
     "title": "Weapon and Guard",
     "firstBlock": "block-0139",
     "lastBlock": "block-0154",
-    "nonemptyBlocks": 13,
+    "nonemptyBlocks": 27,
     "figures": ["figure-011", "figure-012"]
   },
   {
@@ -41,7 +41,7 @@
     "title": "Armor",
     "firstBlock": "block-0155",
     "lastBlock": "block-0168",
-    "nonemptyBlocks": 12,
+    "nonemptyBlocks": 9,
     "figures": ["figure-013"]
   },
   {
@@ -50,7 +50,7 @@
     "title": "Accessories",
     "firstBlock": "block-0169",
     "lastBlock": "block-0190",
-    "nonemptyBlocks": 19,
+    "nonemptyBlocks": 16,
     "figures": ["figure-014"]
   },
   {
@@ -104,7 +104,7 @@
     "title": "Raid Accuracy and Critical Hit requirements",
     "firstBlock": "block-0339",
     "lastBlock": "block-0364",
-    "nonemptyBlocks": 17,
+    "nonemptyBlocks": 18,
     "figures": []
   },
   {
@@ -155,7 +155,7 @@
     "title": "Potential enhancement",
     "firstBlock": "block-0422",
     "lastBlock": "block-0431",
-    "nonemptyBlocks": 6,
+    "nonemptyBlocks": 7,
     "figures": ["figure-031", "figure-032", "figure-033"]
   },
   {
@@ -299,8 +299,8 @@
     "chapter": 8,
     "title": "Global Genus stat priorities",
     "firstBlock": "block-0738",
-    "lastBlock": "block-0776",
-    "nonemptyBlocks": 37,
+    "lastBlock": "block-1302",
+    "nonemptyBlocks": 39,
     "figures": []
   },
   {
@@ -308,9 +308,9 @@
     "chapter": 8,
     "title": "Pet owned effects",
     "firstBlock": "block-0777",
-    "lastBlock": "block-0780",
-    "nonemptyBlocks": 3,
-    "figures": ["figure-080"]
+    "lastBlock": "block-1306",
+    "nonemptyBlocks": 5,
+    "figures": ["figure-091", "figure-092"]
   },
   {
     "slug": "wing-effects-and-enhancement",
@@ -425,8 +425,8 @@
     "chapter": 12,
     "title": "Class Passives",
     "firstBlock": "block-1266",
-    "lastBlock": "block-1268",
-    "nonemptyBlocks": 2,
+    "lastBlock": "block-1308",
+    "nonemptyBlocks": 3,
     "figures": [],
     "sourceTitle": "Class Passives source placeholder"
   }

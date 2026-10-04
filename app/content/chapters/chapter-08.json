@@ -580,6 +580,17 @@
         "level": 4
       },
       {
+        "id": "block-1299",
+        "sourceIds": ["block-1299"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Note: I’ve listed out BIS lines but for Lines 2, 8, it’s recommended to ignore these considering it would be way to expensive to try and get these stats. It’s not worth the cost of Cyrstals.",
+            "emphasis": true
+          }
+        ]
+      },
+      {
         "id": "global-genus-priorities-table",
         "sourceIds": [],
         "kind": "table",
@@ -700,7 +711,7 @@
                       "kind": "paragraph",
                       "content": [
                         {
-                          "text": "Line 4: Critical Damage Boost > Damage Boost"
+                          "text": "Line 4: Critical Damage Boost, Damage Boost"
                         }
                       ]
                     }
@@ -948,7 +959,7 @@
                       "kind": "paragraph",
                       "content": [
                         {
-                          "text": "Line 4: PVE Damage Boost > Multi Hit, Perfect Chance"
+                          "text": "Line 4: PVE Damage Boost > Multi Hit > Perfect Chance"
                         }
                       ]
                     }
@@ -1246,15 +1257,29 @@
         "kind": "paragraph",
         "content": [
           {
-            "text": "Pets also have an “Owned Effects” system where you get passive stats as you unlock and level up more Pets.This can be leveled up by simply farming mobs or obtaining Pet-related rewards from a variety of content."
+            "text": "Pets also have an “Owned Effects” system where you get passive stats as you unlock and level up more Pets. This can be leveled up by simply farming mobs or obtaining Pet-related rewards from a variety of content."
           }
         ]
       },
       {
-        "id": "block-0779",
-        "sourceIds": ["block-0779"],
-        "kind": "figure",
-        "figureId": "figure-080"
+        "id": "block-1303",
+        "sourceIds": ["block-1303"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "For Global launch, the max level is 3 and at max you get a Pantheon Stat - focus on Might and Precision first. All Cogni mobs give you 1 Might each, all Natura mobs give you 1 Precision each."
+          }
+        ]
+      },
+      {
+        "id": "block-1304",
+        "sourceIds": ["block-1304"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "You can find the location for these mobs by selecting Source. If the mob does not show a source, it is on the other faction’s land."
+          }
+        ]
       }
     ]
   }

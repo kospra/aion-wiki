@@ -37,11 +37,11 @@
     }
   },
   {
-    "sourceId": "block-0006",
+    "sourceId": "block-1269",
     "disposition": "rendered",
     "primary": {
       "pageSlug": "about-the-source-and-author",
-      "blockIds": ["block-0006"]
+      "blockIds": ["block-1269"]
     }
   },
   {
@@ -631,11 +631,11 @@
     }
   },
   {
-    "sourceId": "block-0086",
+    "sourceId": "block-1270",
     "disposition": "rendered",
     "primary": {
       "pageSlug": "gear-anatomy-and-stat-layers",
-      "blockIds": ["block-0086"]
+      "blockIds": ["block-1270"]
     }
   },
   {
@@ -644,14 +644,6 @@
     "primary": {
       "pageSlug": "gear-anatomy-and-stat-layers",
       "blockIds": ["block-0087"]
-    }
-  },
-  {
-    "sourceId": "block-0088",
-    "disposition": "rendered",
-    "primary": {
-      "pageSlug": "gear-anatomy-and-stat-layers",
-      "blockIds": ["block-0088"]
     }
   },
   {
@@ -668,14 +660,6 @@
     "primary": {
       "pageSlug": "gear-anatomy-and-stat-layers",
       "blockIds": ["block-0090"]
-    }
-  },
-  {
-    "sourceId": "block-0091",
-    "disposition": "rendered",
-    "primary": {
-      "pageSlug": "gear-anatomy-and-stat-layers",
-      "blockIds": ["block-0091"]
     }
   },
   {
@@ -1064,27 +1048,11 @@
     }
   },
   {
-    "sourceId": "block-0145",
+    "sourceId": "block-1273",
     "disposition": "rendered",
     "primary": {
       "pageSlug": "weapon-and-guard",
-      "blockIds": ["block-0145"]
-    }
-  },
-  {
-    "sourceId": "block-0146",
-    "disposition": "rendered",
-    "primary": {
-      "pageSlug": "weapon-and-guard",
-      "blockIds": ["block-0146"]
-    }
-  },
-  {
-    "sourceId": "block-0147",
-    "disposition": "rendered",
-    "primary": {
-      "pageSlug": "weapon-and-guard",
-      "blockIds": ["block-0147"]
+      "blockIds": ["block-1273"]
     }
   },
   {
@@ -1093,30 +1061,6 @@
     "primary": {
       "pageSlug": "weapon-and-guard",
       "blockIds": ["block-0148"]
-    }
-  },
-  {
-    "sourceId": "block-0149",
-    "disposition": "rendered",
-    "primary": {
-      "pageSlug": "weapon-and-guard",
-      "blockIds": ["block-0149"]
-    }
-  },
-  {
-    "sourceId": "block-0150",
-    "disposition": "rendered",
-    "primary": {
-      "pageSlug": "weapon-and-guard",
-      "blockIds": ["block-0150"]
-    }
-  },
-  {
-    "sourceId": "block-0151",
-    "disposition": "rendered",
-    "primary": {
-      "pageSlug": "weapon-and-guard",
-      "blockIds": ["block-0151"]
     }
   },
   {
@@ -1170,11 +1114,11 @@
     }
   },
   {
-    "sourceId": "block-0159",
+    "sourceId": "block-1293",
     "disposition": "rendered",
     "primary": {
       "pageSlug": "armor",
-      "blockIds": ["block-0159"]
+      "blockIds": ["block-1293"]
     }
   },
   {
@@ -1199,30 +1143,6 @@
     "primary": {
       "pageSlug": "armor",
       "blockIds": ["block-0162"]
-    }
-  },
-  {
-    "sourceId": "block-0163",
-    "disposition": "rendered",
-    "primary": {
-      "pageSlug": "armor",
-      "blockIds": ["block-0163"]
-    }
-  },
-  {
-    "sourceId": "block-0164",
-    "disposition": "rendered",
-    "primary": {
-      "pageSlug": "armor",
-      "blockIds": ["block-0164"]
-    }
-  },
-  {
-    "sourceId": "block-0165",
-    "disposition": "rendered",
-    "primary": {
-      "pageSlug": "armor",
-      "blockIds": ["block-0165"]
     }
   },
   {
@@ -1268,11 +1188,11 @@
     }
   },
   {
-    "sourceId": "block-0172",
+    "sourceId": "block-1294",
     "disposition": "rendered",
     "primary": {
       "pageSlug": "accessories",
-      "blockIds": ["block-0172"]
+      "blockIds": ["block-1294"]
     }
   },
   {
@@ -1305,30 +1225,6 @@
     "primary": {
       "pageSlug": "accessories",
       "blockIds": ["block-0176"]
-    }
-  },
-  {
-    "sourceId": "block-0177",
-    "disposition": "rendered",
-    "primary": {
-      "pageSlug": "accessories",
-      "blockIds": ["block-0177"]
-    }
-  },
-  {
-    "sourceId": "block-0178",
-    "disposition": "rendered",
-    "primary": {
-      "pageSlug": "accessories",
-      "blockIds": ["block-0178"]
-    }
-  },
-  {
-    "sourceId": "block-0179",
-    "disposition": "rendered",
-    "primary": {
-      "pageSlug": "accessories",
-      "blockIds": ["block-0179"]
     }
   },
   {
@@ -2544,6 +2440,14 @@
     }
   },
   {
+    "sourceId": "block-1295",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "raid-accuracy-and-critical-hit-requirements",
+      "blockIds": ["block-1295"]
+    }
+  },
+  {
     "sourceId": "block-0344",
     "disposition": "layout-only",
     "reason": "Empty document spacing is normalized by article layout."
@@ -2570,11 +2474,11 @@
     }
   },
   {
-    "sourceId": "block-0348",
+    "sourceId": "block-1296",
     "disposition": "rendered",
     "primary": {
       "pageSlug": "raid-accuracy-and-critical-hit-requirements",
-      "blockIds": ["block-0348"]
+      "blockIds": ["block-1296"]
     }
   },
   {

@@ -1596,6 +1596,16 @@
         ]
       },
       {
+        "id": "block-1295",
+        "sourceIds": ["block-1295"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Global Cap is 50%."
+          }
+        ]
+      },
+      {
         "id": "block-0345",
         "sourceIds": ["block-0345"],
         "kind": "paragraph",
@@ -1612,24 +1622,18 @@
         "kind": "heading",
         "content": [
           {
-            "text": "Ludra Raid"
+            "text": "Ludra Raid (Global)"
           }
         ],
         "level": 3
       },
       {
-        "id": "block-0348",
-        "sourceIds": ["block-0348"],
+        "id": "block-1296",
+        "sourceIds": ["block-1296"],
         "kind": "paragraph",
         "content": [
           {
-            "text": "1500 "
-          },
-          {
-            "text": "A"
-          },
-          {
-            "text": "ccuracy"
+            "text": "1450 Accuracy"
           }
         ]
       },
