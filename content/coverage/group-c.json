@@ -1934,6 +1934,14 @@
     "reason": "Empty document spacing is normalized by article layout."
   },
   {
+    "sourceId": "block-1301",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "global-genus-stat-priorities",
+      "blockIds": ["block-1301"]
+    }
+  },
+  {
     "sourceId": "block-1302",
     "disposition": "layout-only",
     "reason": "Empty document spacing is normalized by article layout."
@@ -1973,6 +1981,14 @@
     "primary": {
       "pageSlug": "pet-owned-effects",
       "blockIds": ["block-1304"]
+    }
+  },
+  {
+    "sourceId": "block-1305",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "pet-owned-effects",
+      "blockIds": ["block-1305"]
     }
   },
   {

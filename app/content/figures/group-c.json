@@ -234,6 +234,24 @@
     "alt": "Explicit numbered Genus line reference"
   },
   {
+    "id": "figure-091",
+    "sourceId": "block-1305",
+    "sha256": "6aa537b53003cbab53bdf96f6340b42c4e9d805bbc892a965e69949804c059bc",
+    "src": "/images/guide/6aa537b53003cbab53bdf96f6340b42c4e9d805bbc892a965e69949804c059bc.png",
+    "width": 613,
+    "height": 575,
+    "alt": "Pet Info tab of a pet at maximum Pet Insight level with its Owned Effect stats"
+  },
+  {
+    "id": "figure-092",
+    "sourceId": "block-1305",
+    "sha256": "16970e2dfc60768da78774a069e84fd864b3e1ebf84c49f2616e461ab26e1511",
+    "src": "/images/guide/16970e2dfc60768da78774a069e84fd864b3e1ebf84c49f2616e461ab26e1511.png",
+    "width": 635,
+    "height": 621,
+    "alt": "Source tab of the same pet listing the monsters and reward chest that drop it"
+  },
+  {
     "id": "figure-081",
     "sourceId": "block-0787",
     "sha256": "134f2e6df4e8779f2b87dca03760df31adf7b26b16b1f4ef0753892c40e38d48",

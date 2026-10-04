@@ -1229,6 +1229,17 @@
             ]
           ]
         ]
+      },
+      {
+        "id": "block-1301",
+        "sourceIds": ["block-1301"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Upgrade Order: Line 4 > Line 1, 5 > Line 6, 9, Line 7, Line 2, 8",
+            "strong": true
+          }
+        ]
       }
     ]
   },
@@ -1278,6 +1289,25 @@
         "content": [
           {
             "text": "You can find the location for these mobs by selecting Source. If the mob does not show a source, it is on the other faction’s land."
+          }
+        ]
+      },
+      {
+        "id": "block-1305",
+        "sourceIds": ["block-1305"],
+        "kind": "group",
+        "blocks": [
+          {
+            "id": "block-1305-figure-091",
+            "sourceIds": ["block-1305"],
+            "kind": "figure",
+            "figureId": "figure-091"
+          },
+          {
+            "id": "block-1305-figure-092",
+            "sourceIds": ["block-1305"],
+            "kind": "figure",
+            "figureId": "figure-092"
           }
         ]
       }

@@ -845,11 +845,23 @@
               "level": 2
             },
             {
-              "id": "list-block-0086",
+              "id": "list-block-1270",
               "sourceIds": [],
               "kind": "list",
               "ordered": false,
               "items": [
+                [
+                  {
+                    "id": "block-1270",
+                    "sourceIds": ["block-1270"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "PVP Exclusive stat on Global"
+                      }
+                    ]
+                  }
+                ],
                 [
                   {
                     "id": "block-0087",
@@ -860,37 +872,69 @@
                         "text": "Unlocked via “Potential Stones” "
                       }
                     ]
-                  }
-                ]
-              ]
-            },
-            {
-              "id": "list-block-0089",
-              "sourceIds": [],
-              "kind": "list",
-              "ordered": false,
-              "items": [
-                [
+                  },
                   {
-                    "id": "block-0089",
-                    "sourceIds": ["block-0089"],
-                    "kind": "paragraph",
-                    "content": [
-                      {
-                        "text": "Weapons and Accessories give PVE Damage Boost %"
-                      }
+                    "id": "list-block-1271",
+                    "sourceIds": [],
+                    "kind": "list",
+                    "ordered": false,
+                    "items": [
+                      [
+                        {
+                          "id": "block-1271",
+                          "sourceIds": ["block-1271"],
+                          "kind": "paragraph",
+                          "content": [
+                            {
+                              "text": "“Potential Stones” mainly obtained from Abyss & Abyss Shop"
+                            }
+                          ]
+                        }
+                      ]
                     ]
                   }
                 ],
                 [
                   {
-                    "id": "block-0090",
-                    "sourceIds": ["block-0090"],
+                    "id": "block-1272",
+                    "sourceIds": ["block-1272"],
                     "kind": "paragraph",
                     "content": [
                       {
-                        "text": "Armor gives PVE Damage Tolerance %"
+                        "text": "Asia"
                       }
+                    ]
+                  },
+                  {
+                    "id": "list-block-0089",
+                    "sourceIds": [],
+                    "kind": "list",
+                    "ordered": false,
+                    "items": [
+                      [
+                        {
+                          "id": "block-0089",
+                          "sourceIds": ["block-0089"],
+                          "kind": "paragraph",
+                          "content": [
+                            {
+                              "text": "Weapons and Accessories give PVP Damage Boost %"
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "id": "block-0090",
+                          "sourceIds": ["block-0090"],
+                          "kind": "paragraph",
+                          "content": [
+                            {
+                              "text": "Armor gives PVP Damage Tolerance %"
+                            }
+                          ]
+                        }
+                      ]
                     ]
                   }
                 ],
@@ -909,18 +953,6 @@
                     ]
                   }
                 ]
-              ]
-            }
-          ],
-          [
-            {
-              "id": "block-1270",
-              "sourceIds": ["block-1270"],
-              "kind": "paragraph",
-              "content": [
-                {
-                  "text": "PVP Exclusive stat on Global"
-                }
               ]
             }
           ]

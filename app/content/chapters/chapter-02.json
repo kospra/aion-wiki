@@ -108,9 +108,312 @@
                   "text": "Types of Weapons"
                 }
               ]
+            },
+            {
+              "id": "list-block-1274",
+              "sourceIds": [],
+              "kind": "list",
+              "ordered": false,
+              "items": [
+                [
+                  {
+                    "id": "block-1274",
+                    "sourceIds": ["block-1274"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "Dungeon Weapon"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "list-block-1275",
+                    "sourceIds": [],
+                    "kind": "list",
+                    "ordered": false,
+                    "items": [
+                      [
+                        {
+                          "id": "block-1275",
+                          "sourceIds": ["block-1275"],
+                          "kind": "paragraph",
+                          "content": [
+                            {
+                              "text": "4 "
+                            },
+                            {
+                              "text": "Stat Lines",
+                              "strong": true
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "id": "block-1276",
+                          "sourceIds": ["block-1276"],
+                          "kind": "paragraph",
+                          "content": [
+                            {
+                              "text": "Amp 3 Max"
+                            }
+                          ]
+                        }
+                      ]
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "id": "block-1277",
+                    "sourceIds": ["block-1277"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "Extendable Weapons (Khromede, Ludra)"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "list-block-1278",
+                    "sourceIds": [],
+                    "kind": "list",
+                    "ordered": false,
+                    "items": [
+                      [
+                        {
+                          "id": "block-1278",
+                          "sourceIds": ["block-1278"],
+                          "kind": "paragraph",
+                          "content": [
+                            {
+                              "text": "4 "
+                            },
+                            {
+                              "text": "Stat Lines",
+                              "strong": true
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "id": "block-1279",
+                          "sourceIds": ["block-1279"],
+                          "kind": "paragraph",
+                          "content": [
+                            {
+                              "text": "Amp 5 Max"
+                            }
+                          ]
+                        }
+                      ]
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "id": "block-1280",
+                    "sourceIds": ["block-1280"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "Crafted Weapons"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "list-block-1281",
+                    "sourceIds": [],
+                    "kind": "list",
+                    "ordered": false,
+                    "items": [
+                      [
+                        {
+                          "id": "block-1281",
+                          "sourceIds": ["block-1281"],
+                          "kind": "paragraph",
+                          "content": [
+                            {
+                              "text": "5 "
+                            },
+                            {
+                              "text": "Stat Lines",
+                              "strong": true
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "id": "block-1282",
+                          "sourceIds": ["block-1282"],
+                          "kind": "paragraph",
+                          "content": [
+                            {
+                              "text": "Amp 1 to 5 Max"
+                            }
+                          ]
+                        }
+                      ]
+                    ]
+                  }
+                ]
+              ]
             }
           ],
-          []
+          [
+            {
+              "id": "block-1283",
+              "sourceIds": ["block-1283"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "There are currently 6 tiers of “Dragon Lord” Crafted Weapons"
+                }
+              ]
+            },
+            {
+              "id": "list-block-1284",
+              "sourceIds": [],
+              "kind": "list",
+              "ordered": false,
+              "items": [
+                [
+                  {
+                    "id": "block-1284",
+                    "sourceIds": ["block-1284"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "Tier 1 True Dragon (Amp 1 Max)"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "list-block-1285",
+                    "sourceIds": [],
+                    "kind": "list",
+                    "ordered": false,
+                    "items": [
+                      [
+                        {
+                          "id": "block-1285",
+                          "sourceIds": ["block-1285"],
+                          "kind": "paragraph",
+                          "content": [
+                            {
+                              "text": "Amp 1: Attack 10, Damage Boost 1%"
+                            }
+                          ]
+                        }
+                      ]
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "id": "block-1286",
+                    "sourceIds": ["block-1286"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "Tier 2 Splendent True Dragon (Amp 3 Max)"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "list-block-1287",
+                    "sourceIds": [],
+                    "kind": "list",
+                    "ordered": false,
+                    "items": [
+                      [
+                        {
+                          "id": "block-1287",
+                          "sourceIds": ["block-1287"],
+                          "kind": "paragraph",
+                          "content": [
+                            {
+                              "text": "Amp 1: Attack 12, Damage Boost 2%"
+                            }
+                          ]
+                        }
+                      ]
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "id": "block-1288",
+                    "sourceIds": ["block-1288"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "Tier 3 White Dragon (Amp 5 Max)"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "list-block-1289",
+                    "sourceIds": [],
+                    "kind": "list",
+                    "ordered": false,
+                    "items": [
+                      [
+                        {
+                          "id": "block-1289",
+                          "sourceIds": ["block-1289"],
+                          "kind": "paragraph",
+                          "content": [
+                            {
+                              "text": "Amp 1:"
+                            }
+                          ]
+                        }
+                      ]
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "id": "block-1290",
+                    "sourceIds": ["block-1290"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "Tier 4 Splendent White Dragon (Amp 5 Max)"
+                      }
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "id": "block-1291",
+                    "sourceIds": ["block-1291"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "Tier 5 Wise Dragon (Amp 5 Max)"
+                      }
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "id": "block-1292",
+                    "sourceIds": ["block-1292"],
+                    "kind": "paragraph",
+                    "content": [
+                      {
+                        "text": "Tier 6 Splendent Wise Dragon (Amp 5 Max)"
+                      }
+                    ]
+                  }
+                ]
+              ]
+            }
+          ]
         ]
       },
       {
