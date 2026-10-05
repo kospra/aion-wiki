@@ -337,23 +337,15 @@
           ],
           [
             {
-              "id": "block-0257",
-              "sourceIds": ["block-0257"],
+              "id": "block-1309",
+              "sourceIds": ["block-1309"],
               "kind": "paragraph",
               "content": [
                 {
                   "text": "Precision ("
                 },
                 {
-                  "text": "≈ ",
-                  "emphasis": true
-                },
-                {
-                  "text": "6",
-                  "emphasis": true
-                },
-                {
-                  "text": "%)",
+                  "text": "≈ 6%) *may not be needed b/c of new Global 50% crit cap",
                   "emphasis": true
                 }
               ]

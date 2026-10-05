@@ -1,6 +1,6 @@
 {
   "fingerprints": {
-    "html": "0d7a0579352ed5fd533c5c843555bafde5962be91ea3e5f7622dc123d2710727"
+    "html": "492e28a0003bcb837722692b5a466de9d1ac8980ae6db4d6bf8f42c285d7f4b9"
   },
   "blocks": [
     {
@@ -3350,10 +3350,10 @@
       "level": 0
     },
     {
-      "id": "block-0257",
+      "id": "block-1309",
       "tag": "li",
-      "text": "Precision (≈ 6%)",
-      "numbers": ["6"],
+      "text": "Precision (≈ 6%) *may not be needed b/c of new Global 50% crit cap",
+      "numbers": ["6", "50"],
       "figureIds": [],
       "links": [],
       "formatting": [
@@ -3373,6 +3373,24 @@
           "text": "%)",
           "start": 14,
           "end": 16,
+          "emphasis": true
+        },
+        {
+          "text": "*",
+          "start": 17,
+          "end": 18,
+          "emphasis": true
+        },
+        {
+          "text": "may not be needed b/c of",
+          "start": 18,
+          "end": 42,
+          "emphasis": true
+        },
+        {
+          "text": "new Global 50% crit cap",
+          "start": 43,
+          "end": 66,
           "emphasis": true
         }
       ],
