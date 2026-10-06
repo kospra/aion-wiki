@@ -1641,6 +1641,46 @@
     }
   },
   {
+    "sourceId": "block-1316",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "global-genus-stat-priorities",
+      "blockIds": ["block-1316"]
+    }
+  },
+  {
+    "sourceId": "block-1317",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "global-genus-stat-priorities",
+      "blockIds": ["block-1317"]
+    }
+  },
+  {
+    "sourceId": "block-1318",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "global-genus-stat-priorities",
+      "blockIds": ["block-1318"]
+    }
+  },
+  {
+    "sourceId": "block-1319",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "global-genus-stat-priorities",
+      "blockIds": ["block-1319"]
+    }
+  },
+  {
+    "sourceId": "block-1320",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "global-genus-stat-priorities",
+      "blockIds": ["block-1320"]
+    }
+  },
+  {
     "sourceId": "block-1321",
     "disposition": "layout-only",
     "reason": "Empty document spacing is normalized by article layout."

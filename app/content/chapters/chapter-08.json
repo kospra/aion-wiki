@@ -577,6 +577,75 @@
         ]
       },
       {
+        "id": "list-block-1316",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-1316",
+              "sourceIds": ["block-1316"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Do not lock any lines and level up all Boards to level 9 by clicking “Analyze”"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-1317",
+              "sourceIds": ["block-1317"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "At level 9, select “Auto Analyze” choose the BIS stat for Line 4 > set it to Unique (Yellow) grade > Auto Analyze."
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-1318",
+              "sourceIds": ["block-1318"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Prioritize Leveling up the Special Board first"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-1319",
+              "sourceIds": ["block-1319"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "You can use Rainbow Crystals for any board if you have plenty."
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-1320",
+              "sourceIds": ["block-1320"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Upgrade Order for each Board: Line 4 > Line 1, 5 > Line 6, 9, Line 7, Line 2, 8",
+                  "strong": true
+                }
+              ]
+            }
+          ]
+        ]
+      },
+      {
         "id": "block-0739",
         "sourceIds": ["block-0739"],
         "kind": "heading",
