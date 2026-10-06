@@ -1,6 +1,6 @@
 {
   "fingerprints": {
-    "html": "492e28a0003bcb837722692b5a466de9d1ac8980ae6db4d6bf8f42c285d7f4b9"
+    "html": "85fcbf151f3ce6546787dd014e927e7fd8596be022b873e119a8c1641eda2e72"
   },
   "blocks": [
     {
@@ -4572,10 +4572,10 @@
       "formatting": []
     },
     {
-      "id": "block-1295",
+      "id": "block-1310",
       "tag": "p",
-      "text": "Global Cap is 50%.",
-      "numbers": ["50"],
+      "text": "Global Cap is 50%. Currently Training Dummy has a Crit Cap of around ≈ 8.",
+      "numbers": ["50", "8"],
       "figureIds": [],
       "links": [],
       "formatting": []
@@ -4617,26 +4617,26 @@
     {
       "id": "block-0347",
       "tag": "h3",
-      "text": "Ludra Raid (Global)",
+      "text": "Projected Ludra Raid (Global)",
       "numbers": [],
       "figureIds": [],
       "links": [],
       "formatting": []
     },
     {
-      "id": "block-1296",
+      "id": "block-1311",
       "tag": "p",
-      "text": "1450 Accuracy",
-      "numbers": ["1450"],
+      "text": "1200 Accuracy",
+      "numbers": ["1200"],
       "figureIds": [],
       "links": [],
       "formatting": []
     },
     {
-      "id": "block-0349",
+      "id": "block-1312",
       "tag": "p",
-      "text": "1600 Crit",
-      "numbers": ["1600"],
+      "text": "1200 ~ 1400 Crit",
+      "numbers": ["1200", "1400"],
       "figureIds": [],
       "links": [],
       "formatting": []
@@ -8307,7 +8307,7 @@
     {
       "id": "block-0703",
       "tag": "h4",
-      "text": "Step 1",
+      "text": "Step 1 (KR/TW)",
       "numbers": ["1"],
       "figureIds": [],
       "links": [],
@@ -8381,7 +8381,7 @@
     {
       "id": "block-0710",
       "tag": "h4",
-      "text": "Step 2",
+      "text": "Step 2 (KR/TW)",
       "numbers": ["2"],
       "figureIds": [],
       "links": [],
@@ -8444,7 +8444,7 @@
     {
       "id": "block-0716",
       "tag": "p",
-      "text": "Additional Notes: You can do this by using the Auto Analysis and selecting Unique (or Heroic) Double Chance on Lines 3 and 9. It is not possible to roll lower than a Unique on Double Chance.",
+      "text": "Additional Notes: You can do this by using the Auto Analysis and selecting Unique (or Heroic) Double Chance on Lines 3 and 9.",
       "numbers": ["3", "9"],
       "figureIds": [],
       "links": [],
@@ -8471,22 +8471,9 @@
           "highlight": "#f8f9fa"
         },
         {
-          "text": "on Lines 3 and 9. It is not possible to roll lower than a Unique on",
+          "text": "on Lines 3 and 9.",
           "start": 108,
-          "end": 175,
-          "emphasis": true,
-          "highlight": "#f8f9fa"
-        },
-        {
-          "text": "Double Chance",
-          "start": 176,
-          "end": 189,
-          "highlight": "#f8f9fa"
-        },
-        {
-          "text": ".",
-          "start": 189,
-          "end": 190,
+          "end": 125,
           "emphasis": true,
           "highlight": "#f8f9fa"
         }
@@ -8699,6 +8686,15 @@
       "formatting": []
     },
     {
+      "id": "block-1313",
+      "tag": "p",
+      "text": "",
+      "numbers": [],
+      "figureIds": [],
+      "links": [],
+      "formatting": []
+    },
+    {
       "id": "block-0738",
       "tag": "h3",
       "text": "GLOBAL BIS GENUS LINES",
@@ -8707,6 +8703,98 @@
       "links": [],
       "formatting": [],
       "anchor": "h.nbj6i1dt099h"
+    },
+    {
+      "id": "block-1314",
+      "tag": "h4",
+      "text": "",
+      "numbers": [],
+      "figureIds": [],
+      "links": [],
+      "formatting": [],
+      "anchor": "h.h2kg639y1g29"
+    },
+    {
+      "id": "block-1315",
+      "tag": "h4",
+      "text": "Steps (KR/TW)",
+      "numbers": [],
+      "figureIds": [],
+      "links": [],
+      "formatting": [],
+      "anchor": "h.e4oktgoh3sow"
+    },
+    {
+      "id": "block-1316",
+      "tag": "li",
+      "text": "Do not lock any lines and level up all Boards to level 9 by clicking “Analyze”",
+      "numbers": ["9"],
+      "figureIds": [],
+      "links": [],
+      "formatting": [],
+      "ordered": false,
+      "level": 0
+    },
+    {
+      "id": "block-1317",
+      "tag": "li",
+      "text": "At level 9, select “Auto Analyze” choose the BIS stat for Line 4 > set it to Unique (Yellow) grade > Auto Analyze.",
+      "numbers": ["9", "4"],
+      "figureIds": [],
+      "links": [],
+      "formatting": [],
+      "ordered": false,
+      "level": 0
+    },
+    {
+      "id": "block-1318",
+      "tag": "li",
+      "text": "Prioritize Leveling up the Special Board first",
+      "numbers": [],
+      "figureIds": [],
+      "links": [],
+      "formatting": [],
+      "ordered": false,
+      "level": 0
+    },
+    {
+      "id": "block-1319",
+      "tag": "li",
+      "text": "You can use Rainbow Crystals for any board if you have plenty.",
+      "numbers": [],
+      "figureIds": [],
+      "links": [],
+      "formatting": [],
+      "ordered": false,
+      "level": 0
+    },
+    {
+      "id": "block-1320",
+      "tag": "li",
+      "text": "Upgrade Order for each Board: Line 4 > Line 1, 5 > Line 6, 9, Line 7, Line 2, 8",
+      "numbers": ["4", "1", "5", "6", "9", "7", "2", "8"],
+      "figureIds": [],
+      "links": [],
+      "formatting": [
+        {
+          "text": "Upgrade Order for each Board: Line 4 > Line 1, 5 > Line 6, 9, Line 7, Line 2, 8",
+          "start": 0,
+          "end": 79,
+          "strong": true
+        }
+      ],
+      "ordered": false,
+      "level": 0
+    },
+    {
+      "id": "block-1321",
+      "tag": "h4",
+      "text": "",
+      "numbers": [],
+      "figureIds": [],
+      "links": [],
+      "formatting": [],
+      "anchor": "h.hazuwm8i7xs6"
     },
     {
       "id": "block-0739",
@@ -9149,31 +9237,6 @@
     },
     {
       "id": "block-0776",
-      "tag": "p",
-      "text": "",
-      "numbers": [],
-      "figureIds": [],
-      "links": [],
-      "formatting": []
-    },
-    {
-      "id": "block-1301",
-      "tag": "p",
-      "text": "Upgrade Order: Line 4 > Line 1, 5 > Line 6, 9, Line 7, Line 2, 8",
-      "numbers": ["4", "1", "5", "6", "9", "7", "2", "8"],
-      "figureIds": [],
-      "links": [],
-      "formatting": [
-        {
-          "text": "Upgrade Order: Line 4 > Line 1, 5 > Line 6, 9, Line 7, Line 2, 8",
-          "start": 0,
-          "end": 64,
-          "strong": true
-        }
-      ]
-    },
-    {
-      "id": "block-1302",
       "tag": "p",
       "text": "",
       "numbers": [],

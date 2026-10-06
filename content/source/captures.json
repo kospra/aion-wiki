@@ -106,5 +106,45 @@
     "report": "content/source/changes/2026-10-05-1217.md",
     "baselineDigest": "471607e7d1bd5b351294c05965acf34ee1dae3ba7d0b2965c55666f3ffc079a9",
     "pending": []
+  },
+  {
+    "capturedAt": "2026-10-06T12:02:25.411Z",
+    "fingerprints": {
+      "html": "85fcbf151f3ce6546787dd014e927e7fd8596be022b873e119a8c1641eda2e72"
+    },
+    "updateNote": "***Update Note 10/4/2026: There are a LOT of changes for Global. I’ve updated everything we know so far. I’ve added a Chapter 12: Class Builds section that links you to builds.",
+    "blocks": 1294,
+    "figures": 91,
+    "nextBlock": 1322,
+    "nextFigure": 93,
+    "report": "content/source/changes/2026-10-06-1202.md",
+    "baselineDigest": "59baad8b1cf592097716772ca66dba320e7870c5f6810cdabc603becc6299aa7",
+    "pending": [
+      {
+        "sourceId": "block-1316",
+        "pageSlug": "global-genus-stat-priorities",
+        "reason": "A new list item that starts a list or changes level; place it by hand"
+      },
+      {
+        "sourceId": "block-1317",
+        "pageSlug": "global-genus-stat-priorities",
+        "reason": "Follows block-1316, which is not placed yet; place both by hand"
+      },
+      {
+        "sourceId": "block-1318",
+        "pageSlug": "global-genus-stat-priorities",
+        "reason": "Follows block-1317, which is not placed yet; place both by hand"
+      },
+      {
+        "sourceId": "block-1319",
+        "pageSlug": "global-genus-stat-priorities",
+        "reason": "Follows block-1318, which is not placed yet; place both by hand"
+      },
+      {
+        "sourceId": "block-1320",
+        "pageSlug": "global-genus-stat-priorities",
+        "reason": "Follows block-1319, which is not placed yet; place both by hand"
+      }
+    ]
   }
 ]

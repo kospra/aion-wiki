@@ -1615,12 +1615,35 @@
     "reason": "Empty document spacing is normalized by article layout."
   },
   {
+    "sourceId": "block-1313",
+    "disposition": "layout-only",
+    "reason": "Empty document spacing is normalized by article layout."
+  },
+  {
     "sourceId": "block-0738",
     "disposition": "rendered",
     "primary": {
       "pageSlug": "global-genus-stat-priorities",
       "blockIds": ["block-0738"]
     }
+  },
+  {
+    "sourceId": "block-1314",
+    "disposition": "layout-only",
+    "reason": "Empty document spacing is normalized by article layout."
+  },
+  {
+    "sourceId": "block-1315",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "global-genus-stat-priorities",
+      "blockIds": ["block-1315"]
+    }
+  },
+  {
+    "sourceId": "block-1321",
+    "disposition": "layout-only",
+    "reason": "Empty document spacing is normalized by article layout."
   },
   {
     "sourceId": "block-0739",
@@ -1930,19 +1953,6 @@
   },
   {
     "sourceId": "block-0776",
-    "disposition": "layout-only",
-    "reason": "Empty document spacing is normalized by article layout."
-  },
-  {
-    "sourceId": "block-1301",
-    "disposition": "rendered",
-    "primary": {
-      "pageSlug": "global-genus-stat-priorities",
-      "blockIds": ["block-1301"]
-    }
-  },
-  {
-    "sourceId": "block-1302",
     "disposition": "layout-only",
     "reason": "Empty document spacing is normalized by article layout."
   },

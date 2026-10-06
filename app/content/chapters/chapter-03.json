@@ -1588,12 +1588,12 @@
         ]
       },
       {
-        "id": "block-1295",
-        "sourceIds": ["block-1295"],
+        "id": "block-1310",
+        "sourceIds": ["block-1310"],
         "kind": "paragraph",
         "content": [
           {
-            "text": "Global Cap is 50%."
+            "text": "Global Cap is 50%. Currently Training Dummy has a Crit Cap of around ≈ 8."
           }
         ]
       },
@@ -1614,34 +1614,28 @@
         "kind": "heading",
         "content": [
           {
-            "text": "Ludra Raid (Global)"
+            "text": "Projected Ludra Raid (Global)"
           }
         ],
         "level": 3
       },
       {
-        "id": "block-1296",
-        "sourceIds": ["block-1296"],
+        "id": "block-1311",
+        "sourceIds": ["block-1311"],
         "kind": "paragraph",
         "content": [
           {
-            "text": "1450 Accuracy"
+            "text": "1200 Accuracy"
           }
         ]
       },
       {
-        "id": "block-0349",
-        "sourceIds": ["block-0349"],
+        "id": "block-1312",
+        "sourceIds": ["block-1312"],
         "kind": "paragraph",
         "content": [
           {
-            "text": "1600 "
-          },
-          {
-            "text": "C"
-          },
-          {
-            "text": "rit"
+            "text": "1200 ~ 1400 Crit"
           }
         ]
       },

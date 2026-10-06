@@ -127,7 +127,7 @@
         "kind": "heading",
         "content": [
           {
-            "text": "Step 1"
+            "text": "Step 1 (KR/TW)"
           }
         ],
         "level": 4
@@ -255,7 +255,7 @@
         "kind": "heading",
         "content": [
           {
-            "text": "Step 2"
+            "text": "Step 2 (KR/TW)"
           }
         ],
         "level": 4
@@ -337,25 +337,22 @@
             "highlight": "#f8f9fa"
           },
           {
-            "text": ": You can do this by using the Auto Analysis and selecting Unique (or Heroic) ",
+            "text": ": You can do this by using the Auto Analysis and selecting Unique (or Heroic)",
             "emphasis": true,
             "highlight": "#f8f9fa"
           },
           {
-            "text": "Double Chance ",
-            "highlight": "#f8f9fa"
-          },
-          {
-            "text": "on Lines 3 and 9. It is not possible to roll lower than a Unique on ",
-            "emphasis": true,
-            "highlight": "#f8f9fa"
+            "text": " "
           },
           {
             "text": "Double Chance",
             "highlight": "#f8f9fa"
           },
           {
-            "text": ".",
+            "text": " "
+          },
+          {
+            "text": "on Lines 3 and 9.",
             "emphasis": true,
             "highlight": "#f8f9fa"
           }
@@ -567,6 +564,17 @@
           }
         ],
         "level": 3
+      },
+      {
+        "id": "block-1315",
+        "sourceIds": ["block-1315"],
+        "kind": "heading",
+        "level": 4,
+        "content": [
+          {
+            "text": "Steps (KR/TW)"
+          }
+        ]
       },
       {
         "id": "block-0739",
@@ -1228,17 +1236,6 @@
               }
             ]
           ]
-        ]
-      },
-      {
-        "id": "block-1301",
-        "sourceIds": ["block-1301"],
-        "kind": "paragraph",
-        "content": [
-          {
-            "text": "Upgrade Order: Line 4 > Line 1, 5 > Line 6, 9, Line 7, Line 2, 8",
-            "strong": true
-          }
         ]
       }
     ]

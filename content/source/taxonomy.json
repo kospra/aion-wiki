@@ -290,7 +290,7 @@
     "chapter": 8,
     "title": "Asia Genus stat priorities",
     "firstBlock": "block-0723",
-    "lastBlock": "block-0737",
+    "lastBlock": "block-1313",
     "nonemptyBlocks": 11,
     "figures": ["figure-078", "figure-079"]
   },
@@ -299,8 +299,8 @@
     "chapter": 8,
     "title": "Global Genus stat priorities",
     "firstBlock": "block-0738",
-    "lastBlock": "block-1302",
-    "nonemptyBlocks": 39,
+    "lastBlock": "block-0776",
+    "nonemptyBlocks": 44,
     "figures": []
   },
   {
