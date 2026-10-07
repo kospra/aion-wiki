@@ -133,17 +133,6 @@
     "nextFigure": 93,
     "report": "content/source/changes/2026-10-07-1148.md",
     "baselineDigest": "d2beb877fd1e07bb6add99ae91405bbc1080271c73e6676a2fcf33037de286e7",
-    "pending": [
-      {
-        "sourceId": "block-1324",
-        "pageSlug": "global-genus-stat-priorities",
-        "reason": "The block before it sits in a table; place it by hand"
-      },
-      {
-        "sourceId": "block-1325",
-        "pageSlug": "global-genus-stat-priorities",
-        "reason": "The block before it sits in a table; place it by hand"
-      }
-    ]
+    "pending": []
   }
 ]

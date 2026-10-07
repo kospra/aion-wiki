@@ -1141,6 +1141,18 @@
                 "items": [
                   [
                     {
+                      "id": "block-1324",
+                      "sourceIds": ["block-1324"],
+                      "kind": "paragraph",
+                      "content": [
+                        {
+                          "text": "Slots 4: Front/Back Damage Boost > PVE Damage Boost"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
                       "id": "block-0768",
                       "sourceIds": ["block-0768"],
                       "kind": "paragraph",
@@ -1251,6 +1263,18 @@
                 "kind": "list",
                 "ordered": false,
                 "items": [
+                  [
+                    {
+                      "id": "block-1325",
+                      "sourceIds": ["block-1325"],
+                      "kind": "paragraph",
+                      "content": [
+                        {
+                          "text": "Slots 4: Double Chance (no backup, secondary, roll until you get Double Chance first)"
+                        }
+                      ]
+                    }
+                  ],
                   [
                     {
                       "id": "block-0775",

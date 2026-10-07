@@ -1912,6 +1912,14 @@
     }
   },
   {
+    "sourceId": "block-1324",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "global-genus-stat-priorities",
+      "blockIds": ["block-1324"]
+    }
+  },
+  {
     "sourceId": "block-0768",
     "disposition": "rendered",
     "primary": {
@@ -1957,6 +1965,14 @@
     "primary": {
       "pageSlug": "global-genus-stat-priorities",
       "blockIds": ["block-0773"]
+    }
+  },
+  {
+    "sourceId": "block-1325",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "global-genus-stat-priorities",
+      "blockIds": ["block-1325"]
     }
   },
   {
