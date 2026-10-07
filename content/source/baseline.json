@@ -1,6 +1,6 @@
 {
   "fingerprints": {
-    "html": "85fcbf151f3ce6546787dd014e927e7fd8596be022b873e119a8c1641eda2e72"
+    "html": "e13ca425523dfbd755aef786e16f70281628e8c20a3c487774887415788156a1"
   },
   "blocks": [
     {
@@ -3352,7 +3352,7 @@
     {
       "id": "block-1309",
       "tag": "li",
-      "text": "Precision (≈ 6%) *may not be needed b/c of new Global 50% crit cap",
+      "text": "Precision (≈ 6%) *may not be needed b/c of new Global 50% crit cap, depends on Ludra caps",
       "numbers": ["6", "50"],
       "figureIds": [],
       "links": [],
@@ -3388,9 +3388,9 @@
           "emphasis": true
         },
         {
-          "text": "new Global 50% crit cap",
+          "text": "new Global 50% crit cap, depends on Ludra caps",
           "start": 43,
-          "end": 66,
+          "end": 89,
           "emphasis": true
         }
       ],
@@ -8287,16 +8287,26 @@
       "formatting": []
     },
     {
-      "id": "block-0701",
-      "tag": "h3",
-      "text": "HOW TO UPGRADE YOUR GENUS EFFICIENTLY",
+      "id": "block-0702",
+      "tag": "p",
+      "text": "",
       "numbers": [],
       "figureIds": [],
       "links": [],
       "formatting": []
     },
     {
-      "id": "block-0702",
+      "id": "block-1322",
+      "tag": "h3",
+      "text": "ASIA SERVER BIS GENUS LINES",
+      "numbers": [],
+      "figureIds": [],
+      "links": [],
+      "formatting": [],
+      "anchor": "h.pamnvjduuvsl"
+    },
+    {
+      "id": "block-1323",
       "tag": "p",
       "text": "",
       "numbers": [],
@@ -8517,26 +8527,8 @@
     },
     {
       "id": "block-0721",
-      "tag": "p",
-      "text": "",
-      "numbers": [],
-      "figureIds": [],
-      "links": [],
-      "formatting": []
-    },
-    {
-      "id": "block-0722",
-      "tag": "p",
-      "text": "",
-      "numbers": [],
-      "figureIds": [],
-      "links": [],
-      "formatting": []
-    },
-    {
-      "id": "block-0723",
       "tag": "h3",
-      "text": "ASIA SERVER BIS GENUS LINES",
+      "text": "",
       "numbers": [],
       "figureIds": [],
       "links": [],
@@ -8717,7 +8709,7 @@
     {
       "id": "block-1315",
       "tag": "h4",
-      "text": "Steps (KR/TW)",
+      "text": "Steps (Global)",
       "numbers": [],
       "figureIds": [],
       "links": [],
@@ -8818,15 +8810,15 @@
     {
       "id": "block-1299",
       "tag": "p",
-      "text": "Note: I’ve listed out BIS lines but for Lines 2, 8, it’s recommended to ignore these considering it would be way to expensive to try and get these stats. It’s not worth the cost of Cyrstals.",
+      "text": "Note: I’ve listed out BIS lines but for Lines 2, 8, it’s recommended to ignore these considering it would be way too expensive to try and get these stats. It’s not worth the cost of Cyrstals and Kinah.",
       "numbers": ["2", "8"],
       "figureIds": [],
       "links": [],
       "formatting": [
         {
-          "text": "Note: I’ve listed out BIS lines but for Lines 2, 8, it’s recommended to ignore these considering it would be way to expensive to try and get these stats. It’s not worth the cost of Cyrstals.",
+          "text": "Note: I’ve listed out BIS lines but for Lines 2, 8, it’s recommended to ignore these considering it would be way too expensive to try and get these stats. It’s not worth the cost of Cyrstals and Kinah.",
           "start": 0,
-          "end": 190,
+          "end": 201,
           "emphasis": true
         }
       ]
@@ -8855,7 +8847,7 @@
     {
       "id": "block-0742",
       "tag": "li",
-      "text": "Lines 1, 5: Max Attack > Attack Bonus",
+      "text": "Slots 1, 5: Max Attack > Attack Bonus",
       "numbers": ["1", "5"],
       "figureIds": [],
       "links": [],
@@ -8866,7 +8858,7 @@
     {
       "id": "block-0743",
       "tag": "li",
-      "text": "Lines 2, 8: HP Increase %",
+      "text": "Slots 2, 8: HP Increase %",
       "numbers": ["2", "8"],
       "figureIds": [],
       "links": [],
@@ -8877,7 +8869,7 @@
     {
       "id": "block-0744",
       "tag": "li",
-      "text": "Lines 3, 6, 9: Power Shard Bonus",
+      "text": "Slots 3, 6, 9: Power Shard Bonus",
       "numbers": ["3", "6", "9"],
       "figureIds": [],
       "links": [],
@@ -8900,7 +8892,7 @@
     {
       "id": "block-0746",
       "tag": "li",
-      "text": "Line 4: Critical Damage Boost, Damage Boost",
+      "text": "Slots 4: Critical Damage Boost > Damage Boost, PVE Damage Boost",
       "numbers": ["4"],
       "figureIds": [],
       "links": [],
@@ -8911,7 +8903,7 @@
     {
       "id": "block-0747",
       "tag": "li",
-      "text": "Line 7: Damage Tolerance, PVE Damage Tolerance > Endurance",
+      "text": "Slots 7: Damage Tolerance, PVE Damage Tolerance > Endurance",
       "numbers": ["7"],
       "figureIds": [],
       "links": [],
@@ -8934,7 +8926,7 @@
     {
       "id": "block-0749",
       "tag": "li",
-      "text": "Lines 1, 5: Max Attack > Attack Bonus",
+      "text": "Slots 1, 5: Max Attack > Attack Bonus",
       "numbers": ["1", "5"],
       "figureIds": [],
       "links": [],
@@ -8945,7 +8937,7 @@
     {
       "id": "block-0750",
       "tag": "li",
-      "text": "Lines 2, 8: HP Increase %",
+      "text": "Slots 2, 8: HP Increase %",
       "numbers": ["2", "8"],
       "figureIds": [],
       "links": [],
@@ -8956,7 +8948,7 @@
     {
       "id": "block-0751",
       "tag": "li",
-      "text": "Lines 3, 6, 9: Power Shard Bonus",
+      "text": "Slots 3, 6, 9: Power Shard Bonus",
       "numbers": ["3", "6", "9"],
       "figureIds": [],
       "links": [],
@@ -8979,7 +8971,7 @@
     {
       "id": "block-0753",
       "tag": "li",
-      "text": "Line 4: Weapon Damage Boost > Damage Boost",
+      "text": "Slots 4: Weapon Damage Boost > Damage Boost, PVE Damage Boost",
       "numbers": ["4"],
       "figureIds": [],
       "links": [],
@@ -8990,7 +8982,7 @@
     {
       "id": "block-0754",
       "tag": "li",
-      "text": "Line 7: Damage Tolerance, PVE Damage Tolerance > Endurance",
+      "text": "Slots 7: Damage Tolerance, PVE Damage Tolerance > Endurance",
       "numbers": ["7"],
       "figureIds": [],
       "links": [],
@@ -9013,7 +9005,7 @@
     {
       "id": "block-0756",
       "tag": "li",
-      "text": "Lines 1, 5: Max Attack > Attack Bonus",
+      "text": "Slots 1, 5: Max Attack > Attack Bonus",
       "numbers": ["1", "5"],
       "figureIds": [],
       "links": [],
@@ -9024,7 +9016,7 @@
     {
       "id": "block-0757",
       "tag": "li",
-      "text": "Lines 2, 8: HP Increase %",
+      "text": "Slots 2, 8: HP Increase %",
       "numbers": ["2", "8"],
       "figureIds": [],
       "links": [],
@@ -9035,7 +9027,7 @@
     {
       "id": "block-0758",
       "tag": "li",
-      "text": "Lines 3, 6, 9: Power Shard Bonus",
+      "text": "Slots 3, 6, 9: Power Shard Bonus",
       "numbers": ["3", "6", "9"],
       "figureIds": [],
       "links": [],
@@ -9058,7 +9050,7 @@
     {
       "id": "block-0760",
       "tag": "li",
-      "text": "Line 4: PVE Damage Boost > Multi Hit > Perfect Chance",
+      "text": "Slots 4: PVE Damage Boost > Multi Hit > Perfect Chance",
       "numbers": ["4"],
       "figureIds": [],
       "links": [],
@@ -9069,7 +9061,7 @@
     {
       "id": "block-0761",
       "tag": "li",
-      "text": "Line 7: PVE Damage Tolerance > Endurance",
+      "text": "Slots 7: PVE Damage Tolerance > Endurance",
       "numbers": ["7"],
       "figureIds": [],
       "links": [],
@@ -9092,7 +9084,7 @@
     {
       "id": "block-0763",
       "tag": "li",
-      "text": "Lines 1, 5: Max Attack > Attack Bonus",
+      "text": "Slots 1, 5: Max Attack > Attack Bonus",
       "numbers": ["1", "5"],
       "figureIds": [],
       "links": [],
@@ -9103,7 +9095,7 @@
     {
       "id": "block-0764",
       "tag": "li",
-      "text": "Lines 2, 8: HP Increase %",
+      "text": "Slots 2, 8: HP Increase %",
       "numbers": ["2", "8"],
       "figureIds": [],
       "links": [],
@@ -9114,7 +9106,7 @@
     {
       "id": "block-0765",
       "tag": "li",
-      "text": "Lines 3, 6, 9: Power Shard Bonus",
+      "text": "Slots 3, 6, 9: Power Shard Bonus",
       "numbers": ["3", "6", "9"],
       "figureIds": [],
       "links": [],
@@ -9135,9 +9127,9 @@
       "level": 2
     },
     {
-      "id": "block-0767",
+      "id": "block-1324",
       "tag": "li",
-      "text": "Line 4: Front/Back Damage Boost",
+      "text": "Slots 4: Front/Back Damage Boost > PVE Damage Boost",
       "numbers": ["4"],
       "figureIds": [],
       "links": [],
@@ -9148,7 +9140,7 @@
     {
       "id": "block-0768",
       "tag": "li",
-      "text": "Line 7: PVE Damage Tolerance > Endurance",
+      "text": "Slots 7: PVE Damage Tolerance > Endurance",
       "numbers": ["7"],
       "figureIds": [],
       "links": [],
@@ -9171,7 +9163,7 @@
     {
       "id": "block-0770",
       "tag": "li",
-      "text": "Lines 1, 5: Max Attack > Attack Bonus",
+      "text": "Slots 1, 5: Max Attack > Attack Bonus",
       "numbers": ["1", "5"],
       "figureIds": [],
       "links": [],
@@ -9182,7 +9174,7 @@
     {
       "id": "block-0771",
       "tag": "li",
-      "text": "Lines 2, 8: HP Increase %",
+      "text": "Slots 2, 8: HP Increase %",
       "numbers": ["2", "8"],
       "figureIds": [],
       "links": [],
@@ -9193,7 +9185,7 @@
     {
       "id": "block-0772",
       "tag": "li",
-      "text": "Lines 3, 6, 9: Power Shard Bonus",
+      "text": "Slots 3, 6, 9: Power Shard Bonus",
       "numbers": ["3", "6", "9"],
       "figureIds": [],
       "links": [],
@@ -9214,9 +9206,9 @@
       "level": 2
     },
     {
-      "id": "block-0774",
+      "id": "block-1325",
       "tag": "li",
-      "text": "Line 4: Double Chance",
+      "text": "Slots 4: Double Chance (no backup, secondary, roll until you get Double Chance first)",
       "numbers": ["4"],
       "figureIds": [],
       "links": [],
@@ -9227,7 +9219,7 @@
     {
       "id": "block-0775",
       "tag": "li",
-      "text": "Line 7: Damage Tolerance > Endurance",
+      "text": "Slots 7: Damage Tolerance > Endurance",
       "numbers": ["7"],
       "figureIds": [],
       "links": [],

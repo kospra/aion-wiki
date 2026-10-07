@@ -111,15 +111,15 @@
         ]
       },
       {
-        "id": "block-0701",
-        "sourceIds": ["block-0701"],
+        "id": "block-1322",
+        "sourceIds": ["block-1322"],
         "kind": "heading",
+        "level": 3,
         "content": [
           {
-            "text": "HOW TO UPGRADE YOUR GENUS EFFICIENTLY"
+            "text": "ASIA SERVER BIS GENUS LINES"
           }
-        ],
-        "level": 3
+        ]
       },
       {
         "id": "block-0703",
@@ -375,20 +375,6 @@
     "sourceUrl": "https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/edit",
     "blocks": [
       {
-        "id": "block-0723",
-        "sourceIds": ["block-0723"],
-        "kind": "heading",
-        "content": [
-          {
-            "text": "ASIA"
-          },
-          {
-            "text": " SERVER BIS GENUS LINES"
-          }
-        ],
-        "level": 3
-      },
-      {
         "id": "block-0724",
         "sourceIds": ["block-0724"],
         "kind": "heading",
@@ -572,7 +558,7 @@
         "level": 4,
         "content": [
           {
-            "text": "Steps (KR/TW)"
+            "text": "Steps (Global)"
           }
         ]
       },
@@ -662,7 +648,7 @@
         "kind": "paragraph",
         "content": [
           {
-            "text": "Note: I’ve listed out BIS lines but for Lines 2, 8, it’s recommended to ignore these considering it would be way to expensive to try and get these stats. It’s not worth the cost of Cyrstals.",
+            "text": "Note: I’ve listed out BIS lines but for Lines 2, 8, it’s recommended to ignore these considering it would be way too expensive to try and get these stats. It’s not worth the cost of Cyrstals and Kinah.",
             "emphasis": true
           }
         ]
@@ -723,7 +709,7 @@
                       "kind": "paragraph",
                       "content": [
                         {
-                          "text": "Lines 1, 5: Max Attack > Attack Bonus"
+                          "text": "Slots 1, 5: Max Attack > Attack Bonus"
                         }
                       ]
                     }
@@ -735,7 +721,7 @@
                       "kind": "paragraph",
                       "content": [
                         {
-                          "text": "Lines 2, 8: HP Increase %"
+                          "text": "Slots 2, 8: HP Increase %"
                         }
                       ]
                     }
@@ -747,7 +733,7 @@
                       "kind": "paragraph",
                       "content": [
                         {
-                          "text": "Lines 3, 6, 9: Power Shard Bonus"
+                          "text": "Slots 3, 6, 9: Power Shard Bonus"
                         }
                       ]
                     },
@@ -788,7 +774,7 @@
                       "kind": "paragraph",
                       "content": [
                         {
-                          "text": "Line 4: Critical Damage Boost, Damage Boost"
+                          "text": "Slots 4: Critical Damage Boost > Damage Boost, PVE Damage Boost"
                         }
                       ]
                     }
@@ -800,7 +786,7 @@
                       "kind": "paragraph",
                       "content": [
                         {
-                          "text": "Line 7: Damage Tolerance, PVE Damage Tolerance > Endurance"
+                          "text": "Slots 7: Damage Tolerance, PVE Damage Tolerance > Endurance"
                         }
                       ]
                     }
@@ -847,7 +833,7 @@
                       "kind": "paragraph",
                       "content": [
                         {
-                          "text": "Lines 1, 5: Max Attack > Attack Bonus"
+                          "text": "Slots 1, 5: Max Attack > Attack Bonus"
                         }
                       ]
                     }
@@ -859,7 +845,7 @@
                       "kind": "paragraph",
                       "content": [
                         {
-                          "text": "Lines 2, 8: HP Increase %"
+                          "text": "Slots 2, 8: HP Increase %"
                         }
                       ]
                     }
@@ -871,7 +857,7 @@
                       "kind": "paragraph",
                       "content": [
                         {
-                          "text": "Lines 3, 6, 9: Power Shard Bonus"
+                          "text": "Slots 3, 6, 9: Power Shard Bonus"
                         }
                       ]
                     },
@@ -912,7 +898,7 @@
                       "kind": "paragraph",
                       "content": [
                         {
-                          "text": "Line 4: Weapon Damage Boost > Damage Boost"
+                          "text": "Slots 4: Weapon Damage Boost > Damage Boost, PVE Damage Boost"
                         }
                       ]
                     }
@@ -924,7 +910,7 @@
                       "kind": "paragraph",
                       "content": [
                         {
-                          "text": "Line 7: Damage Tolerance, PVE Damage Tolerance > Endurance"
+                          "text": "Slots 7: Damage Tolerance, PVE Damage Tolerance > Endurance"
                         }
                       ]
                     }
@@ -971,7 +957,7 @@
                       "kind": "paragraph",
                       "content": [
                         {
-                          "text": "Lines 1, 5: Max Attack > Attack Bonus"
+                          "text": "Slots 1, 5: Max Attack > Attack Bonus"
                         }
                       ]
                     }
@@ -983,7 +969,7 @@
                       "kind": "paragraph",
                       "content": [
                         {
-                          "text": "Lines 2, 8: HP Increase %"
+                          "text": "Slots 2, 8: HP Increase %"
                         }
                       ]
                     }
@@ -995,7 +981,7 @@
                       "kind": "paragraph",
                       "content": [
                         {
-                          "text": "Lines 3, 6, 9: Power Shard Bonus"
+                          "text": "Slots 3, 6, 9: Power Shard Bonus"
                         }
                       ]
                     },
@@ -1036,7 +1022,7 @@
                       "kind": "paragraph",
                       "content": [
                         {
-                          "text": "Line 4: PVE Damage Boost > Multi Hit > Perfect Chance"
+                          "text": "Slots 4: PVE Damage Boost > Multi Hit > Perfect Chance"
                         }
                       ]
                     }
@@ -1048,7 +1034,7 @@
                       "kind": "paragraph",
                       "content": [
                         {
-                          "text": "Line 7: PVE Damage Tolerance > Endurance"
+                          "text": "Slots 7: PVE Damage Tolerance > Endurance"
                         }
                       ]
                     }
@@ -1095,7 +1081,7 @@
                       "kind": "paragraph",
                       "content": [
                         {
-                          "text": "Lines 1, 5: Max Attack > Attack Bonus"
+                          "text": "Slots 1, 5: Max Attack > Attack Bonus"
                         }
                       ]
                     }
@@ -1107,7 +1093,7 @@
                       "kind": "paragraph",
                       "content": [
                         {
-                          "text": "Lines 2, 8: HP Increase %"
+                          "text": "Slots 2, 8: HP Increase %"
                         }
                       ]
                     }
@@ -1119,7 +1105,7 @@
                       "kind": "paragraph",
                       "content": [
                         {
-                          "text": "Lines 3, 6, 9: Power Shard Bonus"
+                          "text": "Slots 3, 6, 9: Power Shard Bonus"
                         }
                       ]
                     },
@@ -1155,24 +1141,12 @@
                 "items": [
                   [
                     {
-                      "id": "block-0767",
-                      "sourceIds": ["block-0767"],
-                      "kind": "paragraph",
-                      "content": [
-                        {
-                          "text": "Line 4: Front/Back Damage Boost"
-                        }
-                      ]
-                    }
-                  ],
-                  [
-                    {
                       "id": "block-0768",
                       "sourceIds": ["block-0768"],
                       "kind": "paragraph",
                       "content": [
                         {
-                          "text": "Line 7: PVE Damage Tolerance > Endurance"
+                          "text": "Slots 7: PVE Damage Tolerance > Endurance"
                         }
                       ]
                     }
@@ -1219,7 +1193,7 @@
                       "kind": "paragraph",
                       "content": [
                         {
-                          "text": "Lines 1, 5: Max Attack > Attack Bonus"
+                          "text": "Slots 1, 5: Max Attack > Attack Bonus"
                         }
                       ]
                     }
@@ -1231,7 +1205,7 @@
                       "kind": "paragraph",
                       "content": [
                         {
-                          "text": "Lines 2, 8: HP Increase %"
+                          "text": "Slots 2, 8: HP Increase %"
                         }
                       ]
                     }
@@ -1243,7 +1217,7 @@
                       "kind": "paragraph",
                       "content": [
                         {
-                          "text": "Lines 3, 6, 9: Power Shard Bonus"
+                          "text": "Slots 3, 6, 9: Power Shard Bonus"
                         }
                       ]
                     },
@@ -1279,24 +1253,12 @@
                 "items": [
                   [
                     {
-                      "id": "block-0774",
-                      "sourceIds": ["block-0774"],
-                      "kind": "paragraph",
-                      "content": [
-                        {
-                          "text": "Line 4: Double Chance"
-                        }
-                      ]
-                    }
-                  ],
-                  [
-                    {
                       "id": "block-0775",
                       "sourceIds": ["block-0775"],
                       "kind": "paragraph",
                       "content": [
                         {
-                          "text": "Line 7: Damage Tolerance > Endurance"
+                          "text": "Slots 7: Damage Tolerance > Endurance"
                         }
                       ]
                     }

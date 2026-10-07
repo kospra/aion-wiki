@@ -120,5 +120,30 @@
     "report": "content/source/changes/2026-10-06-1202.md",
     "baselineDigest": "59baad8b1cf592097716772ca66dba320e7870c5f6810cdabc603becc6299aa7",
     "pending": []
+  },
+  {
+    "capturedAt": "2026-10-07T11:48:02.838Z",
+    "fingerprints": {
+      "html": "e13ca425523dfbd755aef786e16f70281628e8c20a3c487774887415788156a1"
+    },
+    "updateNote": "***Update Note 10/4/2026: There are a LOT of changes for Global. I’ve updated everything we know so far. I’ve added a Chapter 12: Class Builds section that links you to builds.",
+    "blocks": 1293,
+    "figures": 91,
+    "nextBlock": 1326,
+    "nextFigure": 93,
+    "report": "content/source/changes/2026-10-07-1148.md",
+    "baselineDigest": "d2beb877fd1e07bb6add99ae91405bbc1080271c73e6676a2fcf33037de286e7",
+    "pending": [
+      {
+        "sourceId": "block-1324",
+        "pageSlug": "global-genus-stat-priorities",
+        "reason": "The block before it sits in a table; place it by hand"
+      },
+      {
+        "sourceId": "block-1325",
+        "pageSlug": "global-genus-stat-priorities",
+        "reason": "The block before it sits in a table; place it by hand"
+      }
+    ]
   }
 ]

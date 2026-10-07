@@ -1355,15 +1355,20 @@
     "reason": "Empty document spacing is normalized by article layout."
   },
   {
-    "sourceId": "block-0701",
+    "sourceId": "block-0702",
+    "disposition": "layout-only",
+    "reason": "Empty document spacing is normalized by article layout."
+  },
+  {
+    "sourceId": "block-1322",
     "disposition": "rendered",
     "primary": {
       "pageSlug": "insight-levels-and-efficient-analysis",
-      "blockIds": ["block-0701"]
+      "blockIds": ["block-1322"]
     }
   },
   {
-    "sourceId": "block-0702",
+    "sourceId": "block-1323",
     "disposition": "layout-only",
     "reason": "Empty document spacing is normalized by article layout."
   },
@@ -1500,19 +1505,6 @@
     "sourceId": "block-0721",
     "disposition": "layout-only",
     "reason": "Empty document spacing is normalized by article layout."
-  },
-  {
-    "sourceId": "block-0722",
-    "disposition": "layout-only",
-    "reason": "Empty document spacing is normalized by article layout."
-  },
-  {
-    "sourceId": "block-0723",
-    "disposition": "rendered",
-    "primary": {
-      "pageSlug": "asia-genus-stat-priorities",
-      "blockIds": ["block-0723"]
-    }
   },
   {
     "sourceId": "block-0724",
@@ -1920,14 +1912,6 @@
     }
   },
   {
-    "sourceId": "block-0767",
-    "disposition": "rendered",
-    "primary": {
-      "pageSlug": "global-genus-stat-priorities",
-      "blockIds": ["block-0767"]
-    }
-  },
-  {
     "sourceId": "block-0768",
     "disposition": "rendered",
     "primary": {
@@ -1973,14 +1957,6 @@
     "primary": {
       "pageSlug": "global-genus-stat-priorities",
       "blockIds": ["block-0773"]
-    }
-  },
-  {
-    "sourceId": "block-0774",
-    "disposition": "rendered",
-    "primary": {
-      "pageSlug": "global-genus-stat-priorities",
-      "blockIds": ["block-0774"]
     }
   },
   {
