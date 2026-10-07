@@ -845,22 +845,19 @@
               "level": 2
             },
             {
-              "id": "list-block-0086",
+              "id": "list-block-1270",
               "sourceIds": [],
               "kind": "list",
               "ordered": false,
               "items": [
                 [
                   {
-                    "id": "block-0086",
-                    "sourceIds": ["block-0086"],
+                    "id": "block-1270",
+                    "sourceIds": ["block-1270"],
                     "kind": "paragraph",
                     "content": [
                       {
-                        "text": "Unlocked automatically at maximum value on Crafted gear"
-                      },
-                      {
-                        "text": " on Asia Server. Crafted Gear on Global will not have this"
+                        "text": "PVP Exclusive stat on Global"
                       }
                     ]
                   }
@@ -877,67 +874,67 @@
                     ]
                   },
                   {
-                    "id": "list-block-0088",
+                    "id": "list-block-1271",
                     "sourceIds": [],
                     "kind": "list",
                     "ordered": false,
                     "items": [
                       [
                         {
-                          "id": "block-0088",
-                          "sourceIds": ["block-0088"],
+                          "id": "block-1271",
+                          "sourceIds": ["block-1271"],
                           "kind": "paragraph",
                           "content": [
                             {
-                              "text": "“Potential Stones” mainly obtained from Expedition - Conquest Dungeons"
+                              "text": "“Potential Stones” mainly obtained from Abyss & Abyss Shop"
                             }
                           ]
                         }
                       ]
                     ]
                   }
-                ]
-              ]
-            },
-            {
-              "id": "list-block-0089",
-              "sourceIds": [],
-              "kind": "list",
-              "ordered": false,
-              "items": [
-                [
-                  {
-                    "id": "block-0089",
-                    "sourceIds": ["block-0089"],
-                    "kind": "paragraph",
-                    "content": [
-                      {
-                        "text": "Weapons and Accessories give PVE Damage Boost %"
-                      }
-                    ]
-                  }
                 ],
                 [
                   {
-                    "id": "block-0090",
-                    "sourceIds": ["block-0090"],
+                    "id": "block-1272",
+                    "sourceIds": ["block-1272"],
                     "kind": "paragraph",
                     "content": [
                       {
-                        "text": "Armor gives PVE Damage Tolerance %"
+                        "text": "Asia"
                       }
                     ]
-                  }
-                ],
-                [
+                  },
                   {
-                    "id": "block-0091",
-                    "sourceIds": ["block-0091"],
-                    "kind": "paragraph",
-                    "content": [
-                      {
-                        "text": "Crafted gear gives more PVE Damage Boost/Tolerance % than Dungeon gear on Asia Server, not confirmed yet on Global"
-                      }
+                    "id": "list-block-0089",
+                    "sourceIds": [],
+                    "kind": "list",
+                    "ordered": false,
+                    "items": [
+                      [
+                        {
+                          "id": "block-0089",
+                          "sourceIds": ["block-0089"],
+                          "kind": "paragraph",
+                          "content": [
+                            {
+                              "text": "Weapons and Accessories give PVP Damage Boost %"
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "id": "block-0090",
+                          "sourceIds": ["block-0090"],
+                          "kind": "paragraph",
+                          "content": [
+                            {
+                              "text": "Armor gives PVP Damage Tolerance %"
+                            }
+                          ]
+                        }
+                      ]
                     ]
                   }
                 ],

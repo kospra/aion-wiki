@@ -53,5 +53,86 @@
     "report": "content/source/changes/2026-09-30-1110.md",
     "baselineDigest": "efbe506b0f60b845d23efbbbf2c26d12e4a0dc960a8670126537ee4537b269ec",
     "pending": []
+  },
+  {
+    "capturedAt": "2026-10-02T11:07:01.915Z",
+    "fingerprints": {
+      "html": "fadef23799b3f74317cb062523fef9657b9e49f5dc376fc92cf722f18e41bd3a"
+    },
+    "updateNote": "***Update Note 9/20/2026: Updated Stat Lines, Gear, and Genus the best I could given the info we know so far. There are for sure some big changes for global and it’s impossible for us to be 100% sure of ALL the changes until launch. Will update this doc with confirmed info as soon as I can. If there is any confirmed info that needs to be updated on this doc that you notice, please shoot me an X msg or DM on Discord. I have not yet updated the Wings section.",
+    "blocks": 1268,
+    "figures": 90,
+    "nextBlock": 1269,
+    "nextFigure": 91,
+    "report": "content/source/changes/2026-10-02-1107.md",
+    "baselineDigest": "83bedb7915ebebe2397d56480f67955dd125fbff47794f447e8f83b7fc85cd05",
+    "pending": []
+  },
+  {
+    "capturedAt": "2026-10-04T11:07:40.402Z",
+    "fingerprints": {
+      "html": "0d7a0579352ed5fd533c5c843555bafde5962be91ea3e5f7622dc123d2710727"
+    },
+    "updateNote": "***Update Note 10/4/2026: There are a LOT of changes for Global. I’ve updated everything we know so far. I’ve added a Chapter 12: Class Builds section that links you to builds.",
+    "blocks": 1287,
+    "figures": 91,
+    "nextBlock": 1309,
+    "nextFigure": 93,
+    "report": "content/source/changes/2026-10-04-1107.md",
+    "baselineDigest": "ea28372e4fddb22eab0c9c5bdeb9d412dd1be76b4d5d6c6d9023010afa9c5783",
+    "pending": [
+      {
+        "sourceId": "block-1307",
+        "pageSlug": "class-passives",
+        "reason": "A new block at the start of an article; place it by hand"
+      },
+      {
+        "sourceId": "block-1308",
+        "pageSlug": "class-passives",
+        "reason": "Follows block-1307, which is not placed yet; place both by hand"
+      }
+    ]
+  },
+  {
+    "capturedAt": "2026-10-05T12:17:35.407Z",
+    "fingerprints": {
+      "html": "492e28a0003bcb837722692b5a466de9d1ac8980ae6db4d6bf8f42c285d7f4b9"
+    },
+    "updateNote": "***Update Note 10/4/2026: There are a LOT of changes for Global. I’ve updated everything we know so far. I’ve added a Chapter 12: Class Builds section that links you to builds.",
+    "blocks": 1287,
+    "figures": 91,
+    "nextBlock": 1310,
+    "nextFigure": 93,
+    "report": "content/source/changes/2026-10-05-1217.md",
+    "baselineDigest": "471607e7d1bd5b351294c05965acf34ee1dae3ba7d0b2965c55666f3ffc079a9",
+    "pending": []
+  },
+  {
+    "capturedAt": "2026-10-06T12:02:25.411Z",
+    "fingerprints": {
+      "html": "85fcbf151f3ce6546787dd014e927e7fd8596be022b873e119a8c1641eda2e72"
+    },
+    "updateNote": "***Update Note 10/4/2026: There are a LOT of changes for Global. I’ve updated everything we know so far. I’ve added a Chapter 12: Class Builds section that links you to builds.",
+    "blocks": 1294,
+    "figures": 91,
+    "nextBlock": 1322,
+    "nextFigure": 93,
+    "report": "content/source/changes/2026-10-06-1202.md",
+    "baselineDigest": "59baad8b1cf592097716772ca66dba320e7870c5f6810cdabc603becc6299aa7",
+    "pending": []
+  },
+  {
+    "capturedAt": "2026-10-07T11:48:02.838Z",
+    "fingerprints": {
+      "html": "e13ca425523dfbd755aef786e16f70281628e8c20a3c487774887415788156a1"
+    },
+    "updateNote": "***Update Note 10/4/2026: There are a LOT of changes for Global. I’ve updated everything we know so far. I’ve added a Chapter 12: Class Builds section that links you to builds.",
+    "blocks": 1293,
+    "figures": 91,
+    "nextBlock": 1326,
+    "nextFigure": 93,
+    "report": "content/source/changes/2026-10-07-1148.md",
+    "baselineDigest": "d2beb877fd1e07bb6add99ae91405bbc1080271c73e6676a2fcf33037de286e7",
+    "pending": []
   }
 ]

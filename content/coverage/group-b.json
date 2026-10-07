@@ -117,6 +117,19 @@
     "reason": "Empty document spacing is normalized by article layout."
   },
   {
+    "sourceId": "block-1297",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "potential-enhancement",
+      "blockIds": ["block-1297"]
+    }
+  },
+  {
+    "sourceId": "block-1298",
+    "disposition": "layout-only",
+    "reason": "Empty document spacing is normalized by article layout."
+  },
+  {
     "sourceId": "block-0424",
     "disposition": "rendered",
     "primary": {

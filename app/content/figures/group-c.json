@@ -234,13 +234,22 @@
     "alt": "Explicit numbered Genus line reference"
   },
   {
-    "id": "figure-080",
-    "sourceId": "block-0779",
-    "sha256": "211170fe132b92b3c05d36627801ffc9da04c666a4155184b9b07da90337ca09",
-    "src": "/images/guide/211170fe132b92b3c05d36627801ffc9da04c666a4155184b9b07da90337ca09.png",
-    "width": 548,
-    "height": 515,
-    "alt": "Pet owned effects upgrade"
+    "id": "figure-091",
+    "sourceId": "block-1305",
+    "sha256": "6aa537b53003cbab53bdf96f6340b42c4e9d805bbc892a965e69949804c059bc",
+    "src": "/images/guide/6aa537b53003cbab53bdf96f6340b42c4e9d805bbc892a965e69949804c059bc.png",
+    "width": 613,
+    "height": 575,
+    "alt": "Pet Info tab of a pet at maximum Pet Insight level with its Owned Effect stats"
+  },
+  {
+    "id": "figure-092",
+    "sourceId": "block-1305",
+    "sha256": "16970e2dfc60768da78774a069e84fd864b3e1ebf84c49f2616e461ab26e1511",
+    "src": "/images/guide/16970e2dfc60768da78774a069e84fd864b3e1ebf84c49f2616e461ab26e1511.png",
+    "width": 635,
+    "height": 621,
+    "alt": "Source tab of the same pet listing the monsters and reward chest that drop it"
   },
   {
     "id": "figure-081",
