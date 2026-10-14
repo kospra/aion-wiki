@@ -1,6 +1,6 @@
 {
   "fingerprints": {
-    "html": "e13ca425523dfbd755aef786e16f70281628e8c20a3c487774887415788156a1"
+    "html": "7649b39db516119a0595b110a81acfc27911e9215120acd9a018a615b547123c"
   },
   "blocks": [
     {
@@ -2025,8 +2025,8 @@
     {
       "id": "block-1287",
       "tag": "li",
-      "text": "Amp 1: Attack 12, Damage Boost 2%",
-      "numbers": ["1", "12", "2"],
+      "text": "Amp 1: Attack 12, Damage Boost 1%",
+      "numbers": ["1", "12", "1"],
       "figureIds": [],
       "links": [],
       "formatting": [],

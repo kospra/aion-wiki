@@ -134,5 +134,19 @@
     "report": "content/source/changes/2026-10-07-1148.md",
     "baselineDigest": "d2beb877fd1e07bb6add99ae91405bbc1080271c73e6676a2fcf33037de286e7",
     "pending": []
+  },
+  {
+    "capturedAt": "2026-10-14T10:13:20.921Z",
+    "fingerprints": {
+      "html": "7649b39db516119a0595b110a81acfc27911e9215120acd9a018a615b547123c"
+    },
+    "updateNote": "***Update Note 10/4/2026: There are a LOT of changes for Global. I’ve updated everything we know so far. I’ve added a Chapter 12: Class Builds section that links you to builds.",
+    "blocks": 1293,
+    "figures": 91,
+    "nextBlock": 1326,
+    "nextFigure": 93,
+    "report": "content/source/changes/2026-10-14-1013.md",
+    "baselineDigest": "63e4667a9d93ef3f7dd323da6600333b6a879c74d1d6afcc85a44bb9f0eb2691",
+    "pending": []
   }
 ]
