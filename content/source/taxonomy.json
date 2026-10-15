@@ -421,13 +421,12 @@
     "figures": []
   },
   {
-    "slug": "class-passives",
+    "slug": "class-builds",
     "chapter": 12,
-    "title": "Class Passives",
+    "title": "Class builds",
     "firstBlock": "block-1266",
     "lastBlock": "block-1308",
     "nonemptyBlocks": 3,
-    "figures": [],
-    "sourceTitle": "Class Passives source placeholder"
+    "figures": []
   }
 ]

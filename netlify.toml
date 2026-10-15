@@ -5,6 +5,16 @@
 [build.environment]
   NPM_VERSION = "12.1.0"
 
+[[redirects]]
+  from = "/articles/class-passives"
+  to = "/articles/class-builds/"
+  status = 301
+
+[[redirects]]
+  from = "/categories/class-passives"
+  to = "/categories/class-builds/"
+  status = 301
+
 [[headers]]
   for = "/*"
   [headers.values]

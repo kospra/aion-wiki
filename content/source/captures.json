@@ -80,18 +80,7 @@
     "nextFigure": 93,
     "report": "content/source/changes/2026-10-04-1107.md",
     "baselineDigest": "ea28372e4fddb22eab0c9c5bdeb9d412dd1be76b4d5d6c6d9023010afa9c5783",
-    "pending": [
-      {
-        "sourceId": "block-1307",
-        "pageSlug": "class-passives",
-        "reason": "A new block at the start of an article; place it by hand"
-      },
-      {
-        "sourceId": "block-1308",
-        "pageSlug": "class-passives",
-        "reason": "Follows block-1307, which is not placed yet; place both by hand"
-      }
-    ]
+    "pending": []
   },
   {
     "capturedAt": "2026-10-05T12:17:35.407Z",
@@ -161,12 +150,6 @@
     "nextFigure": 93,
     "report": "content/source/changes/2026-10-15-0955.md",
     "baselineDigest": "f6af0c956a449a3eb80f07796780895ad67751cf9afc0f7d7547e50f60097bce",
-    "pending": [
-      {
-        "sourceId": "block-1326",
-        "pageSlug": "global-genus-stat-priorities",
-        "reason": "The block before it sits in a table; place it by hand"
-      }
-    ]
+    "pending": []
   }
 ]

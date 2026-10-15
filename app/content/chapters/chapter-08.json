@@ -1290,6 +1290,17 @@
             ]
           ]
         ]
+      },
+      {
+        "id": "block-1326",
+        "sourceIds": ["block-1326"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "* Stats above are written as follows: (Stat Prio 1 > Stat Prio 2, Stat Prio 2 option 2)",
+            "emphasis": true
+          }
+        ]
       }
     ]
   },

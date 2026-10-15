@@ -56,9 +56,9 @@
       "description": "Stat efficiency, combat values, and damage formulas."
     },
     {
-      "slug": "class-passives",
-      "title": "Class Passives",
-      "description": "Not written yet; marked Coming soon in the original guide."
+      "slug": "class-builds",
+      "title": "Class builds",
+      "description": "Where to find builds and loadouts for every class."
     }
   ],
   "articles": [
@@ -627,7 +627,7 @@
       "summary": "Global slots for every board, including conditional Crit and Accuracy priorities.",
       "status": "source-uncertain",
       "sourceUrl": "https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/edit",
-      "searchText": "Global Genus stat priorities\nGlobal slots for every board, including conditional Crit and Accuracy priorities.\n***GLOBAL BIS GENUS LINES***\nSteps (Global)\nDo not lock any lines and level up all Boards to level 9 by clicking “Analyze”\nAt level 9, select “Auto Analyze” choose the BIS stat for Line 4 > set it to Unique (Yellow) grade > Auto Analyze.\nPrioritize Leveling up the Special Board first\nYou can use Rainbow Crystals for any board if you have plenty.\nUpgrade Order for each Board: Line 4 > Line 1, 5 > Line 6, 9, Line 7, Line 2, 8\nBIS Lines (slots) to shoot for:\nNote: I’ve listed out BIS lines but for Lines 2, 8, it’s recommended to ignore these considering it would be way too expensive to try and get these stats. It’s not worth the cost of Cyrstals and Kinah.\nBoard\nSlots and priorities\nGlobal source priorities by board. Each source line and its conditional alternatives are retained together.\nCogni Board\nSlots 1, 5: Max Attack > Attack Bonus\nSlots 2, 8: HP Increase %\nSlots 3, 6, 9: Power Shard Bonus\nCrit, Accuracy > Power Shard Bonus if crit/accuracy cap is not reached\nSlots 4: Critical Damage Boost > Damage Boost, PVE Damage Boost\nSlots 7: Damage Tolerance, PVE Damage Tolerance > Endurance\nFera Board\nSlots 1, 5: Max Attack > Attack Bonus\nSlots 2, 8: HP Increase %\nSlots 3, 6, 9: Power Shard Bonus\nCrit, Accuracy > Power Shard Bonus if crit/accuracy cap is not reached\nSlots 4: Weapon Damage Boost > Damage Boost, PVE Damage Boost\nSlots 7: Damage Tolerance, PVE Damage Tolerance > Endurance\nNatura Board\nSlots 1, 5: Max Attack > Attack Bonus\nSlots 2, 8: HP Increase %\nSlots 3, 6, 9: Power Shard Bonus\nCrit, Accuracy > Power Shard Bonus if crit/accuracy cap is not reached\nSlots 4: PVE Damage Boost > Multi Hit > Perfect Chance\nSlots 7: PVE Damage Tolerance > Endurance\nVarian Board\nSlots 1, 5: Max Attack > Attack Bonus\nSlots 2, 8: HP Increase %\nSlots 3, 6, 9: Power Shard Bonus\nCrit, Accuracy > Power Shard Bonus if crit/accuracy cap is not reached\nSlots 4: Front/Back Damage Boost > PVE Damage Boost\nSlots 7: PVE Damage Tolerance > Endurance\nSpecial Board\nSlots 1, 5: Max Attack > Attack Bonus\nSlots 2, 8: HP Increase %\nSlots 3, 6, 9: Power Shard Bonus\nCrit, Accuracy > Power Shard Bonus if crit/accuracy cap is not reached\nSlots 4: Double Chance (no backup, secondary, roll until you get Double Chance first)\nSlots 7: Damage Tolerance > Endurance",
+      "searchText": "Global Genus stat priorities\nGlobal slots for every board, including conditional Crit and Accuracy priorities.\n***GLOBAL BIS GENUS LINES***\nSteps (Global)\nDo not lock any lines and level up all Boards to level 9 by clicking “Analyze”\nAt level 9, select “Auto Analyze” choose the BIS stat for Line 4 > set it to Unique (Yellow) grade > Auto Analyze.\nPrioritize Leveling up the Special Board first\nYou can use Rainbow Crystals for any board if you have plenty.\nUpgrade Order for each Board: Line 4 > Line 1, 5 > Line 6, 9, Line 7, Line 2, 8\nBIS Lines (slots) to shoot for:\nNote: I’ve listed out BIS lines but for Lines 2, 8, it’s recommended to ignore these considering it would be way too expensive to try and get these stats. It’s not worth the cost of Cyrstals and Kinah.\nBoard\nSlots and priorities\nGlobal source priorities by board. Each source line and its conditional alternatives are retained together.\nCogni Board\nSlots 1, 5: Max Attack > Attack Bonus\nSlots 2, 8: HP Increase %\nSlots 3, 6, 9: Power Shard Bonus\nCrit, Accuracy > Power Shard Bonus if crit/accuracy cap is not reached\nSlots 4: Critical Damage Boost > Damage Boost, PVE Damage Boost\nSlots 7: Damage Tolerance, PVE Damage Tolerance > Endurance\nFera Board\nSlots 1, 5: Max Attack > Attack Bonus\nSlots 2, 8: HP Increase %\nSlots 3, 6, 9: Power Shard Bonus\nCrit, Accuracy > Power Shard Bonus if crit/accuracy cap is not reached\nSlots 4: Weapon Damage Boost > Damage Boost, PVE Damage Boost\nSlots 7: Damage Tolerance, PVE Damage Tolerance > Endurance\nNatura Board\nSlots 1, 5: Max Attack > Attack Bonus\nSlots 2, 8: HP Increase %\nSlots 3, 6, 9: Power Shard Bonus\nCrit, Accuracy > Power Shard Bonus if crit/accuracy cap is not reached\nSlots 4: PVE Damage Boost > Multi Hit > Perfect Chance\nSlots 7: PVE Damage Tolerance > Endurance\nVarian Board\nSlots 1, 5: Max Attack > Attack Bonus\nSlots 2, 8: HP Increase %\nSlots 3, 6, 9: Power Shard Bonus\nCrit, Accuracy > Power Shard Bonus if crit/accuracy cap is not reached\nSlots 4: Front/Back Damage Boost > PVE Damage Boost\nSlots 7: PVE Damage Tolerance > Endurance\nSpecial Board\nSlots 1, 5: Max Attack > Attack Bonus\nSlots 2, 8: HP Increase %\nSlots 3, 6, 9: Power Shard Bonus\nCrit, Accuracy > Power Shard Bonus if crit/accuracy cap is not reached\nSlots 4: Double Chance (no backup, secondary, roll until you get Double Chance first)\nSlots 7: Damage Tolerance > Endurance\n* Stats above are written as follows: (Stat Prio 1 > Stat Prio 2, Stat Prio 2 option 2)",
       "headings": [
         {
           "id": "block-0738",
@@ -942,13 +942,13 @@
       ]
     },
     {
-      "slug": "class-passives",
-      "title": "Class Passives",
-      "category": "class-passives",
-      "summary": "The original guide marks this chapter as Coming soon.",
-      "status": "source-pending",
+      "slug": "class-builds",
+      "title": "Class builds",
+      "category": "class-builds",
+      "summary": "Where to find builds and loadouts for every class.",
+      "status": "source-backed",
       "sourceUrl": "https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/edit",
-      "searchText": "Class Passives\nThe original guide marks this chapter as Coming soon.",
+      "searchText": "Class builds\nWhere to find builds and loadouts for every class.\nNotmeter (the main site to track performance/dps/parses) now has a section that showcases all builds and loadouts across all classes. Link:\nhttps://notmeter.com/?view=setup-guide",
       "headings": []
     }
   ]

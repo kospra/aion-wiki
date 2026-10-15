@@ -1989,6 +1989,14 @@
     "reason": "Empty document spacing is normalized by article layout."
   },
   {
+    "sourceId": "block-1326",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "global-genus-stat-priorities",
+      "blockIds": ["block-1326"]
+    }
+  },
+  {
     "sourceId": "block-1327",
     "disposition": "layout-only",
     "reason": "Empty document spacing is normalized by article layout."
@@ -5616,12 +5624,28 @@
     "sourceId": "block-1266",
     "disposition": "omitted",
     "omission": "chapter-title",
-    "pageSlug": "class-passives",
+    "pageSlug": "class-builds",
     "reason": "Google Docs chapter title; the article header shows the chapter."
   },
   {
     "sourceId": "block-1267",
     "disposition": "layout-only",
     "reason": "Empty document spacing is normalized by article layout."
+  },
+  {
+    "sourceId": "block-1307",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "class-builds",
+      "blockIds": ["block-1307"]
+    }
+  },
+  {
+    "sourceId": "block-1308",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "class-builds",
+      "blockIds": ["block-1308"]
+    }
   }
 ]
