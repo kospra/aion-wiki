@@ -1989,6 +1989,11 @@
     "reason": "Empty document spacing is normalized by article layout."
   },
   {
+    "sourceId": "block-1327",
+    "disposition": "layout-only",
+    "reason": "Empty document spacing is normalized by article layout."
+  },
+  {
     "sourceId": "block-0777",
     "disposition": "rendered",
     "primary": {

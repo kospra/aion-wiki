@@ -1,6 +1,6 @@
 {
   "fingerprints": {
-    "html": "7649b39db516119a0595b110a81acfc27911e9215120acd9a018a615b547123c"
+    "html": "f44fc2e80c917acca38e9a8f7acf8aeef5f030598d9eba1b01f77b91c8bc72e5"
   },
   "blocks": [
     {
@@ -8538,7 +8538,7 @@
     {
       "id": "block-0724",
       "tag": "h4",
-      "text": "BIS Lines (slots) to shoot for on all boards EXCEPT “Special” Board :",
+      "text": "(KR/TW) BIS Lines (slots) to shoot for on all boards EXCEPT “Special” Board :",
       "numbers": [],
       "figureIds": [],
       "links": [],
@@ -8601,7 +8601,7 @@
     {
       "id": "block-0730",
       "tag": "h4",
-      "text": "BIS Lines (slots) to shoot for on Special Board (5th Board)",
+      "text": "(KR/TW) BIS Lines (slots) to shoot for on Special Board (5th Board)",
       "numbers": ["5"],
       "figureIds": [],
       "links": [],
@@ -8689,11 +8689,24 @@
     {
       "id": "block-0738",
       "tag": "h3",
-      "text": "GLOBAL BIS GENUS LINES",
+      "text": "***GLOBAL BIS GENUS LINES***",
       "numbers": [],
       "figureIds": [],
       "links": [],
-      "formatting": [],
+      "formatting": [
+        {
+          "text": "***",
+          "start": 0,
+          "end": 3,
+          "strong": true
+        },
+        {
+          "text": "GLOBAL BIS GENUS LINES***",
+          "start": 3,
+          "end": 28,
+          "strong": true
+        }
+      ],
       "anchor": "h.nbj6i1dt099h"
     },
     {
@@ -9229,6 +9242,31 @@
     },
     {
       "id": "block-0776",
+      "tag": "p",
+      "text": "",
+      "numbers": [],
+      "figureIds": [],
+      "links": [],
+      "formatting": []
+    },
+    {
+      "id": "block-1326",
+      "tag": "p",
+      "text": "* Stats above are written as follows: (Stat Prio 1 > Stat Prio 2, Stat Prio 2 option 2)",
+      "numbers": ["1", "2", "2", "2"],
+      "figureIds": [],
+      "links": [],
+      "formatting": [
+        {
+          "text": "* Stats above are written as follows: (Stat Prio 1 > Stat Prio 2, Stat Prio 2 option 2)",
+          "start": 0,
+          "end": 87,
+          "emphasis": true
+        }
+      ]
+    },
+    {
+      "id": "block-1327",
       "tag": "p",
       "text": "",
       "numbers": [],

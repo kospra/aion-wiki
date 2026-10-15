@@ -380,7 +380,7 @@
         "kind": "heading",
         "content": [
           {
-            "text": "BIS Lines (slots) to shoot for on all boards EXCEPT “Special” Board :"
+            "text": "(KR/TW) BIS Lines (slots) to shoot for on all boards EXCEPT “Special” Board :"
           }
         ],
         "level": 4
@@ -456,10 +456,7 @@
         "kind": "heading",
         "content": [
           {
-            "text": "BIS Lines (slots) to shoot for on "
-          },
-          {
-            "text": "Special Board (5th Board)"
+            "text": "(KR/TW) BIS Lines (slots) to shoot for on Special Board (5th Board)"
           }
         ],
         "level": 4
@@ -546,7 +543,8 @@
         "kind": "heading",
         "content": [
           {
-            "text": "GLOBAL BIS GENUS LINES"
+            "text": "***GLOBAL BIS GENUS LINES***",
+            "strong": true
           }
         ],
         "level": 3
