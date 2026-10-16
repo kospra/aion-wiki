@@ -148,6 +148,17 @@
         "level": 3
       },
       {
+        "id": "block-1297",
+        "sourceIds": ["block-1297"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Update: Potential is a PVP exclusive stat in Global, you can disregard this for PVE. The explanation below is how it works on the Asia server.",
+            "emphasis": true
+          }
+        ]
+      },
+      {
         "id": "block-0424",
         "sourceIds": ["block-0424"],
         "kind": "paragraph",

@@ -63,7 +63,7 @@ try {
     for (const route of [
       '/articles/gear-anatomy-and-stat-layers',
       '/articles/theostones',
-      '/articles/class-passives',
+      '/articles/class-builds',
       '/source',
     ])
       await visit(route);

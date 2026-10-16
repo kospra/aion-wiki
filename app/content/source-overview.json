@@ -74,19 +74,19 @@
       ]
     },
     {
-      "id": "block-0006",
-      "sourceIds": ["block-0006"],
+      "id": "block-1269",
+      "sourceIds": ["block-1269"],
       "kind": "paragraph",
       "content": [
         {
-          "text": "***Update Note 9/20/2026",
+          "text": "***Update Note 10/4/2026",
           "strong": true,
           "emphasis": true,
           "underline": true,
           "highlight": "#ffff00"
         },
         {
-          "text": ": Updated Stat Lines, Gear, and Genus the best I could given the info we know so far. There are for sure some big changes for global and it’s impossible for us to be 100% sure of ALL the changes until launch. Will update this doc with confirmed info as soon as I can. If there is any confirmed info that needs to be updated on this doc that you notice, please shoot me an X msg or DM on Discord. I have not yet updated the Wings section.",
+          "text": ": There are a LOT of changes for Global. I’ve updated everything we know so far. I’ve added a Chapter 12: Class Builds section that links you to builds.",
           "strong": true,
           "emphasis": true,
           "highlight": "#ffff00"
@@ -155,7 +155,7 @@
       "kind": "paragraph",
       "content": [
         {
-          "text": "I probably have around or close to 1k hours played. I play/played this game offstream a LOT, way more than I stream it. I have completed all the content in the game, including the pinnacle raids and got to just under 900k combat power. "
+          "text": "I probably have around or close to 1k hours played prior to Global Launch. I play/played this game offstream a LOT, way more than I stream it. I have completed all the content in the game, including the pinnacle raids and got to just under 900k combat power."
         }
       ]
     },
