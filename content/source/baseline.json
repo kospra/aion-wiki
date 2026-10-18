@@ -1,6 +1,6 @@
 {
   "fingerprints": {
-    "html": "f44fc2e80c917acca38e9a8f7acf8aeef5f030598d9eba1b01f77b91c8bc72e5"
+    "html": "6c5914cf18846a62d17cd32c515e3019852f0a7137858fc7f6d6eb135b431d78"
   },
   "blocks": [
     {
@@ -329,11 +329,80 @@
       "formatting": []
     },
     {
-      "id": "block-0025",
+      "id": "block-0026",
+      "tag": "p",
+      "text": "",
+      "numbers": [],
+      "figureIds": [],
+      "links": [],
+      "formatting": []
+    },
+    {
+      "id": "block-1328",
+      "tag": "p",
+      "text": "Global Credentials",
+      "numbers": [],
+      "figureIds": [],
+      "links": [],
+      "formatting": [
+        {
+          "text": "Global Credentials",
+          "start": 0,
+          "end": 18,
+          "strong": true,
+          "underline": true
+        }
+      ]
+    },
+    {
+      "id": "block-1329",
+      "tag": "p",
+      "text": "As of 10/17/26 I am the top ranked Gladiator on Global (Notmeter DPS rankings) between the 150k-175k Combat Power Bracket for Transcendence Dungeons and 11th overall on Transcendence (Shattered) - Top 10 being all over 200k Combat Power at the time. (My group rarely runs Deus)",
+      "numbers": ["10", "17", "26", "150", "175", "11", "10", "200"],
+      "figureIds": [],
+      "links": [],
+      "formatting": []
+    },
+    {
+      "id": "block-1330",
+      "tag": "p",
+      "text": "",
+      "numbers": [],
+      "figureIds": ["figure-093"],
+      "links": [],
+      "formatting": []
+    },
+    {
+      "id": "block-1331",
+      "tag": "p",
+      "text": "",
+      "numbers": [],
+      "figureIds": [],
+      "links": [],
+      "formatting": []
+    },
+    {
+      "id": "block-1332",
+      "tag": "p",
+      "text": "GLADIATOR OVERALL TRANSCENDENCE (SHATTERED) RANKINGS AS OF 10/17/26",
+      "numbers": ["10", "17", "26"],
+      "figureIds": [],
+      "links": [],
+      "formatting": [
+        {
+          "text": "GLADIATOR OVERALL TRANSCENDENCE (SHATTERED) RANKINGS AS OF 10/17/26",
+          "start": 0,
+          "end": 67,
+          "emphasis": true
+        }
+      ]
+    },
+    {
+      "id": "block-1333",
       "tag": "p",
       "text": "—",
       "numbers": [],
-      "figureIds": [],
+      "figureIds": ["figure-094"],
       "links": [],
       "formatting": [
         {
@@ -345,7 +414,7 @@
       ]
     },
     {
-      "id": "block-0026",
+      "id": "block-1334",
       "tag": "p",
       "text": "",
       "numbers": [],
@@ -15154,6 +15223,22 @@
       "src": "/images/guide/72bb3f26dabbe1e5adf0e5b621bf1df6eb7e205c550144e9723639c84d88589d.png",
       "width": 1493,
       "height": 1069
+    },
+    {
+      "id": "figure-093",
+      "sourceId": "block-1330",
+      "sha256": "5d1cd1391ee043d4873486ee5e88a1c2b3c471eb947a6654ab473353c1e065e5",
+      "src": "/images/guide/5d1cd1391ee043d4873486ee5e88a1c2b3c471eb947a6654ab473353c1e065e5.png",
+      "width": 1230,
+      "height": 806
+    },
+    {
+      "id": "figure-094",
+      "sourceId": "block-1333",
+      "sha256": "b9cb0488a2bdb591d6290209c038f096d363703c1a0183b4c7b711d14ab02097",
+      "src": "/images/guide/b9cb0488a2bdb591d6290209c038f096d363703c1a0183b4c7b711d14ab02097.png",
+      "width": 1266,
+      "height": 1150
     },
     {
       "id": "figure-003",

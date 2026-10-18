@@ -151,5 +151,25 @@
     "report": "content/source/changes/2026-10-15-0955.md",
     "baselineDigest": "f6af0c956a449a3eb80f07796780895ad67751cf9afc0f7d7547e50f60097bce",
     "pending": []
+  },
+  {
+    "capturedAt": "2026-10-18T09:38:21.893Z",
+    "fingerprints": {
+      "html": "6c5914cf18846a62d17cd32c515e3019852f0a7137858fc7f6d6eb135b431d78"
+    },
+    "updateNote": "***Update Note 10/4/2026: There are a LOT of changes for Global. I’ve updated everything we know so far. I’ve added a Chapter 12: Class Builds section that links you to builds.",
+    "blocks": 1301,
+    "figures": 93,
+    "nextBlock": 1335,
+    "nextFigure": 95,
+    "report": "content/source/changes/2026-10-18-0938.md",
+    "baselineDigest": "4130c4e75f2eed5599951f37979f329ebb060cc8b1b0581c749613a30c394579",
+    "pending": [
+      {
+        "sourceId": "block-1333",
+        "pageSlug": "about-the-source-and-author",
+        "reason": "A new h1, h5, h6, table, image group or image with text; place it by hand"
+      }
+    ]
   }
 ]
