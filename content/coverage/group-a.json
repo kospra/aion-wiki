@@ -215,6 +215,14 @@
     }
   },
   {
+    "sourceId": "block-1333",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "about-the-source-and-author",
+      "blockIds": ["block-1333"]
+    }
+  },
+  {
     "sourceId": "block-1334",
     "disposition": "layout-only",
     "reason": "Empty document spacing is normalized by article layout."
