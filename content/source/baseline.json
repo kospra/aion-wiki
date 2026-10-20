@@ -1,6 +1,6 @@
 {
   "fingerprints": {
-    "html": "6c5914cf18846a62d17cd32c515e3019852f0a7137858fc7f6d6eb135b431d78"
+    "html": "c04ed073ace6b211d5757447f40663ada9af28690703daf908b5b355d816ded8"
   },
   "blocks": [
     {
@@ -6997,6 +6997,35 @@
       "figureIds": [],
       "links": [],
       "formatting": []
+    },
+    {
+      "id": "block-1335",
+      "tag": "p",
+      "text": "*Global Update: It does not matter what card you feed into another, all of the experience is now the same for Global. You do NOT get bonus experience for feeding the same exact card and card type. All experience is transferred 1:1 (so if you feed a card into another…then feed that fed card into another, all the exp will transfer over)",
+      "numbers": ["1", "1"],
+      "figureIds": [],
+      "links": [],
+      "formatting": [
+        {
+          "text": "*",
+          "start": 0,
+          "end": 1,
+          "emphasis": true
+        },
+        {
+          "text": "Global Update:",
+          "start": 1,
+          "end": 15,
+          "strong": true,
+          "emphasis": true
+        },
+        {
+          "text": "It does not matter what card you feed into another, all of the experience is now the same for Global. You do NOT get bonus experience for feeding the same exact card and card type. All experience is transferred 1:1 (so if you feed a card into another…then feed that fed card into another, all the exp will transfer over)",
+          "start": 16,
+          "end": 336,
+          "emphasis": true
+        }
+      ]
     },
     {
       "id": "block-0564",
