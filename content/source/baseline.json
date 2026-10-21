@@ -1,6 +1,6 @@
 {
   "fingerprints": {
-    "html": "f44fc2e80c917acca38e9a8f7acf8aeef5f030598d9eba1b01f77b91c8bc72e5"
+    "html": "d349d4d83ffc6237ee4a0637b3cfc47509ce5d8623135be38e1b2de25c70991e"
   },
   "blocks": [
     {
@@ -329,11 +329,80 @@
       "formatting": []
     },
     {
-      "id": "block-0025",
+      "id": "block-0026",
+      "tag": "p",
+      "text": "",
+      "numbers": [],
+      "figureIds": [],
+      "links": [],
+      "formatting": []
+    },
+    {
+      "id": "block-1328",
+      "tag": "p",
+      "text": "Global Credentials",
+      "numbers": [],
+      "figureIds": [],
+      "links": [],
+      "formatting": [
+        {
+          "text": "Global Credentials",
+          "start": 0,
+          "end": 18,
+          "strong": true,
+          "underline": true
+        }
+      ]
+    },
+    {
+      "id": "block-1329",
+      "tag": "p",
+      "text": "As of 10/20/26 I am the top ranked Gladiator on Global (Notmeter DPS rankings) between the 150k-175k Combat Power Bracket for Transcendence Dungeons and 11th overall on Transcendence (Shattered) - Top 10 being all over 200k Combat Power at the time. (My group rarely runs Deus)",
+      "numbers": ["10", "20", "26", "150", "175", "11", "10", "200"],
+      "figureIds": [],
+      "links": [],
+      "formatting": []
+    },
+    {
+      "id": "block-1330",
+      "tag": "p",
+      "text": "",
+      "numbers": [],
+      "figureIds": ["figure-095"],
+      "links": [],
+      "formatting": []
+    },
+    {
+      "id": "block-1331",
+      "tag": "p",
+      "text": "",
+      "numbers": [],
+      "figureIds": [],
+      "links": [],
+      "formatting": []
+    },
+    {
+      "id": "block-1332",
+      "tag": "p",
+      "text": "GLADIATOR OVERALL TRANSCENDENCE (SHATTERED) RANKINGS AS OF 10/17/26",
+      "numbers": ["10", "17", "26"],
+      "figureIds": [],
+      "links": [],
+      "formatting": [
+        {
+          "text": "GLADIATOR OVERALL TRANSCENDENCE (SHATTERED) RANKINGS AS OF 10/17/26",
+          "start": 0,
+          "end": 67,
+          "emphasis": true
+        }
+      ]
+    },
+    {
+      "id": "block-1333",
       "tag": "p",
       "text": "—",
       "numbers": [],
-      "figureIds": [],
+      "figureIds": ["figure-094"],
       "links": [],
       "formatting": [
         {
@@ -345,7 +414,7 @@
       ]
     },
     {
-      "id": "block-0026",
+      "id": "block-1334",
       "tag": "p",
       "text": "",
       "numbers": [],
@@ -6928,6 +6997,35 @@
       "figureIds": [],
       "links": [],
       "formatting": []
+    },
+    {
+      "id": "block-1335",
+      "tag": "p",
+      "text": "*Global Update: It does not matter what card you feed into another, all of the experience is now the same for Global. You do NOT get bonus experience for feeding the same exact card and card type. All experience is transferred 1:1 (so if you feed a card into another…then feed that fed card into another, all the exp will transfer over)",
+      "numbers": ["1", "1"],
+      "figureIds": [],
+      "links": [],
+      "formatting": [
+        {
+          "text": "*",
+          "start": 0,
+          "end": 1,
+          "emphasis": true
+        },
+        {
+          "text": "Global Update:",
+          "start": 1,
+          "end": 15,
+          "strong": true,
+          "emphasis": true
+        },
+        {
+          "text": "It does not matter what card you feed into another, all of the experience is now the same for Global. You do NOT get bonus experience for feeding the same exact card and card type. All experience is transferred 1:1 (so if you feed a card into another…then feed that fed card into another, all the exp will transfer over)",
+          "start": 16,
+          "end": 336,
+          "emphasis": true
+        }
+      ]
     },
     {
       "id": "block-0564",
@@ -15154,6 +15252,22 @@
       "src": "/images/guide/72bb3f26dabbe1e5adf0e5b621bf1df6eb7e205c550144e9723639c84d88589d.png",
       "width": 1493,
       "height": 1069
+    },
+    {
+      "id": "figure-095",
+      "sourceId": "block-1330",
+      "sha256": "1badd2826458835ec3fdea6128da9d21044226d962e69aa8a0be80a2a3edd34b",
+      "src": "/images/guide/1badd2826458835ec3fdea6128da9d21044226d962e69aa8a0be80a2a3edd34b.png",
+      "width": 1237,
+      "height": 1011
+    },
+    {
+      "id": "figure-094",
+      "sourceId": "block-1333",
+      "sha256": "b9cb0488a2bdb591d6290209c038f096d363703c1a0183b4c7b711d14ab02097",
+      "src": "/images/guide/b9cb0488a2bdb591d6290209c038f096d363703c1a0183b4c7b711d14ab02097.png",
+      "width": 1266,
+      "height": 1150
     },
     {
       "id": "figure-003",

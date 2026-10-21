@@ -173,14 +173,57 @@
     "reason": "Empty document spacing is normalized by article layout."
   },
   {
-    "sourceId": "block-0025",
-    "disposition": "omitted",
-    "omission": "separator",
-    "pageSlug": "about-the-source-and-author",
-    "reason": "Google Docs divider line; article spacing separates sections."
+    "sourceId": "block-0026",
+    "disposition": "layout-only",
+    "reason": "Empty document spacing is normalized by article layout."
   },
   {
-    "sourceId": "block-0026",
+    "sourceId": "block-1328",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "about-the-source-and-author",
+      "blockIds": ["block-1328"]
+    }
+  },
+  {
+    "sourceId": "block-1329",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "about-the-source-and-author",
+      "blockIds": ["block-1329"]
+    }
+  },
+  {
+    "sourceId": "block-1330",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "about-the-source-and-author",
+      "blockIds": ["block-1330"]
+    }
+  },
+  {
+    "sourceId": "block-1331",
+    "disposition": "layout-only",
+    "reason": "Empty document spacing is normalized by article layout."
+  },
+  {
+    "sourceId": "block-1332",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "about-the-source-and-author",
+      "blockIds": ["block-1332"]
+    }
+  },
+  {
+    "sourceId": "block-1333",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "about-the-source-and-author",
+      "blockIds": ["block-1333"]
+    }
+  },
+  {
+    "sourceId": "block-1334",
     "disposition": "layout-only",
     "reason": "Empty document spacing is normalized by article layout."
   },

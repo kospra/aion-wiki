@@ -661,6 +661,29 @@
             "text": "You can feed whatever Arcana Card you have equipped into a new one if the new one has better lines. However, when you feed it into the new card you will lose a % of the experience you pumped into your current one, the EXP does not transfer over 1:1 (it’s still often worth transferring). You also gain bonus experience for feeding the same type of Arcana Card."
           }
         ]
+      },
+      {
+        "id": "block-1335",
+        "sourceIds": ["block-1335"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "*",
+            "emphasis": true
+          },
+          {
+            "text": "Global Update:",
+            "strong": true,
+            "emphasis": true
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "It does not matter what card you feed into another, all of the experience is now the same for Global. You do NOT get bonus experience for feeding the same exact card and card type. All experience is transferred 1:1 (so if you feed a card into another…then feed that fed card into another, all the exp will transfer over)",
+            "emphasis": true
+          }
+        ]
       }
     ]
   },

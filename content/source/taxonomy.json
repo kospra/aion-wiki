@@ -4,9 +4,9 @@
     "chapter": 0,
     "title": "About the source and author",
     "firstBlock": "block-0001",
-    "lastBlock": "block-0026",
-    "nonemptyBlocks": 19,
-    "figures": ["figure-001", "figure-002"]
+    "lastBlock": "block-1334",
+    "nonemptyBlocks": 23,
+    "figures": ["figure-001", "figure-002", "figure-095", "figure-094"]
   },
   {
     "slug": "gear-anatomy-and-stat-layers",
@@ -224,7 +224,7 @@
     "title": "Upgrading Arcana",
     "firstBlock": "block-0552",
     "lastBlock": "block-0564",
-    "nonemptyBlocks": 8,
+    "nonemptyBlocks": 9,
     "figures": [
       "figure-057",
       "figure-058",

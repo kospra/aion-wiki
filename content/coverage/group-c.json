@@ -390,6 +390,14 @@
     }
   },
   {
+    "sourceId": "block-1335",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "upgrading-arcana",
+      "blockIds": ["block-1335"]
+    }
+  },
+  {
     "sourceId": "block-0564",
     "disposition": "layout-only",
     "reason": "Empty document spacing is normalized by article layout."

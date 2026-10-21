@@ -217,6 +217,69 @@
       "figureId": "figure-002"
     },
     {
+      "id": "block-1328",
+      "sourceIds": ["block-1328"],
+      "kind": "paragraph",
+      "content": [
+        {
+          "text": "Global Credentials",
+          "strong": true,
+          "underline": true
+        }
+      ]
+    },
+    {
+      "id": "block-1329",
+      "sourceIds": ["block-1329"],
+      "kind": "paragraph",
+      "content": [
+        {
+          "text": "As of 10/20/26 I am the top ranked Gladiator on Global (Notmeter DPS rankings) between the 150k-175k Combat Power Bracket for Transcendence Dungeons and 11th overall on Transcendence (Shattered) - Top 10 being all over 200k Combat Power at the time. (My group rarely runs Deus)"
+        }
+      ]
+    },
+    {
+      "id": "block-1330",
+      "sourceIds": ["block-1330"],
+      "kind": "figure",
+      "figureId": "figure-095"
+    },
+    {
+      "id": "block-1332",
+      "sourceIds": ["block-1332"],
+      "kind": "paragraph",
+      "content": [
+        {
+          "text": "GLADIATOR OVERALL TRANSCENDENCE (SHATTERED) RANKINGS AS OF 10/17/26",
+          "emphasis": true
+        }
+      ]
+    },
+    {
+      "id": "block-1333",
+      "sourceIds": ["block-1333"],
+      "kind": "group",
+      "blocks": [
+        {
+          "id": "block-1333-figure-094",
+          "sourceIds": ["block-1333"],
+          "kind": "figure",
+          "figureId": "figure-094"
+        },
+        {
+          "id": "block-1333-text",
+          "sourceIds": ["block-1333"],
+          "kind": "paragraph",
+          "content": [
+            {
+              "text": "—",
+              "strong": true
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "research-attribution",
       "sourceIds": [],
       "kind": "note",
