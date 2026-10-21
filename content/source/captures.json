@@ -192,12 +192,6 @@
     "nextFigure": 96,
     "report": "content/source/changes/2026-10-21-1008.md",
     "baselineDigest": "840829f57da9bd54d689fcaf155a672efb34d7a6c86c339f3156c3e962b2f5d8",
-    "pending": [
-      {
-        "sourceId": "block-1330",
-        "pageSlug": "about-the-source-and-author",
-        "reason": "Its images changed; update the figures by hand"
-      }
-    ]
+    "pending": []
   }
 ]
