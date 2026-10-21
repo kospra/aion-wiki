@@ -1,6 +1,6 @@
 {
   "fingerprints": {
-    "html": "c04ed073ace6b211d5757447f40663ada9af28690703daf908b5b355d816ded8"
+    "html": "d349d4d83ffc6237ee4a0637b3cfc47509ce5d8623135be38e1b2de25c70991e"
   },
   "blocks": [
     {
@@ -357,8 +357,8 @@
     {
       "id": "block-1329",
       "tag": "p",
-      "text": "As of 10/17/26 I am the top ranked Gladiator on Global (Notmeter DPS rankings) between the 150k-175k Combat Power Bracket for Transcendence Dungeons and 11th overall on Transcendence (Shattered) - Top 10 being all over 200k Combat Power at the time. (My group rarely runs Deus)",
-      "numbers": ["10", "17", "26", "150", "175", "11", "10", "200"],
+      "text": "As of 10/20/26 I am the top ranked Gladiator on Global (Notmeter DPS rankings) between the 150k-175k Combat Power Bracket for Transcendence Dungeons and 11th overall on Transcendence (Shattered) - Top 10 being all over 200k Combat Power at the time. (My group rarely runs Deus)",
+      "numbers": ["10", "20", "26", "150", "175", "11", "10", "200"],
       "figureIds": [],
       "links": [],
       "formatting": []
@@ -368,7 +368,7 @@
       "tag": "p",
       "text": "",
       "numbers": [],
-      "figureIds": ["figure-093"],
+      "figureIds": ["figure-095"],
       "links": [],
       "formatting": []
     },
@@ -15254,12 +15254,12 @@
       "height": 1069
     },
     {
-      "id": "figure-093",
+      "id": "figure-095",
       "sourceId": "block-1330",
-      "sha256": "5d1cd1391ee043d4873486ee5e88a1c2b3c471eb947a6654ab473353c1e065e5",
-      "src": "/images/guide/5d1cd1391ee043d4873486ee5e88a1c2b3c471eb947a6654ab473353c1e065e5.png",
-      "width": 1230,
-      "height": 806
+      "sha256": "1badd2826458835ec3fdea6128da9d21044226d962e69aa8a0be80a2a3edd34b",
+      "src": "/images/guide/1badd2826458835ec3fdea6128da9d21044226d962e69aa8a0be80a2a3edd34b.png",
+      "width": 1237,
+      "height": 1011
     },
     {
       "id": "figure-094",
