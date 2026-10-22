@@ -1,6 +1,6 @@
 {
   "fingerprints": {
-    "html": "d349d4d83ffc6237ee4a0637b3cfc47509ce5d8623135be38e1b2de25c70991e"
+    "html": "88eeae036e07ae2aaac43a9ff4a68ca4a0a0b70cb169626a6edc535e7f49b487"
   },
   "blocks": [
     {
@@ -14664,8 +14664,8 @@
     {
       "id": "block-1220",
       "tag": "p",
-      "text": "Additional Notes: Combat Speed is a given S-tier individual stat that you stack as much as you can. This, however, is directly impacted by ping and FPS. When tested, a difference of 150-200 ping equated to roughly ≈ 50% ~ 70% damage. Contrary to popular belief, there were no major differences between classes. Templar, Brawler, and Assassin were the three classes tested and were roughly similar. Spiritmaster may be an outlier due to the passive pet damage",
-      "numbers": ["150", "200", "50", "70"],
+      "text": "Additional Notes: Combat Speed is a given S-tier individual stat that you stack as much as you can. This, however, is directly impacted by ping and FPS. When tested, a difference of 150-200 ping equated to roughly ≈ 15% ~ 20% damage. Contrary to popular belief, there were no major differences between classes. Templar, Brawler, and Assassin were the three classes tested and were roughly similar. Spiritmaster may be an outlier due to the passive pet damage.",
+      "numbers": ["150", "200", "15", "20"],
       "figureIds": [],
       "links": [],
       "formatting": [
@@ -14678,9 +14678,9 @@
           "highlight": "#f8f9fa"
         },
         {
-          "text": ": Combat Speed is a given S-tier individual stat that you stack as much as you can. This, however, is directly impacted by ping and FPS. When tested, a difference of 150-200 ping equated to roughly ≈ 50% ~ 70% damage. Contrary to popular belief, there were no major differences between classes. Templar, Brawler, and Assassin were the three classes tested and were roughly similar. Spiritmaster may be an outlier due to the passive pet damage",
+          "text": ": Combat Speed is a given S-tier individual stat that you stack as much as you can. This, however, is directly impacted by ping and FPS. When tested, a difference of 150-200 ping equated to roughly ≈ 15% ~ 20% damage. Contrary to popular belief, there were no major differences between classes. Templar, Brawler, and Assassin were the three classes tested and were roughly similar. Spiritmaster may be an outlier due to the passive pet damage.",
           "start": 16,
-          "end": 458,
+          "end": 459,
           "emphasis": true,
           "highlight": "#f8f9fa"
         }
