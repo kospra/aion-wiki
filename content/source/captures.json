@@ -220,17 +220,6 @@
     "nextFigure": 96,
     "report": "content/source/changes/2026-10-23-1003.md",
     "baselineDigest": "c892db62803143dc5da0a408fa8aa43e2c29048b77c5d0c6acc95cb99767440f",
-    "pending": [
-      {
-        "sourceId": "block-1338",
-        "pageSlug": "kr-class-wing-rankings-and-positional-faq",
-        "reason": "A new list item that starts a list or changes level; place it by hand"
-      },
-      {
-        "sourceId": "block-1339",
-        "pageSlug": "kr-class-wing-rankings-and-positional-faq",
-        "reason": "Follows block-1338, which is not placed yet; place both by hand"
-      }
-    ]
+    "pending": []
   }
 ]

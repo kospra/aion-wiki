@@ -2499,6 +2499,39 @@
         "level": 3
       },
       {
+        "id": "list-block-1338",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": true,
+        "items": [
+          [
+            {
+              "id": "block-1338",
+              "sourceIds": ["block-1338"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Awakened Pride Wings (63%)"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-1339",
+              "sourceIds": ["block-1339"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Talisra Wings (31%)"
+                }
+              ]
+            }
+          ]
+        ],
+        "start": 1
+      },
+      {
         "id": "block-0962",
         "sourceIds": ["block-0962"],
         "kind": "heading",

@@ -3381,6 +3381,22 @@
     }
   },
   {
+    "sourceId": "block-1338",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "kr-class-wing-rankings-and-positional-faq",
+      "blockIds": ["block-1338"]
+    }
+  },
+  {
+    "sourceId": "block-1339",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "kr-class-wing-rankings-and-positional-faq",
+      "blockIds": ["block-1339"]
+    }
+  },
+  {
     "sourceId": "block-0961",
     "disposition": "layout-only",
     "reason": "Empty document spacing is normalized by article layout."
