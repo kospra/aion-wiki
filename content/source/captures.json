@@ -207,5 +207,30 @@
     "report": "content/source/changes/2026-10-22-1011.md",
     "baselineDigest": "33948476bc918b1c4a2ba2056976fef1b3049b0498c9a31c69b3328d13d5d185",
     "pending": []
+  },
+  {
+    "capturedAt": "2026-10-23T10:03:57.112Z",
+    "fingerprints": {
+      "html": "3654efd3e8cb2030c917e66dcd72eac9e42861f0c26efe04da39085c2ec230ff"
+    },
+    "updateNote": "***Update Note 10/4/2026: There are a LOT of changes for Global. I’ve updated everything we know so far. I’ve added a Chapter 12: Class Builds section that links you to builds.",
+    "blocks": 1296,
+    "figures": 93,
+    "nextBlock": 1348,
+    "nextFigure": 96,
+    "report": "content/source/changes/2026-10-23-1003.md",
+    "baselineDigest": "c892db62803143dc5da0a408fa8aa43e2c29048b77c5d0c6acc95cb99767440f",
+    "pending": [
+      {
+        "sourceId": "block-1338",
+        "pageSlug": "kr-class-wing-rankings-and-positional-faq",
+        "reason": "A new list item that starts a list or changes level; place it by hand"
+      },
+      {
+        "sourceId": "block-1339",
+        "pageSlug": "kr-class-wing-rankings-and-positional-faq",
+        "reason": "Follows block-1338, which is not placed yet; place both by hand"
+      }
+    ]
   }
 ]

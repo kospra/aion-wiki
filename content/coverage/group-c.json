@@ -2319,11 +2319,11 @@
     "reason": "Empty document spacing is normalized by article layout."
   },
   {
-    "sourceId": "block-0818",
+    "sourceId": "block-1336",
     "disposition": "rendered",
     "primary": {
       "pageSlug": "wing-stat-catalog",
-      "blockIds": ["block-0818"]
+      "blockIds": ["block-1336"]
     }
   },
   {
@@ -2691,11 +2691,11 @@
     "reason": "Empty document spacing is normalized by article layout."
   },
   {
-    "sourceId": "block-0866",
+    "sourceId": "block-1337",
     "disposition": "rendered",
     "primary": {
       "pageSlug": "wing-stat-catalog",
-      "blockIds": ["block-0866"]
+      "blockIds": ["block-1337"]
     }
   },
   {
@@ -3381,43 +3381,6 @@
     }
   },
   {
-    "sourceId": "block-0956",
-    "disposition": "rendered",
-    "primary": {
-      "pageSlug": "kr-class-wing-rankings-and-positional-faq",
-      "blockIds": ["block-0956"]
-    }
-  },
-  {
-    "sourceId": "block-0957",
-    "disposition": "rendered",
-    "primary": {
-      "pageSlug": "kr-class-wing-rankings-and-positional-faq",
-      "blockIds": ["block-0957"]
-    }
-  },
-  {
-    "sourceId": "block-0958",
-    "disposition": "rendered",
-    "primary": {
-      "pageSlug": "kr-class-wing-rankings-and-positional-faq",
-      "blockIds": ["block-0958"]
-    }
-  },
-  {
-    "sourceId": "block-0959",
-    "disposition": "layout-only",
-    "reason": "Empty document spacing is normalized by article layout."
-  },
-  {
-    "sourceId": "block-0960",
-    "disposition": "rendered",
-    "primary": {
-      "pageSlug": "kr-class-wing-rankings-and-positional-faq",
-      "blockIds": ["block-0960"]
-    }
-  },
-  {
     "sourceId": "block-0961",
     "disposition": "layout-only",
     "reason": "Empty document spacing is normalized by article layout."
@@ -3431,14 +3394,6 @@
     }
   },
   {
-    "sourceId": "block-0963",
-    "disposition": "rendered",
-    "primary": {
-      "pageSlug": "kr-class-wing-rankings-and-positional-faq",
-      "blockIds": ["block-0963"]
-    }
-  },
-  {
     "sourceId": "block-0964",
     "disposition": "rendered",
     "primary": {
@@ -3447,11 +3402,19 @@
     }
   },
   {
-    "sourceId": "block-0965",
+    "sourceId": "block-1340",
     "disposition": "rendered",
     "primary": {
       "pageSlug": "kr-class-wing-rankings-and-positional-faq",
-      "blockIds": ["block-0965"]
+      "blockIds": ["block-1340"]
+    }
+  },
+  {
+    "sourceId": "block-1341",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "kr-class-wing-rankings-and-positional-faq",
+      "blockIds": ["block-1341"]
     }
   },
   {
@@ -3484,11 +3447,11 @@
     }
   },
   {
-    "sourceId": "block-0970",
+    "sourceId": "block-1342",
     "disposition": "rendered",
     "primary": {
       "pageSlug": "kr-class-wing-rankings-and-positional-faq",
-      "blockIds": ["block-0970"]
+      "blockIds": ["block-1342"]
     }
   },
   {
@@ -3521,11 +3484,11 @@
     }
   },
   {
-    "sourceId": "block-0975",
+    "sourceId": "block-1343",
     "disposition": "rendered",
     "primary": {
       "pageSlug": "kr-class-wing-rankings-and-positional-faq",
-      "blockIds": ["block-0975"]
+      "blockIds": ["block-1343"]
     }
   },
   {
@@ -3558,11 +3521,11 @@
     }
   },
   {
-    "sourceId": "block-0980",
+    "sourceId": "block-1344",
     "disposition": "rendered",
     "primary": {
       "pageSlug": "kr-class-wing-rankings-and-positional-faq",
-      "blockIds": ["block-0980"]
+      "blockIds": ["block-1344"]
     }
   },
   {
@@ -3632,11 +3595,11 @@
     }
   },
   {
-    "sourceId": "block-0990",
+    "sourceId": "block-1345",
     "disposition": "rendered",
     "primary": {
       "pageSlug": "kr-class-wing-rankings-and-positional-faq",
-      "blockIds": ["block-0990"]
+      "blockIds": ["block-1345"]
     }
   },
   {
@@ -3669,11 +3632,11 @@
     }
   },
   {
-    "sourceId": "block-0995",
+    "sourceId": "block-1346",
     "disposition": "rendered",
     "primary": {
       "pageSlug": "kr-class-wing-rankings-and-positional-faq",
-      "blockIds": ["block-0995"]
+      "blockIds": ["block-1346"]
     }
   },
   {
@@ -3698,19 +3661,19 @@
     }
   },
   {
+    "sourceId": "block-1347",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "kr-class-wing-rankings-and-positional-faq",
+      "blockIds": ["block-1347"]
+    }
+  },
+  {
     "sourceId": "block-0999",
     "disposition": "rendered",
     "primary": {
       "pageSlug": "kr-class-wing-rankings-and-positional-faq",
       "blockIds": ["block-0999"]
-    }
-  },
-  {
-    "sourceId": "block-1000",
-    "disposition": "rendered",
-    "primary": {
-      "pageSlug": "kr-class-wing-rankings-and-positional-faq",
-      "blockIds": ["block-1000"]
     }
   },
   {
@@ -3740,27 +3703,6 @@
     "primary": {
       "pageSlug": "kr-class-wing-rankings-and-positional-faq",
       "blockIds": ["block-1004"]
-    }
-  },
-  {
-    "sourceId": "block-1005",
-    "disposition": "layout-only",
-    "reason": "Empty document spacing is normalized by article layout."
-  },
-  {
-    "sourceId": "block-1006",
-    "disposition": "rendered",
-    "primary": {
-      "pageSlug": "kr-class-wing-rankings-and-positional-faq",
-      "blockIds": ["block-1006"]
-    }
-  },
-  {
-    "sourceId": "block-1007",
-    "disposition": "rendered",
-    "primary": {
-      "pageSlug": "kr-class-wing-rankings-and-positional-faq",
-      "blockIds": ["block-1007"]
     }
   },
   {
