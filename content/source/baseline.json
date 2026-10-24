@@ -1,6 +1,6 @@
 {
   "fingerprints": {
-    "html": "d349d4d83ffc6237ee4a0637b3cfc47509ce5d8623135be38e1b2de25c70991e"
+    "html": "3654efd3e8cb2030c917e66dcd72eac9e42861f0c26efe04da39085c2ec230ff"
   },
   "blocks": [
     {
@@ -1930,7 +1930,7 @@
     {
       "id": "block-1274",
       "tag": "li",
-      "text": "Dungeon Weapon",
+      "text": "Dungeon Weapon (Aulumus)",
       "numbers": [],
       "figureIds": [],
       "links": [],
@@ -1981,8 +1981,8 @@
     {
       "id": "block-1278",
       "tag": "li",
-      "text": "4 Stat Lines",
-      "numbers": ["4"],
+      "text": "3 Stat Lines",
+      "numbers": ["3"],
       "figureIds": [],
       "links": [],
       "formatting": [
@@ -9848,10 +9848,10 @@
       "formatting": []
     },
     {
-      "id": "block-0818",
+      "id": "block-1336",
       "tag": "h3",
-      "text": "Awaken Pride Wings",
-      "numbers": [],
+      "text": "Awaken Pride Wings (Avail After Chapter 1 Expansion)",
+      "numbers": ["1"],
       "figureIds": [],
       "links": [],
       "formatting": []
@@ -10416,10 +10416,10 @@
       "formatting": []
     },
     {
-      "id": "block-0866",
+      "id": "block-1337",
       "tag": "h3",
-      "text": "Eroded Wings (BIS Equip for Front Attackers)",
-      "numbers": [],
+      "text": "Eroded Wings (Avail After Chapter 1 Expansion)",
+      "numbers": ["1"],
       "figureIds": [],
       "links": [],
       "formatting": []
@@ -11428,8 +11428,8 @@
     {
       "id": "block-0951",
       "tag": "h3",
-      "text": "TOP WINGS FOR EACH CLASS (KR as of 8/21/2026)",
-      "numbers": ["8", "21", "2026"],
+      "text": "TOP WINGS FOR EACH CLASS (KR as of 10/22/2026)",
+      "numbers": ["10", "22", "2026"],
       "figureIds": [],
       "links": [],
       "formatting": []
@@ -11483,10 +11483,10 @@
       "formatting": []
     },
     {
-      "id": "block-0956",
+      "id": "block-1338",
       "tag": "li",
-      "text": "Talisra’s Wings (58%)",
-      "numbers": ["58"],
+      "text": "Awakened Pride Wings (63%)",
+      "numbers": ["63"],
       "figureIds": [],
       "links": [],
       "formatting": [],
@@ -11495,68 +11495,16 @@
       "level": 0
     },
     {
-      "id": "block-0957",
+      "id": "block-1339",
       "tag": "li",
-      "text": "Awaken Pride Wings (30%)",
-      "numbers": ["30"],
+      "text": "Talisra Wings (31%)",
+      "numbers": ["31"],
       "figureIds": [],
       "links": [],
       "formatting": [],
       "ordered": true,
       "listStart": 2,
       "level": 0
-    },
-    {
-      "id": "block-0958",
-      "tag": "li",
-      "text": "Illusory Echo Wings (3%)",
-      "numbers": ["3"],
-      "figureIds": [],
-      "links": [],
-      "formatting": [],
-      "ordered": true,
-      "listStart": 3,
-      "level": 0
-    },
-    {
-      "id": "block-0959",
-      "tag": "p",
-      "text": "",
-      "numbers": [],
-      "figureIds": [],
-      "links": [],
-      "formatting": []
-    },
-    {
-      "id": "block-0960",
-      "tag": "p",
-      "text": "Additional Notes: Awaken Pride Wings just released and will overtake the Talisra",
-      "numbers": [],
-      "figureIds": [],
-      "links": [],
-      "formatting": [
-        {
-          "text": "Additional Notes",
-          "start": 0,
-          "end": 16,
-          "emphasis": true,
-          "underline": true,
-          "highlight": "#f8f9fa"
-        },
-        {
-          "text": ":",
-          "start": 16,
-          "end": 17,
-          "emphasis": true,
-          "highlight": "#f8f9fa"
-        },
-        {
-          "text": "Awaken Pride Wings just released and will overtake the Talisra",
-          "start": 18,
-          "end": 80,
-          "highlight": "#f8f9fa"
-        }
-      ]
     },
     {
       "id": "block-0961",
@@ -11577,10 +11525,10 @@
       "formatting": []
     },
     {
-      "id": "block-0963",
+      "id": "block-0964",
       "tag": "li",
-      "text": "Erroded Wings (60%)",
-      "numbers": ["60"],
+      "text": "Talisra Wings (85%)",
+      "numbers": ["85"],
       "figureIds": [],
       "links": [],
       "formatting": [],
@@ -11589,10 +11537,10 @@
       "level": 0
     },
     {
-      "id": "block-0964",
+      "id": "block-1340",
       "tag": "li",
-      "text": "Talisra Wings (34.5%)",
-      "numbers": ["34.5"],
+      "text": "Eroded Wings (12.5%)",
+      "numbers": ["12.5"],
       "figureIds": [],
       "links": [],
       "formatting": [],
@@ -11601,9 +11549,9 @@
       "level": 0
     },
     {
-      "id": "block-0965",
+      "id": "block-1341",
       "tag": "li",
-      "text": "Salvation (1.5%)",
+      "text": "Brawler Wings (1.5%)",
       "numbers": ["1.5"],
       "figureIds": [],
       "links": [],
@@ -11633,8 +11581,8 @@
     {
       "id": "block-0968",
       "tag": "li",
-      "text": "Erroded Wings (77%)",
-      "numbers": ["77"],
+      "text": "Erroded Wings (83.5%)",
+      "numbers": ["83.5"],
       "figureIds": [],
       "links": [],
       "formatting": [],
@@ -11645,8 +11593,8 @@
     {
       "id": "block-0969",
       "tag": "li",
-      "text": "Talisra Wings (9%)",
-      "numbers": ["9"],
+      "text": "Talisra Wings (7.5%)",
+      "numbers": ["7.5"],
       "figureIds": [],
       "links": [],
       "formatting": [],
@@ -11655,10 +11603,10 @@
       "level": 0
     },
     {
-      "id": "block-0970",
+      "id": "block-1342",
       "tag": "li",
-      "text": "Brawler Wings (3.5%)",
-      "numbers": ["3.5"],
+      "text": "Blue Lightning Wings (5%)",
+      "numbers": ["5"],
       "figureIds": [],
       "links": [],
       "formatting": [],
@@ -11687,8 +11635,8 @@
     {
       "id": "block-0973",
       "tag": "li",
-      "text": "Erroded Wings (73%)",
-      "numbers": ["73"],
+      "text": "Erroded Wings (83%)",
+      "numbers": ["83"],
       "figureIds": [],
       "links": [],
       "formatting": [],
@@ -11699,8 +11647,8 @@
     {
       "id": "block-0974",
       "tag": "li",
-      "text": "Talisra’s Wings (18.5%)",
-      "numbers": ["18.5"],
+      "text": "Talisra’s Wings (10.5%)",
+      "numbers": ["10.5"],
       "figureIds": [],
       "links": [],
       "formatting": [],
@@ -11709,10 +11657,10 @@
       "level": 0
     },
     {
-      "id": "block-0975",
+      "id": "block-1343",
       "tag": "li",
-      "text": "Dark Veil Wings (3.5%)",
-      "numbers": ["3.5"],
+      "text": "Brawler Wings (3%)",
+      "numbers": ["3"],
       "figureIds": [],
       "links": [],
       "formatting": [],
@@ -11741,8 +11689,8 @@
     {
       "id": "block-0978",
       "tag": "li",
-      "text": "Erroded Wings (54.5%)",
-      "numbers": ["54.5"],
+      "text": "Erroded Wings (73%)",
+      "numbers": ["73"],
       "figureIds": [],
       "links": [],
       "formatting": [],
@@ -11753,8 +11701,8 @@
     {
       "id": "block-0979",
       "tag": "li",
-      "text": "Talisra Wings (25.5%)",
-      "numbers": ["25.5"],
+      "text": "Talisra Wings (15.5%)",
+      "numbers": ["15.5"],
       "figureIds": [],
       "links": [],
       "formatting": [],
@@ -11763,10 +11711,10 @@
       "level": 0
     },
     {
-      "id": "block-0980",
+      "id": "block-1344",
       "tag": "li",
-      "text": "Illusory Echo Wings (6.5%)",
-      "numbers": ["6.5"],
+      "text": "Awakened Pride Wings (3.5%)",
+      "numbers": ["3.5"],
       "figureIds": [],
       "links": [],
       "formatting": [],
@@ -11795,8 +11743,8 @@
     {
       "id": "block-0983",
       "tag": "li",
-      "text": "Talisra Wings (91.5%)",
-      "numbers": ["91.5"],
+      "text": "Talisra Wings (95%)",
+      "numbers": ["95"],
       "figureIds": [],
       "links": [],
       "formatting": [],
@@ -11807,8 +11755,8 @@
     {
       "id": "block-0984",
       "tag": "li",
-      "text": "Erroded Wings (5%)",
-      "numbers": ["5"],
+      "text": "Erroded Wings (3%)",
+      "numbers": ["3"],
       "figureIds": [],
       "links": [],
       "formatting": [],
@@ -11819,8 +11767,8 @@
     {
       "id": "block-0985",
       "tag": "li",
-      "text": "Brawler Wings (2.5%)",
-      "numbers": ["2.5"],
+      "text": "Brawler Wings (1%)",
+      "numbers": ["1"],
       "figureIds": [],
       "links": [],
       "formatting": [],
@@ -11849,8 +11797,8 @@
     {
       "id": "block-0988",
       "tag": "li",
-      "text": "Erroded Wings (45%)",
-      "numbers": ["45"],
+      "text": "Erroded Wings (59.5%)",
+      "numbers": ["59.5"],
       "figureIds": [],
       "links": [],
       "formatting": [],
@@ -11861,8 +11809,8 @@
     {
       "id": "block-0989",
       "tag": "li",
-      "text": "Talisra Wings (43.5%)",
-      "numbers": ["43.5"],
+      "text": "Talisra Wings (29.5%)",
+      "numbers": ["29.5"],
       "figureIds": [],
       "links": [],
       "formatting": [],
@@ -11871,10 +11819,10 @@
       "level": 0
     },
     {
-      "id": "block-0990",
+      "id": "block-1345",
       "tag": "li",
-      "text": "Brawler Wings (5.5%)",
-      "numbers": ["5.5"],
+      "text": "Awakened Pride (4%)",
+      "numbers": ["4"],
       "figureIds": [],
       "links": [],
       "formatting": [],
@@ -11903,8 +11851,8 @@
     {
       "id": "block-0993",
       "tag": "li",
-      "text": "Eroded Wings (45%)",
-      "numbers": ["45"],
+      "text": "Eroded Wings (53%)",
+      "numbers": ["53"],
       "figureIds": [],
       "links": [],
       "formatting": [],
@@ -11915,8 +11863,8 @@
     {
       "id": "block-0994",
       "tag": "li",
-      "text": "Talisra Wings (35%)",
-      "numbers": ["35"],
+      "text": "Talisra Wings (34%)",
+      "numbers": ["34"],
       "figureIds": [],
       "links": [],
       "formatting": [],
@@ -11925,10 +11873,10 @@
       "level": 0
     },
     {
-      "id": "block-0995",
+      "id": "block-1346",
       "tag": "li",
-      "text": "Illusory Echo Wings (9%)",
-      "numbers": ["9"],
+      "text": "Awaken Pride (5%)",
+      "numbers": ["5"],
       "figureIds": [],
       "links": [],
       "formatting": [],
@@ -11957,8 +11905,8 @@
     {
       "id": "block-0998",
       "tag": "li",
-      "text": "Eroded Wings (45%)",
-      "numbers": ["45"],
+      "text": "Eroded Wings (49%)",
+      "numbers": ["49"],
       "figureIds": [],
       "links": [],
       "formatting": [],
@@ -11967,10 +11915,10 @@
       "level": 0
     },
     {
-      "id": "block-0999",
+      "id": "block-1347",
       "tag": "li",
-      "text": "Talisra Wings (23%)",
-      "numbers": ["23"],
+      "text": "Awakened Pride (25%)",
+      "numbers": ["25"],
       "figureIds": [],
       "links": [],
       "formatting": [],
@@ -11979,10 +11927,10 @@
       "level": 0
     },
     {
-      "id": "block-1000",
+      "id": "block-0999",
       "tag": "li",
-      "text": "Awaken Pride Wings (12.5%)",
-      "numbers": ["12.5"],
+      "text": "Talisra Wings (21%)",
+      "numbers": ["21"],
       "figureIds": [],
       "links": [],
       "formatting": [],
@@ -12035,7 +11983,7 @@
     {
       "id": "block-1004",
       "tag": "p",
-      "text": "A: Frontal/Back Attack Damage Boost is a newer stat that was introduced and it is in its own multiplicative damage bucket. Due to the nature of Front/Back Damage Boost being a very high value damage stat, ranged classes have begun to incorporate it into their builds despite having less access to the stat compared to melee positional classes",
+      "text": "A: Frontal/Back Attack Damage Boost is a newer stat that was introduced and it is in its own multiplicative damage bucket. Due to the nature of Front/Back Damage Boost being a very high value damage stat, ranged classes have begun to incorporate it into their builds despite having less access to the stat compared to melee positional classes. NC has even confirmed that all but Assassins are attacking from the front. There is a good chance that this gets adjusted with most players in KR thinking they may add some kind of Elemental Damage Boost stat.",
       "numbers": [],
       "figureIds": [],
       "links": [],
@@ -12044,47 +11992,6 @@
           "text": "A:",
           "start": 0,
           "end": 2,
-          "strong": true
-        }
-      ]
-    },
-    {
-      "id": "block-1005",
-      "tag": "p",
-      "text": "",
-      "numbers": [],
-      "figureIds": [],
-      "links": [],
-      "formatting": []
-    },
-    {
-      "id": "block-1006",
-      "tag": "p",
-      "text": "Q: What about Sorcerer and Spiritmaster, it doesn’t seem like they are running it?",
-      "numbers": [],
-      "figureIds": [],
-      "links": [],
-      "formatting": [
-        {
-          "text": "Q:",
-          "start": 0,
-          "end": 2,
-          "strong": true
-        }
-      ]
-    },
-    {
-      "id": "block-1007",
-      "tag": "p",
-      "text": "A: Simply put, these two classes have abilities in their kit that do not take advantage of Front/Back Attack Boost.",
-      "numbers": [],
-      "figureIds": [],
-      "links": [],
-      "formatting": [
-        {
-          "text": "A",
-          "start": 0,
-          "end": 1,
           "strong": true
         }
       ]
@@ -14664,8 +14571,8 @@
     {
       "id": "block-1220",
       "tag": "p",
-      "text": "Additional Notes: Combat Speed is a given S-tier individual stat that you stack as much as you can. This, however, is directly impacted by ping and FPS. When tested, a difference of 150-200 ping equated to roughly ≈ 50% ~ 70% damage. Contrary to popular belief, there were no major differences between classes. Templar, Brawler, and Assassin were the three classes tested and were roughly similar. Spiritmaster may be an outlier due to the passive pet damage",
-      "numbers": ["150", "200", "50", "70"],
+      "text": "Additional Notes: Combat Speed is a given S-tier individual stat that you stack as much as you can. This, however, is directly impacted by ping and FPS. When tested, a difference of 150-200 ping equated to roughly ≈ 15% ~ 20% damage. Contrary to popular belief, there were no major differences between classes. Templar, Brawler, and Assassin were the three classes tested and were roughly similar. Spiritmaster may be an outlier due to the passive pet damage.",
+      "numbers": ["150", "200", "15", "20"],
       "figureIds": [],
       "links": [],
       "formatting": [
@@ -14678,9 +14585,9 @@
           "highlight": "#f8f9fa"
         },
         {
-          "text": ": Combat Speed is a given S-tier individual stat that you stack as much as you can. This, however, is directly impacted by ping and FPS. When tested, a difference of 150-200 ping equated to roughly ≈ 50% ~ 70% damage. Contrary to popular belief, there were no major differences between classes. Templar, Brawler, and Assassin were the three classes tested and were roughly similar. Spiritmaster may be an outlier due to the passive pet damage",
+          "text": ": Combat Speed is a given S-tier individual stat that you stack as much as you can. This, however, is directly impacted by ping and FPS. When tested, a difference of 150-200 ping equated to roughly ≈ 15% ~ 20% damage. Contrary to popular belief, there were no major differences between classes. Templar, Brawler, and Assassin were the three classes tested and were roughly similar. Spiritmaster may be an outlier due to the passive pet damage.",
           "start": 16,
-          "end": 458,
+          "end": 459,
           "emphasis": true,
           "highlight": "#f8f9fa"
         }
