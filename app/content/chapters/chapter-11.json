@@ -79,7 +79,22 @@
         "kind": "paragraph",
         "content": [
           {
-            "text": "The following shows the damage efficiency for offensive stats based on current end-game Korea (on an ideal build) which is currently at the start of Season 1 (Start of level 50 and Lava Heart armor introduction). These stats also incorporate support buffs.",
+            "text": "The following shows the damage efficiency for offensive stats based on current end-game",
+            "emphasis": true
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Korea",
+            "strong": true,
+            "emphasis": true
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "(on an ideal build) which is currently at the start of Season 1 (Start of level 50 and Lava Heart armor introduction). These stats also incorporate support buffs.",
             "emphasis": true
           }
         ]
@@ -686,7 +701,7 @@
         "kind": "heading",
         "content": [
           {
-            "text": "End-Game (KR) Damage Efficiency Numbers",
+            "text": "End-Game (KR) Damage Efficiency Numbers (GLOBAL IS DIFFERENT, will update Global numbers soon)",
             "strong": true
           }
         ],
@@ -1577,11 +1592,41 @@
         "kind": "paragraph",
         "content": [
           {
-            "text": "Double Chance",
+            "text": "KR: Double Chance > Front/Back Attack Boost > Weapon Damage Boost > ≈ Critical Damage Boost > Damage Boost",
             "highlight": "#f8f9fa"
-          },
+          }
+        ]
+      },
+      {
+        "id": "block-1349",
+        "sourceIds": ["block-1349"],
+        "kind": "paragraph",
+        "content": [
           {
-            "text": " > Front/Back Attack Boost > Weapon Damage Boost > ≈ Critical Damage Boost > Damage Boost",
+            "text": "GLOBAL: Double Chance > Front/Back Attack Boost > Weapon Damage Boost > Damage Boost > Critical Damage Boost",
+            "highlight": "#f8f9fa"
+          }
+        ]
+      },
+      {
+        "id": "block-1350",
+        "sourceIds": ["block-1350"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "(Critical Damage Boost loses effectiveness due to Global’s 50% Crit Cap)",
+            "emphasis": true,
+            "highlight": "#f8f9fa"
+          }
+        ]
+      },
+      {
+        "id": "block-1352",
+        "sourceIds": ["block-1352"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "KR & GLOBAL",
             "highlight": "#f8f9fa"
           }
         ]

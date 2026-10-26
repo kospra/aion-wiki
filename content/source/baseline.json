@@ -1,6 +1,6 @@
 {
   "fingerprints": {
-    "html": "3654efd3e8cb2030c917e66dcd72eac9e42861f0c26efe04da39085c2ec230ff"
+    "html": "4a5bd496779030028035a0de3e1cddd0aa8c3444aa77d4b6006693c1d42dcce1"
   },
   "blocks": [
     {
@@ -103,26 +103,26 @@
       ]
     },
     {
-      "id": "block-1269",
+      "id": "block-1348",
       "tag": "p",
-      "text": "***Update Note 10/4/2026: There are a LOT of changes for Global. I’ve updated everything we know so far. I’ve added a Chapter 12: Class Builds section that links you to builds.",
-      "numbers": ["10", "4", "2026", "12"],
+      "text": "***Update Note 10/25/2026: Updated stat efficiency stuff including TLDR, full Global stat efficiency numbers will be updated soon. Also updated Genus (first board)",
+      "numbers": ["10", "25", "2026"],
       "figureIds": [],
       "links": [],
       "formatting": [
         {
-          "text": "***Update Note 10/4/2026",
+          "text": "***Update Note 10/25/2026",
           "start": 0,
-          "end": 24,
+          "end": 25,
           "strong": true,
           "emphasis": true,
           "underline": true,
           "highlight": "#ffff00"
         },
         {
-          "text": ": There are a LOT of changes for Global. I’ve updated everything we know so far. I’ve added a Chapter 12: Class Builds section that links you to builds.",
-          "start": 24,
-          "end": 176,
+          "text": ": Updated stat efficiency stuff including TLDR, full Global stat efficiency numbers will be updated soon. Also updated Genus (first board)",
+          "start": 25,
+          "end": 163,
           "strong": true,
           "emphasis": true,
           "highlight": "#ffff00"
@@ -9003,7 +9003,7 @@
     {
       "id": "block-0746",
       "tag": "li",
-      "text": "Slots 4: Critical Damage Boost > Damage Boost, PVE Damage Boost",
+      "text": "Slots 4: Damage Boost, PVE Damage Boost, Critical Damage Boost",
       "numbers": ["4"],
       "figureIds": [],
       "links": [],
@@ -12327,8 +12327,21 @@
       "links": [],
       "formatting": [
         {
-          "text": "The following shows the damage efficiency for offensive stats based on current end-game Korea (on an ideal build) which is currently at the start of Season 1 (Start of level 50 and Lava Heart armor introduction). These stats also incorporate support buffs.",
+          "text": "The following shows the damage efficiency for offensive stats based on current end-game",
           "start": 0,
+          "end": 87,
+          "emphasis": true
+        },
+        {
+          "text": "Korea",
+          "start": 88,
+          "end": 93,
+          "strong": true,
+          "emphasis": true
+        },
+        {
+          "text": "(on an ideal build) which is currently at the start of Season 1 (Start of level 50 and Lava Heart armor introduction). These stats also incorporate support buffs.",
+          "start": 94,
           "end": 256,
           "emphasis": true
         }
@@ -13058,15 +13071,15 @@
     {
       "id": "block-1084",
       "tag": "h3",
-      "text": "End-Game (KR) Damage Efficiency Numbers",
+      "text": "End-Game (KR) Damage Efficiency Numbers (GLOBAL IS DIFFERENT, will update Global numbers soon)",
       "numbers": [],
       "figureIds": [],
       "links": [],
       "formatting": [
         {
-          "text": "End-Game (KR) Damage Efficiency Numbers",
+          "text": "End-Game (KR) Damage Efficiency Numbers (GLOBAL IS DIFFERENT, will update Global numbers soon)",
           "start": 0,
-          "end": 39,
+          "end": 94,
           "strong": true
         }
       ],
@@ -13842,21 +13855,21 @@
     {
       "id": "block-1155",
       "tag": "p",
-      "text": "Double Chance > Front/Back Attack Boost > Weapon Damage Boost > ≈ Critical Damage Boost > Damage Boost",
+      "text": "KR: Double Chance > Front/Back Attack Boost > Weapon Damage Boost > ≈ Critical Damage Boost > Damage Boost",
       "numbers": [],
       "figureIds": [],
       "links": [],
       "formatting": [
         {
-          "text": "Double Chance",
+          "text": "KR: Double Chance",
           "start": 0,
-          "end": 13,
+          "end": 17,
           "highlight": "#f8f9fa"
         },
         {
           "text": "> Front/Back Attack Boost > Weapon Damage Boost > ≈ Critical Damage Boost > Damage Boost",
-          "start": 14,
-          "end": 102,
+          "start": 18,
+          "end": 106,
           "highlight": "#f8f9fa"
         }
       ]
@@ -13869,6 +13882,64 @@
       "figureIds": [],
       "links": [],
       "formatting": []
+    },
+    {
+      "id": "block-1349",
+      "tag": "p",
+      "text": "GLOBAL: Double Chance > Front/Back Attack Boost > Weapon Damage Boost > Damage Boost > Critical Damage Boost",
+      "numbers": [],
+      "figureIds": [],
+      "links": [],
+      "formatting": [
+        {
+          "text": "GLOBAL: Double Chance > Front/Back Attack Boost > Weapon Damage Boost > Damage Boost > Critical Damage Boost",
+          "start": 0,
+          "end": 108,
+          "highlight": "#f8f9fa"
+        }
+      ]
+    },
+    {
+      "id": "block-1350",
+      "tag": "p",
+      "text": "(Critical Damage Boost loses effectiveness due to Global’s 50% Crit Cap)",
+      "numbers": ["50"],
+      "figureIds": [],
+      "links": [],
+      "formatting": [
+        {
+          "text": "(Critical Damage Boost loses effectiveness due to Global’s 50% Crit Cap)",
+          "start": 0,
+          "end": 72,
+          "emphasis": true,
+          "highlight": "#f8f9fa"
+        }
+      ]
+    },
+    {
+      "id": "block-1351",
+      "tag": "p",
+      "text": "",
+      "numbers": [],
+      "figureIds": [],
+      "links": [],
+      "formatting": []
+    },
+    {
+      "id": "block-1352",
+      "tag": "p",
+      "text": "KR & GLOBAL",
+      "numbers": [],
+      "figureIds": [],
+      "links": [],
+      "formatting": [
+        {
+          "text": "KR & GLOBAL",
+          "start": 0,
+          "end": 11,
+          "highlight": "#f8f9fa"
+        }
+      ]
     },
     {
       "id": "block-1157",
@@ -13888,6 +13959,15 @@
     },
     {
       "id": "block-1158",
+      "tag": "p",
+      "text": "",
+      "numbers": [],
+      "figureIds": [],
+      "links": [],
+      "formatting": []
+    },
+    {
+      "id": "block-1353",
       "tag": "p",
       "text": "",
       "numbers": [],
@@ -13994,6 +14074,17 @@
       "formatting": []
     },
     {
+      "id": "block-1354",
+      "tag": "li",
+      "text": "KR",
+      "numbers": [],
+      "figureIds": [],
+      "links": [],
+      "formatting": [],
+      "ordered": false,
+      "level": 0
+    },
+    {
       "id": "block-1164",
       "tag": "li",
       "text": "A % chance for your Attack to land 1-4 extra hits.",
@@ -14002,7 +14093,7 @@
       "links": [],
       "formatting": [],
       "ordered": false,
-      "level": 0
+      "level": 1
     },
     {
       "id": "block-1165",
@@ -14013,7 +14104,7 @@
       "links": [],
       "formatting": [],
       "ordered": false,
-      "level": 0
+      "level": 1
     },
     {
       "id": "block-1166",
@@ -14024,7 +14115,29 @@
       "links": [],
       "formatting": [],
       "ordered": false,
+      "level": 1
+    },
+    {
+      "id": "block-1355",
+      "tag": "li",
+      "text": "Global",
+      "numbers": [],
+      "figureIds": [],
+      "links": [],
+      "formatting": [],
+      "ordered": false,
       "level": 0
+    },
+    {
+      "id": "block-1356",
+      "tag": "li",
+      "text": "Each hit is 2% of the Damage",
+      "numbers": ["2"],
+      "figureIds": [],
+      "links": [],
+      "formatting": [],
+      "ordered": false,
+      "level": 1
     },
     {
       "id": "block-1167",

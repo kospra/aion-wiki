@@ -4809,6 +4809,35 @@
     "reason": "Empty document spacing is normalized by article layout."
   },
   {
+    "sourceId": "block-1349",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "offensive-stat-values-and-attack-comparisons",
+      "blockIds": ["block-1349"]
+    }
+  },
+  {
+    "sourceId": "block-1350",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "offensive-stat-values-and-attack-comparisons",
+      "blockIds": ["block-1350"]
+    }
+  },
+  {
+    "sourceId": "block-1351",
+    "disposition": "layout-only",
+    "reason": "Empty document spacing is normalized by article layout."
+  },
+  {
+    "sourceId": "block-1352",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "offensive-stat-values-and-attack-comparisons",
+      "blockIds": ["block-1352"]
+    }
+  },
+  {
     "sourceId": "block-1157",
     "disposition": "rendered",
     "primary": {
@@ -4818,6 +4847,11 @@
   },
   {
     "sourceId": "block-1158",
+    "disposition": "layout-only",
+    "reason": "Empty document spacing is normalized by article layout."
+  },
+  {
+    "sourceId": "block-1353",
     "disposition": "layout-only",
     "reason": "Empty document spacing is normalized by article layout."
   },
