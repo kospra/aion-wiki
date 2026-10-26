@@ -234,37 +234,6 @@
     "nextFigure": 96,
     "report": "content/source/changes/2026-10-26-1107.md",
     "baselineDigest": "18e1b5104063b77e140db0e88591f173ac35fe6ebbd95ac8bc154490ac466511",
-    "pending": [
-      {
-        "sourceId": "block-1354",
-        "pageSlug": "multi-hit",
-        "reason": "A new list item that starts a list or changes level; place it by hand"
-      },
-      {
-        "sourceId": "block-1164",
-        "pageSlug": "multi-hit",
-        "reason": "Its list level or numbering changed; move the leaf by hand"
-      },
-      {
-        "sourceId": "block-1165",
-        "pageSlug": "multi-hit",
-        "reason": "Its list level or numbering changed; move the leaf by hand"
-      },
-      {
-        "sourceId": "block-1166",
-        "pageSlug": "multi-hit",
-        "reason": "Its list level or numbering changed; move the leaf by hand"
-      },
-      {
-        "sourceId": "block-1355",
-        "pageSlug": "multi-hit",
-        "reason": "A new list item that starts a list or changes level; place it by hand"
-      },
-      {
-        "sourceId": "block-1356",
-        "pageSlug": "multi-hit",
-        "reason": "Follows block-1355, which is not placed yet; place both by hand"
-      }
-    ]
+    "pending": []
   }
 ]
