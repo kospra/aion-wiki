@@ -838,7 +838,7 @@
       "summary": "How Multi-hit adds extra hits and roughly how much it is worth.",
       "status": "source-uncertain",
       "sourceUrl": "https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/edit",
-      "searchText": "Multi-hit\nHow Multi-hit adds extra hits and roughly how much it is worth.\nMulti-Hit\nA  % chance for your Attack to land 1-4 extra hits.\nEach hit is 5% of the Damage\nWhen Multi-hit rate is in the 36% ~ 40% range (current KR endgame range) every 1% of hit is roughly ≈ to 0.33% damage increase\nAdditional Notes: Multi-hit is a pretty straight forward stat on the surface but formulaically it becomes a lot more complex. The description here is a watered down version to keep things simple. This stat is still being studied and its exact value and placement in the equation is still not 100%. More testing needs to be done to establish whether it is with or outside Attack Bonus.",
+      "searchText": "Multi-hit\nHow Multi-hit adds extra hits and roughly how much it is worth.\nMulti-Hit\nKR\nA  % chance for your Attack to land 1-4 extra hits.\nEach hit is 5% of the Damage\nWhen Multi-hit rate is in the 36% ~ 40% range (current KR endgame range) every 1% of hit is roughly ≈ to 0.33% damage increase\nGlobal\nEach hit is 2% of the Damage\nAdditional Notes: Multi-hit is a pretty straight forward stat on the surface but formulaically it becomes a lot more complex. The description here is a watered down version to keep things simple. This stat is still being studied and its exact value and placement in the equation is still not 100%. More testing needs to be done to establish whether it is with or outside Attack Bonus.",
       "headings": [
         {
           "id": "block-1163",
