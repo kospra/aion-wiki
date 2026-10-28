@@ -74,19 +74,19 @@
       ]
     },
     {
-      "id": "block-1269",
-      "sourceIds": ["block-1269"],
+      "id": "block-1348",
+      "sourceIds": ["block-1348"],
       "kind": "paragraph",
       "content": [
         {
-          "text": "***Update Note 10/4/2026",
+          "text": "***Update Note 10/25/2026",
           "strong": true,
           "emphasis": true,
           "underline": true,
           "highlight": "#ffff00"
         },
         {
-          "text": ": There are a LOT of changes for Global. I’ve updated everything we know so far. I’ve added a Chapter 12: Class Builds section that links you to builds.",
+          "text": ": Updated stat efficiency stuff including TLDR, full Global stat efficiency numbers will be updated soon. Also updated Genus (first board)",
           "strong": true,
           "emphasis": true,
           "highlight": "#ffff00"

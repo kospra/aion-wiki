@@ -4809,6 +4809,35 @@
     "reason": "Empty document spacing is normalized by article layout."
   },
   {
+    "sourceId": "block-1349",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "offensive-stat-values-and-attack-comparisons",
+      "blockIds": ["block-1349"]
+    }
+  },
+  {
+    "sourceId": "block-1350",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "offensive-stat-values-and-attack-comparisons",
+      "blockIds": ["block-1350"]
+    }
+  },
+  {
+    "sourceId": "block-1351",
+    "disposition": "layout-only",
+    "reason": "Empty document spacing is normalized by article layout."
+  },
+  {
+    "sourceId": "block-1352",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "offensive-stat-values-and-attack-comparisons",
+      "blockIds": ["block-1352"]
+    }
+  },
+  {
     "sourceId": "block-1157",
     "disposition": "rendered",
     "primary": {
@@ -4818,6 +4847,11 @@
   },
   {
     "sourceId": "block-1158",
+    "disposition": "layout-only",
+    "reason": "Empty document spacing is normalized by article layout."
+  },
+  {
+    "sourceId": "block-1353",
     "disposition": "layout-only",
     "reason": "Empty document spacing is normalized by article layout."
   },
@@ -4862,6 +4896,14 @@
     }
   },
   {
+    "sourceId": "block-1354",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "multi-hit",
+      "blockIds": ["block-1354"]
+    }
+  },
+  {
     "sourceId": "block-1164",
     "disposition": "rendered",
     "primary": {
@@ -4883,6 +4925,22 @@
     "primary": {
       "pageSlug": "multi-hit",
       "blockIds": ["block-1166"]
+    }
+  },
+  {
+    "sourceId": "block-1355",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "multi-hit",
+      "blockIds": ["block-1355"]
+    }
+  },
+  {
+    "sourceId": "block-1356",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "multi-hit",
+      "blockIds": ["block-1356"]
     }
   },
   {

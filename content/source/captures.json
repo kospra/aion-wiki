@@ -221,5 +221,19 @@
     "report": "content/source/changes/2026-10-23-1003.md",
     "baselineDigest": "c892db62803143dc5da0a408fa8aa43e2c29048b77c5d0c6acc95cb99767440f",
     "pending": []
+  },
+  {
+    "capturedAt": "2026-10-26T11:07:37.040Z",
+    "fingerprints": {
+      "html": "4a5bd496779030028035a0de3e1cddd0aa8c3444aa77d4b6006693c1d42dcce1"
+    },
+    "updateNote": "***Update Note 10/25/2026: Updated stat efficiency stuff including TLDR, full Global stat efficiency numbers will be updated soon. Also updated Genus (first board)",
+    "blocks": 1304,
+    "figures": 93,
+    "nextBlock": 1357,
+    "nextFigure": 96,
+    "report": "content/source/changes/2026-10-26-1107.md",
+    "baselineDigest": "18e1b5104063b77e140db0e88591f173ac35fe6ebbd95ac8bc154490ac466511",
+    "pending": []
   }
 ]
