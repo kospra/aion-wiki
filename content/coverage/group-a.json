@@ -45,6 +45,30 @@
     }
   },
   {
+    "sourceId": "block-1358",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "about-the-source-and-author",
+      "blockIds": ["block-1358"]
+    }
+  },
+  {
+    "sourceId": "block-1359",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "about-the-source-and-author",
+      "blockIds": ["block-1359"]
+    }
+  },
+  {
+    "sourceId": "block-1360",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "about-the-source-and-author",
+      "blockIds": ["block-1360"]
+    }
+  },
+  {
     "sourceId": "block-0007",
     "disposition": "rendered",
     "primary": {
@@ -2714,9 +2738,41 @@
     }
   },
   {
+    "sourceId": "block-1369",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "raid-accuracy-and-critical-hit-requirements",
+      "blockIds": ["block-1369"]
+    }
+  },
+  {
+    "sourceId": "block-1370",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "raid-accuracy-and-critical-hit-requirements",
+      "blockIds": ["block-1370"]
+    }
+  },
+  {
+    "sourceId": "block-1371",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "raid-accuracy-and-critical-hit-requirements",
+      "blockIds": ["block-1371"]
+    }
+  },
+  {
     "sourceId": "block-1372",
     "disposition": "layout-only",
     "reason": "Empty document spacing is normalized by article layout."
+  },
+  {
+    "sourceId": "block-1373",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "raid-accuracy-and-critical-hit-requirements",
+      "blockIds": ["block-1373"]
+    }
   },
   {
     "sourceId": "block-1374",

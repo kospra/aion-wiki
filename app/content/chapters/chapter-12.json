@@ -1,11 +1,511 @@
 [
   {
     "slug": "class-builds",
-    "title": "Class builds",
+    "title": "Global Aulamus vs Kromede",
     "category": "class-builds",
-    "summary": "Where to find builds and loadouts for every class.",
+    "summary": "A Global comparison of the Aulamus and Kromede weapons by stat lines, Amp levels, and damage.",
     "status": "source-backed",
     "sourceUrl": "https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/edit",
-    "blocks": []
+    "blocks": [
+      {
+        "id": "block-1376",
+        "sourceIds": ["block-1376"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Spent time with AionLab ("
+          },
+          {
+            "text": "damage formula",
+            "underline": true,
+            "href": "/articles/damage-formula-and-pure-attack#block-1224"
+          },
+          {
+            "text": " founder) to crunch numbers on the Aulamus vs Kromede Weapon on the Global servers. We based the tests off of my Gladiator @ 180k CP. These numbers "
+          },
+          {
+            "text": "will",
+            "emphasis": true
+          },
+          {
+            "text": " vary depending on what your stats are and what class you're playing."
+          }
+        ]
+      },
+      {
+        "id": "block-1377",
+        "sourceIds": ["block-1377"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "If fully maxed and with BIS lines on both weapons, Kromede is better in terms of pure damage but by very little."
+          }
+        ]
+      },
+      {
+        "id": "block-1378",
+        "sourceIds": ["block-1378"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Aulamus (ILVL 70)"
+          }
+        ]
+      },
+      {
+        "id": "list-block-1379",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-1379",
+              "sourceIds": ["block-1379"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "4 Stat Lines (base)"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-1380",
+              "sourceIds": ["block-1380"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Amp 3 Max"
+                }
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "id": "block-1382",
+        "sourceIds": ["block-1382"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Kromede (ILVL 86)"
+          }
+        ]
+      },
+      {
+        "id": "list-block-1383",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-1383",
+              "sourceIds": ["block-1383"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "3 Stat Lines (base)"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-1384",
+              "sourceIds": ["block-1384"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Amp 5 Max"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-1385",
+              "sourceIds": ["block-1385"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "2m extra Range (not factored into DPS comparison)"
+                }
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "id": "block-1387",
+        "sourceIds": ["block-1387"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ"
+          }
+        ]
+      },
+      {
+        "id": "block-1389",
+        "sourceIds": ["block-1389"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Kromede offers more attack and Damage Boost from Amp levels (excluding the range)"
+          }
+        ]
+      },
+      {
+        "id": "list-block-1390",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-1390",
+              "sourceIds": ["block-1390"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Attack difference of 131 = 3.61% more damage for Kromede"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-1391",
+              "sourceIds": ["block-1391"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Damage Boost difference = 0.8%~0.9% more damage for Kromede"
+                }
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "id": "block-1393",
+        "sourceIds": ["block-1393"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ"
+          }
+        ]
+      },
+      {
+        "id": "block-1395",
+        "sourceIds": ["block-1395"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Aulamus offers an additional stat line, in this case we used Might"
+          }
+        ]
+      },
+      {
+        "id": "list-block-1396",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-1396",
+              "sourceIds": ["block-1396"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Attack Increase 2.9% (29 Might stat line) = 1.87% more damage for Aulamus"
+                }
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "id": "block-1398",
+        "sourceIds": ["block-1398"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ"
+          }
+        ]
+      },
+      {
+        "id": "block-1400",
+        "sourceIds": ["block-1400"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "When comparing only the attack and damage boost difference, Kromede deals 4.53% more damage"
+          }
+        ]
+      },
+      {
+        "id": "block-1402",
+        "sourceIds": ["block-1402"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "When comparing only the attack increase from Might (2.9%), Aulamus deals 1.87% more damage"
+          }
+        ]
+      },
+      {
+        "id": "block-1404",
+        "sourceIds": ["block-1404"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "When factoring only the attack difference, damage boost difference, and attack increase (extra stat line being Might) difference, Kromede deals 2.61% more damage than Aulamus",
+            "strong": true
+          }
+        ]
+      },
+      {
+        "id": "block-1406",
+        "sourceIds": ["block-1406"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "AMP 3 Kromede vs Amp 3 Aulamus (extra line being Might for Aulamus), Kromede is better by less than 1%",
+            "strong": true
+          }
+        ]
+      },
+      {
+        "id": "block-1408",
+        "sourceIds": ["block-1408"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Note: Kromede wins by less the stronger the character",
+            "emphasis": true
+          }
+        ]
+      },
+      {
+        "id": "block-1410",
+        "sourceIds": ["block-1410"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ"
+          }
+        ]
+      },
+      {
+        "id": "block-1412",
+        "sourceIds": ["block-1412"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "If Aulamus has either a Damage Boost (2.8%), Weapon Damage Boost (4%), Combat Speed, or Multi-hit (needs more testing but likely as well) line advantage while maintaining its Might Advantage, then Aulamus is better. In other words, if Aulamus has a 2 line advantage it’s better."
+          }
+        ]
+      },
+      {
+        "id": "block-1414",
+        "sourceIds": ["block-1414"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Example",
+            "strong": true,
+            "emphasis": true
+          }
+        ]
+      },
+      {
+        "id": "block-1416",
+        "sourceIds": ["block-1416"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Amp 5 Kromede",
+            "strong": true
+          }
+        ]
+      },
+      {
+        "id": "list-block-1417",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-1417",
+              "sourceIds": ["block-1417"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Accuracy"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-1418",
+              "sourceIds": ["block-1418"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Weapon Damage Boost"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-1419",
+              "sourceIds": ["block-1419"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Combat speed"
+                }
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "id": "block-1421",
+        "sourceIds": ["block-1421"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "vs",
+            "strong": true
+          }
+        ]
+      },
+      {
+        "id": "block-1423",
+        "sourceIds": ["block-1423"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Amp 3 Aulamus",
+            "strong": true
+          }
+        ]
+      },
+      {
+        "id": "list-block-1424",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-1424",
+              "sourceIds": ["block-1424"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Damage Boost"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-1425",
+              "sourceIds": ["block-1425"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Weapon Damage Boost"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-1426",
+              "sourceIds": ["block-1426"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Combat Speed"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-1427",
+              "sourceIds": ["block-1427"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Might"
+                }
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "id": "block-1429",
+        "sourceIds": ["block-1429"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "In this case, Aulamus is better"
+          }
+        ]
+      },
+      {
+        "id": "block-1431",
+        "sourceIds": ["block-1431"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Note:",
+            "strong": true,
+            "highlight": "#f8f9fa"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "You can now transfer Aulamus and Kromede into the crafted version of the same ILVL as of the 10/28 update. True Dragon (Tier 1 crafted) can be upgraded to Amp 3 now, White Dragon (Tier 2 crafted) can be upgraded to Amp 5 now. Aulamus remains the same with Amp 3 being max.",
+            "highlight": "#f8f9fa"
+          }
+        ]
+      },
+      {
+        "id": "block-1432",
+        "sourceIds": ["block-1432"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Note 2:",
+            "strong": true,
+            "highlight": "#f8f9fa"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "It is very expensive to reroll lines and push from Amp 3 to Amp 5. Remember, Kromede offers 3 stat lines vs Aulamus offering 4 stat lines, vs Crafted offering 5 stat lines at base.",
+            "highlight": "#f8f9fa"
+          }
+        ]
+      }
+    ]
   }
 ]

@@ -5641,11 +5641,6 @@
     "reason": "Empty document spacing is normalized by article layout."
   },
   {
-    "sourceId": "block-1265",
-    "disposition": "layout-only",
-    "reason": "Empty document spacing is normalized by article layout."
-  },
-  {
     "sourceId": "block-1266",
     "disposition": "omitted",
     "omission": "chapter-title",
@@ -5653,9 +5648,54 @@
     "reason": "Google Docs chapter title; the article header shows the chapter."
   },
   {
+    "sourceId": "block-1376",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "class-builds",
+      "blockIds": ["block-1376"]
+    }
+  },
+  {
+    "sourceId": "block-1265",
+    "disposition": "layout-only",
+    "reason": "Empty document spacing is normalized by article layout."
+  },
+  {
+    "sourceId": "block-1377",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "class-builds",
+      "blockIds": ["block-1377"]
+    }
+  },
+  {
     "sourceId": "block-1267",
     "disposition": "layout-only",
     "reason": "Empty document spacing is normalized by article layout."
+  },
+  {
+    "sourceId": "block-1378",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "class-builds",
+      "blockIds": ["block-1378"]
+    }
+  },
+  {
+    "sourceId": "block-1379",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "class-builds",
+      "blockIds": ["block-1379"]
+    }
+  },
+  {
+    "sourceId": "block-1380",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "class-builds",
+      "blockIds": ["block-1380"]
+    }
   },
   {
     "sourceId": "block-1381",
@@ -5663,9 +5703,49 @@
     "reason": "Empty document spacing is normalized by article layout."
   },
   {
+    "sourceId": "block-1382",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "class-builds",
+      "blockIds": ["block-1382"]
+    }
+  },
+  {
+    "sourceId": "block-1383",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "class-builds",
+      "blockIds": ["block-1383"]
+    }
+  },
+  {
+    "sourceId": "block-1384",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "class-builds",
+      "blockIds": ["block-1384"]
+    }
+  },
+  {
+    "sourceId": "block-1385",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "class-builds",
+      "blockIds": ["block-1385"]
+    }
+  },
+  {
     "sourceId": "block-1386",
     "disposition": "layout-only",
     "reason": "Empty document spacing is normalized by article layout."
+  },
+  {
+    "sourceId": "block-1387",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "class-builds",
+      "blockIds": ["block-1387"]
+    }
   },
   {
     "sourceId": "block-1388",
@@ -5673,9 +5753,41 @@
     "reason": "Empty document spacing is normalized by article layout."
   },
   {
+    "sourceId": "block-1389",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "class-builds",
+      "blockIds": ["block-1389"]
+    }
+  },
+  {
+    "sourceId": "block-1390",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "class-builds",
+      "blockIds": ["block-1390"]
+    }
+  },
+  {
+    "sourceId": "block-1391",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "class-builds",
+      "blockIds": ["block-1391"]
+    }
+  },
+  {
     "sourceId": "block-1392",
     "disposition": "layout-only",
     "reason": "Empty document spacing is normalized by article layout."
+  },
+  {
+    "sourceId": "block-1393",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "class-builds",
+      "blockIds": ["block-1393"]
+    }
   },
   {
     "sourceId": "block-1394",
@@ -5683,9 +5795,33 @@
     "reason": "Empty document spacing is normalized by article layout."
   },
   {
+    "sourceId": "block-1395",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "class-builds",
+      "blockIds": ["block-1395"]
+    }
+  },
+  {
+    "sourceId": "block-1396",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "class-builds",
+      "blockIds": ["block-1396"]
+    }
+  },
+  {
     "sourceId": "block-1397",
     "disposition": "layout-only",
     "reason": "Empty document spacing is normalized by article layout."
+  },
+  {
+    "sourceId": "block-1398",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "class-builds",
+      "blockIds": ["block-1398"]
+    }
   },
   {
     "sourceId": "block-1399",
@@ -5693,9 +5829,25 @@
     "reason": "Empty document spacing is normalized by article layout."
   },
   {
+    "sourceId": "block-1400",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "class-builds",
+      "blockIds": ["block-1400"]
+    }
+  },
+  {
     "sourceId": "block-1401",
     "disposition": "layout-only",
     "reason": "Empty document spacing is normalized by article layout."
+  },
+  {
+    "sourceId": "block-1402",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "class-builds",
+      "blockIds": ["block-1402"]
+    }
   },
   {
     "sourceId": "block-1403",
@@ -5703,9 +5855,25 @@
     "reason": "Empty document spacing is normalized by article layout."
   },
   {
+    "sourceId": "block-1404",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "class-builds",
+      "blockIds": ["block-1404"]
+    }
+  },
+  {
     "sourceId": "block-1405",
     "disposition": "layout-only",
     "reason": "Empty document spacing is normalized by article layout."
+  },
+  {
+    "sourceId": "block-1406",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "class-builds",
+      "blockIds": ["block-1406"]
+    }
   },
   {
     "sourceId": "block-1407",
@@ -5713,9 +5881,25 @@
     "reason": "Empty document spacing is normalized by article layout."
   },
   {
+    "sourceId": "block-1408",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "class-builds",
+      "blockIds": ["block-1408"]
+    }
+  },
+  {
     "sourceId": "block-1409",
     "disposition": "layout-only",
     "reason": "Empty document spacing is normalized by article layout."
+  },
+  {
+    "sourceId": "block-1410",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "class-builds",
+      "blockIds": ["block-1410"]
+    }
   },
   {
     "sourceId": "block-1411",
@@ -5723,9 +5907,25 @@
     "reason": "Empty document spacing is normalized by article layout."
   },
   {
+    "sourceId": "block-1412",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "class-builds",
+      "blockIds": ["block-1412"]
+    }
+  },
+  {
     "sourceId": "block-1413",
     "disposition": "layout-only",
     "reason": "Empty document spacing is normalized by article layout."
+  },
+  {
+    "sourceId": "block-1414",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "class-builds",
+      "blockIds": ["block-1414"]
+    }
   },
   {
     "sourceId": "block-1415",
@@ -5733,9 +5933,49 @@
     "reason": "Empty document spacing is normalized by article layout."
   },
   {
+    "sourceId": "block-1416",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "class-builds",
+      "blockIds": ["block-1416"]
+    }
+  },
+  {
+    "sourceId": "block-1417",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "class-builds",
+      "blockIds": ["block-1417"]
+    }
+  },
+  {
+    "sourceId": "block-1418",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "class-builds",
+      "blockIds": ["block-1418"]
+    }
+  },
+  {
+    "sourceId": "block-1419",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "class-builds",
+      "blockIds": ["block-1419"]
+    }
+  },
+  {
     "sourceId": "block-1420",
     "disposition": "layout-only",
     "reason": "Empty document spacing is normalized by article layout."
+  },
+  {
+    "sourceId": "block-1421",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "class-builds",
+      "blockIds": ["block-1421"]
+    }
   },
   {
     "sourceId": "block-1422",
@@ -5743,13 +5983,77 @@
     "reason": "Empty document spacing is normalized by article layout."
   },
   {
+    "sourceId": "block-1423",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "class-builds",
+      "blockIds": ["block-1423"]
+    }
+  },
+  {
+    "sourceId": "block-1424",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "class-builds",
+      "blockIds": ["block-1424"]
+    }
+  },
+  {
+    "sourceId": "block-1425",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "class-builds",
+      "blockIds": ["block-1425"]
+    }
+  },
+  {
+    "sourceId": "block-1426",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "class-builds",
+      "blockIds": ["block-1426"]
+    }
+  },
+  {
+    "sourceId": "block-1427",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "class-builds",
+      "blockIds": ["block-1427"]
+    }
+  },
+  {
     "sourceId": "block-1428",
     "disposition": "layout-only",
     "reason": "Empty document spacing is normalized by article layout."
   },
   {
+    "sourceId": "block-1429",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "class-builds",
+      "blockIds": ["block-1429"]
+    }
+  },
+  {
     "sourceId": "block-1430",
     "disposition": "layout-only",
     "reason": "Empty document spacing is normalized by article layout."
+  },
+  {
+    "sourceId": "block-1431",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "class-builds",
+      "blockIds": ["block-1431"]
+    }
+  },
+  {
+    "sourceId": "block-1432",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "class-builds",
+      "blockIds": ["block-1432"]
+    }
   }
 ]

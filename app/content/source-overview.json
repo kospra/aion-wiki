@@ -91,6 +91,92 @@
       ]
     },
     {
+      "id": "list-block-1358",
+      "sourceIds": [],
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "id": "block-1358",
+            "sourceIds": ["block-1358"],
+            "kind": "paragraph",
+            "content": [
+              {
+                "text": "Created",
+                "strong": true,
+                "emphasis": true,
+                "highlight": "#ffff00"
+              },
+              {
+                "text": " "
+              },
+              {
+                "text": "CH 12: Aulamus vs Kromede",
+                "strong": true,
+                "emphasis": true,
+                "underline": true,
+                "highlight": "#ffff00",
+                "href": "/articles/class-builds"
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "id": "block-1359",
+            "sourceIds": ["block-1359"],
+            "kind": "paragraph",
+            "content": [
+              {
+                "text": "Updated",
+                "strong": true,
+                "emphasis": true,
+                "highlight": "#ffff00"
+              },
+              {
+                "text": " "
+              },
+              {
+                "text": "Global Ludra Hard Caps",
+                "strong": true,
+                "emphasis": true,
+                "underline": true,
+                "highlight": "#ffff00",
+                "href": "/articles/raid-accuracy-and-critical-hit-requirements#block-0339"
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "id": "block-1360",
+            "sourceIds": ["block-1360"],
+            "kind": "paragraph",
+            "content": [
+              {
+                "text": "Added First Clear Group DPS measurements for",
+                "strong": true,
+                "emphasis": true,
+                "highlight": "#ffff00"
+              },
+              {
+                "text": " "
+              },
+              {
+                "text": "Ludra Hard Global",
+                "strong": true,
+                "emphasis": true,
+                "underline": true,
+                "highlight": "#ffff00",
+                "href": "/articles/raid-accuracy-and-critical-hit-requirements#block-0339"
+              }
+            ]
+          }
+        ]
+      ]
+    },
+    {
       "id": "block-0007",
       "sourceIds": ["block-0007"],
       "kind": "paragraph",
@@ -255,24 +341,11 @@
     {
       "id": "block-1333",
       "sourceIds": ["block-1333"],
-      "kind": "group",
-      "blocks": [
+      "kind": "paragraph",
+      "content": [
         {
-          "id": "block-1333-figure-094",
-          "sourceIds": ["block-1333"],
-          "kind": "figure",
-          "figureId": "figure-094"
-        },
-        {
-          "id": "block-1333-text",
-          "sourceIds": ["block-1333"],
-          "kind": "paragraph",
-          "content": [
-            {
-              "text": "—",
-              "strong": true
-            }
-          ]
+          "text": "—",
+          "strong": true
         }
       ]
     },

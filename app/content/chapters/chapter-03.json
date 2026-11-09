@@ -1510,7 +1510,8 @@
         "kind": "heading",
         "content": [
           {
-            "text": "Accuracy & Crit Requirements"
+            "text": "Accuracy & Crit Requirements",
+            "underline": true
           }
         ],
         "level": 2
@@ -1623,6 +1624,61 @@
           {
             "text": "First Clear Group (Failure Guild) avg DPS per person",
             "strong": true
+          }
+        ]
+      },
+      {
+        "id": "list-block-1369",
+        "sourceIds": [],
+        "kind": "list",
+        "ordered": false,
+        "items": [
+          [
+            {
+              "id": "block-1369",
+              "sourceIds": ["block-1369"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Boss 1 (Rahu): ≈ 123k"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-1370",
+              "sourceIds": ["block-1370"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Boss 2 (Ketu): ≈ 108k"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "block-1371",
+              "sourceIds": ["block-1371"],
+              "kind": "paragraph",
+              "content": [
+                {
+                  "text": "Ludra: ≈ 76k DPS with ≈ 2.5 minutes to spare"
+                }
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "id": "block-1373",
+        "sourceIds": ["block-1373"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "*Note: Failure spec’d heavily into defense/survivability, going as far as taking defensive stigmas at the cost of dmg",
+            "emphasis": true
           }
         ]
       },
