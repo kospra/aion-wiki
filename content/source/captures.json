@@ -235,5 +235,19 @@
     "report": "content/source/changes/2026-10-26-1107.md",
     "baselineDigest": "18e1b5104063b77e140db0e88591f173ac35fe6ebbd95ac8bc154490ac466511",
     "pending": []
+  },
+  {
+    "capturedAt": "2026-11-09T16:53:37.034Z",
+    "fingerprints": {
+      "html": "faee9b6e8e3e17738f8212975a888d1becc84f85bbfaf9bdb2429ccdbdd831f6"
+    },
+    "updateNote": "*Update Notes: Currently testing Global Stat Efficiency values with AionLab, will update a Global version of End-Game Damage Effeciency Numbers",
+    "blocks": 1369,
+    "figures": 93,
+    "nextBlock": 1433,
+    "nextFigure": 97,
+    "report": "content/source/changes/2026-11-09-1653.md",
+    "baselineDigest": "c451ff7ef3140e2a99745ccb30fee1decb16374db294844b2a17af780e28fcd4",
+    "pending": []
   }
 ]

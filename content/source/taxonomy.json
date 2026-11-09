@@ -5,8 +5,8 @@
     "title": "About the source and author",
     "firstBlock": "block-0001",
     "lastBlock": "block-1334",
-    "nonemptyBlocks": 23,
-    "figures": ["figure-001", "figure-002", "figure-095", "figure-094"]
+    "nonemptyBlocks": 26,
+    "figures": ["figure-001", "figure-002", "figure-095", "figure-096"]
   },
   {
     "slug": "gear-anatomy-and-stat-layers",
@@ -95,7 +95,7 @@
     "title": "Global stat priorities by equipment",
     "firstBlock": "block-0251",
     "lastBlock": "block-0338",
-    "nonemptyBlocks": 77,
+    "nonemptyBlocks": 76,
     "figures": []
   },
   {
@@ -104,7 +104,7 @@
     "title": "Raid Accuracy and Critical Hit requirements",
     "firstBlock": "block-0339",
     "lastBlock": "block-0364",
-    "nonemptyBlocks": 18,
+    "nonemptyBlocks": 24,
     "figures": []
   },
   {
@@ -300,7 +300,7 @@
     "title": "Global Genus stat priorities",
     "firstBlock": "block-0738",
     "lastBlock": "block-1327",
-    "nonemptyBlocks": 45,
+    "nonemptyBlocks": 46,
     "figures": []
   },
   {
@@ -416,17 +416,17 @@
     "chapter": 11,
     "title": "Damage formula and Pure Attack",
     "firstBlock": "block-1224",
-    "lastBlock": "block-1265",
-    "nonemptyBlocks": 32,
+    "lastBlock": "block-1262",
+    "nonemptyBlocks": 31,
     "figures": []
   },
   {
     "slug": "class-builds",
     "chapter": 12,
-    "title": "Class builds",
+    "title": "Global Aulamus vs Kromede",
     "firstBlock": "block-1266",
-    "lastBlock": "block-1308",
-    "nonemptyBlocks": 3,
+    "lastBlock": "block-1432",
+    "nonemptyBlocks": 39,
     "figures": []
   }
 ]

@@ -51,21 +51,7 @@
       "kind": "paragraph",
       "content": [
         {
-          "text": "Last Updated: /",
-          "strong": true,
-          "emphasis": true,
-          "underline": true,
-          "highlight": "#ffff00"
-        },
-        {
-          "text": "20",
-          "strong": true,
-          "emphasis": true,
-          "underline": true,
-          "highlight": "#ffff00"
-        },
-        {
-          "text": "/2026",
+          "text": "Last Updated: 11/05/2026",
           "strong": true,
           "emphasis": true,
           "underline": true,
@@ -74,23 +60,120 @@
       ]
     },
     {
-      "id": "block-1348",
-      "sourceIds": ["block-1348"],
+      "id": "block-1357",
+      "sourceIds": ["block-1357"],
       "kind": "paragraph",
       "content": [
         {
-          "text": "***Update Note 10/25/2026",
+          "text": "*Update Notes",
           "strong": true,
           "emphasis": true,
           "underline": true,
           "highlight": "#ffff00"
         },
         {
-          "text": ": Updated stat efficiency stuff including TLDR, full Global stat efficiency numbers will be updated soon. Also updated Genus (first board)",
+          "text": ": Currently testing Global Stat Efficiency values with AionLab, will update a Global version of",
           "strong": true,
           "emphasis": true,
           "highlight": "#ffff00"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "End-Game Damage Effeciency Numbers",
+          "strong": true,
+          "emphasis": true,
+          "underline": true,
+          "highlight": "#ffff00",
+          "href": "/articles/offensive-stat-values-and-attack-comparisons#block-1084"
         }
+      ]
+    },
+    {
+      "id": "list-block-1358",
+      "sourceIds": [],
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "id": "block-1358",
+            "sourceIds": ["block-1358"],
+            "kind": "paragraph",
+            "content": [
+              {
+                "text": "Created",
+                "strong": true,
+                "emphasis": true,
+                "highlight": "#ffff00"
+              },
+              {
+                "text": " "
+              },
+              {
+                "text": "CH 12: Aulamus vs Kromede",
+                "strong": true,
+                "emphasis": true,
+                "underline": true,
+                "highlight": "#ffff00",
+                "href": "/articles/class-builds"
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "id": "block-1359",
+            "sourceIds": ["block-1359"],
+            "kind": "paragraph",
+            "content": [
+              {
+                "text": "Updated",
+                "strong": true,
+                "emphasis": true,
+                "highlight": "#ffff00"
+              },
+              {
+                "text": " "
+              },
+              {
+                "text": "Global Ludra Hard Caps",
+                "strong": true,
+                "emphasis": true,
+                "underline": true,
+                "highlight": "#ffff00",
+                "href": "/articles/raid-accuracy-and-critical-hit-requirements#block-0339"
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "id": "block-1360",
+            "sourceIds": ["block-1360"],
+            "kind": "paragraph",
+            "content": [
+              {
+                "text": "Added First Clear Group DPS measurements for",
+                "strong": true,
+                "emphasis": true,
+                "highlight": "#ffff00"
+              },
+              {
+                "text": " "
+              },
+              {
+                "text": "Ludra Hard Global",
+                "strong": true,
+                "emphasis": true,
+                "underline": true,
+                "highlight": "#ffff00",
+                "href": "/articles/raid-accuracy-and-critical-hit-requirements#block-0339"
+              }
+            ]
+          }
+        ]
       ]
     },
     {
@@ -229,12 +312,17 @@
       ]
     },
     {
-      "id": "block-1329",
-      "sourceIds": ["block-1329"],
+      "id": "block-1361",
+      "sourceIds": ["block-1361"],
       "kind": "paragraph",
       "content": [
         {
-          "text": "As of 10/20/26 I am the top ranked Gladiator on Global (Notmeter DPS rankings) between the 150k-175k Combat Power Bracket for Transcendence Dungeons and 11th overall on Transcendence (Shattered) - Top 10 being all over 200k Combat Power at the time. (My group rarely runs Deus)"
+          "text": "As of 11/8/06 I’ve hit Rank 1 across multiple fights across every CP bracket so far starting from 150~200 thru 225~250. My weekly and all-time rankings on Notmeter can be found here: "
+        },
+        {
+          "text": "https://tinyurl.com/vtct49t2",
+          "underline": true,
+          "href": "https://tinyurl.com/vtct49t2"
         }
       ]
     },
@@ -245,37 +333,19 @@
       "figureId": "figure-095"
     },
     {
-      "id": "block-1332",
-      "sourceIds": ["block-1332"],
-      "kind": "paragraph",
-      "content": [
-        {
-          "text": "GLADIATOR OVERALL TRANSCENDENCE (SHATTERED) RANKINGS AS OF 10/17/26",
-          "emphasis": true
-        }
-      ]
+      "id": "block-1362",
+      "sourceIds": ["block-1362"],
+      "kind": "figure",
+      "figureId": "figure-096"
     },
     {
       "id": "block-1333",
       "sourceIds": ["block-1333"],
-      "kind": "group",
-      "blocks": [
+      "kind": "paragraph",
+      "content": [
         {
-          "id": "block-1333-figure-094",
-          "sourceIds": ["block-1333"],
-          "kind": "figure",
-          "figureId": "figure-094"
-        },
-        {
-          "id": "block-1333-text",
-          "sourceIds": ["block-1333"],
-          "kind": "paragraph",
-          "content": [
-            {
-              "text": "—",
-              "strong": true
-            }
-          ]
+          "text": "—",
+          "strong": true
         }
       ]
     },
