@@ -29,7 +29,9 @@ export type Alignment = {
   nextFigure: number;
 };
 
-const CHAPTER_TITLE = /^(?:CH|CHAPTER)\s*\d+\s*:/iu;
+const CHAPTER_TITLE = /^(?:CH|CHAPTER)\s*(\d+)\s*:/iu;
+const chapterNumber = (block: { tag?: string; text: string }) =>
+  block.tag === 'h1' ? CHAPTER_TITLE.exec(block.text)?.[1] : undefined;
 const MIN_SIMILARITY = 0.6;
 const MIN_MATCHED = 0.75;
 
@@ -182,12 +184,18 @@ export function alignSnapshot(
       `Only ${pairs.size} of ${previous.blocks.length} blocks match the last capture. If the Doc was rewritten, rerun with --force.`,
     );
   const pairedOld = new Set(pairs.values());
+  // A chapter replaced under its number is a rename, however different the title;
+  // only a number that left the export means the export is incomplete.
   previous.blocks.forEach((block, index) => {
-    if (
-      block.tag === 'h1' &&
-      CHAPTER_TITLE.test(block.text) &&
-      !pairedOld.has(index)
-    )
+    const number = chapterNumber(block);
+    if (!number || pairedOld.has(index)) return;
+    const replacement = parsed.blocks.findIndex(
+      (after, n) => !pairs.has(n) && chapterNumber(after) === number,
+    );
+    if (replacement >= 0) {
+      pairs.set(replacement, index);
+      pairedOld.add(index);
+    } else if (!parsed.blocks.some((after) => chapterNumber(after) === number))
       throw new Error(
         `Chapter heading "${block.text}" is missing from the export; stopping before anything is written.`,
       );

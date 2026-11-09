@@ -246,7 +246,7 @@ The last implementation step runs `npm run source:sync` against the live Doc. Th
 The run stops, writes nothing and explains why when:
 
 - the download fails, or isn't the guide's HTML;
-- a "CH n:" chapter heading from the current snapshot is missing or out of order, which could happen if Kanon moves content into Doc tabs;
+- a "CH n:" chapter number from the current snapshot is missing, which could happen if Kanon moves content into Doc tabs (a chapter replaced under the same number counts as a renamed heading);
 - fewer than 75% of the current blocks are matched as unchanged or edited, unless `--force` is passed;
 - an image type is unsupported;
 - files under `content/`, `app/content/` or `public/images/guide/` have uncommitted changes, unless `--allow-dirty` or `--dry-run` is passed.

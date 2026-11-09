@@ -103,6 +103,23 @@ it('stops when a chapter heading disappears or most blocks change', () => {
   expect(next(v2, rewrite, true).removed).toHaveLength(4);
 });
 
+it('keeps a chapter replaced under the same number as a rename', () => {
+  const body = paragraphs('a b c', 'd e f', 'g h i', 'j k l');
+  const v1 = first(body + '<h1 id="h.old">CH 2: Class builds</h1>');
+  const v2 = next(v1, body + '<h1 id="h.new">CH 2: Aulamus vs Kromede</h1>');
+  expect(kinds(v2).at(-1)).toBe('block-0005:edited');
+});
+
+it('lets a chapter go when a later one takes its number', () => {
+  const body = paragraphs('a b c', 'd e f', 'g h i', 'j k l', 'm n o', 'p q r');
+  const v1 = first(
+    '<h1 id="h.a">CH 1: Alpha beta gamma</h1><h1 id="h.b">CH 2: Second</h1>' +
+      body,
+  );
+  const v2 = next(v1, '<h1 id="h.b">CH 1: Second</h1>' + body);
+  expect(v2.removed).toEqual(['block-0001']);
+});
+
 it('reuses figure IDs by image hash and numbers new images', () => {
   const image = `<p><img src="data:image/png;base64,${png}"></p>`;
   const v1 = first(image + paragraphs('a b c'));
