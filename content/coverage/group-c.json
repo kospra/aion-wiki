@@ -2005,6 +2005,14 @@
     }
   },
   {
+    "sourceId": "block-1375",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "global-genus-stat-priorities",
+      "blockIds": ["block-1375"]
+    }
+  },
+  {
     "sourceId": "block-1327",
     "disposition": "layout-only",
     "reason": "Empty document spacing is normalized by article layout."
@@ -5628,13 +5636,6 @@
     "reason": "Empty document spacing is normalized by article layout."
   },
   {
-    "sourceId": "block-1263",
-    "disposition": "omitted",
-    "omission": "separator",
-    "pageSlug": "damage-formula-and-pure-attack",
-    "reason": "Google Docs divider line; article spacing separates sections."
-  },
-  {
     "sourceId": "block-1264",
     "disposition": "layout-only",
     "reason": "Empty document spacing is normalized by article layout."
@@ -5657,19 +5658,98 @@
     "reason": "Empty document spacing is normalized by article layout."
   },
   {
-    "sourceId": "block-1307",
-    "disposition": "rendered",
-    "primary": {
-      "pageSlug": "class-builds",
-      "blockIds": ["block-1307"]
-    }
+    "sourceId": "block-1381",
+    "disposition": "layout-only",
+    "reason": "Empty document spacing is normalized by article layout."
   },
   {
-    "sourceId": "block-1308",
-    "disposition": "rendered",
-    "primary": {
-      "pageSlug": "class-builds",
-      "blockIds": ["block-1308"]
-    }
+    "sourceId": "block-1386",
+    "disposition": "layout-only",
+    "reason": "Empty document spacing is normalized by article layout."
+  },
+  {
+    "sourceId": "block-1388",
+    "disposition": "layout-only",
+    "reason": "Empty document spacing is normalized by article layout."
+  },
+  {
+    "sourceId": "block-1392",
+    "disposition": "layout-only",
+    "reason": "Empty document spacing is normalized by article layout."
+  },
+  {
+    "sourceId": "block-1394",
+    "disposition": "layout-only",
+    "reason": "Empty document spacing is normalized by article layout."
+  },
+  {
+    "sourceId": "block-1397",
+    "disposition": "layout-only",
+    "reason": "Empty document spacing is normalized by article layout."
+  },
+  {
+    "sourceId": "block-1399",
+    "disposition": "layout-only",
+    "reason": "Empty document spacing is normalized by article layout."
+  },
+  {
+    "sourceId": "block-1401",
+    "disposition": "layout-only",
+    "reason": "Empty document spacing is normalized by article layout."
+  },
+  {
+    "sourceId": "block-1403",
+    "disposition": "layout-only",
+    "reason": "Empty document spacing is normalized by article layout."
+  },
+  {
+    "sourceId": "block-1405",
+    "disposition": "layout-only",
+    "reason": "Empty document spacing is normalized by article layout."
+  },
+  {
+    "sourceId": "block-1407",
+    "disposition": "layout-only",
+    "reason": "Empty document spacing is normalized by article layout."
+  },
+  {
+    "sourceId": "block-1409",
+    "disposition": "layout-only",
+    "reason": "Empty document spacing is normalized by article layout."
+  },
+  {
+    "sourceId": "block-1411",
+    "disposition": "layout-only",
+    "reason": "Empty document spacing is normalized by article layout."
+  },
+  {
+    "sourceId": "block-1413",
+    "disposition": "layout-only",
+    "reason": "Empty document spacing is normalized by article layout."
+  },
+  {
+    "sourceId": "block-1415",
+    "disposition": "layout-only",
+    "reason": "Empty document spacing is normalized by article layout."
+  },
+  {
+    "sourceId": "block-1420",
+    "disposition": "layout-only",
+    "reason": "Empty document spacing is normalized by article layout."
+  },
+  {
+    "sourceId": "block-1422",
+    "disposition": "layout-only",
+    "reason": "Empty document spacing is normalized by article layout."
+  },
+  {
+    "sourceId": "block-1428",
+    "disposition": "layout-only",
+    "reason": "Empty document spacing is normalized by article layout."
+  },
+  {
+    "sourceId": "block-1430",
+    "disposition": "layout-only",
+    "reason": "Empty document spacing is normalized by article layout."
   }
 ]

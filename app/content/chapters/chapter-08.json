@@ -543,8 +543,7 @@
         "kind": "heading",
         "content": [
           {
-            "text": "***GLOBAL BIS GENUS LINES***",
-            "strong": true
+            "text": "***GLOBAL BIS GENUS LINES***"
           }
         ],
         "level": 3
@@ -646,7 +645,7 @@
         "kind": "paragraph",
         "content": [
           {
-            "text": "Note: I’ve listed out BIS lines but for Lines 2, 8, it’s recommended to ignore these considering it would be way too expensive to try and get these stats. It’s not worth the cost of Cyrstals and Kinah.",
+            "text": "Note: I’ve listed out BIS lines but for Lines 2, 8, it’s recommended to ignore these considering it would be way too expensive to try and get these stats. It’s not worth the cost of Crystals and Kinah.",
             "emphasis": true
           }
         ]
@@ -1298,6 +1297,17 @@
         "content": [
           {
             "text": "* Stats above are written as follows: (Stat Prio 1 > Stat Prio 2, Stat Prio 2 option 2)",
+            "emphasis": true
+          }
+        ]
+      },
+      {
+        "id": "block-1375",
+        "sourceIds": ["block-1375"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "* Want to emphasize taking Crit/Accuracy over Power Shard for Slots 3, 6, 9 if you are not at the crit/accuracy caps. Power Shard is only better if you have hit the caps. Caps are currently unknown for Raids.",
             "emphasis": true
           }
         ]

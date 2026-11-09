@@ -297,15 +297,7 @@
                   "text": "Might ("
                 },
                 {
-                  "text": "≈ ",
-                  "emphasis": true
-                },
-                {
-                  "text": "5",
-                  "emphasis": true
-                },
-                {
-                  "text": "%)",
+                  "text": "≈ 5%)",
                   "emphasis": true
                 }
               ]
@@ -321,15 +313,7 @@
                   "text": "Multi-hit chance ("
                 },
                 {
-                  "text": "≈ ",
-                  "emphasis": true
-                },
-                {
-                  "text": "5",
-                  "emphasis": true
-                },
-                {
-                  "text": "%)",
+                  "text": "≈ 5%)",
                   "emphasis": true
                 }
               ]
@@ -361,15 +345,7 @@
                   "text": "Attack ("
                 },
                 {
-                  "text": "≈ ",
-                  "emphasis": true
-                },
-                {
-                  "text": "6",
-                  "emphasis": true
-                },
-                {
-                  "text": "%)",
+                  "text": "≈ 6%)",
                   "emphasis": true
                 }
               ]
@@ -515,25 +491,6 @@
               "content": [
                 {
                   "text": "Attack Increase ("
-                },
-                {
-                  "text": "≈ ",
-                  "emphasis": true
-                },
-                {
-                  "text": "1%)"
-                }
-              ]
-            }
-          ],
-          [
-            {
-              "id": "block-0269",
-              "sourceIds": ["block-0269"],
-              "kind": "paragraph",
-              "content": [
-                {
-                  "text": "Perfect Chance ("
                 },
                 {
                   "text": "≈ ",
@@ -1598,44 +1555,74 @@
         ]
       },
       {
-        "id": "block-0345",
-        "sourceIds": ["block-0345"],
+        "id": "block-1363",
+        "sourceIds": ["block-1363"],
+        "kind": "heading",
+        "level": 3,
+        "content": [
+          {
+            "text": "Ludra Hard Raid (Global)",
+            "highlight": "#ffff00"
+          }
+        ]
+      },
+      {
+        "id": "block-1364",
+        "sourceIds": ["block-1364"],
         "kind": "paragraph",
         "content": [
           {
-            "text": "*These requirements are not yet confirmed for global",
+            "text": "First Bosses (Rahu, Ketu) ≈ 1200 Accuracy",
+            "highlight": "#ffff00"
+          }
+        ]
+      },
+      {
+        "id": "block-1365",
+        "sourceIds": ["block-1365"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "First Bosses (Rahu, Ketu) ≈ 1600 Crit",
+            "highlight": "#ffff00",
+            "breakAfter": true
+          },
+          {
+            "text": "Second Boss (Ludra) ≈ 1200 Accuracy",
+            "highlight": "#ffff00"
+          }
+        ]
+      },
+      {
+        "id": "block-1366",
+        "sourceIds": ["block-1366"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "Second Boss (Ludra) ≈ 1700 Crit",
+            "highlight": "#ffff00"
+          }
+        ]
+      },
+      {
+        "id": "block-1367",
+        "sourceIds": ["block-1367"],
+        "kind": "paragraph",
+        "content": [
+          {
+            "text": "*Note: Above is total Accuracy and Crit including all Accuracy/Crit stats + buffs",
             "emphasis": true
           }
         ]
       },
       {
-        "id": "block-0347",
-        "sourceIds": ["block-0347"],
-        "kind": "heading",
-        "content": [
-          {
-            "text": "Projected Ludra Raid (Global)"
-          }
-        ],
-        "level": 3
-      },
-      {
-        "id": "block-1311",
-        "sourceIds": ["block-1311"],
+        "id": "block-1368",
+        "sourceIds": ["block-1368"],
         "kind": "paragraph",
         "content": [
           {
-            "text": "1200 Accuracy"
-          }
-        ]
-      },
-      {
-        "id": "block-1312",
-        "sourceIds": ["block-1312"],
-        "kind": "paragraph",
-        "content": [
-          {
-            "text": "1200 ~ 1400 Crit"
+            "text": "First Clear Group (Failure Guild) avg DPS per person",
+            "strong": true
           }
         ]
       },
@@ -1645,7 +1632,7 @@
         "kind": "heading",
         "content": [
           {
-            "text": "Corroded Raid"
+            "text": "Corroded Raid (KR)"
           }
         ],
         "level": 3

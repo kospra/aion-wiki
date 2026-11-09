@@ -1101,13 +1101,7 @@
         "kind": "paragraph",
         "content": [
           {
-            "text": "The 3 most important lines here are Chalice (Time - Combat Speed), Bell (Destruction - Attack Increase % ), and Mirror (Wisdom - "
-          },
-          {
-            "text": "Double Chance"
-          },
-          {
-            "text": ")"
+            "text": "The 3 most important lines here are Chalice (Time - Combat Speed), Bell (Destruction - Attack Increase % ), and Mirror (Wisdom - Double Chance). For Global you can consider going Primal Vigor on Mirror which would change Wisdom/Double Chance to Illusion/CDR. Some classes are especially CDR dependent such as Sorc."
           }
         ]
       },

@@ -6,29 +6,6 @@
     "summary": "Where to find builds and loadouts for every class.",
     "status": "source-backed",
     "sourceUrl": "https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/edit",
-    "blocks": [
-      {
-        "id": "block-1307",
-        "sourceIds": ["block-1307"],
-        "kind": "paragraph",
-        "content": [
-          {
-            "text": "Notmeter (the main site to track performance/dps/parses) now has a section that showcases all builds and loadouts across all classes. Link:"
-          }
-        ]
-      },
-      {
-        "id": "block-1308",
-        "sourceIds": ["block-1308"],
-        "kind": "paragraph",
-        "content": [
-          {
-            "text": "https://notmeter.com/?view=setup-guide",
-            "underline": true,
-            "href": "https://notmeter.com/?view=setup-guide"
-          }
-        ]
-      }
-    ]
+    "blocks": []
   }
 ]

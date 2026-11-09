@@ -301,11 +301,7 @@
         "kind": "paragraph",
         "content": [
           {
-            "text": "Double Chance ",
-            "strong": true
-          },
-          {
-            "text": "0% → 1%",
+            "text": "Double Chance 0% → 1%",
             "strong": true
           }
         ]
@@ -337,11 +333,7 @@
         "kind": "paragraph",
         "content": [
           {
-            "text": "Double Chance ",
-            "strong": true
-          },
-          {
-            "text": "0% → 2%",
+            "text": "Double Chance 0% → 2%",
             "strong": true
           }
         ]
@@ -373,11 +365,7 @@
         "kind": "paragraph",
         "content": [
           {
-            "text": "Double Chance ",
-            "strong": true
-          },
-          {
-            "text": "0% → 50%",
+            "text": "Double Chance 0% → 50%",
             "strong": true
           }
         ]
@@ -409,11 +397,7 @@
         "kind": "paragraph",
         "content": [
           {
-            "text": "Double Chance ",
-            "strong": true
-          },
-          {
-            "text": "1% → 2%",
+            "text": "Double Chance 1% → 2%",
             "strong": true
           }
         ]
@@ -701,8 +685,7 @@
         "kind": "heading",
         "content": [
           {
-            "text": "End-Game (KR) Damage Efficiency Numbers (GLOBAL IS DIFFERENT, will update Global numbers soon)",
-            "strong": true
+            "text": "End-Game (KR) Damage Efficiency Numbers (GLOBAL IS DIFFERENT, will update Global numbers soon)"
           }
         ],
         "level": 3
@@ -1569,18 +1552,7 @@
         "kind": "heading",
         "content": [
           {
-            "text": "STAT VALUE ",
-            "strong": true,
-            "highlight": "#f8f9fa"
-          },
-          {
-            "text": "TLDR",
-            "strong": true,
-            "highlight": "#f8f9fa"
-          },
-          {
-            "text": " ",
-            "strong": true,
+            "text": "STAT VALUE TLDR",
             "highlight": "#f8f9fa"
           }
         ],
@@ -1592,7 +1564,15 @@
         "kind": "paragraph",
         "content": [
           {
-            "text": "KR: Double Chance > Front/Back Attack Boost > Weapon Damage Boost > ≈ Critical Damage Boost > Damage Boost",
+            "text": "KR:",
+            "strong": true,
+            "highlight": "#f8f9fa"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Double Chance > Front/Back Attack Boost > Weapon Damage Boost > ≈ Critical Damage Boost > Damage Boost",
             "highlight": "#f8f9fa"
           }
         ]
@@ -1603,7 +1583,15 @@
         "kind": "paragraph",
         "content": [
           {
-            "text": "GLOBAL: Double Chance > Front/Back Attack Boost > Weapon Damage Boost > Damage Boost > Critical Damage Boost",
+            "text": "GLOBAL:",
+            "strong": true,
+            "highlight": "#f8f9fa"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Double Chance > Front/Back Attack Boost > Weapon Damage Boost > Damage Boost > Critical Damage Boost",
             "highlight": "#f8f9fa"
           }
         ]
@@ -1627,6 +1615,7 @@
         "content": [
           {
             "text": "KR & GLOBAL",
+            "strong": true,
             "highlight": "#f8f9fa"
           }
         ]
@@ -1818,7 +1807,7 @@
                     "kind": "paragraph",
                     "content": [
                       {
-                        "text": "Each hit is 2% of the Damage"
+                        "text": "Each hit is 2% of the Damage (needs more testing, rumored to be higher on bosses)"
                       }
                     ]
                   }

@@ -1,6 +1,6 @@
 {
   "fingerprints": {
-    "html": "4a5bd496779030028035a0de3e1cddd0aa8c3444aa77d4b6006693c1d42dcce1"
+    "html": "faee9b6e8e3e17738f8212975a888d1becc84f85bbfaf9bdb2429ccdbdd831f6"
   },
   "blocks": [
     {
@@ -68,33 +68,15 @@
     {
       "id": "block-0005",
       "tag": "p",
-      "text": "Last Updated: /20/2026",
-      "numbers": ["20", "2026"],
+      "text": "Last Updated: 11/05/2026",
+      "numbers": ["11", "05", "2026"],
       "figureIds": [],
       "links": [],
       "formatting": [
         {
-          "text": "Last Updated: /",
+          "text": "Last Updated: 11/05/2026",
           "start": 0,
-          "end": 15,
-          "strong": true,
-          "emphasis": true,
-          "underline": true,
-          "highlight": "#ffff00"
-        },
-        {
-          "text": "20",
-          "start": 15,
-          "end": 17,
-          "strong": true,
-          "emphasis": true,
-          "underline": true,
-          "highlight": "#ffff00"
-        },
-        {
-          "text": "/2026",
-          "start": 17,
-          "end": 22,
+          "end": 24,
           "strong": true,
           "emphasis": true,
           "underline": true,
@@ -103,31 +85,147 @@
       ]
     },
     {
-      "id": "block-1348",
+      "id": "block-1357",
       "tag": "p",
-      "text": "***Update Note 10/25/2026: Updated stat efficiency stuff including TLDR, full Global stat efficiency numbers will be updated soon. Also updated Genus (first board)",
-      "numbers": ["10", "25", "2026"],
+      "text": "*Update Notes: Currently testing Global Stat Efficiency values with AionLab, will update a Global version of End-Game Damage Effeciency Numbers",
+      "numbers": [],
       "figureIds": [],
-      "links": [],
+      "links": [
+        {
+          "label": "End-Game Damage Effeciency Numbers",
+          "href": "#h.8kkulsluyy4n"
+        }
+      ],
       "formatting": [
         {
-          "text": "***Update Note 10/25/2026",
+          "text": "*Update Notes",
           "start": 0,
-          "end": 25,
+          "end": 13,
           "strong": true,
           "emphasis": true,
           "underline": true,
           "highlight": "#ffff00"
         },
         {
-          "text": ": Updated stat efficiency stuff including TLDR, full Global stat efficiency numbers will be updated soon. Also updated Genus (first board)",
-          "start": 25,
-          "end": 163,
+          "text": ": Currently testing Global Stat Efficiency values with AionLab, will update a Global version of",
+          "start": 13,
+          "end": 108,
           "strong": true,
           "emphasis": true,
           "highlight": "#ffff00"
+        },
+        {
+          "text": "End-Game Damage Effeciency Numbers",
+          "start": 109,
+          "end": 143,
+          "strong": true,
+          "emphasis": true,
+          "underline": true,
+          "highlight": "#ffff00"
         }
       ]
+    },
+    {
+      "id": "block-1358",
+      "tag": "li",
+      "text": "Created CH 12: Aulamus vs Kromede",
+      "numbers": ["12"],
+      "figureIds": [],
+      "links": [
+        {
+          "label": "CH 12: Aulamus vs Kromede",
+          "href": "#h.3g6woghc1yz1"
+        }
+      ],
+      "formatting": [
+        {
+          "text": "Created",
+          "start": 0,
+          "end": 7,
+          "strong": true,
+          "emphasis": true,
+          "highlight": "#ffff00"
+        },
+        {
+          "text": "CH 12: Aulamus vs Kromede",
+          "start": 8,
+          "end": 33,
+          "strong": true,
+          "emphasis": true,
+          "underline": true,
+          "highlight": "#ffff00"
+        }
+      ],
+      "ordered": false,
+      "level": 0
+    },
+    {
+      "id": "block-1359",
+      "tag": "li",
+      "text": "Updated Global Ludra Hard Caps",
+      "numbers": [],
+      "figureIds": [],
+      "links": [
+        {
+          "label": "Global Ludra Hard Caps ",
+          "href": "#h.29zwyexbxbmm"
+        }
+      ],
+      "formatting": [
+        {
+          "text": "Updated",
+          "start": 0,
+          "end": 7,
+          "strong": true,
+          "emphasis": true,
+          "highlight": "#ffff00"
+        },
+        {
+          "text": "Global Ludra Hard Caps",
+          "start": 8,
+          "end": 30,
+          "strong": true,
+          "emphasis": true,
+          "underline": true,
+          "highlight": "#ffff00"
+        }
+      ],
+      "ordered": false,
+      "level": 0
+    },
+    {
+      "id": "block-1360",
+      "tag": "li",
+      "text": "Added First Clear Group DPS measurements for Ludra Hard Global",
+      "numbers": [],
+      "figureIds": [],
+      "links": [
+        {
+          "label": " Ludra Hard Global",
+          "href": "#h.29zwyexbxbmm"
+        }
+      ],
+      "formatting": [
+        {
+          "text": "Added First Clear Group DPS measurements for",
+          "start": 0,
+          "end": 44,
+          "strong": true,
+          "emphasis": true,
+          "highlight": "#ffff00"
+        },
+        {
+          "text": "Ludra Hard Global",
+          "start": 45,
+          "end": 62,
+          "strong": true,
+          "emphasis": true,
+          "underline": true,
+          "highlight": "#ffff00"
+        }
+      ],
+      "ordered": false,
+      "level": 0
     },
     {
       "id": "block-0007",
@@ -355,13 +453,25 @@
       ]
     },
     {
-      "id": "block-1329",
+      "id": "block-1361",
       "tag": "p",
-      "text": "As of 10/20/26 I am the top ranked Gladiator on Global (Notmeter DPS rankings) between the 150k-175k Combat Power Bracket for Transcendence Dungeons and 11th overall on Transcendence (Shattered) - Top 10 being all over 200k Combat Power at the time. (My group rarely runs Deus)",
-      "numbers": ["10", "20", "26", "150", "175", "11", "10", "200"],
+      "text": "As of 11/8/06 I’ve hit Rank 1 across multiple fights across every CP bracket so far starting from 150~200 thru 225~250. My weekly and all-time rankings on Notmeter can be found here: https://tinyurl.com/vtct49t2",
+      "numbers": ["11", "8", "06", "1", "150", "200", "225", "250", "49", "2"],
       "figureIds": [],
-      "links": [],
-      "formatting": []
+      "links": [
+        {
+          "label": "https://tinyurl.com/vtct49t2",
+          "href": "https://www.google.com/url?q=https://tinyurl.com/vtct49t2&sa=D&source=editors&ust=1794246806791833&usg=AOvVaw0c0kCLhQiRh095RGL0iD9i"
+        }
+      ],
+      "formatting": [
+        {
+          "text": "https://tinyurl.com/vtct49t2",
+          "start": 183,
+          "end": 211,
+          "underline": true
+        }
+      ]
     },
     {
       "id": "block-1330",
@@ -382,27 +492,20 @@
       "formatting": []
     },
     {
-      "id": "block-1332",
+      "id": "block-1362",
       "tag": "p",
-      "text": "GLADIATOR OVERALL TRANSCENDENCE (SHATTERED) RANKINGS AS OF 10/17/26",
-      "numbers": ["10", "17", "26"],
-      "figureIds": [],
+      "text": "",
+      "numbers": [],
+      "figureIds": ["figure-096"],
       "links": [],
-      "formatting": [
-        {
-          "text": "GLADIATOR OVERALL TRANSCENDENCE (SHATTERED) RANKINGS AS OF 10/17/26",
-          "start": 0,
-          "end": 67,
-          "emphasis": true
-        }
-      ]
+      "formatting": []
     },
     {
       "id": "block-1333",
       "tag": "p",
       "text": "—",
       "numbers": [],
-      "figureIds": ["figure-094"],
+      "figureIds": [],
       "links": [],
       "formatting": [
         {
@@ -429,7 +532,14 @@
       "numbers": ["1"],
       "figureIds": [],
       "links": [],
-      "formatting": [],
+      "formatting": [
+        {
+          "text": "CH 1: GEAR & BASICS EXPLAINED",
+          "start": 0,
+          "end": 29,
+          "underline": true
+        }
+      ],
       "anchor": "h.fd6f5081na1u"
     },
     {
@@ -1835,7 +1945,14 @@
       "numbers": ["2"],
       "figureIds": [],
       "links": [],
-      "formatting": [],
+      "formatting": [
+        {
+          "text": "CH 2: A CLOSER LOOK",
+          "start": 0,
+          "end": 19,
+          "underline": true
+        }
+      ],
       "anchor": "h.cvvirpbwj0qh"
     },
     {
@@ -3039,7 +3156,14 @@
       "numbers": ["3"],
       "figureIds": [],
       "links": [],
-      "formatting": [],
+      "formatting": [
+        {
+          "text": "CH 3: IDEAL STAT LINES",
+          "start": 0,
+          "end": 22,
+          "underline": true
+        }
+      ],
       "anchor": "h.hx906bb22kzf"
     },
     {
@@ -3367,20 +3491,8 @@
       "links": [],
       "formatting": [
         {
-          "text": "≈",
+          "text": "≈ 5%)",
           "start": 7,
-          "end": 8,
-          "emphasis": true
-        },
-        {
-          "text": "5",
-          "start": 9,
-          "end": 10,
-          "emphasis": true
-        },
-        {
-          "text": "%)",
-          "start": 10,
           "end": 12,
           "emphasis": true
         }
@@ -3397,20 +3509,8 @@
       "links": [],
       "formatting": [
         {
-          "text": "≈",
+          "text": "≈ 5%)",
           "start": 18,
-          "end": 19,
-          "emphasis": true
-        },
-        {
-          "text": "5",
-          "start": 20,
-          "end": 21,
-          "emphasis": true
-        },
-        {
-          "text": "%)",
-          "start": 21,
           "end": 23,
           "emphasis": true
         }
@@ -3427,38 +3527,8 @@
       "links": [],
       "formatting": [
         {
-          "text": "≈",
+          "text": "≈ 6%) *may not be needed b/c of new Global 50% crit cap, depends on Ludra caps",
           "start": 11,
-          "end": 12,
-          "emphasis": true
-        },
-        {
-          "text": "6",
-          "start": 13,
-          "end": 14,
-          "emphasis": true
-        },
-        {
-          "text": "%)",
-          "start": 14,
-          "end": 16,
-          "emphasis": true
-        },
-        {
-          "text": "*",
-          "start": 17,
-          "end": 18,
-          "emphasis": true
-        },
-        {
-          "text": "may not be needed b/c of",
-          "start": 18,
-          "end": 42,
-          "emphasis": true
-        },
-        {
-          "text": "new Global 50% crit cap, depends on Ludra caps",
-          "start": 43,
           "end": 89,
           "emphasis": true
         }
@@ -3475,20 +3545,8 @@
       "links": [],
       "formatting": [
         {
-          "text": "≈",
+          "text": "≈ 6%)",
           "start": 8,
-          "end": 9,
-          "emphasis": true
-        },
-        {
-          "text": "6",
-          "start": 10,
-          "end": 11,
-          "emphasis": true
-        },
-        {
-          "text": "%)",
-          "start": 11,
           "end": 13,
           "emphasis": true
         }
@@ -3627,24 +3685,6 @@
           "text": "≈",
           "start": 17,
           "end": 18,
-          "emphasis": true
-        }
-      ],
-      "ordered": false,
-      "level": 0
-    },
-    {
-      "id": "block-0269",
-      "tag": "li",
-      "text": "Perfect Chance (≈ 1%)",
-      "numbers": ["1"],
-      "figureIds": [],
-      "links": [],
-      "formatting": [
-        {
-          "text": "≈",
-          "start": 16,
-          "end": 17,
           "emphasis": true
         }
       ],
@@ -4584,12 +4624,20 @@
     },
     {
       "id": "block-0339",
-      "tag": "h2",
+      "tag": "h1",
       "text": "Accuracy & Crit Requirements",
       "numbers": [],
       "figureIds": [],
       "links": [],
-      "formatting": []
+      "formatting": [
+        {
+          "text": "Accuracy & Crit Requirements",
+          "start": 0,
+          "end": 28,
+          "underline": true
+        }
+      ],
+      "anchor": "h.29zwyexbxbmm"
     },
     {
       "id": "block-0340",
@@ -4659,18 +4707,72 @@
       "formatting": []
     },
     {
-      "id": "block-0345",
-      "tag": "p",
-      "text": "*These requirements are not yet confirmed for global",
+      "id": "block-1363",
+      "tag": "h3",
+      "text": "Ludra Hard Raid (Global)",
       "numbers": [],
       "figureIds": [],
       "links": [],
       "formatting": [
         {
-          "text": "*These requirements are not yet confirmed for global",
+          "text": "Ludra Hard Raid (Global)",
           "start": 0,
-          "end": 52,
-          "emphasis": true
+          "end": 24,
+          "highlight": "#ffff00"
+        }
+      ]
+    },
+    {
+      "id": "block-1364",
+      "tag": "p",
+      "text": "First Bosses (Rahu, Ketu) ≈ 1200 Accuracy",
+      "numbers": ["1200"],
+      "figureIds": [],
+      "links": [],
+      "formatting": [
+        {
+          "text": "First Bosses (Rahu, Ketu) ≈ 1200 Accuracy",
+          "start": 0,
+          "end": 41,
+          "highlight": "#ffff00"
+        }
+      ]
+    },
+    {
+      "id": "block-1365",
+      "tag": "p",
+      "text": "First Bosses (Rahu, Ketu) ≈ 1600 Crit\nSecond Boss (Ludra) ≈ 1200 Accuracy",
+      "numbers": ["1600", "1200"],
+      "figureIds": [],
+      "links": [],
+      "formatting": [
+        {
+          "text": "First Bosses (Rahu, Ketu) ≈ 1600 Crit",
+          "start": 0,
+          "end": 37,
+          "highlight": "#ffff00"
+        },
+        {
+          "text": "Second Boss (Ludra) ≈ 1200 Accuracy",
+          "start": 38,
+          "end": 73,
+          "highlight": "#ffff00"
+        }
+      ]
+    },
+    {
+      "id": "block-1366",
+      "tag": "p",
+      "text": "Second Boss (Ludra) ≈ 1700 Crit",
+      "numbers": ["1700"],
+      "figureIds": [],
+      "links": [],
+      "formatting": [
+        {
+          "text": "Second Boss (Ludra) ≈ 1700 Crit",
+          "start": 0,
+          "end": 31,
+          "highlight": "#ffff00"
         }
       ]
     },
@@ -4684,31 +4786,20 @@
       "formatting": []
     },
     {
-      "id": "block-0347",
-      "tag": "h3",
-      "text": "Projected Ludra Raid (Global)",
+      "id": "block-1367",
+      "tag": "p",
+      "text": "*Note: Above is total Accuracy and Crit including all Accuracy/Crit stats + buffs",
       "numbers": [],
       "figureIds": [],
       "links": [],
-      "formatting": []
-    },
-    {
-      "id": "block-1311",
-      "tag": "p",
-      "text": "1200 Accuracy",
-      "numbers": ["1200"],
-      "figureIds": [],
-      "links": [],
-      "formatting": []
-    },
-    {
-      "id": "block-1312",
-      "tag": "p",
-      "text": "1200 ~ 1400 Crit",
-      "numbers": ["1200", "1400"],
-      "figureIds": [],
-      "links": [],
-      "formatting": []
+      "formatting": [
+        {
+          "text": "*Note: Above is total Accuracy and Crit including all Accuracy/Crit stats + buffs",
+          "start": 0,
+          "end": 81,
+          "emphasis": true
+        }
+      ]
     },
     {
       "id": "block-0350",
@@ -4720,9 +4811,92 @@
       "formatting": []
     },
     {
+      "id": "block-1368",
+      "tag": "p",
+      "text": "First Clear Group (Failure Guild) avg DPS per person",
+      "numbers": [],
+      "figureIds": [],
+      "links": [],
+      "formatting": [
+        {
+          "text": "First Clear Group (Failure Guild) avg DPS per person",
+          "start": 0,
+          "end": 52,
+          "strong": true
+        }
+      ]
+    },
+    {
+      "id": "block-1369",
+      "tag": "li",
+      "text": "Boss 1 (Rahu): ≈ 123k",
+      "numbers": ["1", "123"],
+      "figureIds": [],
+      "links": [],
+      "formatting": [],
+      "ordered": false,
+      "level": 0
+    },
+    {
+      "id": "block-1370",
+      "tag": "li",
+      "text": "Boss 2 (Ketu): ≈ 108k",
+      "numbers": ["2", "108"],
+      "figureIds": [],
+      "links": [],
+      "formatting": [],
+      "ordered": false,
+      "level": 0
+    },
+    {
+      "id": "block-1371",
+      "tag": "li",
+      "text": "Ludra: ≈ 76k DPS with ≈ 2.5 minutes to spare",
+      "numbers": ["76", "2.5"],
+      "figureIds": [],
+      "links": [],
+      "formatting": [],
+      "ordered": false,
+      "level": 0
+    },
+    {
+      "id": "block-1372",
+      "tag": "p",
+      "text": "",
+      "numbers": [],
+      "figureIds": [],
+      "links": [],
+      "formatting": []
+    },
+    {
+      "id": "block-1373",
+      "tag": "p",
+      "text": "*Note: Failure spec’d heavily into defense/survivability, going as far as taking defensive stigmas at the cost of dmg",
+      "numbers": [],
+      "figureIds": [],
+      "links": [],
+      "formatting": [
+        {
+          "text": "*Note: Failure spec’d heavily into defense/survivability, going as far as taking defensive stigmas at the cost of dmg",
+          "start": 0,
+          "end": 117,
+          "emphasis": true
+        }
+      ]
+    },
+    {
+      "id": "block-1374",
+      "tag": "h3",
+      "text": "",
+      "numbers": [],
+      "figureIds": [],
+      "links": [],
+      "formatting": []
+    },
+    {
       "id": "block-0351",
       "tag": "h3",
-      "text": "Corroded Raid",
+      "text": "Corroded Raid (KR)",
       "numbers": [],
       "figureIds": [],
       "links": [],
@@ -4869,7 +5043,14 @@
       "numbers": ["4"],
       "figureIds": [],
       "links": [],
-      "formatting": [],
+      "formatting": [
+        {
+          "text": "CH 4: SKILLS",
+          "start": 0,
+          "end": 12,
+          "underline": true
+        }
+      ],
       "anchor": "h.tq1q73vbpqsn"
     },
     {
@@ -5293,7 +5474,14 @@
       "numbers": ["5"],
       "figureIds": [],
       "links": [],
-      "formatting": [],
+      "formatting": [
+        {
+          "text": "CH 5: ENHANCEMENT (UPGRADING YOUR GEAR)",
+          "start": 0,
+          "end": 39,
+          "underline": true
+        }
+      ],
       "anchor": "h.1oh12bpxb5x7"
     },
     {
@@ -6391,36 +6579,8 @@
           "highlight": "#f8f9fa"
         },
         {
-          "text": ": Be frugal with Orange/Heroic Transfer Stones/Fragments. These are not",
+          "text": ": Be frugal with Orange/Heroic Transfer Stones/Fragments. These are not THAT easy come across, if you save these early on you’ll have a nice supply for later gear. Orange/Heroic gear is MUCH more difficult and expensive to upgrade altogether so be sure to only transfer when you’re ready. I personally recommend not transferring or using the first Heroic Set (Ancient Spirit) and wait for the second set before going Orange/Heroic (Faded Shadow) unless additional changes are made to the game. Currently you can NOT upgrade a Yellow/Unique Transfer stone to an Orange/Heroic one. Transferring and Rolling lines on Yellow/Unique is free compared to Orange/Heroic). You need a LOT of Orange/Heroic Transfer Fragments for the future so just horde them early on.",
           "start": 9,
-          "end": 80,
-          "emphasis": true,
-          "highlight": "#f8f9fa"
-        },
-        {
-          "text": "THAT easy",
-          "start": 81,
-          "end": 90,
-          "emphasis": true,
-          "highlight": "#f8f9fa"
-        },
-        {
-          "text": "come across, if you save thes",
-          "start": 91,
-          "end": 120,
-          "emphasis": true,
-          "highlight": "#f8f9fa"
-        },
-        {
-          "text": "e early on you’ll have a nice supply for later gear",
-          "start": 120,
-          "end": 171,
-          "emphasis": true,
-          "highlight": "#f8f9fa"
-        },
-        {
-          "text": ". Orange/Heroic gear is MUCH more difficult and expensive to upgrade altogether so be sure to only transfer when you’re ready. I personally recommend not transferring or using the first Heroic Set (Ancient Spirit) and wait for the second set before going Orange/Heroic (Faded Shadow) unless additional changes are made to the game. Currently you can NOT upgrade a Yellow/Unique Transfer stone to an Orange/Heroic one. Transferring and Rolling lines on Yellow/Unique is free compared to Orange/Heroic). You need a LOT of Orange/Heroic Transfer Fragments for the future so just horde them early on.",
-          "start": 171,
           "end": 767,
           "emphasis": true,
           "highlight": "#f8f9fa"
@@ -6468,7 +6628,14 @@
       "numbers": ["6"],
       "figureIds": [],
       "links": [],
-      "formatting": [],
+      "formatting": [
+        {
+          "text": "CH 6: ARCANA",
+          "start": 0,
+          "end": 12,
+          "underline": true
+        }
+      ],
       "anchor": "h.roq125ed2z1x"
     },
     {
@@ -7426,7 +7593,7 @@
     {
       "id": "block-0605",
       "tag": "p",
-      "text": "The 3 most important lines here are Chalice (Time - Combat Speed), Bell (Destruction - Attack Increase % ), and Mirror (Wisdom - Double Chance)",
+      "text": "The 3 most important lines here are Chalice (Time - Combat Speed), Bell (Destruction - Attack Increase % ), and Mirror (Wisdom - Double Chance). For Global you can consider going Primal Vigor on Mirror which would change Wisdom/Double Chance to Illusion/CDR. Some classes are especially CDR dependent such as Sorc.",
       "numbers": ["3"],
       "figureIds": [],
       "links": [],
@@ -7712,7 +7879,14 @@
       "numbers": ["7"],
       "figureIds": [],
       "links": [],
-      "formatting": [],
+      "formatting": [
+        {
+          "text": "CH 7: DAEVANION BOARDS",
+          "start": 0,
+          "end": 22,
+          "underline": true
+        }
+      ],
       "anchor": "h.ulgb7f8yoh3m"
     },
     {
@@ -8230,7 +8404,14 @@
       "numbers": ["8"],
       "figureIds": [],
       "links": [],
-      "formatting": [],
+      "formatting": [
+        {
+          "text": "CH 8: PET GENUS",
+          "start": 0,
+          "end": 15,
+          "underline": true
+        }
+      ],
       "anchor": "h.teyn0ygqh64l"
     },
     {
@@ -8791,20 +8972,7 @@
       "numbers": [],
       "figureIds": [],
       "links": [],
-      "formatting": [
-        {
-          "text": "***",
-          "start": 0,
-          "end": 3,
-          "strong": true
-        },
-        {
-          "text": "GLOBAL BIS GENUS LINES***",
-          "start": 3,
-          "end": 28,
-          "strong": true
-        }
-      ],
+      "formatting": [],
       "anchor": "h.nbj6i1dt099h"
     },
     {
@@ -8921,13 +9089,13 @@
     {
       "id": "block-1299",
       "tag": "p",
-      "text": "Note: I’ve listed out BIS lines but for Lines 2, 8, it’s recommended to ignore these considering it would be way too expensive to try and get these stats. It’s not worth the cost of Cyrstals and Kinah.",
+      "text": "Note: I’ve listed out BIS lines but for Lines 2, 8, it’s recommended to ignore these considering it would be way too expensive to try and get these stats. It’s not worth the cost of Crystals and Kinah.",
       "numbers": ["2", "8"],
       "figureIds": [],
       "links": [],
       "formatting": [
         {
-          "text": "Note: I’ve listed out BIS lines but for Lines 2, 8, it’s recommended to ignore these considering it would be way too expensive to try and get these stats. It’s not worth the cost of Cyrstals and Kinah.",
+          "text": "Note: I’ve listed out BIS lines but for Lines 2, 8, it’s recommended to ignore these considering it would be way too expensive to try and get these stats. It’s not worth the cost of Crystals and Kinah.",
           "start": 0,
           "end": 201,
           "emphasis": true
@@ -9364,6 +9532,22 @@
       ]
     },
     {
+      "id": "block-1375",
+      "tag": "p",
+      "text": "* Want to emphasize taking Crit/Accuracy over Power Shard for Slots 3, 6, 9 if you are not at the crit/accuracy caps. Power Shard is only better if you have hit the caps. Caps are currently unknown for Raids.",
+      "numbers": ["3", "6", "9"],
+      "figureIds": [],
+      "links": [],
+      "formatting": [
+        {
+          "text": "* Want to emphasize taking Crit/Accuracy over Power Shard for Slots 3, 6, 9 if you are not at the crit/accuracy caps. Power Shard is only better if you have hit the caps. Caps are currently unknown for Raids.",
+          "start": 0,
+          "end": 208,
+          "emphasis": true
+        }
+      ]
+    },
+    {
       "id": "block-1327",
       "tag": "p",
       "text": "",
@@ -9442,7 +9626,14 @@
       "numbers": ["9"],
       "figureIds": [],
       "links": [],
-      "formatting": [],
+      "formatting": [
+        {
+          "text": "CH 9: WINGS",
+          "start": 0,
+          "end": 11,
+          "underline": true
+        }
+      ],
       "anchor": "h.cvgdj7zbi1xh"
     },
     {
@@ -12021,7 +12212,14 @@
       "numbers": ["10"],
       "figureIds": [],
       "links": [],
-      "formatting": [],
+      "formatting": [
+        {
+          "text": "CH 10: CLOSET (TRANSMOG)",
+          "start": 0,
+          "end": 24,
+          "underline": true
+        }
+      ],
       "anchor": "h.xxsagkzaneya"
     },
     {
@@ -12193,7 +12391,14 @@
       "numbers": ["11"],
       "figureIds": [],
       "links": [],
-      "formatting": [],
+      "formatting": [
+        {
+          "text": "CH 11: HOW STATS WORK (DAMAGE FORMULA)",
+          "start": 0,
+          "end": 38,
+          "underline": true
+        }
+      ],
       "anchor": "h.p8k2ggniq50o"
     },
     {
@@ -12596,14 +12801,8 @@
       "links": [],
       "formatting": [
         {
-          "text": "Double Chance",
+          "text": "Double Chance 0% → 1%",
           "start": 0,
-          "end": 13,
-          "strong": true
-        },
-        {
-          "text": "0% → 1%",
-          "start": 14,
           "end": 21,
           "strong": true
         }
@@ -12643,14 +12842,8 @@
       "links": [],
       "formatting": [
         {
-          "text": "Double Chance",
+          "text": "Double Chance 0% → 2%",
           "start": 0,
-          "end": 13,
-          "strong": true
-        },
-        {
-          "text": "0% → 2%",
-          "start": 14,
           "end": 21,
           "strong": true
         }
@@ -12690,14 +12883,8 @@
       "links": [],
       "formatting": [
         {
-          "text": "Double Chance",
+          "text": "Double Chance 0% → 50%",
           "start": 0,
-          "end": 13,
-          "strong": true
-        },
-        {
-          "text": "0% → 50%",
-          "start": 14,
           "end": 22,
           "strong": true
         }
@@ -12746,14 +12933,8 @@
       "links": [],
       "formatting": [
         {
-          "text": "Double Chance",
+          "text": "Double Chance 1% → 2%",
           "start": 0,
-          "end": 13,
-          "strong": true
-        },
-        {
-          "text": "1% → 2%",
-          "start": 14,
           "end": 21,
           "strong": true
         }
@@ -13075,14 +13256,7 @@
       "numbers": [],
       "figureIds": [],
       "links": [],
-      "formatting": [
-        {
-          "text": "End-Game (KR) Damage Efficiency Numbers (GLOBAL IS DIFFERENT, will update Global numbers soon)",
-          "start": 0,
-          "end": 94,
-          "strong": true
-        }
-      ],
+      "formatting": [],
       "anchor": "h.8kkulsluyy4n"
     },
     {
@@ -13836,17 +14010,9 @@
       "links": [],
       "formatting": [
         {
-          "text": "STAT VALUE",
+          "text": "STAT VALUE TLDR",
           "start": 0,
-          "end": 10,
-          "strong": true,
-          "highlight": "#f8f9fa"
-        },
-        {
-          "text": "TLDR",
-          "start": 11,
           "end": 15,
-          "strong": true,
           "highlight": "#f8f9fa"
         }
       ],
@@ -13861,14 +14027,15 @@
       "links": [],
       "formatting": [
         {
-          "text": "KR: Double Chance",
+          "text": "KR:",
           "start": 0,
-          "end": 17,
+          "end": 3,
+          "strong": true,
           "highlight": "#f8f9fa"
         },
         {
-          "text": "> Front/Back Attack Boost > Weapon Damage Boost > ≈ Critical Damage Boost > Damage Boost",
-          "start": 18,
+          "text": "Double Chance > Front/Back Attack Boost > Weapon Damage Boost > ≈ Critical Damage Boost > Damage Boost",
+          "start": 4,
           "end": 106,
           "highlight": "#f8f9fa"
         }
@@ -13892,8 +14059,15 @@
       "links": [],
       "formatting": [
         {
-          "text": "GLOBAL: Double Chance > Front/Back Attack Boost > Weapon Damage Boost > Damage Boost > Critical Damage Boost",
+          "text": "GLOBAL:",
           "start": 0,
+          "end": 7,
+          "strong": true,
+          "highlight": "#f8f9fa"
+        },
+        {
+          "text": "Double Chance > Front/Back Attack Boost > Weapon Damage Boost > Damage Boost > Critical Damage Boost",
+          "start": 8,
           "end": 108,
           "highlight": "#f8f9fa"
         }
@@ -13937,6 +14111,7 @@
           "text": "KR & GLOBAL",
           "start": 0,
           "end": 11,
+          "strong": true,
           "highlight": "#f8f9fa"
         }
       ]
@@ -14131,7 +14306,7 @@
     {
       "id": "block-1356",
       "tag": "li",
-      "text": "Each hit is 2% of the Damage",
+      "text": "Each hit is 2% of the Damage (needs more testing, rumored to be higher on bosses)",
       "numbers": ["2"],
       "figureIds": [],
       "links": [],
@@ -15173,13 +15348,21 @@
       "formatting": []
     },
     {
-      "id": "block-1263",
-      "tag": "p",
-      "text": "—",
-      "numbers": [],
+      "id": "block-1266",
+      "tag": "h1",
+      "text": "CH 12: GLOBAL AULAMUS VS KROMEDE",
+      "numbers": ["12"],
       "figureIds": [],
       "links": [],
-      "formatting": []
+      "formatting": [
+        {
+          "text": "CH 12: GLOBAL AULAMUS VS KROMEDE",
+          "start": 0,
+          "end": 32,
+          "underline": true
+        }
+      ],
+      "anchor": "h.3g6woghc1yz1"
     },
     {
       "id": "block-1264",
@@ -15191,6 +15374,33 @@
       "formatting": []
     },
     {
+      "id": "block-1376",
+      "tag": "p",
+      "text": "Spent time with AionLab (damage formula founder) to crunch numbers on the Aulamus vs Kromede Weapon on the Global servers. We based the tests off of my Gladiator @ 180k CP. These numbers will vary depending on what your stats are and what class you're playing.",
+      "numbers": ["180"],
+      "figureIds": [],
+      "links": [
+        {
+          "label": "damage formula ",
+          "href": "#h.qzo7ifhytwwm"
+        }
+      ],
+      "formatting": [
+        {
+          "text": "damage formula",
+          "start": 25,
+          "end": 39,
+          "underline": true
+        },
+        {
+          "text": "will",
+          "start": 187,
+          "end": 191,
+          "emphasis": true
+        }
+      ]
+    },
+    {
       "id": "block-1265",
       "tag": "p",
       "text": "",
@@ -15200,21 +15410,13 @@
       "formatting": []
     },
     {
-      "id": "block-1266",
-      "tag": "h1",
-      "text": "CH 12: CLASS BUILDS",
-      "numbers": ["12"],
+      "id": "block-1377",
+      "tag": "p",
+      "text": "If fully maxed and with BIS lines on both weapons, Kromede is better in terms of pure damage but by very little.",
+      "numbers": [],
       "figureIds": [],
       "links": [],
-      "formatting": [
-        {
-          "text": "CLASS BUILDS",
-          "start": 7,
-          "end": 19,
-          "underline": true
-        }
-      ],
-      "anchor": "h.elo0p54gjsmu"
+      "formatting": []
     },
     {
       "id": "block-1267",
@@ -15226,32 +15428,605 @@
       "formatting": []
     },
     {
-      "id": "block-1307",
+      "id": "block-1378",
       "tag": "p",
-      "text": "Notmeter (the main site to track performance/dps/parses) now has a section that showcases all builds and loadouts across all classes. Link:",
+      "text": "Aulamus (ILVL 70)",
+      "numbers": ["70"],
+      "figureIds": [],
+      "links": [],
+      "formatting": []
+    },
+    {
+      "id": "block-1379",
+      "tag": "li",
+      "text": "4 Stat Lines (base)",
+      "numbers": ["4"],
+      "figureIds": [],
+      "links": [],
+      "formatting": [],
+      "ordered": false,
+      "level": 0
+    },
+    {
+      "id": "block-1380",
+      "tag": "li",
+      "text": "Amp 3 Max",
+      "numbers": ["3"],
+      "figureIds": [],
+      "links": [],
+      "formatting": [],
+      "ordered": false,
+      "level": 0
+    },
+    {
+      "id": "block-1381",
+      "tag": "p",
+      "text": "",
       "numbers": [],
       "figureIds": [],
       "links": [],
       "formatting": []
     },
     {
-      "id": "block-1308",
+      "id": "block-1382",
       "tag": "p",
-      "text": "https://notmeter.com/?view=setup-guide",
+      "text": "Kromede (ILVL 86)",
+      "numbers": ["86"],
+      "figureIds": [],
+      "links": [],
+      "formatting": []
+    },
+    {
+      "id": "block-1383",
+      "tag": "li",
+      "text": "3 Stat Lines (base)",
+      "numbers": ["3"],
+      "figureIds": [],
+      "links": [],
+      "formatting": [],
+      "ordered": false,
+      "level": 0
+    },
+    {
+      "id": "block-1384",
+      "tag": "li",
+      "text": "Amp 5 Max",
+      "numbers": ["5"],
+      "figureIds": [],
+      "links": [],
+      "formatting": [],
+      "ordered": false,
+      "level": 0
+    },
+    {
+      "id": "block-1385",
+      "tag": "li",
+      "text": "2m extra Range (not factored into DPS comparison)",
+      "numbers": ["2"],
+      "figureIds": [],
+      "links": [],
+      "formatting": [],
+      "ordered": false,
+      "level": 0
+    },
+    {
+      "id": "block-1386",
+      "tag": "p",
+      "text": "",
       "numbers": [],
       "figureIds": [],
-      "links": [
-        {
-          "label": "https://notmeter.com/?view=setup-guide",
-          "href": "https://www.google.com/url?q=https://notmeter.com/?view%3Dsetup-guide&sa=D&source=editors&ust=1791115653708246&usg=AOvVaw1WE4fJ6fc_Gx0cHTyQWmeB"
-        }
-      ],
+      "links": [],
+      "formatting": []
+    },
+    {
+      "id": "block-1387",
+      "tag": "p",
+      "text": "ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ",
+      "numbers": [],
+      "figureIds": [],
+      "links": [],
+      "formatting": []
+    },
+    {
+      "id": "block-1388",
+      "tag": "p",
+      "text": "",
+      "numbers": [],
+      "figureIds": [],
+      "links": [],
+      "formatting": []
+    },
+    {
+      "id": "block-1389",
+      "tag": "p",
+      "text": "Kromede offers more attack and Damage Boost from Amp levels (excluding the range)",
+      "numbers": [],
+      "figureIds": [],
+      "links": [],
+      "formatting": []
+    },
+    {
+      "id": "block-1390",
+      "tag": "li",
+      "text": "Attack difference of 131 = 3.61% more damage for Kromede",
+      "numbers": ["131", "3.61"],
+      "figureIds": [],
+      "links": [],
+      "formatting": [],
+      "ordered": false,
+      "level": 0
+    },
+    {
+      "id": "block-1391",
+      "tag": "li",
+      "text": "Damage Boost difference = 0.8%~0.9% more damage for Kromede",
+      "numbers": ["0.8", "0.9"],
+      "figureIds": [],
+      "links": [],
+      "formatting": [],
+      "ordered": false,
+      "level": 0
+    },
+    {
+      "id": "block-1392",
+      "tag": "p",
+      "text": "",
+      "numbers": [],
+      "figureIds": [],
+      "links": [],
+      "formatting": []
+    },
+    {
+      "id": "block-1393",
+      "tag": "p",
+      "text": "ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ",
+      "numbers": [],
+      "figureIds": [],
+      "links": [],
+      "formatting": []
+    },
+    {
+      "id": "block-1394",
+      "tag": "p",
+      "text": "",
+      "numbers": [],
+      "figureIds": [],
+      "links": [],
+      "formatting": []
+    },
+    {
+      "id": "block-1395",
+      "tag": "p",
+      "text": "Aulamus offers an additional stat line, in this case we used Might",
+      "numbers": [],
+      "figureIds": [],
+      "links": [],
+      "formatting": []
+    },
+    {
+      "id": "block-1396",
+      "tag": "li",
+      "text": "Attack Increase 2.9% (29 Might stat line) = 1.87% more damage for Aulamus",
+      "numbers": ["2.9", "29", "1.87"],
+      "figureIds": [],
+      "links": [],
+      "formatting": [],
+      "ordered": false,
+      "level": 0
+    },
+    {
+      "id": "block-1397",
+      "tag": "p",
+      "text": "",
+      "numbers": [],
+      "figureIds": [],
+      "links": [],
+      "formatting": []
+    },
+    {
+      "id": "block-1398",
+      "tag": "p",
+      "text": "ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ",
+      "numbers": [],
+      "figureIds": [],
+      "links": [],
+      "formatting": []
+    },
+    {
+      "id": "block-1399",
+      "tag": "p",
+      "text": "",
+      "numbers": [],
+      "figureIds": [],
+      "links": [],
+      "formatting": []
+    },
+    {
+      "id": "block-1400",
+      "tag": "p",
+      "text": "When comparing only the attack and damage boost difference, Kromede deals 4.53% more damage",
+      "numbers": ["4.53"],
+      "figureIds": [],
+      "links": [],
+      "formatting": []
+    },
+    {
+      "id": "block-1401",
+      "tag": "p",
+      "text": "",
+      "numbers": [],
+      "figureIds": [],
+      "links": [],
+      "formatting": []
+    },
+    {
+      "id": "block-1402",
+      "tag": "p",
+      "text": "When comparing only the attack increase from Might (2.9%), Aulamus deals 1.87% more damage",
+      "numbers": ["2.9", "1.87"],
+      "figureIds": [],
+      "links": [],
+      "formatting": []
+    },
+    {
+      "id": "block-1403",
+      "tag": "p",
+      "text": "",
+      "numbers": [],
+      "figureIds": [],
+      "links": [],
+      "formatting": []
+    },
+    {
+      "id": "block-1404",
+      "tag": "p",
+      "text": "When factoring only the attack difference, damage boost difference, and attack increase (extra stat line being Might) difference, Kromede deals 2.61% more damage than Aulamus",
+      "numbers": ["2.61"],
+      "figureIds": [],
+      "links": [],
       "formatting": [
         {
-          "text": "https://notmeter.com/?view=setup-guide",
+          "text": "When factoring only the attack difference, damage boost difference, and attack increase (extra stat line being Might) difference, Kromede deals 2.61% more damage than Aulamus",
           "start": 0,
-          "end": 38,
-          "underline": true
+          "end": 174,
+          "strong": true
+        }
+      ]
+    },
+    {
+      "id": "block-1405",
+      "tag": "p",
+      "text": "",
+      "numbers": [],
+      "figureIds": [],
+      "links": [],
+      "formatting": []
+    },
+    {
+      "id": "block-1406",
+      "tag": "p",
+      "text": "AMP 3 Kromede vs Amp 3 Aulamus (extra line being Might for Aulamus), Kromede is better by less than 1%",
+      "numbers": ["3", "3", "1"],
+      "figureIds": [],
+      "links": [],
+      "formatting": [
+        {
+          "text": "AMP 3 Kromede vs Amp 3 Aulamus (extra line being Might for Aulamus), Kromede is better by less than 1%",
+          "start": 0,
+          "end": 102,
+          "strong": true
+        }
+      ]
+    },
+    {
+      "id": "block-1407",
+      "tag": "p",
+      "text": "",
+      "numbers": [],
+      "figureIds": [],
+      "links": [],
+      "formatting": []
+    },
+    {
+      "id": "block-1408",
+      "tag": "p",
+      "text": "Note: Kromede wins by less the stronger the character",
+      "numbers": [],
+      "figureIds": [],
+      "links": [],
+      "formatting": [
+        {
+          "text": "Note: Kromede wins by less the stronger the character",
+          "start": 0,
+          "end": 53,
+          "emphasis": true
+        }
+      ]
+    },
+    {
+      "id": "block-1409",
+      "tag": "p",
+      "text": "",
+      "numbers": [],
+      "figureIds": [],
+      "links": [],
+      "formatting": []
+    },
+    {
+      "id": "block-1410",
+      "tag": "p",
+      "text": "ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ",
+      "numbers": [],
+      "figureIds": [],
+      "links": [],
+      "formatting": []
+    },
+    {
+      "id": "block-1411",
+      "tag": "p",
+      "text": "",
+      "numbers": [],
+      "figureIds": [],
+      "links": [],
+      "formatting": []
+    },
+    {
+      "id": "block-1412",
+      "tag": "p",
+      "text": "If Aulamus has either a Damage Boost (2.8%), Weapon Damage Boost (4%), Combat Speed, or Multi-hit (needs more testing but likely as well) line advantage while maintaining its Might Advantage, then Aulamus is better. In other words, if Aulamus has a 2 line advantage it’s better.",
+      "numbers": ["2.8", "4", "2"],
+      "figureIds": [],
+      "links": [],
+      "formatting": []
+    },
+    {
+      "id": "block-1413",
+      "tag": "p",
+      "text": "",
+      "numbers": [],
+      "figureIds": [],
+      "links": [],
+      "formatting": []
+    },
+    {
+      "id": "block-1414",
+      "tag": "p",
+      "text": "Example",
+      "numbers": [],
+      "figureIds": [],
+      "links": [],
+      "formatting": [
+        {
+          "text": "Example",
+          "start": 0,
+          "end": 7,
+          "strong": true,
+          "emphasis": true
+        }
+      ]
+    },
+    {
+      "id": "block-1415",
+      "tag": "p",
+      "text": "",
+      "numbers": [],
+      "figureIds": [],
+      "links": [],
+      "formatting": []
+    },
+    {
+      "id": "block-1416",
+      "tag": "p",
+      "text": "Amp 5 Kromede",
+      "numbers": ["5"],
+      "figureIds": [],
+      "links": [],
+      "formatting": [
+        {
+          "text": "Amp 5 Kromede",
+          "start": 0,
+          "end": 13,
+          "strong": true
+        }
+      ]
+    },
+    {
+      "id": "block-1417",
+      "tag": "li",
+      "text": "Accuracy",
+      "numbers": [],
+      "figureIds": [],
+      "links": [],
+      "formatting": [],
+      "ordered": false,
+      "level": 0
+    },
+    {
+      "id": "block-1418",
+      "tag": "li",
+      "text": "Weapon Damage Boost",
+      "numbers": [],
+      "figureIds": [],
+      "links": [],
+      "formatting": [],
+      "ordered": false,
+      "level": 0
+    },
+    {
+      "id": "block-1419",
+      "tag": "li",
+      "text": "Combat speed",
+      "numbers": [],
+      "figureIds": [],
+      "links": [],
+      "formatting": [],
+      "ordered": false,
+      "level": 0
+    },
+    {
+      "id": "block-1420",
+      "tag": "p",
+      "text": "",
+      "numbers": [],
+      "figureIds": [],
+      "links": [],
+      "formatting": []
+    },
+    {
+      "id": "block-1421",
+      "tag": "p",
+      "text": "vs",
+      "numbers": [],
+      "figureIds": [],
+      "links": [],
+      "formatting": [
+        {
+          "text": "vs",
+          "start": 0,
+          "end": 2,
+          "strong": true
+        }
+      ]
+    },
+    {
+      "id": "block-1422",
+      "tag": "p",
+      "text": "",
+      "numbers": [],
+      "figureIds": [],
+      "links": [],
+      "formatting": []
+    },
+    {
+      "id": "block-1423",
+      "tag": "p",
+      "text": "Amp 3 Aulamus",
+      "numbers": ["3"],
+      "figureIds": [],
+      "links": [],
+      "formatting": [
+        {
+          "text": "Amp 3 Aulamus",
+          "start": 0,
+          "end": 13,
+          "strong": true
+        }
+      ]
+    },
+    {
+      "id": "block-1424",
+      "tag": "li",
+      "text": "Damage Boost",
+      "numbers": [],
+      "figureIds": [],
+      "links": [],
+      "formatting": [],
+      "ordered": false,
+      "level": 0
+    },
+    {
+      "id": "block-1425",
+      "tag": "li",
+      "text": "Weapon Damage Boost",
+      "numbers": [],
+      "figureIds": [],
+      "links": [],
+      "formatting": [],
+      "ordered": false,
+      "level": 0
+    },
+    {
+      "id": "block-1426",
+      "tag": "li",
+      "text": "Combat Speed",
+      "numbers": [],
+      "figureIds": [],
+      "links": [],
+      "formatting": [],
+      "ordered": false,
+      "level": 0
+    },
+    {
+      "id": "block-1427",
+      "tag": "li",
+      "text": "Might",
+      "numbers": [],
+      "figureIds": [],
+      "links": [],
+      "formatting": [],
+      "ordered": false,
+      "level": 0
+    },
+    {
+      "id": "block-1428",
+      "tag": "p",
+      "text": "",
+      "numbers": [],
+      "figureIds": [],
+      "links": [],
+      "formatting": []
+    },
+    {
+      "id": "block-1429",
+      "tag": "p",
+      "text": "In this case, Aulamus is better",
+      "numbers": [],
+      "figureIds": [],
+      "links": [],
+      "formatting": []
+    },
+    {
+      "id": "block-1430",
+      "tag": "p",
+      "text": "",
+      "numbers": [],
+      "figureIds": [],
+      "links": [],
+      "formatting": []
+    },
+    {
+      "id": "block-1431",
+      "tag": "p",
+      "text": "Note: You can now transfer Aulamus and Kromede into the crafted version of the same ILVL as of the 10/28 update. True Dragon (Tier 1 crafted) can be upgraded to Amp 3 now, White Dragon (Tier 2 crafted) can be upgraded to Amp 5 now. Aulamus remains the same with Amp 3 being max.",
+      "numbers": ["10", "28", "1", "3", "2", "5", "3"],
+      "figureIds": [],
+      "links": [],
+      "formatting": [
+        {
+          "text": "Note:",
+          "start": 0,
+          "end": 5,
+          "strong": true,
+          "highlight": "#f8f9fa"
+        },
+        {
+          "text": "You can now transfer Aulamus and Kromede into the crafted version of the same ILVL as of the 10/28 update. True Dragon (Tier 1 crafted) can be upgraded to Amp 3 now, White Dragon (Tier 2 crafted) can be upgraded to Amp 5 now. Aulamus remains the same with Amp 3 being max.",
+          "start": 6,
+          "end": 278,
+          "highlight": "#f8f9fa"
+        }
+      ]
+    },
+    {
+      "id": "block-1432",
+      "tag": "p",
+      "text": "Note 2: It is very expensive to reroll lines and push from Amp 3 to Amp 5. Remember, Kromede offers 3 stat lines vs Aulamus offering 4 stat lines, vs Crafted offering 5 stat lines at base.",
+      "numbers": ["2", "3", "5", "3", "4", "5"],
+      "figureIds": [],
+      "links": [],
+      "formatting": [
+        {
+          "text": "Note 2:",
+          "start": 0,
+          "end": 7,
+          "strong": true,
+          "highlight": "#f8f9fa"
+        },
+        {
+          "text": "It is very expensive to reroll lines and push from Amp 3 to Amp 5. Remember, Kromede offers 3 stat lines vs Aulamus offering 4 stat lines, vs Crafted offering 5 stat lines at base.",
+          "start": 8,
+          "end": 188,
+          "highlight": "#f8f9fa"
         }
       ]
     }
@@ -15282,12 +16057,12 @@
       "height": 1011
     },
     {
-      "id": "figure-094",
-      "sourceId": "block-1333",
-      "sha256": "b9cb0488a2bdb591d6290209c038f096d363703c1a0183b4c7b711d14ab02097",
-      "src": "/images/guide/b9cb0488a2bdb591d6290209c038f096d363703c1a0183b4c7b711d14ab02097.png",
-      "width": 1266,
-      "height": 1150
+      "id": "figure-096",
+      "sourceId": "block-1362",
+      "sha256": "42a032ee0d495ef33324d8368f5cde5e81834c187f7025904680df3f70d6cb69",
+      "src": "/images/guide/42a032ee0d495ef33324d8368f5cde5e81834c187f7025904680df3f70d6cb69.png",
+      "width": 1223,
+      "height": 1124
     },
     {
       "id": "figure-003",
