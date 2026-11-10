@@ -1,6 +1,6 @@
 {
   "fingerprints": {
-    "html": "faee9b6e8e3e17738f8212975a888d1becc84f85bbfaf9bdb2429ccdbdd831f6"
+    "html": "a002d657929c53c03f91d3fd92637fabadb0577b1469d249a7691e6be4415eba"
   },
   "blocks": [
     {
@@ -4763,15 +4763,15 @@
     {
       "id": "block-1366",
       "tag": "p",
-      "text": "Second Boss (Ludra) ≈ 1700 Crit",
-      "numbers": ["1700"],
+      "text": "Second Boss (Ludra) ≈ 1700 Crit (could be slightly higher pushing 1750)",
+      "numbers": ["1700", "1750"],
       "figureIds": [],
       "links": [],
       "formatting": [
         {
-          "text": "Second Boss (Ludra) ≈ 1700 Crit",
+          "text": "Second Boss (Ludra) ≈ 1700 Crit (could be slightly higher pushing 1750)",
           "start": 0,
-          "end": 31,
+          "end": 71,
           "highlight": "#ffff00"
         }
       ]
