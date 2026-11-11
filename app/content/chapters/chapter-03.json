@@ -1595,12 +1595,12 @@
         ]
       },
       {
-        "id": "block-1366",
-        "sourceIds": ["block-1366"],
+        "id": "block-1433",
+        "sourceIds": ["block-1433"],
         "kind": "paragraph",
         "content": [
           {
-            "text": "Second Boss (Ludra) ≈ 1700 Crit (could be slightly higher pushing 1750)",
+            "text": "Second Boss (Ludra) ≈ 1750 Crit (I did some pulls solo @ 1730 and most were just under 50% (no buffs to test). Another player was averaging ≈ 47% on his pulls at 1737 and had a lot of parses. I think the Critcap is closer to 1750)",
             "highlight": "#ffff00"
           }
         ]

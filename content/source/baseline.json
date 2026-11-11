@@ -1,6 +1,6 @@
 {
   "fingerprints": {
-    "html": "a002d657929c53c03f91d3fd92637fabadb0577b1469d249a7691e6be4415eba"
+    "html": "66caab4a55f949ba3da7e3dfeed6d86addde89d6fbfaba941194ec52f8c7c2e1"
   },
   "blocks": [
     {
@@ -4761,17 +4761,17 @@
       ]
     },
     {
-      "id": "block-1366",
+      "id": "block-1433",
       "tag": "p",
-      "text": "Second Boss (Ludra) ≈ 1700 Crit (could be slightly higher pushing 1750)",
-      "numbers": ["1700", "1750"],
+      "text": "Second Boss (Ludra) ≈ 1750 Crit (I did some pulls solo @ 1730 and most were just under 50% (no buffs to test). Another player was averaging ≈ 47% on his pulls at 1737 and had a lot of parses. I think the Critcap is closer to 1750)",
+      "numbers": ["1750", "1730", "50", "47", "1737", "1750"],
       "figureIds": [],
       "links": [],
       "formatting": [
         {
-          "text": "Second Boss (Ludra) ≈ 1700 Crit (could be slightly higher pushing 1750)",
+          "text": "Second Boss (Ludra) ≈ 1750 Crit (I did some pulls solo @ 1730 and most were just under 50% (no buffs to test). Another player was averaging ≈ 47% on his pulls at 1737 and had a lot of parses. I think the Critcap is closer to 1750)",
           "start": 0,
-          "end": 71,
+          "end": 230,
           "highlight": "#ffff00"
         }
       ]
