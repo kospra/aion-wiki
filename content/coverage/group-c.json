@@ -1744,14 +1744,6 @@
     }
   },
   {
-    "sourceId": "block-0745",
-    "disposition": "rendered",
-    "primary": {
-      "pageSlug": "global-genus-stat-priorities",
-      "blockIds": ["block-0745"]
-    }
-  },
-  {
     "sourceId": "block-0746",
     "disposition": "rendered",
     "primary": {
@@ -1797,14 +1789,6 @@
     "primary": {
       "pageSlug": "global-genus-stat-priorities",
       "blockIds": ["block-0751"]
-    }
-  },
-  {
-    "sourceId": "block-0752",
-    "disposition": "rendered",
-    "primary": {
-      "pageSlug": "global-genus-stat-priorities",
-      "blockIds": ["block-0752"]
     }
   },
   {
@@ -1856,14 +1840,6 @@
     }
   },
   {
-    "sourceId": "block-0759",
-    "disposition": "rendered",
-    "primary": {
-      "pageSlug": "global-genus-stat-priorities",
-      "blockIds": ["block-0759"]
-    }
-  },
-  {
     "sourceId": "block-0760",
     "disposition": "rendered",
     "primary": {
@@ -1912,14 +1888,6 @@
     }
   },
   {
-    "sourceId": "block-0766",
-    "disposition": "rendered",
-    "primary": {
-      "pageSlug": "global-genus-stat-priorities",
-      "blockIds": ["block-0766"]
-    }
-  },
-  {
     "sourceId": "block-1324",
     "disposition": "rendered",
     "primary": {
@@ -1965,14 +1933,6 @@
     "primary": {
       "pageSlug": "global-genus-stat-priorities",
       "blockIds": ["block-0772"]
-    }
-  },
-  {
-    "sourceId": "block-0773",
-    "disposition": "rendered",
-    "primary": {
-      "pageSlug": "global-genus-stat-priorities",
-      "blockIds": ["block-0773"]
     }
   },
   {

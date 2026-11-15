@@ -730,30 +730,9 @@
                       "kind": "paragraph",
                       "content": [
                         {
-                          "text": "Slots 3, 6, 9: Power Shard Bonus"
+                          "text": "Slots 3, 6, 9: Crit, Accuracy > Power Shard Bonus if crit/accuracy cap is not reached"
                         }
                       ]
-                    },
-                    {
-                      "id": "list-block-0745",
-                      "sourceIds": [],
-                      "kind": "list",
-                      "ordered": true,
-                      "items": [
-                        [
-                          {
-                            "id": "block-0745",
-                            "sourceIds": ["block-0745"],
-                            "kind": "paragraph",
-                            "content": [
-                              {
-                                "text": "Crit, Accuracy > Power Shard Bonus if crit/accuracy cap is not reached"
-                              }
-                            ]
-                          }
-                        ]
-                      ],
-                      "start": 1
                     }
                   ]
                 ]
@@ -854,30 +833,9 @@
                       "kind": "paragraph",
                       "content": [
                         {
-                          "text": "Slots 3, 6, 9: Power Shard Bonus"
+                          "text": "Slots 3, 6, 9: Crit, Accuracy > Power Shard Bonus if crit/accuracy cap is not reached"
                         }
                       ]
-                    },
-                    {
-                      "id": "list-block-0752",
-                      "sourceIds": [],
-                      "kind": "list",
-                      "ordered": true,
-                      "items": [
-                        [
-                          {
-                            "id": "block-0752",
-                            "sourceIds": ["block-0752"],
-                            "kind": "paragraph",
-                            "content": [
-                              {
-                                "text": "Crit, Accuracy > Power Shard Bonus if crit/accuracy cap is not reached"
-                              }
-                            ]
-                          }
-                        ]
-                      ],
-                      "start": 1
                     }
                   ]
                 ]
@@ -978,30 +936,9 @@
                       "kind": "paragraph",
                       "content": [
                         {
-                          "text": "Slots 3, 6, 9: Power Shard Bonus"
+                          "text": "Slots 3, 6, 9: Crit, Accuracy > Power Shard Bonus if crit/accuracy cap is not reached"
                         }
                       ]
-                    },
-                    {
-                      "id": "list-block-0759",
-                      "sourceIds": [],
-                      "kind": "list",
-                      "ordered": true,
-                      "items": [
-                        [
-                          {
-                            "id": "block-0759",
-                            "sourceIds": ["block-0759"],
-                            "kind": "paragraph",
-                            "content": [
-                              {
-                                "text": "Crit, Accuracy > Power Shard Bonus if crit/accuracy cap is not reached"
-                              }
-                            ]
-                          }
-                        ]
-                      ],
-                      "start": 1
                     }
                   ]
                 ]
@@ -1102,30 +1039,9 @@
                       "kind": "paragraph",
                       "content": [
                         {
-                          "text": "Slots 3, 6, 9: Power Shard Bonus"
+                          "text": "Slots 3, 6, 9: Crit, Accuracy > Power Shard Bonus if crit/accuracy cap is not reached"
                         }
                       ]
-                    },
-                    {
-                      "id": "list-block-0766",
-                      "sourceIds": [],
-                      "kind": "list",
-                      "ordered": true,
-                      "items": [
-                        [
-                          {
-                            "id": "block-0766",
-                            "sourceIds": ["block-0766"],
-                            "kind": "paragraph",
-                            "content": [
-                              {
-                                "text": "Crit, Accuracy > Power Shard Bonus if crit/accuracy cap is not reached"
-                              }
-                            ]
-                          }
-                        ]
-                      ],
-                      "start": 1
                     }
                   ]
                 ]
@@ -1226,30 +1142,9 @@
                       "kind": "paragraph",
                       "content": [
                         {
-                          "text": "Slots 3, 6, 9: Power Shard Bonus"
+                          "text": "Slots 3, 6, 9: Crit, Accuracy > Power Shard Bonus if crit/accuracy cap is not reached"
                         }
                       ]
-                    },
-                    {
-                      "id": "list-block-0773",
-                      "sourceIds": [],
-                      "kind": "list",
-                      "ordered": true,
-                      "items": [
-                        [
-                          {
-                            "id": "block-0773",
-                            "sourceIds": ["block-0773"],
-                            "kind": "paragraph",
-                            "content": [
-                              {
-                                "text": "Crit, Accuracy > Power Shard Bonus if crit/accuracy cap is not reached"
-                              }
-                            ]
-                          }
-                        ]
-                      ],
-                      "start": 1
                     }
                   ]
                 ]
