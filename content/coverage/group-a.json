@@ -45,14 +45,6 @@
     }
   },
   {
-    "sourceId": "block-1358",
-    "disposition": "rendered",
-    "primary": {
-      "pageSlug": "about-the-source-and-author",
-      "blockIds": ["block-1358"]
-    }
-  },
-  {
     "sourceId": "block-1359",
     "disposition": "rendered",
     "primary": {
@@ -66,6 +58,14 @@
     "primary": {
       "pageSlug": "about-the-source-and-author",
       "blockIds": ["block-1360"]
+    }
+  },
+  {
+    "sourceId": "block-1434",
+    "disposition": "rendered",
+    "primary": {
+      "pageSlug": "about-the-source-and-author",
+      "blockIds": ["block-1434"]
     }
   },
   {
