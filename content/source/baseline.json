@@ -1,6 +1,6 @@
 {
   "fingerprints": {
-    "html": "f03b83b8dde7ec73bf8522582147af3eff5f57478d6c05fddd00f6450ebb46e0"
+    "html": "c15d248f5b431ae3c1bbb57b0c87e6164f90312fdffddb6245349957d7ae0d22"
   },
   "blocks": [
     {
@@ -126,40 +126,6 @@
       ]
     },
     {
-      "id": "block-1358",
-      "tag": "li",
-      "text": "Created CH 12: Aulamus vs Kromede",
-      "numbers": ["12"],
-      "figureIds": [],
-      "links": [
-        {
-          "label": "CH 12: Aulamus vs Kromede",
-          "href": "#h.3g6woghc1yz1"
-        }
-      ],
-      "formatting": [
-        {
-          "text": "Created",
-          "start": 0,
-          "end": 7,
-          "strong": true,
-          "emphasis": true,
-          "highlight": "#ffff00"
-        },
-        {
-          "text": "CH 12: Aulamus vs Kromede",
-          "start": 8,
-          "end": 33,
-          "strong": true,
-          "emphasis": true,
-          "underline": true,
-          "highlight": "#ffff00"
-        }
-      ],
-      "ordered": false,
-      "level": 0
-    },
-    {
       "id": "block-1359",
       "tag": "li",
       "text": "Updated Global Ludra Hard Caps",
@@ -221,6 +187,26 @@
           "strong": true,
           "emphasis": true,
           "underline": true,
+          "highlight": "#ffff00"
+        }
+      ],
+      "ordered": false,
+      "level": 0
+    },
+    {
+      "id": "block-1434",
+      "tag": "li",
+      "text": "Quick Update note on Wings (new Abyssal Wings from Raid)",
+      "numbers": [],
+      "figureIds": [],
+      "links": [],
+      "formatting": [
+        {
+          "text": "Quick Update note on Wings (new Abyssal Wings from Raid)",
+          "start": 0,
+          "end": 56,
+          "strong": true,
+          "emphasis": true,
           "highlight": "#ffff00"
         }
       ],
@@ -9651,7 +9637,7 @@
     {
       "id": "block-0790",
       "tag": "p",
-      "text": "Wings can be upgraded or “Enhanced” up to a maximum of level 10 where the “Owned Effect” will increase. They can NOT be upgraded at Global launch though. At level 0, wings will not show all their stats. When enhancing a pair of wings to +1, an additional stat will become available…in the case of the Brawler Wings (Abyss Shop Wings), the tooltip will only show the “Owned Effects” at base level 0. Upon upgrading these wings, you get Weapon Damage Boost making these wings high value.",
+      "text": "In Asia (and most likely eventually in Global), Wings can be upgraded or “Enhanced” up to a maximum of level 10 where the “Owned Effect” will increase. They can NOT be upgraded at Global launch though. At level 0, wings will not show all their stats. When enhancing a pair of wings to +1, an additional stat will become available…in the case of the Brawler Wings (Abyss Shop Wings), the tooltip will only show the “Owned Effects” at base level 0. Upon upgrading these wings, you get Weapon Damage Boost making these wings high value.",
       "numbers": ["10", "0", "1", "0"],
       "figureIds": [],
       "links": [],
@@ -11596,13 +11582,21 @@
       ]
     },
     {
-      "id": "block-0954",
+      "id": "block-1435",
       "tag": "p",
-      "text": "",
+      "text": "Note: Global introduced new wings (Abyssal Wave Wings) from Ludra Raid. These are BIS for all classes currently.",
       "numbers": [],
       "figureIds": [],
       "links": [],
-      "formatting": []
+      "formatting": [
+        {
+          "text": "Note: Global introduced new wings (Abyssal Wave Wings) from Ludra Raid. These are BIS for all classes currently.",
+          "start": 0,
+          "end": 112,
+          "strong": true,
+          "highlight": "#f8f9fa"
+        }
+      ]
     },
     {
       "id": "block-0955",

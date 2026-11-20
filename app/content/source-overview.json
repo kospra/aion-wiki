@@ -98,32 +98,6 @@
       "items": [
         [
           {
-            "id": "block-1358",
-            "sourceIds": ["block-1358"],
-            "kind": "paragraph",
-            "content": [
-              {
-                "text": "Created",
-                "strong": true,
-                "emphasis": true,
-                "highlight": "#ffff00"
-              },
-              {
-                "text": " "
-              },
-              {
-                "text": "CH 12: Aulamus vs Kromede",
-                "strong": true,
-                "emphasis": true,
-                "underline": true,
-                "highlight": "#ffff00",
-                "href": "/articles/class-builds"
-              }
-            ]
-          }
-        ],
-        [
-          {
             "id": "block-1359",
             "sourceIds": ["block-1359"],
             "kind": "paragraph",
@@ -170,6 +144,21 @@
                 "underline": true,
                 "highlight": "#ffff00",
                 "href": "/articles/raid-accuracy-and-critical-hit-requirements#block-0339"
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "id": "block-1434",
+            "sourceIds": ["block-1434"],
+            "kind": "paragraph",
+            "content": [
+              {
+                "text": "Quick Update note on Wings (new Abyssal Wings from Raid)",
+                "strong": true,
+                "emphasis": true,
+                "highlight": "#ffff00"
               }
             ]
           }
